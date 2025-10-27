@@ -254,7 +254,9 @@ export default function Navbar() {
 
           {/* Contact Us Button */}
           <button className={`${styles.contactButton} ${isNavbarHovered ? styles.contactButtonHovered : 'rounded-md'}`}>
+            <Link href="/contact">
             CONTACT US
+            </Link>
           </button>
 
           {/* Mobile Menu Button */}

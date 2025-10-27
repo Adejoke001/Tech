@@ -6,6 +6,8 @@ import WhyChooseUs from '@/components/WhyChooseUs/WhyChooseUs'
 import WhyChoose from '@/components/WhyChooseUs/WhyChoose'
 import OurVision from '@/components/OurVision/OurVision'
 import ServiceCard from '@/components/Services/ServiceCard'
+import Faq from '@/components/Faq/Faq'
+import Footer from '@/components/Footer/Footer'
 
 export default function Home() {
   return (
@@ -17,7 +19,9 @@ export default function Home() {
       <WhyChooseUs />
       <WhyChoose />
       <OurVision/>
-      <ServiceCard/>    
+      <ServiceCard/>
+      <Faq/>  
+      <Footer />  
     </>
   )
 }

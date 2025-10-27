@@ -1,0 +1,269 @@
+.footer {
+  background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%);
+  color: white;
+  padding: 3rem 0 1rem 0;
+  border-top: 1px solid #334155;
+  font-size: 14px;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+/* Main Footer Content */
+.footerContent {
+  margin-bottom: 2rem;
+}
+
+/* Links Sections */
+.linksSections {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
+}
+
+.linksColumn {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.columnTitle {
+  font-size: 16px;
+  font-weight: 600;
+  color: white;
+  margin-bottom: 0.5rem;
+}
+
+.linksList {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.linkItem {
+  margin: 0;
+}
+
+.link {
+  color: #94a3b8;
+  text-decoration: none;
+  transition: color 0.3s ease;
+  font-size: 14px;
+  display: block;
+  line-height: 1.4;
+}
+
+.link:hover {
+  color: #10b981;
+}
+
+/* Contact Section with Social Links */
+.contactSection {
+  border-top: 1px solid #334155;
+  border-bottom: 1px solid #334155;
+  padding: 1.5rem 0;
+  margin-bottom: 1.5rem;
+}
+
+.contactInfo {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  align-items: center;
+  text-align: center;
+}
+
+.contactDetails {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.contactItem {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: #cbd5e1;
+  font-size: 14px;
+}
+
+.contactIcon {
+  font-size: 16px;
+}
+
+/* Social Links */
+.socialLinks {
+  display: flex;
+  gap: 1rem;
+}
+
+.socialLink {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid #334155;
+  border-radius: 6px;
+  transition: all 0.3s ease;
+  text-decoration: none;
+  color: #10b981;
+}
+
+.socialLink:hover {
+  background: rgba(255, 173, 0, 0.1);
+  border-color: #FFAD00;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(255, 173, 0, 0.2);
+  color: #FFAD00;
+}
+
+/* Bottom Bar */
+.bottomBar {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 1.5rem;
+  border-top: 1px solid #334155;
+}
+
+.copyright {
+  color: #94a3b8;
+  font-size: 14px;
+  text-align: center;
+}
+
+.bottomLinks {
+  display: flex;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.bottomLink {
+  color: #94a3b8;
+  text-decoration: none;
+  font-size: 14px;
+  transition: color 0.3s ease;
+}
+
+.bottomLink:hover {
+  color: #10b981;
+}
+
+/* Tablet Styles */
+@media (min-width: 768px) {
+  .linksSections {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+  }
+  
+  .contactInfo {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    text-align: left;
+  }
+  
+  .contactDetails {
+    flex-direction: row;
+    gap: 2rem;
+  }
+  
+  .bottomBar {
+    flex-direction: row;
+    align-items: center;
+  }
+  
+  .copyright {
+    text-align: left;
+  }
+
+  .bottomLinks {
+    justify-content: flex-end;
+  }
+}
+
+/* Desktop Styles */
+@media (min-width: 1024px) {
+  .footer {
+    padding: 4rem 0 1.5rem 0;
+  }
+  
+  .linksSections {
+    grid-template-columns: repeat(5, 1fr);
+    gap: 2rem;
+  }
+  
+  .columnTitle {
+    font-size: 18px;
+  }
+  
+  .link {
+    font-size: 15px;
+  }
+  
+  .contactItem {
+    font-size: 15px;
+  }
+  
+  .socialLink {
+    width: 42px;
+    height: 42px;
+  }
+}
+
+/* Small Mobile Styles */
+@media (max-width: 480px) {
+  .footer {
+    padding: 2rem 0 1rem 0;
+  }
+  
+  .container {
+    padding: 0 1rem;
+  }
+  
+  .linksSections {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+  
+  .contactInfo {
+    gap: 1rem;
+  }
+  
+  .contactDetails {
+    gap: 0.5rem;
+  }
+  
+  .contactItem {
+    font-size: 13px;
+    justify-content: center;
+  }
+  
+  .socialLinks {
+    gap: 0.75rem;
+  }
+  
+  .socialLink {
+    width: 36px;
+    height: 36px;
+  }
+  
+  .bottomBar {
+    gap: 0.75rem;
+  }
+  
+  .copyright, .bottomLink {
+    font-size: 13px;
+  }
+}
