@@ -41,7 +41,7 @@ const ProjectInMind: React.FC<ProjectInMindProps> = ({
               </h2>
               
               <p className={styles.description}>
-                Let's transform your concept into a market-winning product. Our teams integrate 
+                Let&apos;s transform your concept into a market-winning product. Our teams integrate 
                 seamlessly with yours, bringing speed, skill, and scalability to every project.
               </p>
 
