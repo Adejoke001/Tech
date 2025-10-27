@@ -20,7 +20,7 @@
 
 /* Image Column */
 .imageColumn {
-  order: 2;
+  order: 1; /* Changed from 2 to 1 - Image comes first on mobile */
 }
 
 .imageContainer {
@@ -45,7 +45,7 @@
 
 /* Content Column */
 .contentColumn {
-  order: 1;
+  order: 2; 
 }
 
 .textContent {
@@ -72,8 +72,8 @@
 
 .statsGrid {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 1.5rem;
+  grid-template-columns: repeat(2, 1fr); /* 2 columns on mobile */
+  gap: 1rem;
   margin: 1rem 0;
 }
 
@@ -87,6 +87,14 @@
   border-radius: 8px;
   border: 1px solid rgba(255, 255, 255, 0.1);
   transition: all 0.3s ease;
+}
+
+/* Third stat item spans both columns on mobile */
+.statItem:nth-child(3) {
+  grid-column: 1 / -1; /* Span all columns */
+  max-width: 200px; /* Limit width */
+  margin: 0 auto; /* Center it */
+  justify-self: center; /* Center in grid */
 }
 
 .statItem:hover {
@@ -185,11 +193,11 @@
   }
   
   .imageColumn {
-    order: 1;
+    order: 1; /* Stays 1 but now in left column */
   }
   
   .contentColumn {
-    order: 2;
+    order: 2; /* Stays 2 but now in right column */
   }
   
   .imageContainer {
@@ -201,7 +209,16 @@
   }
   
   .statsGrid {
-    gap: 2rem;
+    grid-template-columns: repeat(3, 1fr); /* 3 columns on tablet/desktop */
+    gap: 1.5rem;
+  }
+  
+  /* Reset the third item for tablet and up */
+  .statItem:nth-child(3) {
+    grid-column: auto; /* Reset to normal grid behavior */
+    max-width: none; /* Remove width restriction */
+    margin: 0; /* Reset margin */
+    justify-self: stretch; /* Normal grid behavior */
   }
   
   .statValue {
@@ -232,7 +249,7 @@
   }
   
   .statsGrid {
-    gap: 2.5rem;
+    gap: 2rem;
   }
   
   .statItem {
@@ -263,12 +280,17 @@
   }
   
   .statsGrid {
-    grid-template-columns: 1fr;
-    gap: 1rem;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0.75rem;
   }
   
   .statItem {
-    padding: 1rem;
+    padding: 0.75rem;
+  }
+  
+  .statItem:nth-child(3) {
+    max-width: 180px; /* Slightly smaller on very small screens */
+    margin-top: 0.5rem;
   }
   
   .statValue {
@@ -278,5 +300,29 @@
   .contactButton {
     width: 100%;
     justify-content: center;
+    padding: 1rem 1.5rem;
+    font-size: 1rem;
+  }
+}
+
+/* Extra Small Mobile Styles */
+@media (max-width: 360px) {
+  .statsGrid {
+    grid-template-columns: 1fr; /* Single column on very small screens */
+    gap: 0.5rem;
+  }
+  
+  .statItem:nth-child(3) {
+    grid-column: 1; /* Reset to single column */
+    max-width: none;
+    margin: 0;
+  }
+  
+  .statItem {
+    padding: 0.5rem;
+  }
+  
+  .statValue {
+    font-size: 1.25rem;
   }
 }
