@@ -60,7 +60,7 @@ const Solutions = () => {
             
             <p className="description fadeIn staggerDelay2">
               We help startups and enterprises turn ideas into powerful, scalable software. 
-              Whether you're building something new, upgrading legacy systems, or scaling 
+              Whether you&apos;re building something new, upgrading legacy systems, or scaling 
               complex platforms, we make it faster, smarter, and easier – without compromise.
             </p>
             

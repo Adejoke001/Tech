@@ -8,7 +8,6 @@ interface ProjectInMindProps {
 }
 
 const ProjectInMind: React.FC<ProjectInMindProps> = ({ 
-  imagePath, 
   imageAlt = "Project Collaboration" 
 }) => {
   const stats = [

@@ -104,7 +104,7 @@ const Services = () => {
               Ready to Start Your Project?
             </h3>
             <p className="ctaDescription">
-              Let's discuss how our software development services can help your business grow.
+              Let&apos;s discuss how our software development services can help your business grow.
             </p>
             <div className="ctaButtons">
               <button className="primaryCtaButton">
