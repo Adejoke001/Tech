@@ -1,0 +1,257 @@
+.whyChooseSection {
+  padding: 2.3rem 0;
+  background: #fff5e6;
+  position: relative;
+  overflow: hidden;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+  position: relative;
+  z-index: 2;
+}
+
+.sectionHeader {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.sectionTitle {
+  font-size: 2.5rem;
+  margin-top: 20px;
+  font-weight: bold;
+  color: #1f2937;
+  margin-bottom: 0.75rem;
+  line-height: 1.2;
+}
+
+.titleAccent {
+  background: linear-gradient(135deg, #10b981 0%, #34d399 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.sectionDescription {
+  font-size: 1.1rem;
+  color: #6b7280;
+  max-width: 850px;
+  margin: 0 auto;
+  line-height: 1.6;
+}
+
+.processGrid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 0;
+}
+
+.processRow {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+.processCard {
+  padding: 1.5rem 1rem;
+  position: relative;
+  transition: all 0.4s ease;
+  min-height: 200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+/* Mobile: Alternate background for stacked cards */
+.processCard:nth-child(odd) {
+  background: #fff5e6;
+}
+
+.processCard:nth-child(even) {
+  background: #ffdc94;
+}
+
+.processCard::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 3px;
+  background: linear-gradient(90deg, #10b981, #34d399);
+  transform: scaleX(0);
+  transition: transform 0.4s ease;
+}
+
+.processCard:hover::before {
+  transform: scaleX(1);
+}
+
+.processCard:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.1);
+}
+
+.cardContent {
+  text-align: center;
+  position: relative;
+  z-index: 2;
+}
+
+.processIcon {
+  width: 60px;
+  height: 60px;
+  margin: 0 auto 0.75rem;
+  background: linear-gradient(135deg, #10b981, #34d399);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5rem;
+  color: white;
+  transition: all 0.4s ease;
+}
+
+.processCard:hover .processIcon {
+  transform: scale(1.1) rotate(5deg);
+}
+
+.processTitle {
+  font-size: 1.25rem;
+  font-weight: bold;
+  color: #1f2937;
+  margin-bottom: 0.5rem;
+  transition: color 0.3s ease;
+}
+
+.processCard:hover .processTitle {
+  color: #10b981;
+}
+
+.processDescription {
+  color: #6b7280;
+  line-height: 1.5;
+  font-size: 0.9rem;
+}
+
+/* Tablet Styles */
+@media (min-width: 768px) {
+  .processRow {
+    grid-template-columns: 1fr 1fr;
+  }
+  
+  .processCard {
+    padding: 1.5rem 1rem;
+  }
+  
+  /* Tablet: Reset mobile styles and apply row-based patterns */
+  .processCard:nth-child(odd),
+  .processCard:nth-child(even) {
+    background: #fff5e6;
+  }
+  
+  /* First row: Light → Dark → Light → Dark */
+  .processRow:nth-child(1) .processCard:nth-child(odd) {
+    background: #fff5e6;
+  }
+  
+  .processRow:nth-child(1) .processCard:nth-child(even) {
+    background: #ffdc94;
+  }
+  
+  /* Second row: Dark → Light → Dark → Light */
+  .processRow:nth-child(2) .processCard:nth-child(odd) {
+    background: #ffdc94;
+  }
+  
+  .processRow:nth-child(2) .processCard:nth-child(even) {
+    background: #fff5e6;
+  }
+}
+
+/* Desktop Styles */
+@media (min-width: 1024px) {
+  .processRow {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+  
+  .sectionTitle {
+    font-size: 2.75rem;
+  }
+  
+  .processCard {
+    padding: 1.75rem 1rem;
+    min-height: 220px;
+  }
+  
+  /* Desktop: Same checkerboard pattern as tablet */
+  .processRow:nth-child(1) .processCard:nth-child(odd) {
+    background: #fff5e6;
+  }
+  
+  .processRow:nth-child(1) .processCard:nth-child(even) {
+    background: #ffdc94;
+  }
+  
+  .processRow:nth-child(2) .processCard:nth-child(odd) {
+    background: #ffdc94;
+  }
+  
+  .processRow:nth-child(2) .processCard:nth-child(even) {
+    background: #fff5e6;
+  }
+}
+
+/* Small Mobile Styles */
+@media (max-width: 480px) {
+  .whyChooseSection {
+    padding: 1.5rem 0;
+  }
+  
+  .sectionTitle {
+    font-size: 2rem;
+  }
+  
+  .sectionDescription {
+    font-size: 1.125rem;
+  }
+  
+  .processCard {
+    padding: 1.25rem 0.75rem;
+    min-height: 180px;
+  }
+  
+  .processIcon {
+    width: 50px;
+    height: 50px;
+    font-size: 1.25rem;
+  }
+  
+  .processTitle {
+    font-size: 1.125rem;
+  }
+}
+
+/* Animation Classes */
+.fadeInUp {
+  opacity: 0;
+  transform: translateY(30px);
+  animation: fadeInUp 0.6s ease forwards;
+}
+
+@keyframes fadeInUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.staggerDelay1 { animation-delay: 0.1s; }
+.staggerDelay2 { animation-delay: 0.2s; }
+.staggerDelay3 { animation-delay: 0.3s; }
+.staggerDelay4 { animation-delay: 0.4s; }
+.staggerDelay5 { animation-delay: 0.5s; }
+.staggerDelay6 { animation-delay: 0.6s; }
+.staggerDelay7 { animation-delay: 0.7s; }
+.staggerDelay8 { animation-delay: 0.8s; }

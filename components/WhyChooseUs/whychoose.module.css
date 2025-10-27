@@ -1,0 +1,204 @@
+.engineeringSection {
+  padding: 4rem 0;
+  background: var(--dark-bg, #0f172a);
+  position: relative;
+  overflow: hidden;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+}
+
+.sectionHeader {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.sectionTitle {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: white;
+  margin-bottom: 1rem;
+  line-height: 1.2;
+}
+
+.sectionSubtitle {
+  font-size: 1.25rem;
+  color: #cbd5e1;
+  max-width: 600px;
+  margin: 0 auto;
+  line-height: 1.6;
+}
+
+.highlight {
+  color: var(--primary-green, #10b981);
+  font-weight: 600;
+}
+
+.solutionsGrid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+}
+
+.solutionCard {
+  position: relative;
+  border-radius: 12px;
+  overflow: hidden;
+  transition: all 0.4s ease;
+  background: var(--dark-secondary, #1e293b);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+}
+
+.solutionCard:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 20px 40px rgba(16, 185, 129, 0.2);
+}
+
+.cardImage {
+  position: relative;
+  height: 300px;
+  overflow: hidden;
+}
+
+.imagePlaceholder {
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(135deg, var(--primary-green, #10b981), #059669);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+.placeholderText {
+  opacity: 0.7;
+}
+
+.imageOverlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: linear-gradient(transparent, rgba(0, 0, 0, 0.8));
+  padding: 2rem 1.5rem 1.5rem;
+}
+
+.solutionTitle {
+  color: white;
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin: 0;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.hoverContent {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(135deg, rgba(16, 185, 129, 0.95), rgba(5, 150, 105, 0.95));
+  color: white;
+  padding: 2rem 1.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  opacity: 0;
+  transform: translateY(20px);
+  transition: all 0.4s ease;
+  border-radius: 12px;
+}
+
+.solutionCard:hover .hoverContent {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.hoverDescription {
+  font-size: 1rem;
+  line-height: 1.6;
+  margin-bottom: 1rem;
+}
+
+.hoverArrow {
+  width: 0;
+  height: 0;
+  border-left: 8px solid transparent;
+  border-right: 8px solid transparent;
+  border-top: 8px solid white;
+  opacity: 0.8;
+}
+
+/* Tablet Styles */
+@media (min-width: 768px) {
+  .engineeringSection {
+    padding: 5rem 0;
+  }
+  
+  .solutionsGrid {
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+  }
+  
+  .sectionTitle {
+    font-size: 3rem;
+  }
+  
+  .cardImage {
+    height: 280px;
+  }
+}
+
+/* Desktop Styles */
+@media (min-width: 1024px) {
+  .solutionsGrid {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 1.5rem;
+  }
+  
+  .cardImage {
+    height: 220px;
+  }
+  
+  .solutionTitle {
+    font-size: 1.375rem;
+  }
+  
+  .hoverDescription {
+    font-size: 0.9rem;
+  }
+}
+
+/* Small Mobile Styles */
+@media (max-width: 480px) {
+  .engineeringSection {
+    padding: 3rem 0;
+  }
+  
+  .sectionTitle {
+    font-size: 2rem;
+  }
+  
+  .sectionSubtitle {
+    font-size: 1.125rem;
+  }
+  
+  .cardImage {
+    height: 200px;
+  }
+  
+  .solutionTitle {
+    font-size: 1.25rem;
+  }
+  
+  .imageOverlay {
+    padding: 1.5rem 1rem 1rem;
+  }
+}
