@@ -3,7 +3,6 @@ import styles from './projectInMind.module.css';
 import Image from 'next/image';
 
 interface ProjectInMindProps {
-  imagePath: string;
   imageAlt?: string;
 }
 
@@ -60,7 +59,11 @@ const ProjectInMind: React.FC<ProjectInMindProps> = ({
               </div>
 
               {/* Contact Button */}
-              <button className={styles.contactButton}>
+              <button 
+                className={styles.contactButton}
+                type="button"
+                aria-label="Contact us for your project"
+              >
                 CONTACT US
                 <svg 
                   className={styles.buttonArrow} 
@@ -68,6 +71,8 @@ const ProjectInMind: React.FC<ProjectInMindProps> = ({
                   height="16" 
                   viewBox="0 0 16 16" 
                   fill="none"
+                  aria-hidden="true"
+                  focusable="false"
                 >
                   <path 
                     d="M8 0L6.59 1.41L12.17 7H0V9H12.17L6.59 14.59L8 16L16 8L8 0Z" 
