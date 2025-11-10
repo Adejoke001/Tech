@@ -8,6 +8,8 @@ import OurVision from '@/components/OurVision/OurVision'
 import ServiceCard from '@/components/Services/ServiceCard'
 import Faq from '@/components/Faq/Faq'
 import Footer from '@/components/Footer/Footer'
+import Booking from '@/components/Booking/Booking'
+
 
 export default function Home() {
   return (
@@ -21,6 +23,7 @@ export default function Home() {
       <OurVision/>
       <ServiceCard/>
       <Faq/>  
+      <Booking/>
       <Footer />  
     </>
   )

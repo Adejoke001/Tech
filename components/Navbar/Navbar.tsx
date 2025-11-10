@@ -9,6 +9,7 @@ const MenuIcon = () => <span className="text-3xl">☰</span>;
 const CloseIcon = () => <span className="text-3xl">✕</span>;
 
 // Dropdown icons
+const ProductIcon = () => <span className={styles.dropdownIcon}>📦</span>;
 const SoftwareIcon = () => <span className={styles.dropdownIcon}>💻</span>;
 const QAIcon = () => <span className={styles.dropdownIcon}>🔍</span>;
 const ConsultingIcon = () => <span className={styles.dropdownIcon}>💡</span>;
@@ -53,60 +54,66 @@ export default function Navbar() {
   const dropdowns = {
     services: {
       title: 'Services',
+      href: '/services',
       items: [
-        { name: 'Software Development', href: '/software-development', icon: <SoftwareIcon /> },
-        { name: 'Quality Assurance & Testing', href: '/quality-assurance-testing', icon: <QAIcon /> },
-        { name: 'Software Consulting Services', href: '/software-consulting', icon: <ConsultingIcon /> },
-        { name: 'Software Maintenance & Support', href: '/software-maintenance-support', icon: <MaintenanceIcon /> },
-        { name: 'AI & Machine Learning', href: '/ai-machine-learning', icon: <AIIcon /> },
-        { name: 'AI & Automation Consulting', href: '/ai-automation-consulting', icon: <AutomationIcon /> },
-        { name: 'Enterprise Platform Development', href: '/enterprise-platform-development', icon: <EnterpriseIcon /> },
-        { name: 'Cybersecurity Services', href: '/cybersecurity-services', icon: <SecurityIcon /> },
-        { name: 'Data Engineering & Analytics', href: '/data-engineering-analytics', icon: <DataIcon /> },
-        { name: 'Cloud & DevOps Services', href: '/cloud-devops-services', icon: <CloudIcon /> },
-        { name: 'Integration & API Services', href: '/integration-api-services', icon: <APIIcon /> },
+        { name: 'Product Development', href: '/services/product-development', icon: <ProductIcon /> },
+        { name: 'Software Development', href: '/services/software-development', icon: <SoftwareIcon /> },
+        { name: 'Quality Assurance & Testing', href: '/services/quality-assurance-testing', icon: <QAIcon /> },
+        { name: 'Software Consulting Services', href: '/services/software-consulting', icon: <ConsultingIcon /> },
+        { name: 'Software Maintenance & Support', href: '/services/software-maintenance-support', icon: <MaintenanceIcon /> },
+        { name: 'AI & Machine Learning', href: '/services/ai-machine-learning', icon: <AIIcon /> },
+        { name: 'AI & Automation Consulting', href: '/services/ai-automation-consulting', icon: <AutomationIcon /> },
+        { name: 'Enterprise Platform Development', href: '/services/enterprise-platform-development', icon: <EnterpriseIcon /> },
+        { name: 'Cybersecurity Services', href: '/services/cybersecurity-services', icon: <SecurityIcon /> },
+        { name: 'Data Engineering & Analytics', href: '/services/data-engineering-analytics', icon: <DataIcon /> },
+        { name: 'Cloud & DevOps Services', href: '/services/cloud-devops-services', icon: <CloudIcon /> },
+        { name: 'Integration & API Services', href: '/services/integration-api-services', icon: <APIIcon /> },
       ]
     },
     hire: {
       title: 'Hire Developers',
+      href:  '/hire-developers',
       items: [
-        { name: 'Frontend', href: '/hire-frontend-developers', icon: <FrontendIcon /> },
-        { name: 'Backend', href: '/hire-backend-developers', icon: <BackendIcon /> },
-        { name: 'Mobile App', href: '/hire-mobile-developers', icon: <MobileIcon /> },
-        { name: 'Cloud & Infrastructure', href: '/hire-cloud-developers', icon: <InfrastructureIcon /> },
-        { name: 'QA & Testing', href: '/hire-qa-developers', icon: <QADevIcon /> },
-        { name: 'Data & AI', href: '/hire-data-ai-developers', icon: <DataAIIcon /> },
+        { name: 'Frontend', href: '/hire-developers/frontend-developers', icon: <FrontendIcon /> },
+        { name: 'Backend', href: '/hire-developers/backend-developers', icon: <BackendIcon /> },
+        { name: 'Mobile App', href: '/hire-developers/mobile-developers', icon: <MobileIcon /> },
+        { name: 'Cloud & Infrastructure', href: '/hire-developers/cloud-developers', icon: <InfrastructureIcon /> },
+        { name: 'QA & Testing', href: '/hire-developers/qa-developers', icon: <QADevIcon /> },
+        { name: 'Data & AI', href: '/hire-developers/data-ai-developers', icon: <DataAIIcon /> },
       ]
     },
     solutions: {
       title: 'Solutions',
+      href:  '/solutions',
       items: [
-        { name: 'Startups', href: '/solutions-startups', icon: <StartupIcon /> },
-        { name: 'Scale-ups', href: '/solutions-scale-ups', icon: <ScaleupIcon /> },
-        { name: 'Enterprises', href: '/solutions-enterprises', icon: <EnterpriseSolIcon /> },
-        { name: 'Security & Compliance', href: '/solutions-security-compliance', icon: <ComplianceIcon /> },
+        { name: 'Startups', href: '/solutions/solutions-startups', icon: <StartupIcon /> },
+        { name: 'Scale-ups', href: '/solutions/solutions-scale-ups', icon: <ScaleupIcon /> },
+        { name: 'Enterprises', href: '/solutions/solutions-enterprises', icon: <EnterpriseSolIcon /> },
+        { name: 'Security & Compliance', href: '/solutions/solutions-security-compliance', icon: <ComplianceIcon /> },
       ]
     },
     industries: {
       title: 'Industries',
+      href:  '/industries',
       items: [
-        { name: 'Fintech & Financial Services', href: '/industries-fintech', icon: <FintechIcon /> },
-        { name: 'Media & Entertainment Technology', href: '/industries-media', icon: <MediaIcon /> },
-        { name: 'E-commerce & Retail Solutions', href: '/industries-ecommerce', icon: <EcommerceIcon /> },
-        { name: 'Education & Edtech Solutions', href: '/industries-education', icon: <EducationIcon /> },
+        { name: 'Fintech & Financial Services', href: '/industries/industries-fintech', icon: <FintechIcon /> },
+        { name: 'Media & Entertainment Technology', href: '/industries/industries-media', icon: <MediaIcon /> },
+        { name: 'E-commerce & Retail Solutions', href: '/industries/industries-ecommerce', icon: <EcommerceIcon /> },
+        { name: 'Education & Edtech Solutions', href: '/industries/industries-education', icon: <EducationIcon /> },
       ]
     },
     company: {
       title: 'Company',
+      href:  'company',
       items: [
         // Company section
-        { name: 'Our Development Methodology', href: '/methodology', icon: <MethodologyIcon /> },
-        { name: 'Partnerships & Certifications', href: '/partnerships', icon: <PartnershipIcon /> },
-        { name: 'Careers & Company Culture', href: '/careers', icon: <CareersIcon /> },
-        { name: 'Success Stories & Case Studies', href: '/case-studies', icon: <CaseStudiesIcon /> },
+        { name: 'Our Development Methodology', href: '/company/methodology', icon: <MethodologyIcon /> },
+        { name: 'Partnerships & Certifications', href: '/company/partnerships', icon: <PartnershipIcon /> },
+        { name: 'Careers & Company Culture', href: '/company/careers', icon: <CareersIcon /> },
+        { name: 'Success Stories & Case Studies', href: '/company/case-studies', icon: <CaseStudiesIcon /> },
         // Resources section
-        { name: 'Blog & Insights', href: '/blog', icon: <BlogIcon /> },
-        { name: 'Clients & Testimonials', href: '/testimonials', icon: <TestimonialsIcon /> },
+        { name: 'Blog & Insights', href: '/company/blog', icon: <BlogIcon /> },
+        { name: 'Clients & Testimonials', href: '/company/testimonials', icon: <TestimonialsIcon /> },
       ]
     }
   };

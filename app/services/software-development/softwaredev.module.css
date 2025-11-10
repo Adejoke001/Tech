@@ -1,0 +1,474 @@
+.heroSection {
+  position: relative;
+  min-height: 100vh;
+  width: 100%;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: url('https://images.unsplash.com/photo-1555066931-4365d14bab8c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  padding: 140px 0 80px;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    to bottom,
+    rgba(31, 30, 30, 0.4) 0%,
+    rgba(21, 20, 20, 0.6) 50%,
+    rgba(15, 14, 14, 0.4) 100%
+  );
+  z-index: 1;
+}
+
+.content {
+  position: relative;
+  z-index: 2;
+  color: white;
+  width: 100%;
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0 2rem;
+  height: 100%;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 3rem;
+  align-items: center;
+}
+
+.leftContent {
+  text-align: left;
+}
+
+.headline {
+  margin-bottom: 2rem;
+  width: 100%;
+}
+
+.mainTitle {
+  font-size: 3.2rem;
+  font-weight: bold;
+  margin-bottom: 1.5rem;
+  line-height: 1.2;
+  text-align: left;
+  background: linear-gradient(to right, #ffffff, #60a5fa);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  word-wrap: normal;
+  overflow-wrap: normal;
+}
+
+.subheadline {
+  font-size: 1.3rem;
+  margin-bottom: 2rem;
+  max-width: 650px;
+  line-height: 1.6;
+  text-align: left;
+  color: #e5e7eb;
+}
+
+.highlight {
+  color: #fbbf24;
+  font-weight: 600;
+}
+
+/* CTA Button with highlight color on hover */
+.ctaButton {
+  background: linear-gradient(135deg, #60a5fa, #34d399);
+  color: white;
+  border: none;
+  padding: 1.2rem 2.5rem;
+  font-size: 1.1rem;
+  font-weight: 600;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  margin-top: 1rem;
+  box-shadow: 0 4px 15px rgba(96, 165, 250, 0.3);
+}
+
+.ctaButton:hover {
+  background: #fbbf24;
+  box-shadow: 0 6px 20px rgba(251, 191, 36, 0.4);
+  color: #1f2937;
+}
+
+/* Right Content */
+.rightContent {
+  display: flex;
+  flex-direction: column;
+  gap: 2.5rem;
+  align-items: flex-end;
+}
+
+/* Testimonial Card - col-5 size with image overlay */
+.testimonialCard {
+  background: white;
+  border-radius: 1.2rem;
+  padding: 2.5rem 1.5rem 1.5rem;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 420px;
+  margin: 0;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+  position: relative;
+  z-index: 3;
+}
+
+.testimonialImage {
+  position: absolute;
+  top: -40px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 4;
+}
+
+.clientImage {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 1px solid #34d399;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.testimonialContent {
+  text-align: center;
+  width: 100%;
+  margin-top: 1rem;
+}
+
+.quoteIcon {
+  color: #34d399;
+  width: 1.5rem;
+  height: 1.5rem;
+  margin-bottom: 1rem;
+  opacity: 0.8;
+}
+
+.testimonialText {
+  color: #374151;
+  font-size: 1rem;
+  line-height: 1.5;
+  margin-bottom: 1rem;
+  font-style: italic;
+}
+
+.testimonialAuthor {
+  color: #10b981;
+  font-weight: 600;
+  margin-bottom: 1.5rem;
+  font-size: 0.9rem;
+}
+
+/* Ratings Layout */
+.ratings {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  justify-content: center;
+}
+
+.ratingItem {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.4rem;
+  flex: 1;
+}
+
+.ratingStars {
+  display: flex;
+  gap: 0.1rem;
+}
+
+.starIcon {
+  width: 0.9rem;
+  height: 0.9rem;
+  color: #fbbf24;
+}
+
+.ratingText {
+  color: #6b7280;
+  font-size: 0.75rem;
+  font-weight: 500;
+  text-align: center;
+}
+
+.ratingDivider {
+  width: 2px;
+  height: 30px;
+  background: #10b981;
+  opacity: 0.6;
+}
+
+/* Trusted Clients */
+.trustedClients {
+  text-align: center;
+  max-width: 420px;
+  margin: 0;
+  width: 100%;
+}
+
+.clientsLabel {
+  color: #d1d5db;
+  font-size: 0.9rem;
+  margin-bottom: 1.5rem;
+  font-weight: 500;
+}
+
+/* Four client logos in one row - Fixed styling */
+.clientsGrid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 0.8rem;
+}
+
+.clientLogo {
+  background: transparent;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 0.5rem;
+  padding: 0.2rem; /* Significantly reduced padding */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease;
+  height: 70px;
+  position: relative;
+  overflow: hidden;
+  box-sizing: border-box; /* Include padding in width/height calculations */
+}
+
+
+.clientLogo:hover {
+  background: linear-gradient(135deg, #60a5fa, #34d399);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* Logo container for consistent sizing */
+.logoContainer {
+  position: relative;
+  width: 100%; 
+  height: 100%; 
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.clientLogoImage {
+  object-fit: contain !important;
+  width: 100% !important;
+  height: 100% !important;
+  position: relative !important;
+  filter: none !important;
+  opacity: 1 !important;
+}
+
+/* Desktop Layout */
+@media (min-width: 1024px) {
+  .content {
+    grid-template-columns: 7fr 5fr; /* col-7 and col-5 */
+    gap: 3rem;
+    align-items: center;
+    padding: 0 3rem;
+  }
+
+  .mainTitle {
+    font-size: 3.5rem;
+    line-height: 1.2;
+  }
+
+  .subheadline {
+    font-size: 1.3rem;
+  }
+
+  .rightContent {
+    align-items: flex-end;
+  }
+
+  .testimonialCard {
+    margin: 0;
+  }
+
+  .trustedClients {
+    text-align: center;
+  }
+}
+
+/* Tablet and small desktop */
+@media (min-width: 768px) and (max-width: 1023px) {
+  .heroSection {
+    padding-top: 120px;
+    min-height: 100vh;
+  }
+  
+  .mainTitle {
+    font-size: 2.8rem;
+  }
+  
+  .subheadline {
+    font-size: 1.2rem;
+  }
+  
+  .content {
+    gap: 2rem;
+  }
+
+  .testimonialCard {
+    max-width: 350px;
+  }
+
+  .clientsGrid {
+    gap: 0.6rem;
+  }
+.clientLogo {
+    height: 60px;
+    padding: 0.2rem; /* Consistent reduced padding */
+  }
+
+
+  .rightContent {
+    align-items: center;
+  }
+}
+
+/* Mobile devices */
+@media (max-width: 767px) {
+  .heroSection {
+    padding: 120px 0 60px;
+    min-height: 100vh;
+    background-attachment: scroll;
+  }
+  
+  .mainTitle {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    text-align: center;
+    line-height: 1.2;
+  }
+  
+  .subheadline {
+    font-size: 1.2rem;
+    text-align: center;
+    max-width: 100%;
+  }
+  
+  .testimonialCard {
+    padding: 2.5rem 1.5rem 1.5rem;
+    max-width: 100%;
+    margin: 0 auto;
+  }
+
+  .ctaButton {
+    padding: 1rem 2rem;
+    font-size: 1rem;
+    width: 100%;
+    max-width: 280px;
+    display: block;
+    margin: 1rem auto 0;
+  }
+
+  .ratings {
+    flex-direction: column;
+    gap: 0.8rem;
+  }
+
+  .ratingDivider {
+    width: 60px;
+    height: 2px;
+  }
+
+  .clientsGrid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0.8rem;
+  }
+
+  .clientLogo {
+    height: 60px;
+    padding: 0.2rem; 
+  }
+
+  .rightContent {
+    align-items: center;
+    gap: 2rem;
+  }
+  
+  .trustedClients {
+    text-align: center;
+    max-width: 100%;
+  }
+}
+
+/* Small mobile devices */
+@media (max-width: 480px) {
+  .heroSection {
+    padding: 110px 0 50px;
+    min-height: 90vh;
+    background-position: 60% center;
+  }
+  
+  .mainTitle {
+    font-size: 2rem;
+  }
+  
+  .subheadline {
+    font-size: 1.1rem;
+  }
+  
+  .content {
+    padding: 0 1rem;
+  }
+  
+  .testimonialCard {
+    padding: 2rem 1.25rem 1.25rem;
+  }
+
+  .testimonialText {
+    font-size: 0.9rem;
+  }
+
+  .clientLogo {
+    height: 50px;
+    padding: 0.15rem; 
+  }
+
+  .clientsGrid {
+    gap: 0.6rem;
+  }
+}
+
+/* Extra small devices */
+@media (max-width: 360px) {
+  .mainTitle {
+    font-size: 1.8rem;
+  }
+  
+  .subheadline {
+    font-size: 1rem;
+  }
+
+  .clientsGrid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  
+ .clientLogo {
+    height: 45px;
+    padding: 0.1rem; 
+  }
+  
+  .testimonialCard {
+    padding: 2rem 1rem 1rem;
+  }
+}

@@ -1,0 +1,603 @@
+/* Software Development Services Section */
+.servicesSection {
+  padding: 5rem 0;
+  background-color: #f9fafb;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+}
+
+.sectionHeader {
+  text-align: center;
+  margin-bottom: 4rem;
+}
+
+.sectionTitle {
+  font-size: 2.25rem;
+  font-weight: bold;
+  color: #1f2937;
+  margin-bottom: 1.5rem;
+}
+
+.titleAccent {
+  color: #10b981;
+}
+
+.sectionDescription {
+  font-size: 1.25rem;
+  color: #6b7280;
+  max-width: 48rem;
+  margin: 0 auto;
+  line-height: 1.6;
+}
+
+.servicesGrid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+  margin-bottom: 3rem;
+}
+
+.serviceCard {
+  background: white;
+  border-radius: 1rem;
+  padding: 2rem;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+  border: 1px solid #e5e7eb;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.serviceCard:hover {
+  box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1);
+  border-color: #10b981;
+  transform: translateY(-4px);
+}
+
+.serviceIcon {
+  margin-bottom: 1.5rem;
+  transition: transform 0.3s ease;
+}
+
+.serviceCard:hover .serviceIcon {
+  transform: scale(1.1);
+}
+
+.serviceTitle {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #1f2937;
+  margin-bottom: 1rem;
+  transition: color 0.3s ease;
+}
+
+.serviceCard:hover .serviceTitle {
+  color: #10b981;
+}
+
+.serviceDescription {
+  color: #6b7280;
+  margin-bottom: 1.5rem;
+  line-height: 1.6;
+  flex-grow: 1;
+}
+
+.featuresList {
+  margin-bottom: 1.5rem;
+}
+
+.featureItem {
+  display: flex;
+  align-items: flex-start;
+  color: #4b5563;
+  margin-bottom: 0.5rem;
+  line-height: 1.5;
+}
+
+.featureDot {
+  width: 0.5rem;
+  height: 0.5rem;
+  background-color: #10b981;
+  border-radius: 50%;
+  margin-right: 0.75rem;
+  margin-top: 0.5rem;
+  flex-shrink: 0;
+}
+
+.learnMoreLink {
+  display: inline-flex;
+  align-items: center;
+  color: #10b981;
+  font-weight: 600;
+  text-decoration: none;
+  transition: color 0.3s ease;
+  margin-top: auto;
+}
+
+.learnMoreLink:hover {
+  color: #059669;
+}
+
+.arrow {
+  margin-left: 0.5rem;
+  transition: transform 0.3s ease;
+}
+
+.learnMoreLink:hover .arrow {
+  transform: translateX(4px);
+}
+
+/* Vision Card Styles */
+.visionCardSection {
+  margin-top: 4rem;
+}
+
+.visionCardContainer {
+  max-width: 66.666%;
+  margin: 0 auto;
+  background: #0f172a;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+}
+
+.visionCardContent {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+  align-items: center;
+  padding: 3rem;
+}
+
+.visionTextContent {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.visionTitle {
+  font-size: 2rem;
+  font-weight: 700;
+  color: white;
+  line-height: 1.2;
+  margin: 0;
+}
+
+.visionDescription {
+  font-size: 1.125rem;
+  color: #cbd5e1;
+  line-height: 1.6;
+  margin: 0;
+}
+
+.visionCtaButton {
+  background: #FFAD00;
+  color: #0f172a;
+  border: none;
+  padding: 1rem 2rem;
+  font-size: 1rem;
+  font-weight: 700;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  width: fit-content;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  box-shadow: 0 4px 15px rgba(255, 173, 0, 0.3);
+}
+
+.visionCtaButton:hover {
+  background: #10b981;
+  transform: translateY(-3px);
+  box-shadow: 0 8px 25px rgba(255, 173, 0, 0.4);
+}
+
+.visionImageContainer {
+  position: relative;
+  width: 100%;
+  height: 250px;
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.visionImage {
+  object-fit: cover;
+  object-position: center;
+  transition: transform 0.6s ease;
+}
+
+.visionImageContainer:hover .visionImage {
+  transform: scale(1.05);
+}
+
+/* Scale with Confidence Card Styles - Container Fluid */
+.scaleCardSection {
+  margin-top: 4rem;
+  width: 100vw;
+  position: relative;
+  left: 50%;
+  right: 50%;
+  margin-left: -50vw;
+  margin-right: -50vw;
+}
+
+.scaleCardContainer {
+  width: 100%;
+  background: linear-gradient(135deg, #fff5e6 0%, #ffe8b7 100%);
+  border-radius: 0;
+  overflow: hidden;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+  border: none;
+}
+
+.scaleCardContent {
+  display: grid;
+  grid-template-columns: 5fr 7fr;
+  gap: 4rem;
+  align-items: center;
+  padding: 4rem 0;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.scaleTextContent {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.scaleTitle {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #1f2937;
+  line-height: 1.2;
+  margin: 0;
+}
+
+.scaleDescription {
+  font-size: 1.125rem;
+  color: #4b5563;
+  line-height: 1.6;
+  margin: 0;
+}
+
+.scaleCtaButton {
+  background: #10b981;
+  color: white;
+  border: none;
+  padding: 1rem 2rem;
+  font-size: 1rem;
+  font-weight: 700;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  width: fit-content;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  box-shadow: 0 4px 15px rgba(16, 185, 129, 0.3);
+}
+
+.scaleCtaButton:hover {
+  background: #FFAD00;
+  transform: translateY(-3px);
+  box-shadow: 0 8px 25px rgba(16, 185, 129, 0.4);
+}
+
+/* Stats Grid Styles */
+.statsGrid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+}
+
+.statCircle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.circleContainer {
+  position: relative;
+  width: 160px;
+  height: 160px;
+}
+
+.circleSvg {
+  width: 100%;
+  height: 100%;
+  transform: rotate(-90deg);
+}
+
+.circleBackground {
+  fill: none;
+  stroke: #e5e7eb;
+  stroke-width: 3;
+}
+
+.circleProgress {
+  fill: none;
+  stroke: #10b981;
+  stroke-width: 3;
+  stroke-linecap: round;
+  stroke-dasharray: 283;
+  stroke-dashoffset: 283;
+  animation: circleFill 2s ease-in-out infinite alternate;
+}
+
+.circleProgress.animate {
+  animation: circleFill 2s ease-in-out infinite alternate;
+}
+
+@keyframes circleFill {
+  0% {
+    stroke-dashoffset: 283;
+    stroke: #10b981;
+  }
+  50% {
+    stroke-dashoffset: 141.5;
+    stroke: #FFAD00;
+  }
+  100% {
+    stroke-dashoffset: 0;
+    stroke: #10b981;
+  }
+}
+
+.statContent {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  width: 80%;
+  padding: 1rem;
+}
+
+.statValue {
+  font-size: 1.75rem;
+  font-weight: 700;
+  color: #1f2937;
+  margin-bottom: 0.5rem;
+  line-height: 1;
+}
+
+.statSuffix {
+  font-size: 1.125rem;
+  color: #10b981;
+}
+
+.statLabel {
+  font-size: 1rem;
+  font-weight: 600;
+  color: #374151;
+  margin-bottom: 0.5rem;
+  line-height: 1.2;
+}
+
+.statDescription {
+  font-size: 0.8rem;
+  color: #6b7280;
+  line-height: 1.3;
+  margin-top: 0.25rem;
+}
+
+/* Responsive Design */
+/* Tablet Styles */
+@media (min-width: 768px) {
+  .servicesGrid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.2rem;
+  }
+}
+
+/* Desktop Styles */
+@media (min-width: 1024px) {
+  .servicesGrid {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem;
+  }
+  
+  .sectionTitle {
+    font-size: 3rem;
+  }
+}
+
+/* Large Desktop Styles */
+@media (min-width: 1280px) {
+  .servicesGrid {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem;
+  }
+}
+
+/* Vision Card Responsive */
+@media (max-width: 768px) {
+  .visionCardContainer {
+    max-width: 100%;
+  }
+  
+  .visionCardContent {
+    grid-template-columns: 1fr;
+    padding: 2rem;
+    gap: 2rem;
+  }
+  
+  .visionImageContainer {
+    height: 200px;
+    order: -1;
+  }
+  
+  .visionTitle {
+    font-size: 1.75rem;
+  }
+  
+  .visionDescription {
+    font-size: 1rem;
+  }
+}
+
+/* Scale Card Responsive */
+@media (max-width: 768px) {
+  .scaleCardContent {
+    grid-template-columns: 1fr;
+    padding: 3rem 2rem;
+    gap: 3rem;
+  }
+  
+  .scaleTextContent {
+    text-align: center;
+    align-items: center;
+  }
+  
+  .statsGrid {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.1rem;
+  }
+  
+  .scaleTitle {
+    font-size: 1.75rem;
+  }
+  
+  .circleContainer {
+    width: 140px;
+    height: 140px;
+  }
+  
+  .statValue {
+    font-size: 1.5rem;
+  }
+  
+  .statLabel {
+    font-size: 0.9rem;
+  }
+}
+
+/* Small Mobile Styles */
+@media (max-width: 480px) {
+  .servicesSection {
+    padding: 3rem 0;
+  }
+  
+  .sectionHeader {
+    margin-bottom: 3rem;
+  }
+  
+  .sectionTitle {
+    font-size: 1.875rem;
+  }
+  
+  .sectionDescription {
+    font-size: 1.125rem;
+  }
+  
+  .serviceCard {
+    padding: 1.5rem;
+  }
+  
+  .serviceTitle {
+    font-size: 1.25rem;
+  }
+  
+  .visionCardContent {
+    padding: 1.5rem;
+  }
+  
+  .visionTitle {
+    font-size: 1.5rem;
+  }
+  
+  .visionCtaButton {
+    width: 100%;
+    text-align: center;
+    justify-content: center;
+  }
+  
+  .scaleCardContent {
+    padding: 2rem 1.5rem;
+    gap: 2rem;
+  }
+  
+  .scaleTitle {
+    font-size: 1.5rem;
+  }
+  
+  .scaleDescription {
+    font-size: 1rem;
+  }
+  
+  .scaleCtaButton {
+    width: 100%;
+    text-align: center;
+  }
+  
+  .statsGrid {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+  
+  .circleContainer {
+    width: 120px;
+    height: 120px;
+  }
+  
+  .statValue {
+    font-size: 1.25rem;
+  }
+  
+  .statLabel {
+    font-size: 0.8rem;
+  }
+  
+  .statDescription {
+    font-size: 0.7rem;
+  }
+}
+
+/* Extra Small Mobile Styles */
+@media (max-width: 360px) {
+  .container {
+    padding: 0 1rem;
+  }
+  
+  .servicesSection {
+    padding: 2rem 0;
+  }
+  
+  .sectionTitle {
+    font-size: 1.5rem;
+  }
+  
+  .serviceCard {
+    padding: 1rem;
+  }
+  
+  .visionCardContent {
+    padding: 1rem;
+  }
+  
+  .visionTitle {
+    font-size: 1.25rem;
+  }
+  
+  .scaleCardContent {
+    padding: 1.5rem 1rem;
+  }
+  
+  .scaleTitle {
+    font-size: 1.25rem;
+  }
+  
+  .circleContainer {
+    width: 100px;
+    height: 100px;
+  }
+  
+  .statValue {
+    font-size: 1.125rem;
+  }
+}

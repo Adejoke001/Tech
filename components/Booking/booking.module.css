@@ -1,0 +1,458 @@
+.bookingSection {
+  background: linear-gradient(to right, #fff9eb 38%, #fff 38%);
+  padding: 3rem 0;
+  min-height: 500px;
+  display: flex;
+  align-items: center;
+  border: 1px solid #e2e8f0;
+  border-radius: 12px;
+  margin: 1.5rem auto;
+  max-width: 1200px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+}
+
+.container {
+  max-width: 1140px;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+  width: 100%;
+}
+
+.bookingContent {
+  display: grid;
+  grid-template-columns: 4fr 8fr;
+  gap: 0;
+  align-items: start;
+}
+
+/* Left Side - Content */
+.contentSide {
+  padding: 1.5rem 2rem 1.5rem 0;
+  background: transparent;
+}
+
+.contactOptions {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.contentItem {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 0.875rem;
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.06);
+  transition: transform 0.2s ease;
+  border: 1px solid #f1f5f9;
+}
+
+.contentItem:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.08);
+}
+
+.iconWrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 36px;
+  height: 36px;
+  background: #fff;
+  border-radius: 6px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  flex-shrink: 0;
+}
+
+.icon {
+  font-size: 1.1rem;
+}
+
+.textContent {
+  flex: 1;
+  min-width: 0;
+}
+
+.contentTitle {
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: #1e293b;
+  margin: 0 0 0.15rem 0;
+  line-height: 1.2;
+}
+
+.contentDescription {
+  font-size: 0.75rem;
+  color: #64748b;
+  margin: 0;
+  font-weight: 500;
+}
+
+.trustedBy {
+  margin: 1.5rem 0;
+  padding: 1.25rem 0;
+  border-top: 1px solid #e2e8f0;
+  border-bottom: 1px solid #e2e8f0;
+}
+
+.trustedText {
+  font-size: 0.9rem;
+  color: #475569;
+  font-weight: 500;
+  text-align: center;
+  margin: 0;
+  line-height: 1.4;
+}
+
+.statsContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+
+.statItem {
+  display: flex;
+  gap: 0.75rem;
+  align-items: flex-start;
+}
+
+.statIcon {
+  font-size: 1.1rem;
+  margin-top: 0.1rem;
+  flex-shrink: 0;
+}
+
+.statContent {
+  flex: 1;
+}
+
+.statNumber {
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: #1e293b;
+  margin: 0 0 0.3rem 0;
+  line-height: 1.2;
+}
+
+.statDescription {
+  font-size: 0.8rem;
+  color: #64748b;
+  line-height: 1.4;
+  margin: 0;
+}
+
+/* Right Side - Form */
+.formSide {
+  background: #fff;
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
+  margin-left: 1.5rem;
+  border: 1px solid #f1f5f9;
+}
+
+.formContainer {
+  max-width: 100%;
+}
+
+.formTitle {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #1e293b;
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+
+.bookingForm {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+
+.formRow {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+}
+
+.formGroup {
+  display: flex;
+  flex-direction: column;
+}
+
+.formLabel {
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: #374151;
+  margin-bottom: 0.4rem;
+}
+
+.formInput,
+.formTextarea {
+  padding: 0.75rem;
+  border: 1.5px solid #e2e8f0;
+  border-radius: 6px;
+  font-size: 0.9rem;
+  transition: all 0.3s ease;
+  background: #fff;
+  width: 100%;
+}
+
+.formInput:focus,
+.formTextarea:focus {
+  outline: none;
+  border-color: #10b981;
+  box-shadow: 0 0 0 2px rgba(16, 185, 129, 0.1);
+}
+
+.formTextarea {
+  resize: vertical;
+  min-height: 70px;
+  font-family: inherit;
+}
+
+/* File Drop Zone */
+.fileDropZone {
+  border: 2px dashed #cbd5e1;
+  border-radius: 6px;
+  padding: 1.5rem;
+  text-align: center;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  background: #f8fafc;
+  position: relative;
+}
+
+.fileDropZone:hover,
+.fileDropZone.dragover {
+  border-color: #10b981;
+  background: #f0fdf4;
+}
+
+.fileInput {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  cursor: pointer;
+}
+
+.fileDropContent {
+  pointer-events: none;
+}
+
+.fileDropText {
+  font-size: 0.85rem;
+  color: #64748b;
+  font-weight: 500;
+}
+
+.browseText {
+  color: #10b981;
+  font-weight: 600;
+}
+
+.separator {
+  margin: 0 0.5rem;
+  color: #cbd5e1;
+}
+
+/* Button Container and Button */
+.buttonContainer {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 0.5rem;
+}
+
+.submitButton {
+  background: #FFAD00;
+  color: white;
+  border: none;
+  padding: 0.75rem 2rem;
+  font-size: 0.9rem;
+  font-weight: 600;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  min-width: 140px;
+}
+
+.submitButton:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 4px 12px rgba(16, 185, 129, 0.3);
+  background: linear-gradient(135deg, #10b981, #34d399);
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+  .bookingContent {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+  
+  .contentSide {
+    padding: 0;
+    text-align: center;
+  }
+  
+  .contactOptions {
+    grid-template-columns: repeat(2, 1fr);
+    max-width: 400px;
+    margin: 0 auto 1.5rem;
+  }
+  
+  .formSide {
+    margin-left: 0;
+    padding: 1.5rem;
+  }
+  
+  .bookingSection {
+    background: #fff9eb;
+    margin: 1rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .bookingSection {
+    padding: 2rem 0;
+    margin: 1rem;
+    border-radius: 8px;
+  }
+  
+  .container {
+    padding: 0 1rem;
+  }
+  
+  .formRow {
+    grid-template-columns: 1fr;
+    gap: 0.75rem;
+  }
+  
+  .formSide {
+    padding: 1.25rem;
+  }
+  
+  .formTitle {
+    font-size: 1.35rem;
+    margin-bottom: 1.25rem;
+  }
+  
+  .contactOptions {
+    grid-template-columns: 1fr;
+    gap: 0.75rem;
+    max-width: 300px;
+  }
+  
+  .contentItem {
+    padding: 0.75rem;
+  }
+  
+  .statsContainer {
+    gap: 1rem;
+  }
+  
+  .statItem {
+    flex-direction: column;
+    text-align: center;
+    gap: 0.5rem;
+  }
+  
+  .fileDropZone {
+    padding: 1.25rem;
+  }
+  
+  .buttonContainer {
+    justify-content: center;
+  }
+  
+  .submitButton {
+    width: 100%;
+    max-width: 200px;
+  }
+}
+
+@media (max-width: 480px) {
+  .bookingSection {
+    padding: 1.5rem 0;
+    margin: 0.5rem;
+    border-radius: 6px;
+  }
+  
+  .container {
+    padding: 0 0.75rem;
+  }
+  
+  .formSide {
+    padding: 1rem;
+  }
+  
+  .formTitle {
+    font-size: 1.25rem;
+    margin-bottom: 1rem;
+  }
+  
+  .bookingForm {
+    gap: 1rem;
+  }
+  
+  .formInput,
+  .formTextarea {
+    padding: 0.625rem;
+    font-size: 0.85rem;
+  }
+  
+  .trustedText {
+    font-size: 0.85rem;
+  }
+  
+  .statNumber {
+    font-size: 0.85rem;
+  }
+  
+  .statDescription {
+    font-size: 0.75rem;
+  }
+  
+  .fileDropText {
+    font-size: 0.8rem;
+  }
+  
+  .submitButton {
+    padding: 0.625rem 1.5rem;
+    font-size: 0.85rem;
+  }
+}
+
+/* Extra Small Devices */
+@media (max-width: 360px) {
+  .bookingSection {
+    padding: 1rem 0;
+  }
+  
+  .container {
+    padding: 0 0.5rem;
+  }
+  
+  .formSide {
+    padding: 0.75rem;
+  }
+  
+  .contactOptions {
+    grid-template-columns: 1fr;
+  }
+  
+  .contentItem {
+    flex-direction: column;
+    text-align: center;
+    gap: 0.5rem;
+  }
+  
+  .fileDropZone {
+    padding: 1rem;
+  }
+}
