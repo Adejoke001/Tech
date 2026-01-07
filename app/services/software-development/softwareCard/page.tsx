@@ -12,6 +12,8 @@ import {
   Settings, 
   Wrench 
 } from 'lucide-react';
+import Booking from '@/components/Booking/Booking';
+import Footer from '@/components/Footer/Footer';
 import Image from 'next/image';
 
 const SoftwareDevelopmentServices = () => {
@@ -139,6 +141,7 @@ const SoftwareDevelopmentServices = () => {
   }, []);
 
   return (
+    <>
      <section className={styles.servicesSection}>
       <div className={styles.container}>
         <div className={styles.sectionHeader}>
@@ -259,6 +262,10 @@ const SoftwareDevelopmentServices = () => {
         </div>
       </div>
     </section>
+    <Booking />
+    <Footer/>
+
+    </>
   );
 };
 

@@ -45,7 +45,7 @@ const Footer = () => {
     { name: 'LinkedIn', icon: Linkedin, href: 'https://linkedin.com' },
     { name: 'Twitter', icon: Twitter, href: 'https://twitter.com' },
     { name: 'GitHub', icon: Github, href: 'https://github.com' },
-    { name: 'Dribbble', icon: Facebook, href: 'https://facebook.com' },
+    { name: 'Facebook', icon: Facebook, href: 'https://facebook.com' },
     { name: 'Instagram', icon: Instagram, href: 'https://instagram.com' }
   ];
 
@@ -148,9 +148,10 @@ const Footer = () => {
                     key={social.name}
                     href={social.href}
                     className={styles.socialLink}
-                    aria-label={social.name}
+                    // aria-label={social.name}
+                    aria-label={`Follow us on ${social.name}`}
                     target="_blank"
-                    rel="noopener noreferrer"
+                    rel="noopener noreferrer nofollow"
                   >
                     <IconComponent size={20} />
                   </a>

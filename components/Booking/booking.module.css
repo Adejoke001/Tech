@@ -1,3 +1,5 @@
+/* booking.module.css - COMPLETE VERSION */
+
 .bookingSection {
   background: linear-gradient(to right, #fff9eb 38%, #fff 38%);
   padding: 3rem 0;
@@ -6,7 +8,7 @@
   align-items: center;
   border: 1px solid #e2e8f0;
   border-radius: 12px;
-  margin: 1.5rem auto;
+  margin: 1.3rem auto;
   max-width: 1200px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
 }
@@ -31,6 +33,7 @@
   background: transparent;
 }
 
+/* Contact Options */
 .contactOptions {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -38,7 +41,7 @@
   margin-bottom: 1.5rem;
 }
 
-.contentItem {
+.contactItem {
   display: flex;
   align-items: center;
   gap: 0.75rem;
@@ -46,13 +49,20 @@
   background: #fff;
   border-radius: 8px;
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.06);
-  transition: transform 0.2s ease;
+  transition: all 0.2s ease;
   border: 1px solid #f1f5f9;
+  cursor: pointer;
 }
 
-.contentItem:hover {
+.contactItem:hover {
   transform: translateY(-1px);
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.08);
+  border-color: #10b981;
+}
+
+.contactItem:focus-within {
+  outline: 2px solid #10b981;
+  outline-offset: 2px;
 }
 
 .iconWrapper {
@@ -123,6 +133,7 @@
   font-size: 1.1rem;
   margin-top: 0.1rem;
   flex-shrink: 0;
+  color: #FFAD00;
 }
 
 .statContent {
@@ -164,6 +175,19 @@
   color: #1e293b;
   text-align: center;
   margin-bottom: 1.5rem;
+  position: relative;
+}
+
+.formTitle::after {
+  content: '';
+  position: absolute;
+  bottom: -8px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 60px;
+  height: 3px;
+  background: linear-gradient(to right, #10b981, #FFAD00);
+  border-radius: 2px;
 }
 
 .bookingForm {
@@ -181,6 +205,7 @@
 .formGroup {
   display: flex;
   flex-direction: column;
+  position: relative;
 }
 
 .formLabel {
@@ -188,6 +213,22 @@
   font-weight: 600;
   color: #374151;
   margin-bottom: 0.4rem;
+  display: flex;
+  align-items: center;
+  gap: 0.25rem;
+}
+
+.formLabel::after {
+  content: '*';
+  color: #ef4444;
+  font-size: 0.7rem;
+  margin-left: 0.1rem;
+}
+
+.formLabel[for="company"]::after,
+.formLabel[for="message"]::after {
+  content: '';
+  display: none;
 }
 
 .formInput,
@@ -199,19 +240,50 @@
   transition: all 0.3s ease;
   background: #fff;
   width: 100%;
+  font-family: inherit;
+}
+
+.formInput:hover,
+.formTextarea:hover {
+  border-color: #94a3b8;
 }
 
 .formInput:focus,
 .formTextarea:focus {
   outline: none;
   border-color: #10b981;
-  box-shadow: 0 0 0 2px rgba(16, 185, 129, 0.1);
+  box-shadow: 0 0 0 3px rgba(16, 185, 129, 0.1);
+}
+
+.formInput:disabled,
+.formTextarea:disabled {
+  background-color: #f8fafc;
+  cursor: not-allowed;
+  opacity: 0.7;
+}
+
+.formInput.error,
+.formTextarea.error {
+  border-color: #ef4444;
+  box-shadow: 0 0 0 3px rgba(239, 68, 68, 0.1);
+}
+
+.formError {
+  font-size: 0.75rem;
+  color: #ef4444;
+  margin-top: 0.25rem;
+  display: none;
+}
+
+.formInput.error ~ .formError,
+.formTextarea.error ~ .formError {
+  display: block;
 }
 
 .formTextarea {
   resize: vertical;
   min-height: 70px;
-  font-family: inherit;
+  max-height: 150px;
 }
 
 /* File Drop Zone */
@@ -226,10 +298,15 @@
   position: relative;
 }
 
-.fileDropZone:hover,
+.fileDropZone:hover {
+  border-color: #94a3b8;
+  background: #f1f5f9;
+}
+
 .fileDropZone.dragover {
   border-color: #10b981;
   background: #f0fdf4;
+  box-shadow: 0 0 0 3px rgba(16, 185, 129, 0.1);
 }
 
 .fileInput {
@@ -246,6 +323,16 @@
   pointer-events: none;
 }
 
+.fileDropIcon {
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+  color: #64748b;
+}
+
+.fileDropZone.dragover .fileDropIcon {
+  color: #10b981;
+}
+
 .fileDropText {
   font-size: 0.85rem;
   color: #64748b;
@@ -260,6 +347,12 @@
 .separator {
   margin: 0 0.5rem;
   color: #cbd5e1;
+}
+
+.fileSizeHint {
+  font-size: 0.7rem;
+  color: #94a3b8;
+  margin-top: 0.5rem;
 }
 
 /* Button Container and Button */
@@ -280,15 +373,79 @@
   cursor: pointer;
   transition: all 0.3s ease;
   min-width: 140px;
+  position: relative;
+  overflow: hidden;
 }
 
 .submitButton:hover {
-  transform: translateY(-1px);
-  box-shadow: 0 4px 12px rgba(16, 185, 129, 0.3);
-  background: linear-gradient(135deg, #10b981, #34d399);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 15px rgba(255, 173, 0, 0.3);
+  background: #ffc233;
 }
 
-/* Responsive Design */
+.submitButton:active {
+  transform: translateY(0);
+}
+
+.submitButton:focus {
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(255, 173, 0, 0.3);
+}
+
+.submitButton:disabled {
+  background: #cbd5e1;
+  cursor: not-allowed;
+  transform: none;
+  box-shadow: none;
+}
+
+.submitButton.loading::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 20px;
+  height: 20px;
+  border: 2px solid rgba(255, 255, 255, 0.3);
+  border-top-color: white;
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+  transform: translate(-50%, -50%);
+}
+
+@keyframes spin {
+  to {
+    transform: translate(-50%, -50%) rotate(360deg);
+  }
+}
+
+/* Success Message */
+.successMessage {
+  background: #f0fdf4;
+  border: 1px solid #10b981;
+  border-radius: 6px;
+  padding: 1rem;
+  margin-top: 1rem;
+  text-align: center;
+}
+
+.successIcon {
+  color: #10b981;
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.successText {
+  font-size: 0.9rem;
+  color: #065f46;
+  font-weight: 500;
+}
+
+/* =========================================== */
+/* RESPONSIVE DESIGN */
+/* =========================================== */
+
+/* Tablet (768px - 1024px) */
 @media (max-width: 1024px) {
   .bookingContent {
     grid-template-columns: 1fr;
@@ -297,13 +454,19 @@
   
   .contentSide {
     padding: 0;
-    text-align: center;
+    text-align: left;
   }
   
   .contactOptions {
     grid-template-columns: repeat(2, 1fr);
-    max-width: 400px;
+    max-width: 100%;
     margin: 0 auto 1.5rem;
+    gap: 1rem;
+  }
+  
+  .contactItem {
+    gap: 0.75rem;
+    padding: 0.875rem;
   }
   
   .formSide {
@@ -317,6 +480,7 @@
   }
 }
 
+/* Mobile (480px - 768px) */
 @media (max-width: 768px) {
   .bookingSection {
     padding: 2rem 0;
@@ -326,6 +490,35 @@
   
   .container {
     padding: 0 1rem;
+  }
+  
+  .contactOptions {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0.75rem;
+  }
+  
+  .contactItem {
+    gap: 0.5rem;
+    padding: 0.75rem;
+    min-height: 60px;
+  }
+  
+  .iconWrapper {
+    width: 32px;
+    height: 32px;
+  }
+  
+  .icon {
+    font-size: 1rem;
+  }
+  
+  .contentTitle {
+    font-size: 0.8rem;
+    margin-bottom: 0.1rem;
+  }
+  
+  .contentDescription {
+    font-size: 0.7rem;
   }
   
   .formRow {
@@ -339,17 +532,21 @@
   
   .formTitle {
     font-size: 1.35rem;
-    margin-bottom: 1.25rem;
+    margin-bottom: 1.5rem;
   }
   
-  .contactOptions {
-    grid-template-columns: 1fr;
-    gap: 0.75rem;
-    max-width: 300px;
+  .formTitle::after {
+    width: 50px;
+    height: 2px;
   }
   
-  .contentItem {
-    padding: 0.75rem;
+  .trustedBy {
+    margin: 1rem 0;
+    padding: 1rem 0;
+  }
+  
+  .trustedText {
+    font-size: 0.85rem;
   }
   
   .statsContainer {
@@ -357,9 +554,22 @@
   }
   
   .statItem {
-    flex-direction: column;
-    text-align: center;
-    gap: 0.5rem;
+    flex-direction: row;
+    text-align: left;
+    gap: 0.75rem;
+  }
+  
+  .statIcon {
+    margin-top: 0;
+    font-size: 1rem;
+  }
+  
+  .statNumber {
+    font-size: 0.85rem;
+  }
+  
+  .statDescription {
+    font-size: 0.75rem;
   }
   
   .fileDropZone {
@@ -376,6 +586,7 @@
   }
 }
 
+/* Small Mobile (360px - 480px) */
 @media (max-width: 480px) {
   .bookingSection {
     padding: 1.5rem 0;
@@ -387,13 +598,42 @@
     padding: 0 0.75rem;
   }
   
+  .contactOptions {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0.5rem;
+  }
+  
+  .contactItem {
+    gap: 0.5rem;
+    padding: 0.625rem;
+    min-height: 55px;
+  }
+  
+  .iconWrapper {
+    width: 30px;
+    height: 30px;
+  }
+  
+  .icon {
+    font-size: 0.9rem;
+  }
+  
+  .contentTitle {
+    font-size: 0.75rem;
+    margin-bottom: 0.1rem;
+  }
+  
+  .contentDescription {
+    font-size: 0.65rem;
+  }
+  
   .formSide {
     padding: 1rem;
   }
   
   .formTitle {
     font-size: 1.25rem;
-    margin-bottom: 1rem;
+    margin-bottom: 1.25rem;
   }
   
   .bookingForm {
@@ -407,19 +647,23 @@
   }
   
   .trustedText {
-    font-size: 0.85rem;
+    font-size: 0.8rem;
   }
   
   .statNumber {
-    font-size: 0.85rem;
+    font-size: 0.8rem;
   }
   
   .statDescription {
-    font-size: 0.75rem;
+    font-size: 0.7rem;
   }
   
   .fileDropText {
-    font-size: 0.8rem;
+    font-size: 0.75rem;
+  }
+  
+  .fileSizeHint {
+    font-size: 0.65rem;
   }
   
   .submitButton {
@@ -428,8 +672,8 @@
   }
 }
 
-/* Extra Small Devices */
-@media (max-width: 360px) {
+/* Extra Small Mobile (Below 360px) */
+@media (max-width: 359px) {
   .bookingSection {
     padding: 1rem 0;
   }
@@ -438,21 +682,60 @@
     padding: 0 0.5rem;
   }
   
+  .contactOptions {
+    grid-template-columns: 1fr;
+    gap: 0.5rem;
+  }
+  
+  .contactItem {
+    gap: 0.5rem;
+    padding: 0.5rem;
+  }
+  
   .formSide {
     padding: 0.75rem;
   }
   
-  .contactOptions {
-    grid-template-columns: 1fr;
+  .iconWrapper {
+    width: 28px;
+    height: 28px;
   }
   
-  .contentItem {
-    flex-direction: column;
-    text-align: center;
-    gap: 0.5rem;
+  .contentTitle {
+    font-size: 0.7rem;
+  }
+  
+  .contentDescription {
+    font-size: 0.6rem;
   }
   
   .fileDropZone {
     padding: 1rem;
+  }
+  
+  .fileDropText {
+    font-size: 0.7rem;
+  }
+  
+  .submitButton {
+    padding: 0.5rem 1.25rem;
+    font-size: 0.8rem;
+  }
+}
+
+/* Print Styles */
+@media print {
+  .bookingSection {
+    background: white !important;
+    box-shadow: none !important;
+    border: 1px solid #ddd !important;
+  }
+  
+  .submitButton {
+    display: none !important;
+  }
+  
+  .fileDropZone {
+    display: none !important;
   }
 }
