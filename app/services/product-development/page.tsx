@@ -4,9 +4,6 @@ import { useState, useRef, useEffect } from "react";
 import { motion, useInView, useScroll, useTransform } from "framer-motion";
 import Image from "next/image";
 import Link from "next/link";
-import Navbar from "@/components/Navbar/Navbar";
-import Booking from "@/components/Booking/Booking";
-import Footer from "@/components/Footer/Footer";
 import {
   Rocket,
   Lightbulb,
@@ -564,7 +561,7 @@ export default function ProductDevelopment() {
 
   return (
     <>
-      <Navbar />
+      
       {/* Hero Section with Background Image */}
       <motion.section
         className={styles.heroSection}
@@ -1360,9 +1357,6 @@ export default function ProductDevelopment() {
           </div>
         </div>
       </section>
-
-      <Booking />
-      <Footer />
     </>
   );
 }

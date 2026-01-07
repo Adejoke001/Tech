@@ -1,6 +1,5 @@
 'use client';
 
-import Navbar from '@/components/Navbar/Navbar';
 import { motion } from "framer-motion";
 import { Star, Quote } from "lucide-react";
 import React from 'react';
@@ -20,7 +19,7 @@ export default function SoftwareDev() {
   return (
     <>
     <div className={styles.heroSection}>
-      <Navbar/>
+     
       {/* Background Overlay */}
       <div className={styles.overlay}></div>
       
