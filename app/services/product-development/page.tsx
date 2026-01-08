@@ -6,29 +6,13 @@ import Image from "next/image";
 import Link from "next/link";
 import {
   Rocket,
-  Lightbulb,
   Users,
-  Zap,
-  Shield,
-  Code,
-  Cloud,
-  BarChart,
-  TrendingUp,
   Clock,
   Globe,
   CheckCircle,
   ArrowRight,
   Star,
   Quote,
-  Target,
-  Layers,
-  Cpu,
-  Wrench,
-  Database,
-  Smartphone,
-  Palette,
-  Lock,
-  RefreshCw,
   ChevronRight,
   Building2,
   Briefcase,
@@ -36,9 +20,6 @@ import {
   PieChart,
   GitBranch,
   MessageSquare,
-  Phone,
-  Mail,
-  MapPin,
   Brain,
   Link2,
   Eye,
@@ -49,36 +30,27 @@ import {
   AlertTriangle,
   GitMerge,
   Target as TargetIcon,
-  TrendingUp as TrendingUpIcon,
+  // TrendingUp as TrendingUpIcon,
   Plus,
   Minus,
   Heart,
-  Video,
   ShoppingCart,
-  CreditCard,
-  GraduationCap,
-  Factory,
-  Car,
-  Plane,
   ShieldCheck,
   Server,
-  Smartphone as SmartphoneIcon,
-  Tablet,
-  Watch,
-  Headphones,
-  Camera,
+  // Smartphone as SmartphoneIcon,
+  
 } from "lucide-react";
 import styles from "./product-dev.module.css";
 
 export default function ProductDevelopment() {
-  const [hoveredCard, setHoveredCard] = useState<number | null>(null);
+  // const [hoveredCard, setHoveredCard] = useState<number | null>(null);
   const [openFaqIndex, setOpenFaqIndex] = useState<number | null>(0);
   const [openIndustryIndex, setOpenIndustryIndex] = useState<number | null>(0);
 
   const statsRef = useRef(null);
   const processRef = useRef(null);
   const isStatsInView = useInView(statsRef, { once: true, amount: 0.3 });
-  const isProcessInView = useInView(processRef, { once: true, amount: 0.3 });
+  // const isProcessInView = useInView(processRef, { once: true, amount: 0.3 });
 
   const { scrollYProgress } = useScroll();
   const heroOpacity = useTransform(scrollYProgress, [0, 0.2], [1, 0]);
@@ -540,24 +512,24 @@ export default function ProductDevelopment() {
   ];
 
   // Testimonials for right side
-  const testimonials = [
-    {
-      name: "Sarah Johnson",
-      role: "CTO, TechScale Inc.",
-      content:
-        "ValueCoders transformed our legacy system into a modern cloud platform with zero downtime. Their expertise and dedication were exceptional.",
-      rating: 5,
-      company: "Fortune 500 Company",
-    },
-    {
-      name: "Michael Chen",
-      role: "Product Director, Finova",
-      content:
-        "The team delivered our fintech platform ahead of schedule. Their technical knowledge and communication were outstanding throughout.",
-      rating: 5,
-      company: "FinTech Startup",
-    },
-  ];
+  // const testimonials = [
+  //   {
+  //     name: "Sarah Johnson",
+  //     role: "CTO, TechScale Inc.",
+  //     content:
+  //       "ValueCoders transformed our legacy system into a modern cloud platform with zero downtime. Their expertise and dedication were exceptional.",
+  //     rating: 5,
+  //     company: "Fortune 500 Company",
+  //   },
+  //   {
+  //     name: "Michael Chen",
+  //     role: "Product Director, Finova",
+  //     content:
+  //       "The team delivered our fintech platform ahead of schedule. Their technical knowledge and communication were outstanding throughout.",
+  //     rating: 5,
+  //     company: "FinTech Startup",
+  //   },
+  // ];
 
   return (
     <>
@@ -752,8 +724,8 @@ export default function ProductDevelopment() {
                 transition={{ duration: 0.6, delay: index * 0.2 }}
                 viewport={{ once: true }}
                 whileHover={{ y: -10, transition: { duration: 0.3 } }}
-                onMouseEnter={() => setHoveredCard(index)}
-                onMouseLeave={() => setHoveredCard(null)}
+                // onMouseEnter={() => setHoveredCard(index)}
+                // onMouseLeave={() => setHoveredCard(null)}
               >
                 <div className={styles.cardHeader}>
                   <div
@@ -1422,18 +1394,18 @@ const Package = ({ className }: { className?: string }) => (
   </svg>
 );
 
-const Award = ({ className }: { className?: string }) => (
-  <svg
-    className={className}
-    fill="none"
-    viewBox="0 0 24 24"
-    stroke="currentColor"
-  >
-    <path
-      strokeLinecap="round"
-      strokeLinejoin="round"
-      strokeWidth={2}
-      d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"
-    />
-  </svg>
-);
+// const Award = ({ className }: { className?: string }) => (
+//   <svg
+//     className={className}
+//     fill="none"
+//     viewBox="0 0 24 24"
+//     stroke="currentColor"
+//   >
+//     <path
+//       strokeLinecap="round"
+//       strokeLinejoin="round"
+//       strokeWidth={2}
+//       d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"
+//     />
+//   </svg>
+// );

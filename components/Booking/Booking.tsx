@@ -1,12 +1,12 @@
 'use client';
-import React, { useRef, useState } from 'react';
+import React, { useState, useRef, FormEvent, ChangeEvent, DragEvent } from 'react';
 import styles from './booking.module.css';
 
 const Booking = () => {
-  const fileInputRef = useRef(null);
+  const fileInputRef = useRef<HTMLInputElement>(null);
   const [isDragging, setIsDragging] = useState(false);
 
-  const handleFileDrop = (e) => {
+  const handleFileDrop = (e: DragEvent<HTMLDivElement>) => {
     e.preventDefault();
     setIsDragging(false);
     const files = e.dataTransfer.files;
@@ -16,20 +16,20 @@ const Booking = () => {
     }
   };
 
-  const handleFileInput = (e) => {
+  const handleFileInput = (e: ChangeEvent<HTMLInputElement>) => {
     const files = e.target.files;
-    if (files.length > 0) {
+    if (files && files.length > 0) {
       // Handle file upload logic here
       console.log('Files selected:', files);
     }
   };
 
-  const handleDragOver = (e) => {
+  const handleDragOver = (e: DragEvent<HTMLDivElement>) => {
     e.preventDefault();
     setIsDragging(true);
   };
 
-  const handleDragLeave = (e) => {
+  const handleDragLeave = (e: DragEvent<HTMLDivElement>) => {
     e.preventDefault();
     setIsDragging(false);
   };
@@ -38,7 +38,7 @@ const Booking = () => {
     fileInputRef.current?.click();
   };
 
-  const handleSubmit = (e) => {
+  const handleSubmit = (e: FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     // Handle form submission logic here
     console.log('Form submitted');
@@ -176,7 +176,7 @@ const Booking = () => {
                   <textarea
                     id="message"
                     className={styles.formTextarea}
-                    rows="3"
+                    rows={3}
                     placeholder="Project Brief..."
                   ></textarea>
                 </div>

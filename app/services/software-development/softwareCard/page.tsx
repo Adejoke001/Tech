@@ -1,3 +1,4 @@
+'use client';
 import React, { useEffect, useRef, useState } from 'react';
 import styles from './softwarecard.module.css';
 import { 
@@ -12,8 +13,6 @@ import {
   Settings, 
   Wrench 
 } from 'lucide-react';
-import Booking from '@/components/Booking/Booking';
-import Footer from '@/components/Footer/Footer';
 import Image from 'next/image';
 
 const SoftwareDevelopmentServices = () => {
@@ -119,26 +118,27 @@ const SoftwareDevelopmentServices = () => {
     { value: 2500, suffix: "+", label: "Satisfied", description: "Customers" }
   ];
 
-  useEffect(() => {
-    const observer = new IntersectionObserver(
-      ([entry]) => {
-        if (entry.isIntersecting) {
-          setIsVisible(true);
-        }
-      },
-      { threshold: 0.3 }
-    );
+ useEffect(() => {
+  const currentRef = statsRef.current; // Copy ref to local variable
+  
+  if (!currentRef) return;
 
-    if (statsRef.current) {
-      observer.observe(statsRef.current);
-    }
-
-    return () => {
-      if (statsRef.current) {
-        observer.unobserve(statsRef.current);
+  const observer = new IntersectionObserver(
+    ([entry]) => {
+      if (entry.isIntersecting) {
+        setIsVisible(true);
       }
-    };
-  }, []);
+    },
+    { threshold: 0.3 }
+  );
+
+  observer.observe(currentRef);
+
+  return () => {
+    observer.unobserve(currentRef);
+  };
+}, []);
+  
 
   return (
     <>
@@ -262,8 +262,7 @@ const SoftwareDevelopmentServices = () => {
         </div>
       </div>
     </section>
-    <Booking />
-    <Footer/>
+    
 
     </>
   );
