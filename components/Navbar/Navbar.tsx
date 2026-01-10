@@ -267,7 +267,7 @@ export default function Navbar() {
             }`}
             onClick={closeAll}
           >
-            ValueCoders
+            BBNTech
           </Link>
 
           {/* Desktop Menu - Exact ValueCoders Structure */}
