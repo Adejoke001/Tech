@@ -48,7 +48,7 @@ export default function SoftwareDev() {
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.4, duration: 0.8 }}
             >
-              <span className={styles.highlight}>ValueCoders</span> delivers end-to-end software development solutions that transform your business vision into reality. Our expert team builds scalable, secure applications using cutting-edge technologies to drive growth and innovation for startups and enterprises alike.
+              <span className={styles.highlight}>BBNTech</span> delivers end-to-end software development solutions that transform your business vision into reality. Our expert team builds scalable, secure applications using cutting-edge technologies to drive growth and innovation for startups and enterprises alike.
             </motion.p>
 
             {/* CTA Button */}
