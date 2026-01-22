@@ -20,6 +20,10 @@ const nextConfig = {
       // Add more domains as needed
     ],
   },
+
+   experimental: {
+    turbo: false
+  },
 };
 
 export default nextConfig;

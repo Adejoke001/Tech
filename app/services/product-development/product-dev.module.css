@@ -1,5 +1,3 @@
-/* productdev.module.css */
-
 /* Hero Section with Background Image */
 .heroSection {
   position: relative;
@@ -126,12 +124,9 @@
   flex-wrap: wrap;
 }
 
-.linkWrapper link{
+.linkWrapper {
   text-decoration: none;
   color: inherit;
-  justify-self: center;
-  align-items: center;
-  text-align: center;
 }
 
 /* Primary Button - Centered */
@@ -146,16 +141,14 @@
   cursor: pointer;
   display: flex;
   align-items: center;
-  justify-self: center;
+  justify-content: center;
   gap: 0.5rem;
   transition: all 0.3s ease;
   box-shadow: 0 4px 15px rgba(16, 185, 129, 0.3);
-  text-align: center;
 }
 
 .primaryButton:hover {
   box-shadow: 0 6px 20px rgba(16, 185, 129, 0.4);
-  background: #e6a90e;
   transform: translateY(-2px);
 }
 
@@ -172,8 +165,7 @@
   transition: all 0.3s ease;
   display: flex;
   align-items: center;
-  justify-self: center;
-  text-align: center;
+  justify-content: center;
 }
 
 .secondaryButton:hover {
@@ -349,7 +341,6 @@
   color: white;
   font-size: 0.7rem;
   font-weight: 500;
-  text-align: center;
 }
 
 /* Section Common Styles */
@@ -497,7 +488,6 @@
   gap: 0.5rem;
   width: 100%;
   transition: all 0.3s ease;
-  text-align: center;
 }
 
 .cardButton:hover {
@@ -608,7 +598,6 @@
   gap: 0.5rem;
   margin: 0 auto;
   transition: all 0.3s ease;
-  text-align: center;
 }
 
 .statsCtaButton:hover {
@@ -699,87 +688,107 @@
 /* Process CTA - Centered */
 .processCta {
   display: flex;
-  gap: 1rem;
-  justify-self: center;
-  flex-wrap: wrap;
-  align-self: center;
-  align-items: center;
+  justify-content: center;
+  margin-top: 3rem;
+  width: 100%;
 }
-
-/* Solutions Section - Centered buttons */
-.solutionsSection {
+/* Engineering Solutions Section - SIMPLIFIED WITH JS CHECKERBOARD */
+.engineeringSection {
   padding: 3rem 0;
-  background: white;
+  background: #fff5e6;
+  position: relative;
+  overflow: hidden;
 }
 
-.solutionsGrid {
+.engineeringGrid {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 1.5rem;
+  gap: 1px;
   margin-bottom: 3rem;
 }
 
-@media (min-width: 768px) {
-  .solutionsGrid {
-    grid-template-columns: repeat(3, 1fr);
-  }
-}
 
-@media (min-width: 1024px) {
-  .solutionsGrid {
-    grid-template-columns: repeat(5, 1fr);
-  }
-}
-
-.solutionCard {
-  background: white;
-  border-radius: 1rem;
-  padding: 1.5rem;
-  border: 1px solid #e5e7eb;
-  text-align: center;
-  transition: all 0.3s ease;
-  cursor: pointer;
+/* ENGINEERING  CARD STYLES */
+.engineeringCard {
+  padding: 1.5rem 1rem;
   position: relative;
-  height: 100%;
+  transition: all 0.4s ease;
+  min-height: 200px;
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
+  text-align: center;
+  cursor: pointer;
 }
 
-.solutionIconWrapper {
-  width: 3rem;
-  height: 3rem;
-  margin: 0 auto 1rem;
+/* Top border animation */
+.engineeringCard::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 3px;
+  background: linear-gradient(90deg, #10b981, #34d399);
+  transform: scaleX(0);
+  transition: transform 0.4s ease;
+}
+
+.engineeringCard:hover::before {
+  transform: scaleX(1);
+}
+
+.engineeringCard:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.1);
+}
+
+/* Icon container */
+.engineeringIconWrapper {
+  width: 60px;
+  height: 60px;
+  margin: 0 auto 0.75rem;
+  background: linear-gradient(135deg, #10b981, #34d399);
+  border-radius: 50%;
   display: flex;
   align-items: center;
   justify-content: center;
-  background: rgba(16, 185, 129, 0.1);
-  border-radius: 0.75rem;
+  transition: all 0.4s ease;
+}
+
+.engineeringCard:hover .engineeringIconWrapper {
+  transform: scale(1.1) rotate(5deg);
 }
 
 .solutionIcon {
   width: 1.5rem;
   height: 1.5rem;
+  color: white;
 }
 
-.solutionName {
-  font-size: 1rem;
-  font-weight: 600;
+/* Title */
+.engineeringName {
+  font-size: 1.25rem;
+  font-weight: bold;
   color: #1f2937;
   margin-bottom: 0.5rem;
-  text-align: center;
+  transition: color 0.3s ease;
 }
 
-.solutionDescription {
-  font-size: 0.75rem;
+.engineeringCard:hover .engineeringName {
+  color: #10b981;
+}
+
+/* Description */
+.engineeringDescription {
   color: #6b7280;
-  line-height: 1.4;
+  line-height: 1.5;
+  font-size: 0.9rem;
   margin-bottom: 1rem;
-  flex-grow: 1;
-  text-align: center;
 }
 
-.solutionArrow {
+/* Arrow button */
+.engineeringArrow {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -791,7 +800,7 @@
   transition: all 0.3s ease;
 }
 
-.solutionCard:hover .solutionArrow {
+.engineeringCard:hover .engineeringArrow {
   background: #10b981;
   transform: translateX(4px);
 }
@@ -803,13 +812,79 @@
   transition: all 0.3s ease;
 }
 
-.solutionCard:hover .arrowIcon {
+.engineeringCard:hover .arrowIcon {
   color: white;
 }
 
-/* Solutions CTA - Centered */
-.solutionsCta {
+/* CTA Button */
+.engineeringCta {
   text-align: center;
+  margin-top: 2rem;
+}
+
+/* Primary Button Styling */
+.primaryButton {
+  background: linear-gradient(135deg, #10b981 0%, #3b82f6 100%);
+  color: white;
+  border: none;
+  padding: 1rem 2rem;
+  font-size: 1rem;
+  font-weight: 600;
+  border-radius: 8px;
+  cursor: pointer;
+  display: inline-flex;
+  align-self: center;
+  justify-self: center;
+  gap: 0.5rem;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 15px rgba(16, 185, 129, 0.3);
+}
+
+.primaryButton:hover {
+  box-shadow: 0 6px 20px rgba(16, 185, 129, 0.4);
+  transform: translateY(-2px);
+}
+
+.buttonIcon {
+  width: 1.25rem;
+  height: 1.25rem;
+}
+
+/* Responsive adjustments */
+@media (max-width: 480px) {
+  .engineeringSection {
+    padding: 1.5rem 0;
+  }
+  
+  .engineeringCard {
+    padding: 1.25rem 0.75rem;
+    min-height: 180px;
+  }
+  
+  .engineeringIconWrapper {
+    width: 50px;
+    height: 50px;
+  }
+  
+  .solutionIcon {
+    width: 1.25rem;
+    height: 1.25rem;
+  }
+  
+  .engineeringName {
+    font-size: 1.125rem;
+  }
+  
+  .engineeringDescription {
+    font-size: 0.8rem;
+  }
+}
+
+/* Link wrapper */
+.linkWrapper {
+  text-decoration: none;
+  color: inherit;
+  display: block;
 }
 
 /* Tech Section - Centered buttons */
@@ -848,8 +923,6 @@
   height: 100%;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  text-align: center;
 }
 
 .techIconWrapper {
@@ -873,7 +946,6 @@
   font-weight: 700;
   color: #1f2937;
   margin-bottom: 1rem;
-  text-align: center;
 }
 
 .techDescription {
@@ -881,13 +953,11 @@
   line-height: 1.6;
   margin-bottom: 1.5rem;
   flex-grow: 1;
-  text-align: center;
 }
 
 .applicationsList {
   margin-bottom: 1.5rem;
   width: 100%;
-  text-align: left;
 }
 
 .applicationItem {
@@ -911,13 +981,11 @@
   color: #9ca3af;
   font-weight: 500;
   margin-top: 0.5rem;
-  text-align: center;
 }
 
 .techLink {
   display: flex;
   align-items: center;
-  justify-content: center;
   gap: 0.5rem;
   color: #10b981;
   font-weight: 600;
@@ -925,7 +993,6 @@
   font-size: 0.95rem;
   transition: gap 0.3s ease;
   margin-top: auto;
-  text-align: center;
 }
 
 .techLink:hover {
@@ -947,6 +1014,7 @@
   display: grid;
   grid-template-columns: 1fr;
   gap: 2rem;
+  align-items: start;
 }
 
 @media (min-width: 768px) {
@@ -968,18 +1036,12 @@
   border: 1px solid #e5e7eb;
   transition: all 0.3s ease;
   box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
 }
 
 .industryLink {
   text-decoration: none;
   color: inherit;
   display: block;
-  width: 100%;
-  text-align: center;
 }
 
 .industryIcon {
@@ -992,14 +1054,12 @@
   font-weight: 700;
   color: #1f2937;
   margin-bottom: 1rem;
-  text-align: center;
 }
 
 .industryDescription {
   color: #6b7280;
   line-height: 1.6;
   margin-bottom: 1.5rem;
-  text-align: center;
 }
 
 /* Expand Button - Centered */
@@ -1014,9 +1074,8 @@
   transition: all 0.3s ease;
   display: flex;
   align-items: center;
-  justify-self: center;
+  justify-content: center;
   gap: 0.5rem;
-  text-align: center;
 }
 
 .expandButton:hover {
@@ -1033,15 +1092,12 @@
   margin-top: 1.5rem;
   border-top: 1px solid #e5e7eb;
   padding-top: 1.5rem;
-  width: 100%;
-  text-align: center;
 }
 
 .detailsList {
   list-style: none;
   padding: 0;
   margin-bottom: 1.5rem;
-  text-align: left;
 }
 
 .detailItem {
@@ -1077,7 +1133,6 @@
   gap: 0.5rem;
   width: 100%;
   transition: all 0.3s ease;
-  text-align: center;
 }
 
 .industryCtaButton:hover {
@@ -1132,7 +1187,6 @@
   color: #1f2937;
   margin: 0;
   flex: 1;
-  text-align: left;
 }
 
 .faqToggle {
@@ -1164,7 +1218,6 @@
 
 .faqAnswerWrapper {
   padding: 0 1.5rem 1.5rem 1.5rem;
-  text-align: left;
 }
 
 .faqAnswer {
@@ -1188,7 +1241,6 @@
   justify-content: center;
   gap: 0.5rem;
   transition: all 0.3s ease;
-  text-align: center;
 }
 
 .faqCtaButton:hover {
@@ -1205,7 +1257,6 @@
   color: #6b7280;
   margin-bottom: 2rem;
   line-height: 1.6;
-  text-align: center;
 }
 
 /* FAQ Buttons - Centered */
@@ -1220,21 +1271,11 @@
 @media (max-width: 768px) {
   .heroTitle {
     font-size: 2.5rem;
-    text-align: center;
   }
   
   .heroSubtitle {
     font-size: 1.125rem;
-    text-align: center;
     max-width: 100%;
-  }
-  
-  .heroStats {
-    justify-content: center;
-  }
-  
-  .statMini {
-    align-items: center;
   }
   
   .sectionTitle {
@@ -1272,33 +1313,33 @@
     max-width: 280px;
   }
 
-   .solutionsGrid {
-    grid-template-columns: repeat(2, 1fr); /* 2 columns even on mobile */
-    gap: 1rem;
+  .engineeringGrid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1px;
   }
   
-  .solutionCard {
+  .engineeringCard {
     padding: 1.25rem;
+    min-height: 160px;
   }
   
-  .solutionIconWrapper {
-    width: 3rem;
-    height: 3rem;
+  .engineeringIconWrapper {
+    width: 2.5rem;
+    height: 2.5rem;
   }
   
   .solutionIcon {
-    width: 1.5rem;
-    height: 1.5rem;
+    width: 1.25rem;
+    height: 1.25rem;
   }
   
-  .solutionName {
-    font-size: 1rem;
+  .engineeringName {
+    font-size: 0.9rem;
   }
   
-  .solutionDescription {
-    font-size: 0.8rem;
+  .engineeringDescription {
+    font-size: 0.7rem;
   }
-
 }
 
 @media (max-width: 480px) {
@@ -1328,13 +1369,13 @@
     grid-template-columns: 1fr;
   }
   
-  .solutionsGrid {
+  .engineeringGrid {
     grid-template-columns: 1fr;
-    gap: 1rem;
   }
   
-  .solutionCard {
+  .engineeringCard {
     padding: 1rem;
+    min-height: 140px;
   }
   
   .techGrid {

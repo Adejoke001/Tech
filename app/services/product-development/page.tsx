@@ -38,19 +38,16 @@ import {
   ShieldCheck,
   Server,
   // Smartphone as SmartphoneIcon,
-  
 } from "lucide-react";
 import styles from "./product-dev.module.css";
 
 export default function ProductDevelopment() {
-  // const [hoveredCard, setHoveredCard] = useState<number | null>(null);
   const [openFaqIndex, setOpenFaqIndex] = useState<number | null>(0);
-  const [openIndustryIndex, setOpenIndustryIndex] = useState<number | null>(0);
+  const [openIndustryIndex, setOpenIndustryIndex] = useState<number | null>(null);
 
   const statsRef = useRef(null);
   const processRef = useRef(null);
   const isStatsInView = useInView(statsRef, { once: true, amount: 0.3 });
-  // const isProcessInView = useInView(processRef, { once: true, amount: 0.3 });
 
   const { scrollYProgress } = useScroll();
   const heroOpacity = useTransform(scrollYProgress, [0, 0.2], [1, 0]);
@@ -229,73 +226,106 @@ export default function ProductDevelopment() {
       name: "CRM Systems",
       description: "Custom Customer Relationship Management solutions",
       icon: <Users className={styles.solutionIcon} />,
-      color: "#10b981",
+      color: "#1f2937",
       link: "/solutions/crm",
     },
     {
       name: "Workforce Management",
       description: "Employee scheduling and productivity tools",
       icon: <Briefcase className={styles.solutionIcon} />,
-      color: "#3b82f6",
+      color: "#1f2937",
       link: "/solutions/workforce",
     },
     {
       name: "HR Management",
       description: "Human Resource and talent management systems",
       icon: <UsersIcon className={styles.solutionIcon} />,
-      color: "#8b5cf6",
+      color: "#1f2937",
       link: "/solutions/hr",
     },
     {
       name: "Supply Chain",
       description: "End-to-end supply chain management solutions",
       icon: <GitBranch className={styles.solutionIcon} />,
-      color: "#f59e0b",
+      color: "#1f2937",
       link: "/solutions/supply-chain",
     },
     {
       name: "Fleet Management",
       description: "Vehicle tracking and logistics management",
       icon: <Truck className={styles.solutionIcon} />,
-      color: "#ef4444",
+      color: "#1f2937",
       link: "/solutions/fleet",
     },
     {
       name: "Operations",
       description: "Business operations optimization software",
       icon: <Settings className={styles.solutionIcon} />,
-      color: "#06b6d4",
+      color: "#1f2937",
       link: "/solutions/operations",
     },
     {
       name: "Asset Management",
       description: "Enterprise asset tracking and maintenance",
       icon: <Package className={styles.solutionIcon} />,
-      color: "#8b5cf6",
+      color: "#1f2937",
       link: "/solutions/assets",
     },
     {
       name: "Content Management",
       description: "Custom CMS for content publishing",
       icon: <FileText className={styles.solutionIcon} />,
-      color: "#10b981",
+      color: "#1f2937",
       link: "/solutions/cms",
     },
     {
       name: "Healthcare Systems",
       description: "Medical records and patient management",
       icon: <Heart className={styles.solutionIcon} />,
-      color: "#ef4444",
+      color: "#1f2937",
       link: "/solutions/healthcare",
     },
     {
       name: "E-commerce Platforms",
       description: "Custom online store solutions",
       icon: <ShoppingCart className={styles.solutionIcon} />,
-      color: "#f59e0b",
+      color: "#1f2937",
       link: "/solutions/ecommerce",
     },
   ];
+
+  // Add these with your other hooks
+  const gridRef = useRef<HTMLDivElement>(null);
+  const [columnCount, setColumnCount] = useState(5); // default desktop
+
+  useEffect(() => {
+    const updateColumnCount = () => {
+      const width = window.innerWidth;
+
+      if (width < 640) {
+        // Small mobile
+        setColumnCount(2);
+      } else if (width < 768) {
+        // Mobile
+        setColumnCount(2);
+      } else if (width < 1024) {
+        // Tablet
+        setColumnCount(3);
+      } else {
+        // Desktop
+        setColumnCount(5);
+      }
+    };
+
+    // Initial call
+    updateColumnCount();
+
+    // Add resize listener
+    window.addEventListener("resize", updateColumnCount);
+
+    // Cleanup
+    return () => window.removeEventListener("resize", updateColumnCount);
+  }, []);
 
   // Tech Trends - Updated with 6 items
   const techTrends = [
@@ -511,29 +541,8 @@ export default function ProductDevelopment() {
     },
   ];
 
-  // Testimonials for right side
-  // const testimonials = [
-  //   {
-  //     name: "Sarah Johnson",
-  //     role: "CTO, TechScale Inc.",
-  //     content:
-  //       "BBNTech transformed our legacy system into a modern cloud platform with zero downtime. Their expertise and dedication were exceptional.",
-  //     rating: 5,
-  //     company: "Fortune 500 Company",
-  //   },
-  //   {
-  //     name: "Michael Chen",
-  //     role: "Product Director, Finova",
-  //     content:
-  //       "The team delivered our fintech platform ahead of schedule. Their technical knowledge and communication were outstanding throughout.",
-  //     rating: 5,
-  //     company: "FinTech Startup",
-  //   },
-  // ];
-
   return (
     <>
-      
       {/* Hero Section with Background Image */}
       <motion.section
         className={styles.heroSection}
@@ -724,8 +733,6 @@ export default function ProductDevelopment() {
                 transition={{ duration: 0.6, delay: index * 0.2 }}
                 viewport={{ once: true }}
                 whileHover={{ y: -10, transition: { duration: 0.3 } }}
-                // onMouseEnter={() => setHoveredCard(index)}
-                // onMouseLeave={() => setHoveredCard(null)}
               >
                 <div className={styles.cardHeader}>
                   <div
@@ -948,34 +955,23 @@ export default function ProductDevelopment() {
               </motion.div>
             ))}
           </div>
-          <Link href="/contact" className={styles.linkWrapper}>
-            <motion.button
-              className={styles.primaryButton}
-              whileHover={{ scale: 1.05 }}
-              whileTap={{ scale: 0.95 }}
-            >
-              Start Your Project
-              <ArrowRight className={styles.buttonIcon} />
-            </motion.button>
-          </Link>
-
-          {/* <div className={styles.processCta}>
-            <Link href="/process" className={styles.linkWrapper}>
+          <div className={styles.processCta}>
+            <Link href="/contact" className={styles.linkWrapper}>
               <motion.button
-                className={styles.secondaryButton}
+                className={styles.primaryButton}
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
               >
-                Explore Our Full Process
+                Start Your Project
+                <ArrowRight className={styles.buttonIcon} />
               </motion.button>
             </Link>
-           
-          </div> */}
+          </div>
         </div>
       </section>
 
-      {/* Engineering Solutions */}
-      <section className={styles.solutionsSection}>
+      {/* Engineering Solutions with Perfect Checkerboard */}
+      <section className={styles.engineeringSection}>
         <div className={styles.container}>
           <motion.div
             className={styles.sectionHeader}
@@ -995,43 +991,54 @@ export default function ProductDevelopment() {
             </p>
           </motion.div>
 
-          <div className={styles.solutionsGrid}>
-            {engineeringSolutions.map((solution, index) => (
-              <Link
-                key={solution.name}
-                href={solution.link}
-                className={styles.linkWrapper}
-              >
-                <motion.div
-                  className={styles.solutionCard}
-                  initial={{ opacity: 0, scale: 0.8 }}
-                  whileInView={{ opacity: 1, scale: 1 }}
-                  transition={{ duration: 0.4, delay: index * 0.05 }}
-                  viewport={{ once: true }}
-                  whileHover={{
-                    scale: 1.05,
-                    boxShadow: `0 20px 40px ${solution.color}20`,
-                  }}
+          <div
+            className={styles.engineeringGrid}
+            ref={gridRef}
+            style={{
+              gridTemplateColumns: `repeat(${columnCount}, 1fr)`,
+            }}
+          >
+            {engineeringSolutions.map((solution, index) => {
+              // Calculate checkerboard pattern
+              const column = index % columnCount;
+              const row = Math.floor(index / columnCount);
+
+              // Perfect checkerboard formula: (row + column) % 2
+              const isLight = (row + column) % 2 === 0;
+              const backgroundColor = isLight ? "#fff5e6" : "#ffdc94";
+
+              return (
+                <Link
+                  key={solution.name}
+                  href={solution.link}
+                  className={styles.linkWrapper}
                 >
-                  <div
-                    className={styles.solutionIconWrapper}
-                    style={{ color: solution.color }}
+                  <motion.div
+                    className={styles.engineeringCard}
+                    style={{ backgroundColor }}
+                    initial={{ opacity: 0, scale: 0.8 }}
+                    whileInView={{ opacity: 1, scale: 1 }}
+                    transition={{ duration: 0.4, delay: index * 0.05 }}
+                    viewport={{ once: true }}
+                    whileHover={{ transform: "translateY(-3px)" }}
                   >
-                    {solution.icon}
-                  </div>
-                  <h3 className={styles.solutionName}>{solution.name}</h3>
-                  <p className={styles.solutionDescription}>
-                    {solution.description}
-                  </p>
-                  <div className={styles.solutionArrow}>
-                    <ArrowRight className={styles.arrowIcon} />
-                  </div>
-                </motion.div>
-              </Link>
-            ))}
+                    <div className={styles.engineeringIconWrapper}>
+                      {solution.icon}
+                    </div>
+                    <h3 className={styles.engineeringName}>{solution.name}</h3>
+                    <p className={styles.engineeringDescription}>
+                      {solution.description}
+                    </p>
+                    <div className={styles.engineeringArrow}>
+                      <ArrowRight className={styles.arrowIcon} />
+                    </div>
+                  </motion.div>
+                </Link>
+              );
+            })}
           </div>
 
-          <div className={styles.solutionsCta}>
+          <div className={styles.engineeringCta}>
             <Link href="/solutions" className={styles.linkWrapper}>
               <motion.button
                 className={styles.primaryButton}
@@ -1046,6 +1053,7 @@ export default function ProductDevelopment() {
         </div>
       </section>
 
+      
       {/* Tech Trends - Now 6 items */}
       <section className={styles.techSection}>
         <div className={styles.container}>
@@ -1105,11 +1113,6 @@ export default function ProductDevelopment() {
                         {app}
                       </div>
                     ))}
-                    {/* {trend.applications.length > 3 && (
-                      <div className={styles.moreItems}>
-                        +{trend.applications.length - 3} more
-                      </div>
-                    )} */}
                   </div>
 
                   <motion.div
@@ -1393,19 +1396,3 @@ const Package = ({ className }: { className?: string }) => (
     />
   </svg>
 );
-
-// const Award = ({ className }: { className?: string }) => (
-//   <svg
-//     className={className}
-//     fill="none"
-//     viewBox="0 0 24 24"
-//     stroke="currentColor"
-//   >
-//     <path
-//       strokeLinecap="round"
-//       strokeLinejoin="round"
-//       strokeWidth={2}
-//       d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"
-//     />
-//   </svg>
-// );
