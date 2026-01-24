@@ -51,6 +51,13 @@ const TestimonialsIcon = () => <span className={styles.dropdownIcon}>💬</span>
 export default function Navbar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isNavbarHovered, setIsNavbarHovered] = useState(false);
+  const [expandedMobileMenu, setExpandedMobileMenu] = useState<string | null>(
+    null
+  );
+
+  const toggleMobileMenu = (menuName: string) => {
+    setExpandedMobileMenu(expandedMobileMenu === menuName ? null : menuName);
+  };
 
   // Updated dropdown data with icons
   const dropdowns = {
@@ -84,8 +91,8 @@ export default function Navbar() {
           icon: <MaintenanceIcon />,
         },
         {
-          name: "AI & Machine Learning",
-          href: "/services/ai-machine-learning",
+          name: "Machine Learning",
+          href: "/services/machine-learning",
           icon: <AIIcon />,
         },
         {
@@ -246,13 +253,13 @@ export default function Navbar() {
 
   const closeAll = () => {
     setIsMenuOpen(false);
+    setExpandedMobileMenu(null);
   };
 
   return (
     <nav
-      className={`${styles.navbar} ${
-        isNavbarHovered ? styles.navbarHovered : ""
-      }`}
+      className={`${styles.navbar} ${isNavbarHovered ? styles.navbarHovered : ""
+        }`}
       onMouseEnter={() => setIsNavbarHovered(true)}
       onMouseLeave={() => setIsNavbarHovered(false)}
     >
@@ -262,9 +269,8 @@ export default function Navbar() {
           {/* Logo */}
           <Link
             href="/"
-            className={`${styles.logo} ${
-              isNavbarHovered ? styles.logoHovered : ""
-            }`}
+            className={`${styles.logo} ${isNavbarHovered ? styles.logoHovered : ""
+              }`}
             onClick={closeAll}
           >
             BBNTech
@@ -275,9 +281,8 @@ export default function Navbar() {
             {/* Services Dropdown */}
             <div className={styles.dropdownContainer}>
               <button
-                className={`${styles.dropdownButton} ${
-                  isNavbarHovered ? styles.dropdownButtonHovered : ""
-                }`}
+                className={`${styles.dropdownButton} ${isNavbarHovered ? styles.dropdownButtonHovered : ""
+                  }`}
               >
                 Services
               </button>
@@ -302,9 +307,8 @@ export default function Navbar() {
             {/* Hire Developers Dropdown */}
             <div className={styles.dropdownContainer}>
               <button
-                className={`${styles.dropdownButton} ${
-                  isNavbarHovered ? styles.dropdownButtonHovered : ""
-                }`}
+                className={`${styles.dropdownButton} ${isNavbarHovered ? styles.dropdownButtonHovered : ""
+                  }`}
               >
                 Hire Developers
               </button>
@@ -329,9 +333,8 @@ export default function Navbar() {
             {/* Solutions Dropdown */}
             <div className={styles.dropdownContainer}>
               <button
-                className={`${styles.dropdownButton} ${
-                  isNavbarHovered ? styles.dropdownButtonHovered : ""
-                }`}
+                className={`${styles.dropdownButton} ${isNavbarHovered ? styles.dropdownButtonHovered : ""
+                  }`}
               >
                 Solutions
               </button>
@@ -356,9 +359,8 @@ export default function Navbar() {
             {/* Industries Dropdown */}
             <div className={styles.dropdownContainer}>
               <button
-                className={`${styles.dropdownButton} ${
-                  isNavbarHovered ? styles.dropdownButtonHovered : ""
-                }`}
+                className={`${styles.dropdownButton} ${isNavbarHovered ? styles.dropdownButtonHovered : ""
+                  }`}
               >
                 Industries
               </button>
@@ -383,9 +385,8 @@ export default function Navbar() {
             {/* Company Dropdown */}
             <div className={styles.dropdownContainer}>
               <button
-                className={`${styles.dropdownButton} ${
-                  isNavbarHovered ? styles.dropdownButtonHovered : ""
-                }`}
+                className={`${styles.dropdownButton} ${isNavbarHovered ? styles.dropdownButtonHovered : ""
+                  }`}
               >
                 Company
               </button>
@@ -410,9 +411,8 @@ export default function Navbar() {
             {/* Pricing Link (No dropdown) */}
             <Link
               href="/pricing"
-              className={`${styles.navLink} ${
-                isNavbarHovered ? styles.navLinkHovered : ""
-              }`}
+              className={`${styles.navLink} ${isNavbarHovered ? styles.navLinkHovered : ""
+                }`}
             >
               Pricing
             </Link>
@@ -427,18 +427,16 @@ export default function Navbar() {
 
           <Link
             href="/contact"
-            className={`${styles.contactButton} ${
-              isNavbarHovered ? styles.contactButtonHovered : "rounded-md"
-            }`}
+            className={`${styles.contactButton} ${isNavbarHovered ? styles.contactButtonHovered : "rounded-md"
+              }`}
           >
             CONTACT US
           </Link>
 
           {/* Mobile Menu Button */}
           <button
-            className={`${styles.mobileMenuButton} ${
-              isNavbarHovered ? styles.mobileMenuButtonHovered : ""
-            }`}
+            className={`${styles.mobileMenuButton} ${isNavbarHovered ? styles.mobileMenuButtonHovered : ""
+              }`}
             onClick={() => setIsMenuOpen(!isMenuOpen)}
           >
             {isMenuOpen ? <CloseIcon /> : <MenuIcon />}
@@ -448,45 +446,145 @@ export default function Navbar() {
         {/* Mobile Menu */}
         {isMenuOpen && (
           <div className={styles.mobileMenu}>
-            <Link
-              href="/services/software-development"
-              className={styles.mobileLink}
-              onClick={closeAll}
-            >
-              Services
-            </Link>
+            {/* Services Dropdown */}
+            <div className={styles.mobileDropdownContainer}>
+              <button
+                className={styles.mobileDropdownButton}
+                onClick={() => toggleMobileMenu("services")}
+              >
+                Services
+                <span className={styles.dropdownArrow}>
+                  {expandedMobileMenu === "services" ? "▲" : "▼"}
+                </span>
+              </button>
+              {expandedMobileMenu === "services" && (
+                <div className={styles.mobileDropdownMenu}>
+                  {dropdowns.services.items.map((item) => (
+                    <Link
+                      key={item.name}
+                      href={item.href}
+                      className={styles.mobileDropdownLink}
+                      onClick={closeAll}
+                    >
+                      {item.icon}
+                      {item.name}
+                    </Link>
+                  ))}
+                </div>
+              )}
+            </div>
 
-            <Link
-              href="/hire-developers"
-              className={styles.mobileLink}
-              onClick={closeAll}
-            >
-              Hire Developers
-            </Link>
+            {/* Hire Developers Dropdown */}
+            <div className={styles.mobileDropdownContainer}>
+              <button
+                className={styles.mobileDropdownButton}
+                onClick={() => toggleMobileMenu("hire")}
+              >
+                Hire Developers
+                <span className={styles.dropdownArrow}>
+                  {expandedMobileMenu === "hire" ? "▲" : "▼"}
+                </span>
+              </button>
+              {expandedMobileMenu === "hire" && (
+                <div className={styles.mobileDropdownMenu}>
+                  {dropdowns.hire.items.map((item) => (
+                    <Link
+                      key={item.name}
+                      href={item.href}
+                      className={styles.mobileDropdownLink}
+                      onClick={closeAll}
+                    >
+                      {item.icon}
+                      {item.name}
+                    </Link>
+                  ))}
+                </div>
+              )}
+            </div>
 
-            <Link
-              href="/solutions"
-              className={styles.mobileLink}
-              onClick={closeAll}
-            >
-              Solutions
-            </Link>
+            {/* Solutions Dropdown */}
+            <div className={styles.mobileDropdownContainer}>
+              <button
+                className={styles.mobileDropdownButton}
+                onClick={() => toggleMobileMenu("solutions")}
+              >
+                Solutions
+                <span className={styles.dropdownArrow}>
+                  {expandedMobileMenu === "solutions" ? "▲" : "▼"}
+                </span>
+              </button>
+              {expandedMobileMenu === "solutions" && (
+                <div className={styles.mobileDropdownMenu}>
+                  {dropdowns.solutions.items.map((item) => (
+                    <Link
+                      key={item.name}
+                      href={item.href}
+                      className={styles.mobileDropdownLink}
+                      onClick={closeAll}
+                    >
+                      {item.icon}
+                      {item.name}
+                    </Link>
+                  ))}
+                </div>
+              )}
+            </div>
 
-            <Link
-              href="/industries"
-              className={styles.mobileLink}
-              onClick={closeAll}
-            >
-              Industries
-            </Link>
+            {/* Industries Dropdown */}
+            <div className={styles.mobileDropdownContainer}>
+              <button
+                className={styles.mobileDropdownButton}
+                onClick={() => toggleMobileMenu("industries")}
+              >
+                Industries
+                <span className={styles.dropdownArrow}>
+                  {expandedMobileMenu === "industries" ? "▲" : "▼"}
+                </span>
+              </button>
+              {expandedMobileMenu === "industries" && (
+                <div className={styles.mobileDropdownMenu}>
+                  {dropdowns.industries.items.map((item) => (
+                    <Link
+                      key={item.name}
+                      href={item.href}
+                      className={styles.mobileDropdownLink}
+                      onClick={closeAll}
+                    >
+                      {item.icon}
+                      {item.name}
+                    </Link>
+                  ))}
+                </div>
+              )}
+            </div>
 
-            <Link
-              href="/company"
-              className={styles.mobileLink}
-              onClick={closeAll}
-            >
-              Company
-            </Link>
+            {/* Company Dropdown */}
+            <div className={styles.mobileDropdownContainer}>
+              <button
+                className={styles.mobileDropdownButton}
+                onClick={() => toggleMobileMenu("company")}
+              >
+                Company
+                <span className={styles.dropdownArrow}>
+                  {expandedMobileMenu === "company" ? "▲" : "▼"}
+                </span>
+              </button>
+              {expandedMobileMenu === "company" && (
+                <div className={styles.mobileDropdownMenu}>
+                  {dropdowns.company.items.map((item) => (
+                    <Link
+                      key={item.name}
+                      href={item.href}
+                      className={styles.mobileDropdownLink}
+                      onClick={closeAll}
+                    >
+                      {item.icon}
+                      {item.name}
+                    </Link>
+                  ))}
+                </div>
+              )}
+            </div>
 
             <Link
               href="/pricing"

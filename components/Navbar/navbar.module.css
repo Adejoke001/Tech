@@ -265,6 +265,101 @@
   margin-top: 1rem;
 }
 
-.mobileContactButton:hover {
+/* Mobile Dropdown Styling */
+.mobileDropdownContainer {
+  border-bottom: 1px solid #f3f4f6;
+}
+
+.mobileDropdownButton {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 1.5rem;
+  background: none;
+  border: none;
+  font-size: 1rem;
+  font-weight: 500;
+  color: #374151;
+  cursor: pointer;
+  text-align: left;
+  transition: all 0.3s ease;
+}
+
+.mobileDropdownButton:hover {
+  background-color: #f9fafb;
+  color: #FFAD00;
+}
+
+.dropdownArrow {
+  font-size: 0.75rem;
+  color: #9ca3af;
+}
+
+.mobileDropdownMenu {
+  background-color: #f9fafb;
+  padding: 0.5rem 0;
+  border-top: 1px solid #e5e7eb;
+}
+
+.mobileDropdownLink {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 0.75rem 1.5rem 0.75rem 2.5rem; /* Indented padding */
+  text-decoration: none;
+  color: #4b5563;
+  font-size: 0.9rem;
+  transition: all 0.2s ease;
+}
+
+.mobileDropdownLink:hover {
+  background-color: #eff6ff;
+  color: #FFAD00;
+  padding-left: 2.75rem; /* Subtle indentation shift */
+}
+
+/* Update general mobile menu styling */
+.mobileMenu {
+  margin-top: 1rem;
+  background: white; /* removed transparency for better readability on dropdowns */
+  border-radius: 0.5rem;
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+  overflow-y: auto;
+  max-height: 80vh; /* Scroll if too long */
+  padding: 0; /* Reset padding to handle borders correctly */
+}
+
+.mobileLink {
+  display: block;
+  padding: 1rem 1.5rem;
+  color: #374151;
+  font-weight: 500;
+  font-size: 1rem;
+  text-decoration: none;
+  border-bottom: 1px solid #f3f4f6;
+  transition: all 0.3s ease;
+}
+
+.mobileLink:hover {
+  background-color: #f9fafb;
+  color: #FFAD00;
+}
+
+.mobileContactButton {
+  width: calc(100% - 3rem);
+  margin: 1.5rem;
   background-color: #FFAD00;
+  color: black;
+  padding: 0.75rem;
+  border-radius: 0.5rem;
+  font-weight: 600;
+  font-size: 1rem;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.mobileContactButton:hover {
+  background-color: #e69c00;
 }
