@@ -57,7 +57,7 @@ export default function MachineLearningPage() {
             title: 'MLOps Consulting',
             description: 'Get expert guidance on implementing MLOps practices to streamline your machine learning lifecycle, from development to deployment and maintenance.',
             icon: <Cpu className={styles.serviceIcon} />,
-            image: 'https://images.unsplash.com/photo-1555949963-aa79dcee981c?auto=format&fit=crop&w=600',
+           image: 'https://plus.unsplash.com/premium_photo-1726079247228-993af4c05db8?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8bWFjaGluZSUyMGxlYXJuaW5nJTIwY29uc3VsdGluZ3xlbnwwfHwwfHx8MA%3D%3D',
             color: '#34d399',
             features: ['CI/CD Pipelines', 'Model Monitoring', 'Automated Deployment']
         },
@@ -75,7 +75,7 @@ export default function MachineLearningPage() {
             title: 'ML Model Engineering',
             description: 'Our ML Model Engineering Services ensure the development and optimization of high-performance machine learning models for your projects.',
             icon: <TrendingUp className={styles.serviceIcon} />,
-            image: 'https://images.unsplash.com/photo-1555949963-aa79dcee981c?auto=format&fit=crop&w=600',
+            image: 'https://plus.unsplash.com/premium_photo-1683120963435-6f9355d4a776?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NXx8YXJ0aWZpY2lhbCUyMGludGVsbGlnZW5jZXxlbnwwfHwwfHx8MA%3D%3D',
             color: '#f59e0b',
             features: ['Model Tuning', 'Performance Optimization', 'Scalable Architecture']
         },
@@ -84,7 +84,7 @@ export default function MachineLearningPage() {
             title: 'Robotic Process Automation',
             description: 'Automate repetitive tasks and improve process efficiency with our Robotic Process Automation services, powered by machine learning technology.',
             icon: <Bot className={styles.serviceIcon} />,
-            image: 'https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=600',
+            image: 'https://images.unsplash.com/photo-1563968743333-044cef800494?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8N3x8cm9ib3RpYyUyMHByb2Nlc3MlMjBhdXRvbWF0aW9ufGVufDB8fDB8fHww',
             color: '#ef4444',
             features: ['Process Automation', 'Intelligent Bots', 'Workflow Optimization']
         },
