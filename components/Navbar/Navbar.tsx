@@ -81,8 +81,8 @@ export default function Navbar() {
           icon: <QAIcon />,
         },
         {
-          name: "Software Consulting Services",
-          href: "/services/software-consulting",
+          name: "QA Strategy Consulting",
+          href: "/services/qa-consulting",
           icon: <ConsultingIcon />,
         },
         {
