@@ -1,0 +1,1188 @@
+/* cloud-devops-new.module.css - Updated Design */
+
+.pageContainer {
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, sans-serif;
+    color: #1F2937;
+    line-height: 1.6;
+}
+
+/* ===== HERO SECTION ===== */
+.hero {
+    position: relative;
+    min-height: 90vh;
+    padding: 6rem 2rem;
+    background: linear-gradient(135deg, #1e293b 0%, #0f172a 100%);
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+}
+
+.heroBackground {
+    position: absolute;
+    inset: 0;
+    background: url('https://images.unsplash.com/photo-1451187580459-43490279c0fa?auto=format&fit=crop&w=2000') center/cover;
+    opacity: 0.1;
+}
+
+.heroContent {
+    position: relative;
+    z-index: 2;
+    max-width: 1400px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 4rem;
+    align-items: center;
+    width: 100%;
+}
+
+@media (min-width: 992px) {
+    .heroContent {
+        grid-template-columns: 1fr 400px;
+        gap: 4rem;
+    }
+}
+
+.heroText {
+    color: white;
+    max-width: 800px;
+}
+
+.heroBadge {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    background: rgba(96, 165, 250, 0.2);
+    color: #93c5fd;
+    padding: 0.5rem 1rem;
+    border-radius: 2rem;
+    font-size: 0.875rem;
+    font-weight: 600;
+    margin-bottom: 1.5rem;
+    border: 1px solid rgba(96, 165, 250, 0.3);
+    margin-top: 2rem;
+}
+
+.heroTitle {
+    font-size: 3.5rem;
+    font-weight: 800;
+    line-height: 1.2;
+    margin-bottom: 1rem;
+    color: white;
+}
+
+.heroTitleHighlight {
+    background: linear-gradient(135deg, #60a5fa 0%, #34d399 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.heroSubtitle {
+    font-size: 1.80rem;
+    font-weight: 550;
+    color: #d1d5db;
+    margin-bottom: 1.5rem;
+    max-width: 600px;
+}
+
+.heroDescription {
+    font-size: 1.125rem;
+    color: #cbd5e1;
+    line-height: 1.7;
+    margin-bottom: 2.5rem;
+    max-width: 600px;
+}
+
+.heroCta {
+    display: flex;
+    gap: 1rem;
+}
+
+.ctaButtonPrimary {
+    background: linear-gradient(135deg, #60a5fa, #34d399);
+    color: white;
+    border: none;
+    padding: 1rem 2rem;
+    font-size: 1rem;
+    font-weight: 600;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    transition: all 0.3s ease;
+    text-decoration: none;
+    box-shadow: 0 4px 15px rgba(96, 165, 250, 0.3);
+}
+
+.ctaButtonPrimary:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(96, 165, 250, 0.4);
+    background: linear-gradient(135deg, #7dd3fc, #6ee7b7);
+}
+
+/* Updated Testimonial Card */
+.heroTestimonial {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    width: 100%;
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+.testimonialCard {
+    background: rgba(255, 255, 255, 0.95);
+    backdrop-filter: blur(10px);
+    border-radius: 1.2rem;
+    padding: 2rem;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+    max-width: 400px;
+    width: 100%;
+}
+
+.testimonialHeader {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 1.5rem;
+}
+
+.testimonialImage {
+    position: relative;
+    width: 60px;
+    height: 60px;
+    flex-shrink: 0;
+}
+
+.clientImage {
+    width: 65px;
+    height: 65px;
+    border-radius: 50%;
+    background: linear-gradient(135deg, #60a5fa, #34d399);
+    border: 2px solid #34d399;
+}
+
+.testimonialInfo {
+    flex: 1;
+    min-width: 0;
+}
+
+.testimonialName {
+    font-size: 1.125rem;
+    font-weight: 700;
+    color: #1f2937;
+    margin: 0 0 0.25rem 0;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.testimonialRole {
+    font-size: 0.875rem;
+    color: #6b7280;
+    margin: 0 0 0.5rem 0;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.testimonialRating {
+    display: flex;
+    gap: 0.125rem;
+}
+
+.quoteIcon {
+    color: #34d399;
+    margin-bottom: 1rem;
+    opacity: 0.7;
+    width: 24px;
+    height: 24px;
+}
+
+.testimonialText {
+    color: #4b5563;
+    font-size: 1rem;
+    line-height: 1.6;
+    margin-bottom: 1.5rem;
+    font-style: italic;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
+.testimonialProject {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    color: #6b7280;
+    font-size: 0.875rem;
+    font-weight: 500;
+    padding-top: 1rem;
+    border-top: 1px solid #e5e7eb;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+/* ===== TRUSTED BY ===== */
+.trustedBy {
+    padding: 3rem 2rem;
+    background: #f9fafb;
+    text-align: center;
+}
+
+.trustedLabel {
+    font-size: 0.875rem;
+    color: #6b7280;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    margin-bottom: 2rem;
+}
+
+.trustedLogos {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.logoItem {
+    padding: 1rem 2rem;
+    background: white;
+    border-radius: 0.5rem;
+    font-weight: 600;
+    color: #4b5563;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+    transition: transform 0.3s ease;
+}
+
+.logoItem:hover {
+    transform: translateY(-2px);
+}
+
+/* ===== MAIN CONTENT TABS ===== */
+.mainContent {
+    padding: 4rem 2rem;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+.tabNav {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    margin-bottom: 3rem;
+    border-bottom: 1px solid #e5e7eb;
+    padding-bottom: 0.5rem;
+}
+
+.tabButton {
+    padding: 1rem 2rem;
+    background: none;
+    border: none;
+    font-size: 1.125rem;
+    font-weight: 600;
+    color: #6b7280;
+    cursor: pointer;
+    border-radius: 0.5rem 0.5rem 0 0;
+    transition: all 0.3s ease;
+    position: relative;
+}
+
+.tabButton:hover {
+    color: #1f2937;
+    background: #f9fafb;
+}
+
+.tabButton.active {
+    color: #1f2937;
+}
+
+.tabButton.active::after {
+    content: '';
+    position: absolute;
+    bottom: -0.5rem;
+    left: 0;
+    width: 100%;
+    height: 3px;
+    background: linear-gradient(135deg, #60a5fa, #34d399);
+    border-radius: 3px;
+}
+
+.tabContent {
+    min-height: 600px;
+}
+
+/* ----- SERVICES TAB ----- */
+.sectionIntro {
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto 4rem;
+}
+
+.sectionIntro h2 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #1f2937;
+    margin-bottom: 1rem;
+    line-height: 1.2;
+}
+
+.sectionIntro p {
+    font-size: 1.125rem;
+    color: #6b7280;
+    line-height: 1.6;
+}
+
+.servicesGrid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 2rem;
+    margin-bottom: 4rem;
+}
+
+.serviceCard {
+    background: white;
+    border-radius: 1rem;
+    padding: 2rem;
+    border: 1px solid #e5e7eb;
+    border-top: 4px solid;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+}
+
+.serviceCard:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+}
+
+.serviceIcon {
+    width: 3rem;
+    height: 3rem;
+    border-radius: 0.75rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 1.5rem;
+    color: white;
+}
+
+.serviceCard h3 {
+    font-size: 1.375rem;
+    font-weight: 700;
+    color: #1f2937;
+    margin-bottom: 0.75rem;
+}
+
+.serviceCard > p {
+    color: #6b7280;
+    font-size: 0.95rem;
+    line-height: 1.6;
+    margin-bottom: 1.5rem;
+}
+
+.serviceFeatures {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.serviceFeatures li {
+    display: flex;
+    align-items: flex-start;
+    gap: 0.75rem;
+    color: #4b5563;
+    margin-bottom: 0.75rem;
+    font-size: 0.875rem;
+}
+
+.disruptionBanner {
+    background: linear-gradient(135deg, #f8fafc 0%, #f1f5f9 100%);
+    border-radius: 1.5rem;
+    padding: 3rem;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2rem;
+    align-items: center;
+    margin-top: 4rem;
+    position: relative;
+    overflow: hidden;
+}
+
+@media (min-width: 768px) {
+    .disruptionBanner {
+        grid-template-columns: 1fr 1fr;
+        padding: 4rem;
+    }
+}
+
+.bannerContent h3 {
+    font-size: 2rem;
+    font-weight: 700;
+    color: #1f2937;
+    margin-bottom: 1rem;
+    position: relative;
+    z-index: 2;
+}
+
+.bannerContent h3 span {
+    background: linear-gradient(135deg, #60a5fa, #34d399);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.bannerContent p {
+    font-size: 1.125rem;
+    color: #6b7280;
+    line-height: 1.6;
+    margin-bottom: 2rem;
+    position: relative;
+    z-index: 2;
+}
+
+.bannerButton {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    color: #3B82F6;
+    font-weight: 600;
+    text-decoration: none;
+    padding: 0.875rem 1.75rem;
+    border-radius: 2rem;
+    background: rgba(59, 130, 246, 0.1);
+    transition: all 0.3s ease;
+    position: relative;
+    z-index: 2;
+}
+
+.bannerButton:hover {
+    background: rgba(59, 130, 246, 0.2);
+    gap: 0.75rem;
+}
+
+.bannerGraphic {
+    height: 200px;
+    border-radius: 1rem;
+    overflow: hidden;
+    position: relative;
+}
+
+.bannerImage {
+    object-fit: cover;
+    object-position: center;
+    transition: transform 0.8s ease;
+}
+
+.disruptionBanner:hover .bannerImage {
+    transform: scale(1.05);
+}
+
+/* ----- EXPERTISE TAB ----- */
+.subsectionTitle {
+    font-size: 1.75rem;
+    font-weight: 700;
+    color: #1f2937;
+    text-align: center;
+    margin: 3rem 0 2rem;
+}
+
+.deploymentsGrid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 2rem;
+    margin-bottom: 3rem;
+}
+
+.deploymentCard {
+    border-radius: 1rem;
+    padding: 2rem;
+    border: 2px solid;
+    transition: all 0.3s ease;
+}
+
+.deploymentCard:hover {
+    transform: translateY(-5px);
+}
+
+.deploymentIcon {
+    width: 3rem;
+    height: 3rem;
+    border-radius: 0.75rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 1.5rem;
+    background: white;
+}
+
+.deploymentCard h4 {
+    font-size: 1.375rem;
+    font-weight: 700;
+    color: #1f2937;
+    margin-bottom: 0.75rem;
+}
+
+.deploymentCard > p {
+    color: #6b7280;
+    font-size: 0.95rem;
+    line-height: 1.6;
+    margin-bottom: 1.5rem;
+}
+
+.deploymentCard ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.deploymentCard li {
+    color: #4b5563;
+    margin-bottom: 0.75rem;
+    font-size: 0.875rem;
+    padding-left: 1.5rem;
+    position: relative;
+}
+
+.deploymentCard li::before {
+    content: '•';
+    position: absolute;
+    left: 0;
+    color: inherit;
+}
+
+.cloudProviders {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 2rem;
+    margin-bottom: 2rem;
+}
+
+.providerCard {
+    background: white;
+    border-radius: 1rem;
+    padding: 2rem;
+    border: 1px solid #e5e7eb;
+    text-align: center;
+    transition: all 0.3s ease;
+}
+
+.providerCard:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+}
+
+.providerLogo {
+    width: 4rem;
+    height: 4rem;
+    border-radius: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 1.5rem;
+    font-size: 1.5rem;
+    font-weight: 700;
+    border: 2px solid;
+}
+
+.providerCard h4 {
+    font-size: 1.375rem;
+    font-weight: 700;
+    color: #1f2937;
+    margin-bottom: 0.75rem;
+}
+
+.providerCard p {
+    color: #6b7280;
+    font-size: 0.95rem;
+    line-height: 1.6;
+}
+
+.whyChooseSection {
+    background: linear-gradient(135deg, #f8fafc 0%, #f1f5f9 100%);
+    border-radius: 1.5rem;
+    padding: 4rem;
+    margin-top: 3rem;
+    text-align: center;
+}
+
+.whyChooseSection h2 {
+    font-size: 2rem;
+    font-weight: 700;
+    color: #1f2937;
+    margin-bottom: 1rem;
+}
+
+.whyChooseSection > p {
+    font-size: 1.125rem;
+    color: #6b7280;
+    line-height: 1.6;
+    max-width: 800px;
+    margin: 0 auto 3rem;
+}
+
+.whyChooseGrid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 1.5rem;
+}
+
+.whyChooseCard {
+    background: white;
+    border-radius: 1rem;
+    padding: 2rem 1.5rem;
+    border: 1px solid #e5e7eb;
+    transition: all 0.3s ease;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+
+.whyChooseCard:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+}
+
+.whyChooseCard svg {
+    color: #3B82F6;
+}
+
+.whyChooseCard {
+    font-weight: 600;
+    color: #1f2937;
+    font-size: 1rem;
+}
+
+/* ----- HIRING MODELS TAB ----- */
+.pricingGrid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+    gap: 2.5rem;
+    margin-bottom: 4rem;
+}
+
+.pricingCard {
+    background: white;
+    border-radius: 1.5rem;
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+    transition: all 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.pricingCard:hover {
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+}
+
+.pricingHeader {
+    padding: 2.5rem 2rem;
+    color: white;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.pricingHeader::after {
+    content: '';
+    position: absolute;
+    top: -50%;
+    right: -50%;
+    width: 100%;
+    height: 200%;
+    background: rgba(255, 255, 255, 0.1);
+    transform: rotate(30deg);
+}
+
+.priceIcon {
+    width: 4rem;
+    height: 4rem;
+    border-radius: 1rem;
+    background: rgba(255, 255, 255, 0.2);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 1.5rem;
+    color: white;
+}
+
+.priceTag {
+    font-size: 2rem;
+    font-weight: 800;
+    margin-bottom: 0.5rem;
+    color: white;
+}
+
+.pricingHeader h3 {
+    font-size: 1.75rem;
+    font-weight: 700;
+    margin: 0;
+    color: white;
+    position: relative;
+    z-index: 1;
+}
+
+.pricingBody {
+    padding: 2.5rem 2rem;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.modelDescription {
+    color: #6b7280;
+    font-size: 1rem;
+    line-height: 1.6;
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+.featuresBox {
+    margin-bottom: 2rem;
+    flex-grow: 1;
+}
+
+.featuresBox h4,
+.bestForBox h4 {
+    font-size: 1.125rem;
+    font-weight: 600;
+    color: #1f2937;
+    margin-bottom: 1rem;
+}
+
+.featuresBox ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.featuresBox li {
+    display: flex;
+    align-items: flex-start;
+    gap: 0.75rem;
+    color: #4b5563;
+    margin-bottom: 0.75rem;
+    font-size: 0.95rem;
+}
+
+.bestForBox {
+    margin-bottom: 2rem;
+}
+
+.bestForTags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+}
+
+.bestForTag {
+    padding: 0.5rem 1rem;
+    border-radius: 2rem;
+    font-size: 0.875rem;
+    font-weight: 600;
+}
+
+.chooseModelButton {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    color: white;
+    font-weight: 600;
+    text-decoration: none;
+    padding: 1rem 2rem;
+    border-radius: 2rem;
+    transition: all 0.3s ease;
+    text-align: center;
+    margin-top: auto;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.chooseModelButton:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);
+    gap: 0.75rem;
+}
+
+/* ===== INDUSTRIES SECTION (Updated with background images) ===== */
+.industriesSection {
+    padding: 6rem 2rem;
+    background: white;
+}
+
+.industriesGrid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.industryCard {
+    background: white;
+    border-radius: 1.5rem;
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+    transition: all 0.4s ease;
+    cursor: pointer;
+    height: 300px;
+    position: relative;
+}
+
+.industryCard:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+}
+
+.industryImageContainer {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.industryImage {
+    object-fit: cover;
+    object-position: center;
+    transition: transform 0.8s ease;
+}
+
+.industryCard:hover .industryImage {
+    transform: scale(1.1);
+}
+
+.industryOverlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(
+        to bottom,
+        rgba(15, 23, 42, 0.1) 0%,
+        rgba(15, 23, 42, 0.8) 100%
+    );
+    transition: all 0.4s ease;
+}
+
+.industryOverlay.active {
+    background: linear-gradient(
+        to bottom,
+        rgba(15, 23, 42, 0.2) 0%,
+        rgba(15, 23, 42, 0.95) 100%
+    );
+}
+
+.industryName {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 2rem;
+    font-size: 1.75rem;
+    font-weight: 700;
+    color: white;
+    margin: 0;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+    z-index: 2;
+}
+
+.industryDescription {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 2rem;
+    color: white;
+    z-index: 2;
+    background: linear-gradient(
+        to top,
+        rgba(15, 23, 42, 0.95) 0%,
+        rgba(15, 23, 42, 0.7) 50%,
+        transparent 100%
+    );
+}
+
+.industryDescription p {
+    font-size: 1rem;
+    line-height: 1.6;
+    margin: 0;
+    color: #e5e7eb;
+}
+
+/* ===== PROCESS SECTION ===== */
+.processSection {
+    padding: 6rem 2rem;
+    background: linear-gradient(135deg, #f8fafc 0%, #f1f5f9 100%);
+}
+
+.processSteps {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.processStep {
+    background: white;
+    border-radius: 1rem;
+    padding: 2.5rem 2rem;
+    text-align: center;
+    border: 1px solid #e5e7eb;
+    transition: all 0.3s ease;
+    position: relative;
+}
+
+.processStep:hover {
+    background: white;
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+}
+
+.stepNumber {
+    font-size: 3rem;
+    font-weight: 800;
+    color: #60a5fa;
+    line-height: 1;
+    margin-bottom: 1rem;
+    opacity: 0.2;
+}
+
+.stepIcon {
+    width: 4rem;
+    height: 4rem;
+    background: linear-gradient(135deg, #60a5fa, #34d399);
+    border-radius: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 1.5rem;
+    color: white;
+}
+
+.processStep h4 {
+    font-size: 1.375rem;
+    font-weight: 700;
+    color: #1f2937;
+    margin-bottom: 1rem;
+}
+
+.processStep p {
+    color: #6b7280;
+    font-size: 0.95rem;
+    line-height: 1.6;
+}
+
+/* ===== FAQ SECTION ===== */
+.faqSection {
+    padding: 6rem 2rem;
+    background: white;
+}
+
+.faqList {
+    max-width: 800px;
+    margin: 0 auto 3rem;
+}
+
+.faqItem {
+    background: white;
+    border-radius: 1rem;
+    margin-bottom: 1rem;
+    overflow: hidden;
+    border: 1px solid #e5e7eb;
+}
+
+.faqQuestion {
+    width: 100%;
+    padding: 1.5rem 2rem;
+    background: none;
+    border: none;
+    text-align: left;
+    font-size: 1.125rem;
+    font-weight: 600;
+    color: #1f2937;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: all 0.3s ease;
+}
+
+.faqQuestion:hover {
+    background: #f9fafb;
+}
+
+.faqToggle {
+    font-size: 1.5rem;
+    color: #60a5fa;
+    font-weight: 300;
+    transition: transform 0.3s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 2rem;
+    height: 2rem;
+    border-radius: 50%;
+    background: rgba(96, 165, 250, 0.1);
+}
+
+.faqToggle.open {
+    transform: rotate(45deg);
+    background: rgba(96, 165, 250, 0.2);
+}
+
+.faqAnswer {
+    padding: 0 2rem;
+    color: #6b7280;
+    line-height: 1.7;
+    font-size: 1rem;
+    overflow: hidden;
+}
+
+.faqAnswer p {
+    padding: 1rem 0 2rem;
+    margin: 0;
+}
+
+/* ===== RESPONSIVE DESIGN ===== */
+@media (max-width: 1200px) {
+    .heroContent {
+        max-width: 1000px;
+    }
+}
+
+@media (max-width: 992px) {
+    .heroContent {
+        grid-template-columns: 1fr;
+        gap: 4rem;
+    }
+    
+    .heroTestimonial {
+        max-width: 500px;
+    }
+    
+    .testimonialCard {
+        max-width: 500px;
+    }
+}
+
+@media (max-width: 768px) {
+    .heroTitle {
+        font-size: 2.5rem;
+    }
+    
+    .heroSubtitle {
+        font-size: 1.5rem;
+    }
+    
+    .heroDescription {
+        font-size: 1rem;
+    }
+    
+    .heroCta {
+        flex-direction: column;
+    }
+    
+    .ctaButtonPrimary {
+        width: 100%;
+        justify-content: center;
+    }
+    
+    .tabNav {
+        flex-direction: column;
+    }
+    
+    .tabButton {
+        width: 100%;
+        text-align: center;
+    }
+    
+    .servicesGrid,
+    .deploymentsGrid,
+    .cloudProviders,
+    .pricingGrid,
+    .whyChooseGrid,
+    .industriesGrid,
+    .processSteps {
+        grid-template-columns: 1fr;
+    }
+    
+    .disruptionBanner,
+    .whyChooseSection {
+        padding: 2rem;
+    }
+    
+    .bannerGraphic {
+        height: 150px;
+    }
+    
+    .cloudProviders {
+        margin-bottom: 1rem;
+    }
+    
+    .subsectionTitle {
+        margin: 2rem 0 1.5rem;
+    }
+    
+    .heroTestimonial {
+        max-width: 400px;
+    }
+    
+    .testimonialCard {
+        max-width: 400px;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero {
+        padding: 4rem 1.5rem;
+    }
+    
+    .mainContent,
+    .industriesSection,
+    .processSection,
+    .faqSection {
+        padding: 3rem 1.5rem;
+    }
+    
+    .sectionIntro h2 {
+        font-size: 2rem;
+    }
+    
+    .industriesGrid {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+    
+    .industryCard {
+        height: 250px;
+    }
+    
+    .industryName {
+        padding: 1.5rem;
+        font-size: 1.5rem;
+    }
+    
+    .industryDescription {
+        padding: 1.5rem;
+    }
+    
+    .heroTestimonial {
+        max-width: 100%;
+    }
+    
+    .testimonialCard {
+        max-width: 100%;
+        padding: 1.5rem;
+    }
+}

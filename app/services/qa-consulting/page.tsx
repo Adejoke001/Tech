@@ -30,15 +30,17 @@ export default function QAStrategyConsultingPage() {
             id: 1,
             title: 'QA Process Setup',
             description: 'Get your robust QA process setup: Analyze your software specifics, design testing strategy, estimate time and costs.',
-            image: 'https://images.unsplash.com/photo-1552664730-d307ca884978?auto=format&fit=crop&w=800&q=80',
-            color: '#f59e0b',
+            icon: <Settings className={styles.serviceIcon} />,
+            image: 'https://images.unsplash.com/photo-1560264357-8d9202250f21?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTF8fHF1YWxpdHklMjBhc3N1cmFuY2V8ZW58MHx8MHx8fDA%3D',
+            color: '#df920bff',
             features: ['Project Analysis', 'Strategy Design', 'Cost Estimation']
         },
         {
             id: 2,
             title: 'QA Process Audit',
             description: 'Get valuable insights with complete QA audit: Examine current processes, reveal bottlenecks, recommend improvements.',
-            image: 'https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=800&q=80',
+            icon: <Search className={styles.serviceIcon} />,
+            image: 'https://images.unsplash.com/photo-1522071820081-009f0129c71c?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8cXVhbGl0eSUyMGFzc3VyYW5jZXxlbnwwfHwwfHx8MA%3D%3D',
             color: '#34d399',
             features: ['Process Examination', 'Bottleneck Analysis', 'Improvement Plan']
         },
@@ -46,6 +48,7 @@ export default function QAStrategyConsultingPage() {
             id: 3,
             title: 'QA Process Improvement',
             description: 'Enhance your QA process with tailored consulting: Identify problems, work out mitigation strategies, implement improvements.',
+            icon: <TrendingUp className={styles.serviceIcon} />,
             image: 'https://images.unsplash.com/photo-1555949963-aa79dcee981c?auto=format&fit=crop&w=800&q=80',
             color: '#8b5cf6',
             features: ['Problem Identification', 'Strategy Development', 'Implementation Support']
@@ -54,7 +57,8 @@ export default function QAStrategyConsultingPage() {
             id: 4,
             title: 'Pre-Certification QA Aid',
             description: 'Assist in success with pre-certification QA support: Outline required certifications, advise on improvements, create compliance roadmap.',
-            image: 'https://images.unsplash.com/photo-1559757148-5c350d0d3c56?auto=format&fit=crop&w=800&q=80',
+            icon: <Shield className={styles.serviceIcon} />,
+            image: 'https://images.unsplash.com/photo-1504384308090-c894fdcc538d?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8cXVhbGl0eSUyMGFzc3VyYW5jZXxlbnwwfHwwfHx8MA%3D%3D',
             color: '#ef4444',
             features: ['Compliance Audit', 'Certification Roadmap', 'Standards Adherence']
         },
@@ -62,6 +66,7 @@ export default function QAStrategyConsultingPage() {
             id: 5,
             title: 'QA Testing Automation',
             description: 'Accelerate testing with our automation expertise: Design automation strategy, setup test data generation, integrate into CI/CD.',
+            icon: <Zap className={styles.serviceIcon} />,
             image: 'https://images.unsplash.com/photo-1558494949-ef010cbdcc31?auto=format&fit=crop&w=800&q=80',
             color: '#3b82f6',
             features: ['Automation Strategy', 'CI/CD Integration', 'Framework Design']
@@ -70,6 +75,7 @@ export default function QAStrategyConsultingPage() {
             id: 6,
             title: 'Software-Specific Testing',
             description: 'Tailored testing strategies for every software type: Design effective scenarios, assess automation feasibility.',
+            icon: <TestTube className={styles.serviceIcon} />,
             image: 'https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=800&q=80',
             color: '#06b6d4',
             features: ['Custom Scenarios', 'Automation Feasibility', 'Platform Testing']
@@ -499,9 +505,9 @@ export default function QAStrategyConsultingPage() {
                                 />
                                 <div className={styles.imageOverlay} style={{ backgroundColor: `${service.color}40` }}></div>
 
-                                {/* <div className={styles.serviceIconWrapper} style={{ backgroundColor: service.color }}>
+                                <div className={styles.serviceIconWrapper} style={{ backgroundColor: service.color }}>
                                     {service.icon}
-                                </div> */}
+                                </div>
 
                                 <div className={styles.serviceContent}>
                                     <h3 className={styles.serviceTitle}>{service.title}</h3>
