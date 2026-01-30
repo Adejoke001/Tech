@@ -13,7 +13,7 @@ const ProductIcon = () => <span className={styles.dropdownIcon}>📦</span>;
 const SoftwareIcon = () => <span className={styles.dropdownIcon}>💻</span>;
 const QAIcon = () => <span className={styles.dropdownIcon}>🔍</span>;
 const ConsultingIcon = () => <span className={styles.dropdownIcon}>💡</span>;
-const MaintenanceIcon = () => <span className={styles.dropdownIcon}>🔧</span>;
+const DesignIcon = () => <span className={styles.dropdownIcon}>🛠️</span>;
 const AIIcon = () => <span className={styles.dropdownIcon}>🤖</span>;
 const AutomationIcon = () => <span className={styles.dropdownIcon}>⚡</span>;
 const EnterpriseIcon = () => <span className={styles.dropdownIcon}>🏢</span>;
@@ -86,9 +86,9 @@ export default function Navbar() {
           icon: <ConsultingIcon />,
         },
         {
-          name: "Software Maintenance & Support",
-          href: "/services/software-maintenance-support",
-          icon: <MaintenanceIcon />,
+          name: "UI/UX Design Services",
+          href: "/services/ui-ux-design",
+          icon: <DesignIcon />,
         },
         {
           name: "Machine Learning",
@@ -101,8 +101,8 @@ export default function Navbar() {
           icon: <AutomationIcon />,
         },
         {
-          name: "Enterprise Platform Development",
-          href: "/services/enterprise-platform-development",
+          name: "Enterprise Software Development",
+          href: "/services/enterprise-software-development",
           icon: <EnterpriseIcon />,
         },
         {

@@ -415,7 +415,7 @@ export default function DataEngineeringAnalyticsPage() {
                         <p>End-to-end solutions ensuring high data quality, seamless integration, predictive analytics readiness, and maximum security</p>
                     </div>
 
-                    <div className={styles.servicesTabs}>
+                    {/* <div className={styles.servicesTabs}>
                         <button 
                             className={`${styles.serviceTab} ${activeService === 'engineering' ? styles.active : ''}`}
                             onClick={() => setActiveService('engineering')}
@@ -428,7 +428,7 @@ export default function DataEngineeringAnalyticsPage() {
                         >
                             <BarChart3 /> Data Analytics Services
                         </button>
-                    </div>
+                    </div> */}
 
                     <div className={styles.servicesGrid}>
                         {(activeService === 'engineering' ? engineeringServices : analyticsServices).map((service, idx) => (
