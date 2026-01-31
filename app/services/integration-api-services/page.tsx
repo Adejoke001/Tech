@@ -11,10 +11,10 @@ import {
     Lock, Globe, Workflow, RefreshCw, Wifi,
     FileText, PieChart,
     BarChart, Bell, Network, Smartphone,
-    ChevronDown, Circle, Terminal, Link as LinkIcon,
-    Cpu as CpuIcon, ShieldCheck, TrendingUp, Target, GitBranch,
-    Webhook, Database as DatabaseIcon, Key as KeyIcon,
-    Smartphone as MobileIcon, Globe as GlobeIcon
+    Circle, Terminal,
+    ShieldCheck, TrendingUp, Target, GitBranch,
+    Webhook, Key as KeyIcon,
+    Globe as GlobeIcon
 } from 'lucide-react';
 import styles from './apiDevelop.module.css';
 
@@ -33,89 +33,89 @@ export default function ApiDevelopmentPage() {
 
     // ===== API DEVELOPMENT SERVICES =====
     const apiDevelopmentServices = [
-        { 
-            icon: <Code />, 
-            title: 'Custom API Development', 
+        {
+            icon: <Code />,
+            title: 'Custom API Development',
             desc: 'Build secure, scalable, and high-performance custom APIs tailored to your business requirements.',
             features: ['RESTful API design', 'GraphQL implementation', 'API versioning strategy', 'Performance optimization'],
-            color: '#3B82F6' 
+            color: '#3B82F6'
         },
-        { 
-            icon: <GitMerge />, 
-            title: 'API Integration', 
+        {
+            icon: <GitMerge />,
+            title: 'API Integration',
             desc: 'Seamlessly integrate third-party APIs and legacy systems with your modern applications.',
             features: ['Third-party API integration', 'Legacy system modernization', 'Real-time data synchronization', 'Error handling & logging'],
-            color: '#10B981' 
+            color: '#10B981'
         },
-        { 
-            icon: <Shield />, 
-            title: 'API Security', 
+        {
+            icon: <Shield />,
+            title: 'API Security',
             desc: 'Implement enterprise-grade security measures to protect your APIs from vulnerabilities.',
             features: ['OAuth 2.0 & JWT implementation', 'Rate limiting & throttling', 'API gateway security', 'Security testing & audits'],
-            color: '#8B5CF6' 
+            color: '#8B5CF6'
         },
-        { 
-            icon: <Zap />, 
-            title: 'API Performance Optimization', 
+        {
+            icon: <Zap />,
+            title: 'API Performance Optimization',
             desc: 'Optimize API response times, throughput, and reliability for high-demand applications.',
             features: ['Response time optimization', 'Caching strategies', 'Load balancing', 'Database query optimization'],
-            color: '#F59E0B' 
+            color: '#F59E0B'
         },
-        { 
-            icon: <Cloud />, 
-            title: 'Cloud API Development', 
+        {
+            icon: <Cloud />,
+            title: 'Cloud API Development',
             desc: 'Develop cloud-native APIs using AWS, Azure, or Google Cloud for maximum scalability.',
             features: ['AWS API Gateway', 'Azure API Management', 'Google Cloud Endpoints', 'Serverless API architecture'],
-            color: '#06B6D4' 
+            color: '#06B6D4'
         },
-        { 
-            icon: <Database />, 
-            title: 'Database API Development', 
+        {
+            icon: <Database />,
+            title: 'Database API Development',
             desc: 'Create efficient APIs for database operations with optimized queries and transactions.',
             features: ['SQL/NoSQL database APIs', 'ORM implementation', 'Query optimization', 'Transaction management'],
-            color: '#EC4899' 
+            color: '#EC4899'
         },
-        { 
-            icon: <Workflow />, 
-            title: 'Microservices API', 
+        {
+            icon: <Workflow />,
+            title: 'Microservices API',
             desc: 'Design and implement APIs for microservices architecture with service discovery and communication.',
             features: ['Service mesh implementation', 'API gateway setup', 'Inter-service communication', 'Load balancing'],
-            color: '#84CC16' 
+            color: '#84CC16'
         },
-        { 
-            icon: <Smartphone />, 
-            title: 'Mobile API Development', 
+        {
+            icon: <Smartphone />,
+            title: 'Mobile API Development',
             desc: 'Build APIs specifically optimized for mobile applications with offline capabilities.',
             features: ['Mobile-first API design', 'Push notification APIs', 'Offline synchronization', 'Battery optimization'],
-            color: '#EF4444' 
+            color: '#EF4444'
         },
-        { 
-            icon: <Webhook />, 
-            title: 'Webhook Implementation', 
+        {
+            icon: <Webhook />,
+            title: 'Webhook Implementation',
             desc: 'Implement reliable webhook systems for real-time event notifications and data streaming.',
             features: ['Event-driven architecture', 'Webhook security', 'Retry mechanisms', 'Payload validation'],
-            color: '#0EA5E9' 
+            color: '#0EA5E9'
         },
-        { 
-            icon: <BarChart />, 
-            title: 'API Analytics & Monitoring', 
+        {
+            icon: <BarChart />,
+            title: 'API Analytics & Monitoring',
             desc: 'Implement comprehensive monitoring, analytics, and reporting for your APIs.',
             features: ['Real-time API monitoring', 'Usage analytics dashboards', 'Performance metrics', 'Alerting systems'],
-            color: '#14B8A6' 
+            color: '#14B8A6'
         },
-        { 
-            icon: <GitBranch />, 
-            title: 'API Versioning & Lifecycle', 
+        {
+            icon: <GitBranch />,
+            title: 'API Versioning & Lifecycle',
             desc: 'Manage API versions, deprecation strategies, and complete API lifecycle management.',
             features: ['Version control strategies', 'Backward compatibility', 'Deprecation policies', 'Lifecycle automation'],
-            color: '#8B5CF6' 
+            color: '#8B5CF6'
         },
-        { 
-            icon: <Lock />, 
-            title: 'API Gateway Implementation', 
+        {
+            icon: <Lock />,
+            title: 'API Gateway Implementation',
             desc: 'Deploy and configure API gateways for traffic management, security, and analytics.',
             features: ['Kong/Apigee setup', 'Traffic routing', 'Authentication/authorization', 'Analytics integration'],
-            color: '#3B82F6' 
+            color: '#3B82F6'
         },
     ];
 
@@ -311,26 +311,26 @@ export default function ApiDevelopmentPage() {
 
     // ===== INDUSTRIES =====
     const industries = [
-        { 
-            name: 'Healthcare', 
-            icon: '🏥', 
+        {
+            name: 'Healthcare',
+            icon: '🏥',
             desc: 'Secure, HIPAA-compliant APIs for EHR integration, telehealth platforms, medical device connectivity, and patient data interoperability.',
             image: 'https://images.unsplash.com/photo-1551601651-2a8555f1a136?auto=format&fit=crop&w=800&q=80',
-            color: '#10B981' 
+            color: '#10B981'
         },
-        { 
-            name: 'Retail & eCommerce', 
-            icon: '🛍️', 
+        {
+            name: 'Retail & eCommerce',
+            icon: '🛍️',
             desc: 'Scalable APIs for payment processing, inventory management, order fulfillment, CRM integration, and personalized shopping experiences.',
             image: 'https://images.unsplash.com/photo-1441986300917-64674bd600d8?auto=format&fit=crop&w=800&q=80',
-            color: '#8B5CF6' 
+            color: '#8B5CF6'
         },
-        { 
-            name: 'Fintech & Banking', 
-            icon: '🏦', 
+        {
+            name: 'Fintech & Banking',
+            icon: '🏦',
             desc: 'High-security APIs for payment gateways, banking systems, fraud detection, regulatory compliance, and financial data aggregation.',
             image: 'https://images.unsplash.com/photo-1551434678-e076c223a692?auto=format&fit=crop&w=800&q=80',
-            color: '#3B82F6' 
+            color: '#3B82F6'
         },
     ];
 
@@ -370,37 +370,37 @@ export default function ApiDevelopmentPage() {
 
     // ===== FAQ =====
     const faqs = [
-        { 
-            q: 'What is API development and why is it important for businesses?', 
-            a: 'API (Application Programming Interface) development involves creating software interfaces that allow different applications to communicate with each other. It\'s crucial for businesses because it enables system integration, facilitates data exchange, supports mobile applications, allows third-party integrations, and creates new revenue streams through API monetization. APIs serve as the building blocks of modern digital ecosystems.' 
+        {
+            q: 'What is API development and why is it important for businesses?',
+            a: 'API (Application Programming Interface) development involves creating software interfaces that allow different applications to communicate with each other. It\'s crucial for businesses because it enables system integration, facilitates data exchange, supports mobile applications, allows third-party integrations, and creates new revenue streams through API monetization. APIs serve as the building blocks of modern digital ecosystems.'
         },
-        { 
-            q: 'What are the different types of APIs you develop?', 
-            a: 'We develop various API types including: 1) REST APIs for web services using HTTP methods, 2) GraphQL APIs for flexible data querying, 3) SOAP APIs for enterprise-grade applications with strict standards, 4) gRPC APIs for high-performance microservices, 5) WebSocket APIs for real-time bidirectional communication, and 6) Webhook APIs for event-driven architectures. We choose the right type based on your specific requirements.' 
+        {
+            q: 'What are the different types of APIs you develop?',
+            a: 'We develop various API types including: 1) REST APIs for web services using HTTP methods, 2) GraphQL APIs for flexible data querying, 3) SOAP APIs for enterprise-grade applications with strict standards, 4) gRPC APIs for high-performance microservices, 5) WebSocket APIs for real-time bidirectional communication, and 6) Webhook APIs for event-driven architectures. We choose the right type based on your specific requirements.'
         },
-        { 
-            q: 'How do you ensure API security and compliance?', 
-            a: 'We implement multiple security layers: authentication (OAuth 2.0, JWT), authorization (role-based access), encryption (TLS 1.3), rate limiting, input validation, and regular security audits. For compliance, we follow standards like GDPR, HIPAA, PCI-DSS, and implement audit logging, data masking, and compliance monitoring based on industry requirements.' 
+        {
+            q: 'How do you ensure API security and compliance?',
+            a: 'We implement multiple security layers: authentication (OAuth 2.0, JWT), authorization (role-based access), encryption (TLS 1.3), rate limiting, input validation, and regular security audits. For compliance, we follow standards like GDPR, HIPAA, PCI-DSS, and implement audit logging, data masking, and compliance monitoring based on industry requirements.'
         },
-        { 
-            q: 'What is the typical timeline for API development projects?', 
-            a: 'Timelines vary based on complexity: Simple APIs (2-4 weeks), Medium complexity (4-8 weeks), Complex enterprise APIs (8-16 weeks), Complete API ecosystems (16-24 weeks). We follow agile methodology with 2-week sprints, delivering working APIs incrementally. Each phase includes planning, development, testing, and deployment with continuous feedback.' 
+        {
+            q: 'What is the typical timeline for API development projects?',
+            a: 'Timelines vary based on complexity: Simple APIs (2-4 weeks), Medium complexity (4-8 weeks), Complex enterprise APIs (8-16 weeks), Complete API ecosystems (16-24 weeks). We follow agile methodology with 2-week sprints, delivering working APIs incrementally. Each phase includes planning, development, testing, and deployment with continuous feedback.'
         },
-        { 
-            q: 'How do you handle API versioning and backward compatibility?', 
-            a: 'We implement semantic versioning (v1, v2, etc.) with clear deprecation policies. Strategies include URI versioning (/api/v1/resource), header versioning, and parameter versioning. We maintain backward compatibility through careful design, version negotiation, and providing migration paths. Deprecated versions are supported for a defined period with clear communication to clients.' 
+        {
+            q: 'How do you handle API versioning and backward compatibility?',
+            a: 'We implement semantic versioning (v1, v2, etc.) with clear deprecation policies. Strategies include URI versioning (/api/v1/resource), header versioning, and parameter versioning. We maintain backward compatibility through careful design, version negotiation, and providing migration paths. Deprecated versions are supported for a defined period with clear communication to clients.'
         },
-        { 
-            q: 'What support and maintenance do you provide after API deployment?', 
-            a: 'We offer comprehensive post-deployment support: 24/7 monitoring, performance optimization, security updates, bug fixes, documentation updates, and capacity planning. Our maintenance packages include regular health checks, security audits, performance reports, and version updates. We also provide developer support and training for your team.' 
+        {
+            q: 'What support and maintenance do you provide after API deployment?',
+            a: 'We offer comprehensive post-deployment support: 24/7 monitoring, performance optimization, security updates, bug fixes, documentation updates, and capacity planning. Our maintenance packages include regular health checks, security audits, performance reports, and version updates. We also provide developer support and training for your team.'
         },
-        { 
-            q: 'Can you integrate with our existing systems and legacy applications?', 
-            a: 'Yes, we specialize in integrating with existing systems including legacy applications, databases, ERP/CRM systems, and third-party services. We use various integration patterns: API gateways, message queues, data transformation layers, and custom connectors. We ensure minimal disruption and maintain data integrity throughout the integration process.' 
+        {
+            q: 'Can you integrate with our existing systems and legacy applications?',
+            a: 'Yes, we specialize in integrating with existing systems including legacy applications, databases, ERP/CRM systems, and third-party services. We use various integration patterns: API gateways, message queues, data transformation layers, and custom connectors. We ensure minimal disruption and maintain data integrity throughout the integration process.'
         },
-        { 
-            q: 'What are your API documentation and testing practices?', 
-            a: 'We create comprehensive API documentation using OpenAPI/Swagger specifications, including endpoints, parameters, responses, authentication, and code examples. For testing, we implement unit tests, integration tests, performance tests, security tests, and load tests. We use tools like Postman, JMeter, and custom test automation frameworks to ensure API reliability.' 
+        {
+            q: 'What are your API documentation and testing practices?',
+            a: 'We create comprehensive API documentation using OpenAPI/Swagger specifications, including endpoints, parameters, responses, authentication, and code examples. For testing, we implement unit tests, integration tests, performance tests, security tests, and load tests. We use tools like Postman, JMeter, and custom test automation frameworks to ensure API reliability.'
         },
     ];
 
@@ -457,12 +457,12 @@ export default function ApiDevelopmentPage() {
                             </Link>
                         </div>
                     </motion.div>
-                    
+
                     {/* Testimonial Card */}
-                    <motion.div 
-                        className={styles.heroTestimonial} 
-                        initial={{ opacity: 0, x: 30 }} 
-                        animate={{ opacity: 1, x: 0 }} 
+                    <motion.div
+                        className={styles.heroTestimonial}
+                        initial={{ opacity: 0, x: 30 }}
+                        animate={{ opacity: 1, x: 0 }}
                         transition={{ duration: 0.8, delay: 0.2 }}
                     >
                         <div className={styles.testimonialCard}>
@@ -487,7 +487,7 @@ export default function ApiDevelopmentPage() {
                                 </div>
                             </div>
                             <MessageSquare className={styles.quoteIcon} />
-                            <p className={styles.testimonialText}>"{testimonial.content}"</p>
+                            <p className={styles.testimonialText}>&quot;{testimonial.content}&quot;</p>
                             <div className={styles.testimonialProject}>
                                 <Award size={16} /> {testimonial.project}
                             </div>
@@ -517,20 +517,20 @@ export default function ApiDevelopmentPage() {
                         <p>End-to-end API development and integration solutions tailored to your business needs</p>
                     </div>
 
-                    {/* <div className={styles.servicesTabs}>
-                        <button 
+                    <div className={styles.servicesTabs}>
+                        <button
                             className={`${styles.serviceTab} ${activeTab === 'development' ? styles.active : ''}`}
                             onClick={() => setActiveTab('development')}
                         >
                             <Code /> API Development
                         </button>
-                        <button 
+                        <button
                             className={`${styles.serviceTab} ${activeTab === 'integration' ? styles.active : ''}`}
                             onClick={() => setActiveTab('integration')}
                         >
                             <GitMerge /> API Integration
                         </button>
-                    </div> */}
+                    </div>
 
                     {activeTab === 'development' && (
                         <div className={styles.servicesGrid}>
@@ -768,8 +768,8 @@ export default function ApiDevelopmentPage() {
                     </div>
                     <div className={styles.industriesGrid}>
                         {industries.map((industry, idx) => (
-                            <div 
-                                key={idx} 
+                            <div
+                                key={idx}
                                 className={styles.industryCard}
                                 onMouseEnter={() => setHoveredIndustry(idx)}
                                 onMouseLeave={() => setHoveredIndustry(null)}
@@ -823,10 +823,10 @@ export default function ApiDevelopmentPage() {
                                 </button>
                                 <AnimatePresence>
                                     {openFaq === idx && (
-                                        <motion.div 
-                                            initial={{ opacity: 0, height: 0 }} 
-                                            animate={{ opacity: 1, height: 'auto' }} 
-                                            exit={{ opacity: 0, height: 0 }} 
+                                        <motion.div
+                                            initial={{ opacity: 0, height: 0 }}
+                                            animate={{ opacity: 1, height: 'auto' }}
+                                            exit={{ opacity: 0, height: 0 }}
                                             className={styles.faqAnswer}
                                         >
                                             <p>{faq.a}</p>
@@ -849,7 +849,7 @@ export default function ApiDevelopmentPage() {
                         <Link href="/contact" className={styles.ctaButtonPrimary}>
                             Start Your API Project <ChevronRight size={20} />
                         </Link>
-                        
+
                     </div>
                 </div>
             </section>

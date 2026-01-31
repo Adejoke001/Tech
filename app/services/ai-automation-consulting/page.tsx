@@ -600,7 +600,7 @@ export default function AIAutomationConsultingPage() {
                         Our <span className={styles.titleHighlight}>AI Consulting</span> Services
                     </h2>
                     <p className={styles.sectionDescription}>
-                        As India's leading AI consulting company, we combine deep expertise with innovative
+                        As India&apos;s leading AI consulting company, we combine deep expertise with innovative
                         strategies to deliver tailored AI solutions for your business challenges.
                     </p>
                 </div>
@@ -704,7 +704,7 @@ export default function AIAutomationConsultingPage() {
                                     </div>
                                     <h3 className={styles.techTitle} style={{ color: tech.color }}>{tech.category}</h3>
                                 </div>
-                                
+
                                 <p className={styles.techDescription}>{tech.description}</p>
 
                                 <div className={styles.techItems}>
@@ -730,7 +730,7 @@ export default function AIAutomationConsultingPage() {
             <section className={styles.whyChooseSection}>
                 <div className={styles.sectionHeader}>
                     <h2 className={styles.sectionTitle}>
-                        India's Top <span className={styles.titleHighlight}>Artificial Intelligence Consulting Company</span>
+                        India&apos;s Top <span className={styles.titleHighlight}>Artificial Intelligence Consulting Company</span>
                     </h2>
                     <p className={styles.sectionDescription}>
                         Our AI consultants and development experts are committed to providing you with AI consulting
@@ -813,7 +813,7 @@ export default function AIAutomationConsultingPage() {
                                     sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
                                 />
                                 <div className={`${styles.industryOverlay} ${activeIndustry === industry.id ? styles.active : ''}`}></div>
-                                
+
                                 {/* Always visible header */}
                                 <div className={styles.industryHeader}>
                                     <div className={styles.industryEmoji}>{industry.icon}</div>
@@ -1038,7 +1038,7 @@ export default function AIAutomationConsultingPage() {
                         <h3 className={styles.ctaTitle}>Ready to Transform Your Business with AI?</h3>
                         <p className={styles.ctaDescription}>
                             Your AI vision is our next project. Tell us about your business goals,
-                            and we'll show you exactly how AI can make them a reality.
+                            and we&apos;ll show you exactly how AI can make them a reality.
                         </p>
                         <div className={styles.ctaButtons}>
                             <Link href="/contact" className={styles.ctaPrimary}>

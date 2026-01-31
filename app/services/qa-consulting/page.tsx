@@ -14,7 +14,7 @@ import {
 import styles from './qa-consulting.module.css';
 
 export default function QAStrategyConsultingPage() {
-    const [hoveredService, setHoveredService] = useState<number | null>(null);
+
     const [openFaq, setOpenFaq] = useState<number | null>(0);
 
     const testimonial = {
@@ -477,7 +477,7 @@ export default function QAStrategyConsultingPage() {
                         Our <span className={styles.titleHighlight}>QA Consulting</span> Services
                     </h2>
                     <p className={styles.sectionDescription}>
-                        As India's leading software QA consulting firm, we combine deep expertise with
+                        As India&apos;s leading software QA consulting firm, we combine deep expertise with
                         innovative strategies to deliver tailored testing solutions.
                     </p>
                 </div>
@@ -492,8 +492,6 @@ export default function QAStrategyConsultingPage() {
                             viewport={{ once: true }}
                             transition={{ duration: 0.5 }}
                             whileHover="hover"
-                            onMouseEnter={() => setHoveredService(service.id)}
-                            onMouseLeave={() => setHoveredService(null)}
                         >
                             <div className={styles.serviceImageContainer}>
                                 <Image
@@ -533,16 +531,16 @@ export default function QAStrategyConsultingPage() {
                         </motion.div>
                     ))}
                 </div>
-            </section>
+            </section >
 
             {/* Our Process Section */}
-            <section className={styles.processSection}>
+            < section className={styles.processSection} >
                 <div className={styles.sectionHeader}>
                     <h2 className={styles.sectionTitle}>
                         Our QA <span className={styles.titleHighlight}>Process</span>
                     </h2>
                     <p className={styles.sectionDescription}>
-                        We specialize in engineering custom software that's both stable and secure,
+                        We specialize in engineering custom software that&apos;s both stable and secure,
                         using a structured agile approach.
                     </p>
                 </div>
@@ -563,10 +561,10 @@ export default function QAStrategyConsultingPage() {
                         </motion.div>
                     ))}
                 </div>
-            </section>
+            </section >
 
             {/* Why Choose Us */}
-            <section className={styles.whyChooseSection}>
+            < section className={styles.whyChooseSection} >
                 <div className={styles.sectionHeader}>
                     <h2 className={styles.sectionTitleWhite}>
                         Why Choose <span className={styles.titleHighlightWhite}>BBNTech</span> for QA Consulting
@@ -613,10 +611,10 @@ export default function QAStrategyConsultingPage() {
                         </motion.div>
                     ))}
                 </div>
-            </section>
+            </section >
 
             {/* Industries Section */}
-            <section className={styles.industriesSection}>
+            < section className={styles.industriesSection} >
                 <div className={styles.sectionHeader}>
                     <h2 className={styles.sectionTitle}>
                         Industries We <span className={styles.titleHighlight}>Cater To</span>
@@ -668,10 +666,10 @@ export default function QAStrategyConsultingPage() {
                         </motion.div>
                     ))}
                 </div>
-            </section>
+            </section >
 
             {/* Pricing Section */}
-            <section id="pricing" className={styles.pricingSection}>
+            < section id="pricing" className={styles.pricingSection} >
                 <div className={styles.sectionHeader}>
                     <h2 className={styles.sectionTitle}>
                         Cost of <span className={styles.titleHighlight}>QA Consulting Services</span>
@@ -706,10 +704,10 @@ export default function QAStrategyConsultingPage() {
                         </motion.div>
                     ))}
                 </div>
-            </section>
+            </section >
 
             {/* FAQ Section */}
-            <section className={styles.faqSection}>
+            < section className={styles.faqSection} >
                 <div className={styles.sectionHeader}>
                     <h2 className={styles.sectionTitle}>
                         Frequently Asked <span className={styles.titleHighlight}>Questions</span>
@@ -766,7 +764,7 @@ export default function QAStrategyConsultingPage() {
                         <h3 className={styles.ctaTitle}>Ready to Transform Your QA Processes?</h3>
                         <p className={styles.ctaDescription}>
                             Your quality vision is our next project. Tell us about your quality goals,
-                            and we'll show you exactly how to make them a reality for your business.
+                            and we&apos;ll show you exactly how to make them a reality for your business.
                         </p>
                         <div className={styles.ctaButtons}>
                             <Link href="/contact" className={styles.ctaPrimary}>
@@ -776,7 +774,7 @@ export default function QAStrategyConsultingPage() {
                         </div>
                     </div>
                 </div>
-            </section>
-        </div>
+            </section >
+        </div >
     );
 }

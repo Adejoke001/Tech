@@ -14,8 +14,7 @@ import {
     RefreshCw, HardDrive, UploadCloud, Lock,
     BarChart, ShieldCheck, CpuIcon,
     Circle, Building,
-    Wifi, Smartphone as MobileIcon, Target as TargetIcon,
-    PieChart as PieChartIcon
+    Wifi
 } from 'lucide-react';
 import styles from './dataeng.module.css';
 
@@ -215,55 +214,55 @@ export default function DataEngineeringAnalyticsPage() {
 
     // ===== DATA PROCESS STEPS (Detailed from both websites) =====
     const processSteps = [
-        { 
-            id: 1, 
-            title: 'Discovery & Assessment', 
-            desc: 'We begin by understanding your data needs and business objectives.', 
+        {
+            id: 1,
+            title: 'Discovery & Assessment',
+            desc: 'We begin by understanding your data needs and business objectives.',
             details: ['Business requirement analysis', 'Data source identification', 'Success metric definition', 'Stakeholder interviews'],
             icon: <FileText />,
             color: '#3B82F6',
             duration: '2-4 weeks'
         },
-        { 
-            id: 2, 
-            title: 'Data Collection & Integration', 
-            desc: 'Gather all relevant data from multiple sources for analysis.', 
+        {
+            id: 2,
+            title: 'Data Collection & Integration',
+            desc: 'Gather all relevant data from multiple sources for analysis.',
             details: ['Source system analysis', 'Data extraction setup', 'Real-time integration', 'Quality checks implementation'],
             icon: <Database />,
             color: '#10B981',
             duration: '2-4 weeks'
         },
-        { 
-            id: 3, 
-            title: 'Data Cleaning & Processing', 
-            desc: 'Clean and organize data, ensuring accuracy and consistency.', 
+        {
+            id: 3,
+            title: 'Data Cleaning & Processing',
+            desc: 'Clean and organize data, ensuring accuracy and consistency.',
             details: ['Data validation rules', 'Error detection & correction', 'Format standardization', 'Anomaly detection setup'],
             icon: <Filter />,
             color: '#8B5CF6',
             duration: '2-3 weeks'
         },
-        { 
-            id: 4, 
-            title: 'Data Integration & Warehousing', 
-            desc: 'Combine data from different systems into a cohesive whole.', 
+        {
+            id: 4,
+            title: 'Data Integration & Warehousing',
+            desc: 'Combine data from different systems into a cohesive whole.',
             details: ['ETL/ELT pipeline development', 'Data warehouse design', 'Schema optimization', 'Performance tuning'],
             icon: <GitMerge />,
             color: '#F59E0B',
             duration: '3-5 weeks'
         },
-        { 
-            id: 5, 
-            title: 'Analysis & Visualization', 
-            desc: 'Generate actionable insights through analysis and intuitive visual tools.', 
+        {
+            id: 5,
+            title: 'Analysis & Visualization',
+            desc: 'Generate actionable insights through analysis and intuitive visual tools.',
             details: ['Statistical analysis', 'ML model development', 'Dashboard creation', 'Report automation'],
             icon: <BarChart3 />,
             color: '#EC4899',
             duration: '3-4 weeks'
         },
-        { 
-            id: 6, 
-            title: 'Deployment & Monitoring', 
-            desc: 'Deploy the solution and continuously monitor performance for optimization.', 
+        {
+            id: 6,
+            title: 'Deployment & Monitoring',
+            desc: 'Deploy the solution and continuously monitor performance for optimization.',
             details: ['Production deployment', 'Performance monitoring', 'Security validation', 'Ongoing optimization'],
             icon: <RefreshCw />,
             color: '#06B6D4',
@@ -273,62 +272,62 @@ export default function DataEngineeringAnalyticsPage() {
 
     // ===== INDUSTRIES (3 as requested) =====
     const industries = [
-        { 
-            name: 'Healthcare', 
-            icon: '🏥', 
+        {
+            name: 'Healthcare',
+            icon: '🏥',
             desc: 'Building smart healthcare solutions with AI-powered diagnostics, predictive analytics, and secure patient data management in HIPAA-compliant cloud environments.',
             image: 'https://images.unsplash.com/photo-1551601651-2a8555f1a136?auto=format&fit=crop&w=800&q=80',
-            color: '#10B981' 
+            color: '#10B981'
         },
-        { 
-            name: 'Retail & eCommerce', 
-            icon: '🛍️', 
+        {
+            name: 'Retail & eCommerce',
+            icon: '🛍️',
             desc: 'Enhancing retail journeys with real-time inventory tracking, personalized customer experiences, and scalable infrastructure to handle peak shopping seasons seamlessly.',
             image: 'https://images.unsplash.com/photo-1441986300917-64674bd600d8?auto=format&fit=crop&w=800&q=80',
-            color: '#8B5CF6' 
+            color: '#8B5CF6'
         },
-        { 
-            name: 'Media & Entertainment', 
-            icon: '🎬', 
+        {
+            name: 'Media & Entertainment',
+            icon: '🎬',
             desc: 'Custom tech to empower brands with content delivery networks, streaming optimization, and audience analytics for personalized media experiences.',
             image: 'https://plus.unsplash.com/premium_photo-1664303677453-ca2ad8f7dd8d?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTN8fG1lZGlhJTIwYW5kJTIwZW50ZXJ0YWlubWVudHxlbnwwfHwwfHx8MA%3D%3D',
-            color: '#3B82F6' 
+            color: '#3B82F6'
         },
     ];
 
     // ===== EXPANDED FAQ (Comprehensive from both websites) =====
     const faqs = [
-        { 
-            q: 'What is the difference between Data Engineering and Data Analytics?', 
-            a: 'Data Engineering focuses on designing, constructing, and maintaining data pipelines and architectures - creating the infrastructure that makes data accessible and usable. Data Analytics focuses on examining this data to extract meaningful insights, patterns, and predictions. Engineering builds the highways, Analytics provides the traffic analysis and route optimization.' 
+        {
+            q: 'What is the difference between Data Engineering and Data Analytics?',
+            a: 'Data Engineering focuses on designing, constructing, and maintaining data pipelines and architectures - creating the infrastructure that makes data accessible and usable. Data Analytics focuses on examining this data to extract meaningful insights, patterns, and predictions. Engineering builds the highways, Analytics provides the traffic analysis and route optimization.'
         },
-        { 
-            q: 'How do Data Engineering and Data Science work together?', 
-            a: 'Data Engineering lays the foundation by creating reliable, structured data infrastructure. Data Science builds upon this foundation to apply statistical methods, algorithms, and machine learning techniques. Engineers ensure data is clean and accessible; scientists analyze it to uncover trends and insights that inform business strategies. They collaborate closely for production-grade AI systems.' 
+        {
+            q: 'How do Data Engineering and Data Science work together?',
+            a: 'Data Engineering lays the foundation by creating reliable, structured data infrastructure. Data Science builds upon this foundation to apply statistical methods, algorithms, and machine learning techniques. Engineers ensure data is clean and accessible; scientists analyze it to uncover trends and insights that inform business strategies. They collaborate closely for production-grade AI systems.'
         },
-        { 
-            q: 'What are the key benefits of implementing modern data engineering solutions?', 
-            a: 'Key benefits include: 1) Real-time data processing for faster decisions, 2) Scalable infrastructure to handle growing data volumes, 3) Improved data quality and consistency, 4) Cost optimization through cloud-native solutions, 5) Enhanced security and compliance, 6) Support for advanced analytics and AI/ML workloads, 7) Reduced manual processing time by 20-40%.' 
+        {
+            q: 'What are the key benefits of implementing modern data engineering solutions?',
+            a: 'Key benefits include: 1) Real-time data processing for faster decisions, 2) Scalable infrastructure to handle growing data volumes, 3) Improved data quality and consistency, 4) Cost optimization through cloud-native solutions, 5) Enhanced security and compliance, 6) Support for advanced analytics and AI/ML workloads, 7) Reduced manual processing time by 20-40%.'
         },
-        { 
-            q: 'How does Business Intelligence (BI) differ from Data Analytics?', 
-            a: 'BI focuses on collecting, integrating, and presenting historical data to understand and monitor current/past business performance through descriptive analytics. Data Analytics goes further to discover patterns, trends, and future predictions through exploratory and predictive analysis. BI answers "what happened and why," while Analytics answers "what will happen and what should we do."' 
+        {
+            q: 'How does Business Intelligence (BI) differ from Data Analytics?',
+            a: 'BI focuses on collecting, integrating, and presenting historical data to understand and monitor current/past business performance through descriptive analytics. Data Analytics goes further to discover patterns, trends, and future predictions through exploratory and predictive analysis. BI answers "what happened and why," while Analytics answers "what will happen and what should we do."'
         },
-        { 
-            q: 'What types of data do you work with in business analytics?', 
-            a: 'We work with: 1) Customer Data (purchase history, feedback, behavior), 2) Operational Data (supply chain, productivity, equipment usage), 3) Financial Data (costs, profits, budgets), 4) Sales & Marketing Data (campaign results, engagement rates), 5) Product Usage Data, 6) IoT/Sensor Data, 7) Social Media Data, 8) Transactional Data across all business functions.' 
+        {
+            q: 'What types of data do you work with in business analytics?',
+            a: 'We work with: 1) Customer Data (purchase history, feedback, behavior), 2) Operational Data (supply chain, productivity, equipment usage), 3) Financial Data (costs, profits, budgets), 4) Sales & Marketing Data (campaign results, engagement rates), 5) Product Usage Data, 6) IoT/Sensor Data, 7) Social Media Data, 8) Transactional Data across all business functions.'
         },
-        { 
-            q: 'What are common data engineering challenges and how do you overcome them?', 
-            a: 'Common challenges include: 1) Data Quality Issues - overcome with robust validation and automated checks; 2) Scalability Concerns - addressed with cloud-native architecture; 3) Integration Complexity - solved with modern ETL/ELT tools; 4) Security & Compliance - managed through encryption and governance frameworks; 5) Real-time Processing - achieved with streaming technologies; 6) Legacy System Integration - handled through incremental modernization.' 
+        {
+            q: 'What are common data engineering challenges and how do you overcome them?',
+            a: 'Common challenges include: 1) Data Quality Issues - overcome with robust validation and automated checks; 2) Scalability Concerns - addressed with cloud-native architecture; 3) Integration Complexity - solved with modern ETL/ELT tools; 4) Security & Compliance - managed through encryption and governance frameworks; 5) Real-time Processing - achieved with streaming technologies; 6) Legacy System Integration - handled through incremental modernization.'
         },
-        { 
-            q: 'What is the typical timeline and cost for enterprise data platform implementation?', 
-            a: 'Timelines: Basic dashboards (4-6 weeks, $15-40K), Industry solutions (8-12 weeks, $40-70K), Custom platforms (12-16 weeks, $70-100K), Enterprise BI systems (16-20 weeks, $100-120K), Full-scale ecosystems (20-24 weeks, $120K+). We follow agile methodology with value delivery at each phase.' 
+        {
+            q: 'What is the typical timeline and cost for enterprise data platform implementation?',
+            a: 'Timelines: Basic dashboards (4-6 weeks, $15-40K), Industry solutions (8-12 weeks, $40-70K), Custom platforms (12-16 weeks, $70-100K), Enterprise BI systems (16-20 weeks, $100-120K), Full-scale ecosystems (20-24 weeks, $120K+). We follow agile methodology with value delivery at each phase.'
         },
-        { 
-            q: 'How do you ensure data security and regulatory compliance?', 
-            a: 'We implement: End-to-end encryption (AES-256/TLS 1.3), Role-Based Access Control (RBAC), data masking/anonymization, comprehensive audit logging, regular security assessments, compliance with GDPR, HIPAA, PCI-DSS, SOC2, and industry-specific regulations. All solutions follow privacy-by-design principles with clear data ownership and stewardship.' 
+        {
+            q: 'How do you ensure data security and regulatory compliance?',
+            a: 'We implement: End-to-end encryption (AES-256/TLS 1.3), Role-Based Access Control (RBAC), data masking/anonymization, comprehensive audit logging, regular security assessments, compliance with GDPR, HIPAA, PCI-DSS, SOC2, and industry-specific regulations. All solutions follow privacy-by-design principles with clear data ownership and stewardship.'
         },
     ];
 
@@ -345,7 +344,7 @@ export default function DataEngineeringAnalyticsPage() {
                         <h1 className={styles.heroTitle}>
                             Data <span className={styles.heroTitleHighlight}>Engineering</span> & <span className={styles.heroTitleHighlight}>Analytics</span>
                         </h1>
-                        
+
                         <p className={styles.heroDescription}>
                             Unlock the true value of your data with scalable engineering pipelines and actionable analytics insights. We build modern data architectures that empower smarter decisions, operational efficiency, and accelerated business growth.
                         </p>
@@ -355,12 +354,12 @@ export default function DataEngineeringAnalyticsPage() {
                             </Link>
                         </div>
                     </motion.div>
-                    
+
                     {/* Testimonial Card */}
-                    <motion.div 
-                        className={styles.heroTestimonial} 
-                        initial={{ opacity: 0, x: 30 }} 
-                        animate={{ opacity: 1, x: 0 }} 
+                    <motion.div
+                        className={styles.heroTestimonial}
+                        initial={{ opacity: 0, x: 30 }}
+                        animate={{ opacity: 1, x: 0 }}
                         transition={{ duration: 0.8, delay: 0.2 }}
                     >
                         <div className={styles.testimonialCard}>
@@ -385,7 +384,7 @@ export default function DataEngineeringAnalyticsPage() {
                                 </div>
                             </div>
                             <MessageSquare className={styles.quoteIcon} />
-                            <p className={styles.testimonialText}>"{testimonial.content}"</p>
+                            <p className={styles.testimonialText}>&quot;{testimonial.content}&quot;</p>
                             <div className={styles.testimonialProject}>
                                 <Award size={16} /> {testimonial.project}
                             </div>
@@ -415,20 +414,20 @@ export default function DataEngineeringAnalyticsPage() {
                         <p>End-to-end solutions ensuring high data quality, seamless integration, predictive analytics readiness, and maximum security</p>
                     </div>
 
-                    {/* <div className={styles.servicesTabs}>
-                        <button 
+                    <div className={styles.servicesTabs}>
+                        <button
                             className={`${styles.serviceTab} ${activeService === 'engineering' ? styles.active : ''}`}
                             onClick={() => setActiveService('engineering')}
                         >
                             <Database /> Data Engineering Services
                         </button>
-                        <button 
+                        <button
                             className={`${styles.serviceTab} ${activeService === 'analytics' ? styles.active : ''}`}
                             onClick={() => setActiveService('analytics')}
                         >
                             <BarChart3 /> Data Analytics Services
                         </button>
-                    </div> */}
+                    </div>
 
                     <div className={styles.servicesGrid}>
                         {(activeService === 'engineering' ? engineeringServices : analyticsServices).map((service, idx) => (
@@ -485,19 +484,19 @@ export default function DataEngineeringAnalyticsPage() {
                     </div>
 
                     <div className={styles.categoriesTabs}>
-                        <button 
+                        <button
                             className={`${styles.categoryTab} ${activeAnalyticsTab === 'business' ? styles.active : ''}`}
                             onClick={() => setActiveAnalyticsTab('business')}
                         >
                             By Business Function
                         </button>
-                        <button 
+                        <button
                             className={`${styles.categoryTab} ${activeAnalyticsTab === 'industry' ? styles.active : ''}`}
                             onClick={() => setActiveAnalyticsTab('industry')}
                         >
                             By Industry Specifics
                         </button>
-                        <button 
+                        <button
                             className={`${styles.categoryTab} ${activeAnalyticsTab === 'technology' ? styles.active : ''}`}
                             onClick={() => setActiveAnalyticsTab('technology')}
                         >
@@ -558,12 +557,12 @@ export default function DataEngineeringAnalyticsPage() {
                                 <div className={styles.rowValue}>{row.analytics}</div>
                                 <div className={styles.rowValue}>
                                     {row.aspect === 'Definition and Focus' ? 'Applying scientific methods, algorithms, and systems to extract insights from data' :
-                                     row.aspect === 'Primary Goal' ? 'Build predictive models and advanced algorithms for complex problem-solving' :
-                                     row.aspect === 'Key Activities' ? 'Algorithm development, statistical modeling, machine learning research' :
-                                     row.aspect === 'Core Tools' ? 'Python/R, TensorFlow, PyTorch, Jupyter, ML libraries' :
-                                     row.aspect === 'Skill Sets' ? 'Advanced statistics, machine learning, deep learning, research methodology' :
-                                     row.aspect === 'Output/Outcome' ? 'Predictive models, AI algorithms, research findings, automation systems' :
-                                     'Enables advanced AI capabilities, automation, and innovative product development'}
+                                        row.aspect === 'Primary Goal' ? 'Build predictive models and advanced algorithms for complex problem-solving' :
+                                            row.aspect === 'Key Activities' ? 'Algorithm development, statistical modeling, machine learning research' :
+                                                row.aspect === 'Core Tools' ? 'Python/R, TensorFlow, PyTorch, Jupyter, ML libraries' :
+                                                    row.aspect === 'Skill Sets' ? 'Advanced statistics, machine learning, deep learning, research methodology' :
+                                                        row.aspect === 'Output/Outcome' ? 'Predictive models, AI algorithms, research findings, automation systems' :
+                                                            'Enables advanced AI capabilities, automation, and innovative product development'}
                                 </div>
                             </div>
                         ))}
@@ -697,8 +696,8 @@ export default function DataEngineeringAnalyticsPage() {
                     </div>
                     <div className={styles.industriesGrid}>
                         {industries.map((industry, idx) => (
-                            <div 
-                                key={idx} 
+                            <div
+                                key={idx}
                                 className={styles.industryCard}
                                 onMouseEnter={() => setHoveredIndustry(idx)}
                                 onMouseLeave={() => setHoveredIndustry(null)}
@@ -777,10 +776,10 @@ export default function DataEngineeringAnalyticsPage() {
                                 </button>
                                 <AnimatePresence>
                                     {openFaq === idx && (
-                                        <motion.div 
-                                            initial={{ opacity: 0, height: 0 }} 
-                                            animate={{ opacity: 1, height: 'auto' }} 
-                                            exit={{ opacity: 0, height: 0 }} 
+                                        <motion.div
+                                            initial={{ opacity: 0, height: 0 }}
+                                            animate={{ opacity: 1, height: 'auto' }}
+                                            exit={{ opacity: 0, height: 0 }}
                                             className={styles.faqAnswer}
                                         >
                                             <p>{faq.a}</p>
@@ -803,7 +802,7 @@ export default function DataEngineeringAnalyticsPage() {
                         <Link href="/contact" className={styles.ctaButtonPrimary}>
                             Start Your Data Journey <ChevronRight size={20} />
                         </Link>
-                        
+
                     </div>
                 </div>
             </section>

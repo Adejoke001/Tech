@@ -17,7 +17,6 @@ import {
     Star,
     HelpCircle,
     CheckCircle,
-    Database,
     Code,
     BookOpen,
     Server,
@@ -57,7 +56,7 @@ export default function MachineLearningPage() {
             title: 'MLOps Consulting',
             description: 'Get expert guidance on implementing MLOps practices to streamline your machine learning lifecycle, from development to deployment and maintenance.',
             icon: <Cpu className={styles.serviceIcon} />,
-           image: 'https://plus.unsplash.com/premium_photo-1726079247228-993af4c05db8?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8bWFjaGluZSUyMGxlYXJuaW5nJTIwY29uc3VsdGluZ3xlbnwwfHwwfHx8MA%3D%3D',
+            image: 'https://plus.unsplash.com/premium_photo-1726079247228-993af4c05db8?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8bWFjaGluZSUyMGxlYXJuaW5nJTIwY29uc3VsdGluZ3xlbnwwfHwwfHx8MA%3D%3D',
             color: '#34d399',
             features: ['CI/CD Pipelines', 'Model Monitoring', 'Automated Deployment']
         },
@@ -331,18 +330,18 @@ export default function MachineLearningPage() {
                             <div className={styles.testimonialHeader}>
                                 <div className={styles.testimonialImage}>
                                     <motion.div
-                                                    whileHover={{ scale: 1.05 }}
-                                                    transition={{ duration: 0.3 }}
-                                                  >
-                                                    <Image 
-                                                      src="/images/testimonial.jpg" 
-                                                      alt="Sarah - Client"
-                                                      width={100}
-                                                      height={100}
-                                                      className={styles.clientImage}
-                                                    />
-                                                  </motion.div>
-                                   
+                                        whileHover={{ scale: 1.05 }}
+                                        transition={{ duration: 0.3 }}
+                                    >
+                                        <Image
+                                            src="/images/testimonial.jpg"
+                                            alt="Sarah - Client"
+                                            width={100}
+                                            height={100}
+                                            className={styles.clientImage}
+                                        />
+                                    </motion.div>
+
                                 </div>
                                 <div className={styles.testimonialInfo}>
                                     <h4 className={styles.testimonialName}>{testimonial.name}</h4>

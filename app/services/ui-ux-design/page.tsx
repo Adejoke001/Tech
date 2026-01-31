@@ -5,19 +5,14 @@ import Image from 'next/image';
 import Link from 'next/link';
 import { motion, AnimatePresence } from 'framer-motion';
 import {
-    Palette, Smartphone, Monitor, Users, Zap, Search,
-    CheckCircle, Award, MessageSquare, Star, Sparkles,
+    Palette, Smartphone, Monitor, Users, Search,
+    CheckCircle, Award, MessageSquare, Sparkles,
     ChevronRight, Layout, Eye, Workflow, BarChart,
-    Target, Shield, Clock, Cpu, FileText, PieChart,
-    HelpCircle, ArrowRight, Brush, Layers, Figma,
-    Brain, TrendingUp, Circle, Globe, Server,
-    Wrench, TestTube, Tablet, Smartphone as Phone,
-    Cpu as CpuIcon, GitBranch, Terminal, Database,
-    Shield as ShieldIcon, Cloud, Music, Video,
-    ShoppingCart, Heart, BookOpen, Banknote,
-    LineChart, MessageCircle, Settings, Filter,
-    Code, PlayCircle, EyeOff, Mail, Share2,
-    Download, Upload, Lock, Unlock, Bell
+    Target, Clock, HelpCircle, ArrowRight, Brush,
+    Layers, Figma, Brain, TrendingUp, Circle, Globe,
+    TestTube, GitBranch, Shield as ShieldIcon, Cloud,
+    Heart, Banknote, LineChart, Settings, PlayCircle,
+    Lock
 } from 'lucide-react';
 import styles from './ui-ux.module.css';
 
@@ -412,26 +407,26 @@ export default function UIUXDesignPage() {
 
     // Industries Section
     const industries = [
-        { 
-            name: 'Healthcare', 
-            icon: '🏥', 
+        {
+            name: 'Healthcare',
+            icon: '🏥',
             desc: 'Intuitive patient portals, telehealth interfaces, medical dashboard designs with HIPAA compliance and accessibility standards.',
             image: 'https://images.unsplash.com/photo-1551601651-2a8555f1a136?auto=format&fit=crop&w=800&q=80',
-            color: '#34d399' 
+            color: '#34d399'
         },
-        { 
-            name: 'Fintech & Banking', 
-            icon: '🏦', 
+        {
+            name: 'Fintech & Banking',
+            icon: '🏦',
             desc: 'Secure banking interfaces, investment dashboards, payment apps with flawless user journeys and regulatory compliance.',
             image: 'https://images.unsplash.com/photo-1551434678-e076c223a692?auto=format&fit=crop&w=800&q=80',
-            color: '#60a5fa' 
+            color: '#60a5fa'
         },
-        { 
-            name: 'Retail & eCommerce', 
-            icon: '🛍️', 
+        {
+            name: 'Retail & eCommerce',
+            icon: '🛍️',
             desc: 'Conversion-optimized shopping experiences, personalized interfaces, seamless checkout flows and inventory management UIs.',
             image: 'https://images.unsplash.com/photo-1441986300917-64674bd600d8?auto=format&fit=crop&w=800&q=80',
-            color: '#8b5cf6' 
+            color: '#8b5cf6'
         },
     ];
 
@@ -514,9 +509,9 @@ export default function UIUXDesignPage() {
             {/* ===== HERO SECTION ===== */}
             <section className={styles.heroSection}>
                 <div className={styles.overlay}></div>
-                
+
                 <div className={styles.content}>
-                    <motion.div 
+                    <motion.div
                         className={styles.leftContent}
                         initial={{ opacity: 0, x: -20 }}
                         animate={{ opacity: 1, x: 0 }}
@@ -538,7 +533,7 @@ export default function UIUXDesignPage() {
                                 We design products that look great and are user-centric
                             </p>
                             <p className={styles.heroDescription}>
-                                From wireframes to interactive prototypes, we create user-friendly experiences 
+                                From wireframes to interactive prototypes, we create user-friendly experiences
                                 that keep people engaged and aligned with your business goals—so every interaction feels effortless.
                             </p>
                         </motion.div>
@@ -557,7 +552,7 @@ export default function UIUXDesignPage() {
                     </motion.div>
 
                     {/* Testimonial Card */}
-                    <motion.div 
+                    <motion.div
                         className={styles.rightContent}
                         initial={{ opacity: 0, x: 20 }}
                         animate={{ opacity: 1, x: 0 }}
@@ -575,15 +570,15 @@ export default function UIUXDesignPage() {
                                     />
                                 </div>
                             </div>
-                            
+
                             <div className={styles.testimonialContent}>
                                 <MessageSquare className={styles.quoteIcon} />
-                                <p className={styles.testimonialText}>"{testimonial.content}"</p>
+                                <p className={styles.testimonialText}>&quot;{testimonial.content}&quot;</p>
                                 <div className={styles.testimonialAuthor}>
                                     <h4>{testimonial.name}</h4>
                                     <p>{testimonial.role}</p>
                                 </div>
-                                
+
                                 <div className={styles.ratings}>
                                     <div className={styles.ratingItem}>
                                         <div className={styles.ratingStars}>
@@ -593,9 +588,9 @@ export default function UIUXDesignPage() {
                                         </div>
                                         <div className={styles.ratingText}>Exceptional Design</div>
                                     </div>
-                                    
+
                                     <div className={styles.ratingDivider}></div>
-                                    
+
                                     <div className={styles.ratingItem}>
                                         <div className={styles.projectBadge}>
                                             <Award className={styles.badgeIcon} />
@@ -637,7 +632,7 @@ export default function UIUXDesignPage() {
                         Our Product <span className={styles.titleHighlight}>UI/UX Design</span> Services
                     </h2>
                     <p className={styles.sectionDescription}>
-                        Increase user retention with UI/UX design services by BBNTech. We create innovative, 
+                        Increase user retention with UI/UX design services by BBNTech. We create innovative,
                         custom-design interfaces to propel your brand forward and boost user retention.
                     </p>
                 </div>
@@ -653,17 +648,17 @@ export default function UIUXDesignPage() {
                             viewport={{ once: true }}
                         >
                             <div className={styles.serviceHeader}>
-                                <div className={styles.serviceIconWrapper} style={{ 
-                                    backgroundColor: `${service.color}15`, 
-                                    color: service.color 
+                                <div className={styles.serviceIconWrapper} style={{
+                                    backgroundColor: `${service.color}15`,
+                                    color: service.color
                                 }}>
                                     {service.icon}
                                 </div>
                                 <h3 className={styles.serviceTitle}>{service.title}</h3>
                             </div>
-                            
+
                             <p className={styles.serviceDescription}>{service.description}</p>
-                            
+
                             <div className={styles.serviceFeatures}>
                                 <h4 className={styles.featuresTitle}>Key Features:</h4>
                                 <ul className={styles.featuresList}>
@@ -680,7 +675,7 @@ export default function UIUXDesignPage() {
                                 <h4 className={styles.deliverablesTitle}>Deliverables:</h4>
                                 <div className={styles.deliverablesTags}>
                                     {service.deliverables.map((item, idx) => (
-                                        <span key={idx} className={styles.deliverableTag} style={{ 
+                                        <span key={idx} className={styles.deliverableTag} style={{
                                             backgroundColor: `${service.color}10`
                                         }}>
                                             {item}
@@ -734,7 +729,7 @@ export default function UIUXDesignPage() {
                             <div className={styles.rowAspect}>
                                 <span className={styles.aspectTitle}>{row.aspect}</span>
                             </div>
-                            
+
                             <div className={styles.rowUi} style={{ borderLeft: `4px solid #60a5fa` }}>
                                 <div className={styles.cellHeader}>
                                     <div className={styles.uiBadge}>UI</div>
@@ -749,7 +744,7 @@ export default function UIUXDesignPage() {
                                     ))}
                                 </ul>
                             </div>
-                            
+
                             <div className={styles.rowUx} style={{ borderLeft: `4px solid #34d399` }}>
                                 <div className={styles.cellHeader}>
                                     <div className={styles.uxBadge}>UX</div>
@@ -770,8 +765,8 @@ export default function UIUXDesignPage() {
 
                 <div className={styles.comparisonNote}>
                     <div className={styles.noteIcon}>💡</div>
-                    <p><strong>Note:</strong> While UI and UX have distinct focuses, they work together to create successful products. 
-                    Great UI enhances good UX, and excellent UX requires thoughtful UI.</p>
+                    <p><strong>Note:</strong> While UI and UX have distinct focuses, they work together to create successful products.
+                        Great UI enhances good UX, and excellent UX requires thoughtful UI.</p>
                 </div>
             </section>
 
@@ -842,7 +837,7 @@ export default function UIUXDesignPage() {
                                     <span className={styles.activitiesLabel}>Key Activities:</span>
                                     <div className={styles.activityTags}>
                                         {stage.activities.map((activity, idx) => (
-                                            <span key={idx} className={styles.activityTag} style={{ 
+                                            <span key={idx} className={styles.activityTag} style={{
                                                 backgroundColor: `${stage.color}15`
                                             }}>
                                                 {activity}
@@ -866,7 +861,7 @@ export default function UIUXDesignPage() {
                         Key Components Every <span className={styles.titleHighlight}>Design Must Include</span>
                     </h2>
                     <p className={styles.sectionDescription}>
-                        A reliable design isn't just built—it's engineered around your business goals and user needs.
+                        A reliable design isn&apos;t just built—it&apos;s engineered around your business goals and user needs.
                     </p>
                 </div>
 
@@ -943,7 +938,7 @@ export default function UIUXDesignPage() {
                         Why Choose <span className={styles.titleHighlightWhite}>BBNTech</span> for Design
                     </h2>
                     <p className={styles.sectionDescriptionWhite}>
-                        With years of industry-relevant experience, our team deeply understands users' needs 
+                        With years of industry-relevant experience, our team deeply understands users&apos; needs
                         and delivers designs that captivate and convert.
                     </p>
                 </div>
@@ -978,8 +973,8 @@ export default function UIUXDesignPage() {
                     </div>
                     <div className={styles.industriesGrid}>
                         {industries.map((industry, idx) => (
-                            <div 
-                                key={idx} 
+                            <div
+                                key={idx}
                                 className={styles.industryCard}
                                 onMouseEnter={() => setHoveredIndustry(idx)}
                                 onMouseLeave={() => setHoveredIndustry(null)}
@@ -1073,7 +1068,7 @@ export default function UIUXDesignPage() {
                     <div className={styles.ctaContent}>
                         <h3 className={styles.ctaTitle}>Ready for a Design Upgrade?</h3>
                         <p className={styles.ctaDescription}>
-                            We help you increase your product's usability and appeal with cutting-edge design practices.
+                            We help you increase your product&apos;s usability and appeal with cutting-edge design practices.
                             Your vision is our next project.
                         </p>
                         <div className={styles.ctaButtons}>
@@ -1081,7 +1076,7 @@ export default function UIUXDesignPage() {
                                 Start Design Consultation
                                 <ChevronRight className={styles.buttonIcon} />
                             </Link>
-                            
+
                         </div>
                     </div>
                 </div>

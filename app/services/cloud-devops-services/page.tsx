@@ -135,26 +135,26 @@ export default function CloudServicesPage() {
 
     // ===== INDUSTRIES WE CATER TO (Reduced to three) =====
     const industries = [
-        { 
-            name: 'Healthcare', 
-            icon: '🏥', 
+        {
+            name: 'Healthcare',
+            icon: '🏥',
             desc: 'Building smart healthcare solutions with AI-powered diagnostics, predictive analytics, and secure patient data management in HIPAA-compliant cloud environments.',
             image: 'https://images.unsplash.com/photo-1551601651-2a8555f1a136?auto=format&fit=crop&w=800&q=80',
-            color: '#10B981' 
+            color: '#10B981'
         },
-        { 
-            name: 'Retail & eCommerce', 
-            icon: '🛍️', 
+        {
+            name: 'Retail & eCommerce',
+            icon: '🛍️',
             desc: 'Enhancing retail journeys with real-time inventory tracking, personalized customer experiences, and scalable infrastructure to handle peak shopping seasons seamlessly.',
             image: 'https://images.unsplash.com/photo-1441986300917-64674bd600d8?auto=format&fit=crop&w=800&q=80',
-            color: '#8B5CF6' 
+            color: '#8B5CF6'
         },
-        { 
-            name: 'Media & Entertainment', 
-            icon: '🎬', 
+        {
+            name: 'Media & Entertainment',
+            icon: '🎬',
             desc: 'Custom tech to empower brands with content delivery networks, streaming optimization, and audience analytics for personalized media experiences.',
             image: 'https://images.unsplash.com/photo-1489599809516-9827b6d1cf13?auto=format&fit=crop&w=800&q=80',
-            color: '#EC4899' 
+            color: '#EC4899'
         },
     ];
 
@@ -201,24 +201,24 @@ export default function CloudServicesPage() {
                             </Link>
                         </div>
                     </motion.div>
-                    
+
                     {/* Updated Testimonial Card */}
-                    <motion.div 
-                        className={styles.heroTestimonial} 
-                        initial={{ opacity: 0, x: 30 }} 
-                        animate={{ opacity: 1, x: 0 }} 
+                    <motion.div
+                        className={styles.heroTestimonial}
+                        initial={{ opacity: 0, x: 30 }}
+                        animate={{ opacity: 1, x: 0 }}
                         transition={{ duration: 0.8, delay: 0.2 }}
                     >
                         <div className={styles.testimonialCard}>
                             <div className={styles.testimonialHeader}>
                                 <div className={styles.testimonialImage}>
-                                    
-                                    <Image 
-                                            src="https://plus.unsplash.com/premium_photo-1689977927774-401b12d137d6?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OXx8bWFufGVufDB8fDB8fHww" 
-                                            alt="Jonathan - Client"
-                                            width={100}
-                                            height={100}
-                                            className={styles.clientImage}
+
+                                    <Image
+                                        src="https://plus.unsplash.com/premium_photo-1689977927774-401b12d137d6?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OXx8bWFufGVufDB8fDB8fHww"
+                                        alt="Jonathan - Client"
+                                        width={100}
+                                        height={100}
+                                        className={styles.clientImage}
                                     />
                                 </div>
                                 <div className={styles.testimonialInfo}>
@@ -232,7 +232,7 @@ export default function CloudServicesPage() {
                                 </div>
                             </div>
                             <MessageSquare className={styles.quoteIcon} />
-                            <p className={styles.testimonialText}>"{testimonial.content}"</p>
+                            <p className={styles.testimonialText}>&quot;{testimonial.content}&quot;</p>
                             <div className={styles.testimonialProject}>
                                 <Award size={16} /> {testimonial.project}
                             </div>
@@ -361,7 +361,7 @@ export default function CloudServicesPage() {
                                 <h2>Why Choose BBNTech?</h2>
                                 <p>We bring innovation, expertise, and reliability to every cloud project. With 20+ years of cloud expertise, certified talent, and reliable delivery.</p>
                                 <div className={styles.whyChooseGrid}>
-                                    <div className={styles.whyChooseCard}><Award /> India's Top 1% Software Talent</div>
+                                    <div className={styles.whyChooseCard}><Award /> India&apos;s Top 1% Software Talent</div>
                                     <div className={styles.whyChooseCard}><Users /> Trusted by Startups to Fortune 500</div>
                                     <div className={styles.whyChooseCard}><Workflow /> Idea to Deployment, We Handle All</div>
                                     <div className={styles.whyChooseCard}><Globe /> Time-Zone Friendly: Global Presence</div>
@@ -440,8 +440,8 @@ export default function CloudServicesPage() {
                 </div>
                 <div className={styles.industriesGrid}>
                     {industries.map((industry, idx) => (
-                        <div 
-                            key={idx} 
+                        <div
+                            key={idx}
                             className={styles.industryCard}
                             onMouseEnter={() => setHoveredIndustry(idx)}
                             onMouseLeave={() => setHoveredIndustry(null)}
@@ -457,7 +457,7 @@ export default function CloudServicesPage() {
                                 <div className={`${styles.industryOverlay} ${hoveredIndustry === idx ? styles.active : ''}`}></div>
                                 <h4 className={styles.industryName}>{industry.name}</h4>
                             </div>
-                            
+
                             <AnimatePresence>
                                 {hoveredIndustry === idx && (
                                     <motion.div
@@ -509,10 +509,10 @@ export default function CloudServicesPage() {
                             </button>
                             <AnimatePresence>
                                 {openFaq === idx && (
-                                    <motion.div 
-                                        initial={{ opacity: 0, height: 0 }} 
-                                        animate={{ opacity: 1, height: 'auto' }} 
-                                        exit={{ opacity: 0, height: 0 }} 
+                                    <motion.div
+                                        initial={{ opacity: 0, height: 0 }}
+                                        animate={{ opacity: 1, height: 'auto' }}
+                                        exit={{ opacity: 0, height: 0 }}
                                         className={styles.faqAnswer}
                                     >
                                         <p>{faq.a}</p>

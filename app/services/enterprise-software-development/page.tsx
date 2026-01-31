@@ -5,12 +5,12 @@ import Image from 'next/image';
 import Link from 'next/link';
 import { motion, AnimatePresence } from 'framer-motion';
 import {
-    Server, Cloud, Shield, Zap, Database, Users,
-    Cpu, GitMerge, BarChart, Lock, Globe, Workflow,
-    CheckCircle, Award, MessageSquare, Star, Sparkles,
-    ChevronRight, Code, Activity, Smartphone, Target,
-    TrendingUp, FileText, PieChart, Network, RefreshCw,
-    HelpCircle, ArrowRight, Building, Settings, Wrench,
+    Server, Cloud, Shield, Database, Users,
+    Cpu, GitMerge, BarChart, Globe,
+    CheckCircle, Award, MessageSquare, Sparkles,
+    ChevronRight, Code, Activity, Smartphone,
+    TrendingUp, FileText, RefreshCw,
+    HelpCircle, ArrowRight, Settings,
     ClipboardCheck, HeadphonesIcon
 } from 'lucide-react';
 import styles from './enterprise.module.css';
@@ -231,26 +231,26 @@ export default function EnterpriseSoftwarePage() {
 
     // Industries Section (Matching API Development page structure)
     const industries = [
-        { 
-            name: 'Healthcare', 
-            icon: '🏥', 
+        {
+            name: 'Healthcare',
+            icon: '🏥',
             desc: 'Secure, HIPAA-compliant APIs for EHR integration, telehealth platforms, medical device connectivity, and patient data interoperability.',
             image: 'https://images.unsplash.com/photo-1551601651-2a8555f1a136?auto=format&fit=crop&w=800&q=80',
-            color: '#10B981' 
+            color: '#10B981'
         },
-        { 
-            name: 'Retail & eCommerce', 
-            icon: '🛍️', 
+        {
+            name: 'Retail & eCommerce',
+            icon: '🛍️',
             desc: 'Scalable APIs for payment processing, inventory management, order fulfillment, CRM integration, and personalized shopping experiences.',
             image: 'https://images.unsplash.com/photo-1441986300917-64674bd600d8?auto=format&fit=crop&w=800&q=80',
-            color: '#8B5CF6' 
+            color: '#8B5CF6'
         },
-        { 
-            name: 'Fintech & Banking', 
-            icon: '🏦', 
+        {
+            name: 'Fintech & Banking',
+            icon: '🏦',
             desc: 'High-security APIs for payment gateways, banking systems, fraud detection, regulatory compliance, and financial data aggregation.',
             image: 'https://images.unsplash.com/photo-1551434678-e076c223a692?auto=format&fit=crop&w=800&q=80',
-            color: '#3B82F6' 
+            color: '#3B82F6'
         },
     ];
 
@@ -287,10 +287,10 @@ export default function EnterpriseSoftwarePage() {
             {/* ===== HERO SECTION (Matching Quality Assurance page layout) ===== */}
             <section className={styles.heroSection}>
                 <div className={styles.overlay}></div>
-                
+
                 <div className={styles.content}>
                     {/* Left Side - Content */}
-                    <motion.div 
+                    <motion.div
                         className={styles.leftContent}
                         initial={{ opacity: 0, x: -20 }}
                         animate={{ opacity: 1, x: 0 }}
@@ -312,8 +312,8 @@ export default function EnterpriseSoftwarePage() {
                                 Modernize, Integrate & Scale – Enterprise Software, Delivered with Governance
                             </p>
                             <p className={styles.heroDescription}>
-                                Strengthen your enterprise with software built for long-term stability, security, and scale. 
-                                We help you modernize operations, eliminate bottlenecks, and deliver systems that integrate 
+                                Strengthen your enterprise with software built for long-term stability, security, and scale.
+                                We help you modernize operations, eliminate bottlenecks, and deliver systems that integrate
                                 smoothly across your organization.
                             </p>
                         </motion.div>
@@ -332,7 +332,7 @@ export default function EnterpriseSoftwarePage() {
                     </motion.div>
 
                     {/* Right Side - Testimonial Card */}
-                    <motion.div 
+                    <motion.div
                         className={styles.rightContent}
                         initial={{ opacity: 0, x: 20 }}
                         animate={{ opacity: 1, x: 0 }}
@@ -350,15 +350,15 @@ export default function EnterpriseSoftwarePage() {
                                     />
                                 </div>
                             </div>
-                            
+
                             <div className={styles.testimonialContent}>
                                 <MessageSquare className={styles.quoteIcon} />
-                                <p className={styles.testimonialText}>"{testimonial.content}"</p>
+                                <p className={styles.testimonialText}>&quot;{testimonial.content}&quot;</p>
                                 <div className={styles.testimonialAuthor}>
                                     <h4>{testimonial.name}</h4>
                                     <p>{testimonial.role}</p>
                                 </div>
-                                
+
                                 <div className={styles.ratings}>
                                     <div className={styles.ratingItem}>
                                         <div className={styles.ratingStars}>
@@ -368,9 +368,9 @@ export default function EnterpriseSoftwarePage() {
                                         </div>
                                         <div className={styles.ratingText}>Expert Enterprise Team</div>
                                     </div>
-                                    
+
                                     <div className={styles.ratingDivider}></div>
-                                    
+
                                     <div className={styles.ratingItem}>
                                         <div className={styles.projectBadge}>
                                             <Award className={styles.badgeIcon} />
@@ -412,9 +412,9 @@ export default function EnterpriseSoftwarePage() {
                         Enterprise Software Development <span className={styles.titleHighlight}>Services</span>
                     </h2>
                     <p className={styles.sectionDescription}>
-                        We are a reliable enterprise software development firm dedicated to building scalable, 
-                        robust, and highly secure software solutions. From modernizing legacy software to 
-                        integrating applications, we address your business's unique needs.
+                        We are a reliable enterprise software development firm dedicated to building scalable,
+                        robust, and highly secure software solutions. From modernizing legacy software to
+                        integrating applications, we address your business&apos;s unique needs.
                     </p>
                 </div>
 
@@ -431,17 +431,17 @@ export default function EnterpriseSoftwarePage() {
                             onMouseLeave={() => setHoveredService(null)}
                         >
                             <div className={styles.serviceHeader}>
-                                <div className={styles.serviceIconWrapper} style={{ 
-                                    backgroundColor: `${service.color}20`, 
-                                    color: service.color 
+                                <div className={styles.serviceIconWrapper} style={{
+                                    backgroundColor: `${service.color}20`,
+                                    color: service.color
                                 }}>
                                     {service.icon}
                                 </div>
                                 <h3 className={styles.serviceTitle}>{service.title}</h3>
                             </div>
-                            
+
                             <p className={styles.serviceDescription}>{service.description}</p>
-                            
+
                             <div className={styles.serviceDetails}>
                                 <ul className={styles.detailsList}>
                                     {service.features.map((feature, idx) => (
@@ -477,7 +477,7 @@ export default function EnterpriseSoftwarePage() {
                         50+ Enterprise Software Types We <span className={styles.titleHighlight}>Specialize In</span>
                     </h2>
                     <p className={styles.sectionDescription}>
-                        By leveraging robust software engineering practices and domain-specific expertise, 
+                        By leveraging robust software engineering practices and domain-specific expertise,
                         we develop enterprise-grade software across multiple categories.
                     </p>
                 </div>
@@ -516,8 +516,8 @@ export default function EnterpriseSoftwarePage() {
                         Tech Stacks We Use in Enterprise <span className={styles.titleHighlight}>Software Development</span>
                     </h2>
                     <p className={styles.sectionDescription}>
-                        We use cutting-edge technologies to build scalable, secure, and high-performance 
-                        enterprise software. From backend to cloud solutions, our diverse tech stack 
+                        We use cutting-edge technologies to build scalable, secure, and high-performance
+                        enterprise software. From backend to cloud solutions, our diverse tech stack
                         ensures efficiency and seamless integration.
                     </p>
                 </div>
@@ -540,7 +540,7 @@ export default function EnterpriseSoftwarePage() {
                             </div>
                             <div className={styles.techItems}>
                                 {stack.technologies.map((tech, idx) => (
-                                    <span key={idx} className={styles.techItem} style={{ 
+                                    <span key={idx} className={styles.techItem} style={{
                                         backgroundColor: `${stack.color}15`,
                                         borderColor: stack.color
                                     }}>
@@ -560,7 +560,7 @@ export default function EnterpriseSoftwarePage() {
                         Key Components Every Enterprise Software <span className={styles.titleHighlight}>Must Include</span>
                     </h2>
                     <p className={styles.sectionDescription}>
-                        A reliable enterprise software isn't just built. It's engineered around your business. 
+                        A reliable enterprise software isn&apos;t just built. It&apos;s engineered around your business.
                         Here are the core elements that make enterprise software truly work.
                     </p>
                 </div>
@@ -597,7 +597,7 @@ export default function EnterpriseSoftwarePage() {
                         Our Enterprise Software <span className={styles.titleHighlight}>Development Process</span>
                     </h2>
                     <p className={styles.sectionDescription}>
-                        We specialize in engineering enterprise software that's both stable and secure, 
+                        We specialize in engineering enterprise software that&apos;s both stable and secure,
                         using a structured agile approach with a variety of tech tools.
                     </p>
                 </div>
@@ -687,52 +687,52 @@ export default function EnterpriseSoftwarePage() {
             </section>
 
 
-{/* ===== INDUSTRIES SECTION (EXACT MATCH from API Development page) ===== */}
-<section className={styles.industriesSection}>
-  <div className={styles.sectionContent}>
-    <div className={styles.sectionHeader}>
-      <h2>Industries We Cater To</h2>
-      <p>Partnering with businesses in diverse sectors to unlock new avenues for growth and innovation</p>
-    </div>
-    <div className={styles.industriesGrid}>
-      {industries.map((industry, idx) => (
-        <div 
-          key={idx} 
-          className={styles.industryCard}
-          onMouseEnter={() => setHoveredIndustry(idx)}
-          onMouseLeave={() => setHoveredIndustry(null)}
-        >
-          <div className={styles.industryImageContainer}>
-            <Image
-              src={industry.image}
-              alt={industry.name}
-              fill
-              className={styles.industryImage}
-              sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
-            />
-            <div className={`${styles.industryOverlay} ${hoveredIndustry === idx ? styles.active : ''}`}></div>
-            <div className={styles.industryContent}>
-              <h4 className={styles.industryName}>{industry.name}</h4>
-              <AnimatePresence>
-                {hoveredIndustry === idx && (
-                  <motion.div
-                    className={styles.industryDescription}
-                    initial={{ opacity: 0, height: 0 }}
-                    animate={{ opacity: 1, height: 'auto' }}
-                    exit={{ opacity: 0, height: 0 }}
-                    transition={{ duration: 0.3 }}
-                  >
-                    <p>{industry.desc}</p>
-                  </motion.div>
-                )}
-              </AnimatePresence>
-            </div>
-          </div>
-        </div>
-      ))}
-    </div>
-  </div>
-</section>
+            {/* ===== INDUSTRIES SECTION (EXACT MATCH from API Development page) ===== */}
+            <section className={styles.industriesSection}>
+                <div className={styles.sectionContent}>
+                    <div className={styles.sectionHeader}>
+                        <h2>Industries We Cater To</h2>
+                        <p>Partnering with businesses in diverse sectors to unlock new avenues for growth and innovation</p>
+                    </div>
+                    <div className={styles.industriesGrid}>
+                        {industries.map((industry, idx) => (
+                            <div
+                                key={idx}
+                                className={styles.industryCard}
+                                onMouseEnter={() => setHoveredIndustry(idx)}
+                                onMouseLeave={() => setHoveredIndustry(null)}
+                            >
+                                <div className={styles.industryImageContainer}>
+                                    <Image
+                                        src={industry.image}
+                                        alt={industry.name}
+                                        fill
+                                        className={styles.industryImage}
+                                        sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                                    />
+                                    <div className={`${styles.industryOverlay} ${hoveredIndustry === idx ? styles.active : ''}`}></div>
+                                    <div className={styles.industryContent}>
+                                        <h4 className={styles.industryName}>{industry.name}</h4>
+                                        <AnimatePresence>
+                                            {hoveredIndustry === idx && (
+                                                <motion.div
+                                                    className={styles.industryDescription}
+                                                    initial={{ opacity: 0, height: 0 }}
+                                                    animate={{ opacity: 1, height: 'auto' }}
+                                                    exit={{ opacity: 0, height: 0 }}
+                                                    transition={{ duration: 0.3 }}
+                                                >
+                                                    <p>{industry.desc}</p>
+                                                </motion.div>
+                                            )}
+                                        </AnimatePresence>
+                                    </div>
+                                </div>
+                            </div>
+                        ))}
+                    </div>
+                </div>
+            </section>
 
             {/* ===== FAQ SECTION ===== */}
             <section className={styles.faqSection}>
@@ -741,8 +741,8 @@ export default function EnterpriseSoftwarePage() {
                         Frequently Asked <span className={styles.titleHighlight}>Questions</span>
                     </h2>
                     <p className={styles.sectionDescription}>
-                        Considering our custom enterprise software solutions for your business? 
-                        We've compiled answers to typical questions to help you understand how we can assist you.
+                        Considering our custom enterprise software solutions for your business?
+                        We&apos;ve compiled answers to typical questions to help you understand how we can assist you.
                     </p>
                 </div>
 
@@ -792,15 +792,15 @@ export default function EnterpriseSoftwarePage() {
                     <div className={styles.ctaContent}>
                         <h3 className={styles.ctaTitle}>Ready to Transform Your Enterprise?</h3>
                         <p className={styles.ctaDescription}>
-                            Your enterprise vision is our next project. Tell us about your business goals, 
-                            and we'll show you exactly how to make them a reality with custom software solutions.
+                            Your enterprise vision is our next project. Tell us about your business goals,
+                            and we&apos;ll show you exactly how to make them a reality with custom software solutions.
                         </p>
                         <div className={styles.ctaButtons}>
                             <Link href="/contact" className={styles.ctaPrimary}>
                                 Start Free Consultation
                                 <ChevronRight className={styles.buttonIcon} />
                             </Link>
-                            
+
                         </div>
                     </div>
                 </div>
