@@ -968,8 +968,8 @@ export default function UIUXDesignPage() {
             <section className={styles.industriesSection}>
                 <div className={styles.sectionContent}>
                     <div className={styles.sectionHeader}>
-                        <h2>Industries We Cater To</h2>
-                        <p>Partnering with businesses in diverse sectors to unlock new avenues for growth and innovation</p>
+                        <h2 className={styles.sectionTitle}>Industries We Cater To</h2>
+                        <p className={styles.sectionDescription}>Partnering with businesses in diverse sectors to unlock new avenues for growth and innovation</p>
                     </div>
                     <div className={styles.industriesGrid}>
                         {industries.map((industry, idx) => (
