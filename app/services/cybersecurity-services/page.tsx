@@ -6,17 +6,14 @@ import Link from 'next/link';
 import { motion, AnimatePresence } from 'framer-motion';
 import {
     Shield, Lock, AlertTriangle, FileCheck,
-    Server, Cloud, Database, Users,
-    Cpu, GitMerge, BarChart, Globe,
+    Server, Cloud, Database, Users, GitMerge, 
     CheckCircle, Award, MessageSquare, Sparkles,
-    ChevronRight, Code, Activity, Smartphone,
-    TrendingUp, FileText, RefreshCw, Zap,
-    HelpCircle, ArrowRight, Settings, Eye,
-    ClipboardCheck, HeadphonesIcon, Network,
-    Search, BarChart3, ShieldAlert, FileCode,
-    Workflow, Key, Building, BanknoteIcon,
-    HeartPulse, ShoppingBag, Factory, Globe2,
-    CreditCard, BookOpen, Target, UserCheck
+    ChevronRight, Code, Activity, TrendingUp, 
+    FileText, RefreshCw, Zap, HelpCircle, 
+    ArrowRight, Settings, Eye, ClipboardCheck, 
+    Network, Search, BarChart3, ShieldAlert, FileCode,
+    Workflow, HeartPulse, Globe2, CreditCard, 
+    BookOpen, Target, UserCheck
 } from 'lucide-react';
 import styles from './cybersecurity.module.css';
 
@@ -977,9 +974,7 @@ export default function CybersecurityServicesPage() {
                                 Schedule Security Assessment
                                 <ArrowRight className={styles.buttonIcon} />
                             </Link>
-                            <Link href="/resources/security-whitepaper" className={styles.ctaSecondary}>
-                                Download Security Guide
-                            </Link>
+                            
                         </div>
                     </div>
                 </div>
