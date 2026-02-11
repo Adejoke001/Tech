@@ -147,8 +147,8 @@ export default function Navbar() {
           icon: <MobileIcon />,
         },
         {
-          name: "Cloud & Infrastructure",
-          href: "/hire-developers/cloud-developers",
+          name: "Full Stack",
+          href: "/hire-developers/fullstack-developers",
           icon: <InfrastructureIcon />,
         },
         {
@@ -156,11 +156,7 @@ export default function Navbar() {
           href: "/hire-developers/qa-developers",
           icon: <QADevIcon />,
         },
-        {
-          name: "Data & AI",
-          href: "/hire-developers/data-ai-developers",
-          icon: <DataAIIcon />,
-        },
+        
       ],
     },
     solutions: {
