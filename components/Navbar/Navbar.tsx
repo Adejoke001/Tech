@@ -179,8 +179,8 @@ export default function Navbar() {
           icon: <EnterpriseSolIcon />,
         },
         {
-          name: "Security & Compliance",
-          href: "/solutions/solutions-security-compliance",
+          name: "Specialized Solutions",
+          href: "/solutions/specialized-solutions",
           icon: <ComplianceIcon />,
         },
       ],

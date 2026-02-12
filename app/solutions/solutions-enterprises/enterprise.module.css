@@ -4,15 +4,15 @@
     --primary-green: #10B981;
     --gradient-primary: linear-gradient(135deg, #3B82F6, #10B981);
     --gradient-primary-dark: linear-gradient(135deg, #2563EB, #059669);
-    
+
     --secondary-purple: #8B5CF6;
     --secondary-amber: #F59E0B;
     --secondary-pink: #EC4899;
     --secondary-cyan: #06B6D4;
-    
+
     --gradient-section-light: linear-gradient(135deg, rgba(59, 130, 246, 0.03) 0%, rgba(16, 185, 129, 0.03) 100%);
     --gradient-section-dark: linear-gradient(135deg, rgba(15, 23, 42, 0.98) 0%, rgba(30, 41, 59, 0.95) 100%);
-    
+
     --dark-bg: #0F172A;
     --dark-surface: #1E293B;
     --gray-900: #1F2937;
@@ -25,7 +25,7 @@
     --gray-200: #F3F4F6;
     --gray-100: #F9FAFB;
     --white: #FFFFFF;
-    
+
     width: 100%;
     overflow-x: hidden;
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, sans-serif;
@@ -453,11 +453,12 @@
     margin: 0 auto;
 }
 
-/* ===== EXPERTISE CARDS (YOUR EXISTING DESIGN) ===== */
+/* ===== EXPERTISE SECTION – GLASS CARDS ===== */
 .expertiseSection {
-    padding: 5rem 2rem;
-    background: var(--white);
+    padding: 6rem 2rem;
+    background: linear-gradient(135deg, var(--white) 0%, var(--gray-50) 100%);
     position: relative;
+    overflow: hidden;
 }
 
 .expertiseSection::before {
@@ -472,78 +473,78 @@
 
 .expertiseGrid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(360px, 1fr));
     gap: 2rem;
     max-width: 1400px;
     margin: 0 auto;
 }
 
 .expertiseCard {
-    background: var(--white);
-    border-radius: 1rem;
-    padding: 2rem;
-    border: 1px solid var(--gray-300);
-    transition: all 0.3s ease;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
-    position: relative;
+    border-radius: 1.5rem;
     overflow: hidden;
-    display: flex;
-    flex-direction: column;
+    transition: all 0.3s ease;
     height: 100%;
 }
 
-.expertiseCard:hover {
-    transform: translateY(-8px);
-    box-shadow: 0 12px 25px rgba(0, 0, 0, 0.1);
-    border-color: var(--primary-blue);
+.expertiseGlass {
+    padding: 2rem;
+    border-radius: 1.5rem;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(10px);
+    background: rgba(255, 255, 255, 0.6);
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.05);
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    transition: all 0.3s ease;
 }
 
-.cardHeader {
-    margin-bottom: 1rem;
+.expertiseCard:hover .expertiseGlass {
+    border-color: var(--primary-blue);
+    box-shadow: 0 16px 48px rgba(0, 0, 0, 0.08);
+    background: rgba(255, 255, 255, 0.8);
 }
 
 .expertiseIconWrapper {
-    width: 3.5rem;
-    height: 3.5rem;
-    border-radius: 0.75rem;
+    width: 4rem;
+    height: 4rem;
+    border-radius: 1rem;
     display: flex;
     align-items: center;
     justify-content: center;
-    flex-shrink: 0;
-    transition: all 0.3s ease;
-    margin-bottom: 1rem;
-    border: 2px solid;
-}
-
-.expertiseCard:hover .expertiseIconWrapper {
-    transform: scale(1.1);
-}
-
-.expertiseIcon {
-    width: 1.5rem;
-    height: 1.5rem;
+    margin-bottom: 1.5rem;
+    font-size: 2rem;
 }
 
 .expertiseTitle {
-    font-size: 1.375rem;
+    font-size: 1.5rem;
     font-weight: 700;
     color: var(--gray-900);
-    margin: 0 0 0.5rem 0;
-}
-
-.expertiseDetail {
-    color: var(--gray-600);
-    font-size: 0.875rem;
-    font-weight: 500;
     margin-bottom: 1rem;
+    line-height: 1.3;
 }
 
 .expertiseDescription {
     color: var(--gray-600);
     line-height: 1.6;
-    margin-bottom: 1.1rem;
-    font-size: 1rem;
-    flex-grow: 1;
+    margin-bottom: 1rem;
+    font-size: 0.95rem;
+}
+
+.expertiseExpanded {
+    margin-bottom: 1.5rem;
+    padding: 1rem;
+    background: var(--gray-100);
+    border-radius: 0.75rem;
+    border-left: 4px solid var(--primary-blue);
+}
+
+.expertiseExpanded p {
+    color: var(--gray-700);
+    font-size: 0.9rem;
+    line-height: 1.5;
+    margin: 0;
+    font-style: italic;
 }
 
 .expertiseFeatures {
@@ -551,9 +552,11 @@
 }
 
 .expertiseFeatures h4 {
-    font-size: 1rem;
-    color: var(--gray-700);
-    margin-bottom: 0.75rem;
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    color: var(--gray-500);
+    margin-bottom: 1rem;
     font-weight: 600;
 }
 
@@ -570,47 +573,37 @@
     color: var(--gray-700);
     margin-bottom: 0.75rem;
     font-size: 0.95rem;
-    line-height: 1.4;
 }
 
-.checkIcon {
-    width: 1.125rem;
-    height: 1.125rem;
+.featureItem svg {
     flex-shrink: 0;
     margin-top: 0.125rem;
+}
+
+.expertiseFooter {
+    margin-top: auto;
 }
 
 .learnMoreLink {
     display: inline-flex;
     align-items: center;
     gap: 0.5rem;
-    color: var(--primary-blue);
     font-weight: 600;
     text-decoration: none;
-    font-size: 0.95rem;
+    padding: 0.5rem 0;
+    border-bottom: 2px solid transparent;
     transition: all 0.3s ease;
-    padding: 0.75rem 1.5rem;
-    border-radius: 8px;
-    background: var(--gray-100);
-    margin-top: auto;
-    align-self: flex-start;
 }
 
 .learnMoreLink:hover {
-    background: var(--gray-200);
     gap: 0.75rem;
-    transform: translateX(5px);
+    border-bottom-color: currentColor;
 }
 
-.linkIcon {
-    width: 1rem;
-    height: 1rem;
-}
-
-/* ===== HIRING MODELS SECTION ===== */
+/* ===== HIRING MODELS – BOLD CARDS ===== */
 .hiringModelsSection {
-    padding: 5rem 2rem;
-    background: var(--gradient-section-light);
+    padding: 6rem 2rem;
+    background: var(--white);
     position: relative;
 }
 
@@ -627,7 +620,7 @@
 .hiringModelsGrid {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    gap: 2rem;
+    gap: 2.5rem;
     max-width: 1000px;
     margin: 0 auto;
 }
@@ -640,32 +633,44 @@
 
 .hiringModelCard {
     background: var(--white);
-    border-radius: 1.5rem;
-    padding: 2.5rem 2rem;
+    border-radius: 2rem;
+    padding: 2.5rem;
     border: 1px solid var(--gray-200);
-    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.05);
+    box-shadow: 0 20px 35px rgba(0, 0, 0, 0.05);
     transition: all 0.3s ease;
-    text-align: center;
+    position: relative;
+    overflow: hidden;
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: flex-start;
+}
+
+.hiringModelAccent {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 6px;
 }
 
 .hiringModelCard:hover {
-    transform: translateY(-8px);
-    box-shadow: 0 20px 35px rgba(0, 0, 0, 0.1);
+    transform: translateY(-6px);
+    box-shadow: 0 30px 45px rgba(0, 0, 0, 0.08);
     border-color: var(--primary-blue);
 }
 
 .hiringModelIcon {
-    width: 5rem;
-    height: 5rem;
-    border-radius: 1.5rem;
+    width: 4rem;
+    height: 4rem;
+    border-radius: 1rem;
     display: flex;
     align-items: center;
     justify-content: center;
     margin-bottom: 1.5rem;
     font-size: 2rem;
+    background: var(--white);
+    position: relative;
+    z-index: 2;
 }
 
 .hiringModelCard h3 {
@@ -673,13 +678,23 @@
     font-weight: 700;
     color: var(--gray-900);
     margin-bottom: 1rem;
+    line-height: 1.2;
+}
+
+.hiringModelStat {
+    display: inline-block;
+    padding: 0.35rem 1rem;
+    border-radius: 2rem;
+    font-size: 0.8rem;
+    font-weight: 600;
+    margin-bottom: 1.5rem;
 }
 
 .hiringModelDescription {
     color: var(--gray-600);
-    line-height: 1.6;
+    line-height: 1.7;
     margin-bottom: 1.5rem;
-    font-size: 1rem;
+    font-size: 0.95rem;
 }
 
 .hiringModelFeatures {
@@ -687,7 +702,6 @@
     padding: 0;
     margin: 0;
     width: 100%;
-    text-align: left;
 }
 
 .hiringModelFeatures li {
@@ -704,277 +718,110 @@
     margin-top: 0.125rem;
 }
 
-/* ===== COST ESTIMATION SECTION ===== */
-.costSection {
-    padding: 5rem 2rem;
-    background: var(--white);
+/* ===== PARTNER HIGHLIGHTS – REDESIGNED WITH BACKGROUND IMAGE ===== */
+.partnerSection {
     position: relative;
+    padding: 6rem 2rem;
+    overflow: hidden;
 }
 
-.costSection::before {
-    content: '';
+.partnerBackground {
     position: absolute;
     top: 0;
     left: 0;
-    right: 0;
-    height: 1px;
-    background: linear-gradient(90deg, transparent, var(--gray-300), transparent);
+    width: 100%;
+    height: 100%;
+    z-index: 0;
 }
 
-.costGrid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    gap: 2rem;
-    max-width: 1400px;
-    margin: 0 auto 2rem;
+.partnerBgImage {
+    object-fit: cover;
+    object-position: center;
 }
 
-.costCard {
-    background: var(--white);
-    border-radius: 1.5rem;
-    padding: 2rem;
-    border: 1px solid var(--gray-200);
-    border-top: 6px solid;
-    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.05);
-    transition: all 0.3s ease;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    position: relative;
-}
-
-.costCard:hover {
-    transform: translateY(-8px);
-    box-shadow: 0 20px 35px rgba(0, 0, 0, 0.1);
-}
-
-.costIcon {
-    width: 3.5rem;
-    height: 3.5rem;
-    border-radius: 1rem;
-    background: var(--gradient-section-light);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-bottom: 1.5rem;
-}
-
-.costRange {
-    font-size: 1.5rem;
-    font-weight: 800;
-    color: var(--gray-900);
-    margin-bottom: 1rem;
-    line-height: 1.2;
-}
-
-.costDescription {
-    color: var(--gray-600);
-    line-height: 1.6;
-    margin-bottom: 1.5rem;
-    font-size: 0.95rem;
-    flex-grow: 1;
-}
-
-.costBadge {
-    display: inline-block;
-    padding: 0.5rem 1rem;
-    border-radius: 2rem;
-    color: white;
-    font-size: 0.75rem;
-    font-weight: 600;
-    text-transform: uppercase;
-    letter-spacing: 0.05em;
-}
-
-.costCta {
-    text-align: center;
-    margin-top: 2rem;
-}
-
-.costCalculatorButton {
-    background: var(--gradient-primary);
-    color: white;
-    border: none;
-    padding: 1rem 2.5rem;
-    font-size: 1.1rem;
-    font-weight: 600;
-    border-radius: 50px;
-    cursor: pointer;
-    transition: all 0.3s ease;
-    display: inline-flex;
-    align-items: center;
-    gap: 0.5rem;
-    text-decoration: none;
-    box-shadow: 0 4px 15px rgba(59, 130, 246, 0.3);
-}
-
-.costCalculatorButton:hover {
-    transform: translateY(-2px);
-    box-shadow: 0 6px 20px rgba(59, 130, 246, 0.4);
-    background: var(--gradient-primary-dark);
-}
-
-/* ===== PROCESS SECTION (with coloured icons) ===== */
-.processSection {
-    padding: 5rem 2rem;
-    background: var(--gradient-section-light);
-    position: relative;
-}
-
-.processSection::before {
-    content: '';
+.partnerOverlay {
     position: absolute;
     top: 0;
     left: 0;
-    right: 0;
-    height: 1px;
-    background: linear-gradient(90deg, transparent, var(--gray-300), transparent);
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(135deg, rgba(15, 23, 42, 0.95) 0%, rgba(30, 41, 59, 0.9) 100%);
+    z-index: 1;
 }
 
-.processTimeline {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 2rem;
+.partnerContent {
+    position: relative;
+    z-index: 2;
     max-width: 1400px;
     margin: 0 auto;
-}
-
-.processStep {
-    background: var(--white);
-    border-radius: 1rem;
-    padding: 2rem;
-    border: 1px solid var(--gray-300);
-    text-align: center;
-    position: relative;
-    overflow: hidden;
-    transition: all 0.3s ease;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.processStep:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
-    border-color: var(--primary-blue);
-}
-
-.processStepHeader {
-    position: relative;
-    width: 100%;
-    margin-bottom: 1.5rem;
-}
-
-.processNumber {
-    font-size: 4rem;
-    font-weight: 900;
-    position: absolute;
-    top: -1.5rem;
-    left: 0;
-    right: 0;
-    line-height: 1;
-    z-index: 1;
-    opacity: 0.15;
-}
-
-.processIcon {
-    width: 3.5rem;
-    height: 3.5rem;
-    border-radius: 1rem;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin: 0 auto 1.5rem;
-    color: white;
-    position: relative;
-    z-index: 2;
-}
-
-.processTitle {
-    font-size: 1.375rem;
-    font-weight: 700;
-    color: var(--gray-900);
-    margin-bottom: 1rem;
-    position: relative;
-    z-index: 2;
-}
-
-.processDescription {
-    color: var(--gray-600);
-    line-height: 1.6;
-    font-size: 0.95rem;
-    position: relative;
-    z-index: 2;
-    flex-grow: 1;
-}
-
-/* ===== PARTNER HIGHLIGHTS SECTION ===== */
-.partnerSection {
-    padding: 5rem 2rem;
-    background: var(--white);
-    position: relative;
-}
-
-.partnerSection::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    height: 1px;
-    background: linear-gradient(90deg, transparent, var(--gray-300), transparent);
 }
 
 .partnerGrid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 1.5rem;
-    max-width: 1000px;
-    margin: 0 auto;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 2rem;
+    margin-top: 3rem;
 }
 
-.partnerCard {
+.partnerItem {
+    background: rgba(255, 255, 255, 0.08);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 1.5rem;
+    padding: 2rem 1.5rem;
+    transition: all 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    color: white;
+}
+
+.partnerItem:hover {
+    background: rgba(255, 255, 255, 0.12);
+    border-color: rgba(255, 255, 255, 0.2);
+    transform: translateY(-6px);
+}
+
+.partnerItemIcon {
+    width: 4rem;
+    height: 4rem;
+    border-radius: 1rem;
+    background: rgba(255, 255, 255, 0.1);
     display: flex;
     align-items: center;
-    gap: 1rem;
-    padding: 1.25rem;
-    background: var(--gradient-section-light);
-    border-radius: 1rem;
-    border: 1px solid var(--gray-200);
+    justify-content: center;
+    margin-bottom: 1.25rem;
     transition: all 0.3s ease;
 }
 
-.partnerCard:hover {
-    transform: translateY(-3px);
-    border-color: var(--primary-blue);
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.05);
+.partnerItem:hover .partnerItemIcon {
+    background: rgba(255, 255, 255, 0.2);
+    transform: scale(1.05);
+}
+
+.partnerItem h4 {
+    font-size: 1.125rem;
+    font-weight: 700;
+    margin-bottom: 0.75rem;
+    color: white;
+}
+
+.partnerItem p {
+    font-size: 0.875rem;
+    line-height: 1.6;
+    color: rgba(255, 255, 255, 0.8);
+    margin: 0;
+}
+
+/* ===== KEY CHALLENGES – SPLIT CARDS ===== */
+.challengesSection {
+    padding: 6rem 2rem;
     background: var(--white);
-}
-
-.partnerIcon {
-    width: 2rem;
-    height: 2rem;
-    flex-shrink: 0;
-}
-
-.partnerCard span {
-    color: var(--gray-800);
-    font-size: 1rem;
-    font-weight: 600;
-    flex-grow: 1;
-}
-
-/* ===== CHALLENGES & BENEFITS SECTION ===== */
-.challengesBenefitsSection {
-    padding: 5rem 2rem;
-    background: var(--gradient-section-light);
     position: relative;
 }
 
-.challengesBenefitsSection::before {
+.challengesSection::before {
     content: '';
     position: absolute;
     top: 0;
@@ -989,43 +836,49 @@
     grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
     gap: 2rem;
     max-width: 1400px;
-    margin: 0 auto 4rem;
+    margin: 0 auto;
 }
 
 .challengeCard {
     background: var(--white);
-    border-radius: 1rem;
+    border-radius: 1.5rem;
     padding: 2rem;
     border: 1px solid var(--gray-200);
-    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.05);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.03);
     transition: all 0.3s ease;
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
 }
 
 .challengeCard:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
     border-color: var(--primary-blue);
+    box-shadow: 0 20px 35px rgba(0, 0, 0, 0.06);
+}
+
+.challengeHeader {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    padding-bottom: 1rem;
+    margin-bottom: 1.5rem;
+    border-bottom: 2px solid;
 }
 
 .challengeIcon {
-    width: 3.5rem;
-    height: 3.5rem;
-    border-radius: 1rem;
+    width: 2.5rem;
+    height: 2.5rem;
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-bottom: 1.5rem;
     font-size: 1.5rem;
+    flex-shrink: 0;
 }
 
-.challengeCard h3 {
-    font-size: 1.375rem;
+.challengeHeader h3 {
+    font-size: 1.25rem;
     font-weight: 700;
     color: var(--gray-900);
-    margin-bottom: 1rem;
+    margin: 0;
 }
 
 .challengeDescription {
@@ -1055,82 +908,272 @@
     margin-top: 0.125rem;
 }
 
-.benefitsWrapper {
-    max-width: 1400px;
+/* ===== 7 SIGNS – COMPACT GRID ===== */
+.signsSection {
+    padding: 6rem 2rem;
+    background: linear-gradient(135deg, var(--gray-50) 0%, var(--white) 100%);
+    position: relative;
+}
+
+.signsSection::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 1px;
+    background: linear-gradient(90deg, transparent, var(--gray-300), transparent);
+}
+
+.signsGrid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1.5rem;
+    max-width: 1000px;
     margin: 0 auto;
 }
 
-.benefitsTitle {
-    font-size: 1.75rem;
-    font-weight: 700;
-    color: var(--gray-900);
-    text-align: center;
-    margin-bottom: 2rem;
-}
-
-.benefitsGrid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-    gap: 2rem;
-}
-
-.benefitCard {
+.signCard {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    padding: 1.25rem;
     background: var(--white);
     border-radius: 1rem;
-    padding: 1.5rem;
     border: 1px solid var(--gray-200);
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
     transition: all 0.3s ease;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.02);
 }
 
-.benefitCard:hover {
-    transform: translateY(-3px);
-    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+.signCard:hover {
     border-color: var(--primary-blue);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.04);
 }
 
-.benefitIcon {
-    width: 3rem;
-    height: 3rem;
+.signIconWrapper {
+    width: 2.5rem;
+    height: 2.5rem;
     border-radius: 0.75rem;
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-bottom: 1rem;
-    font-size: 1.25rem;
+    flex-shrink: 0;
 }
 
-.benefitCard h4 {
-    font-size: 1.125rem;
+.signIcon {
+    width: 1.25rem;
+    height: 1.25rem;
+}
+
+.signCard span {
+    color: var(--gray-800);
+    font-size: 1rem;
+    font-weight: 600;
+    flex-grow: 1;
+}
+
+/* ===== AI & ML TRANSFORMATION – TECH CARDS ===== */
+.aiSection {
+    padding: 6rem 2rem;
+    background: var(--white);
+    position: relative;
+    overflow: hidden;
+}
+
+.aiSection::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 1px;
+    background: linear-gradient(90deg, transparent, var(--gray-300), transparent);
+}
+
+.aiGrid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2rem;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+.aiCard {
+    background: var(--white);
+    border-radius: 1.5rem;
+    padding: 2rem;
+    border: 1px solid var(--gray-200);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.02);
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+}
+
+.aiCard:hover {
+    border-color: var(--primary-blue);
+    box-shadow: 0 20px 35px rgba(0, 0, 0, 0.06);
+    transform: translateY(-5px);
+}
+
+.aiCircuit {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100px;
+    height: 100px;
+    background: radial-gradient(circle at 100% 0%, rgba(59, 130, 246, 0.03) 0%, transparent 70%);
+    pointer-events: none;
+}
+
+.aiIconWrapper {
+    width: 3.5rem;
+    height: 3.5rem;
+    border-radius: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 1.5rem;
+}
+
+.aiIcon {
+    width: 1.75rem;
+    height: 1.75rem;
+}
+
+.aiCard h3 {
+    font-size: 1.25rem;
     font-weight: 700;
     color: var(--gray-900);
+    margin-bottom: 1rem;
+}
+
+.aiDescription {
+    color: var(--gray-600);
+    line-height: 1.6;
+    margin-bottom: 1.5rem;
+    font-size: 0.95rem;
+    flex-grow: 1;
+}
+
+.aiPoints {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.aiPoints li {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    color: var(--gray-700);
     margin-bottom: 0.75rem;
+    font-size: 0.9rem;
+}
+
+.aiPointDot {
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    flex-shrink: 0;
+}
+
+/* ===== BENEFITS OF OUTSOURCING – ELEGANT CARDS ===== */
+.benefitsSection {
+    padding: 6rem 2rem;
+    background: linear-gradient(135deg, var(--gray-50) 0%, var(--white) 100%);
+    position: relative;
+}
+
+.benefitsSection::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 1px;
+    background: linear-gradient(90deg, transparent, var(--gray-300), transparent);
+}
+
+.benefitsGrid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+.benefitCard {
+    background: var(--white);
+    border-radius: 1.5rem;
+    padding: 2rem;
+    border: 1px solid var(--gray-200);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.02);
+    transition: all 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.benefitCard:hover {
+    border-color: var(--primary-blue);
+    box-shadow: 0 20px 35px rgba(0, 0, 0, 0.06);
+    transform: translateY(-5px);
+}
+
+.benefitIconFloating {
+    width: 3.5rem;
+    height: 3.5rem;
+    border-radius: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 1.5rem;
+    font-size: 1.75rem;
+    background: var(--white);
+    transition: all 0.3s ease;
+}
+
+.benefitCard:hover .benefitIconFloating {
+    transform: scale(1.1);
+}
+
+.benefitCard h3 {
+    font-size: 1.25rem;
+    font-weight: 700;
+    color: var(--gray-900);
+    margin-bottom: 1rem;
 }
 
 .benefitDescription {
     color: var(--gray-600);
-    line-height: 1.5;
-    margin-bottom: 1rem;
-    font-size: 0.9rem;
+    line-height: 1.6;
+    margin-bottom: 1.5rem;
+    font-size: 0.95rem;
+    flex-grow: 1;
 }
 
 .benefitPoints {
     display: flex;
     flex-direction: column;
-    gap: 0.5rem;
-    width: 100%;
+    gap: 0.75rem;
 }
 
 .benefitPoint {
-    font-size: 0.875rem;
-    color: var(--gray-600);
-    padding-left: 0.5rem;
+    display: flex;
+    align-items: flex-start;
+    gap: 0.75rem;
+    color: var(--gray-700);
+    font-size: 0.9rem;
 }
 
-/* ===== STATS SECTION ===== */
+.benefitPoint svg {
+    flex-shrink: 0;
+    margin-top: 0.125rem;
+}
+
+/* ===== STATS SECTION – 2 COLUMNS ON ALL SMALL SCREENS ===== */
 .statsSection {
     padding: 5rem 2rem;
     background: var(--dark-surface);
@@ -1151,15 +1194,18 @@
     z-index: 2;
 }
 
-@media (max-width: 768px) {
+/* Tablets and below – 2 columns */
+@media (max-width: 1024px) {
     .statsGrid {
         grid-template-columns: repeat(2, 1fr);
+        gap: 1.5rem;
     }
 }
 
+/* Small phones – still 2 columns, tighter gap */
 @media (max-width: 480px) {
     .statsGrid {
-        grid-template-columns: 1fr;
+        gap: 1rem;
     }
 }
 
@@ -1218,6 +1264,7 @@
     font-size: 0.75rem;
     color: var(--gray-500);
 }
+
 
 /* ===== TESTIMONIALS CAROUSEL ===== */
 .testimonialsSection {
@@ -1423,21 +1470,17 @@
     left: 0;
     width: 100%;
     height: 100%;
-    background: linear-gradient(
-        to bottom,
-        rgba(15, 23, 42, 0.1) 0%,
-        rgba(15, 23, 42, 0.8) 100%
-    );
+    background: linear-gradient(to bottom,
+            rgba(15, 23, 42, 0.1) 0%,
+            rgba(15, 23, 42, 0.8) 100%);
     transition: all 0.4s ease;
 }
 
 .industryOverlay.active,
 .industryCard:hover .industryOverlay {
-    background: linear-gradient(
-        to bottom,
-        rgba(15, 23, 42, 0.2) 0%,
-        rgba(15, 23, 42, 0.95) 100%
-    );
+    background: linear-gradient(to bottom,
+            rgba(15, 23, 42, 0.2) 0%,
+            rgba(15, 23, 42, 0.95) 100%);
 }
 
 .industryContent {
@@ -1694,11 +1737,11 @@
     .content {
         gap: 3rem;
     }
-    
+
     .mainTitle {
         font-size: 2.75rem;
     }
-    
+
     .sectionTitle {
         font-size: 2.25rem;
     }
@@ -1709,89 +1752,94 @@
         font-size: 2.25rem;
         text-align: center;
     }
-    
+
     .subheadline {
         font-size: 1.25rem;
         text-align: center;
     }
-    
+
     .heroDescription {
         text-align: center;
         max-width: 100%;
     }
-    
+
     .buttonContainer {
         flex-direction: column;
         align-items: center;
     }
-    
+
     .ctaButton,
     .secondaryButton {
         width: 100%;
         justify-content: center;
     }
-    
+
     .rightContent {
         align-items: center;
     }
-    
+
     .testimonialCard {
         max-width: 100%;
         margin-top: 1.3rem;
     }
-    
+
     .expertiseGrid {
         grid-template-columns: 1fr;
     }
-    
+
     .hiringModelsGrid,
-    .costGrid,
-    .processTimeline,
     .partnerGrid,
     .challengesGrid,
+    .signsGrid,
+    .aiGrid,
     .benefitsGrid {
         grid-template-columns: 1fr;
     }
-    
+
     .trustedLogos {
         grid-template-columns: repeat(3, 1fr);
         gap: 0.75rem;
     }
-    
+
     .sectionTitle {
         font-size: 2rem;
     }
-    
+
     .expertiseSection,
     .hiringModelsSection,
-    .costSection,
-    .processSection,
     .partnerSection,
-    .challengesBenefitsSection,
+    .challengesSection,
+    .signsSection,
+    .aiSection,
+    .benefitsSection,
     .statsSection,
     .testimonialsSection,
     .faqSection {
         padding: 4rem 1.5rem;
     }
-    
+
     .ctaButtons {
         flex-direction: column;
     }
-    
+
     .ctaPrimary,
     .ctaSecondary,
     .ctaTertiary {
         width: 100%;
         justify-content: center;
     }
-    
+
     .testimonialsWrapper {
         padding: 2rem;
     }
-    
+
     .testimonialArrow {
         width: 40px;
         height: 40px;
+    }
+
+    .partnerItem {
+        padding: 1.75rem;
     }
 }
 
@@ -1799,47 +1847,43 @@
     .mainTitle {
         font-size: 2rem;
     }
-    
+
     .subheadline {
         font-size: 1.125rem;
     }
-    
+
     .heroBadge {
         font-size: 0.75rem;
         padding: 0.5rem 1rem;
     }
-    
+
     .sectionTitle {
         font-size: 1.75rem;
     }
-    
+
     .sectionDescription {
         font-size: 1rem;
     }
-    
+
     .trustedLogos {
         grid-template-columns: repeat(2, 1fr);
         gap: 0.5rem;
     }
-    
+
     .logoItem {
         padding: 1rem 0.5rem;
         font-size: 0.875rem;
     }
-    
-    .costRange {
-        font-size: 1.25rem;
-    }
-    
+
     .testimonialContent {
         font-size: 1rem;
     }
-    
+
     .testimonialAuthor {
         flex-direction: column;
         text-align: center;
     }
-    
+
     .testimonialAuthorInfo {
         text-align: center;
     }
@@ -1849,7 +1893,7 @@
     .industriesGrid {
         grid-template-columns: 1fr;
     }
-    
+
     .industryCard {
         height: 250px;
     }
