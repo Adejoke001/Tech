@@ -8,11 +8,11 @@ import {
     Smartphone, Code, Zap, Users, TrendingUp,
     CheckCircle, Award, MessageSquare, Sparkles,
     Cloud, ChevronRight, HelpCircle, ArrowRight,
-    GitBranch, FileText, HeadphonesIcon, RefreshCw,
+    GitBranch, FileText, RefreshCw,
     ShieldCheck, Workflow, Server, Layers, Code2, Monitor,
     CloudLightning, Shield, FileCode, GitPullRequest, TestTube,
-    Database, Lock, Clock, Target, Gauge, Users as UsersIcon, Rocket,
-    Calendar, Scale, Briefcase, Globe as GlobeIcon
+    Database, Lock, Clock, Target, Gauge, Rocket,
+    Calendar, Scale, Globe as GlobeIcon
 } from 'lucide-react';
 import styles from './fullstack.module.css';
 
@@ -543,16 +543,6 @@ export default function FullStackDevelopersPage() {
         }
     ];
 
-    // Company Stats
-    const companyStats = [
-        { value: '700+', label: 'Full-time Developers', icon: <Users />, description: 'Dedicated development team' },
-        { value: '20+', label: 'Years Experience', icon: <Award />, description: 'Industry expertise' },
-        { value: '4500+', label: 'Satisfied Clients', icon: <HeadphonesIcon />, description: 'Global client base' },
-        { value: '98%', label: 'Project Success Rate', icon: <CheckCircle />, description: 'Successful delivery' },
-        { value: '50+', label: 'Industries Served', icon: <Briefcase />, description: 'Domain expertise' },
-        { value: '24/7', label: 'Support Available', icon: <Clock />, description: 'Round-the-clock support' }
-    ];
-
     // Industries data (exactly as original)
     const industries = [
         {
@@ -767,7 +757,7 @@ export default function FullStackDevelopersPage() {
                     {fullStackExpertise.map((expertise, index) => (
                         <motion.div
                             key={expertise.id}
-                            className={styles.expertiseCard}
+                            className={`${styles.expertiseCard} ${hoveredExpertise === expertise.id ? styles.hovered : ''}`}
                             initial={{ opacity: 0, y: 30 }}
                             whileInView={{ opacity: 1, y: 0 }}
                             transition={{ duration: 0.5, delay: index * 0.1 }}
@@ -855,7 +845,7 @@ export default function FullStackDevelopersPage() {
                     </h2>
                     <p className={styles.sectionDescription}>
                         Hiring full-stack software engineers is the need of the hour for businesses of all sizes.
-                        Let's look at why you should hire full-stack programmers from India.
+                        Let&apos;s look at why you should hire full-stack programmers from India.
                     </p>
                 </div>
 

@@ -29,7 +29,7 @@ const InfrastructureIcon = () => (
   <span className={styles.dropdownIcon}>🖥️</span>
 );
 const QADevIcon = () => <span className={styles.dropdownIcon}>✅</span>;
-const DataAIIcon = () => <span className={styles.dropdownIcon}>🧠</span>;
+
 
 const StartupIcon = () => <span className={styles.dropdownIcon}>🚀</span>;
 const ScaleupIcon = () => <span className={styles.dropdownIcon}>📈</span>;

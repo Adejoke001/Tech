@@ -5,15 +5,15 @@ import Image from 'next/image';
 import Link from 'next/link';
 import { motion, AnimatePresence } from 'framer-motion';
 import {
-    Smartphone, Users, TrendingUp, 
+    Smartphone, Users, 
     CheckCircle, Award, MessageSquare, Sparkles, 
     Cloud, ChevronRight, HelpCircle, ArrowRight, 
-    GitBranch, FileText, HeadphonesIcon, RefreshCw, 
+    GitBranch, FileText, RefreshCw, 
     Code2, Monitor, Shield, FileCode, TestTube,
-    Database, Lock, Clock, Users as UsersIcon, Rocket, Phone,
+    Database, Lock, Clock, Users as UsersIcon, Rocket,
     Calendar, Scale, Briefcase, Globe as GlobeIcon,
     Gauge, Activity, Bug, PenTool, Layout,
-    Settings, Terminal, Cpu as CpuIcon, BarChart3, 
+    Settings, Terminal, BarChart3, 
     Fingerprint, Box
 
 } from 'lucide-react';
@@ -21,7 +21,6 @@ import styles from './qa.module.css';
 
 export default function QATestersPage() {
     const [openFaq, setOpenFaq] = useState<number | null>(0);
-    const [hoveredExpertise, setHoveredExpertise] = useState<number | null>(null);
     const [hoveredIndustry, setHoveredIndustry] = useState<number | null>(null);
 
     // ----- HERO TESTIMONIAL -----
@@ -403,15 +402,6 @@ export default function QATestersPage() {
         }
     ];
 
-    // ----- COMPANY STATS -----
-    const companyStats = [
-        { value: '700+', label: 'Full‑time Staff', icon: <Users />, description: 'Dedicated QA & development' },
-        { value: '20+', label: 'Years Experience', icon: <Award />, description: 'Since 2004' },
-        { value: '4500+', label: 'Satisfied Clients', icon: <HeadphonesIcon />, description: 'Global client base' },
-        { value: '98%', label: 'Project Success Rate', icon: <CheckCircle />, description: 'On‑time, on‑budget' },
-        { value: '35%', label: 'Engineering Overhead Reduction', icon: <TrendingUp />, description: 'Developers focus on features' },
-        { value: '24/7', label: 'Support Available', icon: <Clock />, description: 'Round‑the‑clock testing' }
-    ];
 
     // ----- HIRING COMPARISON (QA specific) -----
     const hiringComparison = [
@@ -635,7 +625,7 @@ export default function QATestersPage() {
             <section className={styles.expertiseSection} id="expertise">
                 <div className={styles.sectionHeader}>
                     <h2 className={styles.sectionTitle}>
-                        Our QA Engineers' <span className={styles.titleHighlight}>Expertise</span>
+                        Our QA Engineers&apos; <span className={styles.titleHighlight}>Expertise</span>
                     </h2>
                     <p className={styles.sectionDescription}>
                         When you hire QA engineers from us, you get highly skilled testers with hands‑on expertise 
@@ -652,8 +642,7 @@ export default function QATestersPage() {
                             whileInView={{ opacity: 1, y: 0 }}
                             transition={{ duration: 0.5, delay: index * 0.1 }}
                             viewport={{ once: true }}
-                            onMouseEnter={() => setHoveredExpertise(item.id)}
-                            onMouseLeave={() => setHoveredExpertise(null)}
+                            
                         >
                             <div className={styles.cardHeader}>
                                 <div className={styles.expertiseIconWrapper} style={{

@@ -5,26 +5,23 @@ import Image from 'next/image';
 import Link from 'next/link';
 import { motion, AnimatePresence } from 'framer-motion';
 import {
-    Users, CheckCircle, Award, MessageSquare, Sparkles,
+    Users, CheckCircle, Award, MessageSquare, Sparkles, HardDrive,
     Cloud, ChevronRight, HelpCircle, ArrowRight, HeadphonesIcon, 
-    RefreshCw, ShieldCheck, Shield, Clock, Target, Users as UsersIcon,
-    Wallet, Scale, Briefcase, Globe as GlobeIcon, Activity, DollarSign,
-    Rocket as RocketIcon, TrendingUp as TrendingIcon, HeartHandshake,
-    Target as TargetIcon, Briefcase as BriefcaseIcon, AlertTriangle,
-    Users as TeamIcon, Cpu as CpuIcon, Settings, BarChart3, Eye as EyeIcon,
-    Workflow as WorkflowIcon, Sparkles as SparklesIcon, Eye, Layers3, HardDrive,
-    Shield as ShieldIcon, Cloud as CloudIcon, GitPullRequest as GitPullRequestIcon,
+    RefreshCw, ShieldCheck, Shield, Clock, Target, 
+    Wallet, Scale, Briefcase, Activity, DollarSign,
+    HeartHandshake, AlertTriangle, Settings,
+    Eye, Layers3,
+    Cloud as CloudIcon, GitPullRequest as GitPullRequestIcon,
     Cpu as CpuChip, Network as NetworkIcon, Database as DatabaseIcon,
     Brain, LineChart as LineChartIcon, ShieldCheck as ShieldCheckIcon,
-    TrendingUp as TrendingUpIcon, Scale as ScaleIcon, 
-    Server as ServerIcon, Zap as ZapIcon, Repeat,
+    Scale as ScaleIcon, 
+    Repeat,
     
 } from 'lucide-react';
 import styles from './enterprise.module.css';
 
 export default function EnterpriseSolutionPage() {
     const [openFaq, setOpenFaq] = useState<number | null>(0);
-    const [hoveredExpertise, setHoveredExpertise] = useState<number | null>(null);
     const [hoveredIndustry, setHoveredIndustry] = useState<number | null>(null);
     const [activeTestimonial, setActiveTestimonial] = useState(0);
 

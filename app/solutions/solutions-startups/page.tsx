@@ -5,13 +5,13 @@ import Image from 'next/image';
 import Link from 'next/link';
 import { motion, AnimatePresence } from 'framer-motion';
 import {
-    Users, TrendingUp, Briefcase, Globe as GlobeIcon,
+    Users, TrendingUp, Briefcase,
     CheckCircle, Award, MessageSquare, Sparkles, 
     Cloud, ChevronRight, HelpCircle, ArrowRight, 
     HeadphonesIcon, ShieldCheck, Shield, Globe, Cpu, Target,
-    Users as UsersIcon, Rocket, Lightbulb, Compass, Rocket as RocketIcon, 
-    TrendingUp as TrendingIcon, Target as TargetIcon, Briefcase as BriefcaseIcon, 
-    Palette, LineChart, DollarSign, Users as TeamIcon, Cpu as CpuIcon, Settings, 
+    Rocket, Lightbulb, Compass, Rocket as RocketIcon, 
+    Target as TargetIcon, Palette, LineChart, DollarSign, 
+    Users as TeamIcon, Settings, 
     BarChart3, Search, Presentation, ThumbsUp
 } from 'lucide-react';
 import styles from './startups.module.css';
@@ -475,7 +475,7 @@ export default function StartupsSolutionPage() {
                     {startupExpertise.map((item, index) => (
                         <motion.div
                             key={item.id}
-                            className={styles.expertiseCard}
+                            className={`${styles.expertiseCard} ${hoveredExpertise === item.id ? styles.hovered : ''}`}
                             initial={{ opacity: 0, y: 30 }}
                             whileInView={{ opacity: 1, y: 0 }}
                             transition={{ duration: 0.5, delay: index * 0.1 }}
@@ -562,7 +562,7 @@ export default function StartupsSolutionPage() {
                     </h2>
                     <p className={styles.sectionDescription}>
                         For growth‑stage startups, every dollar counts. Our clear, upfront estimates help you plan smartly – 
-                        whether you’re building an MVP, scaling to a full product, or preparing for enterprise growth.
+                        whether you&apos;re building an MVP, scaling to a full product, or preparing for enterprise growth.
                     </p>
                 </div>
 

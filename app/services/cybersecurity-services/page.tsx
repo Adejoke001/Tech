@@ -6,11 +6,11 @@ import Link from 'next/link';
 import { motion, AnimatePresence } from 'framer-motion';
 import {
     Shield, Lock, AlertTriangle, FileCheck,
-    Server, Cloud, Database, Users, GitMerge, 
+    Server, Cloud, Database, GitMerge, 
     CheckCircle, Award, MessageSquare, Sparkles,
     ChevronRight, Code, Activity, TrendingUp, 
     FileText, RefreshCw, Zap, HelpCircle, 
-    ArrowRight, Settings, Eye, ClipboardCheck, 
+    ArrowRight, Eye, ClipboardCheck, 
     Network, Search, BarChart3, ShieldAlert, FileCode,
     Workflow, HeartPulse, Globe2, CreditCard, 
     BookOpen, Target, UserCheck
@@ -21,7 +21,6 @@ export default function CybersecurityServicesPage() {
     const [openFaq, setOpenFaq] = useState<number | null>(0);
     const [hoveredService, setHoveredService] = useState<number | null>(null);
     const [hoveredIndustry, setHoveredIndustry] = useState<number | null>(null);
-    const [activeTab, setActiveTab] = useState<string>('security-testing');
 
     // Testimonial matching the enterprise software page layout
     const testimonial = {
@@ -333,14 +332,14 @@ export default function CybersecurityServicesPage() {
     ];
 
     // Development Process
-    const securityProcess = [
-        { step: 1, title: 'Security Assessment', description: 'Comprehensive evaluation of current security posture and risks.', icon: <FileText /> },
-        { step: 2, title: 'Framework Design', description: 'Custom security framework aligned with business objectives.', icon: <Settings /> },
-        { step: 3, title: 'Implementation', description: 'Deployment of security controls and governance processes.', icon: <Code /> },
-        { step: 4, title: 'Testing & Validation', description: 'Rigorous security testing and compliance verification.', icon: <ClipboardCheck /> },
-        { step: 5, title: 'Training & Enablement', description: 'Security awareness training and operational handover.', icon: <Users /> },
-        { step: 6, title: 'Continuous Monitoring', description: 'Ongoing security monitoring and improvement cycles.', icon: <RefreshCw /> }
-    ];
+    // const securityProcess = [
+    //     { step: 1, title: 'Security Assessment', description: 'Comprehensive evaluation of current security posture and risks.', icon: <FileText /> },
+    //     { step: 2, title: 'Framework Design', description: 'Custom security framework aligned with business objectives.', icon: <Settings /> },
+    //     { step: 3, title: 'Implementation', description: 'Deployment of security controls and governance processes.', icon: <Code /> },
+    //     { step: 4, title: 'Testing & Validation', description: 'Rigorous security testing and compliance verification.', icon: <ClipboardCheck /> },
+    //     { step: 5, title: 'Training & Enablement', description: 'Security awareness training and operational handover.', icon: <Users /> },
+    //     { step: 6, title: 'Continuous Monitoring', description: 'Ongoing security monitoring and improvement cycles.', icon: <RefreshCw /> }
+    // ];
 
     // Industries Section (3 columns as requested)
     const industries = [

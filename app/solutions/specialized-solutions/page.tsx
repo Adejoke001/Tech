@@ -4,41 +4,22 @@ import { useState } from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
 import { motion, AnimatePresence } from 'framer-motion';
+import { SVGProps } from 'react';
 import {
     Smartphone, Code, Zap, Users, TrendingUp, 
     CheckCircle, Award, MessageSquare, Sparkles, 
     Cloud, ChevronRight, HelpCircle, ArrowRight, 
     FileText, RefreshCw, Workflow, Server, Layers, Code2, Monitor,
     Shield, TestTube, Database, Globe, Lock, Clock, Target,
-    Users as UsersIcon, Rocket, Phone,
-    Wallet, Scale, Briefcase, Globe as GlobeIcon,
-    Lightbulb, Compass, Rocket as RocketIcon, TrendingUp as TrendingIcon,
-    Target as TargetIcon, Briefcase as BriefcaseIcon, Palette, 
-    Users as TeamIcon, Cpu as CpuIcon, 
-    Search, Presentation, HeartHandshake, Gauge,
-    AlertTriangle, Building2, Workflow as WorkflowIcon,
-    Sparkles as SparklesIcon, Zap as ZapIcon, Repeat,
-    Shield as ShieldIcon, Cloud as CloudIcon, GitPullRequest as GitPullRequestIcon,
-    Cpu as CpuChip, Network as NetworkIcon, Database as DatabaseIcon,
-    Brain, LineChart as LineChartIcon, ShieldCheck as ShieldCheckIcon,
-    TrendingUp as TrendingUpIcon, Scale as ScaleIcon, Eye as EyeIcon,
-    Sliders, Box, ShoppingCart,
-    Headphones, PenTool, Figma,
-    Megaphone, Users as UsersGroup, Plug, Key,
-    Radio, Cpu as CpuProcessor, Gauge as GaugeIcon, TestTube as TestTubeIcon,
-    Workflow as WorkflowFlow, Layers as LayersIcon, FileJson, Braces,
-    Lock as LockIcon, PlugZap, LineChart as LineChartUp, RefreshCw as RefreshCwIcon,
-    BadgeCheck, Store,
-    Landmark as Bank, Settings as SettingsIcon,
-    Briefcase as BriefcaseBusiness, Cpu as CpuChipIcon,
-    Palette as PaletteIcon, PenTool as PenToolIcon, FileText as FileTextIcon,
-    Smartphone as SmartphoneIcon, Wrench as WrenchIcon,
-    Network as NetworkNodes, TestTube as Flask, Gauge as Speedometer,
-    Shield as ShieldIcon2, Cloud as CloudIcon2, GitPullRequest as GitPR,
-    Repeat as RepeatIcon, Fingerprint, Bot,
-    Cpu as CpuIcon2, Radio as RadioIcon,
-    Handshake, Package, UsersRound, LineChart as LineChartIcon2,
-    Microchip, Scan, CpuIcon as CpuProcessorIcon
+    Rocket, Wallet, Scale, Briefcase, Lightbulb, Compass,
+    Palette, Search, Presentation, HeartHandshake, Gauge,
+    AlertTriangle, Building2, Zap as ZapIcon, Repeat,
+    Cpu as CpuChip, Brain, Sliders, Box, ShoppingCart,
+    Headphones, PenTool, Figma, Megaphone, Plug, Key, Radio,  
+    FileJson, Braces, Lock as LockIcon, PlugZap, BadgeCheck, Store,
+    Settings as SettingsIcon, Briefcase as BriefcaseBusiness, 
+    Shield as ShieldIcon2, Repeat as RepeatIcon, Fingerprint, Bot,
+    Radio as RadioIcon, Handshake, Package, UsersRound, Microchip, Scan
 } from 'lucide-react';
 import styles from './specialized.module.css';
 
@@ -56,6 +37,65 @@ export default function SpecializedSolutionsPage() {
         rating: 5,
         project: 'Enterprise Platform Transformation'
     };
+
+    const Wordpress = (props: SVGProps<SVGSVGElement>) => (
+  <svg
+    xmlns="http://www.w3.org/2000/svg"
+    width="24"
+    height="24"
+    viewBox="0 0 24 24"
+    fill="none"
+    stroke="currentColor"
+    strokeWidth="2"
+    strokeLinecap="round"
+    strokeLinejoin="round"
+    {...props}
+  >
+    <path d="M4 3h16a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2Z" />
+    <path d="M8 9h8" />
+    <path d="M8 13h4" />
+  </svg>
+);
+
+const Factory = (props: SVGProps<SVGSVGElement>) => (
+  <svg
+    xmlns="http://www.w3.org/2000/svg"
+    width="24"
+    height="24"
+    viewBox="0 0 24 24"
+    fill="none"
+    stroke="currentColor"
+    strokeWidth="2"
+    strokeLinecap="round"
+    strokeLinejoin="round"
+    {...props}
+  >
+    <path d="M2 20a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V8l-7 5V8l-7 5V4a2 2 0 0 0-2-2H4a2 2 0 0 0-2 2Z" />
+    <path d="M17 18h1" />
+    <path d="M12 18h1" />
+    <path d="M7 18h1" />
+  </svg>
+);
+
+const BoxIcon = (props: SVGProps<SVGSVGElement>) => (
+  <svg
+    xmlns="http://www.w3.org/2000/svg"
+    width="24"
+    height="24"
+    viewBox="0 0 24 24"
+    fill="none"
+    stroke="currentColor"
+    strokeWidth="2"
+    strokeLinecap="round"
+    strokeLinejoin="round"
+    {...props}
+  >
+    <path d="M21 8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16Z" />
+    <path d="M3.3 7 12 12l8.7-5" />
+    <path d="M12 22V12" />
+  </svg>
+);
+
 
     // ============ ISV & PRODUCT DEVELOPMENT PILLAR ============
     const isvExpertise = [
@@ -554,7 +594,7 @@ export default function SpecializedSolutionsPage() {
                                 Three specialized pillars. One trusted partner. From product strategy to white label delivery and API integration – we accelerate your entire software ecosystem.
                             </p>
                             <p className={styles.heroDescription}>
-                                Whether you're an ISV building the next generation of AI-powered applications, a digital agency scaling through white label partnerships, or an enterprise modernising with APIs – we provide the expertise, speed, and quality you need.
+                                Whether you&apos;re an ISV building the next generation of AI-powered applications, a digital agency scaling through white label partnerships, or an enterprise modernising with APIs – we provide the expertise, speed, and quality you need.
                             </p>
                         </motion.div>
 
@@ -1522,7 +1562,7 @@ export default function SpecializedSolutionsPage() {
                     <div className={styles.ctaContent}>
                         <h3 className={styles.ctaTitle}>Ready to Innovate?</h3>
                         <p className={styles.ctaDescription}>
-                            Let's co-create groundbreaking products together, merging your vision with our expertise for unparalleled results. Whether you need an ISV product, white label delivery, or API integration – we're ready when you are.
+                            Let&apos;s co-create groundbreaking products together, merging your vision with our expertise for unparalleled results. Whether you need an ISV product, white label delivery, or API integration – we&apos;re ready when you are.
                         </p>
                         <div className={styles.ctaButtons}>
                             <Link href="/contact" className={styles.ctaPrimary}>
@@ -1532,10 +1572,10 @@ export default function SpecializedSolutionsPage() {
                             <Link href="/calculator" className={styles.ctaSecondary}>
                                 Estimate Your Cost
                             </Link>
-                            <Link href="tel:+18001234567" className={styles.ctaTertiary}>
+                            {/* <Link href="tel:+18001234567" className={styles.ctaTertiary}>
                                 <Phone size={16} />
                                 Call Us Now
-                            </Link>
+                            </Link> */}
                         </div>
                     </div>
                 </div>
@@ -1544,7 +1584,3 @@ export default function SpecializedSolutionsPage() {
     );
 }
 
-// Custom icon components
-const Wordpress = (props) => <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" {...props}><path d="M4 3h16a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2Z"/><path d="M8 9h8"/><path d="M8 13h4"/></svg>;
-const Factory = (props) => <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" {...props}><path d="M2 20a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V8l-7 5V8l-7 5V4a2 2 0 0 0-2-2H4a2 2 0 0 0-2 2Z"/><path d="M17 18h1"/><path d="M12 18h1"/><path d="M7 18h1"/></svg>;
-const BoxIcon = (props) => <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" {...props}><path d="M21 8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16Z"/><path d="M3.3 7 12 12l8.7-5"/><path d="M12 22V12"/></svg>;

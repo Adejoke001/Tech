@@ -8,21 +8,17 @@ import {
     Users, TrendingUp, CheckCircle, Award, MessageSquare, Sparkles,
     Cloud, ChevronRight, HelpCircle, ArrowRight, GitBranch, HeadphonesIcon, 
     RefreshCw, ShieldCheck, Layers, Shield, Globe, Target,
-    Users as UsersIcon, Rocket, Calendar, Wallet, Briefcase, 
-    Globe as GlobeIcon,
-    Compass, Rocket as RocketIcon, TrendingUp as TrendingIcon,
-    Target as TargetIcon, Briefcase as BriefcaseIcon, Palette, LineChart,
-    DollarSign, Users as TeamIcon, Cpu as CpuIcon,
-    Search, Gauge, Activity,
-    AlertTriangle, Building2, CloudCog, Workflow as WorkflowIcon,
-    Layers3, Sparkles as SparklesIcon
+    Rocket, Calendar, Wallet, Briefcase, Compass,
+    Briefcase as BriefcaseIcon, Palette, LineChart,
+    DollarSign, Search, Gauge, Activity, AlertTriangle, Building2, 
+    CloudCog, Workflow as WorkflowIcon, Layers3, 
 } from 'lucide-react';
 import styles from './scaleups.module.css';
 
 export default function ScaleUpsSolutionPage() {
     const [openFaq, setOpenFaq] = useState<number | null>(0);
-    const [hoveredExpertise, setHoveredExpertise] = useState<number | null>(null);
     const [hoveredIndustry, setHoveredIndustry] = useState<number | null>(null);
+    const [hoveredExpertise, setHoveredExpertise] = useState<number | null>(null);
     const [activeTestimonial, setActiveTestimonial] = useState(0);
 
     // ----- HERO TESTIMONIAL -----
@@ -576,7 +572,7 @@ export default function ScaleUpsSolutionPage() {
                     {scaleExpertise.map((item, index) => (
                         <motion.div
                             key={item.id}
-                            className={styles.expertiseCard}
+                            className={`${styles.expertiseCard} ${hoveredExpertise === item.id ? styles.hovered : ''}`}
                             initial={{ opacity: 0, y: 30 }}
                             whileInView={{ opacity: 1, y: 0 }}
                             transition={{ duration: 0.5, delay: index * 0.1 }}
