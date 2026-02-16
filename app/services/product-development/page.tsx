@@ -30,7 +30,6 @@ import {
   AlertTriangle,
   GitMerge,
   Target as TargetIcon,
-  // TrendingUp as TrendingUpIcon,
   Plus,
   Minus,
   Heart,
