@@ -7,7 +7,7 @@ import { SVGProps } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import {
    
-    Sparkles, ArrowRight, Phone, Award, MessageSquare, HelpCircle,
+    Sparkles, ArrowRight, Award, MessageSquare, HelpCircle,
     CheckCircle, Lock, Clock, Globe,
     Smartphone, Play, Film, Tablet, Database, Bot, Share2, Layers,
     Brain, Building2, Rocket,
