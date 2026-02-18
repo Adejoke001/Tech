@@ -53,7 +53,7 @@ export default function FinTechPage() {
     name: "Sarah Chen",
     role: "CFO, FinScale Capital",
     content:
-      "ValueCoders delivered a robust loan processing system that handles 50,000+ daily transactions with zero downtime. Their deep FinTech expertise and commitment to security exceeded our expectations.",
+      "BBNTech delivered a robust loan processing system that handles 50,000+ daily transactions with zero downtime. Their deep FinTech expertise and commitment to security exceeded our expectations.",
     rating: 5,
     project: "Enterprise Lending Platform",
   };
@@ -846,15 +846,15 @@ export default function FinTechPage() {
           <div className={styles.sectionHeader}>
             <h2 className={styles.sectionTitle} style={{ color: "white" }}>
               Why Partner with{" "}
-              <span className={styles.titleHighlight}>ValueCoders</span> for
+              <span className={styles.titleHighlight}>BBNTech</span> for
               FinTech Innovation?
             </h2>
             <p
               className={styles.sectionDescription}
               style={{ color: "rgba(255,255,255,0.9)" }}
             >
-              We’re not just another FinTech software development company –
-              we’re your strategic ally in the rapidly evolving financial
+              We&apos;re not just another FinTech software development company –
+              we&apos;re your strategic ally in the rapidly evolving financial
               technology landscape.
             </p>
           </div>
