@@ -41,9 +41,9 @@ const MediaIcon = () => <span className={styles.dropdownIcon}>🎬</span>;
 const EcommerceIcon = () => <span className={styles.dropdownIcon}>🛒</span>;
 const EducationIcon = () => <span className={styles.dropdownIcon}>🎓</span>;
 
-const MethodologyIcon = () => <span className={styles.dropdownIcon}>📐</span>;
+// const MethodologyIcon = () => <span className={styles.dropdownIcon}>📐</span>;
 const PartnershipIcon = () => <span className={styles.dropdownIcon}>🤝</span>;
-const CareersIcon = () => <span className={styles.dropdownIcon}>⭐</span>;
+// const CareersIcon = () => <span className={styles.dropdownIcon}>⭐</span>;
 const CaseStudiesIcon = () => <span className={styles.dropdownIcon}>📚</span>;
 const BlogIcon = () => <span className={styles.dropdownIcon}>✍️</span>;
 const TestimonialsIcon = () => <span className={styles.dropdownIcon}>💬</span>;
@@ -216,28 +216,28 @@ export default function Navbar() {
       href: "company",
       items: [
         // Company section
-        {
-          name: "Our Development Methodology",
-          href: "/company/methodology",
-          icon: <MethodologyIcon />,
-        },
+        // {
+        //   name: "Our Development Methodology",
+        //   href: "/company/methodology",
+        //   icon: <MethodologyIcon />,
+        // },
         {
           name: "Partnerships & Certifications",
           href: "/company/partnerships",
           icon: <PartnershipIcon />,
         },
+        // {
+        //   name: "Careers & Company Culture",
+        //   href: "/company/careers",
+        //   icon: <CareersIcon />,
+        // },
         {
-          name: "Careers & Company Culture",
-          href: "/company/careers",
-          icon: <CareersIcon />,
-        },
-        {
-          name: "Success Stories & Case Studies",
+          name: "Case Studies",
           href: "/company/case-studies",
           icon: <CaseStudiesIcon />,
         },
         // Resources section
-        { name: "Blog & Insights", href: "/company/blog", icon: <BlogIcon /> },
+        { name: "Blog & Insights", href: "/company/blogs", icon: <BlogIcon /> },
         {
           name: "Clients & Testimonials",
           href: "/company/testimonials",
