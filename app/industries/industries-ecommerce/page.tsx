@@ -60,7 +60,7 @@ import {
   Award as AwardIcon,
   ShoppingBag,
 } from "lucide-react";
-import styles from "./eCommerce.module.css";
+import styles from "./ecommerce.module.css";
 
 export default function ECommercePage() {
   const [openFaq, setOpenFaq] = useState<number | null>(0);
