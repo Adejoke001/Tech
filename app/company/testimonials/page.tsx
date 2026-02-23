@@ -16,10 +16,10 @@ export default function TestimonialsPage() {
         { name: 'Google', logo: 'https://images.unsplash.com/photo-1573804633927-bfcbcd909acd?w=150&h=150&fit=crop' },
         { name: 'Amazon', logo: 'https://images.unsplash.com/photo-1523474253046-8cd2748b5fd2?w=150&h=150&fit=crop' },
         { name: 'IBM', logo: 'https://images.unsplash.com/photo-1580894732444-8ecded7900cd?w=150&h=150&fit=crop' },
-        { name: 'SAP', logo: 'https://images.unsplash.com/photo-1580983559360-56d685c2b1b9?w=150&h=150&fit=crop' },
+        { name: 'SAP', logo: 'https://plus.unsplash.com/premium_photo-1668612061259-1650cc1427dd?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8b3JhY2xlfGVufDB8fDB8fHww' },
         { name: 'Oracle', logo: 'https://images.unsplash.com/photo-1554774853-719586f82d77?w=150&h=150&fit=crop' },
-        { name: 'Salesforce', logo: 'https://images.unsplash.com/photo-1557832935-74e5b484a9f8?w=150&h=150&fit=crop' },
-        { name: 'Adobe', logo: 'https://images.unsplash.com/photo-1579403124614-197f69f818d8?w=150&h=150&fit=crop' },
+        // { name: 'Salesforce', logo: 'https://images.unsplash.com/photo-1557832935-74e5b484a9f8?w=150&h=150&fit=crop' },
+        // { name: 'Adobe', logo: 'https://images.unsplash.com/photo-1579403124614-197f69f818d8?w=150&h=150&fit=crop' },
     ];
 
     // Testimonials data (from the reference site)
