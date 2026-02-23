@@ -5,28 +5,25 @@ import Image from 'next/image';
 import Link from 'next/link';
 import { motion } from 'framer-motion';
 import {
-    ArrowRight, Calendar, User, Clock,
-    Search, ChevronLeft, ChevronRight, Send,
-    Download, 
+    ArrowRight, Calendar, User, Clock, Tag,
+    Search, Send, Download,
 } from 'lucide-react';
 import styles from './blogs.module.css';
 
 export default function BlogsPage() {
-    const [currentPage, setCurrentPage] = useState(1);
     const [searchQuery, setSearchQuery] = useState('');
     const [email, setEmail] = useState('');
     const [downloadEmail, setDownloadEmail] = useState('');
     const [downloadName, setDownloadName] = useState('');
-    const postsPerPage = 6;
 
-    // Featured post
+    // Featured post (as on the reference site)
     const featuredPost = {
         id: 'featured-1',
         title: '10-Step Checklist for Building an MVP That Actually Succeeds',
-        excerpt: 'Most startups fail not because of funding but because they build the wrong product. An MVP helps you validate demand, test assumptions, and attract early users without burning through your runway.',
+        excerpt: 'Most startups fail not because of funding but because they build the wrong product. An MVP (Minimum Viable Product) helps you validate demand, test assumptions, and attract early users without burning through your runway. But building one the wrong way can cost you time, money, and traction.',
         fullContent: 'This blog gives early-stage founders a practical 10-step checklist to launch a successful MVP. From defining core features to gathering user feedback, it shows you how to build smart, save costs, and impress investors with real traction, without the trial-and-error most startups go through.',
         author: 'Alex Rivera',
-        authorRole: 'Senior Product Strategist',
+        role: 'Senior Product Strategist',
         date: 'Feb 15, 2026',
         readTime: '8 min read',
         category: 'Software Engineering',
@@ -36,7 +33,7 @@ export default function BlogsPage() {
         color: '#10B981',
     };
 
-    // All blog posts
+    // All blog posts (expanded to 24)
     const allPosts = [
         {
             id: 1,
@@ -272,41 +269,109 @@ export default function BlogsPage() {
             slug: 'code-review-best-practices',
             color: '#3B82F6',
         },
+        // Additional posts (6 more)
+        {
+            id: 19,
+            title: 'Understanding Serverless Architecture: Benefits and Trade-offs',
+            excerpt: 'Serverless is more than just a buzzword. We explore when to use it and when to stick with traditional servers.',
+            author: 'James Smith',
+            date: 'Mar 1, 2026',
+            readTime: '8 min read',
+            category: 'Cloud Services',
+            tags: ['Serverless', 'AWS Lambda', 'Architecture'],
+            image: 'https://images.unsplash.com/photo-1451187580459-43490279c0fa?auto=format&fit=crop&w=800&q=80',
+            slug: 'serverless-architecture-guide',
+            color: '#F59E0B',
+        },
+        {
+            id: 20,
+            title: 'Building Real-Time Applications with WebSockets and Socket.io',
+            excerpt: 'Learn how to add real-time features like chat and live notifications to your web apps.',
+            author: 'Alex Rivera',
+            date: 'Feb 28, 2026',
+            readTime: '7 min read',
+            category: 'Software Engineering',
+            tags: ['WebSockets', 'Socket.io', 'Real-time'],
+            image: 'https://images.unsplash.com/photo-1558494949-ef010cbdcc31?auto=format&fit=crop&w=800&q=80',
+            slug: 'websockets-socketio',
+            color: '#3B82F6',
+        },
+        {
+            id: 21,
+            title: 'A Practical Introduction to CI/CD Pipelines with GitHub Actions',
+            excerpt: 'Automate your build, test, and deployment process using GitHub Actions. A step-by-step guide.',
+            author: 'Priya Kapoor',
+            date: 'Feb 25, 2026',
+            readTime: '9 min read',
+            category: 'Cloud Services',
+            tags: ['CI/CD', 'GitHub Actions', 'DevOps'],
+            image: 'https://images.unsplash.com/photo-1618401471353-b98afee0b2eb?auto=format&fit=crop&w=800&q=80',
+            slug: 'cicd-github-actions',
+            color: '#8B5CF6',
+        },
+        {
+            id: 22,
+            title: 'The Evolution of Frontend Frameworks: From jQuery to Solid',
+            excerpt: 'A look back at how frontend development has evolved and what the future holds.',
+            author: 'Maria Gonzalez',
+            date: 'Feb 22, 2026',
+            readTime: '10 min read',
+            category: 'Software Engineering',
+            tags: ['Frontend', 'JavaScript', 'Frameworks'],
+            image: 'https://images.unsplash.com/photo-1555066931-4365d14bab8c?auto=format&fit=crop&w=800&q=80',
+            slug: 'frontend-frameworks-evolution',
+            color: '#EC4899',
+        },
+        {
+            id: 23,
+            title: 'Data Mesh: A New Paradigm for Data Architecture',
+            excerpt: 'Move beyond monolithic data lakes and embrace domain-oriented decentralized data ownership.',
+            author: 'David Chen',
+            date: 'Feb 20, 2026',
+            readTime: '11 min read',
+            category: 'AI & Data Solutions',
+            tags: ['Data Mesh', 'Data Architecture', 'Big Data'],
+            image: 'https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=800&q=80',
+            slug: 'data-mesh-intro',
+            color: '#06B6D4',
+        },
+        {
+            id: 24,
+            title: 'Securing Your APIs: Best Practices and Common Pitfalls',
+            excerpt: 'APIs are the backbone of modern applications. Learn how to protect them from common attacks.',
+            author: 'Sarah Johnson',
+            date: 'Feb 18, 2026',
+            readTime: '8 min read',
+            category: 'Software Engineering',
+            tags: ['API Security', 'OAuth', 'JWT'],
+            image: 'https://images.unsplash.com/photo-1555949963-aa79dcee981c?auto=format&fit=crop&w=800&q=80',
+            slug: 'api-security-best-practices',
+            color: '#10B981',
+        },
     ];
 
-    // Publications for "Featured In" section
+    // Publications for "Featured In"
     const publications = [
-        { name: 'TechCrunch', logo: '/logos/techcrunch.svg' },
-        { name: 'Forbes', logo: '/logos/forbes.svg' },
-        { name: 'VentureBeat', logo: '/logos/venturebeat.svg' },
-        { name: 'Inc.', logo: '/logos/inc.svg' },
-        { name: 'Entrepreneur', logo: '/logos/entrepreneur.svg' },
+        { name: 'TechCrunch' },
+        { name: 'Forbes' },
+        { name: 'VentureBeat' },
+        { name: 'Inc.' },
+        { name: 'Entrepreneur' },
     ];
 
-    // Filter posts based on search only
-    const filteredPosts = allPosts.filter(post => {
-        return post.title.toLowerCase().includes(searchQuery.toLowerCase()) ||
-               post.excerpt.toLowerCase().includes(searchQuery.toLowerCase());
-    });
+    // Filter posts based on search
+    const filteredPosts = allPosts.filter(post =>
+        post.title.toLowerCase().includes(searchQuery.toLowerCase()) ||
+        post.excerpt.toLowerCase().includes(searchQuery.toLowerCase())
+    );
 
-    // Pagination
-    const totalPages = Math.ceil(filteredPosts.length / postsPerPage);
-    const indexOfLastPost = currentPage * postsPerPage;
-    const indexOfFirstPost = indexOfLastPost - postsPerPage;
-    const currentPosts = filteredPosts.slice(indexOfFirstPost, indexOfLastPost);
-
-    // Recent posts for sidebar (latest 5)
-    const recentPosts = [...allPosts].sort((a, b) => 
-        new Date(b.date).getTime() - new Date(a.date).getTime()
-    ).slice(0, 5);
+    // Recent posts for the sidebar (latest 5)
+    const recentPosts = [...allPosts]
+        .sort((a, b) => new Date(b.date).getTime() - new Date(a.date).getTime())
+        .slice(0, 5);
 
     // Popular tags (unique)
-    // const allTags = Array.from(new Set(allPosts.flatMap(p => p.tags))).slice(0, 12);
-
-    const handlePageChange = (pageNumber: number) => {
-        setCurrentPage(pageNumber);
-        window.scrollTo({ top: 0, behavior: 'smooth' });
-    };
+    const allTags = Array.from(new Set(allPosts.flatMap(p => p.tags))).slice(0, 12);
 
     const handleSubscribe = (e: React.FormEvent) => {
         e.preventDefault();
@@ -360,16 +425,16 @@ export default function BlogsPage() {
                     <div className={styles.featuredInLogos}>
                         {publications.map((pub, idx) => (
                             <div key={idx} className={styles.featuredInLogo}>
-                                <div className={styles.logoPlaceholder}>{pub.name}</div>
+                                <span className={styles.logoPlaceholder}>{pub.name}</span>
                             </div>
                         ))}
                     </div>
                 </div>
             </section>
 
-            {/* ===== MAIN LAYOUT ===== */}
+            {/* ===== MAIN LAYOUT (SIDEBAR + CONTENT) ===== */}
             <div className={styles.mainLayout}>
-                {/* ===== LEFT SIDEBAR ===== */}
+                {/* SIDEBAR */}
                 <aside className={styles.sidebar}>
                     {/* Search */}
                     <div className={styles.sidebarWidget}>
@@ -386,13 +451,13 @@ export default function BlogsPage() {
                         </div>
                     </div>
 
-                    {/* AI & Data Solutions */}
+                    {/* AI & Data Solutions category */}
                     <div className={styles.sidebarWidget}>
                         <div className={styles.categoryHeader}>
                             <h3 className={styles.widgetTitle}>AI & Data Solutions</h3>
-                            <Link href="/blog/category/ai-data" className={styles.viewAllLink}>
+                            {/* <Link href="/blog/category/ai-data" className={styles.viewAllLink}>
                                 View All <ArrowRight size={12} />
-                            </Link>
+                            </Link> */}
                         </div>
                         <ul className={styles.categoryMiniList}>
                             <li><Link href="/blog/tag/ai">AI Solutions</Link></li>
@@ -402,19 +467,46 @@ export default function BlogsPage() {
                         </ul>
                     </div>
 
-                    {/* Software Engineering */}
+                    {/* Software Engineering category */}
                     <div className={styles.sidebarWidget}>
                         <div className={styles.categoryHeader}>
                             <h3 className={styles.widgetTitle}>Software Engineering</h3>
-                            <Link href="/blog/category/software-engineering" className={styles.viewAllLink}>
+                            {/* <Link href="/blog/category/software-engineering" className={styles.viewAllLink}>
                                 View All <ArrowRight size={12} />
-                            </Link>
+                            </Link> */}
                         </div>
                         <ul className={styles.categoryMiniList}>
                             <li><Link href="/blog/tag/product-development">Software Product Development</Link></li>
                             <li><Link href="/blog/tag/app-development">Application Development</Link></li>
                             <li><Link href="/blog/tag/dedicated-team">Dedicated Team</Link></li>
                         </ul>
+                    </div>
+
+                    {/* Recent Posts */}
+                    <div className={styles.sidebarWidget}>
+                        <h3 className={styles.widgetTitle}>Recent Posts</h3>
+                        <ul className={styles.recentList}>
+                            {recentPosts.map(post => (
+                                <li key={post.id} className={styles.recentItem}>
+                                    <Link href={`/blog/${post.slug}`} className={styles.recentLink}>
+                                        <span className={styles.recentTitle}>{post.title}</span>
+                                        <span className={styles.recentDate}>{post.date}</span>
+                                    </Link>
+                                </li>
+                            ))}
+                        </ul>
+                    </div>
+
+                    {/* Tags */}
+                    <div className={styles.sidebarWidget}>
+                        <h3 className={styles.widgetTitle}>Popular Tags</h3>
+                        <div className={styles.tagCloud}>
+                            {allTags.map(tag => (
+                                <Link key={tag} href={`/blog/tag/${tag.toLowerCase()}`} className={styles.tag}>
+                                    <Tag size={12} /> {tag}
+                                </Link>
+                            ))}
+                        </div>
                     </div>
 
                     {/* Newsletter */}
@@ -439,14 +531,14 @@ export default function BlogsPage() {
                     </div>
                 </aside>
 
-                {/* ===== MAIN CONTENT ===== */}
+                {/* MAIN CONTENT */}
                 <main className={styles.mainContent}>
-                    {/* POPULAR POSTS SECTION */}
+                    {/* POPULAR POSTS SECTION (as on the reference) */}
                     <section className={styles.popularSection}>
                         <h2 className={styles.sectionTitle}>Popular Posts</h2>
-                        
-                        {/* Featured Post (large) */}
-                        <div className={styles.featuredPost}>
+
+                        {/* Featured Post */}
+                        <article className={styles.featuredPost}>
                             <div className={styles.featuredPostImageWrapper}>
                                 <Image
                                     src={featuredPost.image}
@@ -484,11 +576,11 @@ export default function BlogsPage() {
                                     </span>
                                 </div>
                             </div>
-                        </div>
+                        </article>
 
-                        {/* Recent Posts Grid (3 items) */}
+                        {/* Two recent posts below the featured one */}
                         <div className={styles.recentGrid}>
-                            {recentPosts.slice(0, 3).map((post) => (
+                            {recentPosts.slice(0, 2).map(post => (
                                 <article key={post.id} className={styles.recentCard}>
                                     <div className={styles.recentCardImageWrapper}>
                                         <Image
@@ -523,9 +615,9 @@ export default function BlogsPage() {
                             <span className={styles.postsCount}>{filteredPosts.length} posts</span>
                         </div>
 
-                        {currentPosts.length > 0 ? (
+                        {filteredPosts.length > 0 ? (
                             <div className={styles.postsGrid}>
-                                {currentPosts.map((post) => (
+                                {filteredPosts.map(post => (
                                     <motion.article
                                         key={post.id}
                                         className={styles.postCard}
@@ -551,16 +643,15 @@ export default function BlogsPage() {
                                             </h3>
                                             <p className={styles.postExcerpt}>{post.excerpt}</p>
                                             <div className={styles.postFooter}>
-                                                <div className={styles.postAuthor}>
-                                                    <User size={14} />
-                                                    <span>{post.author}</span>
-                                                </div>
                                                 <span className={styles.postDate}>
                                                     <Calendar size={14} /> {post.date}
                                                 </span>
+                                                <span className={styles.postAuthor}>
+                                                    <User size={14} /> {post.author}
+                                                </span>
                                             </div>
                                             <div className={styles.postTags}>
-                                                {post.tags.slice(0, 2).map((tag) => (
+                                                {post.tags.slice(0, 2).map(tag => (
                                                     <Link key={tag} href={`/blog/tag/${tag.toLowerCase()}`} className={styles.postTag}>
                                                         {tag}
                                                     </Link>
@@ -578,93 +669,68 @@ export default function BlogsPage() {
                                 <p>No posts found matching your criteria.</p>
                             </div>
                         )}
-
-                        {/* Pagination */}
-                        {totalPages > 1 && (
-                            <div className={styles.pagination}>
-                                <button
-                                    onClick={() => handlePageChange(currentPage - 1)}
-                                    disabled={currentPage === 1}
-                                    className={styles.pageButton}
-                                >
-                                    <ChevronLeft size={18} />
-                                </button>
-                                {Array.from({ length: totalPages }, (_, i) => i + 1).map((page) => (
-                                    <button
-                                        key={page}
-                                        onClick={() => handlePageChange(page)}
-                                        className={`${styles.pageButton} ${currentPage === page ? styles.activePage : ''}`}
-                                    >
-                                        {page}
-                                    </button>
-                                ))}
-                                <button
-                                    onClick={() => handlePageChange(currentPage + 1)}
-                                    disabled={currentPage === totalPages}
-                                    className={styles.pageButton}
-                                >
-                                    <ChevronRight size={18} />
-                                </button>
-                            </div>
-                        )}
                     </section>
                 </main>
             </div>
 
-            {/* ===== E-GUIDE DOWNLOAD SECTION ===== */}
+            {/* ===== E‑GUIDE DOWNLOAD SECTION ===== */}
             <section className={styles.guideSection}>
-                <div className={styles.guideContainer}>
-                    <div className={styles.guideContent}>
-                        <h2 className={styles.guideTitle}>
-                            Get Your Free <span className={styles.highlight}>Software Security Guide</span>
-                        </h2>
-                        <p className={styles.guideDescription}>
-                            Download our step-by-step guide to strengthen security throughout your software development process.
-                        </p>
-                        <form onSubmit={handleDownload} className={styles.guideForm}>
-                            <input
-                                type="text"
-                                placeholder="Your Name"
-                                value={downloadName}
-                                onChange={(e) => setDownloadName(e.target.value)}
-                                required
-                                className={styles.guideInput}
+                <div className={styles.container}>
+                    <div className={styles.guideGrid}>
+                        <div className={styles.guideContent}>
+                            <h2 className={styles.guideTitle}>
+                                Get Your Free <span className={styles.highlight}>Software Security Guide</span>
+                            </h2>
+                            <p className={styles.guideDescription}>
+                                Download our step-by-step guide to strengthen security throughout your software development process.
+                            </p>
+                            <form onSubmit={handleDownload} className={styles.guideForm}>
+                                <input
+                                    type="text"
+                                    placeholder="Your Name"
+                                    value={downloadName}
+                                    onChange={(e) => setDownloadName(e.target.value)}
+                                    required
+                                    className={styles.guideInput}
+                                />
+                                <input
+                                    type="email"
+                                    placeholder="Your Email"
+                                    value={downloadEmail}
+                                    onChange={(e) => setDownloadEmail(e.target.value)}
+                                    required
+                                    className={styles.guideInput}
+                                />
+                                <button type="submit" className={styles.guideButton}>
+                                    Download FREE e‑Guide <Download size={18} />
+                                </button>
+                            </form>
+                        </div>
+                        <div className={styles.guideImageWrapper}>
+                            <div className={styles.guideImageOverlay}></div>
+                            <Image
+                                src="https://images.unsplash.com/photo-1555949963-aa79dcee981c?auto=format&fit=crop&w=800&q=80"
+                                alt="Software Security Guide"
+                                fill
+                                className={styles.guideImage}
                             />
-                            <input
-                                type="email"
-                                placeholder="Your Email"
-                                value={downloadEmail}
-                                onChange={(e) => setDownloadEmail(e.target.value)}
-                                required
-                                className={styles.guideInput}
-                            />
-                            <button type="submit" className={styles.guideButton}>
-                                Download FREE e-Guide <Download size={18} />
-                            </button>
-                        </form>
-                    </div>
-                    <div className={styles.guideImageWrapper}>
-                        <div className={styles.guideImageOverlay}></div>
-                        <Image
-                            src="https://images.unsplash.com/photo-1555949963-aa79dcee981c?auto=format&fit=crop&w=800&q=80"
-                            alt="Software Security Guide"
-                            fill
-                            className={styles.guideImage}
-                        />
+                        </div>
                     </div>
                 </div>
             </section>
 
             {/* ===== FINAL CTA ===== */}
             <section className={styles.finalCtaSection}>
-                <div className={styles.finalCtaCard}>
-                    <h2 className={styles.finalCtaTitle}>Got a Project in Mind?</h2>
-                    <p className={styles.finalCtaDescription}>
-                        Let&apos;s embark on a journey to transform your idea into a compelling digital presence.
-                    </p>
-                    <Link href="/contact" className={styles.finalCtaButton}>
-                        Start a Conversation <ArrowRight size={18} />
-                    </Link>
+                <div className={styles.container}>
+                    <div className={styles.finalCtaCard}>
+                        <h2 className={styles.finalCtaTitle}>Got a Project in Mind?</h2>
+                        <p className={styles.finalCtaDescription}>
+                            Let&apos;s embark on a journey to transform your idea into a compelling digital presence.
+                        </p>
+                        <Link href="/contact" className={styles.finalCtaButton}>
+                            Start a Conversation <ArrowRight size={18} />
+                        </Link>
+                    </div>
                 </div>
             </section>
         </div>

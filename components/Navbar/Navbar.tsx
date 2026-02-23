@@ -239,7 +239,7 @@ export default function Navbar() {
         // Resources section
         { name: "Blog & Insights", href: "/company/blogs", icon: <BlogIcon /> },
         {
-          name: "Clients & Testimonials",
+          name: "Clients' Testimonials",
           href: "/company/testimonials",
           icon: <TestimonialsIcon />,
         },
