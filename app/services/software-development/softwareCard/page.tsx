@@ -196,9 +196,11 @@ const SoftwareDevelopmentServices = () => {
                 <p className={styles.visionDescription}>
                   Turn your innovative ideas into a powerful software product. We provide expert development services to bring your vision to life.
                 </p>
-                <button className={styles.visionCtaButton}>
+                <a href="/contact">
+                  <button className={styles.visionCtaButton}>
                   Book a Free Consultation
                 </button>
+                </a>
               </div>
               <div className={styles.visionImageContainer}>
                 <Image
@@ -223,9 +225,11 @@ const SoftwareDevelopmentServices = () => {
                 <p className={styles.scaleDescription}>
                   From ideation to deployment, we handle it all. We craft powerful software solutions that capture markets and win customers.
                 </p>
-                <button className={styles.scaleCtaButton}>
+                <a href="/contact">
+                  <button className={styles.scaleCtaButton}>
                   Contact Us
                 </button>
+                </a>
               </div>
               <div className={styles.statsGrid} ref={statsRef}>
                 {stats.map((stat, index) => (

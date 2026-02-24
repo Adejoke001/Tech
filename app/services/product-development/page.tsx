@@ -121,7 +121,7 @@ export default function ProductDevelopment() {
       ],
       icon: <Rocket className={styles.stageIcon} />,
       color: "#10b981",
-      link: "/solutions/startups",
+      link: "/solutions/solutions-startups",
       bgColor: "bg-gradient-to-br from-emerald-50 to-teal-50",
       ctaText: "Launch Your Startup Idea",
     },
@@ -137,7 +137,7 @@ export default function ProductDevelopment() {
       ],
       icon: <Building2 className={styles.stageIcon} />,
       color: "#3b82f6",
-      link: "/solutions/enterprises",
+      link: "/solutions/solutions-enterprises",
       bgColor: "bg-gradient-to-br from-blue-50 to-indigo-50",
       ctaText: "Modernize Your Enterprise",
     },
@@ -884,7 +884,7 @@ export default function ProductDevelopment() {
               </motion.div>
             </div>
 
-            <Link href="/about/achievements" className={styles.linkWrapper}>
+            <Link href="/company/testimonials" className={styles.linkWrapper}>
               <motion.button
                 className={styles.statsCtaButton}
                 whileHover={{ scale: 1.05 }}
@@ -1038,7 +1038,7 @@ export default function ProductDevelopment() {
           </div>
 
           <div className={styles.engineeringCta}>
-            <Link href="/solutions" className={styles.linkWrapper}>
+            <Link href="/solutions/specialized-solutions" className={styles.linkWrapper}>
               <motion.button
                 className={styles.primaryButton}
                 whileHover={{ scale: 1.05 }}
@@ -1127,7 +1127,7 @@ export default function ProductDevelopment() {
             ))}
           </div>
 
-          <div className={styles.techCta}>
+          {/* <div className={styles.techCta}>
             <Link href="/technologies" className={styles.linkWrapper}>
               <motion.button
                 className={styles.primaryButton}
@@ -1138,7 +1138,7 @@ export default function ProductDevelopment() {
                 <ArrowRight className={styles.buttonIcon} />
               </motion.button>
             </Link>
-          </div>
+          </div> */}
         </div>
       </section>
 

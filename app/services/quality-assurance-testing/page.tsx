@@ -52,7 +52,7 @@ export default function QualityAssurancePage() {
     }
   }, [isStatsInView]);
 
-  // QA Services
+  // QA Services (with optional custom links)
   const qaServices = [
     {
       id: 1,
@@ -67,6 +67,7 @@ export default function QualityAssurancePage() {
         'User Acceptance Testing',
         'Regression Testing'
       ]
+      // no custom link → uses /services/functional-testing
     },
     {
       id: 2,
@@ -136,11 +137,12 @@ export default function QualityAssurancePage() {
         'GraphQL Testing',
         'Load Testing',
         'Security Testing'
-      ]
+      ],
+      link: '/services/api-testing' // example custom link
     }
   ];
 
-  // QA Process Steps - 6 on a row on large screen, 2 columns on small screens
+  // QA Process Steps
   const qaProcess = [
     {
       step: 1,
@@ -186,7 +188,7 @@ export default function QualityAssurancePage() {
     }
   ];
 
-  // Industry Solutions
+  // Industry Solutions (with optional custom links)
   const industrySolutions = [
     {
       industry: 'FinTech',
@@ -196,7 +198,8 @@ export default function QualityAssurancePage() {
         'Penetration Testing',
         'Load Testing for Trading Platforms',
         'Mobile Banking App Testing'
-      ]
+      ],
+      link: '/industries/industries-fintech' 
     },
     {
       industry: 'Healthcare',
@@ -206,7 +209,9 @@ export default function QualityAssurancePage() {
         'Medical Device Validation',
         'EHR System Testing',
         'Telemedicine Platform Testing'
-      ]
+      ],
+      
+
     },
     {
       industry: 'E-commerce',
@@ -216,7 +221,8 @@ export default function QualityAssurancePage() {
         'Payment Gateway Testing',
         'Mobile App Testing',
         'Security & Vulnerability Testing'
-      ]
+      ],
+      link: '/industries/industries-ecommerce'
     },
     {
       industry: 'IoT',
@@ -255,9 +261,12 @@ export default function QualityAssurancePage() {
     }
   ];
 
+  // Helper function to create URL-friendly slugs
+  const slugify = (text: string) => text.toLowerCase().replace(/\s+/g, '-');
+
   return (
     <div className={styles.pageWrapper}>
-      {/* Hero Section with Background Image */}
+      {/* Hero Section (unchanged) */}
       <section className={styles.heroSection}>
         <div className={styles.overlay}></div>
         
@@ -298,7 +307,7 @@ export default function QualityAssurancePage() {
             </motion.div>
           </motion.div>
 
-          {/* Right Side - Testimonial Card */}
+          {/* Right Side - Testimonial Card (unchanged) */}
           <motion.div 
             className={styles.rightContent}
             initial={{ opacity: 0, x: 20 }}
@@ -351,9 +360,10 @@ export default function QualityAssurancePage() {
         </div>
       </section>
 
-      {/* Stats Section */}
+      {/* Stats Section (unchanged) */}
       <section ref={statsRef} className={styles.statsSection}>
         <div className={styles.statsGrid}>
+          {/* ... stats cards ... */}
           <motion.div
             className={styles.statCard}
             initial={{ scale: 0 }}
@@ -400,7 +410,7 @@ export default function QualityAssurancePage() {
         </div>
       </section>
 
-      {/* QA Services Section */}
+      {/* QA Services Section – with custom link support */}
       <section className={styles.servicesSection}>
         <div className={styles.sectionHeader}>
           <h2 className={styles.sectionTitle}>
@@ -440,7 +450,11 @@ export default function QualityAssurancePage() {
                     </li>
                   ))}
                 </ul>
-                <Link href={`/services/${service.title.toLowerCase().replace(/ /g, '-')}`} className={styles.learnMoreLink}>
+                {/* Learn More link with custom fallback */}
+                <Link 
+                  href={service.link || `/services/${slugify(service.title)}`} 
+                  className={styles.learnMoreLink}
+                >
                   Learn More
                   <ChevronRight className={styles.linkIcon} />
                 </Link>
@@ -450,7 +464,7 @@ export default function QualityAssurancePage() {
         </div>
       </section>
 
-      {/* QA Process Section */}
+      {/* QA Process Section (unchanged) */}
       <section className={styles.processSection}>
         <div className={styles.sectionHeader}>
           <h2 className={styles.sectionTitle}>
@@ -496,7 +510,7 @@ export default function QualityAssurancePage() {
         </div>
       </section>
 
-      {/* Industry Solutions */}
+      {/* Industry Solutions – with custom link support */}
       <section className={styles.industrySection}>
         <div className={styles.sectionHeader}>
           <h2 className={styles.sectionTitle}>
@@ -539,7 +553,10 @@ export default function QualityAssurancePage() {
               </div>
               
               <div className={styles.buttonWrapper}>
-                <Link href={`/industries/${industry.industry.toLowerCase()}`} className={styles.industryLink}>
+                <Link 
+                  href={industry.link || `/industries/${slugify(industry.industry)}`} 
+                  className={styles.industryLink}
+                >
                   Explore Solutions
                   <ArrowRight className={styles.linkIcon} />
                 </Link>
@@ -549,7 +566,7 @@ export default function QualityAssurancePage() {
         </div>
       </section>
 
-      {/* FAQs */}
+      {/* FAQs and CTA (unchanged) */}
       <section className={styles.faqSection}>
         <div className={styles.sectionHeader}>
           <h2 className={styles.sectionTitle}>
@@ -604,9 +621,9 @@ export default function QualityAssurancePage() {
               Start Free QA Assessment
               <ArrowRight className={styles.buttonIcon} />
             </Link>
-            <Link href="/portfolio" className={styles.secondaryButton}>
+            {/* <Link href="/portfolio" className={styles.secondaryButton}>
               View Case Studies
-            </Link>
+            </Link> */}
           </div>
         </div>
       </section>

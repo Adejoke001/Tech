@@ -40,10 +40,12 @@ const OurVision = () => {
             </div>
 
             {/* Contact Button */}
+           <a href="/contact">
             <button className={styles.contactButton}>
-              Contact Us
+              Get In Touch
               <span className={styles.buttonArrow}>→</span>
             </button>
+           </a>
           </div>
 
           {/* Right Column - Images & Trusted Clients */}
