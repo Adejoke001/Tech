@@ -210,6 +210,7 @@ export default function QualityAssurancePage() {
         'EHR System Testing',
         'Telemedicine Platform Testing'
       ],
+      link: '/industries/industries-health'
       
 
     },
@@ -232,7 +233,8 @@ export default function QualityAssurancePage() {
         'Network & Connectivity Testing',
         'Security Testing',
         'Performance Testing'
-      ]
+      ],
+      link: '/industries/industries-iot'
     }
   ];
 

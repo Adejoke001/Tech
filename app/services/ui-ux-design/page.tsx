@@ -691,10 +691,10 @@ export default function UIUXDesignPage() {
                                 <span className={styles.benefitText}>{service.benefits}</span>
                             </div>
 
-                            <Link href={`/services/design/${service.id}`} className={styles.learnMoreLink}>
+                            {/* <Link href={`/services/design/${service.id}`} className={styles.learnMoreLink}>
                                 View Case Study
                                 <ChevronRight className={styles.linkIcon} />
-                            </Link>
+                            </Link> */}
                         </motion.div>
                     ))}
                 </div>

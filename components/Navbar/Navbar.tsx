@@ -255,7 +255,7 @@ export default function Navbar() {
   return (
     <nav
       className={`${styles.navbar} ${isNavbarHovered ? styles.navbarHovered : ""
-        }`}
+        }`} 
       onMouseEnter={() => setIsNavbarHovered(true)}
       onMouseLeave={() => setIsNavbarHovered(false)}
     >
@@ -405,29 +405,25 @@ export default function Navbar() {
             </div>
 
             {/* Pricing Link (No dropdown) */}
-            <Link
+            {/* <Link
               href="/pricing"
               className={`${styles.navLink} ${isNavbarHovered ? styles.navLinkHovered : ""
                 }`}
             >
               Pricing
             </Link>
-          </div>
+          </div> */}
 
           {/* Contact Us Button */}
-          {/* <button className={`${styles.contactButton} ${isNavbarHovered ? styles.contactButtonHovered : 'rounded-md'}`}>
-            <Link href="/contact">
-            CONTACT US
-            </Link>
-          </button> */}
-
-          <Link
+         <div>
+           <Link
             href="/contact"
             className={`${styles.contactButton} ${isNavbarHovered ? styles.contactButtonHovered : "rounded-md"
               }`}
           >
             CONTACT US
           </Link>
+         </div>
 
           {/* Mobile Menu Button */}
           <button
@@ -593,6 +589,7 @@ export default function Navbar() {
             <button className={styles.mobileContactButton}>Contact Us</button>
           </div>
         )}
+      </div>
       </div>
     </nav>
   );

@@ -29,61 +29,67 @@ export default function EnterpriseSoftwarePage() {
         project: 'Enterprise Resource Planning System'
     };
 
-    // Enterprise Services matching the ValueCoders structure
+    // Enterprise Services with individual links (ID 3 has no link)
     const enterpriseServices = [
         {
             id: 1,
             title: 'Enterprise Software Development',
             description: 'Transforming complex business challenges into intelligent, scalable software solutions efficiently.',
             icon: <Server className={styles.serviceIcon} />,
-            color: '#3B82F6', // Blue
+            color: '#3B82F6',
             features: ['Custom architecture design', 'Enterprise-grade solution building', 'Robust system development'],
-            detailedDescription: 'We build custom enterprise applications tailored to your specific business processes and requirements.'
+            detailedDescription: 'We build custom enterprise applications tailored to your specific business processes and requirements.',
+            link: '/services/software-development' // Replace with actual URL
         },
         {
             id: 2,
             title: 'Legacy Software Modernization',
             description: 'Upgrade outdated enterprise software for better performance, security, and scalability.',
             icon: <RefreshCw className={styles.serviceIcon} />,
-            color: '#10B981', // Emerald
+            color: '#10B981',
             features: ['System architecture reengineering', 'Performance enhancement strategies', 'Modern technology migration'],
-            detailedDescription: 'Transform your legacy systems into modern, efficient applications without disrupting business operations.'
+            detailedDescription: 'Transform your legacy systems into modern, efficient applications without disrupting business operations.',
+            link: '/services/software-modernization'
         },
         {
             id: 3,
             title: 'Enterprise Software Integration',
             description: 'Connecting enterprise systems for seamless data flow and improved process efficiency.',
             icon: <GitMerge className={styles.serviceIcon} />,
-            color: '#8B5CF6', // Purple
+            color: '#8B5CF6',
             features: ['API-driven integrations', 'Third-party tool integration', 'Real-time data processing'],
-            detailedDescription: 'Integrate disparate systems to create a unified technology ecosystem for your organization.'
+            detailedDescription: 'Integrate disparate systems to create a unified technology ecosystem for your organization.',
+            link: null // No link for this service
         },
         {
             id: 4,
-            title: 'Enterprise Mobility Solutions',
+            title: 'Enterprise Mobile Solutions',
             description: 'Secure and seamless mobile solutions for enterprise-level operations across devices.',
             icon: <Smartphone className={styles.serviceIcon} />,
-            color: '#F59E0B', // Amber
+            color: '#F59E0B',
             features: ['Cross-platform mobile apps', 'Secure data synchronization', 'Device management integration'],
-            detailedDescription: 'Extend your enterprise capabilities to mobile devices with secure, responsive applications.'
+            detailedDescription: 'Extend your enterprise capabilities to mobile devices with secure, responsive applications.',
+            link: null //'/services/enterprise/mobile-solutions'
         },
         {
             id: 5,
             title: 'Enterprise UX/UI Design',
             description: 'Deliver intuitive enterprise experiences that drive user satisfaction and productivity.',
             icon: <Settings className={styles.serviceIcon} />,
-            color: '#EC4899', // Pink
+            color: '#EC4899',
             features: ['User journey mapping', 'Custom UI designs', 'Compliance with accessibility'],
-            detailedDescription: 'Create user-centric interfaces that enhance productivity and ensure high adoption rates.'
+            detailedDescription: 'Create user-centric interfaces that enhance productivity and ensure high adoption rates.',
+            link: '/services/ui-ux-design'
         },
         {
             id: 6,
             title: 'Enterprise Testing & QA',
             description: 'Guarantee software stability, performance, and compliance across all use cases.',
             icon: <ClipboardCheck className={styles.serviceIcon} />,
-            color: '#06B6D4', // Cyan
+            color: '#06B6D4',
             features: ['Comprehensive QA strategy', 'Security and compliance testing', 'Automated and manual testing'],
-            detailedDescription: 'Ensure your enterprise software meets the highest standards of quality and reliability.'
+            detailedDescription: 'Ensure your enterprise software meets the highest standards of quality and reliability.',
+            link: '/services/quality-assurance-testing'
         }
     ];
 
@@ -284,7 +290,7 @@ export default function EnterpriseSoftwarePage() {
 
     return (
         <div className={styles.pageWrapper}>
-            {/* ===== HERO SECTION (Matching Quality Assurance page layout) ===== */}
+            {/* ===== HERO SECTION ===== */}
             <section className={styles.heroSection}>
                 <div className={styles.overlay}></div>
 
@@ -405,7 +411,7 @@ export default function EnterpriseSoftwarePage() {
                 </div>
             </section>
 
-            {/* ===== ENTERPRISE SERVICES SECTION ===== */}
+            {/* ===== ENTERPRISE SERVICES SECTION (with per‑service links) ===== */}
             <section className={styles.servicesSection}>
                 <div className={styles.sectionHeader}>
                     <h2 className={styles.sectionTitle}>
@@ -460,10 +466,12 @@ export default function EnterpriseSoftwarePage() {
                                         <p>{service.detailedDescription}</p>
                                     </motion.div>
                                 )}
-                                <Link href={`/services/enterprise/${service.id}`} className={styles.learnMoreLink}>
-                                    Learn More
-                                    <ChevronRight className={styles.linkIcon} />
-                                </Link>
+                                {service.link ? (
+                                    <Link href={service.link} className={styles.learnMoreLink}>
+                                        Learn More
+                                        <ChevronRight className={styles.linkIcon} />
+                                    </Link>
+                                ) : null}
                             </div>
                         </motion.div>
                     ))}
@@ -686,8 +694,7 @@ export default function EnterpriseSoftwarePage() {
                 </div>
             </section>
 
-
-            {/* ===== INDUSTRIES SECTION (EXACT MATCH from API Development page) ===== */}
+            {/* ===== INDUSTRIES SECTION ===== */}
             <section className={styles.industriesSection}>
                 <div className={styles.sectionContent}>
                     <div className={styles.sectionHeader}>
@@ -800,7 +807,6 @@ export default function EnterpriseSoftwarePage() {
                                 Start Free Consultation
                                 <ChevronRight className={styles.buttonIcon} />
                             </Link>
-
                         </div>
                     </div>
                 </div>
