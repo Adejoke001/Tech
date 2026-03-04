@@ -158,13 +158,13 @@ export default function DataEngineeringAnalyticsPage() {
     ];
 
     // ===== COMPLETE PRICING DATA (5 tiers from analytics website) =====
-    const pricingData = [
-        { range: '$15,000 – $40,000', title: 'Basic Dashboards', description: 'To build basic dashboards for performance or sales tracking.', features: ['Standard KPI dashboards', 'Basic data visualization', 'Monthly reporting', '2-3 data sources integration'] },
-        { range: '$40,000 – $70,000', title: 'Industry-Specific Analytics', description: 'To develop an industry-specific analytics solution with real-time data processing.', features: ['Real-time dashboards', 'Predictive analytics', 'Custom data models', 'Multiple system integration'] },
-        { range: '$70,000 – $100,000', title: 'Custom Analytics Platform', description: 'To build a custom analytics platform with API integrations and business logic layers.', features: ['Custom data pipelines', 'Advanced ML models', 'API integrations', 'Role-based access control'] },
-        { range: '$100,000 – $120,000', title: 'Enterprise BI Systems', description: 'Implement enterprise BI systems with automated reporting & custom data pipelines.', features: ['Enterprise BI systems', 'Automated reporting', 'Custom data pipelines', 'Cloud deployment'] },
-        { range: '$120,000+', title: 'Full-Scale Data Ecosystem', description: 'For full-scale data lake architecture, ML analytics, predictive modeling across multiple units.', features: ['Data lake implementation', 'Advanced predictive modeling', 'ML analytics across units', 'Complete data transformation'] },
-    ];
+    // const pricingData = [
+    //     { range: '$15,000 – $40,000', title: 'Basic Dashboards', description: 'To build basic dashboards for performance or sales tracking.', features: ['Standard KPI dashboards', 'Basic data visualization', 'Monthly reporting', '2-3 data sources integration'] },
+    //     { range: '$40,000 – $70,000', title: 'Industry-Specific Analytics', description: 'To develop an industry-specific analytics solution with real-time data processing.', features: ['Real-time dashboards', 'Predictive analytics', 'Custom data models', 'Multiple system integration'] },
+    //     { range: '$70,000 – $100,000', title: 'Custom Analytics Platform', description: 'To build a custom analytics platform with API integrations and business logic layers.', features: ['Custom data pipelines', 'Advanced ML models', 'API integrations', 'Role-based access control'] },
+    //     { range: '$100,000 – $120,000', title: 'Enterprise BI Systems', description: 'Implement enterprise BI systems with automated reporting & custom data pipelines.', features: ['Enterprise BI systems', 'Automated reporting', 'Custom data pipelines', 'Cloud deployment'] },
+    //     { range: '$120,000+', title: 'Full-Scale Data Ecosystem', description: 'For full-scale data lake architecture, ML analytics, predictive modeling across multiple units.', features: ['Data lake implementation', 'Advanced predictive modeling', 'ML analytics across units', 'Complete data transformation'] },
+    // ];
 
     // ===== HIRING MODELS (Complete from both websites) =====
     const hiringModels = [
@@ -610,7 +610,7 @@ export default function DataEngineeringAnalyticsPage() {
             </section>
 
             {/* ===== COMPLETE PRICING SECTION ===== */}
-            <section className={styles.pricingSection}>
+            {/* <section className={styles.pricingSection}>
                 <div className={styles.sectionContent}>
                     <div className={styles.sectionHeader}>
                         <h2>Cost of Data Analytics Services</h2>
@@ -637,7 +637,7 @@ export default function DataEngineeringAnalyticsPage() {
                         ))}
                     </div>
                 </div>
-            </section>
+            </section> */}
 
             {/* ===== HIRING MODELS SECTION ===== */}
             <section className={styles.hiringSection}>
@@ -677,7 +677,11 @@ export default function DataEngineeringAnalyticsPage() {
                                             ))}
                                         </div>
                                     </div>
-                                    <Link href="/contact" className={styles.modelCta} style={{ backgroundColor: model.color }}>
+                                    <Link 
+                                        href="/contact" 
+                                        className={styles.modelCta} 
+                                        style={{ backgroundColor: model.color, position: 'relative', zIndex: 10, pointerEvents: 'auto' }}
+                                    >
                                         Choose This Model
                                     </Link>
                                 </div>

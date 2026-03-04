@@ -571,10 +571,10 @@ export default function CybersecurityServicesPage() {
                                         <p>{service.detailedDescription}</p>
                                     </motion.div>
                                 )}
-                                <Link href={`/services/cybersecurity/${service.id}`} className={styles.learnMoreLink}>
+                                {/* <Link href={`/services/cybersecurity/${service.id}`} className={styles.learnMoreLink}>
                                     Learn More
                                     <ChevronRight className={styles.linkIcon} />
-                                </Link>
+                                </Link> */}
                             </div>
                         </motion.div>
                     ))}
@@ -702,10 +702,10 @@ export default function CybersecurityServicesPage() {
                                     </li>
                                 ))}
                             </ul>
-                            <Link href={`/solutions/risk-management`} className={styles.riskLink}>
+                            {/* <Link href={`/solutions/risk-management`} className={styles.riskLink}>
                                 Explore Solution
                                 <ChevronRight className={styles.linkIcon} />
-                            </Link>
+                            </Link> */}
                         </motion.div>
                     ))}
                 </div>
