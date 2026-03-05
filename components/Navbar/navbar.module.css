@@ -188,7 +188,6 @@
   transition: all 0.3s ease;
   border: none;
   cursor: pointer;
-
 }
 
 .contactButton:hover {
@@ -230,40 +229,29 @@
 /* Mobile Menu */
 .mobileMenu {
   margin-top: 1rem;
-  background: rgba(255, 255, 255, 0.95);
-  backdrop-filter: blur(8px);
+  background: white;
   border-radius: 0.5rem;
-  border: 1px solid #e5e7eb;
-  padding: 1rem 0;
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+  overflow-y: auto;
+  max-height: 80vh;
+  padding: 0;
 }
 
+/* Increased padding for mobile links */
 .mobileLink {
   display: block;
-  padding: 0.75rem 1rem;
+  padding: 1.5rem 1.5rem; /* Increased vertical padding */
   color: #374151;
   font-weight: 500;
-  font-size: 0.875rem;
-  transition: all 0.3s ease;
+  font-size: 1rem;
   text-decoration: none;
+  border-bottom: 1px solid #f3f4f6;
+  transition: all 0.3s ease;
 }
 
 .mobileLink:hover {
-  background-color: #eff6ff;
-  color:#FFAD00;
-}
-
-.mobileContactButton {
-  width: 100%;
-  background-color: #FFAD00;
-  color: black;
-  padding: 0.75rem 1.5rem;
-  border-radius: 0.5rem;
-  font-weight: 500;
-  font-size: 0.875rem;
-  transition: background-color 0.3s ease;
-  border: none;
-  cursor: pointer;
-  margin-top: 1rem;
+  background-color: #f9fafb;
+  color: #FFAD00;
 }
 
 /* Mobile Dropdown Styling */
@@ -276,7 +264,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 1rem 1.5rem;
+  padding: 1.5rem 1.5rem; /* Increased vertical padding */
   background: none;
   border: none;
   font-size: 1rem;
@@ -307,7 +295,7 @@
   display: flex;
   align-items: center;
   gap: 0.75rem;
-  padding: 0.75rem 1.5rem 0.75rem 2.5rem; /* Indented padding */
+  padding: 1rem 1.5rem 1rem 2.5rem; /* Increased vertical padding */
   text-decoration: none;
   color: #4b5563;
   font-size: 0.9rem;
@@ -320,44 +308,21 @@
   padding-left: 2.75rem; /* Subtle indentation shift */
 }
 
-/* Update general mobile menu styling */
-.mobileMenu {
-  margin-top: 1rem;
-  background: white; /* removed transparency for better readability on dropdowns */
-  border-radius: 0.5rem;
-  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
-  overflow-y: auto;
-  max-height: 80vh; /* Scroll if too long */
-  padding: 0; /* Reset padding to handle borders correctly */
-}
-
-.mobileLink {
-  display: block;
-  padding: 1rem 1.5rem;
-  color: #374151;
-  font-weight: 500;
-  font-size: 1rem;
-  text-decoration: none;
-  border-bottom: 1px solid #f3f4f6;
-  transition: all 0.3s ease;
-}
-
-.mobileLink:hover {
-  background-color: #f9fafb;
-  color: #FFAD00;
-}
-
+/* Mobile Contact Button - improved spacing */
 .mobileContactButton {
+  display: block;
   width: calc(100% - 3rem);
-  margin: 1.5rem;
+  margin: 2rem 1.5rem; /* Increased top/bottom margin */
   background-color: #FFAD00;
   color: black;
-  padding: 0.75rem;
+  padding: 1rem; /* Slightly increased padding */
   border-radius: 0.5rem;
   font-weight: 600;
   font-size: 1rem;
   border: none;
   cursor: pointer;
+  text-align: center;
+  text-decoration: none;
   transition: background-color 0.3s ease;
 }
 

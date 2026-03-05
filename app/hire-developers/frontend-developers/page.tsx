@@ -72,6 +72,7 @@ export default function FrontendDevelopersPage() {
         "Secure API integration",
         "Dynamic content rendering",
       ],
+      link: "/services/web-development", // example
     },
     {
       id: 2,
@@ -86,6 +87,7 @@ export default function FrontendDevelopersPage() {
         "Consistent design systems",
         "Native-like performance",
       ],
+      link: "/hire/frontend/cross-platform-ui",
     },
     {
       id: 3,
@@ -100,6 +102,7 @@ export default function FrontendDevelopersPage() {
         "Serverless architectures",
         "Real-time updates",
       ],
+      link: null, // no link
     },
     {
       id: 4,
@@ -114,6 +117,7 @@ export default function FrontendDevelopersPage() {
         "Workflow automation",
         "Scalable component libraries",
       ],
+      link: null,
     },
     {
       id: 5,
@@ -128,6 +132,7 @@ export default function FrontendDevelopersPage() {
         "SEO-friendly rendering",
         "Accessibility auditing",
       ],
+      link: null,
     },
     {
       id: 6,
@@ -142,6 +147,7 @@ export default function FrontendDevelopersPage() {
         "Reusable components",
         "Consistent UX patterns",
       ],
+      link: null,
     },
   ];
 
@@ -655,13 +661,12 @@ export default function FrontendDevelopersPage() {
                   ))}
                 </ul>
 
-                <Link
-                  href={`/hire/frontend/${expertise.id}`}
-                  className={styles.learnMoreLink}
-                >
-                  Learn More
-                  <ChevronRight className={styles.linkIcon} />
-                </Link>
+                {expertise.link && (
+                  <Link href={expertise.link} className={styles.learnMoreLink}>
+                    Learn More
+                    <ChevronRight className={styles.linkIcon} />
+                  </Link>
+                )}
               </div>
             </motion.div>
           ))}

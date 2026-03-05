@@ -25,11 +25,8 @@ const APIIcon = () => <span className={styles.dropdownIcon}>🔗</span>;
 const FrontendIcon = () => <span className={styles.dropdownIcon}>🎨</span>;
 const BackendIcon = () => <span className={styles.dropdownIcon}>⚙️</span>;
 const MobileIcon = () => <span className={styles.dropdownIcon}>📱</span>;
-const InfrastructureIcon = () => (
-  <span className={styles.dropdownIcon}>🖥️</span>
-);
+const InfrastructureIcon = () => <span className={styles.dropdownIcon}>🖥️</span>;
 const QADevIcon = () => <span className={styles.dropdownIcon}>✅</span>;
-
 
 const StartupIcon = () => <span className={styles.dropdownIcon}>🚀</span>;
 const ScaleupIcon = () => <span className={styles.dropdownIcon}>📈</span>;
@@ -41,9 +38,7 @@ const MediaIcon = () => <span className={styles.dropdownIcon}>🎬</span>;
 const EcommerceIcon = () => <span className={styles.dropdownIcon}>🛒</span>;
 const EducationIcon = () => <span className={styles.dropdownIcon}>🎓</span>;
 
-// const MethodologyIcon = () => <span className={styles.dropdownIcon}>📐</span>;
 const PartnershipIcon = () => <span className={styles.dropdownIcon}>🤝</span>;
-// const CareersIcon = () => <span className={styles.dropdownIcon}>⭐</span>;
 const CaseStudiesIcon = () => <span className={styles.dropdownIcon}>📚</span>;
 const BlogIcon = () => <span className={styles.dropdownIcon}>✍️</span>;
 const TestimonialsIcon = () => <span className={styles.dropdownIcon}>💬</span>;
@@ -51,198 +46,70 @@ const TestimonialsIcon = () => <span className={styles.dropdownIcon}>💬</span>
 export default function Navbar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isNavbarHovered, setIsNavbarHovered] = useState(false);
-  const [expandedMobileMenu, setExpandedMobileMenu] = useState<string | null>(
-    null
-  );
+  const [expandedMobileMenu, setExpandedMobileMenu] = useState<string | null>(null);
 
   const toggleMobileMenu = (menuName: string) => {
     setExpandedMobileMenu(expandedMobileMenu === menuName ? null : menuName);
   };
 
-  // Updated dropdown data with icons
   const dropdowns = {
     services: {
       title: "Services",
       href: "/services",
       items: [
-        {
-          name: "Product Development",
-          href: "/services/product-development",
-          icon: <ProductIcon />,
-        },
-        {
-          name: "Software Development",
-          href: "/services/software-development",
-          icon: <SoftwareIcon />,
-        },
-        {
-          name: "Quality Assurance & Testing",
-          href: "/services/quality-assurance-testing",
-          icon: <QAIcon />,
-        },
-        {
-          name: "QA Strategy Consulting",
-          href: "/services/qa-consulting",
-          icon: <ConsultingIcon />,
-        },
-        {
-          name: "UI/UX Design Services",
-          href: "/services/ui-ux-design",
-          icon: <DesignIcon />,
-        },
-        {
-          name: "Machine Learning",
-          href: "/services/machine-learning",
-          icon: <AIIcon />,
-        },
-        {
-          name: "AI & Automation Consulting",
-          href: "/services/ai-automation-consulting",
-          icon: <AutomationIcon />,
-        },
-        {
-          name: "Enterprise Software Development",
-          href: "/services/enterprise-software-development",
-          icon: <EnterpriseIcon />,
-        },
-        {
-          name: "Cybersecurity Services",
-          href: "/services/cybersecurity-services",
-          icon: <SecurityIcon />,
-        },
-        {
-          name: "Data Engineering & Analytics",
-          href: "/services/data-engineering-analytics",
-          icon: <DataIcon />,
-        },
-        {
-          name: "Cloud & DevOps Services",
-          href: "/services/cloud-devops-services",
-          icon: <CloudIcon />,
-        },
-        {
-          name: "Integration & API Services",
-          href: "/services/integration-api-services",
-          icon: <APIIcon />,
-        },
+        { name: "Product Development", href: "/services/product-development", icon: <ProductIcon /> },
+        { name: "Software Development", href: "/services/software-development", icon: <SoftwareIcon /> },
+        { name: "Quality Assurance & Testing", href: "/services/quality-assurance-testing", icon: <QAIcon /> },
+        { name: "QA Strategy Consulting", href: "/services/qa-consulting", icon: <ConsultingIcon /> },
+        { name: "UI/UX Design Services", href: "/services/ui-ux-design", icon: <DesignIcon /> },
+        { name: "Machine Learning", href: "/services/machine-learning", icon: <AIIcon /> },
+        { name: "AI & Automation Consulting", href: "/services/ai-automation-consulting", icon: <AutomationIcon /> },
+        { name: "Enterprise Software Development", href: "/services/enterprise-software-development", icon: <EnterpriseIcon /> },
+        { name: "Cybersecurity Services", href: "/services/cybersecurity-services", icon: <SecurityIcon /> },
+        { name: "Data Engineering & Analytics", href: "/services/data-engineering-analytics", icon: <DataIcon /> },
+        { name: "Cloud & DevOps Services", href: "/services/cloud-devops-services", icon: <CloudIcon /> },
+        { name: "Integration & API Services", href: "/services/integration-api-services", icon: <APIIcon /> },
       ],
     },
     hire: {
       title: "Hire Developers",
       href: "/hire-developers",
       items: [
-        {
-          name: "Frontend",
-          href: "/hire-developers/frontend-developers",
-          icon: <FrontendIcon />,
-        },
-        {
-          name: "Backend",
-          href: "/hire-developers/backend-developers",
-          icon: <BackendIcon />,
-        },
-        {
-          name: "Mobile App",
-          href: "/hire-developers/mobile-developers",
-          icon: <MobileIcon />,
-        },
-        {
-          name: "Full Stack",
-          href: "/hire-developers/fullstack-developers",
-          icon: <InfrastructureIcon />,
-        },
-        {
-          name: "QA & Testing",
-          href: "/hire-developers/qa-developers",
-          icon: <QADevIcon />,
-        },
-        
+        { name: "Frontend", href: "/hire-developers/frontend-developers", icon: <FrontendIcon /> },
+        { name: "Backend", href: "/hire-developers/backend-developers", icon: <BackendIcon /> },
+        { name: "Mobile App", href: "/hire-developers/mobile-developers", icon: <MobileIcon /> },
+        { name: "Full Stack", href: "/hire-developers/fullstack-developers", icon: <InfrastructureIcon /> },
+        { name: "QA & Testing", href: "/hire-developers/qa-developers", icon: <QADevIcon /> },
       ],
     },
     solutions: {
       title: "Solutions",
       href: "/solutions",
       items: [
-        {
-          name: "Startups",
-          href: "/solutions/solutions-startups",
-          icon: <StartupIcon />,
-        },
-        {
-          name: "Scale-ups",
-          href: "/solutions/solutions-scale-ups",
-          icon: <ScaleupIcon />,
-        },
-        {
-          name: "Enterprises",
-          href: "/solutions/solutions-enterprises",
-          icon: <EnterpriseSolIcon />,
-        },
-        {
-          name: "Specialized Solutions",
-          href: "/solutions/specialized-solutions",
-          icon: <ComplianceIcon />,
-        },
+        { name: "Startups", href: "/solutions/solutions-startups", icon: <StartupIcon /> },
+        { name: "Scale-ups", href: "/solutions/solutions-scale-ups", icon: <ScaleupIcon /> },
+        { name: "Enterprises", href: "/solutions/solutions-enterprises", icon: <EnterpriseSolIcon /> },
+        { name: "Specialized Solutions", href: "/solutions/specialized-solutions", icon: <ComplianceIcon /> },
       ],
     },
     industries: {
       title: "Industries",
       href: "/industries",
       items: [
-        {
-          name: "Fintech & Financial Services",
-          href: "/industries/industries-fintech",
-          icon: <FintechIcon />,
-        },
-        {
-          name: "Media & Entertainment Technology",
-          href: "/industries/industries-media",
-          icon: <MediaIcon />,
-        },
-        {
-          name: "E-commerce & Retail Solutions",
-          href: "/industries/industries-ecommerce",
-          icon: <EcommerceIcon />,
-        },
-        {
-          name: "Education & Edtech Solutions",
-          href: "/industries/industries-education",
-          icon: <EducationIcon />,
-        },
+        { name: "Fintech & Financial Services", href: "/industries/industries-fintech", icon: <FintechIcon /> },
+        { name: "Media & Entertainment Technology", href: "/industries/industries-media", icon: <MediaIcon /> },
+        { name: "E-commerce & Retail Solutions", href: "/industries/industries-ecommerce", icon: <EcommerceIcon /> },
+        { name: "Education & Edtech Solutions", href: "/industries/industries-education", icon: <EducationIcon /> },
       ],
     },
     company: {
       title: "Company",
-      href: "company",
+      href: "/company",
       items: [
-        // Company section
-        // {
-        //   name: "Our Development Methodology",
-        //   href: "/company/methodology",
-        //   icon: <MethodologyIcon />,
-        // },
-        {
-          name: "Partnerships & Certifications",
-          href: "/company/partnerships",
-          icon: <PartnershipIcon />,
-        },
-        // {
-        //   name: "Careers & Company Culture",
-        //   href: "/company/careers",
-        //   icon: <CareersIcon />,
-        // },
-        {
-          name: "Case Studies",
-          href: "/company/case-studies",
-          icon: <CaseStudiesIcon />,
-        },
-        // Resources section
+        { name: "Partnerships & Certifications", href: "/company/partnerships", icon: <PartnershipIcon /> },
+        { name: "Case Studies", href: "/company/case-studies", icon: <CaseStudiesIcon /> },
         { name: "Blog & Insights", href: "/company/blogs", icon: <BlogIcon /> },
-        {
-          name: "Clients' Testimonials",
-          href: "/company/testimonials",
-          icon: <TestimonialsIcon />,
-        },
+        { name: "Clients' Testimonials", href: "/company/testimonials", icon: <TestimonialsIcon /> },
       ],
     },
   };
@@ -254,43 +121,29 @@ export default function Navbar() {
 
   return (
     <nav
-      className={`${styles.navbar} ${isNavbarHovered ? styles.navbarHovered : ""
-        }`} 
+      className={`${styles.navbar} ${isNavbarHovered ? styles.navbarHovered : ""}`}
       onMouseEnter={() => setIsNavbarHovered(true)}
       onMouseLeave={() => setIsNavbarHovered(false)}
     >
       <div className={styles.container}>
-        {/* Main Navbar */}
         <div className={styles.mainNav}>
-          {/* Logo */}
           <Link
             href="/"
-            className={`${styles.logo} ${isNavbarHovered ? styles.logoHovered : ""
-              }`}
+            className={`${styles.logo} ${isNavbarHovered ? styles.logoHovered : ""}`}
             onClick={closeAll}
           >
             BBNTech
           </Link>
 
-          {/* Desktop Menu - Exact ValueCoders Structure */}
           <div className={styles.desktopMenu}>
-            {/* Services Dropdown */}
             <div className={styles.dropdownContainer}>
-              <button
-                className={`${styles.dropdownButton} ${isNavbarHovered ? styles.dropdownButtonHovered : ""
-                  }`}
-              >
+              <button className={`${styles.dropdownButton} ${isNavbarHovered ? styles.dropdownButtonHovered : ""}`}>
                 Services
               </button>
 
               <div className={styles.dropdownMenu}>
                 {dropdowns.services.items.map((item) => (
-                  <Link
-                    key={item.name}
-                    href={item.href}
-                    className={styles.dropdownLink}
-                    onClick={closeAll}
-                  >
+                  <Link key={item.name} href={item.href} className={styles.dropdownLink} onClick={closeAll}>
                     <span className={styles.dropdownLinkContent}>
                       {item.icon}
                       {item.name}
@@ -300,11 +153,12 @@ export default function Navbar() {
               </div>
             </div>
 
-            {/* Hire Developers Dropdown */}
+            {/* Hire Developers */}
             <div className={styles.dropdownContainer}>
               <button
-                className={`${styles.dropdownButton} ${isNavbarHovered ? styles.dropdownButtonHovered : ""
-                  }`}
+                className={`${styles.dropdownButton} ${
+                  isNavbarHovered ? styles.dropdownButtonHovered : ""
+                }`}
               >
                 Hire Developers
               </button>
@@ -326,11 +180,12 @@ export default function Navbar() {
               </div>
             </div>
 
-            {/* Solutions Dropdown */}
+            {/* Solutions */}
             <div className={styles.dropdownContainer}>
               <button
-                className={`${styles.dropdownButton} ${isNavbarHovered ? styles.dropdownButtonHovered : ""
-                  }`}
+                className={`${styles.dropdownButton} ${
+                  isNavbarHovered ? styles.dropdownButtonHovered : ""
+                }`}
               >
                 Solutions
               </button>
@@ -352,11 +207,12 @@ export default function Navbar() {
               </div>
             </div>
 
-            {/* Industries Dropdown */}
+            {/* Industries */}
             <div className={styles.dropdownContainer}>
               <button
-                className={`${styles.dropdownButton} ${isNavbarHovered ? styles.dropdownButtonHovered : ""
-                  }`}
+                className={`${styles.dropdownButton} ${
+                  isNavbarHovered ? styles.dropdownButtonHovered : ""
+                }`}
               >
                 Industries
               </button>
@@ -378,11 +234,12 @@ export default function Navbar() {
               </div>
             </div>
 
-            {/* Company Dropdown */}
+            {/* Company */}
             <div className={styles.dropdownContainer}>
               <button
-                className={`${styles.dropdownButton} ${isNavbarHovered ? styles.dropdownButtonHovered : ""
-                  }`}
+                className={`${styles.dropdownButton} ${
+                  isNavbarHovered ? styles.dropdownButtonHovered : ""
+                }`}
               >
                 Company
               </button>
@@ -403,39 +260,25 @@ export default function Navbar() {
                 ))}
               </div>
             </div>
+          </div>
 
-            {/* Pricing Link (No dropdown) */}
-            {/* <Link
-              href="/pricing"
-              className={`${styles.navLink} ${isNavbarHovered ? styles.navLinkHovered : ""
-                }`}
+          <div>
+            <Link
+              href="/contact"
+              className={`${styles.contactButton} ${isNavbarHovered ? styles.contactButtonHovered : "rounded-md"}`}
             >
-              Pricing
+              CONTACT US
             </Link>
-          </div> */}
+          </div>
 
-          {/* Contact Us Button */}
-         <div>
-           <Link
-            href="/contact"
-            className={`${styles.contactButton} ${isNavbarHovered ? styles.contactButtonHovered : "rounded-md"
-              }`}
-          >
-            CONTACT US
-          </Link>
-         </div>
-
-          {/* Mobile Menu Button */}
           <button
-            className={`${styles.mobileMenuButton} ${isNavbarHovered ? styles.mobileMenuButtonHovered : ""
-              }`}
+            className={`${styles.mobileMenuButton} ${isNavbarHovered ? styles.mobileMenuButtonHovered : ""}`}
             onClick={() => setIsMenuOpen(!isMenuOpen)}
           >
             {isMenuOpen ? <CloseIcon /> : <MenuIcon />}
           </button>
         </div>
 
-        {/* Mobile Menu */}
         {isMenuOpen && (
           <div className={styles.mobileMenu}>
             {/* Services Dropdown */}
@@ -578,18 +421,16 @@ export default function Navbar() {
               )}
             </div>
 
+            {/* Contact Us Link */}
             <Link
-              href="/pricing"
-              className={styles.mobileLink}
+              href="/contact"
+              className={styles.mobileContactButton}
               onClick={closeAll}
             >
-              Pricing
+              CONTACT US
             </Link>
-
-            <button className={styles.mobileContactButton}>Contact Us</button>
           </div>
         )}
-      </div>
       </div>
     </nav>
   );
