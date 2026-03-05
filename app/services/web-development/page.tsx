@@ -177,13 +177,13 @@ export default function WebDevelopmentPage() {
     ];
 
     // ============ COST ESTIMATES (from URL) ============
-    const costEstimates = [
-        { range: 'Starting at $55,000', description: 'Custom-designed single-store website tailored to your brand.' },
-        { range: 'Starting at $70,000', description: 'Vendor or sales portal designed for mid-sized companies to streamline operations.' },
-        { range: 'Starting at $110,000', description: 'Multistore solution with two unique websites or store views featuring bespoke designs.' },
-        { range: '$90,000 – $300,000', description: 'Corporate eLearning platforms for mid-sized and large enterprises, fully integrated with various internal systems.' },
-        { range: 'Approx. $250,000', description: 'Comprehensive eCommerce portal designed for mid-market businesses to enhance online sales and customer engagement.' },
-    ];
+    // const costEstimates = [
+    //     { range: 'Starting at $55,000', description: 'Custom-designed single-store website tailored to your brand.' },
+    //     { range: 'Starting at $70,000', description: 'Vendor or sales portal designed for mid-sized companies to streamline operations.' },
+    //     { range: 'Starting at $110,000', description: 'Multistore solution with two unique websites or store views featuring bespoke designs.' },
+    //     { range: '$90,000 – $300,000', description: 'Corporate eLearning platforms for mid-sized and large enterprises, fully integrated with various internal systems.' },
+    //     { range: 'Approx. $250,000', description: 'Comprehensive eCommerce portal designed for mid-market businesses to enhance online sales and customer engagement.' },
+    // ];
 
     // ============ DEVELOPMENT PROCESS (from URL) ============
     const processSteps = [
@@ -337,9 +337,6 @@ export default function WebDevelopmentPage() {
                         <div className={styles.heroButtons}>
                             <Link href="/contact" className={styles.primaryButton}>
                                 Start Your Project <ArrowRight size={18} />
-                            </Link>
-                            <Link href="#services" className={styles.secondaryButton}>
-                                Explore Services
                             </Link>
                         </div>
                     </motion.div>
@@ -579,7 +576,7 @@ export default function WebDevelopmentPage() {
             </section>
 
             {/* ===== COST ESTIMATES SECTION ===== */}
-            <section className={styles.costSection}>
+            {/* <section className={styles.costSection}>
                 <div className={styles.container}>
                     <div className={styles.sectionHeader}>
                         <h2 className={styles.sectionTitle}>
@@ -612,7 +609,7 @@ export default function WebDevelopmentPage() {
                         </Link>
                     </div>
                 </div>
-            </section>
+            </section> */}
 
             {/* ===== DEVELOPMENT PROCESS ===== */}
             <section className={styles.processSection}>

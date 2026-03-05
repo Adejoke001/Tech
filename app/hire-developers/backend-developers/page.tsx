@@ -42,8 +42,8 @@ export default function BackendDevelopersPage() {
   const [hoveredIndustry, setHoveredIndustry] = useState<number | null>(null);
   const [activeTechTab, setActiveTechTab] = useState<string>("libraries");
 
-  const factors = [
-    "model",
+  // Factor keys for the comparison table (excluding "model")
+  const factorKeys = [
     "timeToHire",
     "timeToStart",
     "trainingCost",
@@ -62,7 +62,7 @@ export default function BackendDevelopersPage() {
     project: "Financial Transaction Platform",
   };
 
-  // Backend Expertise Areas
+  // Backend Expertise Areas – each may include an optional `link` property
   const backendExpertise = [
     {
       id: 1,
@@ -77,6 +77,7 @@ export default function BackendDevelopersPage() {
         "Data migration strategies",
         "Scalable schema architecture",
       ],
+      // No link provided → will fall back to `/hire/backend/1`
     },
     {
       id: 2,
@@ -91,6 +92,7 @@ export default function BackendDevelopersPage() {
         "Real-time processing",
         "System integration",
       ],
+      // No link provided → will fall back to `/hire/backend/2`
     },
     {
       id: 3,
@@ -105,6 +107,7 @@ export default function BackendDevelopersPage() {
         "Container orchestration",
         "Infrastructure as Code",
       ],
+      link: "/services/cloud-devops-services", // Custom link
     },
     {
       id: 4,
@@ -119,6 +122,7 @@ export default function BackendDevelopersPage() {
         "Third-party API integration",
         "API security & rate limiting",
       ],
+      link: "/services/integration-api-services", // Custom link
     },
     {
       id: 5,
@@ -133,6 +137,7 @@ export default function BackendDevelopersPage() {
         "Offline-first architecture",
         "Mobile API optimization",
       ],
+      // No link provided → will fall back to `/hire/backend/5`
     },
     {
       id: 6,
@@ -147,6 +152,7 @@ export default function BackendDevelopersPage() {
         "Performance optimization",
         "Technology stack upgrades",
       ],
+      // No link provided → will fall back to `/hire/backend/6`
     },
   ];
 
@@ -551,25 +557,6 @@ export default function BackendDevelopersPage() {
               </p>
             </motion.div>
 
-            {/* <div className={styles.benefitsGrid}>
-                            <div className={styles.benefitItem}>
-                                <CheckCircle size={18} />
-                                <span>Proof of Work based timesheets</span>
-                            </div>
-                            <div className={styles.benefitItem}>
-                                <Shield size={18} />
-                                <span>IP Rights & NDA protection</span>
-                            </div>
-                            <div className={styles.benefitItem}>
-                                <Settings size={18} />
-                                <span>Flexible contracts, transparent pricing</span>
-                            </div>
-                            <div className={styles.benefitItem}>
-                                <Zap size={18} />
-                                <span>7-day risk-free trial, zero overheads</span>
-                            </div>
-                        </div> */}
-
             <motion.div
               initial={{ opacity: 0, y: 10 }}
               animate={{ opacity: 1, y: 0 }}
@@ -579,9 +566,6 @@ export default function BackendDevelopersPage() {
               <Link href="/contact" className={styles.ctaButton}>
                 Hire Developers Now
                 <ArrowRight className={styles.buttonIcon} />
-              </Link>
-              <Link href="#expertise" className={styles.secondaryButton}>
-                View Our Expertise
               </Link>
             </motion.div>
           </motion.div>
@@ -724,13 +708,13 @@ export default function BackendDevelopersPage() {
                   ))}
                 </ul>
 
-                <Link
-                  href={`/hire/backend/${expertise.id}`}
-                  className={styles.learnMoreLink}
-                >
-                  Learn More
-                  <ChevronRight className={styles.linkIcon} />
-                </Link>
+                {/* Use custom link if provided, otherwise fallback to id-based link */}
+                {expertise.link && (
+  <Link href={expertise.link} className={styles.learnMoreLink}>
+    Learn More
+    <ChevronRight className={styles.linkIcon} />
+  </Link>
+)}
               </div>
             </motion.div>
           ))}
@@ -989,7 +973,7 @@ export default function BackendDevelopersPage() {
                   <li key={idx}>
                     <CheckCircle size={16} style={{ color: project.color }} />
                     <span>{example}</span>
-                  </li>
+              </li>
                 ))}
               </ul>
             </motion.div>
@@ -1012,45 +996,39 @@ export default function BackendDevelopersPage() {
           </p>
         </div>
 
-        <div className={styles.comparisonTable}>
-          <div className={styles.tableHeader}>
-            <div className={styles.headerCell}>Factor</div>
-            {hiringComparison.map((model, idx) => (
-              <div key={idx} className={styles.headerCell}>
-                {model.model}
-              </div>
-            ))}
-          </div>
-
-          {[
-            "timeToHire",
-            "timeToStart",
-            "trainingCost",
-            "scalingTime",
-            "risk",
-            "deliverySupport",
-          ].map((factor, idx) => (
-            <div key={idx} className={styles.tableRow}>
-              <div className={styles.rowHeader}>
-                {factor === "timeToHire" && "Time to get right developers"}
-                {factor === "timeToStart" && "Time to start a project"}
-                {factor === "trainingCost" && "Recurring cost of training"}
-                {factor === "scalingTime" && "Time to scale size of the team"}
-                {factor === "risk" && "Project failure risk"}
-                {factor === "deliverySupport" &&
-                  "Developers backed by delivery team"}
-              </div>
-              {factors.map((factor) => (
-                <div key={factor}>
-                  {hiringComparison.map((model, modelIdx) => (
-                    <div key={modelIdx} className={styles.rowCell}>
-                      {model[factor]}
-                    </div>
-                  ))}
+        {/* Responsive comparison table */}
+        <div className={styles.tableWrapper}>
+          <div className={styles.comparisonTable}>
+            {/* Header */}
+            <div className={styles.tableHeader}>
+              <div className={styles.headerCell}>Factor</div>
+              {hiringComparison.map((model, idx) => (
+                <div key={idx} className={styles.headerCell}>
+                  {model.model}
                 </div>
               ))}
             </div>
-          ))}
+
+            {/* Rows for each factor */}
+            {factorKeys.map((factor, idx) => (
+              <div key={idx} className={styles.tableRow}>
+                <div className={styles.rowHeader}>
+                  {factor === "timeToHire" && "Time to get right developers"}
+                  {factor === "timeToStart" && "Time to start a project"}
+                  {factor === "trainingCost" && "Recurring cost of training"}
+                  {factor === "scalingTime" && "Time to scale size of the team"}
+                  {factor === "risk" && "Project failure risk"}
+                  {factor === "deliverySupport" &&
+                    "Developers backed by delivery team"}
+                </div>
+                {hiringComparison.map((model, modelIdx) => (
+                  <div key={modelIdx} className={styles.rowCell}>
+                    {model[factor]}
+                  </div>
+                ))}
+              </div>
+            ))}
+          </div>
         </div>
       </section>
 
@@ -1196,9 +1174,7 @@ export default function BackendDevelopersPage() {
                 Hire Backend Developers Now
                 <ArrowRight className={styles.buttonIcon} />
               </Link>
-              <Link href="/pricing" className={styles.ctaSecondary}>
-                View Pricing Plans
-              </Link>
+              
             </div>
           </div>
         </div>
