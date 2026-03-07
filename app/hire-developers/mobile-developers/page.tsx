@@ -45,7 +45,7 @@ export default function MobileAppDevelopersPage() {
     name: "Jessica Chen",
     role: "Product Director, RetailTech Pro",
     content:
-      "BBNTech's mobile developers delivered a cross-platform app that reduced our development time by 40% while maintaining native-like performance on both iOS and Android.",
+      "BBMTech's mobile developers delivered a cross-platform app that reduced our development time by 40% while maintaining native-like performance on both iOS and Android.",
     rating: 5,
     project: "Retail E-Commerce Platform",
   };
@@ -411,7 +411,7 @@ export default function MobileAppDevelopersPage() {
       deliverySupport: "Limited",
     },
     {
-      model: "BBNTech",
+      model: "BBMTech",
       timeToHire: "1 day - 2 weeks",
       timeToStart: "1 day - 2 weeks",
       trainingCost: "0",
@@ -543,7 +543,7 @@ export default function MobileAppDevelopersPage() {
   // FAQs
   const faqs = [
     {
-      question: "How quickly can I hire mobile app developers from BBNTech?",
+      question: "How quickly can I hire mobile app developers from BBMTech?",
       answer:
         "We can onboard dedicated mobile app developers in 24-48 hours. Our vetting process ensures you get pre-screened, experienced developers who match your specific mobile development requirements.",
     },
@@ -575,7 +575,7 @@ export default function MobileAppDevelopersPage() {
     },
   ];
 
-  // Why Choose BBNTech Features
+  // Why Choose BBMTech Features
   const whyChooseFeatures = [
     "Workstatus™ powered Proof of Work",
     "Top 1% developers, rigorously vetted",
@@ -655,9 +655,7 @@ export default function MobileAppDevelopersPage() {
                 Hire Developers Now
                 <ArrowRight className={styles.buttonIcon} />
               </Link>
-              <Link href="#expertise" className={styles.secondaryButton}>
-                View Our Expertise
-              </Link>
+              
             </motion.div>
           </motion.div>
 
@@ -798,14 +796,14 @@ export default function MobileAppDevelopersPage() {
                     </li>
                   ))}
                 </ul>
-
+{/* 
                 <Link
                   href={`/hire/mobile/${expertise.id}`}
                   className={styles.learnMoreLink}
                 >
                   Learn More
                   <ChevronRight className={styles.linkIcon} />
-                </Link>
+                </Link> */}
               </div>
             </motion.div>
           ))}
@@ -1053,12 +1051,12 @@ export default function MobileAppDevelopersPage() {
         <div className={styles.sectionHeader}>
           <h2 className={styles.sectionTitle}>
             Why Hire Mobile App Developers{" "}
-            <span className={styles.titleHighlight}>From BBNTech?</span>
+            <span className={styles.titleHighlight}>From BBMTech?</span>
           </h2>
           <p className={styles.sectionDescription}>
             ValueCoders provides remote mobile app developers for all your
             mobile app development requirements. Hiring Indian app developers
-            from BBNTech is a 100% transparent process.
+            from BBMTech is a 100% transparent process.
           </p>
         </div>
 
@@ -1085,7 +1083,7 @@ export default function MobileAppDevelopersPage() {
           <h2 className={styles.sectionTitle}>
             Comparative Analysis:{" "}
             <span className={styles.titleHighlight}>
-              In-House, Freelancers, or BBNTech
+              In-House, Freelancers, or BBMTech
             </span>
           </h2>
           <p className={styles.sectionDescription}>
@@ -1207,7 +1205,7 @@ export default function MobileAppDevelopersPage() {
           </h2>
           <p className={styles.sectionDescription}>
             Get answers to common questions about hiring mobile app developers
-            from BBNTech.
+            from BBMTech.
           </p>
         </div>
 

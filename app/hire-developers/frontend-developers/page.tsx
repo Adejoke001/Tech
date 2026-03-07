@@ -43,7 +43,7 @@ export default function FrontendDevelopersPage() {
     name: "Michael Rodriguez",
     role: "Head of Product, TechScale Inc.",
     content:
-      "The frontend developers from BBNTech delivered pixel-perfect interfaces 50% faster than our estimates. Their expertise in React and performance optimization transformed our user experience.",
+      "The frontend developers from BBMTech delivered pixel-perfect interfaces 50% faster than our estimates. Their expertise in React and performance optimization transformed our user experience.",
     rating: 5,
     project: "Enterprise SaaS Dashboard",
   };
@@ -332,7 +332,7 @@ export default function FrontendDevelopersPage() {
       deliverySupport: "Limited",
     },
     {
-      model: "BBNTech",
+      model: "BBMTech",
       timeToHire: "24-72 hours",
       timeToStart: "4-7 days",
       trainingCost: "None",
@@ -439,7 +439,7 @@ export default function FrontendDevelopersPage() {
   // FAQs
   const faqs = [
     {
-      question: "How quickly can I hire frontend developers from BBNTech?",
+      question: "How quickly can I hire frontend developers from BBMTech?",
       answer:
         "We can onboard dedicated frontend developers in 24-48 hours. Our vetting process is streamlined to provide you with pre-screened, experienced developers who match your specific requirements.",
     },
@@ -862,7 +862,7 @@ export default function FrontendDevelopersPage() {
           <h2 className={styles.sectionTitle}>
             Hiring Comparison:{" "}
             <span className={styles.titleHighlight}>
-              In-House vs Freelancers vs BBNTech
+              In-House vs Freelancers vs BBMTech
             </span>
           </h2>
           <p className={styles.sectionDescription}>
@@ -983,7 +983,7 @@ export default function FrontendDevelopersPage() {
           </h2>
           <p className={styles.sectionDescription}>
             Get answers to common questions about hiring frontend developers
-            from BBNTech.
+            from BBMTech.
           </p>
         </div>
 

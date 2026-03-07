@@ -36,9 +36,7 @@ import styles from "./backend.module.css";
 
 export default function BackendDevelopersPage() {
   const [openFaq, setOpenFaq] = useState<number | null>(0);
-  const [hoveredExpertise, setHoveredExpertise] = useState<number | null>(
-    null,
-  );
+  const [hoveredExpertise, setHoveredExpertise] = useState<number | null>(null);
   const [hoveredIndustry, setHoveredIndustry] = useState<number | null>(null);
   const [activeTechTab, setActiveTechTab] = useState<string>("libraries");
 
@@ -57,7 +55,7 @@ export default function BackendDevelopersPage() {
     name: "Sarah Johnson",
     role: "CTO, FinSecure Inc.",
     content:
-      "The backend developers from BBNTech built a fault-tolerant system that handles 50,000+ transactions per second with 99.99% uptime. Their architecture decisions saved us 40% on cloud costs.",
+      "The backend developers from BBMTech built a fault-tolerant system that handles 50,000+ transactions per second with 99.99% uptime. Their architecture decisions saved us 40% on cloud costs.",
     rating: 5,
     project: "Financial Transaction Platform",
   };
@@ -315,7 +313,7 @@ export default function BackendDevelopersPage() {
       deliverySupport: "Limited",
     },
     {
-      model: "BBNTech",
+      model: "BBMTech",
       timeToHire: "1 day - 2 weeks",
       timeToStart: "1 day - 2 weeks",
       trainingCost: "0",
@@ -446,7 +444,7 @@ export default function BackendDevelopersPage() {
   // FAQs (Same as frontend but backend-focused)
   const faqs = [
     {
-      question: "How quickly can I hire backend developers from BBNTech?",
+      question: "How quickly can I hire backend developers from BBMTech?",
       answer:
         "We can onboard dedicated backend developers in 24-48 hours. Our vetting process is streamlined to provide you with pre-screened, experienced developers who match your specific requirements.",
     },
@@ -550,7 +548,7 @@ export default function BackendDevelopersPage() {
                 performance
               </p>
               <p className={styles.heroDescription}>
-                Hire dedicated backend developers from BBNTech with 5+ years of
+                Hire dedicated backend developers from BBMTech with 5+ years of
                 average experience. Expertise in Node.js, .NET, Python, PHP,
                 Laravel, Ruby on Rails, and GoLang for building secure,
                 high-performance backend systems.
@@ -670,7 +668,7 @@ export default function BackendDevelopersPage() {
           {backendExpertise.map((expertise, index) => (
             <motion.div
               key={expertise.id}
-              className={`${styles.expertiseCard} ${hoveredExpertise === expertise.id ? styles.hovered : ''}`}
+              className={`${styles.expertiseCard} ${hoveredExpertise === expertise.id ? styles.hovered : ""}`}
               initial={{ opacity: 0, y: 30 }}
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5, delay: index * 0.1 }}
@@ -710,11 +708,11 @@ export default function BackendDevelopersPage() {
 
                 {/* Use custom link if provided, otherwise fallback to id-based link */}
                 {expertise.link && (
-  <Link href={expertise.link} className={styles.learnMoreLink}>
-    Learn More
-    <ChevronRight className={styles.linkIcon} />
-  </Link>
-)}
+                  <Link href={expertise.link} className={styles.learnMoreLink}>
+                    Learn More
+                    <ChevronRight className={styles.linkIcon} />
+                  </Link>
+                )}
               </div>
             </motion.div>
           ))}
@@ -838,12 +836,12 @@ export default function BackendDevelopersPage() {
       <section className={styles.benefitsSection}>
         <div className={styles.sectionHeader}>
           <h2 className={styles.sectionTitle}>
-            Why Choose BBNTech for{" "}
+            Why Choose BBMTech for{" "}
             <span className={styles.titleHighlight}>Backend Development?</span>
           </h2>
           <p className={styles.sectionDescription}>
             If you&apos;re looking for top-tier backend developers, trust
-            BBNTech. With years of experience in the industry, our team of
+            BBMTech. With years of experience in the industry, our team of
             experienced professionals helps you build robust backend solutions
             that cater to your business needs.
           </p>
@@ -973,7 +971,7 @@ export default function BackendDevelopersPage() {
                   <li key={idx}>
                     <CheckCircle size={16} style={{ color: project.color }} />
                     <span>{example}</span>
-              </li>
+                  </li>
                 ))}
               </ul>
             </motion.div>
@@ -987,7 +985,7 @@ export default function BackendDevelopersPage() {
           <h2 className={styles.sectionTitle}>
             Comparative Analysis:{" "}
             <span className={styles.titleHighlight}>
-              In-House, Freelancers, or BBNTech
+              In-House, Freelancers, or BBMTech
             </span>
           </h2>
           <p className={styles.sectionDescription}>
@@ -1113,7 +1111,7 @@ export default function BackendDevelopersPage() {
           </h2>
           <p className={styles.sectionDescription}>
             Get answers to common questions about hiring backend developers from
-            BBNTech.
+            BBMTech.
           </p>
         </div>
 
@@ -1174,7 +1172,6 @@ export default function BackendDevelopersPage() {
                 Hire Backend Developers Now
                 <ArrowRight className={styles.buttonIcon} />
               </Link>
-              
             </div>
           </div>
         </div>

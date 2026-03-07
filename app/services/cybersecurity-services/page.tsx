@@ -26,7 +26,7 @@ export default function CybersecurityServicesPage() {
     const testimonial = {
         name: 'Sarah Chen',
         role: 'CISO, Global Financial Corp',
-        content: 'BBNTech transformed our security posture with their comprehensive governance framework. We saw 40% fewer security incidents within the first quarter.',
+        content: 'BBMTech transformed our security posture with their comprehensive governance framework. We saw 40% fewer security incidents within the first quarter.',
         rating: 5,
         project: 'Enterprise Security Governance'
     };

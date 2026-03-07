@@ -1436,7 +1436,7 @@
 
 .lowRiskIndicator {
     position: absolute;
-    bottom: 0.5rem;
+    top: 0.3rem;
     left: 50%;
     transform: translateX(-50%);
     background: var(--primary-green);

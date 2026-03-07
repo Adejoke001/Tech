@@ -260,25 +260,25 @@ export default function StartupsSolutionPage() {
         {
             name: 'James Kelly',
             role: 'Co-founder, Miracle Choice',
-            content: 'The Project managers took a lot of time to understand our project before coming up with a contract or what they thought we needed. I had the reassurance from the start that the project managers knew what type of project I wanted and what my needs were. That is reassuring, and that\'s why we chose BBNTech.',
+            content: 'The Project managers took a lot of time to understand our project before coming up with a contract or what they thought we needed. I had the reassurance from the start that the project managers knew what type of project I wanted and what my needs were. That is reassuring, and that\'s why we chose BBMTech.',
             image: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=100&h=100&fit=crop&crop=face'
         },
         {
             name: 'Judith Mueller',
             role: 'Executive Director, Mueller Health Foundation',
-            content: 'The team at BBNTech has provided us with exceptional services in creating this one-of-a-kind portal, and it has been a fantastic experience. I was particularly impressed by how efficiently and quickly the team always came up with creative solutions to provide us with all the functionalities within the portal we had requested.',
+            content: 'The team at BBMTech has provided us with exceptional services in creating this one-of-a-kind portal, and it has been a fantastic experience. I was particularly impressed by how efficiently and quickly the team always came up with creative solutions to provide us with all the functionalities within the portal we had requested.',
             image: 'https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=100&h=100&fit=crop&crop=face'
         },
         {
             name: 'Kris Bruynson',
             role: 'Director, Storloft',
-            content: 'BBNTech had great technical expertise, both in front-end and back-end development. Other project management was well organized. Account management was friendly and always available. I would give BBNTech ten out of ten!',
+            content: 'BBMTech had great technical expertise, both in front-end and back-end development. Other project management was well organized. Account management was friendly and always available. I would give BBMTech ten out of ten!',
             image: 'https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=100&h=100&fit=crop&crop=face'
         },
         {
             name: 'Mohammed Mirza',
             role: 'Director, LOCALMASTERCHEFS LTD',
-            content: 'Huge thank you to BBNTech; they have been a massive help in enabling us to start developing our project within a few weeks, so it\'s been great! There have been two small bumps in the road, but overall, It\'s been a fantastic service. I have already recommended it to one of my friends.',
+            content: 'Huge thank you to BBMTech; they have been a massive help in enabling us to start developing our project within a few weeks, so it\'s been great! There have been two small bumps in the road, but overall, It\'s been a fantastic service. I have already recommended it to one of my friends.',
             image: 'https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?w=100&h=100&fit=crop&crop=face'
         }
     ];
@@ -335,7 +335,7 @@ export default function StartupsSolutionPage() {
             answer: 'We offer pause/resume flexibility so you don’t carry fixed overhead during funding gaps.'
         },
         {
-            question: 'Why choose BBNTech over freelancers or agencies?',
+            question: 'Why choose BBMTech over freelancers or agencies?',
             answer: 'Unlike freelancers, we offer dedicated, vetted teams with proven track records. Unlike agencies, we integrate with your roadmap and work as your engineering partner.'
         }
     ];
@@ -369,7 +369,7 @@ export default function StartupsSolutionPage() {
                                 From refining business models to building strong teams to secure funding – we support early‑growth startups through their critical growth stage.
                             </p>
                             <p className={styles.heroDescription}>
-                                Let’s work together to expand your market presence, optimize operations, and attract investors, achieving sustainable success.
+                                Let&apos;s work together to expand your market presence, optimize operations, and attract investors, achieving sustainable success.
                             </p>
                         </motion.div>
 

@@ -193,7 +193,7 @@ export default function CloudServicesPage() {
                             Modernize Faster. Scale Smarter. Secure Everything.
                         </p>
                         <p className={styles.heroDescription}>
-                            Future-ready businesses run on cloud. At BBNTech, we help you modernize, migrate, manage, and scale your cloud environments while ensuring your business stays agile, compliant, and cost-optimized.
+                            Future-ready businesses run on cloud. At BBMTech, we help you modernize, migrate, manage, and scale your cloud environments while ensuring your business stays agile, compliant, and cost-optimized.
                         </p>
                         <div className={styles.heroCta}>
                             <Link href="/contact" className={styles.ctaButtonPrimary}>
@@ -358,7 +358,7 @@ export default function CloudServicesPage() {
 
                             {/* Why Choose Us Section */}
                             <div className={styles.whyChooseSection}>
-                                <h2>Why Choose BBNTech?</h2>
+                                <h2>Why Choose BBMTech?</h2>
                                 <p>We bring innovation, expertise, and reliability to every cloud project. With 20+ years of cloud expertise, certified talent, and reliable delivery.</p>
                                 <div className={styles.whyChooseGrid}>
                                     <div className={styles.whyChooseCard}><Award /> India&apos;s Top 1% Software Talent</div>

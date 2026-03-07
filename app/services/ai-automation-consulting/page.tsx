@@ -45,7 +45,7 @@ export default function AIAutomationConsultingPage() {
     name: "Nancy Wilson",
     role: "CEO, TechInnovate Corp",
     content:
-      "BBNTech showed us exactly how to use AI solutions to solve our biggest business problems. The guidance was invaluable for our digital transformation.",
+      "BBMTech showed us exactly how to use AI solutions to solve our biggest business problems. The guidance was invaluable for our digital transformation.",
     rating: 5,
     project: "Enterprise AI Transformation",
   };

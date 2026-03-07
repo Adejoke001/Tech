@@ -25,68 +25,77 @@ export default function FullStackDevelopersPage() {
     const testimonial = {
         name: 'Michael Rodriguez',
         role: 'CTO, FinTech Solutions',
-        content: 'BBNTech\'s full-stack team delivered a complete web platform in 4 months that handles 50,000+ daily transactions. Their end-to-end expertise saved us 30% in development costs.',
+        content: 'BBMTech\'s full-stack team delivered a complete web platform in 4 months that handles 50,000+ daily transactions. Their end-to-end expertise saved us 30% in development costs.',
         rating: 5,
         project: 'Enterprise Banking Platform'
     };
 
     // Full Stack Expertise Areas
     const fullStackExpertise = [
-        {
-            id: 1,
-            title: 'Full Stack Web Development',
-            description: 'Custom web solutions for startups, SMEs, and enterprises with end-to-end development capabilities. Our developers excel in building scalable, high-performance applications.',
-            icon: <Code2 className={styles.expertiseIcon} />,
-            color: '#3B82F6',
-            features: ['MEAN/MERN Stack Development', 'Laravel/PHP Applications', 'Java Spring Boot Solutions', 'Complete Web Architecture'],
-            details: 'End-to-end development from concept to deployment'
-        },
-        {
-            id: 2,
-            title: 'Front-end Development',
-            description: 'Expertise in modern front-end frameworks including React, Vue, Angular with focus on responsive design and user experience.',
-            icon: <Monitor className={styles.expertiseIcon} />,
-            color: '#10B981',
-            features: ['React/Vue/Angular Development', 'Responsive Web Design', 'UI/UX Implementation', 'Progressive Web Apps'],
-            details: 'Creating engaging user interfaces across devices'
-        },
-        {
-            id: 3,
-            title: 'Back-end Development',
-            description: 'Robust back-end development with microservices architecture, API development, and database optimization.',
-            icon: <Server className={styles.expertiseIcon} />,
-            color: '#8B5CF6',
-            features: ['RESTful API Development', 'Database Design & Optimization', 'Server Architecture', 'Microservices Implementation'],
-            details: 'Building scalable and secure server-side solutions'
-        },
-        {
-            id: 4,
-            title: 'MEAN & MERN Stack',
-            description: 'Full-stack JavaScript development using MongoDB, Express, Angular/React, and Node.js for modern web applications.',
-            icon: <Layers className={styles.expertiseIcon} />,
-            color: '#F59E0B',
-            features: ['MongoDB + Express.js', 'Angular/React.js Frontend', 'Node.js Backend', 'Real-time Applications'],
-            details: 'JavaScript-based full stack solutions'
-        },
-        {
-            id: 5,
-            title: 'Support & Maintenance',
-            description: 'Comprehensive support and maintenance services ensuring your applications run smoothly and securely.',
-            icon: <ShieldCheck className={styles.expertiseIcon} />,
-            color: '#EC4899',
-            features: ['24/7 Technical Support', 'Bug Fixes & Updates', 'Performance Optimization', 'Security Patches'],
-            details: 'Ongoing maintenance and support'
-        },
-        {
-            id: 6,
-            title: 'Cloud Deployment & CI/CD',
-            description: 'Expert cloud deployment on AWS, Azure, GCP with automated CI/CD pipelines for seamless delivery.',
-            icon: <CloudLightning className={styles.expertiseIcon} />,
-            color: '#06B6D4',
-            features: ['AWS/Azure/GCP Deployment', 'Docker & Kubernetes', 'CI/CD Pipelines', 'DevOps Implementation'],
-            details: 'Cloud-native application deployment'
-        }
-    ];
+    {
+        id: 1,
+        title: 'Full Stack Web Development',
+        description: 'Custom web solutions for startups, SMEs, and enterprises with end-to-end development capabilities. Our developers excel in building scalable, high-performance applications.',
+        icon: <Code2 className={styles.expertiseIcon} />,
+        color: '#3B82F6',
+        features: ['MEAN/MERN Stack Development', 'Laravel/PHP Applications', 'Java Spring Boot Solutions', 'Complete Web Architecture'],
+        details: 'End-to-end development from concept to deployment',
+        link: '/services/web-development',
+        
+    },
+    {
+        id: 2,
+        title: 'Front-end Development',
+        description: 'Expertise in modern front-end frameworks including React, Vue, Angular with focus on responsive design and user experience.',
+        icon: <Monitor className={styles.expertiseIcon} />,
+        color: '#10B981',
+        features: ['React/Vue/Angular Development', 'Responsive Web Design', 'UI/UX Implementation', 'Progressive Web Apps'],
+        details: 'Creating engaging user interfaces across devices',
+        link: '/services/frontend-development',
+        
+    },
+    {
+        id: 3,
+        title: 'Back-end Development',
+        description: 'Robust back-end development with microservices architecture, API development, and database optimization.',
+        icon: <Server className={styles.expertiseIcon} />,
+        color: '#8B5CF6',
+        features: ['RESTful API Development', 'Database Design & Optimization', 'Server Architecture', 'Microservices Implementation'],
+        details: 'Building scalable and secure server-side solutions',
+        link: '/services/backend-development', 
+    },
+    {
+        id: 4,
+        title: 'MEAN & MERN Stack',
+        description: 'Full-stack JavaScript development using MongoDB, Express, Angular/React, and Node.js for modern web applications.',
+        icon: <Layers className={styles.expertiseIcon} />,
+        color: '#F59E0B',
+        features: ['MongoDB + Express.js', 'Angular/React.js Frontend', 'Node.js Backend', 'Real-time Applications'],
+        details: 'JavaScript-based full stack solutions',
+       
+    },
+    {
+        id: 5,
+        title: 'Support & Maintenance',
+        description: 'Comprehensive support and maintenance services ensuring your applications run smoothly and securely.',
+        icon: <ShieldCheck className={styles.expertiseIcon} />,
+        color: '#EC4899',
+        features: ['24/7 Technical Support', 'Bug Fixes & Updates', 'Performance Optimization', 'Security Patches'],
+        details: 'Ongoing maintenance and support',
+        
+    },
+    {
+        id: 6,
+        title: 'Cloud Deployment & CI/CD',
+        description: 'Expert cloud deployment on AWS, Azure, GCP with automated CI/CD pipelines for seamless delivery.',
+        icon: <CloudLightning className={styles.expertiseIcon} />,
+        color: '#06B6D4',
+        features: ['AWS/Azure/GCP Deployment', 'Docker & Kubernetes', 'CI/CD Pipelines', 'DevOps Implementation'],
+        details: 'Cloud-native application deployment',
+        link: 'services/cloud-devops-services',
+        
+    }
+];
 
     // Technology Stack - 6 categories, ALL technologies displayed
     const technologyStack = {
@@ -531,7 +540,7 @@ export default function FullStackDevelopersPage() {
             totalCost: 'Variable, often higher'
         },
         {
-            model: 'BBNTech',
+            model: 'BBMTech',
             timeToHire: '1-2 weeks',
             timeToStart: '1-2 weeks',
             trainingCost: '$0',
@@ -604,7 +613,7 @@ export default function FullStackDevelopersPage() {
         }
     ];
 
-    // Why Choose BBNTech Features
+    // Why Choose BBMTech Features
     const whyChooseFeatures = [
         { feature: 'Workstatus™ powered Proof of Work', icon: <CheckCircle /> },
         { feature: 'Top 1% developers, rigorously vetted', icon: <Award /> },
@@ -665,9 +674,9 @@ export default function FullStackDevelopersPage() {
                                 Hire Full-Stack Developers
                                 <ArrowRight className={styles.buttonIcon} />
                             </Link>
-                            <Link href="#expertise" className={styles.secondaryButton}>
+                            {/* <Link href="#expertise" className={styles.secondaryButton}>
                                 View Our Expertise
-                            </Link>
+                            </Link> */}
                         </motion.div>
                     </motion.div>
 
@@ -787,10 +796,12 @@ export default function FullStackDevelopersPage() {
                                     ))}
                                 </ul>
                             </div>
-                            <Link href={`/hire/fullstack/${expertise.id}`} className={styles.learnMoreLink}>
-                                Learn More
-                                <ChevronRight className={styles.linkIcon} />
-                            </Link>
+                            {expertise.link && (
+    <Link href={expertise.link} className={styles.learnMoreLink}>
+        Learn More
+        <ChevronRight className={styles.linkIcon} />
+    </Link>
+)}
                         </motion.div>
                     ))}
                 </div>
@@ -1113,14 +1124,14 @@ export default function FullStackDevelopersPage() {
                 </div>
             </section>
 
-            {/* ===== WHY CHOOSE BBNTECH SECTION ===== */}
+            {/* ===== WHY CHOOSE BBMTech SECTION ===== */}
             <section className={styles.whyChooseSection}>
                 <div className={styles.sectionHeader}>
                     <h2 className={styles.sectionTitle}>
-                        Why Hire Full Stack Developers <span className={styles.titleHighlight}>From BBNTech?</span>
+                        Why Hire Full Stack Developers <span className={styles.titleHighlight}>From BBMTech?</span>
                     </h2>
                     <p className={styles.sectionDescription}>
-                        Hiring full-stack developers with BBNTech is easy and transparent.
+                        Hiring full-stack developers with BBMTech is easy and transparent.
                         We follow well-defined processes on all our engagements for peace of mind.
                     </p>
                 </div>
@@ -1148,7 +1159,7 @@ export default function FullStackDevelopersPage() {
             <section className={styles.comparisonSection}>
                 <div className={styles.sectionHeader}>
                     <h2 className={styles.sectionTitle}>
-                        Comparative Analysis: <span className={styles.titleHighlight}>In-House, Freelancers, or BBNTech</span>
+                        Comparative Analysis: <span className={styles.titleHighlight}>In-House, Freelancers, or BBMTech</span>
                     </h2>
                     <p className={styles.sectionDescription}>
                         We offer a dedicated team of highly skilled full-stack developers. Here is a quick comparison
@@ -1163,7 +1174,7 @@ export default function FullStackDevelopersPage() {
                             {hiringComparison.map((model, idx) => (
                                 <div key={idx} className={styles.headerCell}>
                                     {model.model}
-                                    {model.model === 'BBNTech' && (
+                                    {model.model === 'BBMTech' && (
                                         <div className={styles.bestChoiceBadge}>Best Choice</div>
                                     )}
                                 </div>
@@ -1277,7 +1288,7 @@ export default function FullStackDevelopersPage() {
                         Frequently Asked <span className={styles.titleHighlight}>Questions</span>
                     </h2>
                     <p className={styles.sectionDescription}>
-                        Get answers to common questions about hiring full-stack developers from BBNTech.
+                        Get answers to common questions about hiring full-stack developers from BBMTech.
                     </p>
                 </div>
 
