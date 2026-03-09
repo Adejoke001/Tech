@@ -291,7 +291,7 @@ export default function ModernizationPage() {
                             Transform Legacy Software into <span className={styles.highlight}>Secure, Scalable, Cloud-Ready Applications</span>
                         </h1>
                         <p className={styles.heroSubtitle}>
-                            Upgrade, modernize, and scale your web and mobile apps with BBNTech’ Application Migration & Modernization services. We offer on-premise, hybrid, and cloud-based solutions across various platforms.
+                            Upgrade, modernize, and scale your web and mobile apps with BBMTech’ Application Migration & Modernization services. We offer on-premise, hybrid, and cloud-based solutions across various platforms.
                         </p>
                         <div className={styles.heroButtons}>
                             <Link href="/contact" className={styles.primaryButton}>
@@ -414,7 +414,7 @@ export default function ModernizationPage() {
                             </ul>
                         </div>
                         <div className={styles.solutionsCol}>
-                            <h3 className={styles.approachTitle}>BBNTech Has You Covered</h3>
+                            <h3 className={styles.approachTitle}>BBMTech Has You Covered</h3>
                             <div className={styles.solutionsList}>
                                 {valueCodersSolutions.map((item, idx) => (
                                     <motion.div
@@ -442,7 +442,7 @@ export default function ModernizationPage() {
                 <div className={styles.container}>
                     <div className={styles.sectionHeader}>
                         <h2 className={styles.sectionTitle}>
-                            Why Partner with <span className={styles.titleHighlight}>BBNTech</span>?
+                            Why Partner with <span className={styles.titleHighlight}>BBMTech</span>?
                         </h2>
                         <p className={styles.sectionDescription}>
                             We provide reliable application migration and modernization services for faster turnaround times and better ROI.

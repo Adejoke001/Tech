@@ -43,7 +43,8 @@ export default function ScaleUpsSolutionPage() {
                 'Build the right architecture',
                 'Reduce risks before scaling'
             ],
-            details: 'From strategy to execution'
+            details: 'From strategy to execution',
+            link: '/services/product-discovery',
         },
         {
             id: 2,
@@ -56,7 +57,8 @@ export default function ScaleUpsSolutionPage() {
                 'Drive higher engagement',
                 'Scale with user‑friendly design'
             ],
-            details: 'Experience that scales'
+            details: 'Experience that scales',
+            link: '/services/ui-ux-design',
         },
         {
             id: 3,
@@ -69,7 +71,8 @@ export default function ScaleUpsSolutionPage() {
                 'Feature expansion',
                 'Seamless scaling'
             ],
-            details: 'From MVP to market leader'
+            details: 'From MVP to market leader',
+            link: '/services/product-development',
         },
         {
             id: 4,
@@ -82,7 +85,8 @@ export default function ScaleUpsSolutionPage() {
                 'API & third‑party integration',
                 'Data privacy & compliance'
             ],
-            details: 'SaaS that scales'
+            details: 'SaaS that scales',
+            link: '/services/architecture',
         },
         {
             id: 5,
@@ -95,7 +99,8 @@ export default function ScaleUpsSolutionPage() {
                 'Performance tuning',
                 'Security checks'
             ],
-            details: 'Reliability at scale'
+            details: 'Reliability at scale',
+            link: '/services/quality-assurance-testing',
         },
         {
             id: 6,
@@ -413,7 +418,7 @@ export default function ScaleUpsSolutionPage() {
     // ----- FAQS (original simple design) -----
     const faqs = [
         {
-            question: 'How does BBNTech help startups scale effectively?',
+            question: 'How does BBMTech help startups scale effectively?',
             answer: 'We offer focused development teams, agile development, and scalable technology solutions to enable startups to grow without infrastructure or hiring issues.'
         },
         {
@@ -421,7 +426,7 @@ export default function ScaleUpsSolutionPage() {
             answer: 'We usually onboard startups within days, not weeks. Our flexible staffing models ensure you get the right experts quickly, so you don’t lose momentum in your scaling journey.'
         },
         {
-            question: 'Can BBNTech handle both product development and post-launch scaling?',
+            question: 'Can BBMTech handle both product development and post-launch scaling?',
             answer: 'Yes, we help with the whole cycle – from MVP development to scaling and optimizing the infrastructure, and adding features as the number of users increases.'
         },
         {
@@ -461,7 +466,7 @@ export default function ScaleUpsSolutionPage() {
                                 <Sparkles size={18} /> Scale Your Startup
                             </div>
                             <h1 className={styles.mainTitle}>
-                                Scale Your Startup with <span className={styles.highlight}>BBNTech</span>
+                                Scale Your Startup with <span className={styles.highlight}>BBMTech</span>
                             </h1>
                             <p className={styles.subheadline}>
                                 Our expert teams, smart strategies, and flexible staffing enable your startup to scale securely and efficiently.
@@ -481,9 +486,7 @@ export default function ScaleUpsSolutionPage() {
                                 Scale Your Startup
                                 <ArrowRight className={styles.buttonIcon} />
                             </Link>
-                            <Link href="#expertise" className={styles.secondaryButton}>
-                                View Scale Expertise
-                            </Link>
+                            
                         </motion.div>
                     </motion.div>
 
@@ -564,7 +567,7 @@ export default function ScaleUpsSolutionPage() {
                         How Our Experts Drive <span className={styles.titleHighlight}>Startup Success</span>
                     </h2>
                     <p className={styles.sectionDescription}>
-                        At BBNTech, our experts help growth-stage startups scale seamlessly by combining deep technical expertise with proven strategies. We assist startups in growing sustainably by refining MVPs and building scalable SaaS products, always ensuring efficiency, performance, and reliability.
+                        At BBMTech, our experts help growth-stage startups scale seamlessly by combining deep technical expertise with proven strategies. We assist startups in growing sustainably by refining MVPs and building scalable SaaS products, always ensuring efficiency, performance, and reliability.
                     </p>
                 </div>
 
@@ -602,10 +605,12 @@ export default function ScaleUpsSolutionPage() {
                                     ))}
                                 </ul>
                             </div>
-                            <Link href={`/scale-ups/${item.id}`} className={styles.learnMoreLink}>
-                                Learn More
-                                <ChevronRight className={styles.linkIcon} />
-                            </Link>
+                             {item.link && (
+            <Link href={item.link} className={styles.learnMoreLink}>
+                Learn More
+                <ChevronRight className={styles.linkIcon} />
+            </Link>
+        )}
                         </motion.div>
                     ))}
                 </div>
@@ -685,10 +690,10 @@ export default function ScaleUpsSolutionPage() {
                 </div>
 
                 <div className={styles.costCta}>
-                    <Link href="/calculator" className={styles.costCalculatorButton}>
+                    {/* <Link href="/calculator" className={styles.costCalculatorButton}>
                         Calculate Development Cost
                         <ArrowRight className={styles.buttonIcon} />
-                    </Link>
+                    </Link> */}
                 </div>
             </section>
 
@@ -733,7 +738,7 @@ export default function ScaleUpsSolutionPage() {
                         Your Reliable <span className={styles.titleHighlight}>Scale Startup Solution</span>
                     </h2>
                     <p className={styles.sectionDescription}>
-                        At BBNTech, we help startups to scale their solutions, which maintain the stability of products, increase performance, and speed up growth.
+                        At BBMTech, we help startups to scale their solutions, which maintain the stability of products, increase performance, and speed up growth.
                     </p>
                 </div>
 
@@ -1030,9 +1035,7 @@ export default function ScaleUpsSolutionPage() {
                                 Book Free Consultation
                                 <ArrowRight className={styles.buttonIcon} />
                             </Link>
-                            <Link href="/calculator" className={styles.ctaSecondary}>
-                                Estimate Your Cost
-                            </Link>
+                            
 
                         </div>
                     </div>

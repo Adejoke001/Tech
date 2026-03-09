@@ -705,7 +705,7 @@ export default function QAStrategyConsultingPage() {
         <div className={styles.sectionHeader}>
           <h2 className={styles.sectionTitleWhite}>
             Why Choose{" "}
-            <span className={styles.titleHighlightWhite}>BBNTech</span> for QA
+            <span className={styles.titleHighlightWhite}>BBMTech</span> for QA
             Consulting
           </h2>
           <p className={styles.sectionDescriptionWhite}>

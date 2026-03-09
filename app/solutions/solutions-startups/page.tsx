@@ -166,7 +166,7 @@ export default function StartupsSolutionPage() {
             description: 'MVP that helps you attract early users or investors.',
             icon: <Rocket />,
             color: '#10B981',
-            bestFor: 'Early users & seed funding'
+            bestFor: 'Early users'
         },
         {
             range: '$50,000 – $90,000',
@@ -383,9 +383,6 @@ export default function StartupsSolutionPage() {
                                 Build Your Startup
                                 <ArrowRight className={styles.buttonIcon} />
                             </Link>
-                            <Link href="#expertise" className={styles.secondaryButton}>
-                                View Startup Expertise
-                            </Link>
                         </motion.div>
                     </motion.div>
 
@@ -505,10 +502,10 @@ export default function StartupsSolutionPage() {
                                     ))}
                                 </ul>
                             </div>
-                            <Link href={`/startups/${item.id}`} className={styles.learnMoreLink}>
+                            {/* <Link href={`/startups/${item.id}`} className={styles.learnMoreLink}>
                                 Learn More
                                 <ChevronRight className={styles.linkIcon} />
-                            </Link>
+                            </Link> */}
                         </motion.div>
                     ))}
                 </div>
@@ -590,10 +587,10 @@ export default function StartupsSolutionPage() {
                 </div>
 
                 <div className={styles.costCta}>
-                    <Link href="/calculator" className={styles.costCalculatorButton}>
+                    {/* <Link href="/calculator" className={styles.costCalculatorButton}>
                         Calculate Development Cost
                         <ArrowRight className={styles.buttonIcon} />
-                    </Link>
+                    </Link> */}
                 </div>
             </section>
 
@@ -870,9 +867,6 @@ export default function StartupsSolutionPage() {
                             <Link href="/contact" className={styles.ctaPrimary}>
                                 Book Free Consultation
                                 <ArrowRight className={styles.buttonIcon} />
-                            </Link>
-                            <Link href="/calculator" className={styles.ctaSecondary}>
-                                Estimate Your Cost
                             </Link>
                             {/* <Link href="tel:+18001234567" className={styles.ctaTertiary}>
                                 <Phone size={16} />

@@ -29,98 +29,104 @@ export default function EnterpriseSolutionPage() {
     const testimonial = {
         name: 'Karan',
         role: 'CTO, Enterprise Solutions',
-        content: 'We needed to automate a lot of our manual IT processes to cut costs. BBNTech delivered exactly that, helping us see real savings within months.',
+        content: 'We needed to automate a lot of our manual IT processes to cut costs. BBMTech delivered exactly that, helping us see real savings within months.',
         rating: 5,
         project: 'Enterprise Ops Transformation'
     };
 
     // ----- ENTERPRISE EXPERTISE AREAS (6 cards – fresh design) -----
-    const enterpriseExpertise = [
-        {
-            id: 1,
-            title: 'Managed IT Operations',
-            description: 'End-to-end management ensuring stable, secure, and scalable enterprise IT environments. We provide 24×7 proactive monitoring and rapid incident response.',
-            icon: <HardDrive className={styles.expertiseIcon} />,
-            color: '#3B82F6',
-            features: [
-                'Proactive issue handling',
-                '24×7 monitoring',
-                'Performance optimization',
-                'SLA‑backed support'
-            ],
-            expandedDesc: 'Our managed services cover infrastructure, applications, and security – all with guaranteed 99.9% uptime.'
-        },
-        {
-            id: 2,
-            title: 'Cloud Infrastructure Management',
-            description: 'Optimizing enterprise cloud systems for reliability, scalability, and controlled operational costs across AWS, Azure, and GCP.',
-            icon: <CloudIcon className={styles.expertiseIcon} />,
-            color: '#10B981',
-            features: [
-                'Resource allocation',
-                'Load balancing',
-                'Cost control',
-                'Multi‑cloud strategy'
-            ],
-            expandedDesc: 'We help you avoid cloud sprawl and optimise spend while maintaining high performance.'
-        },
-        {
-            id: 3,
-            title: 'DevOps Implementation',
-            description: 'Streamlining enterprise workflows with automation, faster delivery, and continuous improvement through modern DevOps practices.',
-            icon: <GitPullRequestIcon className={styles.expertiseIcon} />,
-            color: '#8B5CF6',
-            features: [
-                'CI/CD pipelines',
-                'Automated testing',
-                'Rapid deployment',
-                'Infrastructure as Code'
-            ],
-            expandedDesc: 'Reduce release cycles from weeks to hours with fully automated pipelines.'
-        },
-        {
-            id: 4,
-            title: 'IT Infrastructure Automation',
-            description: 'Reducing manual tasks with enterprise-grade automation for speed, accuracy, and scalability across servers, networks, and applications.',
-            icon: <Settings className={styles.expertiseIcon} />,
-            color: '#F59E0B',
-            features: [
-                'Configuration management',
-                'Workflow automation',
-                'Error reduction',
-                'Self‑healing systems'
-            ],
-            expandedDesc: 'Eliminate repetitive work and let your team focus on innovation.'
-        },
-        {
-            id: 5,
-            title: 'Network Operations Management',
-            description: 'Ensuring enterprise networks stay secure, reliable, and efficient under high-demand loads with real-time monitoring and threat detection.',
-            icon: <NetworkIcon className={styles.expertiseIcon} />,
-            color: '#EC4899',
-            features: [
-                'Traffic monitoring',
-                'Threat detection',
-                'Downtime prevention',
-                'Bandwidth optimization'
-            ],
-            expandedDesc: 'Proactive network management that scales with your business.'
-        },
-        {
-            id: 6,
-            title: 'Disaster Recovery Planning',
-            description: 'Preparing enterprises with tested recovery strategies for minimal downtime and data safety – including backup, replication, and failover.',
-            icon: <DatabaseIcon className={styles.expertiseIcon} />,
-            color: '#06B6D4',
-            features: [
-                'Data backup solutions',
-                'System restore strategies',
-                'Risk analysis',
-                'DR drills & testing'
-            ],
-            expandedDesc: 'Be ready for anything with automated, regularly tested recovery plans.'
-        }
-    ];
+   const enterpriseExpertise = [
+    {
+        id: 1,
+        title: 'Managed IT Operations',
+        description: 'End-to-end management ensuring stable, secure, and scalable enterprise IT environments. We provide 24×7 proactive monitoring and rapid incident response.',
+        icon: <HardDrive className={styles.expertiseIcon} />,
+        color: '#3B82F6',
+        features: [
+            'Proactive issue handling',
+            '24×7 monitoring',
+            'Performance optimization',
+            'SLA‑backed support'
+        ],
+        expandedDesc: 'Our managed services cover infrastructure, applications, and security – all with guaranteed 99.9% uptime.',
+        link: null  
+    },
+    {
+        id: 2,
+        title: 'Cloud Infrastructure Management',
+        description: 'Optimizing enterprise cloud systems for reliability, scalability, and controlled operational costs across AWS, Azure, and GCP.',
+        icon: <CloudIcon className={styles.expertiseIcon} />,
+        color: '#10B981',
+        features: [
+            'Resource allocation',
+            'Load balancing',
+            'Cost control',
+            'Multi‑cloud strategy'
+        ],
+        expandedDesc: 'We help you avoid cloud sprawl and optimise spend while maintaining high performance.',
+        link: '/services/cloud-devops-services'
+    },
+    {
+        id: 3,
+        title: 'DevOps Implementation',
+        description: 'Streamlining enterprise workflows with automation, faster delivery, and continuous improvement through modern DevOps practices.',
+        icon: <GitPullRequestIcon className={styles.expertiseIcon} />,
+        color: '#8B5CF6',
+        features: [
+            'CI/CD pipelines',
+            'Automated testing',
+            'Rapid deployment',
+            'Infrastructure as Code'
+        ],
+        expandedDesc: 'Reduce release cycles from weeks to hours with fully automated pipelines.',
+        
+    },
+    {
+        id: 4,
+        title: 'IT Infrastructure Automation',
+        description: 'Reducing manual tasks with enterprise-grade automation for speed, accuracy, and scalability across servers, networks, and applications.',
+        icon: <Settings className={styles.expertiseIcon} />,
+        color: '#F59E0B',
+        features: [
+            'Configuration management',
+            'Workflow automation',
+            'Error reduction',
+            'Self‑healing systems'
+        ],
+        expandedDesc: 'Eliminate repetitive work and let your team focus on innovation.',
+        link: '/services/ai-automation-consulting'   
+    },
+    {
+        id: 5,
+        title: 'Network Operations Management',
+        description: 'Ensuring enterprise networks stay secure, reliable, and efficient under high-demand loads with real-time monitoring and threat detection.',
+        icon: <NetworkIcon className={styles.expertiseIcon} />,
+        color: '#EC4899',
+        features: [
+            'Traffic monitoring',
+            'Threat detection',
+            'Downtime prevention',
+            'Bandwidth optimization'
+        ],
+        expandedDesc: 'Proactive network management that scales with your business.',
+        
+    },
+    {
+        id: 6,
+        title: 'Disaster Recovery Planning',
+        description: 'Preparing enterprises with tested recovery strategies for minimal downtime and data safety – including backup, replication, and failover.',
+        icon: <DatabaseIcon className={styles.expertiseIcon} />,
+        color: '#06B6D4',
+        features: [
+            'Data backup solutions',
+            'System restore strategies',
+            'Risk analysis',
+            'DR drills & testing'
+        ],
+        expandedDesc: 'Be ready for anything with automated, regularly tested recovery plans.',
+        link: null
+    }
+];
 
     // ----- HIRING MODELS (fresh design) -----
     const hiringModels = [
@@ -491,9 +497,7 @@ export default function EnterpriseSolutionPage() {
                                 Optimise Your Operations
                                 <ArrowRight className={styles.buttonIcon} />
                             </Link>
-                            <Link href="#expertise" className={styles.secondaryButton}>
-                                View Enterprise Expertise
-                            </Link>
+                            
                         </motion.div>
                     </motion.div>
 
@@ -609,10 +613,14 @@ export default function EnterpriseSolutionPage() {
                                     </ul>
                                 </div>
                                 <div className={styles.expertiseFooter}>
-                                    <Link href={`/enterprise/${item.id}`} className={styles.learnMoreLink} style={{ color: item.color }}>
-                                        Explore service
-                                        <ChevronRight size={16} />
-                                    </Link>
+                                    {item.link && (
+    <div className={styles.expertiseFooter}>
+        <Link href={item.link} className={styles.learnMoreLink} style={{ color: item.color }}>
+            Explore service
+            <ChevronRight size={16} />
+        </Link>
+    </div>
+)}
                                 </div>
                             </div>
                         </motion.div>
@@ -1092,9 +1100,7 @@ export default function EnterpriseSolutionPage() {
                                 Optimise Your Operations
                                 <ArrowRight className={styles.buttonIcon} />
                             </Link>
-                            <Link href="/calculator" className={styles.ctaSecondary}>
-                                Estimate Your Cost
-                            </Link>
+                            
                         </div>
                     </div>
                 </div>

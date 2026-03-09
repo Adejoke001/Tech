@@ -17,7 +17,6 @@ import {
   MessageSquare,
   Sparkles,
   Cloud,
-  ChevronRight,
   Globe,
   Rocket,
   HelpCircle,

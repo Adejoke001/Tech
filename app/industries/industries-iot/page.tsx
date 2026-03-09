@@ -18,7 +18,7 @@ export default function IoTPage() {
     const testimonial = {
         name: 'Michael Chen',
         role: 'CTO, SmartFactory Inc.',
-        content: 'BBNTech built our industrial IoT platform from the ground up. We now monitor 10,000+ sensors in real time, reducing downtime by 40%. Their expertise in edge computing and device management is outstanding.',
+        content: 'BBMTech built our industrial IoT platform from the ground up. We now monitor 10,000+ sensors in real time, reducing downtime by 40%. Their expertise in edge computing and device management is outstanding.',
         rating: 5,
         project: 'Industrial IoT Platform'
     };
@@ -575,7 +575,7 @@ export default function IoTPage() {
                     <div className={styles.container}>
                         <div className={styles.sectionHeader}>
                             <h2 className={styles.sectionTitle} style={{ color: 'white' }}>
-                                Why Choose <span className={styles.titleHighlight}>BBNTech</span> for IoT?
+                                Why Choose <span className={styles.titleHighlight}>BBMTech</span> for IoT?
                             </h2>
                             <p className={styles.sectionDescription} style={{ color: 'rgba(255,255,255,0.9)' }}>
                                 We combine deep technical expertise with a proven delivery model.

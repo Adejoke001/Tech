@@ -275,7 +275,7 @@ export default function MediaPage() {
             name: 'Digital Publishing',
             icon: '📚',
             desc: 'E-books, digital magazines, news portals, and content subscription platforms.',
-            image: 'https://images.unsplash.com/photo-1497633762265-9d4ba6ed2eca?auto=format&fit=crop&w=800&q=80',
+            image: 'https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTJ8fGRpZ2l0YWx8ZW58MHx8MHx8fDA%3D',
             color: '#8B5CF6'
         },
         {
@@ -371,9 +371,7 @@ export default function MediaPage() {
                                 Build Your Media Solution
                                 <ArrowRight className={styles.buttonIcon} />
                             </Link>
-                            <Link href="#solutions" className={styles.secondaryButton}>
-                                Explore Solutions
-                            </Link>
+                            
                         </motion.div>
                     </motion.div>
 

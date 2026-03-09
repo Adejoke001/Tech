@@ -1123,7 +1123,7 @@ export default function ECommercePage() {
           <div className={styles.sectionHeader}>
             <h2 className={styles.sectionTitle} style={{ color: "white" }}>
               Why Partner With{" "}
-              <span className={styles.titleHighlight}>BBNTech</span>?
+              <span className={styles.titleHighlight}>BBMTech</span>?
             </h2>
             <p
               className={styles.sectionDescription}
@@ -1278,9 +1278,7 @@ export default function ECommercePage() {
                 Build Your E-Commerce Solution
                 <ArrowRight className={styles.buttonIcon} />
               </Link>
-              <Link href="/calculator" className={styles.ctaSecondary}>
-                Estimate Your Cost
-              </Link>
+          
             </div>
           </div>
         </div>

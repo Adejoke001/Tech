@@ -608,9 +608,7 @@ const BoxIcon = (props: SVGProps<SVGSVGElement>) => (
                                 Discuss Your Project
                                 <ArrowRight className={styles.buttonIcon} />
                             </Link>
-                            <Link href="#pillars" className={styles.secondaryButton}>
-                                Explore Solutions
-                            </Link>
+                            
                         </motion.div>
                     </motion.div>
 
@@ -1568,9 +1566,6 @@ const BoxIcon = (props: SVGProps<SVGSVGElement>) => (
                             <Link href="/contact" className={styles.ctaPrimary}>
                                 Discuss Your Project
                                 <ArrowRight className={styles.buttonIcon} />
-                            </Link>
-                            <Link href="/calculator" className={styles.ctaSecondary}>
-                                Estimate Your Cost
                             </Link>
                             {/* <Link href="tel:+18001234567" className={styles.ctaTertiary}>
                                 <Phone size={16} />

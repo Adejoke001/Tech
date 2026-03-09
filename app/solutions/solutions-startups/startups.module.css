@@ -1692,3 +1692,28 @@
         height: 250px;
     }
 }
+
+/* ===== FIX TESTIMONIAL CARD ALIGNMENT FOR 768px - 1024px ===== */
+@media (min-width: 768px) and (max-width: 1024px) {
+  .rightContent {
+    align-items: center; 
+  }
+
+  .testimonialCard {
+    margin-top: 2rem; 
+    max-width: 500px;  
+  }
+
+  .clientImageWrapper {
+    top: -35px; 
+  }
+
+  .testimonialContent {
+    margin-top: 1.5rem; 
+  }
+
+  /* Optional: adjust card padding if needed */
+  .testimonialCard {
+    padding: 2rem 1.5rem 1.5rem;
+  }
+}

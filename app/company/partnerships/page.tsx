@@ -206,7 +206,7 @@ export default function PartnershipPage() {
                         Benefits of <span className={styles.titleHighlight}>partnering</span>
                     </h2>
                     <p className={styles.sectionDescription}>
-                        When you partner with BBNTech, you get a host of business advantages.
+                        When you partner with BBMTech, you get a host of business advantages.
                     </p>
                 </div>
                 <div className={styles.benefitsGrid}>
@@ -264,7 +264,7 @@ export default function PartnershipPage() {
                 <div className={styles.whyGrid}>
                     <div className={styles.whyContent}>
                         <h2 className={styles.sectionTitle} style={{ textAlign: 'left' }}>
-                            Why partner <span className={styles.titleHighlight}>with BBNTech?</span>
+                            Why partner <span className={styles.titleHighlight}>with BBMTech?</span>
                         </h2>
                         <p className={styles.whySubtitle}>
                             We&apos;re not just a vendor – we&apos;re an extension of your team, committed to your success.
@@ -302,7 +302,7 @@ export default function PartnershipPage() {
                 <div className={styles.ctaCard}>
                     <h2 className={styles.ctaTitle}>Ready to grow together?</h2>
                     <p className={styles.ctaDescription}>
-                        Let&apos;s discuss how a partnership with BBNTech can help you scale your business.
+                        Let&apos;s discuss how a partnership with BBMTech can help you scale your business.
                     </p>
                     <div className={styles.ctaButtons}>
                         <Link href="/contact" className={styles.ctaPrimary}>

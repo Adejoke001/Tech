@@ -7,7 +7,7 @@ import { motion, AnimatePresence } from 'framer-motion';
 import {
     Smartphone, Users, 
     CheckCircle, Award, MessageSquare, Sparkles, 
-    Cloud, ChevronRight, HelpCircle, ArrowRight, 
+    Cloud, HelpCircle, ArrowRight, 
     GitBranch, FileText, RefreshCw, 
     Code2, Monitor, Shield, FileCode, TestTube,
     Database, Lock, Clock, Users as UsersIcon, Rocket,

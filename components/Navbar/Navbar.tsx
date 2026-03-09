@@ -132,7 +132,7 @@ export default function Navbar() {
             className={`${styles.logo} ${isNavbarHovered ? styles.logoHovered : ""}`}
             onClick={closeAll}
           >
-            BBNTech
+            BBMTech
           </Link>
 
           <div className={styles.desktopMenu}>

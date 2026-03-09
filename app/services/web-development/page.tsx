@@ -20,7 +20,7 @@ export default function WebDevelopmentPage() {
     const testimonial = {
         name: 'David Miller',
         role: 'CTO, TechFlow Solutions',
-        content: 'BBNTech built our custom web application from the ground up. Their agile process, clear communication, and technical excellence delivered a platform that scaled effortlessly with our business.',
+        content: 'BBMTech built our custom web application from the ground up. Their agile process, clear communication, and technical excellence delivered a platform that scaled effortlessly with our business.',
         rating: 5,
         project: 'Enterprise SaaS Platform'
     };

@@ -63,7 +63,7 @@ export default function EducationPage() {
     const testimonial = {
         name: 'Sarah Johnson',
         role: 'Director of Learning, EduGlobal',
-        content: 'BBNTech built our custom LMS from the ground up – it now serves 50,000+ students across 20 countries. Their deep understanding of EdTech and commitment to quality is unmatched.',
+        content: 'BBMTech built our custom LMS from the ground up – it now serves 50,000+ students across 20 countries. Their deep understanding of EdTech and commitment to quality is unmatched.',
         rating: 5,
         project: 'Global Learning Platform'
     };
@@ -257,7 +257,7 @@ export default function EducationPage() {
             name: 'Higher Education',
             icon: '🎓',
             desc: 'University LMS, research collaboration tools, virtual classrooms, and student information systems.',
-            image: 'https://images.unsplash.com/photo-1523050854058-8df90110c9f1?auto=format&fit=crop&w=800&q=80',
+            image: 'https://plus.unsplash.com/premium_photo-1677567996070-68fa4181775a?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NXx8ZWR1Y2F0aW9ufGVufDB8fDB8fHww',
             color: '#10B981'
         },
         {
@@ -278,7 +278,7 @@ export default function EducationPage() {
             name: 'Language Learning',
             icon: '🌐',
             desc: 'Interactive language apps, speech recognition, gamified lessons, and cultural content.',
-            image: 'https://images.unsplash.com/photo-1546410531-bb4caa6b424d?auto=format&fit=crop&w=800&q=80',
+            image: 'https://images.unsplash.com/photo-1589395937658-0557e7d89fad?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTF8fGxhbmd1YWdlfGVufDB8fDB8fHww',
             color: '#EC4899'
         },
         {
@@ -985,9 +985,6 @@ export default function EducationPage() {
                             <Link href="/contact" className={styles.ctaPrimary}>
                                 Build Your EdTech Solution
                                 <ArrowRight className={styles.buttonIcon} />
-                            </Link>
-                            <Link href="/calculator" className={styles.ctaSecondary}>
-                                Estimate Your Cost
                             </Link>
                             
                         </div>

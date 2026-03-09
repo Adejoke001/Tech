@@ -138,7 +138,7 @@ const Footer = () => {
             <div className={styles.contactDetails}>
               <div className={styles.contactItem}>
                 <span className={styles.contactIcon}>📧</span>
-                <span>hello@bbntech.com</span>
+                <span>hello@bbmtech.com</span>
               </div>
               <div className={styles.contactItem}>
                 <span className={styles.contactIcon}>📞</span>
@@ -173,7 +173,7 @@ const Footer = () => {
         {/* Bottom Bar */}
         <div className={styles.bottomBar}>
           <div className={styles.copyright}>
-            © {currentYear} BBNTech. All rights reserved.
+            © {currentYear} BBMTech. All rights reserved.
           </div>
           <div className={styles.bottomLinks}>
             <Link href="/privacy" className={styles.bottomLink}>

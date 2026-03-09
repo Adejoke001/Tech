@@ -24,7 +24,7 @@ export default function EnterpriseSoftwarePage() {
     const testimonial = {
         name: 'James Anderson',
         role: 'CIO, Global Manufacturing Corp',
-        content: 'Professional, reliable, and results-driven – BBNTech delivered exactly what we needed, on time and within budget. Their enterprise software transformed our operations.',
+        content: 'Professional, reliable, and results-driven – BBMTech delivered exactly what we needed, on time and within budget. Their enterprise software transformed our operations.',
         rating: 5,
         project: 'Enterprise Resource Planning System'
     };
@@ -263,8 +263,8 @@ export default function EnterpriseSoftwarePage() {
     // FAQs (from ValueCoders FAQ section)
     const faqs = [
         {
-            question: 'Why should I choose BBNTech as my enterprise software development partner?',
-            answer: 'BBNTech brings 20+ years of experience in secure enterprise applications development services, with 2500+ successful projects across industries. We combine agile development for faster delivery with deep expertise in complex enterprise architectures.'
+            question: 'Why should I choose BBMTech as my enterprise software development partner?',
+            answer: 'BBMTech brings 20+ years of experience in secure enterprise applications development services, with 2500+ successful projects across industries. We combine agile development for faster delivery with deep expertise in complex enterprise architectures.'
         },
         {
             question: 'What types of enterprise software do you specialize in?',

@@ -8,7 +8,7 @@ import {
     Shield, Lock, AlertTriangle, FileCheck,
     Server, Cloud, Database, GitMerge, 
     CheckCircle, Award, MessageSquare, Sparkles,
-    ChevronRight, Code, Activity, TrendingUp, 
+    Code, Activity, TrendingUp, 
     FileText, RefreshCw, Zap, HelpCircle, 
     ArrowRight, Eye, ClipboardCheck, 
     Network, Search, BarChart3, ShieldAlert, FileCode,

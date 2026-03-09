@@ -6,185 +6,119 @@ import Link from 'next/link';
 import { motion, AnimatePresence } from 'framer-motion';
 import {
     Sparkles, ArrowRight, Award, MessageSquare, CheckCircle,
-    Users, Globe, Lock, Clock, Building2, Zap, Shield,
-    Smartphone, Database, Cpu, Box, Brain,
-    Code, RefreshCw, Target,
-    Server, Layout,
-    BarChart3, FileText, TestTube,
-    Cloud as CloudIcon, GitMerge, Rocket,
-    Key,
-    Wifi, Hexagon,
+    Users, Globe, Lock, Clock, Building2, Shield,
+    Cpu, Compass, Target, BarChart3, FileText,
+    Calendar, Rocket, Search, 
+    Users as UsersIcon, Target as TargetIcon,
 } from 'lucide-react';
-import styles from './backend-dev.module.css';
+import styles from './discovery.module.css';
 
-export default function BackendPage() {
-    // const [openFaq, setOpenFaq] = useState<number | null>(0);
+export default function ProductDiscoveryPage() {
+    const [openFaq, setOpenFaq] = useState<number | null>(0);
     const [hoveredIndustry, setHoveredIndustry] = useState<number | null>(null);
+    const [activeTestimonial, setActiveTestimonial] = useState(0);
 
     // ----- HERO TESTIMONIAL -----
     const testimonial = {
-        name: 'James',
-        role: 'CTO, FinScale',
-        content: 'Professional, reliable, and results-driven – they delivered exactly what we needed, on time and within budget.',
+        name: 'Rebecca',
+        role: 'Product Manager, FinScale',
+        content: 'They go above and beyond to ensure quality and satisfaction. A true partner in every sense.',
         rating: 5,
-        project: 'Scalable Payment Gateway'
+        project: 'FinTech Platform Discovery'
     };
 
-    // ============ BACKEND SERVICES (from URL) ============
-    const backendServices = [
+    // ============ DISCOVERY SERVICES (6 cards from the URL) ============
+    const discoveryServices = [
         {
             id: 1,
-            title: 'Web Application Development',
-            description: 'Build robust web-based applications using the latest technology trends while keeping costs low.',
-            icon: <Globe />,
+            title: 'Market Research & Competitive Analysis',
+            description: 'Validate product direction against real market demand.',
+            icon: <BarChart3 />,
             color: '#3B82F6',
-            features: ['Seamless user experiences', 'Enhanced app flexibility', 'Data protection with advanced security']
+            features: [
+                'Market trends, size, and growth analysis',
+                'Competitive feature, pricing, and positioning review',
+                'Opportunity and risk identification'
+            ]
         },
         {
             id: 2,
-            title: 'ERP/CRM Development',
-            description: 'Enhance your existing ERPs or CRMs to make them richer in functionalities, reporting, and user experience.',
-            icon: <Database />,
+            title: 'User Research & Journey Mapping',
+            description: 'Ground product decisions in real user behavior.',
+            icon: <UsersIcon />,
             color: '#10B981',
-            features: ['Robust database architectures', 'Advanced security protocols', 'Expertise in ERP/CRM integration']
+            features: [
+                'User research through interviews, surveys, and observation',
+                'Persona creation for key customer segments',
+                'Journey mapping to identify pain points and opportunities'
+            ]
         },
         {
             id: 3,
-            title: 'Mobile App Development',
-            description: 'Intuitive & intelligent information flow for your mobile app users with secure and reliable architectures.',
-            icon: <Smartphone />,
+            title: 'Feature Prioritization & MVP Planning',
+            description: 'Define what to build first and what to defer.',
+            icon: <TargetIcon />,
             color: '#8B5CF6',
-            features: ['Native or cross-platform', 'Secure architectures', 'Seamless multi-device experience']
+            features: [
+                'Core vs non-core feature identification',
+                'MVP scope aligned with business impact',
+                'Value-driven prioritization to reduce time-to-market'
+            ]
         },
         {
             id: 4,
-            title: 'API Integration Services',
-            description: 'Reliable API development & integration services ensuring flawless performance and real-time data sync.',
-            icon: <GitMerge />,
+            title: 'Technical Feasibility Assessment',
+            description: 'Confirm technical viability before development begins.',
+            icon: <Cpu />,
             color: '#F59E0B',
-            features: ['Flawless API performance', 'Third-party API integration', 'Real-time data synchronization']
+            features: [
+                'Scalability, integration, and performance assessment',
+                'Technical risk and dependency analysis',
+                'Architecture direction and tech stack recommendations'
+            ]
         },
         {
             id: 5,
-            title: 'Custom Backend Solutions',
-            description: 'Custom-built backend solutions with advanced security protocols and latest technologies.',
-            icon: <Server />,
+            title: 'Budget & Timeline Planning',
+            description: 'Create realistic plans that support predictable delivery.',
+            icon: <Calendar />,
             color: '#EC4899',
-            features: ['Advanced security protocols', 'Speed and accuracy', 'Latest tech frameworks']
+            features: [
+                'Cost estimation and phase-wise budgeting',
+                'Timeline planning with milestones and dependencies',
+                'Resource allocation and delivery sequencing'
+            ]
         },
         {
             id: 6,
-            title: 'Backend Refactoring',
-            description: 'Redesign the entire solution infrastructure, leaving front-end systems untouched.',
-            icon: <RefreshCw />,
+            title: 'Security & Compliance Planning',
+            description: 'Address security and regulatory requirements early.',
+            icon: <Shield />,
             color: '#06B6D4',
-            features: ['Eliminate legacy vulnerabilities', 'Simplify complex code', 'Restructure architecture']
-        },
+            features: [
+                'Identification of relevant compliance standards',
+                'Data protection and security requirement analysis',
+                'Security framework and compliance roadmap definition'
+            ]
+        }
     ];
 
-    // ============ EXPERTISE AREAS (from URL) ============
-    const expertiseAreas = [
-        {
-            title: 'Artificial Intelligence (AI)',
-            description: 'Advanced knowledge in predictive modeling, data mining, computer vision, and NLP.',
-            icon: <Brain />,
-            color: '#3B82F6',
-            featured: true,
-        },
-        {
-            title: 'Robotic Process Automation (RPA)',
-            description: 'Unattended and attended software robots to augment enterprise workflows.',
-            icon: <Cpu />,
-            color: '#10B981',
-        },
-        {
-            title: 'Internet of Things (IoT)',
-            description: 'IoT architecture design, platform development, backend engineering, and analytics.',
-            icon: <Wifi />,
-            color: '#8B5CF6',
-        },
-        {
-            title: 'Augmented Reality & Virtual Reality (AR/VR)',
-            description: 'Immersive experiences for training, events, navigation, and 2D/3D projections.',
-            icon: <Box />,
-            color: '#F59E0B',
-        },
-        {
-            title: 'Blockchain Development',
-            description: 'High-quality, scalable & decentralized blockchain applications for enterprises.',
-            icon: <Hexagon />,
-            color: '#EC4899',
-        },
-        {
-            title: 'OTT Development',
-            description: 'Manage, deliver, and monetize OTT content across various media devices.',
-            icon: <Play />,
-            color: '#06B6D4',
-        },
-    ];
-
-    // ============ OTHER EXPERTISE (from URL) ============
-    const otherExpertise = [
-        {
-            title: 'Front-end Development',
-            description: 'Client-side application designed for excellent UI/UX.',
-            icon: <Layout />,
-            color: '#3B82F6',
-        },
-        {
-            title: 'Application Modernization',
-            description: 'Legacy applications modernized & migrated to newer technologies.',
-            icon: <RefreshCw />,
-            color: '#10B981',
-        },
-    ];
-
-    // ============ WHY CHOOSE US (from URL) ============
-    const whyChooseUs = [
+    // ============ USPS (from URL) ============
+    const usps = [
         { text: "India's Top 1% Software Talent", icon: <Award />, color: '#3B82F6' },
         { text: 'Trusted by Startups to Fortune 500', icon: <Building2 />, color: '#10B981' },
         { text: 'Idea to Deployment, We Handle All', icon: <Rocket />, color: '#8B5CF6' },
         { text: 'Time-Zone Friendly: Global Presence', icon: <Globe />, color: '#F59E0B' },
-        { text: 'Top-tier Data Security Protocols', icon: <Shield />, color: '#EC4899' },
+        { text: 'Top-tier Data Security Protocols', icon: <Lock />, color: '#EC4899' },
         { text: 'On-time Delivery, No Surprises', icon: <Clock />, color: '#06B6D4' },
-    ];
-
-    // ============ TECH STACKS (from URL) ============
-    const techStacks = [
-        {
-            category: 'Databases',
-            icon: <Database />,
-            color: '#3B82F6',
-            technologies: ['MySQL', 'PostgreSQL', 'MongoDB', 'Redis', 'Firebase', 'Cassandra']
-        },
-        {
-            category: 'Cloud & DevOps',
-            icon: <CloudIcon />,
-            color: '#10B981',
-            technologies: ['AWS', 'Google Cloud', 'Microsoft Azure', 'Docker', 'Kubernetes', 'Terraform']
-        },
-        {
-            category: 'API & Communication',
-            icon: <GitMerge />,
-            color: '#8B5CF6',
-            technologies: ['RESTful APIs', 'GraphQL', 'WebSockets', 'gRPC', 'RabbitMQ', 'Kafka']
-        },
-        {
-            category: 'Security & Authentication',
-            icon: <Lock />,
-            color: '#F59E0B',
-            technologies: ['OAuth', 'JWT', 'OpenID Connect', 'SAML', 'SSL/TLS', 'Biometric Auth']
-        },
     ];
 
     // ============ PROCESS STEPS (from URL) ============
     const processSteps = [
-        { step: 1, title: 'Software Kick-off', description: 'Dive into bi-weekly sprints and rollouts aligned with project timelines.', icon: <FileText />, color: '#3B82F6' },
-        { step: 2, title: 'Task Execution & Development', description: 'Combined team tackles tasks, fulfilling user stories and sprint goals.', icon: <Code />, color: '#10B981' },
-        { step: 3, title: 'Daily Stand-ups', description: 'Daily check-ins led by Scrum Master to discuss progress and tackle challenges.', icon: <Users />, color: '#8B5CF6' },
-        { step: 4, title: 'Feature Quality Check', description: 'Quality Engineers rigorously test new features, ensuring seamless integration.', icon: <TestTube />, color: '#F59E0B' },
-        { step: 5, title: 'Backlog Updates', description: 'Our team keeps the sprint backlog updated, staying on track to meet objectives.', icon: <BarChart3 />, color: '#EC4899' },
-        { step: 6, title: 'Sprint Reflections', description: 'Post-sprint reflections to refine strategies and enhance future sprints.', icon: <RefreshCw />, color: '#06B6D4' },
+        { step: 1, title: 'Discovery Kick-off', description: 'Align goals, stakeholders, and success criteria.', icon: <Compass />, color: '#3B82F6' },
+        { step: 2, title: 'Research & Validation', description: 'Assess problems, users, and feasibility.', icon: <Search />, color: '#10B981' },
+        { step: 3, title: 'Definition & Design', description: 'Document requirements and solution direction.', icon: <FileText />, color: '#8B5CF6' },
+        { step: 4, title: 'Roadmap & Handover', description: 'Deliver actionable artifacts for development.', icon: <ArrowRight />, color: '#F59E0B' },
     ];
 
     // ============ HIRING MODELS (from URL) ============
@@ -218,6 +152,34 @@ export default function BackendPage() {
         },
     ];
 
+    // ============ CLIENT TESTIMONIALS (from URL) ============
+    const testimonials = [
+        {
+            name: 'James Kelly',
+            role: 'Co-founder, Miracle Choice',
+            content: 'The Project managers took a lot of time to understand our project before coming up with a contract or what they thought we needed. I had the reassurance from the start that the project managers knew what type of project I wanted and what my needs were. That is reassuring, and that\'s why we chose ValueCoders.',
+            image: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=100&h=100&fit=crop&crop=face'
+        },
+        {
+            name: 'Judith Mueller',
+            role: 'Executive Director, Mueller Health Foundation',
+            content: 'The team at ValueCoders has provided us with exceptional services in creating this one-of-a-kind portal, and it has been a fantastic experience. I was particularly impressed by how efficiently and quickly the team always came up with creative solutions to provide us with all the functionalities within the portal we had requested.',
+            image: 'https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=100&h=100&fit=crop&crop=face'
+        },
+        {
+            name: 'Kris Bruynson',
+            role: 'Director, Storloft',
+            content: 'ValueCoders had great technical expertise, both in front-end and back-end development. Other project management was well organized. Account management was friendly and always available. I would give ValueCoders ten out of ten!',
+            image: 'https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=100&h=100&fit=crop&crop=face'
+        },
+        {
+            name: 'Mohammed Mirza',
+            role: 'Director, LOCALMASTERCHEFS LTD',
+            content: 'Huge thank you to ValueCoders; they have been a massive help in enabling us to start developing our project within a few weeks, so it\'s been great! There have been two small bumps in the road, but overall, It\'s been a fantastic service. I have already recommended it to one of my friends.',
+            image: 'https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?w=100&h=100&fit=crop&crop=face'
+        },
+    ];
+
     // ============ COMPANY STATS ============
     const companyStats = [
         { value: '700+', label: 'Full-time Staff', icon: <Users />, description: 'Dedicated team' },
@@ -225,54 +187,24 @@ export default function BackendPage() {
         { value: '4500+', label: 'Satisfied Clients', icon: <MessageSquare />, description: 'Global client base' },
     ];
 
-    // ============ BACKEND COMPONENTS (from guide) ============
-    const backendComponents = [
+    // ============ FAQS ============
+    const faqs = [
         {
-            title: 'Server',
-            description: 'Core component that receives requests, processes them, and sends back responses.',
-            icon: <Server />,
-            color: '#3B82F6'
+            question: 'When should organizations invest in a product discovery phase?',
+            answer: 'The product discovery phase delivers the most value before new product builds, major enhancements, or platform rewrites, when clarity upfront prevents costly rework later.'
         },
         {
-            title: 'Application Logic',
-            description: 'Business logic handling user input, data processing, algorithms, and workflows.',
-            icon: <Cpu />,
-            color: '#10B981'
+            question: 'What outcomes can teams expect from product discovery phase services?',
+            answer: 'Teams gain validated requirements, clearer scope, feasibility insights, and a roadmap that supports faster, more predictable development.'
         },
         {
-            title: 'Database',
-            description: 'Data storage and retrieval – designing schema, creating tables, writing queries.',
-            icon: <Database />,
-            color: '#8B5CF6'
+            question: 'How long does a typical product discovery process take?',
+            answer: 'The time it takes can vary depending on the size and complexity of the project. However, on average, we generally spend around two weeks on this phase.'
         },
         {
-            title: 'APIs',
-            description: 'Bridges between front and backend, exposing functionalities to clients.',
-            icon: <GitMerge />,
-            color: '#F59E0B'
+            question: 'How much does it cost to develop a project discovery phase?',
+            answer: 'The cost can vary significantly depending on various factors such as the product’s complexity, the project’s scope, and the resources involved. However, generally, we charge $25-$30 hourly to develop the project discovery phase.'
         },
-        {
-            title: 'Authentication & Authorization',
-            description: 'User access control, token generation and verification, security enforcement.',
-            icon: <Key />,
-            color: '#EC4899'
-        },
-        {
-            title: 'Caching',
-            description: 'Storing frequently accessed data for fast-access memory to improve performance.',
-            icon: <Zap />,
-            color: '#06B6D4'
-        },
-    ];
-
-    // ============ IMPORTANCE OF BACKEND ============
-    const importanceItems = [
-        'Data Management: Efficient data storage, retrieval, and processing.',
-        'Business Logic Implementation: Complex computations and workflows.',
-        'API Development: Communication between components and external systems.',
-        'Security and Authentication: Protecting sensitive data, user authentication.',
-        'Scalability and Performance: Handling high user loads, optimizing queries.',
-        'System Integration: Connecting with payment gateways, email providers, etc.',
     ];
 
     // ============ TRUSTED BY ============
@@ -301,27 +233,7 @@ export default function BackendPage() {
             image: 'https://images.unsplash.com/photo-1598128558393-70ff21433be0?auto=format&fit=crop&w=800&q=80',
             color: '#8B5CF6'
         },
-        // {
-        //     name: 'Fintech',
-        //     icon: '🏦',
-        //     desc: 'Disrupting traditional finance with secure payments, trading platforms, and digital banking.',
-        //     image: 'https://images.unsplash.com/photo-1560472354-b33ff0c44a43?auto=format&fit=crop&w=800&q=80',
-        //     color: '#F59E0B'
-        // },
-        // {
-        //     name: 'Education & eLearning',
-        //     icon: '📚',
-        //     desc: 'Shaping digital learning with LMS, virtual classrooms, and interactive tools.',
-        //     image: 'https://images.unsplash.com/photo-1524178232363-1fb2b075b655?auto=format&fit=crop&w=800&q=80',
-        //     color: '#EC4899'
-        // },
-        // {
-        //     name: 'Banking & Fintech',
-        //     icon: '💰',
-        //     desc: 'Streamlining financial growth with core banking systems and compliance‑ready infrastructure.',
-        //     image: 'https://images.unsplash.com/photo-1551434678-e076c223a692?auto=format&fit=crop&w=800&q=80',
-        //     color: '#06B6D4'
-        // },
+        
     ];
 
     return (
@@ -330,8 +242,8 @@ export default function BackendPage() {
             <section className={styles.heroSection}>
                 <div className={styles.heroBackground}>
                     <Image
-                        src="https://images.unsplash.com/photo-1558494949-ef010cbdcc31?auto=format&fit=crop&w=1920&q=80"
-                        alt="Backend Development Background"
+                        src="https://images.unsplash.com/photo-1557804506-669a67965ba0?auto=format&fit=crop&w=1920&q=80"
+                        alt="Product Discovery Background"
                         fill
                         className={styles.heroImage}
                         priority
@@ -346,19 +258,21 @@ export default function BackendPage() {
                         transition={{ duration: 0.6 }}
                     >
                         <div className={styles.heroBadge}>
-                            <Sparkles size={16} /> Backend Development Services
+                            <Sparkles size={16} /> Product Discovery Phase
                         </div>
                         <h1 className={styles.heroTitle}>
-                            Build Secure, Scalable & <span className={styles.highlight}>High-Performance Backend Systems</span>
+                            Eliminate Uncertainty Before <span className={styles.highlight}>Committing Engineering Effort</span>
                         </h1>
                         <p className={styles.heroSubtitle}>
-                            Since 2004, we&apos;ve been building secure, scalable, and high-performance backend systems that power web and mobile applications. From database management to API integrations, our backend solutions ensure seamless data flow, stability, and reliability for your digital products.
+                            We align stakeholders, requirements, and feasibility to move into development with confidence.
                         </p>
                         <div className={styles.heroButtons}>
                             <Link href="/contact" className={styles.primaryButton}>
-                                Start Your Project <ArrowRight size={18} />
+                                Start Your Discovery <ArrowRight size={18} />
                             </Link>
-                            
+                            <Link href="#services" className={styles.secondaryButton}>
+                                Explore Services
+                            </Link>
                         </div>
                     </motion.div>
                     <motion.div
@@ -370,7 +284,7 @@ export default function BackendPage() {
                         <div className={styles.testimonialCard}>
                             <div className={styles.testimonialImage}>
                                 <Image
-                                    src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=100&h=100&fit=crop&crop=face"
+                                    src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=100&h=100&fit=crop&crop=face"
                                     alt={testimonial.name}
                                     width={60}
                                     height={60}
@@ -416,22 +330,22 @@ export default function BackendPage() {
                 </div>
             </section>
 
-            {/* ===== BACKEND SERVICES SECTION (with professional grid) ===== */}
+            {/* ===== DISCOVERY SERVICES SECTION ===== */}
             <section className={styles.servicesSection} id="services">
                 <div className={styles.container}>
                     <div className={styles.sectionHeader}>
                         <h2 className={styles.sectionTitle}>
-                            Our Custom Backend <span className={styles.titleHighlight}>Development Services</span>
+                            Project Discovery Phase <span className={styles.titleHighlight}>Services</span>
                         </h2>
                         <p className={styles.sectionDescription}>
-                            As a leading backend web development company in India, we specialize in building the most excellent backend solutions that add value to your business.
+                            Product discovery services help validate priorities, reduce delivery risk, and move into development with a clear, execution-ready plan. Our team of experts will work with you to understand your needs and create a plan that meets your specific goals.
                         </p>
                     </div>
                     <div className={styles.servicesGrid}>
-                        {backendServices.map((service, index) => (
+                        {discoveryServices.map((service, index) => (
                             <motion.div
                                 key={service.id}
-                                className={`${styles.serviceCard} ${index === 0 || index === 3 ? styles.serviceCardWide : ''}`}
+                                className={styles.serviceCard}
                                 initial={{ opacity: 0, y: 30 }}
                                 whileInView={{ opacity: 1, y: 0 }}
                                 transition={{ duration: 0.5, delay: index * 0.05 }}
@@ -457,72 +371,6 @@ export default function BackendPage() {
                 </div>
             </section>
 
-            {/* ===== EXPERTISE AREAS SECTION ===== */}
-            <section className={styles.expertiseSection}>
-                <div className={styles.container}>
-                    <div className={styles.sectionHeader}>
-                        <h2 className={styles.sectionTitle}>
-                            Expertise of Our <span className={styles.titleHighlight}>Backend Developers</span>
-                        </h2>
-                        <p className={styles.sectionDescription}>
-                            We proudly occupy the top slot in being one of the application development companies. Here&apos;s what sets us apart.
-                        </p>
-                    </div>
-                    <div className={styles.expertiseGrid}>
-                        {expertiseAreas.map((item, index) => (
-                            <motion.div
-                                key={index}
-                                className={`${styles.expertiseCard} ${item.featured ? styles.expertiseCardFeatured : ''}`}
-                                initial={{ opacity: 0, y: 20 }}
-                                whileInView={{ opacity: 1, y: 0 }}
-                                transition={{ duration: 0.5, delay: index * 0.05 }}
-                                viewport={{ once: true }}
-                                whileHover={{ y: -5 }}
-                            >
-                                <div className={styles.expertiseIcon} style={{ color: item.color }}>
-                                    {item.icon}
-                                </div>
-                                <h3 className={styles.expertiseTitle}>{item.title}</h3>
-                                <p className={styles.expertiseDescription}>{item.description}</p>
-                            </motion.div>
-                        ))}
-                    </div>
-                </div>
-            </section>
-
-            {/* ===== OTHER EXPERTISE SECTION ===== */}
-            <section className={styles.otherExpertiseSection}>
-                <div className={styles.container}>
-                    <div className={styles.sectionHeader}>
-                        <h2 className={styles.sectionTitle}>
-                            Other Development <span className={styles.titleHighlight}>Expertise We Hold</span>
-                        </h2>
-                        <p className={styles.sectionDescription}>
-                            Bringing innovation with the latest tech stacks.
-                        </p>
-                    </div>
-                    <div className={styles.otherExpertiseGrid}>
-                        {otherExpertise.map((item, index) => (
-                            <motion.div
-                                key={index}
-                                className={styles.otherExpertiseCard}
-                                initial={{ opacity: 0, y: 20 }}
-                                whileInView={{ opacity: 1, y: 0 }}
-                                transition={{ duration: 0.5, delay: index * 0.1 }}
-                                viewport={{ once: true }}
-                                whileHover={{ y: -5 }}
-                            >
-                                <div className={styles.otherExpertiseIcon} style={{ color: item.color }}>
-                                    {item.icon}
-                                </div>
-                                <h3 className={styles.otherExpertiseTitle}>{item.title}</h3>
-                                <p className={styles.otherExpertiseDescription}>{item.description}</p>
-                            </motion.div>
-                        ))}
-                    </div>
-                </div>
-            </section>
-
             {/* ===== WHY CHOOSE US SECTION ===== */}
             <section className={styles.whyChooseSection}>
                 <div className={styles.whyBackground}>
@@ -538,14 +386,14 @@ export default function BackendPage() {
                     <div className={styles.container}>
                         <div className={styles.sectionHeader}>
                             <h2 className={styles.sectionTitle} style={{ color: 'white' }}>
-                                Expert Backend Development, <span className={styles.titleHighlight}>Exceptional Performance</span>
+                                Discovery Phase <span className={styles.titleHighlight}>Planning & Implementation</span>
                             </h2>
                             <p className={styles.sectionDescription} style={{ color: 'rgba(255,255,255,0.9)' }}>
-                                From startups to enterprises, we cater to all their diverse technology requirements.
+                                We enable businesses across the globe to scale, transform, and gain a competitive advantage through the discovery phase development.
                             </p>
                         </div>
                         <div className={styles.whyChooseGrid}>
-                            {whyChooseUs.map((item, index) => (
+                            {usps.map((item, index) => (
                                 <motion.div
                                     key={index}
                                     className={styles.whyChooseCard}
@@ -588,46 +436,6 @@ export default function BackendPage() {
                 </div>
             </section>
 
-            {/* ===== TECH STACKS SECTION ===== */}
-            <section className={styles.techSection}>
-                <div className={styles.container}>
-                    <div className={styles.sectionHeader}>
-                        <h2 className={styles.sectionTitle}>
-                            Tech Stacks We Use in <span className={styles.titleHighlight}>Backend Development</span>
-                        </h2>
-                        <p className={styles.sectionDescription}>
-                            Our talented backend developers have expertise in various technologies and tools.
-                        </p>
-                    </div>
-                    <div className={styles.techGrid}>
-                        {techStacks.map((stack, index) => (
-                            <motion.div
-                                key={index}
-                                className={styles.techCard}
-                                initial={{ opacity: 0, scale: 0.9 }}
-                                whileInView={{ opacity: 1, scale: 1 }}
-                                transition={{ duration: 0.4, delay: index * 0.1 }}
-                                viewport={{ once: true }}
-                            >
-                                <div className={styles.techHeader}>
-                                    <div className={styles.techIcon} style={{ color: stack.color }}>
-                                        {stack.icon}
-                                    </div>
-                                    <h3 className={styles.techCategory}>{stack.category}</h3>
-                                </div>
-                                <div className={styles.techItems}>
-                                    {stack.technologies.map((tech, idx) => (
-                                        <span key={idx} className={styles.techItem}>
-                                            {tech}
-                                        </span>
-                                    ))}
-                                </div>
-                            </motion.div>
-                        ))}
-                    </div>
-                </div>
-            </section>
-
             {/* ===== PROCESS SECTION ===== */}
             <section className={styles.processSection}>
                 <div className={styles.container}>
@@ -636,7 +444,7 @@ export default function BackendPage() {
                             Our <span className={styles.titleHighlight}>Process</span>
                         </h2>
                         <p className={styles.sectionDescription}>
-                            We specialize in engineering custom software that&apos;s both stable and secure, using a variety of tech tools.
+                            We divide our product delivery process into three stages: preparation, requirement analysis, and solution definition.
                         </p>
                     </div>
                     <div className={styles.processGrid}>
@@ -716,74 +524,7 @@ export default function BackendPage() {
                 </div>
             </section>
 
-            {/* ===== BACKEND COMPONENTS SECTION ===== */}
-            <section className={styles.componentsSection}>
-                <div className={styles.container}>
-                    <div className={styles.sectionHeader}>
-                        <h2 className={styles.sectionTitle}>
-                            Parts or Components of <span className={styles.titleHighlight}>Backend Development</span>
-                        </h2>
-                    </div>
-                    <div className={styles.componentsGrid}>
-                        {backendComponents.map((component, index) => (
-                            <motion.div
-                                key={index}
-                                className={styles.componentCard}
-                                initial={{ opacity: 0, y: 20 }}
-                                whileInView={{ opacity: 1, y: 0 }}
-                                transition={{ duration: 0.4, delay: index * 0.05 }}
-                                viewport={{ once: true }}
-                            >
-                                <div className={styles.componentIcon} style={{ color: component.color }}>
-                                    {component.icon}
-                                </div>
-                                <h3 className={styles.componentTitle}>{component.title}</h3>
-                                <p className={styles.componentDescription}>{component.description}</p>
-                            </motion.div>
-                        ))}
-                    </div>
-                </div>
-            </section>
-
-            {/* ===== IMPORTANCE SECTION ===== */}
-            <section className={styles.importanceSection}>
-                <div className={styles.container}>
-                    <div className={styles.importanceGrid}>
-                        <div className={styles.importanceContent}>
-                            <h2 className={styles.importanceTitle}>
-                                Importance of the <span className={styles.titleHighlight}>Backend Development Services</span>
-                            </h2>
-                            <p className={styles.importanceIntro}>
-                                Backend development services play a crucial role in the overall success of a software application.
-                            </p>
-                            <ul className={styles.importanceList}>
-                                {importanceItems.map((item, index) => (
-                                    <motion.li
-                                        key={index}
-                                        initial={{ opacity: 0, x: -20 }}
-                                        whileInView={{ opacity: 1, x: 0 }}
-                                        transition={{ duration: 0.4, delay: index * 0.05 }}
-                                        viewport={{ once: true }}
-                                    >
-                                        <CheckCircle size={16} style={{ color: '#3B82F6' }} />
-                                        <span>{item}</span>
-                                    </motion.li>
-                                ))}
-                            </ul>
-                        </div>
-                        <div className={styles.importanceImage}>
-                            <Image
-                                src="https://images.unsplash.com/photo-1558494949-ef010cbdcc31?auto=format&fit=crop&w=800&q=80"
-                                alt="Backend Architecture"
-                                fill
-                                className={styles.importanceImg}
-                            />
-                        </div>
-                    </div>
-                </div>
-            </section>
-
-            {/* ===== INDUSTRIES SECTION ===== */}
+             {/* ===== INDUSTRIES SECTION ===== */}
             <section className={styles.industriesSection}>
                 <div className={styles.container}>
                     <div className={styles.sectionHeader}>
@@ -832,17 +573,125 @@ export default function BackendPage() {
                 </div>
             </section>
 
+
+            {/* ===== TESTIMONIALS CAROUSEL ===== */}
+            <section className={styles.testimonialsSection}>
+                <div className={styles.container}>
+                    <div className={styles.sectionHeader}>
+                        <h2 className={styles.sectionTitle}>
+                            What Our <span className={styles.titleHighlight}>Clients Say</span>
+                        </h2>
+                        <p className={styles.sectionDescription}>
+                            We are grateful for our clients’ trust in us, and we take great pride in delivering quality solutions that exceed their expectations.
+                        </p>
+                    </div>
+                    <div className={styles.testimonialsContainer}>
+                        <div className={styles.testimonialsWrapper}>
+                            <motion.div
+                                key={activeTestimonial}
+                                className={styles.testimonialItem}
+                                initial={{ opacity: 0, x: 50 }}
+                                animate={{ opacity: 1, x: 0 }}
+                                exit={{ opacity: 0, x: -50 }}
+                                transition={{ duration: 0.5 }}
+                            >
+                                <div className={styles.testimonialQuote}>“</div>
+                                <p className={styles.testimonialContent}>{testimonials[activeTestimonial].content}</p>
+                                <div className={styles.testimonialAuthor}>
+                                    <div className={styles.testimonialAuthorImage}>
+                                        <Image
+                                            src={testimonials[activeTestimonial].image}
+                                            alt={testimonials[activeTestimonial].name}
+                                            width={60}
+                                            height={60}
+                                            className={styles.testimonialAuthorImg}
+                                        />
+                                    </div>
+                                    <div className={styles.testimonialAuthorInfo}>
+                                        <h4>{testimonials[activeTestimonial].name}</h4>
+                                        <p>{testimonials[activeTestimonial].role}</p>
+                                    </div>
+                                </div>
+                            </motion.div>
+                        </div>
+
+                        <div className={styles.testimonialControls}>
+                            {testimonials.map((_, index) => (
+                                <button
+                                    key={index}
+                                    className={`${styles.testimonialDot} ${activeTestimonial === index ? styles.active : ''}`}
+                                    onClick={() => setActiveTestimonial(index)}
+                                    style={{ backgroundColor: activeTestimonial === index ? '#3B82F6' : '#D1D5DB' }}
+                                />
+                            ))}
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            {/* ===== FAQ SECTION ===== */}
+            <section className={styles.faqSection}>
+                <div className={styles.container}>
+                    <div className={styles.sectionHeader}>
+                        <h2 className={styles.sectionTitle}>
+                            Frequently Asked <span className={styles.titleHighlight}>Questions</span>
+                        </h2>
+                    </div>
+
+                    <div className={styles.faqGrid}>
+                        {faqs.map((faq, index) => (
+                            <motion.div
+                                key={index}
+                                className={styles.faqCard}
+                                initial={{ opacity: 0, x: -20 }}
+                                whileInView={{ opacity: 1, x: 0 }}
+                                transition={{ duration: 0.4, delay: index * 0.05 }}
+                                viewport={{ once: true }}
+                            >
+                                <button
+                                    className={styles.faqQuestion}
+                                    onClick={() => setOpenFaq(openFaq === index ? null : index)}
+                                >
+                                    <div className={styles.faqQuestionContent}>
+                                        <HelpCircle className={styles.faqIcon} />
+                                        <span>{faq.question}</span>
+                                    </div>
+                                    <motion.span
+                                        className={styles.faqToggle}
+                                        animate={{ rotate: openFaq === index ? 45 : 0 }}
+                                        transition={{ duration: 0.3 }}
+                                    >
+                                        +
+                                    </motion.span>
+                                </button>
+                                {openFaq === index && (
+                                    <motion.div
+                                        className={styles.faqAnswer}
+                                        initial={{ opacity: 0, height: 0 }}
+                                        animate={{ opacity: 1, height: 'auto' }}
+                                        transition={{ duration: 0.3 }}
+                                    >
+                                        <p>{faq.answer}</p>
+                                    </motion.div>
+                                )}
+                            </motion.div>
+                        ))}
+                    </div>
+                </div>
+            </section>
+
+           
             {/* ===== CTA SECTION ===== */}
             <section className={styles.ctaSection}>
                 <div className={styles.container}>
                     <div className={styles.ctaCard}>
-                        <h2 className={styles.ctaTitle}>See 50% Improvement in Backend Performance</h2>
+                        <h2 className={styles.ctaTitle}>Rushing Into Development Without Clarity?</h2>
                         <p className={styles.ctaDescription}>
-                            Our optimization techniques ensure faster response times and a smoother user experience for your apps.
+                            We help structure a focused discovery phase that aligns scope, feasibility, and a build-ready roadmap.
                         </p>
                         <div className={styles.ctaButtons}>
                             <Link href="/contact" className={styles.ctaPrimary}>
-                                Start Your Project <ArrowRight size={18} />
+                                Start Your Discovery <ArrowRight size={18} />
                             </Link>
                             <Link href="/contact" className={styles.ctaSecondary}>
                                 Get a Free Consultation
@@ -856,8 +705,10 @@ export default function BackendPage() {
 }
 
 // Custom icon components
-const Play = (props: React.SVGProps<SVGSVGElement>) => (
+const HelpCircle = (props: React.SVGProps<SVGSVGElement>) => (
     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" {...props}>
-        <polygon points="5 3 19 12 5 21 5 3" />
+        <circle cx="12" cy="12" r="10"/>
+        <path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"/>
+        <line x1="12" y1="17" x2="12.01" y2="17"/>
     </svg>
 );
