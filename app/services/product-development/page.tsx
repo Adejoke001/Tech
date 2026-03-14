@@ -619,7 +619,7 @@ export default function ProductDevelopment() {
                   </motion.button>
                 </Link>
 
-                <Link href="/portfolio" className={styles.linkWrapper}>
+                {/* <Link href="/portfolio" className={styles.linkWrapper}>
                   <motion.button
                     className={styles.secondaryButton}
                     whileHover={{ scale: 1.05 }}
@@ -627,7 +627,7 @@ export default function ProductDevelopment() {
                   >
                     View Our Portfolio
                   </motion.button>
-                </Link>
+                </Link> */}
               </motion.div>
             </motion.div>
 
@@ -677,10 +677,10 @@ export default function ProductDevelopment() {
                     <Building2 className={styles.badgeIcon} />
                     Fortune 500 Company
                   </div>
-                  <Link href="/testimonials" className={styles.readMoreLink}>
+                  {/* <Link href="/testimonials" className={styles.readMoreLink}>
                     Read More
                     <ChevronRight className={styles.linkIcon} />
-                  </Link>
+                  </Link> */}
                 </div>
               </div>
 
@@ -1076,55 +1076,49 @@ export default function ProductDevelopment() {
 
           <div className={styles.techGrid}>
             {techTrends.map((trend, index) => (
-              <Link
-                key={trend.name}
-                href={trend.link}
-                className={styles.linkWrapper}
-              >
-                <motion.div
-                  className={styles.techCard}
-                  initial={{ opacity: 0, y: 30 }}
-                  whileInView={{ opacity: 1, y: 0 }}
-                  transition={{ duration: 0.6, delay: index * 0.1 }}
-                  viewport={{ once: true }}
-                  whileHover={{
-                    y: -10,
-                    borderColor: trend.color,
-                    boxShadow: `0 20px 40px ${trend.color}20`,
-                  }}
-                >
-                  <div
-                    className={styles.techIconWrapper}
-                    style={{ color: trend.color }}
-                  >
-                    {trend.icon}
-                  </div>
-                  <h3 className={styles.techName}>{trend.name}</h3>
-                  <p className={styles.techDescription}>{trend.description}</p>
+  <motion.div
+    key={trend.name}
+    className={styles.techCard}
+    initial={{ opacity: 0, y: 30 }}
+    whileInView={{ opacity: 1, y: 0 }}
+    transition={{ duration: 0.6, delay: index * 0.1 }}
+    viewport={{ once: true }}
+    whileHover={{
+      y: -10,
+      borderColor: trend.color,
+      boxShadow: `0 20px 40px ${trend.color}20`,
+    }}
+  >
+    <div
+      className={styles.techIconWrapper}
+      style={{ color: trend.color }}
+    >
+      {trend.icon}
+    </div>
+    <h3 className={styles.techName}>{trend.name}</h3>
+    <p className={styles.techDescription}>{trend.description}</p>
 
-                  <div className={styles.applicationsList}>
-                    {trend.applications.slice(0, 3).map((app, idx) => (
-                      <div key={idx} className={styles.applicationItem}>
-                        <div
-                          className={styles.applicationDot}
-                          style={{ backgroundColor: trend.color }}
-                        ></div>
-                        {app}
-                      </div>
-                    ))}
-                  </div>
+    <div className={styles.applicationsList}>
+      {trend.applications.slice(0, 3).map((app, idx) => (
+        <div key={idx} className={styles.applicationItem}>
+          <div
+            className={styles.applicationDot}
+            style={{ backgroundColor: trend.color }}
+          ></div>
+          {app}
+        </div>
+      ))}
+    </div>
 
-                  <motion.div
-                    whileHover={{ x: 5 }}
-                    transition={{ duration: 0.3 }}
-                    className={styles.techLink}
-                  >
-                    <span>Explore {trend.name}</span>
-                    <ChevronRight className={styles.linkIcon} />
-                  </motion.div>
-                </motion.div>
-              </Link>
-            ))}
+    <motion.div
+      whileHover={{ x: 5 }}
+      transition={{ duration: 0.3 }}
+      className={styles.techLink}
+    >
+      
+    </motion.div>
+  </motion.div>
+))}
           </div>
 
           {/* <div className={styles.techCta}>

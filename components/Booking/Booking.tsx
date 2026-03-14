@@ -57,7 +57,7 @@ const Booking = () => {
                 </div>
                 <div className={styles.textContent}>
                   <h3 className={styles.contentTitle}>Book A Call</h3>
-                  <p className={styles.contentDescription}>valuecoders</p>
+                  <p className={styles.contentDescription}>BBMTech</p>
                 </div>
               </div>
 
@@ -67,7 +67,7 @@ const Booking = () => {
                 </div>
                 <div className={styles.textContent}>
                   <h3 className={styles.contentTitle}>Email us</h3>
-                  <p className={styles.contentDescription}>valuecoders</p>
+                  <p className={styles.contentDescription}>bbmtech</p>
                 </div>
               </div>
             </div>

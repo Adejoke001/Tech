@@ -69,6 +69,8 @@ export default function Navbar() {
         { name: "Data Engineering & Analytics", href: "/services/data-engineering-analytics", icon: <DataIcon /> },
         { name: "Cloud & DevOps Services", href: "/services/cloud-devops-services", icon: <CloudIcon /> },
         { name: "Integration & API Services", href: "/services/integration-api-services", icon: <APIIcon /> },
+        { name: "Web Development", href: "/services/web-development", icon: <AIIcon /> },
+        
       ],
     },
     hire: {
