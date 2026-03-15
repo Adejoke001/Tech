@@ -158,47 +158,26 @@ export default function IoTPage() {
     // ============ INDUSTRIES ============
     const industries = [
         {
-            name: 'Manufacturing',
-            desc: 'Predictive maintenance, asset tracking, quality control, and industrial automation.',
-            icon: <Factory />,
-            color: '#3B82F6',
-            image: 'https://images.unsplash.com/photo-1581091226033-d5c48150dbaa?auto=format&fit=crop&w=800&q=80'
-        },
-        {
-            name: 'Healthcare',
-            desc: 'Remote patient monitoring, smart medical devices, and hospital asset tracking.',
-            icon: <Activity />,
-            color: '#10B981',
-            image: 'https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?auto=format&fit=crop&w=800&q=80'
-        },
-        {
-            name: 'Smart Cities',
-            desc: 'Smart lighting, waste management, traffic monitoring, and environmental sensing.',
-            icon: <Building2 />,
-            color: '#8B5CF6',
-            image: 'https://images.unsplash.com/photo-1519501025264-65ba15a82390?auto=format&fit=crop&w=800&q=80'
-        },
-        {
-            name: 'Agriculture',
-            desc: 'Precision farming, soil monitoring, livestock tracking, and automated irrigation.',
-            icon: <Wheat />,
-            color: '#F59E0B',
-            image: 'https://images.unsplash.com/photo-1586771107445-d3ca888129ff?auto=format&fit=crop&w=800&q=80'
-        },
-        {
-            name: 'Transportation & Logistics',
-            desc: 'Fleet tracking, cold chain monitoring, route optimization, and predictive maintenance.',
-            icon: <Truck />,
-            color: '#EC4899',
-            image: 'https://images.unsplash.com/photo-1498084393753-b411b2d26b34?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8dHJhbnNwb3J0YXRpb258ZW58MHx8MHx8fDA%3D'
-        },
-        {
-            name: 'Energy & Utilities',
-            desc: 'Smart grid management, renewable energy monitoring, and leak detection.',
-            icon: <Zap />,
-            color: '#06B6D4',
-            image: 'https://images.unsplash.com/photo-1473341304170-971dccb5ac1e?auto=format&fit=crop&w=800&q=80'
-        },
+                    name: 'Healthcare',
+                    icon: '🏥',
+                    desc: 'Building smart healthcare solutions with HIPAA‑compliance, telemedicine, and patient portals.',
+                    image: 'https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?auto=format&fit=crop&w=800&q=80',
+                    color: '#3B82F6'
+                },
+                {
+                    name: 'Retail & eCommerce',
+                    icon: '🛍️',
+                    desc: 'Enhancing retail journeys with scalable platforms, inventory management, and omnichannel experiences.',
+                    image: 'https://images.unsplash.com/photo-1441986300917-64674bd600d8?auto=format&fit=crop&w=800&q=80',
+                    color: '#10B981'
+                },
+                {
+                    name: 'Media & Entertainment',
+                    icon: '🎬',
+                    desc: 'Custom tech to empower brands – streaming, content delivery, and audience analytics.',
+                    image: 'https://images.unsplash.com/photo-1598128558393-70ff21433be0?auto=format&fit=crop&w=800&q=80',
+                    color: '#8B5CF6'
+                },
     ];
 
     // ============ BENEFITS OF IOT ============

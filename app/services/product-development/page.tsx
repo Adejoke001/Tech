@@ -418,7 +418,7 @@ export default function ProductDevelopment() {
         "Healthcare Analytics",
         "Medical Device Integration",
       ],
-      link: "/industries/healthcare",
+      link: "/industries/industries-health",
     },
     {
       name: "Media & Entertainment",
@@ -432,7 +432,7 @@ export default function ProductDevelopment() {
         "Audience Analytics",
         "Advertising Platforms",
       ],
-      link: "/industries/media",
+      link: "/industries/industries-media",
     },
     {
       name: "Retail & eCommerce",
@@ -446,7 +446,7 @@ export default function ProductDevelopment() {
         "Customer Analytics",
         "Omnichannel Retail",
       ],
-      link: "/industries/retail",
+      link: "/industries/industries-ecommerce",
     },
     {
       name: "FinTech",
@@ -460,7 +460,7 @@ export default function ProductDevelopment() {
         "Blockchain Solutions",
         "Regulatory Compliance",
       ],
-      link: "/industries/fintech",
+      link: "/industries/industries-fintech",
     },
     {
       name: "Education & eLearning",
@@ -474,7 +474,7 @@ export default function ProductDevelopment() {
         "Skill Assessment",
         "Corporate Training",
       ],
-      link: "/industries/education",
+      link: "/industries/industries-education",
     },
     {
   name: "Internet of Things (IoT)",
@@ -487,7 +487,7 @@ export default function ProductDevelopment() {
     "Edge Computing Solutions",
     "IoT Security & Compliance"
   ],
-  link: "/industries/iot"
+  link: "/industries/industries-iot"
 }
   ];
 
