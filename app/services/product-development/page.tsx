@@ -225,72 +225,63 @@ export default function ProductDevelopment() {
       description: "Custom Customer Relationship Management solutions",
       icon: <Users className={styles.solutionIcon} />,
       color: "#1f2937",
-      link: "/solutions/crm",
     },
     {
       name: "Workforce Management",
       description: "Employee scheduling and productivity tools",
       icon: <Briefcase className={styles.solutionIcon} />,
       color: "#1f2937",
-      link: "/solutions/workforce",
     },
     {
       name: "HR Management",
       description: "Human Resource and talent management systems",
       icon: <UsersIcon className={styles.solutionIcon} />,
       color: "#1f2937",
-      link: "/solutions/hr",
     },
     {
       name: "Supply Chain",
       description: "End-to-end supply chain management solutions",
       icon: <GitBranch className={styles.solutionIcon} />,
       color: "#1f2937",
-      link: "/solutions/supply-chain",
     },
     {
       name: "Fleet Management",
       description: "Vehicle tracking and logistics management",
       icon: <Truck className={styles.solutionIcon} />,
       color: "#1f2937",
-      link: "/solutions/fleet",
     },
     {
       name: "Operations",
       description: "Business operations optimization software",
       icon: <Settings className={styles.solutionIcon} />,
       color: "#1f2937",
-      link: "/solutions/operations",
     },
     {
       name: "Asset Management",
       description: "Enterprise asset tracking and maintenance",
       icon: <Package className={styles.solutionIcon} />,
       color: "#1f2937",
-      link: "/solutions/assets",
     },
     {
       name: "Content Management",
       description: "Custom CMS for content publishing",
       icon: <FileText className={styles.solutionIcon} />,
       color: "#1f2937",
-      link: "/solutions/cms",
     },
     {
       name: "Healthcare Systems",
       description: "Medical records and patient management",
       icon: <Heart className={styles.solutionIcon} />,
       color: "#1f2937",
-      link: "/solutions/healthcare",
     },
     {
       name: "E-commerce Platforms",
       description: "Custom online store solutions",
       icon: <ShoppingCart className={styles.solutionIcon} />,
       color: "#1f2937",
-      link: "/solutions/ecommerce",
     },
   ];
+
 
   // Add these with your other hooks
   const gridRef = useRef<HTMLDivElement>(null);
@@ -486,19 +477,18 @@ export default function ProductDevelopment() {
       link: "/industries/education",
     },
     {
-      name: "Manufacturing",
-      description:
-        "Industrial software solutions for smart factories, supply chain optimization, quality control, IoT integration, and predictive maintenance systems.",
-      icon: "🏭",
-      details: [
-        "Smart Factory Solutions",
-        "Supply Chain Optimization",
-        "Quality Control Systems",
-        "IoT Integration",
-        "Predictive Maintenance",
-      ],
-      link: "/industries/manufacturing",
-    },
+  name: "Internet of Things (IoT)",
+  description: "Building secure, scalable IoT ecosystems that connect devices, process real‑time data, and enable smart automation across industries like manufacturing, healthcare, and smart cities.",
+  icon: "📡",
+  details: [
+    "IoT Platform Development",
+    "Device Management & Connectivity",
+    "Real‑time Data Analytics",
+    "Edge Computing Solutions",
+    "IoT Security & Compliance"
+  ],
+  link: "/industries/iot"
+}
   ];
 
   // FAQs with toggle functionality
@@ -997,41 +987,33 @@ export default function ProductDevelopment() {
             }}
           >
             {engineeringSolutions.map((solution, index) => {
-              // Calculate checkerboard pattern
               const column = index % columnCount;
               const row = Math.floor(index / columnCount);
-
-              // Perfect checkerboard formula: (row + column) % 2
               const isLight = (row + column) % 2 === 0;
               const backgroundColor = isLight ? "#fff5e6" : "#ffdc94";
 
               return (
-                <Link
+                <motion.div
                   key={solution.name}
-                  href={solution.link}
-                  className={styles.linkWrapper}
+                  className={styles.engineeringCard}
+                  style={{ backgroundColor }}
+                  initial={{ opacity: 0, scale: 0.8 }}
+                  whileInView={{ opacity: 1, scale: 1 }}
+                  transition={{ duration: 0.4, delay: index * 0.05 }}
+                  viewport={{ once: true }}
+                  whileHover={{ transform: "translateY(-3px)" }}
                 >
-                  <motion.div
-                    className={styles.engineeringCard}
-                    style={{ backgroundColor }}
-                    initial={{ opacity: 0, scale: 0.8 }}
-                    whileInView={{ opacity: 1, scale: 1 }}
-                    transition={{ duration: 0.4, delay: index * 0.05 }}
-                    viewport={{ once: true }}
-                    whileHover={{ transform: "translateY(-3px)" }}
-                  >
-                    <div className={styles.engineeringIconWrapper}>
-                      {solution.icon}
-                    </div>
-                    <h3 className={styles.engineeringName}>{solution.name}</h3>
-                    <p className={styles.engineeringDescription}>
-                      {solution.description}
-                    </p>
-                    <div className={styles.engineeringArrow}>
-                      <ArrowRight className={styles.arrowIcon} />
-                    </div>
-                  </motion.div>
-                </Link>
+                  <div className={styles.engineeringIconWrapper}>
+                    {solution.icon}
+                  </div>
+                  <h3 className={styles.engineeringName}>{solution.name}</h3>
+                  <p className={styles.engineeringDescription}>
+                    {solution.description}
+                  </p>
+                  <div className={styles.engineeringArrow}>
+                    <ArrowRight className={styles.arrowIcon} />
+                  </div>
+                </motion.div>
               );
             })}
           </div>
@@ -1051,7 +1033,7 @@ export default function ProductDevelopment() {
         </div>
       </section>
 
-      
+
       {/* Tech Trends - Now 6 items */}
       <section className={styles.techSection}>
         <div className={styles.container}>
@@ -1075,49 +1057,49 @@ export default function ProductDevelopment() {
 
           <div className={styles.techGrid}>
             {techTrends.map((trend, index) => (
-  <motion.div
-    key={trend.name}
-    className={styles.techCard}
-    initial={{ opacity: 0, y: 30 }}
-    whileInView={{ opacity: 1, y: 0 }}
-    transition={{ duration: 0.6, delay: index * 0.1 }}
-    viewport={{ once: true }}
-    whileHover={{
-      y: -10,
-      borderColor: trend.color,
-      boxShadow: `0 20px 40px ${trend.color}20`,
-    }}
-  >
-    <div
-      className={styles.techIconWrapper}
-      style={{ color: trend.color }}
-    >
-      {trend.icon}
-    </div>
-    <h3 className={styles.techName}>{trend.name}</h3>
-    <p className={styles.techDescription}>{trend.description}</p>
+              <motion.div
+                key={trend.name}
+                className={styles.techCard}
+                initial={{ opacity: 0, y: 30 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.6, delay: index * 0.1 }}
+                viewport={{ once: true }}
+                whileHover={{
+                  y: -10,
+                  borderColor: trend.color,
+                  boxShadow: `0 20px 40px ${trend.color}20`,
+                }}
+              >
+                <div
+                  className={styles.techIconWrapper}
+                  style={{ color: trend.color }}
+                >
+                  {trend.icon}
+                </div>
+                <h3 className={styles.techName}>{trend.name}</h3>
+                <p className={styles.techDescription}>{trend.description}</p>
 
-    <div className={styles.applicationsList}>
-      {trend.applications.slice(0, 3).map((app, idx) => (
-        <div key={idx} className={styles.applicationItem}>
-          <div
-            className={styles.applicationDot}
-            style={{ backgroundColor: trend.color }}
-          ></div>
-          {app}
-        </div>
-      ))}
-    </div>
+                <div className={styles.applicationsList}>
+                  {trend.applications.slice(0, 3).map((app, idx) => (
+                    <div key={idx} className={styles.applicationItem}>
+                      <div
+                        className={styles.applicationDot}
+                        style={{ backgroundColor: trend.color }}
+                      ></div>
+                      {app}
+                    </div>
+                  ))}
+                </div>
 
-    <motion.div
-      whileHover={{ x: 5 }}
-      transition={{ duration: 0.3 }}
-      className={styles.techLink}
-    >
-      
-    </motion.div>
-  </motion.div>
-))}
+                <motion.div
+                  whileHover={{ x: 5 }}
+                  transition={{ duration: 0.3 }}
+                  className={styles.techLink}
+                >
+
+                </motion.div>
+              </motion.div>
+            ))}
           </div>
 
           {/* <div className={styles.techCta}>
@@ -1251,9 +1233,8 @@ export default function ProductDevelopment() {
             {faqs.map((faq, index) => (
               <motion.div
                 key={faq.question}
-                className={`${styles.faqCard} ${
-                  openFaqIndex === index ? styles.faqCardOpen : ""
-                }`}
+                className={`${styles.faqCard} ${openFaqIndex === index ? styles.faqCardOpen : ""
+                  }`}
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.4, delay: index * 0.1 }}
