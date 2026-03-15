@@ -6,9 +6,9 @@ import Link from 'next/link';
 import { motion, AnimatePresence } from 'framer-motion';
 import {
     Sparkles, ArrowRight, Award, MessageSquare, CheckCircle,
-    Globe, TrendingUp, FileText, TestTube, Clock, Building2, Zap, Shield,
+    Globe, TrendingUp, FileText, TestTube, Clock, Zap, Shield,
     Cpu, Radio, Brain, Compass, Code, Cloud, Server, Activity, Wifi, 
-    Thermometer, Gauge, Factory, Wheat, Truck,
+    Thermometer, Gauge, Factory,
     Layers, Settings, BarChart3,
 } from 'lucide-react';
 import styles from './iot.module.css';
