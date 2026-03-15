@@ -1,6 +1,6 @@
 'use client';
 
-import { useState } from 'react';
+
 import Image from 'next/image';
 import Link from 'next/link';
 import { motion } from 'framer-motion';
@@ -415,7 +415,7 @@ export default function AboutPage() {
                                         <p className={styles.testimonialRole}>{testimonial.role}</p>
                                     </div>
                                 </div>
-                                <p className={styles.testimonialContent}>"{testimonial.content}"</p>
+                                <p className={styles.testimonialContent}>&quot;{testimonial.content}&quot;</p>
                             </motion.div>
                         ))}
                     </div>
@@ -426,7 +426,7 @@ export default function AboutPage() {
             <section className={styles.ctaSection}>
                 <div className={styles.container}>
                     <div className={styles.ctaCard}>
-                        <h2 className={styles.ctaTitle}>Let's Build Something Great Together</h2>
+                        <h2 className={styles.ctaTitle}>Let&apos;s Build Something Great Together</h2>
                         <p className={styles.ctaDescription}>
                             Get a free consultation and let us know your project idea to turn it into an amazing digital product.
                         </p>
