@@ -13,7 +13,6 @@ import {
   ArrowRight,
   Star,
   Quote,
-  ChevronRight,
   Building2,
   Briefcase,
   FileText,

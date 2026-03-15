@@ -360,15 +360,23 @@ export default function QAStrategyConsultingPage() {
       ],
       link: "/industries/industries-education",
     },
-    // {
-    //   id: 6,
-    //   name: "Enterprise Software",
-    //   description:
-    //     "Streamlining business growth with ERP testing, CRM validation, and system integration.",
-    //   icon: "🏢",
-    //   color: "#06b6d4",
-    //   solutions: ["ERP Testing", "CRM Validation", "System Integration"],
-    // },
+    {
+      id: 6,
+      name: "Internet of Things (IoT)",
+      description:
+        "Secure, scalable IoT solutions connecting devices and enabling real‑time data insights for industrial automation, smart homes, and asset tracking.",
+      icon: "📡",
+      color: "#06b6d4",
+      challenges:
+        "Device heterogeneity, real‑time data processing, connectivity reliability, and end‑to‑end security.",
+      solutions: [
+        "Device Connectivity & Management",
+        "Real‑time Data Processing",
+        "Edge Computing Solutions",
+        "IoT Security & Compliance",
+      ],
+      link: "/industries/industries-iot",
+    },
   ];
 
   const pricingTiers = [

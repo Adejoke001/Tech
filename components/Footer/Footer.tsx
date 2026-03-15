@@ -8,11 +8,11 @@ const Footer = () => {
 
   const footerLinks = {
     company: [
-      { name: "About Us", href: "/about" },
-      { name: "Our Team", href: "/team" },
-      { name: "Careers", href: "/careers" },
-      { name: "Blog", href: "/blog" },
-      { name: "Clients & Testimonials", href: "/testimonials" },
+      { name: "About Us", href: "/company/about" },
+      // { name: "Our Team", href: "/team" },
+      { name: "Case Studies", href: "/company/case-studies" },
+      { name: "Blog", href: "/company/blogs" },
+      { name: "Clients & Testimonials", href: "company/testimonials" },
     ],
     services: [
       { name: "Web Development", href: "/services/web-development" },
@@ -24,29 +24,29 @@ const Footer = () => {
     ourExpertise: [
       {
         name: "Software Product Engineering",
-        href: "/expertise/product-engineering",
+        href: "/services/software-development",
       },
       {
         name: "Application Development",
-        href: "/expertise/application-development",
+        href: "/services/application-development",
       },
       { name: "Staff Augmentation", href: "/expertise/staff-augmentation" },
       { name: "Cloud Services", href: "/expertise/cloud-services" },
-      { name: "AI & ML", href: "/expertise/ai-ml" },
+      { name: "AI & ML", href: "/services/machine-learning" },
     ],
     hireDevelopers: [
-      { name: "Hire AI Engineers", href: "/hire/ai-engineers" },
-      { name: "Hire Backend Developers", href: "/hire/backend-developers" },
+      { name: "Hire AI Engineers", href: "/hire/data-ai-developers" },
+      { name: "Hire Backend Developers", href: "/hire-developers/backend-developers" },
       { name: "Hire Frontend Developers", href: "/hire/frontend-developers" },
-      {
-        name: "Hire Blockchain Developers",
-        href: "/hire/blockchain-developers",
-      },
-      { name: "Hire Mobile App Developers", href: "/hire/mobile-developers" },
+      // {
+      //   name: "Hire Blockchain Developers",
+      //   href: "/hire/blockchain-developers",
+      // },
+      { name: "Hire Mobile App Developers", href: "/hire-developers/mobile-developers" },
     ],
     clientsWeServe: [
-      { name: "For Startups", href: "/clients/startups" },
-      { name: "For Enterprises", href: "/clients/enterprises" },
+      { name: "For Startups", href: "/solutions/startups" },
+      { name: "For Enterprises", href: "/solutions/solutionsenterprises" },
     ],
   };
 
