@@ -90,7 +90,7 @@ export default function BackendDevelopersPage() {
         "Real-time processing",
         "System integration",
       ],
-      // No link provided → will fall back to `/hire/backend/2`
+      link: "/services/backend-development",
     },
     {
       id: 3,
@@ -124,9 +124,9 @@ export default function BackendDevelopersPage() {
     },
     {
       id: 5,
-      title: "Mobile App Backend Development",
+      title: "Mobile App Development",
       description:
-        "Dedicated backend systems for mobile applications with real-time sync and offline capabilities.",
+        "Dedicated systems for mobile applications with real-time sync and offline capabilities.",
       icon: <Smartphone className={styles.expertiseIcon} />,
       color: "#EC4899",
       features: [
@@ -135,7 +135,7 @@ export default function BackendDevelopersPage() {
         "Offline-first architecture",
         "Mobile API optimization",
       ],
-      // No link provided → will fall back to `/hire/backend/5`
+      link: "/services/mobile-development",
     },
     {
       id: 6,

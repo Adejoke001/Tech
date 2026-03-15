@@ -118,7 +118,7 @@ export default function FrontendDevelopersPage() {
         "Workflow automation",
         "Scalable component libraries",
       ],
-      link: null,
+      link: "/services/architecture",
     },
     {
       id: 5,
