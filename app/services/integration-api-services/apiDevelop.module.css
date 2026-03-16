@@ -1289,6 +1289,11 @@
     .hero {
         padding: 3rem 1.5rem;
     }
+    .heroCta {
+        padding: 10px;
+        flex-direction: row;
+
+    }
     
     .heroTitle {
         font-size: 2rem;
