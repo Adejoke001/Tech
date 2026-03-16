@@ -330,7 +330,7 @@ export default function ProductDevelopment() {
         "Process Automation",
         "Computer Vision",
       ],
-      link: "/technologies/ai-ml",
+      // link: "/technologies/ai-ml",
     },
     {
       name: "Blockchain",
@@ -344,7 +344,7 @@ export default function ProductDevelopment() {
         "NFT Platforms",
         "Supply Chain Tracking",
       ],
-      link: "/technologies/blockchain",
+      // link: "/technologies/blockchain",
     },
     {
       name: "Computer Vision",
@@ -358,7 +358,7 @@ export default function ProductDevelopment() {
         "Quality Inspection",
         "Augmented Reality",
       ],
-      link: "/technologies/computer-vision",
+      // link: "/technologies/computer-vision",
     },
     {
       name: "Internet of Things",
@@ -372,7 +372,7 @@ export default function ProductDevelopment() {
         "Wearable Devices",
         "Asset Tracking",
       ],
-      link: "/technologies/iot",
+      // link: "/technologies/iot",
     },
     {
       name: "Mixed Reality",
@@ -386,7 +386,7 @@ export default function ProductDevelopment() {
         "3D Visualization",
         "Virtual Tours",
       ],
-      link: "/technologies/mixed-reality",
+      // link: "/technologies/mixed-reality",
     },
     {
       name: "Edge Computing",
@@ -400,7 +400,7 @@ export default function ProductDevelopment() {
         "Smart Cities",
         "Industrial Automation",
       ],
-      link: "/technologies/edge-computing",
+      // link: "/technologies/edge-computing",
     },
   ];
 

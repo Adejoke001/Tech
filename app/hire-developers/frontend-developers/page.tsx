@@ -87,7 +87,7 @@ export default function FrontendDevelopersPage() {
         "Consistent design systems",
         "Native-like performance",
       ],
-      link: "services/product-development",
+      link: "/services/product-development",
       
     },
     {
@@ -103,7 +103,7 @@ export default function FrontendDevelopersPage() {
         "Serverless architectures",
         "Real-time updates",
       ],
-      link: "/services/cloud-devops-services", // no link
+      link: "/services/cloud-devops-services", 
     },
     {
       id: 4,
@@ -133,7 +133,7 @@ export default function FrontendDevelopersPage() {
         "SEO-friendly rendering",
         "Accessibility auditing",
       ],
-      link: "services/ui-ux-design",
+      link: "/services/ui-ux-design",
     },
     {
       id: 6,
