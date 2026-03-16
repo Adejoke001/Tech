@@ -45,8 +45,8 @@ const Footer = () => {
       { name: "Hire Mobile App Developers", href: "/hire-developers/mobile-developers" },
     ],
     clientsWeServe: [
-      { name: "For Startups", href: "/solutions/startups" },
-      { name: "For Enterprises", href: "/solutions/solutionsenterprises" },
+      { name: "For Startups", href: "/solutions/solutions-startups" },
+      { name: "For Enterprises", href: "/solutions/solutions-enterprises" },
     ],
   };
 
