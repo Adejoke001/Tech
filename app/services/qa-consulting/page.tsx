@@ -502,7 +502,7 @@ export default function QAStrategyConsultingPage() {
                 <div className={styles.testimonialInfo}>
                   <div className={styles.testimonialImage}>
                     <Image
-                      src="/images/testimonial1.jpg"
+                      src="https://plus.unsplash.com/premium_vector-1721637089656-b4a786252891?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MzB8fHdvbWFufGVufDB8fDB8fHww"
                       alt={testimonial.name}
                       width={80}
                       height={80}

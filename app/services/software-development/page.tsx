@@ -85,10 +85,10 @@ export default function SoftwareDev() {
                 transition={{ duration: 0.3 }}
               >
                 <Image 
-                  src="/images/testimonial.jpg" 
+                  src="https://images.unsplash.com/vector-1740738536404-c36db193ce34?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8YnVzaW5lc3MlMjB3b21hbnxlbnwwfHwwfHx8MA%3D%3D" 
                   alt="Rebecca - Client"
-                  width={100}
-                  height={100}
+                  width={90}
+                  height={90}
                   className={styles.clientImage}
                 />
               </motion.div>

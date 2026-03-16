@@ -339,7 +339,7 @@ export default function QualityAssurancePage() {
               <div className={styles.testimonialImage}>
                 <div className={styles.clientImageWrapper}>
                   <Image
-                    src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=100&h=100&fit=crop&crop=face"
+                    src="https://plus.unsplash.com/premium_vector-1727955579231-3b543fedeb74?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MzF8fG1hbnxlbnwwfHwwfHx8MA%3D%3D"
                     alt={testimonial.name}
                     width={100}
                     height={100}
