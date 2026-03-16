@@ -12,14 +12,14 @@ const Footer = () => {
       // { name: "Our Team", href: "/team" },
       { name: "Case Studies", href: "/company/case-studies" },
       { name: "Blog", href: "/company/blogs" },
-      { name: "Clients & Testimonials", href: "company/testimonials" },
+      { name: "Clients & Testimonials", href: "/company/testimonials" },
     ],
     services: [
       { name: "Web Development", href: "/services/web-development" },
-      { name: "Mobile Apps", href: "/services/mobile-apps" },
+      { name: "Mobile Apps", href: "/services/mobile-development" },
       { name: "UI/UX Design", href: "/services/ui-ux-design" },
-      { name: "Digital Marketing", href: "/services/digital-marketing" },
-      { name: "Consulting", href: "/services/consulting" },
+      // { name: "Digital Marketing", href: "/services/digital-marketing" },
+      { name: "Consulting", href: "/services/qa-consulting" },
     ],
     ourExpertise: [
       {
@@ -30,8 +30,8 @@ const Footer = () => {
         name: "Application Development",
         href: "/services/application-development",
       },
-      { name: "Staff Augmentation", href: "/expertise/staff-augmentation" },
-      { name: "Cloud Services", href: "/expertise/cloud-services" },
+      // { name: "Staff Augmentation", href: "/expertise/staff-augmentation" },
+      { name: "Cloud Services", href: "/services/cloud-devops-services" },
       { name: "AI & ML", href: "/services/machine-learning" },
     ],
     hireDevelopers: [

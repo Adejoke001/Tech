@@ -369,7 +369,6 @@ export default function MediaPage() {
                         >
                             <Link href="/contact" className={styles.ctaButton}>
                                 Build Your Media Solution
-                                <ArrowRight className={styles.buttonIcon} />
                             </Link>
                             
                         </motion.div>

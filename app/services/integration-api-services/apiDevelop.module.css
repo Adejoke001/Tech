@@ -1224,10 +1224,6 @@
         font-size: 1.25rem;
     }
     
-    .heroCta {
-        flex-direction: column;
-    }
-    
     .ctaButtonPrimary {
         width: 100%;
         justify-content: center;

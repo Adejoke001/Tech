@@ -6,7 +6,7 @@ import Link from 'next/link';
 import { motion, AnimatePresence } from 'framer-motion';
 import {
     Users, CheckCircle, Award, MessageSquare, Sparkles, HardDrive,
-    Cloud, ChevronRight, HelpCircle, ArrowRight, HeadphonesIcon, 
+    Cloud, ChevronRight, HelpCircle,  HeadphonesIcon, 
     RefreshCw, ShieldCheck, Shield, Clock, Target, 
     Wallet, Scale, Briefcase, Activity, DollarSign,
     HeartHandshake, AlertTriangle, Settings,
@@ -495,7 +495,6 @@ export default function EnterpriseSolutionPage() {
                         >
                             <Link href="/contact" className={styles.ctaButton}>
                                 Optimise Your Operations
-                                <ArrowRight className={styles.buttonIcon} />
                             </Link>
                             
                         </motion.div>
@@ -1098,7 +1097,6 @@ export default function EnterpriseSolutionPage() {
                         <div className={styles.ctaButtons}>
                             <Link href="/contact" className={styles.ctaPrimary}>
                                 Optimise Your Operations
-                                <ArrowRight className={styles.buttonIcon} />
                             </Link>
                             
                         </div>

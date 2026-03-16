@@ -6,7 +6,7 @@ import Link from 'next/link';
 import { motion, AnimatePresence } from 'framer-motion';
 import {
 
-    Sparkles, ArrowRight, Award, MessageSquare, HelpCircle,
+    Sparkles, Award, MessageSquare, HelpCircle,
     CheckCircle, Users, Globe, Lock,
     Layers, Layout, Zap, Shield, Smartphone, Database,
     Compass, Code, GitBranch, FolderOpen, RefreshCw, Megaphone,
@@ -370,7 +370,7 @@ export default function EducationPage() {
                         >
                             <Link href="/contact" className={styles.ctaButton}>
                                 Build Your EdTech Solution
-                                <ArrowRight className={styles.buttonIcon} />
+                                
                             </Link>
                             
                         </motion.div>
@@ -984,7 +984,7 @@ export default function EducationPage() {
                         <div className={styles.ctaButtons}>
                             <Link href="/contact" className={styles.ctaPrimary}>
                                 Build Your EdTech Solution
-                                <ArrowRight className={styles.buttonIcon} />
+                                
                             </Link>
                             
                         </div>

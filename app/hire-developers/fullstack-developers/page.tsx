@@ -92,7 +92,7 @@ export default function FullStackDevelopersPage() {
         color: '#06B6D4',
         features: ['AWS/Azure/GCP Deployment', 'Docker & Kubernetes', 'CI/CD Pipelines', 'DevOps Implementation'],
         details: 'Cloud-native application deployment',
-        link: 'services/cloud-devops-services',
+        link: '/services/cloud-devops-services',
         
     }
 ];

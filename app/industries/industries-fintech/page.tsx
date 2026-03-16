@@ -1215,9 +1215,7 @@ export default function FinTechPage() {
                 Build Your FinTech Solution
                 <ArrowRight className={styles.buttonIcon} />
               </Link>
-              <Link href="/calculator" className={styles.ctaSecondary}>
-                Estimate Your Cost
-              </Link>
+              
             </div>
           </div>
         </div>
