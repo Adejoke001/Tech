@@ -663,7 +663,7 @@ export default function QualityAssurancePage() {
           <div className={styles.ctaButtons}>
             <Link href="/contact" className={styles.ctaButton}>
               Start Free QA Assessment
-              <ArrowRight className={styles.buttonIcon} />
+             
             </Link>
             {/* <Link href="/portfolio" className={styles.secondaryButton}>
               View Case Studies
