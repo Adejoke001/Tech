@@ -454,7 +454,7 @@ export default function CybersecurityServicesPage() {
                             <div className={styles.testimonialImage}>
                                 <div className={styles.clientImageWrapper}>
                                     <Image
-                                        src="https://plus.unsplash.com/premium_photo-1705018501151-4045c97658a3?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTN8fHdvbWFufGVufDB8fDB8fHww"
+                                        src="/images/user.png"
                                         alt={testimonial.name}
                                         width={100}
                                         height={100}

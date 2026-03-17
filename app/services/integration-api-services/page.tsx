@@ -24,7 +24,7 @@ export default function ApiDevelopmentPage() {
     const [hoveredIndustry, setHoveredIndustry] = useState<number | null>(null);
 
     const testimonial = {
-        name: 'Jonathan Miller',
+        name: 'John Bright',
         role: 'CTO, TechFlow Solutions',
         content: 'Their API development team delivered robust, scalable solutions that perfectly integrated with our existing systems. Exceptional communication and technical expertise.',
         rating: 5,
@@ -469,7 +469,7 @@ export default function ApiDevelopmentPage() {
                             <div className={styles.testimonialHeader}>
                                 <div className={styles.testimonialImage}>
                                     <Image
-                                        src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=400&q=80"
+                                        src="/images/user.png"
                                         alt={testimonial.name}
                                         fill
                                         className={styles.testimonialImg}

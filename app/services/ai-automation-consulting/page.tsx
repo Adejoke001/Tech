@@ -42,7 +42,7 @@ export default function AIAutomationConsultingPage() {
   const [openFaq, setOpenFaq] = useState<number | null>(0);
 
   const testimonial = {
-    name: "Nancy Wilson",
+    name: "David Wilson",
     role: "CEO, TechInnovate Corp",
     content:
       "BBMTech showed us exactly how to use AI solutions to solve our biggest business problems. The guidance was invaluable for our digital transformation.",
@@ -399,7 +399,7 @@ export default function AIAutomationConsultingPage() {
   const whyChooseUs = [
     {
       id: 1,
-      title: "India's Top 1% AI Talent",
+      title: "Nigeria's Top 1% AI Talent",
       description:
         "Access elite AI consultants with proven expertise in cutting-edge technologies.",
       icon: <Award className={styles.chooseIcon} />,
@@ -677,7 +677,7 @@ export default function AIAutomationConsultingPage() {
                 <div className={styles.testimonialInfo}>
                   <div className={styles.testimonialImage}>
                     <Image
-                      src="https://plus.unsplash.com/premium_photo-1689551670902-19b441a6afde?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8d29tYW58ZW58MHx8MHx8fDA%3D"
+                      src="/images/user.png"
                       alt={testimonial.name}
                       width={80}
                       height={80}
@@ -779,7 +779,7 @@ export default function AIAutomationConsultingPage() {
             Services
           </h2>
           <p className={styles.sectionDescription}>
-            As India&apos;s leading AI consulting company, we combine deep
+            As Nigeria&apos;s leading AI consulting company, we combine deep
             expertise with innovative strategies to deliver tailored AI
             solutions for your business challenges.
           </p>
@@ -945,7 +945,7 @@ export default function AIAutomationConsultingPage() {
       <section className={styles.whyChooseSection}>
         <div className={styles.sectionHeader}>
           <h2 className={styles.sectionTitle}>
-            India&apos;s Top{" "}
+            Nigeria&apos;s Top{" "}
             <span className={styles.titleHighlight}>
               Artificial Intelligence Consulting Company
             </span>

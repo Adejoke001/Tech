@@ -25,7 +25,7 @@ export default function QATestersPage() {
 
     // ----- HERO TESTIMONIAL -----
     const testimonial = {
-        name: 'Sarah Chen',
+        name: 'Sarah Chidi',
         role: 'VP of Engineering, FinScale',
         content: 'BBMTech’s QA engineers integrated seamlessly into our sprints. They caught 40% more edge cases than our previous setup, and our release confidence has never been higher.',
         rating: 5,
@@ -314,36 +314,36 @@ export default function QATestersPage() {
             bestFor: 'Growing Businesses',
             timeline: '6–12 months'
         },
-        {
-            title: 'Extended Team (Product Scaling)',
-            price: '$25,000 – $35,000/month',
-            description: 'Augment your in‑house capacity with 8–11 QA professionals.',
-            features: [
-                '8–11 QA engineers',
-                'Performance & security testing',
-                'Test environment management',
-                'Advanced automation',
-                'On‑demand scalability'
-            ],
-            color: '#8B5CF6',
-            bestFor: 'High‑Growth Scale‑ups',
-            timeline: '12+ months'
-        },
-        {
-            title: 'Specialised QA Pods',
-            price: '$35,000 – $50,000/month',
-            description: 'Cross‑functional pods for AI/ML, cloud migration, or complex compliance projects (11–16 members).',
-            features: [
-                '11–16 specialists',
-                'AI‑driven test optimisation',
-                'Cloud infrastructure testing',
-                'Regulatory experts',
-                '24×7 coverage'
-            ],
-            color: '#F59E0B',
-            bestFor: 'Complex Programs',
-            timeline: '12+ months'
-        },
+        // {
+        //     title: 'Extended Team (Product Scaling)',
+        //     price: '$25,000 – $35,000/month',
+        //     description: 'Augment your in‑house capacity with 8–11 QA professionals.',
+        //     features: [
+        //         '8–11 QA engineers',
+        //         'Performance & security testing',
+        //         'Test environment management',
+        //         'Advanced automation',
+        //         'On‑demand scalability'
+        //     ],
+        //     color: '#8B5CF6',
+        //     bestFor: 'High‑Growth Scale‑ups',
+        //     timeline: '12+ months'
+        // },
+        // {
+        //     title: 'Specialised QA Pods',
+        //     price: '$35,000 – $50,000/month',
+        //     description: 'Cross‑functional pods for AI/ML, cloud migration, or complex compliance projects (11–16 members).',
+        //     features: [
+        //         '11–16 specialists',
+        //         'AI‑driven test optimisation',
+        //         'Cloud infrastructure testing',
+        //         'Regulatory experts',
+        //         '24×7 coverage'
+        //     ],
+        //     color: '#F59E0B',
+        //     bestFor: 'Complex Programs',
+        //     timeline: '12+ months'
+        // },
         {
             title: 'Enterprise Delivery Unit',
             price: '$50,000+ /month',
@@ -560,7 +560,7 @@ export default function QATestersPage() {
                             <div className={styles.testimonialImage}>
                                 <div className={styles.clientImageWrapper}>
                                     <Image
-                                        src="https://images.unsplash.com/photo-1580489944761-15a19d654956?w=100&h=100&fit=crop&crop=face"
+                                        src="/images/user.png"
                                         alt={testimonial.name}
                                         width={100}
                                         height={100}
@@ -722,7 +722,7 @@ export default function QATestersPage() {
                     </h2>
                     <p className={styles.sectionDescription}>
                         Access world‑class testing talent at a fraction of the local cost. Here’s why smart companies 
-                        choose Indian QA professionals.
+                        choose Nigeria QA professionals.
                     </p>
                 </div>
 

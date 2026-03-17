@@ -348,7 +348,7 @@ export default function EnterpriseSoftwarePage() {
                             <div className={styles.testimonialImage}>
                                 <div className={styles.clientImageWrapper}>
                                     <Image
-                                        src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=100&h=100&fit=crop&crop=face"
+                                        src="/images/user.png"
                                         alt={testimonial.name}
                                         width={100}
                                         height={100}

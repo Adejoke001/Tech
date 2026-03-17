@@ -153,7 +153,7 @@ export default function CloudServicesPage() {
             name: 'Media & Entertainment',
             icon: '🎬',
             desc: 'Custom tech to empower brands with content delivery networks, streaming optimization, and audience analytics for personalized media experiences.',
-            image: 'https://images.unsplash.com/photo-1489599809516-9827b6d1cf13?auto=format&fit=crop&w=800&q=80',
+            image: 'https://plus.unsplash.com/premium_photo-1664303677453-ca2ad8f7dd8d?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTN8fG1lZGlhJTIwYW5kJTIwZW50ZXJ0YWlubWVudHxlbnwwfHwwfHx8MA%3D%3D',
             color: '#EC4899'
         },
     ];
@@ -214,7 +214,7 @@ export default function CloudServicesPage() {
                                 <div className={styles.testimonialImage}>
 
                                     <Image
-                                        src="https://plus.unsplash.com/premium_photo-1689977927774-401b12d137d6?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OXx8bWFufGVufDB8fDB8fHww"
+                                        src="/images/user.png"
                                         alt="Jonathan - Client"
                                         width={100}
                                         height={100}
@@ -295,9 +295,9 @@ export default function CloudServicesPage() {
                                 <div className={styles.bannerContent}>
                                     <h3>Move to Cloud With <span>Zero Disruption</span></h3>
                                     <p>Migrate apps, data, and workloads safely using our proven Cloud Migration Framework.</p>
-                                    <Link href="/migration" className={styles.bannerButton}>
+                                    {/* <Link href="/migration" className={styles.bannerButton}>
                                         Learn About Our Framework <ChevronRight size={18} />
-                                    </Link>
+                                    </Link> */}
                                 </div>
                                 <div className={styles.bannerGraphic}>
                                     <Image
@@ -361,7 +361,7 @@ export default function CloudServicesPage() {
                                 <h2>Why Choose BBMTech?</h2>
                                 <p>We bring innovation, expertise, and reliability to every cloud project. With 20+ years of cloud expertise, certified talent, and reliable delivery.</p>
                                 <div className={styles.whyChooseGrid}>
-                                    <div className={styles.whyChooseCard}><Award /> India&apos;s Top 1% Software Talent</div>
+                                    <div className={styles.whyChooseCard}><Award /> Nigeria&apos;s Top 1% Software Talent</div>
                                     <div className={styles.whyChooseCard}><Users /> Trusted by Startups to Fortune 500</div>
                                     <div className={styles.whyChooseCard}><Workflow /> Idea to Deployment, We Handle All</div>
                                     <div className={styles.whyChooseCard}><Globe /> Time-Zone Friendly: Global Presence</div>

@@ -23,7 +23,7 @@ export default function ScaleUpsSolutionPage() {
 
     // ----- HERO TESTIMONIAL -----
     const testimonial = {
-        name: 'Arjun',
+        name: 'Alexander',
         role: 'CTO, ScaleFlow',
         content: 'Our startup scaled smoothly thanks to their expertise and commitment to quality. Truly dependable!',
         rating: 5,
@@ -346,7 +346,7 @@ export default function ScaleUpsSolutionPage() {
 
     // ----- PARTNER HIGHLIGHTS -----
     const partnerHighlights = [
-        { text: 'India’s top 1% engineering talent', icon: <Award />, color: '#3B82F6' },
+        { text: 'Nigeria’s top 1% engineering talent', icon: <Award />, color: '#3B82F6' },
         { text: 'Trusted by startups to Fortune 500', icon: <Building2 />, color: '#10B981' },
         { text: 'End-to-end product delivery', icon: <Rocket />, color: '#8B5CF6' },
         { text: 'Time-zone friendly collaboration', icon: <Globe />, color: '#F59E0B' },
@@ -367,26 +367,26 @@ export default function ScaleUpsSolutionPage() {
         {
             name: 'James Kelly',
             role: 'Co-founder, Miracle Choice',
-            content: 'The Project managers took a lot of time to understand our project before coming up with a contract or what they thought we needed. I had the reassurance from the start that the project managers knew what type of project I wanted and what my needs were. That is reassuring, and that\'s why we chose ValueCoders.',
-            image: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=100&h=100&fit=crop&crop=face'
+            content: 'The Project managers took a lot of time to understand our project before coming up with a contract or what they thought we needed. I had the reassurance from the start that the project managers knew what type of project I wanted and what my needs were. That is reassuring, and that\'s why we chose BBMTech.',
+            image: '/images/user.png'
         },
         {
             name: 'Judith Mueller',
             role: 'Executive Director, Mueller Health Foundation',
-            content: 'The team at ValueCoders has provided us with exceptional services in creating this one-of-a-kind portal, and it has been a fantastic experience. I was particularly impressed by how efficiently and quickly the team always came up with creative solutions to provide us with all the functionalities within the portal we had requested.',
-            image: 'https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=100&h=100&fit=crop&crop=face'
+            content: 'The team at BBMTech has provided us with exceptional services in creating this one-of-a-kind portal, and it has been a fantastic experience. I was particularly impressed by how efficiently and quickly the team always came up with creative solutions to provide us with all the functionalities within the portal we had requested.',
+            image: '/images/user.png'
         },
         {
-            name: 'Kris Bruynson',
+            name: 'Michael Philip',
             role: 'Director, Storloft',
-            content: 'ValueCoders had great technical expertise, both in front-end and back-end development. Other project management was well organized. Account management was friendly and always available. I would give ValueCoders ten out of ten!',
-            image: 'https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=100&h=100&fit=crop&crop=face'
+            content: 'BBMTech had great technical expertise, both in front-end and back-end development. Other project management was well organized. Account management was friendly and always available. I would give BBMTech ten out of ten!',
+            image: '/images/user.png'
         },
         {
-            name: 'Mohammed Mirza',
+            name: 'Mohammed Aishat',
             role: 'Director, LOCALMASTERCHEFS LTD',
-            content: 'Huge thank you to ValueCoders; they have been a massive help in enabling us to start developing our project within a few weeks, so it\'s been great! There have been two small bumps in the road, but overall, It\'s been a fantastic service. I have already recommended it to one of my friends.',
-            image: 'https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?w=100&h=100&fit=crop&crop=face'
+            content: 'Huge thank you to BBMTech; they have been a massive help in enabling us to start developing our project within a few weeks, so it\'s been great! There have been two small bumps in the road, but overall, It\'s been a fantastic service. I have already recommended it to one of my friends.',
+            image: '/images/user.png'
         }
     ];
 
@@ -501,7 +501,7 @@ export default function ScaleUpsSolutionPage() {
                             <div className={styles.testimonialImage}>
                                 <div className={styles.clientImageWrapper}>
                                     <Image
-                                        src="https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?w=100&h=100&fit=crop&crop=face"
+                                        src="/images/user.png"
                                         alt={testimonial.name}
                                         width={100}
                                         height={100}

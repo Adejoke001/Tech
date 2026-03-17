@@ -691,7 +691,7 @@ export default function FullStackDevelopersPage() {
                             <div className={styles.testimonialImage}>
                                 <div className={styles.clientImageWrapper}>
                                     <Image
-                                        src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=100&h=100&fit=crop&crop=face"
+                                        src="/images/user.png"
                                         alt={testimonial.name}
                                         width={100}
                                         height={100}
@@ -852,7 +852,7 @@ export default function FullStackDevelopersPage() {
             <section className={styles.benefitsSection}>
                 <div className={styles.sectionHeader}>
                     <h2 className={styles.sectionTitle}>
-                        Why Hire Full Stack Developers <span className={styles.titleHighlight}>From India?</span>
+                        Why Hire Full Stack Developers <span className={styles.titleHighlight}>From BBMTech?</span>
                     </h2>
                     <p className={styles.sectionDescription}>
                         Hiring full-stack software engineers is the need of the hour for businesses of all sizes.
@@ -1345,9 +1345,7 @@ export default function FullStackDevelopersPage() {
                                 Hire Full-Stack Developers Now
                                 <ArrowRight className={styles.buttonIcon} />
                             </Link>
-                            <Link href="/pricing" className={styles.ctaSecondary}>
-                                View Pricing Plans
-                            </Link>
+                            
                             {/* <Link href="tel:+18001234567" className={styles.ctaTertiary}>
                                 <Phone size={16} />
                                 Call Us Now

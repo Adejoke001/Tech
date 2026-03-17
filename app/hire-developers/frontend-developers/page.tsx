@@ -535,7 +535,7 @@ export default function FrontendDevelopersPage() {
               <div className={styles.testimonialImage}>
                 <div className={styles.clientImageWrapper}>
                   <Image
-                    src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=100&h=100&fit=crop&crop=face"
+                    src="/images/user.png"
                     alt={testimonial.name}
                     width={100}
                     height={100}

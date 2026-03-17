@@ -311,7 +311,7 @@ export default function ModernizationPage() {
                         <div className={styles.testimonialCard}>
                             <div className={styles.testimonialImage}>
                                 <Image
-                                    src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=100&h=100&fit=crop&crop=face"
+                                    src="/images/user.png"
                                     alt={testimonial.name}
                                     width={60}
                                     height={60}

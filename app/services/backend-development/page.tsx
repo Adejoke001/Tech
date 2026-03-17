@@ -370,7 +370,7 @@ export default function BackendPage() {
                         <div className={styles.testimonialCard}>
                             <div className={styles.testimonialImage}>
                                 <Image
-                                    src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=100&h=100&fit=crop&crop=face"
+                                    src="/images/user.png"
                                     alt={testimonial.name}
                                     width={60}
                                     height={60}

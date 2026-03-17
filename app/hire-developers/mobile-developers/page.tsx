@@ -618,32 +618,14 @@ export default function MobileAppDevelopersPage() {
                 envision
               </p>
               <p className={styles.heroDescription}>
-                Work with India&apos;s top mobile developers, handpicked for
+                Work with Nigeria&apos;s top mobile developers, handpicked for
                 quality and 5+ years of experience. Launch with confidence using
                 our proven mobile development expertise across iOS, Android, and
                 cross-platform solutions.
               </p>
             </motion.div>
 
-            {/* <div className={styles.benefitsGrid}>
-                            <div className={styles.benefitItem}>
-                                <CheckCircle size={18} />
-                                <span>Proof-of-work timesheets (Workstatus™)</span>
-                            </div>
-                            <div className={styles.benefitItem}>
-                                <Shield size={18} />
-                                <span>Full IP ownership + NDA protection</span>
-                            </div>
-                            <div className={styles.benefitItem}>
-                                <Smartphone size={18} />
-                                <span>Flexible contracts with transparent pricing</span>
-                            </div>
-                            <div className={styles.benefitItem}>
-                                <Zap size={18} />
-                                <span>7-day risk-free trial and zero hiring overhead</span>
-                            </div>
-                        </div> */}
-
+           
             <motion.div
               initial={{ opacity: 0, y: 10 }}
               animate={{ opacity: 1, y: 0 }}
@@ -669,7 +651,7 @@ export default function MobileAppDevelopersPage() {
               <div className={styles.testimonialImage}>
                 <div className={styles.clientImageWrapper}>
                   <Image
-                    src="https://images.unsplash.com/photo-1580489944761-15a19d654956?w=100&h=100&fit=crop&crop=face"
+                    src="/images/user.png"
                     alt={testimonial.name}
                     width={100}
                     height={100}
@@ -1053,8 +1035,8 @@ export default function MobileAppDevelopersPage() {
             <span className={styles.titleHighlight}>From BBMTech?</span>
           </h2>
           <p className={styles.sectionDescription}>
-            ValueCoders provides remote mobile app developers for all your
-            mobile app development requirements. Hiring Indian app developers
+            BBMTech provides remote mobile app developers for all your
+            mobile app development requirements. Hiring Nigeria app developers
             from BBMTech is a 100% transparent process.
           </p>
         </div>
@@ -1260,11 +1242,8 @@ export default function MobileAppDevelopersPage() {
             </p>
             <div className={styles.ctaButtons}>
               <Link href="/contact" className={styles.ctaPrimary}>
-                Hire Mobile Developers Now
+                Hire Mobile Developers
                 <ArrowRight className={styles.buttonIcon} />
-              </Link>
-              <Link href="/pricing" className={styles.ctaSecondary}>
-                View Pricing Plans
               </Link>
             </div>
           </div>

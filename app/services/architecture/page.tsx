@@ -221,13 +221,13 @@ export default function SaasArchitecturePage() {
             name: 'James Kelly',
             role: 'Co-founder, Miracle Choice',
             content: 'The Project managers took a lot of time to understand our project before coming up with a contract or what they thought we needed. I had the reassurance from the start that the project managers knew what type of project I wanted and what my needs were. That is reassuring, and that\'s why we chose BBMTech.',
-            image: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=100&h=100&fit=crop&crop=face'
+            image: '/images/user.png'
         },
         {
             name: 'Judith Mueller',
             role: 'Executive Director, Mueller Health Foundation',
             content: 'The team at BBMTech has provided us with exceptional services in creating this one-of-a-kind portal, and it has been a fantastic experience. I was particularly impressed by how efficiently and quickly the team always came up with creative solutions to provide us with all the functionalities within the portal we had requested.',
-            image: 'https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=100&h=100&fit=crop&crop=face'
+            image: '/images/user.png'
         },
         {
             name: 'Kris Bruynson',
@@ -345,7 +345,7 @@ export default function SaasArchitecturePage() {
                         <div className={styles.testimonialCard}>
                             <div className={styles.testimonialImage}>
                                 <Image
-                                    src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=100&h=100&fit=crop&crop=face"
+                                    src="/images/user.png"
                                     alt={testimonial.name}
                                     width={60}
                                     height={60}

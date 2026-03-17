@@ -493,7 +493,7 @@ export default function MachineLearningPage() {
                     transition={{ duration: 0.3 }}
                   >
                     <Image
-                      src="/images/testimonial.jpg"
+                      src="/images/user.png"
                       alt="Sarah - Client"
                       width={100}
                       height={100}

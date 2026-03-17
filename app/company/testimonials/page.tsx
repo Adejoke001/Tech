@@ -30,7 +30,7 @@ export default function TestimonialsPage() {
             name: 'Mohammed Mirza',
             role: 'Director, LOCALMASTERCHEFS LTD',
             hasVideo: true,
-            videoThumb: 'https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?w=400&h=300&fit=crop',
+            videoThumb: '/images/user.png',
         },
         {
             id: 2,
@@ -45,7 +45,7 @@ export default function TestimonialsPage() {
             name: 'Kris Bruynson',
             role: 'Director, Storloft',
             hasVideo: true,
-            videoThumb: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&h=300&fit=crop',
+            videoThumb: '/images/user.png',
         },
         {
             id: 4,
@@ -60,7 +60,7 @@ export default function TestimonialsPage() {
             name: 'James Kelly',
             role: 'Co-founder, Miracle Choice',
             hasVideo: true,
-            videoThumb: 'https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=400&h=300&fit=crop',
+            videoThumb: '/images/user.png',
         },
         {
             id: 6,
@@ -75,7 +75,7 @@ export default function TestimonialsPage() {
             name: 'Fahad',
             role: 'Resolute Dynamics',
             hasVideo: true,
-            videoThumb: 'https://images.unsplash.com/photo-1560250097-0b93528c311a?w=400&h=300&fit=crop',
+            videoThumb: '/images/user.png',
         },
         {
             id: 8,
@@ -97,7 +97,7 @@ export default function TestimonialsPage() {
             name: 'Michelle Fno',
             role: 'Founder/CEO, Navor LLC',
             hasVideo: true,
-            videoThumb: 'https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?w=400&h=300&fit=crop',
+            videoThumb: '/images/user.png',
         },
         {
             id: 11,
@@ -140,7 +140,7 @@ export default function TestimonialsPage() {
             name: 'Andrew North',
             role: 'Managing Director, BlueLane Holdings Ltd.',
             hasVideo: true,
-            videoThumb: 'https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?w=400&h=300&fit=crop',
+            videoThumb: '/images/user.png',
         },
         {
             id: 17,
@@ -155,7 +155,7 @@ export default function TestimonialsPage() {
             name: 'Gerald van Kooten',
             role: 'Partner at Anders Invest B.V.',
             hasVideo: true,
-            videoThumb: 'https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?w=400&h=300&fit=crop',
+            videoThumb: '/images/user.png',
         },
         {
             id: 19,

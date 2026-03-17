@@ -491,25 +491,25 @@ const BoxIcon = (props: SVGProps<SVGSVGElement>) => (
             name: 'James Kelly',
             role: 'Co-founder, Miracle Choice',
             content: 'The Project managers took a lot of time to understand our project before coming up with a contract or what they thought we needed. I had the reassurance from the start that the project managers knew what type of project I wanted and what my needs were.',
-            image: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=100&h=100&fit=crop&crop=face'
+            image: '/images/user.png'
         },
         {
             name: 'Samantha',
             role: 'CTO, TechFlow Innovations',
             content: 'A seamless experience from start to finish. Their attention to detail is unmatched! From ISV product strategy to white label delivery and API integration – they handled it all.',
-            image: 'https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=100&h=100&fit=crop&crop=face'
+            image: '/images/user.png'
         },
         {
-            name: 'Kris Bruynson',
+            name: 'Chris Bruynson',
             role: 'Director, Storloft',
-            content: 'ValueCoders had great technical expertise, both in front-end and back-end development. Other project management was well organized. Account management was friendly and always available. I would give ValueCoders ten out of ten!',
-            image: 'https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=100&h=100&fit=crop&crop=face'
+            content: 'BBMTech had great technical expertise, both in front-end and back-end development. Other project management was well organized. Account management was friendly and always available. I would give BBMTech ten out of ten!',
+            image: '/images/user.png'
         },
         {
             name: 'Judith Mueller',
             role: 'Executive Director, Mueller Health Foundation',
-            content: 'The team at ValueCoders has provided us with exceptional services in creating this one-of-a-kind portal, and it has been a fantastic experience. I was particularly impressed by how efficiently and quickly the team always came up with creative solutions.',
-            image: 'https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=100&h=100&fit=crop&crop=face'
+            content: 'The team at BBMTech has provided us with exceptional services in creating this one-of-a-kind portal, and it has been a fantastic experience. I was particularly impressed by how efficiently and quickly the team always came up with creative solutions.',
+            image: '/images/user.png'
         }
     ];
 
@@ -622,7 +622,7 @@ const BoxIcon = (props: SVGProps<SVGSVGElement>) => (
                             <div className={styles.testimonialImage}>
                                 <div className={styles.clientImageWrapper}>
                                     <Image
-                                        src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=100&h=100&fit=crop&crop=face"
+                                        src="/images/user.png"
                                         alt={testimonial.name}
                                         width={100}
                                         height={100}
@@ -1104,7 +1104,7 @@ const BoxIcon = (props: SVGProps<SVGSVGElement>) => (
                                 Why Partner with Us for <span className={styles.titleHighlight}>White Label</span>?
                             </h2>
                             <p className={styles.sectionDescription}>
-                                ValueCoders: A perfect fit for white label software design & development services.
+                                BBMTech: A perfect fit for white label software design & development services.
                             </p>
                         </div>
 
@@ -1353,7 +1353,7 @@ const BoxIcon = (props: SVGProps<SVGSVGElement>) => (
                             Elevate Your <span className={styles.titleHighlight}>ISV Journey</span> with Our Expertise
                         </h2>
                         <p className={styles.sectionDescription} style={{ color: 'rgba(255,255,255,0.9)' }}>
-                            ValueCoders stands out as a trusted name in software development, specializing in catering to Independent Software Vendors (ISVs), product companies, and digital agencies.
+                            BBMTech stands out as a trusted name in software development, specializing in catering to Independent Software Vendors (ISVs), product companies, and digital agencies.
                         </p>
                     </div>
 

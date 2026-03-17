@@ -366,7 +366,7 @@ export default function DataEngineeringAnalyticsPage() {
                             <div className={styles.testimonialHeader}>
                                 <div className={styles.testimonialImage}>
                                     <Image
-                                        src="https://images.unsplash.com/photo-1582896911227-c966f6e7fb93?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTB8fG9mZmljZSUyMHdvbWFufGVufDB8fDB8fHww"
+                                        src="/images/user.png"
                                         alt={testimonial.name}
                                         fill
                                         className={styles.testimonialImg}

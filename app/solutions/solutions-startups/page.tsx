@@ -72,19 +72,19 @@ export default function StartupsSolutionPage() {
             ],
             details: 'Scale your team in days, not months'
         },
-        {
-            id: 4,
-            title: 'Go-to-Market Support',
-            description: 'Launch products efficiently, position effectively, and capture early traction with smart growth strategies.',
-            icon: <TargetIcon className={styles.expertiseIcon} />,
-            color: '#F59E0B',
-            features: [
-                'Market analysis & positioning',
-                'Customer acquisition strategies',
-                'Growth hacking initiatives'
-            ],
-            details: 'From launch to traction'
-        },
+        // {
+        //     id: 4,
+        //     title: 'Go-to-Market Support',
+        //     description: 'Launch products efficiently, position effectively, and capture early traction with smart growth strategies.',
+        //     icon: <TargetIcon className={styles.expertiseIcon} />,
+        //     color: '#F59E0B',
+        //     features: [
+        //         'Market analysis & positioning',
+        //         'Customer acquisition strategies',
+        //         'Growth hacking initiatives'
+        //     ],
+        //     details: 'From launch to traction'
+        // },
         {
             id: 5,
             title: 'Operations & Process Optimization',
@@ -239,7 +239,7 @@ export default function StartupsSolutionPage() {
 
     // ----- STARTUP PARTNER HIGHLIGHTS (from reference) -----
     const partnerHighlights = [
-        { text: 'India’s Top 1% Software Talent', icon: <Award />, color: '#3B82F6' },
+        { text: 'Nigeria’s Top 1% Software Talent', icon: <Award />, color: '#3B82F6' },
         { text: 'Investor-Ready Products', icon: <DollarSign />, color: '#10B981' },
         { text: 'From MVP to Market Leader', icon: <Rocket />, color: '#8B5CF6' },
         { text: 'Growth-Centric Strategy', icon: <Target />, color: '#F59E0B' },
@@ -261,25 +261,25 @@ export default function StartupsSolutionPage() {
             name: 'James Kelly',
             role: 'Co-founder, Miracle Choice',
             content: 'The Project managers took a lot of time to understand our project before coming up with a contract or what they thought we needed. I had the reassurance from the start that the project managers knew what type of project I wanted and what my needs were. That is reassuring, and that\'s why we chose BBMTech.',
-            image: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=100&h=100&fit=crop&crop=face'
+            image: '/images/user.png'
         },
         {
             name: 'Judith Mueller',
             role: 'Executive Director, Mueller Health Foundation',
             content: 'The team at BBMTech has provided us with exceptional services in creating this one-of-a-kind portal, and it has been a fantastic experience. I was particularly impressed by how efficiently and quickly the team always came up with creative solutions to provide us with all the functionalities within the portal we had requested.',
-            image: 'https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=100&h=100&fit=crop&crop=face'
+            image: '/images/user.png'
         },
         {
             name: 'Kris Bruynson',
             role: 'Director, Storloft',
             content: 'BBMTech had great technical expertise, both in front-end and back-end development. Other project management was well organized. Account management was friendly and always available. I would give BBMTech ten out of ten!',
-            image: 'https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=100&h=100&fit=crop&crop=face'
+            image: '/images/user.png'
         },
         {
             name: 'Mohammed Mirza',
             role: 'Director, LOCALMASTERCHEFS LTD',
             content: 'Huge thank you to BBMTech; they have been a massive help in enabling us to start developing our project within a few weeks, so it\'s been great! There have been two small bumps in the road, but overall, It\'s been a fantastic service. I have already recommended it to one of my friends.',
-            image: 'https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?w=100&h=100&fit=crop&crop=face'
+            image: '/images/user.png'
         }
     ];
 
@@ -397,7 +397,7 @@ export default function StartupsSolutionPage() {
                             <div className={styles.testimonialImage}>
                                 <div className={styles.clientImageWrapper}>
                                     <Image
-                                        src="https://images.unsplash.com/photo-1615109398623-88346a601842?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8bWFufGVufDB8fDB8fHww"
+                                        src="/images/user.png"
                                         alt={testimonial.name}
                                         width={100}
                                         height={100}

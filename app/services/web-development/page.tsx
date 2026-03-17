@@ -18,7 +18,7 @@ export default function WebDevelopmentPage() {
 
     // ----- HERO TESTIMONIAL -----
     const testimonial = {
-        name: 'David Miller',
+        name: 'Rachael Ajayi',
         role: 'CTO, TechFlow Solutions',
         content: 'BBMTech built our custom web application from the ground up. Their agile process, clear communication, and technical excellence delivered a platform that scaled effortlessly with our business.',
         rating: 5,
@@ -349,7 +349,7 @@ export default function WebDevelopmentPage() {
                         <div className={styles.testimonialCard}>
                             <div className={styles.testimonialImage}>
                                 <Image
-                                    src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=100&h=100&fit=crop&crop=face"
+                                    src="/images/user.png"
                                     alt={testimonial.name}
                                     width={60}
                                     height={60}

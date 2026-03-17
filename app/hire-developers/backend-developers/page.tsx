@@ -579,7 +579,7 @@ export default function BackendDevelopersPage() {
               <div className={styles.testimonialImage}>
                 <div className={styles.clientImageWrapper}>
                   <Image
-                    src="https://images.unsplash.com/photo-1664575602554-2087b04935a5?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8d29tYW58ZW58MHx8MHx8fDA%3D"
+                    src="/images/user.png"
                     alt={testimonial.name}
                     width={100}
                     height={100}
