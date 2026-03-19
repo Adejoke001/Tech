@@ -161,7 +161,7 @@ export default function BlogsPage() {
             readTime: '14 min read',
             category: 'Software Engineering',
             tags: ['Web3', 'Blockchain', 'Ethereum'],
-            image: 'https://images.unsplash.com/photo-1639322537228-f71034b3c1c5?auto=format&fit=crop&w=800&q=80',
+            image: 'https://images.unsplash.com/photo-1546146830-2cca9512c68e?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8ZGV2ZWxvcGVyJ3MlMjBndWlkZXxlbnwwfHwwfHx8MA%3D%3D',
             slug: 'web3-blockchain-guide',
             color: '#EC4899',
         },

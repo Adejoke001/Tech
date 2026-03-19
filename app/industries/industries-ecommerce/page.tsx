@@ -420,7 +420,7 @@ export default function ECommercePage() {
   // ============ WHY PARTNER WITH US ============
   const whyPartner = [
     {
-      text: "India’s Top 1% Software Talent",
+      text: "Nigeria’s Top 10% Software Talent",
       icon: <AwardIcon />,
       color: "#3B82F6",
     },

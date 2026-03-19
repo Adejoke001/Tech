@@ -106,7 +106,7 @@ const SoftwareDevelopmentServices = () => {
       "Automate infrastructure management",
       "Improve team collaboration"
     ],
-    link: "/services/clouds-devops-services"
+    link: "/services/cloud-devops-services"
   },
   {
     icon: <Wrench className="w-8 h-8" />,

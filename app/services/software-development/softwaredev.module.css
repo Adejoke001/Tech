@@ -449,6 +449,9 @@
   .clientsGrid {
     gap: 0.6rem;
   }
+  /* .clientLogoImage{
+    display: flex;
+  } */
 }
 
 /* Extra small devices */

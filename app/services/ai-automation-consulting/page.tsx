@@ -399,7 +399,7 @@ export default function AIAutomationConsultingPage() {
   const whyChooseUs = [
     {
       id: 1,
-      title: "Nigeria's Top 1% AI Talent",
+      title: "Nigeria's Top 10% AI Talent",
       description:
         "Access elite AI consultants with proven expertise in cutting-edge technologies.",
       icon: <Award className={styles.chooseIcon} />,

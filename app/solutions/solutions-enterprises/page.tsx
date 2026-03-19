@@ -510,7 +510,7 @@ export default function EnterpriseSolutionPage() {
                             <div className={styles.testimonialImage}>
                                 <div className={styles.clientImageWrapper}>
                                     <Image
-                                        src="/images/avatar10.png"
+                                        src="/images/user.png"
                                         alt={testimonial.name}
                                         width={100}
                                         height={100}

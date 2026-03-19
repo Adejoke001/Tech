@@ -105,7 +105,7 @@ export default function ProductDiscoveryPage() {
 
     // ============ USPS (from URL) ============
     const usps = [
-        { text: "India's Top 1% Software Talent", icon: <Award />, color: '#3B82F6' },
+        { text: "Nigeria's Top 10% Software Talent", icon: <Award />, color: '#3B82F6' },
         { text: 'Trusted by Startups to Fortune 500', icon: <Building2 />, color: '#10B981' },
         { text: 'Idea to Deployment, We Handle All', icon: <Rocket />, color: '#8B5CF6' },
         { text: 'Time-Zone Friendly: Global Presence', icon: <Globe />, color: '#F59E0B' },

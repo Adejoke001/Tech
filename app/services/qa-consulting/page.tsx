@@ -247,7 +247,7 @@ export default function QAStrategyConsultingPage() {
   const whyChooseUs = [
     {
       id: 1,
-      title: "India's Top 1% Software Talent",
+      title: "Nigeria's Top 10% Software Talent",
       description:
         "Access elite QA consultants with proven expertise in cutting-edge testing methodologies.",
       icon: <Award className={styles.chooseIcon} />,

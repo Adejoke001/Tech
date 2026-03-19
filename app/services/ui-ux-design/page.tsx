@@ -363,7 +363,7 @@ export default function UIUXDesignPage() {
     const whyChooseUs = [
         {
             id: 1,
-            title: "Nigeria's Top 1% Design Talent",
+            title: "Nigeria's Top 10% Design Talent",
             description: 'Access elite UI/UX designers with proven expertise in cutting-edge design methodologies and tools.',
             icon: <Award className={styles.chooseIcon} />,
             color: '#60a5fa'

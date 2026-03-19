@@ -1,6 +1,5 @@
 'use client';
 
-
 import Image from 'next/image';
 import Link from 'next/link';
 import { motion } from 'framer-motion';
@@ -40,63 +39,55 @@ export default function AboutPage() {
         },
     ];
 
-    // ----- TEAM MEMBERS (with initials for avatar placeholders) -----
+    // ----- TEAM MEMBERS (with image placeholder) -----
     const teamMembers = [
         {
             name: 'Adebayo Ogunlesi',
             role: 'Founder & CEO',
             bio: 'An entrepreneur at heart with love for technology, Adebayo uniquely blends business analysis, strategy, targeted objectives, and ROI with IT solutions.',
-            initials: 'AO',
-            color: '#3B82F6',
+            image: '/images/user.png', // placeholder image
         },
         {
             name: 'Chidi Okonkwo',
             role: 'VP - Operations',
             bio: 'Chidi oversees BBMTech\'s vast engineering organization, which drives the company\'s core programming.',
-            initials: 'CO',
-            color: '#10B981',
+            image: '/images/user.png',
         },
         {
             name: 'Folake Adeyemi',
             role: 'VP - Digital Marketing',
             bio: 'Folake heads the digital marketing department, where she manages the entire online presence of the company.',
-            initials: 'FA',
-            color: '#8B5CF6',
+            image: '/images/user.png',
         },
         {
             name: 'Emeka Nwachukwu',
             role: 'VP - Human Resource',
             bio: 'Emeka leads the HR team, responsible for the company\'s talent acquisition and culture.',
-            initials: 'EN',
-            color: '#F59E0B',
+            image: '/images/user.png',
         },
         {
             name: 'Ngozi Eze',
             role: 'Head Of Resourcing & Partnerships',
             bio: 'Ngozi is a strategist and digital thought leader who bridges technology and client satisfaction.',
-            initials: 'NE',
-            color: '#EC4899',
+            image: '/images/user.png',
         },
         {
             name: 'Tunde Balogun',
             role: 'Technical Manager',
             bio: 'With a solid technical background, Tunde manages client communication, project management, and deliveries.',
-            initials: 'TB',
-            color: '#06B6D4',
+            image: '/images/user.png',
         },
         {
             name: 'Yemi Adesina',
             role: 'VP - Business Development',
             bio: 'More than 15 years experience of background trading with emerging technologies; helps startups and SMEs build their co-branded teams.',
-            initials: 'YA',
-            color: '#3B82F6',
+            image: '/images/user.png',
         },
         {
             name: 'Kemi Akintola',
             role: 'Sr. IT Executive',
             bio: 'Leads IT Department and responsible for providing high-quality technical services and finding appropriate tools to automate and accomplish jobs timely.',
-            initials: 'KA',
-            color: '#10B981',
+            image: '/images/user.png',
         },
     ];
 
@@ -107,6 +98,7 @@ export default function AboutPage() {
         { year: '2015', event: 'Reached 500+ skilled professionals and launched dedicated development centers.' },
         { year: '2020', event: 'Celebrated 16 years of excellence with 2500+ successful projects delivered globally.' },
         { year: '2024', event: '20+ years of proud existence, trusted by startups to Fortune 500 companies.' },
+        { year: '2026', event: 'Accelerated digital transformation services with AI-driven solutions and strengthening global partnerships.' }
     ];
 
     // ----- AWARDS & RECOGNITIONS (placeholder) -----
@@ -117,49 +109,43 @@ export default function AboutPage() {
         { name: 'Fastest Growing Tech Company', year: '2020', logo: '🚀' },
     ];
 
-    // ----- CLIENT TESTIMONIALS (with initials for avatar placeholders) -----
+    // ----- CLIENT TESTIMONIALS (with image placeholder) -----
     const testimonials = [
         {
             name: 'James Kelly',
             role: 'Co-founder, Miracle Choice',
             content: 'The Project managers took a lot of time to understand project. They knew what quality & output we expected. It\'s reassuring, and that\'s why we chose BBMTech.',
-            initials: 'JK',
-            color: '#3B82F6',
+            image: '/images/user.png',
         },
         {
             name: 'Kris Bruynson',
             role: 'Director, Storloft',
             content: 'BBMTech has technical expertise in front-end and back-end development. Account management was friendly and always available. I would give them ten out of ten!',
-            initials: 'KB',
-            color: '#10B981',
+            image: '/images/user.png',
         },
         {
             name: 'Mohammed Mirza',
             role: 'Director, LOCALMASTERCHEFS LTD',
             content: 'Huge thank you to BBMTech, they have been a massive help in enabling us to start developing our project within a few weeks. I have already recommended it to one of my friends.',
-            initials: 'MM',
-            color: '#8B5CF6',
+            image: '/images/user.png',
         },
         {
             name: 'Mr. Savarni',
             role: 'Founder, sbspco.com',
             content: 'We got an awesome product! I would highly recommend BBMTech to anyone for their professional attitude & customer care.',
-            initials: 'MS',
-            color: '#F59E0B',
+            image: '/images/user.png',
         },
         {
             name: 'Judith Mueller',
             role: 'Executive Director, Mueller Health Foundation',
             content: 'BBMTech provided us with exceptional services in creating a one-of-a-kind portal. Impressed with how efficient and quick the team was.',
-            initials: 'JM',
-            color: '#EC4899',
+            image: '/images/user.png',
         },
         {
             name: 'Jame Thompson',
             role: 'edinstitute.com.au',
             content: 'We outsourced our website development to BBMTech, and we are super happy with their services. Highly recommend them.',
-            initials: 'JT',
-            color: '#06B6D4',
+            image: '/images/user.png',
         },
     ];
 
@@ -220,7 +206,10 @@ export default function AboutPage() {
                                 We help businesses unveil and satisfy demand for digital transformation by providing engineering and consulting services that foster competitiveness and innovation.
                             </p>
                             <div className={styles.missionFounder}>
-                                <div className={styles.founderAvatar} style={{ backgroundColor: '#3B82F6', color: 'white' }}>
+                                {/* <div className={styles.founderAvatar}>
+                                    <Image src="/images/user.png" alt="Adebayo Ogunlesi" width={60} height={60} className={styles.avatarImage} />
+                                </div> */}
+                                  <div className={styles.founderAvatar} style={{ backgroundColor: '#3B82F6', color: 'white' }}>
                                     AO
                                 </div>
                                 <div className={styles.founderInfo}>
@@ -353,8 +342,8 @@ export default function AboutPage() {
                                 transition={{ duration: 0.4, delay: index * 0.05 }}
                                 viewport={{ once: true }}
                             >
-                                <div className={styles.teamAvatar} style={{ backgroundColor: member.color, color: 'white' }}>
-                                    {member.initials}
+                                <div className={styles.teamAvatar}>
+                                    <Image src={member.image} alt={member.name} width={120} height={120} className={styles.teamImage} />
                                 </div>
                                 <h3 className={styles.teamName}>{member.name}</h3>
                                 <p className={styles.teamRole}>{member.role}</p>
@@ -407,8 +396,8 @@ export default function AboutPage() {
                                 viewport={{ once: true }}
                             >
                                 <div className={styles.testimonialHeader}>
-                                    <div className={styles.testimonialAvatar} style={{ backgroundColor: testimonial.color, color: 'white' }}>
-                                        {testimonial.initials}
+                                    <div className={styles.testimonialAvatar}>
+                                        <Image src={testimonial.image} alt={testimonial.name} width={50} height={50} className={styles.testimonialImage} />
                                     </div>
                                     <div>
                                         <h4 className={styles.testimonialName}>{testimonial.name}</h4>
@@ -434,7 +423,6 @@ export default function AboutPage() {
                             <Link href="/contact" className={styles.ctaPrimary}>
                                 Start a Conversation <ArrowRight size={18} />
                             </Link>
-                            
                         </div>
                     </div>
                 </div>

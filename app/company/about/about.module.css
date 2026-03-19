@@ -260,6 +260,13 @@
     object-fit: cover;
 }
 
+.avatarImage, .teamImage, .testimonialImage {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
 /* ===== CORE VALUES SECTION ===== */
 .valuesSection {
     padding: 5rem 0;
