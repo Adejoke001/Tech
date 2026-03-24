@@ -31,7 +31,7 @@ export default function EnterpriseSolutionPage() {
         role: 'CTO, Enterprise Solutions',
         content: 'We needed to automate a lot of our manual IT processes to cut costs. BBMTech delivered exactly that, helping us see real savings within months.',
         rating: 5,
-        project: 'Enterprise Ops Transformation'
+        project: 'Enterprise Transformation'
     };
 
     // ----- ENTERPRISE EXPERTISE AREAS (6 cards – fresh design) -----
@@ -380,26 +380,26 @@ export default function EnterpriseSolutionPage() {
     // ----- CLIENT TESTIMONIALS (unchanged) -----
     const testimonials = [
         {
-            name: 'James Ahmed',
-            role: 'Co-founder, Miracle Choice',
+            name: 'James Kelly',
+            role: 'Data Analyst',
             content: 'The Project managers took a lot of time to understand our project before coming up with a contract or what they thought we needed. I had the reassurance from the start that the project managers knew what type of project I wanted and what my needs were. That is reassuring, and that\'s why we chose BBMTech.',
             image: '/images/user.png'
         },
         {
-            name: 'Judith Augustine',
-            role: 'Executive Director, Mueller Health Foundation',
+            name: 'Judith Mueller',
+            role: 'Executive Director, Judith Foundation',
             content: 'The team at BBMTech has provided us with exceptional services in creating this one-of-a-kind portal, and it has been a fantastic experience. I was particularly impressed by how efficiently and quickly the team always came up with creative solutions to provide us with all the functionalities within the portal we had requested.',
             image: '/images/user.png'
         },
         {
-            name: 'Chris Bright',
-            role: 'Director, Storloft',
+            name: 'chris',
+            role: 'Director, Storgaze',
             content: 'BBMTech had great technical expertise, both in front-end and back-end development. Other project management was well organized. Account management was friendly and always available. I would give BBMTech ten out of ten!',
             image: '/images/user.png'
         },
         {
-            name: 'Mohammed Michelle',
-            role: 'Director, LOCALMASTERCHEFS LTD',
+            name: 'Mohammed Mira',
+            role: 'Director, FashionHint',
             content: 'Huge thank you to BBMTech; they have been a massive help in enabling us to start developing our project within a few weeks, so it\'s been great! There have been two small bumps in the road, but overall, It\'s been a fantastic service. I have already recommended it to one of my friends.',
             image: '/images/user.png'
         }

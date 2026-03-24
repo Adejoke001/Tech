@@ -68,8 +68,8 @@ export default function ECommercePage() {
 
   // ----- HERO TESTIMONIAL (unchanged) -----
   const testimonial = {
-    name: "Michael Chen",
-    role: "CEO, StyleHub Retail",
+    name: "Michael",
+    role: "CEO, Styleglo",
     content:
       "ValueCoders built our multi-vendor E-Commerce platform from scratch – it handles 100,000+ daily transactions with zero downtime. Their deep retail expertise and commitment to quality exceeded our expectations.",
     rating: 5,

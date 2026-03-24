@@ -16,8 +16,8 @@ import styles from './iot.module.css';
 export default function IoTPage() {
     // ----- HERO TESTIMONIAL -----
     const testimonial = {
-        name: 'Michael Chen',
-        role: 'CTO, SmartFactory Inc.',
+        name: 'Michael',
+        role: 'CTO, SmartFact',
         content: 'BBMTech built our industrial IoT platform from the ground up. We now monitor 10,000+ sensors in real time, reducing downtime by 40%. Their expertise in edge computing and device management is outstanding.',
         rating: 5,
         project: 'Industrial IoT Platform'

@@ -1,377 +1,54 @@
 'use client';
 
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
 import { motion } from 'framer-motion';
 import {
     ArrowRight, Calendar, User, Clock, Tag,
-    Search, Send, Download,
+    Search, Send, Download, X,
 } from 'lucide-react';
 import styles from './blogs.module.css';
+import { featuredPost, allPosts, BlogPost } from '@/data/bbmtechBlogPosts';
 
 export default function BlogsPage() {
     const [searchQuery, setSearchQuery] = useState('');
     const [email, setEmail] = useState('');
     const [downloadEmail, setDownloadEmail] = useState('');
     const [downloadName, setDownloadName] = useState('');
+    const [modalPost, setModalPost] = useState<BlogPost | null>(null);
+    const [selectedTag, setSelectedTag] = useState<string | null>(null);
+    const [selectedCategory, setSelectedCategory] = useState<string | null>(null);
+    const [visiblePostsCount, setVisiblePostsCount] = useState(6);
+    const POSTS_PER_PAGE = 6;
 
-    // Featured post (as on the reference site)
-    const featuredPost = {
-        id: 'featured-1',
-        title: '10-Step Checklist for Building an MVP That Actually Succeeds',
-        excerpt: 'Most startups fail not because of funding but because they build the wrong product. An MVP (Minimum Viable Product) helps you validate demand, test assumptions, and attract early users without burning through your runway. But building one the wrong way can cost you time, money, and traction.',
-        fullContent: 'This blog gives early-stage founders a practical 10-step checklist to launch a successful MVP. From defining core features to gathering user feedback, it shows you how to build smart, save costs, and impress investors with real traction, without the trial-and-error most startups go through.',
-        author: 'Alex Rivera',
-        role: 'Senior Product Strategist',
-        date: 'Feb 15, 2026',
-        readTime: '8 min read',
-        category: 'Software Engineering',
-        tags: ['MVP', 'Startups', 'Product Development'],
-        image: 'https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=800&q=80',
-        slug: 'mvp-checklist-startups',
-        color: '#10B981',
-    };
+    // Filter posts based on search, tag, and category
+    const filteredPosts = allPosts.filter(post => {
+        const matchesSearch = post.title.toLowerCase().includes(searchQuery.toLowerCase()) ||
+                              post.excerpt.toLowerCase().includes(searchQuery.toLowerCase());
+        const matchesTag = selectedTag ? post.tags.includes(selectedTag) : true;
+        const matchesCategory = selectedCategory ? post.category === selectedCategory : true;
+        return matchesSearch && matchesTag && matchesCategory;
+    });
 
-    // All blog posts (expanded to 24)
-    const allPosts = [
-        {
-            id: 1,
-            title: 'The Rise of WebAssembly: What It Means for Web Development',
-            excerpt: 'WebAssembly is changing how we build for the web. Learn why it matters and how you can leverage it today.',
-            author: 'Alex Rivera',
-            date: 'Feb 18, 2026',
-            readTime: '8 min read',
-            category: 'Software Engineering',
-            tags: ['WebAssembly', 'JavaScript', 'Performance'],
-            image: 'https://images.unsplash.com/photo-1555066931-4365d14bab8c?auto=format&fit=crop&w=800&q=80',
-            slug: 'rise-of-webassembly',
-            color: '#3B82F6',
-        },
-        {
-            id: 2,
-            title: 'Building Scalable Microservices with Kubernetes and Istio',
-            excerpt: 'A practical guide to architecting, deploying, and managing microservices at scale using modern cloud-native tools.',
-            author: 'Priya Kapoor',
-            date: 'Feb 15, 2026',
-            readTime: '12 min read',
-            category: 'Cloud Services',
-            tags: ['Kubernetes', 'Istio', 'Microservices', 'Docker'],
-            image: 'https://images.unsplash.com/photo-1667372393119-3d4c48d07fc9?auto=format&fit=crop&w=800&q=80',
-            slug: 'microservices-kubernetes-istio',
-            color: '#8B5CF6',
-        },
-        {
-            id: 3,
-            title: 'AI-Powered Code Generation: Boon or Bane for Developers?',
-            excerpt: 'With tools like GitHub Copilot and ChatGPT, the development landscape is shifting. We explore the opportunities and challenges.',
-            author: 'David Chen',
-            date: 'Feb 12, 2026',
-            readTime: '10 min read',
-            category: 'AI & Data Solutions',
-            tags: ['AI', 'Machine Learning', 'Productivity'],
-            image: 'https://images.unsplash.com/photo-1677442136019-21780ecad995?auto=format&fit=crop&w=800&q=80',
-            slug: 'ai-code-generation',
-            color: '#F59E0B',
-        },
-        {
-            id: 4,
-            title: 'Mastering SwiftUI: Building Complex Interfaces with Ease',
-            excerpt: 'Dive deep into SwiftUI’s advanced features – from custom layouts to animations and state management.',
-            author: 'Maria Gonzalez',
-            date: 'Feb 10, 2026',
-            readTime: '9 min read',
-            category: 'Application Development',
-            tags: ['SwiftUI', 'iOS', 'Mobile'],
-            image: 'https://images.unsplash.com/photo-1611162617213-7d7a39e9b1d7?auto=format&fit=crop&w=800&q=80',
-            slug: 'mastering-swiftui',
-            color: '#EC4899',
-        },
-        {
-            id: 5,
-            title: 'OWASP Top 10 2025: New Threats and How to Mitigate Them',
-            excerpt: 'The latest OWASP list is here. We break down the most critical web application security risks and offer actionable advice.',
-            author: 'Sarah Johnson',
-            date: 'Feb 8, 2026',
-            readTime: '11 min read',
-            category: 'Software Engineering',
-            tags: ['Security', 'OWASP', 'Best Practices'],
-            image: 'https://images.unsplash.com/photo-1563013544-824ae1b704d3?auto=format&fit=crop&w=800&q=80',
-            slug: 'owasp-top-10-2025',
-            color: '#06B6D4',
-        },
-        {
-            id: 6,
-            title: 'The Future of Cross-Platform Development: Flutter vs. React Native',
-            excerpt: 'An unbiased comparison of the two leading frameworks – performance, ecosystem, developer experience, and when to choose each.',
-            author: 'Michael Brown',
-            date: 'Feb 5, 2026',
-            readTime: '7 min read',
-            category: 'Application Development',
-            tags: ['Flutter', 'React Native', 'Mobile'],
-            image: 'https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?auto=format&fit=crop&w=800&q=80',
-            slug: 'flutter-vs-react-native',
-            color: '#10B981',
-        },
-        {
-            id: 7,
-            title: 'GraphQL vs. REST: Choosing the Right API Strategy',
-            excerpt: 'Both have their strengths. We help you decide based on your project’s needs, team expertise, and long-term goals.',
-            author: 'Emily Wilson',
-            date: 'Feb 2, 2026',
-            readTime: '8 min read',
-            category: 'Software Engineering',
-            tags: ['GraphQL', 'REST', 'API'],
-            image: 'https://images.unsplash.com/photo-1558494949-ef010cbdcc31?auto=format&fit=crop&w=800&q=80',
-            slug: 'graphql-vs-rest',
-            color: '#3B82F6',
-        },
-        {
-            id: 8,
-            title: 'DevOps Metrics That Matter: DORA and SPACE',
-            excerpt: 'Stop measuring vanity metrics. Learn how to track what truly impacts your delivery performance and team health.',
-            author: 'James Smith',
-            date: 'Jan 30, 2026',
-            readTime: '6 min read',
-            category: 'Cloud Services',
-            tags: ['DevOps', 'Metrics', 'DORA'],
-            image: 'https://images.unsplash.com/photo-1461749280684-dccba630e2f6?auto=format&fit=crop&w=800&q=80',
-            slug: 'devops-metrics-dora-space',
-            color: '#F59E0B',
-        },
-        {
-            id: 9,
-            title: 'Building Trustworthy AI: A Guide to Responsible ML',
-            excerpt: 'As AI becomes pervasive, ensuring fairness, transparency, and accountability is no longer optional. Here’s how.',
-            author: 'David Chen',
-            date: 'Jan 28, 2026',
-            readTime: '9 min read',
-            category: 'AI & Data Solutions',
-            tags: ['AI Ethics', 'ML', 'Governance'],
-            image: 'https://images.unsplash.com/photo-1620712943543-bcc4688e7485?auto=format&fit=crop&w=800&q=80',
-            slug: 'responsible-ai-guide',
-            color: '#8B5CF6',
-        },
-        {
-            id: 10,
-            title: 'The Developer’s Guide to Web3 and Blockchain',
-            excerpt: 'Demystifying the technologies behind dApps, smart contracts, and decentralized storage for traditional developers.',
-            author: 'Priya Kapoor',
-            date: 'Jan 25, 2026',
-            readTime: '14 min read',
-            category: 'Software Engineering',
-            tags: ['Web3', 'Blockchain', 'Ethereum'],
-            image: 'https://images.unsplash.com/photo-1546146830-2cca9512c68e?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8ZGV2ZWxvcGVyJ3MlMjBndWlkZXxlbnwwfHwwfHx8MA%3D%3D',
-            slug: 'web3-blockchain-guide',
-            color: '#EC4899',
-        },
-        {
-            id: 11,
-            title: 'Kotlin Multiplatform: Share Code, Not Headaches',
-            excerpt: 'How Kotlin Multiplatform is changing the game for cross-platform development by sharing business logic across iOS and Android.',
-            author: 'Maria Gonzalez',
-            date: 'Jan 22, 2026',
-            readTime: '7 min read',
-            category: 'Application Development',
-            tags: ['Kotlin', 'Mobile', 'Cross-Platform'],
-            image: 'https://images.unsplash.com/photo-1633356122102-3fe601e05bd2?auto=format&fit=crop&w=800&q=80',
-            slug: 'kotlin-multiplatform',
-            color: '#06B6D4',
-        },
-        {
-            id: 12,
-            title: 'Zero Trust Architecture: Moving Beyond the Perimeter',
-            excerpt: 'Why traditional security models fail and how to implement a zero trust strategy in your organization.',
-            author: 'Sarah Johnson',
-            date: 'Jan 20, 2026',
-            readTime: '10 min read',
-            category: 'Software Engineering',
-            tags: ['Zero Trust', 'Security', 'IAM'],
-            image: 'https://images.unsplash.com/photo-1555949963-aa79dcee981c?auto=format&fit=crop&w=800&q=80',
-            slug: 'zero-trust-architecture',
-            color: '#3B82F6',
-        },
-        {
-            id: 13,
-            title: 'The Rise of Edge Computing: Use Cases and Architectures',
-            excerpt: 'Processing data closer to the source unlocks new possibilities. Explore real-world applications and design patterns.',
-            author: 'James Smith',
-            date: 'Jan 18, 2026',
-            readTime: '8 min read',
-            category: 'Cloud Services',
-            tags: ['Edge Computing', 'IoT', 'Latency'],
-            image: 'https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=800&q=80',
-            slug: 'edge-computing-use-cases',
-            color: '#F59E0B',
-        },
-        {
-            id: 14,
-            title: 'Mastering Next.js 15: What’s New and Why It Matters',
-            excerpt: 'The latest version of Next.js brings exciting features. We highlight the key updates and how to use them.',
-            author: 'Alex Rivera',
-            date: 'Jan 15, 2026',
-            readTime: '6 min read',
-            category: 'Software Engineering',
-            tags: ['Next.js', 'React', 'JavaScript'],
-            image: 'https://images.unsplash.com/photo-1555066931-4365d14bab8c?auto=format&fit=crop&w=800&q=80',
-            slug: 'nextjs-15-guide',
-            color: '#8B5CF6',
-        },
-        {
-            id: 15,
-            title: 'Ethical Hacking 101: A Developer’s Introduction to Penetration Testing',
-            excerpt: 'Learn the basics of ethical hacking and how thinking like an attacker can make you a better developer.',
-            author: 'Michael Brown',
-            date: 'Jan 12, 2026',
-            readTime: '9 min read',
-            category: 'Software Engineering',
-            tags: ['Penetration Testing', 'Security', 'Ethical Hacking'],
-            image: 'https://images.unsplash.com/photo-1558494949-ef010cbdcc31?auto=format&fit=crop&w=800&q=80',
-            slug: 'ethical-hacking-101',
-            color: '#10B981',
-        },
-        {
-            id: 16,
-            title: 'From Monolith to Microservices: A Step-by-Step Migration Guide',
-            excerpt: 'Breaking apart a monolith is challenging. We provide a practical roadmap to do it safely and incrementally.',
-            author: 'Emily Wilson',
-            date: 'Jan 10, 2026',
-            readTime: '12 min read',
-            category: 'Cloud Services',
-            tags: ['Microservices', 'Refactoring', 'Architecture'],
-            image: 'https://images.unsplash.com/photo-1667372393119-3d4c48d07fc9?auto=format&fit=crop&w=800&q=80',
-            slug: 'monolith-to-microservices',
-            color: '#EC4899',
-        },
-        {
-            id: 17,
-            title: 'Machine Learning for Developers: Getting Started with TensorFlow.js',
-            excerpt: 'You don’t need a PhD to use ML. We show you how to integrate TensorFlow.js into your web apps with practical examples.',
-            author: 'David Chen',
-            date: 'Jan 8, 2026',
-            readTime: '8 min read',
-            category: 'AI & Data Solutions',
-            tags: ['TensorFlow.js', 'ML', 'JavaScript'],
-            image: 'https://images.unsplash.com/photo-1677442136019-21780ecad995?auto=format&fit=crop&w=800&q=80',
-            slug: 'tensorflowjs-guide',
-            color: '#06B6D4',
-        },
-        {
-            id: 18,
-            title: 'The Ultimate Guide to Code Reviews: Best Practices for Teams',
-            excerpt: 'Code reviews are more than finding bugs. Learn how to make them a positive, effective part of your team culture.',
-            author: 'Priya Kapoor',
-            date: 'Jan 5, 2026',
-            readTime: '7 min read',
-            category: 'Software Engineering',
-            tags: ['Code Review', 'Best Practices', 'Team Culture'],
-            image: 'https://images.unsplash.com/photo-1461749280684-dccba630e2f6?auto=format&fit=crop&w=800&q=80',
-            slug: 'code-review-best-practices',
-            color: '#3B82F6',
-        },
-        // Additional posts (6 more)
-        {
-            id: 19,
-            title: 'Understanding Serverless Architecture: Benefits and Trade-offs',
-            excerpt: 'Serverless is more than just a buzzword. We explore when to use it and when to stick with traditional servers.',
-            author: 'James Smith',
-            date: 'Mar 1, 2026',
-            readTime: '8 min read',
-            category: 'Cloud Services',
-            tags: ['Serverless', 'AWS Lambda', 'Architecture'],
-            image: 'https://images.unsplash.com/photo-1451187580459-43490279c0fa?auto=format&fit=crop&w=800&q=80',
-            slug: 'serverless-architecture-guide',
-            color: '#F59E0B',
-        },
-        {
-            id: 20,
-            title: 'Building Real-Time Applications with WebSockets and Socket.io',
-            excerpt: 'Learn how to add real-time features like chat and live notifications to your web apps.',
-            author: 'Alex Rivera',
-            date: 'Feb 28, 2026',
-            readTime: '7 min read',
-            category: 'Software Engineering',
-            tags: ['WebSockets', 'Socket.io', 'Real-time'],
-            image: 'https://images.unsplash.com/photo-1558494949-ef010cbdcc31?auto=format&fit=crop&w=800&q=80',
-            slug: 'websockets-socketio',
-            color: '#3B82F6',
-        },
-        {
-            id: 21,
-            title: 'A Practical Introduction to CI/CD Pipelines with GitHub Actions',
-            excerpt: 'Automate your build, test, and deployment process using GitHub Actions. A step-by-step guide.',
-            author: 'Priya Kapoor',
-            date: 'Feb 25, 2026',
-            readTime: '9 min read',
-            category: 'Cloud Services',
-            tags: ['CI/CD', 'GitHub Actions', 'DevOps'],
-            image: 'https://images.unsplash.com/photo-1618401471353-b98afee0b2eb?auto=format&fit=crop&w=800&q=80',
-            slug: 'cicd-github-actions',
-            color: '#8B5CF6',
-        },
-        {
-            id: 22,
-            title: 'The Evolution of Frontend Frameworks: From jQuery to Solid',
-            excerpt: 'A look back at how frontend development has evolved and what the future holds.',
-            author: 'Maria Gonzalez',
-            date: 'Feb 22, 2026',
-            readTime: '10 min read',
-            category: 'Software Engineering',
-            tags: ['Frontend', 'JavaScript', 'Frameworks'],
-            image: 'https://images.unsplash.com/photo-1555066931-4365d14bab8c?auto=format&fit=crop&w=800&q=80',
-            slug: 'frontend-frameworks-evolution',
-            color: '#EC4899',
-        },
-        {
-            id: 23,
-            title: 'Data Mesh: A New Paradigm for Data Architecture',
-            excerpt: 'Move beyond monolithic data lakes and embrace domain-oriented decentralized data ownership.',
-            author: 'David Chen',
-            date: 'Feb 20, 2026',
-            readTime: '11 min read',
-            category: 'AI & Data Solutions',
-            tags: ['Data Mesh', 'Data Architecture', 'Big Data'],
-            image: 'https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=800&q=80',
-            slug: 'data-mesh-intro',
-            color: '#06B6D4',
-        },
-        {
-            id: 24,
-            title: 'Securing Your APIs: Best Practices and Common Pitfalls',
-            excerpt: 'APIs are the backbone of modern applications. Learn how to protect them from common attacks.',
-            author: 'Sarah Johnson',
-            date: 'Feb 18, 2026',
-            readTime: '8 min read',
-            category: 'Software Engineering',
-            tags: ['API Security', 'OAuth', 'JWT'],
-            image: 'https://images.unsplash.com/photo-1555949963-aa79dcee981c?auto=format&fit=crop&w=800&q=80',
-            slug: 'api-security-best-practices',
-            color: '#10B981',
-        },
-    ];
+    const handleSearch = () => {
+    // Reset visible posts when searching
+    setVisiblePostsCount(POSTS_PER_PAGE);
+    // Optional: scroll to top of results
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+};
 
-    // Publications for "Featured In"
-    const publications = [
-        { name: 'TechCrunch' },
-        { name: 'Forbes' },
-        { name: 'VentureBeat' },
-        { name: 'Inc.' },
-        { name: 'Entrepreneur' },
-    ];
-
-    // Filter posts based on search
-    const filteredPosts = allPosts.filter(post =>
-        post.title.toLowerCase().includes(searchQuery.toLowerCase()) ||
-        post.excerpt.toLowerCase().includes(searchQuery.toLowerCase())
-    );
+    const displayedPosts = filteredPosts.slice(0, visiblePostsCount);
+    const hasMorePosts = visiblePostsCount < filteredPosts.length;
 
     // Recent posts for the sidebar (latest 5)
     const recentPosts = [...allPosts]
         .sort((a, b) => new Date(b.date).getTime() - new Date(a.date).getTime())
         .slice(0, 5);
 
-    // Popular tags (unique)
+    // Unique tags and categories for filters
     const allTags = Array.from(new Set(allPosts.flatMap(p => p.tags))).slice(0, 12);
+    // const allCategories = Array.from(new Set(allPosts.map(p => p.category)));
 
     const handleSubscribe = (e: React.FormEvent) => {
         e.preventDefault();
@@ -386,9 +63,57 @@ export default function BlogsPage() {
         setDownloadEmail('');
     };
 
+    // Modal handlers
+    const openModal = (post: BlogPost) => {
+        setModalPost(post);
+        document.body.style.overflow = 'hidden';
+    };
+
+    const closeModal = () => {
+        setModalPost(null);
+        document.body.style.overflow = 'auto';
+    };
+
+    useEffect(() => {
+        const handleKeyDown = (e: KeyboardEvent) => {
+            if (e.key === 'Escape') closeModal();
+        };
+        window.addEventListener('keydown', handleKeyDown);
+        return () => window.removeEventListener('keydown', handleKeyDown);
+    }, []);
+
+    // Custom link component that opens modal
+    const BlogLink = ({ post, children, className }: {
+        post: BlogPost;
+        children: React.ReactNode;
+        className?: string;
+    }) => {
+        const handleClick = (e: React.MouseEvent) => {
+            e.preventDefault();
+            openModal(post);
+        };
+        return (
+            <a href={`/blog/${post.slug}`} onClick={handleClick} className={className}>
+                {children}
+            </a>
+        );
+    };
+
+    // Clear filters
+    const clearFilters = () => {
+        setSelectedTag(null);
+        setSelectedCategory(null);
+        setSearchQuery('');
+        setVisiblePostsCount(POSTS_PER_PAGE);
+    };
+
+    const loadMore = () => {
+        setVisiblePostsCount(prev => prev + POSTS_PER_PAGE);
+    };
+
     return (
         <div className={styles.pageWrapper}>
-            {/* ===== HERO SECTION ===== */}
+            {/* Hero section */}
             <section className={styles.heroSection}>
                 <div className={styles.heroBackground}>
                     <Image
@@ -408,79 +133,36 @@ export default function BlogsPage() {
                         transition={{ duration: 0.6 }}
                     >
                         <h1 className={styles.heroTitle}>
-                            Software Innovation <span className={styles.highlight}>Starts Here</span>
+                            BBMtech Insights <span className={styles.highlight}>For Modern Builders</span>
                         </h1>
                         <p className={styles.heroSubtitle}>
-                            Tap into the power of our top 1% software engineers and 675+ digital transformation experts.<br />
-                            Get insights to drive your business forward in today’s competitive landscape.
+                            Practical advice, in‑depth tutorials, and expert perspectives from the BBMtech engineering team.<br />
+                            Stay ahead in software innovation, AI, and cloud architecture.
                         </p>
                     </motion.div>
                 </div>
             </section>
 
-            {/* ===== FEATURED IN SECTION ===== */}
-            <section className={styles.featuredInSection}>
-                <div className={styles.container}>
-                    <p className={styles.featuredInLabel}>Featured In</p>
-                    <div className={styles.featuredInLogos}>
-                        {publications.map((pub, idx) => (
-                            <div key={idx} className={styles.featuredInLogo}>
-                                <span className={styles.logoPlaceholder}>{pub.name}</span>
-                            </div>
-                        ))}
-                    </div>
-                </div>
-            </section>
-
-            {/* ===== MAIN LAYOUT (SIDEBAR + CONTENT) ===== */}
+            {/* Main layout */}
             <div className={styles.mainLayout}>
-                {/* SIDEBAR */}
                 <aside className={styles.sidebar}>
-                    {/* Search */}
-                    <div className={styles.sidebarWidget}>
-                        <h3 className={styles.widgetTitle}>Search</h3>
-                        <div className={styles.searchBox}>
-                            <input
-                                type="text"
-                                placeholder="Search articles..."
-                                value={searchQuery}
-                                onChange={(e) => setSearchQuery(e.target.value)}
-                                className={styles.searchInput}
-                            />
-                            <Search size={18} className={styles.searchIcon} />
-                        </div>
-                    </div>
-
-                    {/* AI & Data Solutions category */}
-                    <div className={styles.sidebarWidget}>
-                        <div className={styles.categoryHeader}>
-                            <h3 className={styles.widgetTitle}>AI & Data Solutions</h3>
-                            {/* <Link href="/blog/category/ai-data" className={styles.viewAllLink}>
-                                View All <ArrowRight size={12} />
-                            </Link> */}
-                        </div>
-                        <ul className={styles.categoryMiniList}>
-                            <li><Link href="/blog/tag/ai">AI Solutions</Link></li>
-                            <li><Link href="/blog/tag/data-analytics">Data Analytics</Link></li>
-                            <li><Link href="/blog/tag/cloud">Cloud Services</Link></li>
-                            <li><Link href="/blog/tag/machine-learning">Machine Learning</Link></li>
-                        </ul>
-                    </div>
-
-                    {/* Software Engineering category */}
-                    <div className={styles.sidebarWidget}>
-                        <div className={styles.categoryHeader}>
-                            <h3 className={styles.widgetTitle}>Software Engineering</h3>
-                            {/* <Link href="/blog/category/software-engineering" className={styles.viewAllLink}>
-                                View All <ArrowRight size={12} />
-                            </Link> */}
-                        </div>
-                        <ul className={styles.categoryMiniList}>
-                            <li><Link href="/blog/tag/product-development">Software Product Development</Link></li>
-                            <li><Link href="/blog/tag/app-development">Application Development</Link></li>
-                            <li><Link href="/blog/tag/dedicated-team">Dedicated Team</Link></li>
-                        </ul>
-                    </div>
+                    {/* Search widget */}
+                   <div className={styles.sidebarWidget}>
+    <h3 className={styles.widgetTitle}>Search</h3>
+    <div className={styles.searchBox}>
+        <input
+            type="text"
+            placeholder="Search articles..."
+            value={searchQuery}
+            onChange={(e) => setSearchQuery(e.target.value)}
+            onKeyDown={(e) => e.key === 'Enter' && handleSearch()}
+            className={styles.searchInput}
+        />
+        <button onClick={handleSearch} className={styles.searchButton}>
+            <Search size={18} />
+        </button>
+    </div>
+</div>
 
                     {/* Recent Posts */}
                     <div className={styles.sidebarWidget}>
@@ -488,10 +170,10 @@ export default function BlogsPage() {
                         <ul className={styles.recentList}>
                             {recentPosts.map(post => (
                                 <li key={post.id} className={styles.recentItem}>
-                                    <Link href={`/blog/${post.slug}`} className={styles.recentLink}>
+                                    <BlogLink post={post} className={styles.recentLink}>
                                         <span className={styles.recentTitle}>{post.title}</span>
                                         <span className={styles.recentDate}>{post.date}</span>
-                                    </Link>
+                                    </BlogLink>
                                 </li>
                             ))}
                         </ul>
@@ -502,9 +184,13 @@ export default function BlogsPage() {
                         <h3 className={styles.widgetTitle}>Popular Tags</h3>
                         <div className={styles.tagCloud}>
                             {allTags.map(tag => (
-                                <Link key={tag} href={`/blog/tag/${tag.toLowerCase()}`} className={styles.tag}>
+                                <button
+                                    key={tag}
+                                    onClick={() => setSelectedTag(tag === selectedTag ? null : tag)}
+                                    className={`${styles.tag} ${selectedTag === tag ? styles.activeTag : ''}`}
+                                >
                                     <Tag size={12} /> {tag}
-                                </Link>
+                                </button>
                             ))}
                         </div>
                     </div>
@@ -513,7 +199,7 @@ export default function BlogsPage() {
                     <div className={styles.sidebarWidget}>
                         <h3 className={styles.widgetTitle}>Subscribe to our blog</h3>
                         <p className={styles.newsletterText}>
-                            Be a part of a thriving community of 10000+ tech enthusiasts and learners.
+                            Be a part of a thriving community of tech enthusiasts and learners.
                         </p>
                         <form onSubmit={handleSubscribe} className={styles.newsletterForm}>
                             <input
@@ -529,11 +215,17 @@ export default function BlogsPage() {
                             </button>
                         </form>
                     </div>
+
+                    {/* Clear filters button (optional) */}
+                    {(selectedTag || selectedCategory || searchQuery) && (
+                        <button onClick={clearFilters} className={styles.clearFiltersButton}>
+                            Clear all filters
+                        </button>
+                    )}
                 </aside>
 
-                {/* MAIN CONTENT */}
                 <main className={styles.mainContent}>
-                    {/* POPULAR POSTS SECTION (as on the reference) */}
+                    {/* Popular Posts Section */}
                     <section className={styles.popularSection}>
                         <h2 className={styles.sectionTitle}>Popular Posts</h2>
 
@@ -552,10 +244,9 @@ export default function BlogsPage() {
                                     {featuredPost.category}
                                 </span>
                                 <h3 className={styles.featuredPostTitle}>
-                                    <Link href={`/blog/${featuredPost.slug}`}>{featuredPost.title}</Link>
+                                    <BlogLink post={featuredPost}>{featuredPost.title}</BlogLink>
                                 </h3>
                                 <p className={styles.featuredPostExcerpt}>{featuredPost.excerpt}</p>
-                                <p className={styles.featuredPostFull}>{featuredPost.fullContent}</p>
                                 <div className={styles.featuredPostMeta}>
                                     <span className={styles.metaItem}>
                                         <Calendar size={14} /> {featuredPost.date}
@@ -568,12 +259,9 @@ export default function BlogsPage() {
                                     </span>
                                 </div>
                                 <div className={styles.featuredPostCta}>
-                                    <Link href={`/blog/${featuredPost.slug}`} className={styles.readMoreButton}>
+                                    <BlogLink post={featuredPost} className={styles.readMoreButton}>
                                         Read Full Article <ArrowRight size={16} />
-                                    </Link>
-                                    <span className={styles.workstatusTag}>
-                                        Manage teams and projects efficiently with Workstatus.
-                                    </span>
+                                    </BlogLink>
                                 </div>
                             </div>
                         </article>
@@ -595,7 +283,7 @@ export default function BlogsPage() {
                                             {post.category}
                                         </span>
                                         <h4 className={styles.recentCardTitle}>
-                                            <Link href={`/blog/${post.slug}`}>{post.title}</Link>
+                                            <BlogLink post={post}>{post.title}</BlogLink>
                                         </h4>
                                         <p className={styles.recentCardExcerpt}>{post.excerpt}</p>
                                         <div className={styles.recentCardMeta}>
@@ -608,62 +296,75 @@ export default function BlogsPage() {
                         </div>
                     </section>
 
-                    {/* ALL POSTS GRID */}
+                    {/* All Posts Grid */}
                     <section className={styles.postsSection}>
                         <div className={styles.postsHeader}>
                             <h2 className={styles.postsTitle}>Latest Articles</h2>
                             <span className={styles.postsCount}>{filteredPosts.length} posts</span>
                         </div>
 
-                        {filteredPosts.length > 0 ? (
-                            <div className={styles.postsGrid}>
-                                {filteredPosts.map(post => (
-                                    <motion.article
-                                        key={post.id}
-                                        className={styles.postCard}
-                                        initial={{ opacity: 0, y: 20 }}
-                                        whileInView={{ opacity: 1, y: 0 }}
-                                        transition={{ duration: 0.4 }}
-                                        viewport={{ once: true }}
-                                    >
-                                        <div className={styles.postImageWrapper}>
-                                            <Image
-                                                src={post.image}
-                                                alt={post.title}
-                                                fill
-                                                className={styles.postImage}
-                                            />
-                                            <span className={styles.postCategory} style={{ backgroundColor: post.color }}>
-                                                {post.category}
-                                            </span>
-                                        </div>
-                                        <div className={styles.postContent}>
-                                            <h3 className={styles.postTitle}>
-                                                <Link href={`/blog/${post.slug}`}>{post.title}</Link>
-                                            </h3>
-                                            <p className={styles.postExcerpt}>{post.excerpt}</p>
-                                            <div className={styles.postFooter}>
-                                                <span className={styles.postDate}>
-                                                    <Calendar size={14} /> {post.date}
-                                                </span>
-                                                <span className={styles.postAuthor}>
-                                                    <User size={14} /> {post.author}
+                        {displayedPosts.length > 0 ? (
+                            <>
+                                <div className={styles.postsGrid}>
+                                    {displayedPosts.map(post => (
+                                        <motion.article
+                                            key={post.id}
+                                            className={styles.postCard}
+                                            initial={{ opacity: 0, y: 20 }}
+                                            whileInView={{ opacity: 1, y: 0 }}
+                                            transition={{ duration: 0.4 }}
+                                            viewport={{ once: true }}
+                                        >
+                                            <div className={styles.postImageWrapper}>
+                                                <Image
+                                                    src={post.image}
+                                                    alt={post.title}
+                                                    fill
+                                                    className={styles.postImage}
+                                                />
+                                                <span className={styles.postCategory} style={{ backgroundColor: post.color }}>
+                                                    {post.category}
                                                 </span>
                                             </div>
-                                            <div className={styles.postTags}>
-                                                {post.tags.slice(0, 2).map(tag => (
-                                                    <Link key={tag} href={`/blog/tag/${tag.toLowerCase()}`} className={styles.postTag}>
-                                                        {tag}
-                                                    </Link>
-                                                ))}
-                                                {post.tags.length > 2 && (
-                                                    <span className={styles.postTag}>+{post.tags.length - 2}</span>
-                                                )}
+                                            <div className={styles.postContent}>
+                                                <h3 className={styles.postTitle}>
+                                                    <BlogLink post={post}>{post.title}</BlogLink>
+                                                </h3>
+                                                <p className={styles.postExcerpt}>{post.excerpt}</p>
+                                                <div className={styles.postFooter}>
+                                                    <span className={styles.postDate}>
+                                                        <Calendar size={14} /> {post.date}
+                                                    </span>
+                                                    <span className={styles.postAuthor}>
+                                                        <User size={14} /> {post.author}
+                                                    </span>
+                                                </div>
+                                                <div className={styles.postTags}>
+                                                    {post.tags.slice(0, 2).map(tag => (
+                                                        <button
+                                                            key={tag}
+                                                            onClick={() => setSelectedTag(tag)}
+                                                            className={styles.postTag}
+                                                        >
+                                                            {tag}
+                                                        </button>
+                                                    ))}
+                                                    {post.tags.length > 2 && (
+                                                        <span className={styles.postTag}>+{post.tags.length - 2}</span>
+                                                    )}
+                                                </div>
                                             </div>
-                                        </div>
-                                    </motion.article>
-                                ))}
-                            </div>
+                                        </motion.article>
+                                    ))}
+                                </div>
+                                {hasMorePosts && (
+                                    <div className={styles.loadMoreWrapper}>
+                                        <button onClick={loadMore} className={styles.loadMoreButton}>
+                                            Load More Posts
+                                        </button>
+                                    </div>
+                                )}
+                            </>
                         ) : (
                             <div className={styles.noPosts}>
                                 <p>No posts found matching your criteria.</p>
@@ -673,16 +374,16 @@ export default function BlogsPage() {
                 </main>
             </div>
 
-            {/* ===== E‑GUIDE DOWNLOAD SECTION ===== */}
+            {/* E‑GUIDE DOWNLOAD SECTION */}
             <section className={styles.guideSection}>
                 <div className={styles.container}>
                     <div className={styles.guideGrid}>
                         <div className={styles.guideContent}>
                             <h2 className={styles.guideTitle}>
-                                Get Your Free <span className={styles.highlight}>Software Security Guide</span>
+                                Get Your Free <span className={styles.highlight}>Software Development Guide</span>
                             </h2>
                             <p className={styles.guideDescription}>
-                                Download our step-by-step guide to strengthen security throughout your software development process.
+                                Download our step-by-step guide to building scalable software with best practices.
                             </p>
                             <form onSubmit={handleDownload} className={styles.guideForm}>
                                 <input
@@ -710,7 +411,7 @@ export default function BlogsPage() {
                             <div className={styles.guideImageOverlay}></div>
                             <Image
                                 src="https://images.unsplash.com/photo-1555949963-aa79dcee981c?auto=format&fit=crop&w=800&q=80"
-                                alt="Software Security Guide"
+                                alt="Software Guide"
                                 fill
                                 className={styles.guideImage}
                             />
@@ -719,7 +420,7 @@ export default function BlogsPage() {
                 </div>
             </section>
 
-            {/* ===== FINAL CTA ===== */}
+            {/* FINAL CTA */}
             <section className={styles.finalCtaSection}>
                 <div className={styles.container}>
                     <div className={styles.finalCtaCard}>
@@ -733,6 +434,104 @@ export default function BlogsPage() {
                     </div>
                 </div>
             </section>
+
+            {/* MODAL */}
+            {modalPost && (
+                <div
+                    style={{
+                        position: 'fixed',
+                        top: 0,
+                        left: 0,
+                        right: 0,
+                        bottom: 0,
+                        backgroundColor: 'rgba(0,0,0,0.8)',
+                        zIndex: 1000,
+                        display: 'flex',
+                        alignItems: 'center',
+                        justifyContent: 'center',
+                        padding: '2rem',
+                    }}
+                    onClick={closeModal}
+                >
+                    <div
+                        style={{
+                            backgroundColor: '#fff',
+                            borderRadius: '1rem',
+                            maxWidth: '800px',
+                            width: '100%',
+                            maxHeight: '90vh',
+                            overflowY: 'auto',
+                            position: 'relative',
+                            padding: '2rem',
+                        }}
+                        onClick={(e) => e.stopPropagation()}
+                    >
+                        <button
+                            onClick={closeModal}
+                            style={{
+                                position: 'absolute',
+                                top: '1rem',
+                                right: '1rem',
+                                background: 'transparent',
+                                border: 'none',
+                                cursor: 'pointer',
+                                color: '#666',
+                            }}
+                        >
+                            <X size={24} />
+                        </button>
+
+                        {modalPost.image && (
+                            <div style={{ marginBottom: '1.5rem' }}>
+                                <Image
+                                    src={modalPost.image}
+                                    alt={modalPost.title}
+                                    width={800}
+                                    height={400}
+                                    style={{ borderRadius: '0.75rem', objectFit: 'cover', width: '100%', height: 'auto' }}
+                                />
+                            </div>
+                        )}
+
+                        <div style={{ marginBottom: '1rem' }}>
+                            <span style={{ color: modalPost.color, fontWeight: 600 }}>
+                                {modalPost.category}
+                            </span>
+                        </div>
+
+                        <h2 style={{ fontSize: '1.8rem', marginBottom: '1rem' }}>{modalPost.title}</h2>
+
+                        <div style={{ display: 'flex', gap: '1rem', marginBottom: '1.5rem', color: '#666', fontSize: '0.9rem' }}>
+                            <span><Calendar size={14} style={{ display: 'inline', marginRight: '0.25rem' }} /> {modalPost.date}</span>
+                            <span><User size={14} style={{ display: 'inline', marginRight: '0.25rem' }} /> {modalPost.author}</span>
+                            <span><Clock size={14} style={{ display: 'inline', marginRight: '0.25rem' }} /> {modalPost.readTime}</span>
+                        </div>
+
+                        <div style={{ marginBottom: '1.5rem' }}>
+                            {modalPost.tags?.map((tag: string) => (
+                                <span
+                                    key={tag}
+                                    style={{
+                                        display: 'inline-block',
+                                        backgroundColor: '#f3f4f6',
+                                        padding: '0.25rem 0.75rem',
+                                        borderRadius: '9999px',
+                                        fontSize: '0.75rem',
+                                        marginRight: '0.5rem',
+                                        marginBottom: '0.5rem',
+                                    }}
+                                >
+                                    #{tag}
+                                </span>
+                            ))}
+                        </div>
+
+                        <div style={{ lineHeight: 1.6, color: '#333' }}>
+                            <p>{modalPost.fullContent}</p>
+                        </div>
+                    </div>
+                </div>
+            )}
         </div>
     );
 }

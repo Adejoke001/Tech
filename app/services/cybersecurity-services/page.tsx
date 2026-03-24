@@ -24,11 +24,11 @@ export default function CybersecurityServicesPage() {
 
     // Testimonial matching the enterprise software page layout
     const testimonial = {
-        name: 'Sarah Chen',
-        role: 'CISO, Global Financial Corp',
+        name: 'Damola Alex',
+        role: 'CIS, Finance org.',
         content: 'BBMTech transformed our security posture with their comprehensive governance framework. We saw 40% fewer security incidents within the first quarter.',
         rating: 5,
-        project: 'Enterprise Security Governance'
+        project: 'Enterprise Security Governance',
     };
 
     // Core Cybersecurity Services (expanded from all four pages)
@@ -501,7 +501,7 @@ export default function CybersecurityServicesPage() {
                 <div className={styles.sectionContent}>
                     <p className={styles.trustedLabel}>Trusted by security-conscious organizations worldwide</p>
                     <div className={styles.trustedLogos}>
-                        {['Microsoft', 'IBM Security', 'Cisco', 'Palo Alto', 'Fortinet', 'Check Point'].map((company, idx) => (
+                        {['Microsoft', 'IBM Security', 'Cisco', 'Fortinet', 'Check Point'].map((company, idx) => (
                             <motion.div
                                 key={idx}
                                 className={styles.logoItem}

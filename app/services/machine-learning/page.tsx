@@ -34,8 +34,8 @@ export default function MachineLearningPage() {
 
   // Hero testimonial
   const testimonial = {
-    name: "Sarah Chen",
-    role: "AI Director, TechVision Inc.",
+    name: "Ahmed",
+    role: "Director, VisionHub Inc.",
     content:
       "Their ML team delivered a predictive analytics platform that improved our operational efficiency by 65%. The models have been running flawlessly for over 18 months.",
     rating: 5,

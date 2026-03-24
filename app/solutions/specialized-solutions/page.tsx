@@ -32,7 +32,7 @@ export default function SpecializedSolutionsPage() {
     // ----- HERO TESTIMONIAL -----
     const testimonial = {
         name: 'Samantha',
-        role: 'CTO, TechFlow Innovations',
+        role: 'CTO, Sam Innovations',
         content: 'A seamless experience from start to finish. Their attention to detail is unmatched! From ISV product strategy to white label delivery and API integration – they handled it all.',
         rating: 5,
         project: 'Enterprise Platform Transformation'
@@ -489,26 +489,26 @@ const BoxIcon = (props: SVGProps<SVGSVGElement>) => (
     const testimonials = [
         {
             name: 'James Kelly',
-            role: 'Co-founder, Miracle Choice',
-            content: 'The Project managers took a lot of time to understand our project before coming up with a contract or what they thought we needed. I had the reassurance from the start that the project managers knew what type of project I wanted and what my needs were.',
-            image: '/images/user.png'
-        },
-        {
-            name: 'Samantha',
-            role: 'CTO, TechFlow Innovations',
-            content: 'A seamless experience from start to finish. Their attention to detail is unmatched! From ISV product strategy to white label delivery and API integration – they handled it all.',
-            image: '/images/user.png'
-        },
-        {
-            name: 'Chris Bruynson',
-            role: 'Director, Storloft',
-            content: 'BBMTech had great technical expertise, both in front-end and back-end development. Other project management was well organized. Account management was friendly and always available. I would give BBMTech ten out of ten!',
+            role: 'Data Analyst',
+            content: 'The Project managers took a lot of time to understand our project before coming up with a contract or what they thought we needed. I had the reassurance from the start that the project managers knew what type of project I wanted and what my needs were. That is reassuring, and that\'s why we chose BBMTech.',
             image: '/images/user.png'
         },
         {
             name: 'Judith Mueller',
-            role: 'Executive Director, Mueller Health Foundation',
-            content: 'The team at BBMTech has provided us with exceptional services in creating this one-of-a-kind portal, and it has been a fantastic experience. I was particularly impressed by how efficiently and quickly the team always came up with creative solutions.',
+            role: 'Executive Director, Judith Foundation',
+            content: 'The team at BBMTech has provided us with exceptional services in creating this one-of-a-kind portal, and it has been a fantastic experience. I was particularly impressed by how efficiently and quickly the team always came up with creative solutions to provide us with all the functionalities within the portal we had requested.',
+            image: '/images/user.png'
+        },
+        {
+            name: 'chris',
+            role: 'Director, Storgaze',
+            content: 'BBMTech had great technical expertise, both in front-end and back-end development. Other project management was well organized. Account management was friendly and always available. I would give BBMTech ten out of ten!',
+            image: '/images/user.png'
+        },
+        {
+            name: 'Mohammed Mira',
+            role: 'Director, FashionHint',
+            content: 'Huge thank you to BBMTech; they have been a massive help in enabling us to start developing our project within a few weeks, so it\'s been great! There have been two small bumps in the road, but overall, It\'s been a fantastic service. I have already recommended it to one of my friends.',
             image: '/images/user.png'
         }
     ];

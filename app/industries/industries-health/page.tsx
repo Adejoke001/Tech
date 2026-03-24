@@ -21,9 +21,9 @@ export default function HealthcarePage() {
 
     // ----- HERO TESTIMONIAL -----
     const testimonial = {
-        name: 'Dr. Sarah Chen',
-        role: 'Chief Medical Information Officer, HealthFirst',
-        content: 'ValueCoders built our telemedicine platform from the ground up – it now serves over 200,000 patients across 50 hospitals. Their deep understanding of healthcare regulations and commitment to quality is unmatched.',
+        name: 'Dr. Sarah',
+        role: 'Chief Medical Information Officer',
+        content: 'BBMTech built our telemedicine platform from the ground up – it now serves over 200,000 patients across 50 hospitals. Their deep understanding of healthcare regulations and commitment to quality is unmatched.',
         rating: 5,
         project: 'Enterprise Telemedicine Platform'
     };
@@ -410,7 +410,7 @@ export default function HealthcarePage() {
                             Advanced <span className={styles.titleHighlight}>Technologies</span>
                         </h2>
                         <p className={styles.sectionDescription}>
-                            At ValueCoders, we utilize cutting-edge technologies to deliver innovative custom healthcare software solutions.
+                            At BBMTech, we utilize cutting-edge technologies to deliver innovative custom healthcare software solutions.
                         </p>
                     </div>
                     <div className={styles.techGrid}>
@@ -443,7 +443,7 @@ export default function HealthcarePage() {
                             Our Healthcare <span className={styles.titleHighlight}>IT Services</span>
                         </h2>
                         <p className={styles.sectionDescription}>
-                            As a leading healthcare software development company, ValueCoders specializes in developing medical web apps and solutions that address your challenges.
+                            As a leading healthcare software development company, BBMTech specializes in developing medical web apps and solutions that address your challenges.
                         </p>
                     </div>
                     <div className={styles.servicesGrid}>
@@ -614,7 +614,7 @@ export default function HealthcarePage() {
                     <div className={styles.ctaCard}>
                         <h2 className={styles.ctaTitle}>Improve Patient Care with Intuitive Technology!</h2>
                         <p className={styles.ctaDescription}>
-                            ValueCoders develops user-friendly software for seamless interactions. Let&apos;s discuss your project.
+                            BBMTech develops user-friendly software for seamless interactions. Let&apos;s discuss your project.
                         </p>
                         <div className={styles.ctaButtons}>
                             <Link href="/contact" className={styles.ctaPrimary}>

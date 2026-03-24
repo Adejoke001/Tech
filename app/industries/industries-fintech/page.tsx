@@ -51,7 +51,7 @@ export default function FinTechPage() {
   // ----- HERO TESTIMONIAL -----
   const testimonial = {
     name: "Sarah Chen",
-    role: "CFO, FinScale Capital",
+    role: "CFO, Finorg Capital",
     content:
       "BBMTech delivered a robust loan processing system that handles 50,000+ daily transactions with zero downtime. Their deep FinTech expertise and commitment to security exceeded our expectations.",
     rating: 5,

@@ -26,7 +26,7 @@ export default function QATestersPage() {
     // ----- HERO TESTIMONIAL -----
     const testimonial = {
         name: 'Sarah Chidi',
-        role: 'VP of Engineering, FinScale',
+        role: 'VP of Engineering',
         content: 'BBMTech’s QA engineers integrated seamlessly into our sprints. They caught 40% more edge cases than our previous setup, and our release confidence has never been higher.',
         rating: 5,
         project: 'FinTech Trading Platform'

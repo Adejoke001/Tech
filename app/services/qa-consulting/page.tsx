@@ -33,12 +33,12 @@ export default function QAStrategyConsultingPage() {
   const [openFaq, setOpenFaq] = useState<number | null>(0);
 
   const testimonial = {
-    name: "Jonathan Miller",
-    role: "CTO, FinTech Solutions Inc.",
+    name: "Jonathan Mill",
+    role: "C.O. FinTech",
     content:
       "Outstanding results, clear communication, and a dedicated team. ValueCoders QA consulting transformed our testing, achieving a 95% reduction in bugs and cutting time-to-market by 40%.",
     rating: 5,
-    project: "Enterprise Financial Platform",
+    project: "Financial Platform",
   };
 
   const qaServices = [

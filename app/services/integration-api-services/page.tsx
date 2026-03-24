@@ -25,7 +25,7 @@ export default function ApiDevelopmentPage() {
 
     const testimonial = {
         name: 'John Bright',
-        role: 'CTO, TechFlow Solutions',
+        role: 'Project Manager',
         content: 'Their API development team delivered robust, scalable solutions that perfectly integrated with our existing systems. Exceptional communication and technical expertise.',
         rating: 5,
         project: 'Enterprise API Ecosystem'

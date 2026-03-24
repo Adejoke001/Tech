@@ -21,11 +21,11 @@ export default function UIUXDesignPage() {
     const [hoveredIndustry, setHoveredIndustry] = useState<number | null>(null);
 
     const testimonial = {
-        name: 'Rebecca Chen',
-        role: 'Product Director, TechVision Inc.',
+        name: 'Rebecca Chidi',
+        // role: 'Product Director, TechVision Inc.',
         content: 'They go above and beyond to ensure quality and satisfaction. A true partner in every sense. Their designs increased our user retention by 40%.',
         rating: 5,
-        project: 'Enterprise SaaS Platform Redesign'
+        project: 'Enterprise Platform design'
     };
 
     // UI/UX Design Services (enhanced from reference)

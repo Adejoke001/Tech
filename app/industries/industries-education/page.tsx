@@ -62,7 +62,7 @@ export default function EducationPage() {
     // ----- HERO TESTIMONIAL -----
     const testimonial = {
         name: 'Sarah Johnson',
-        role: 'Director of Learning, EduGlobal',
+        role: 'Director of Learning, EduTech',
         content: 'BBMTech built our custom LMS from the ground up – it now serves 50,000+ students across 20 countries. Their deep understanding of EdTech and commitment to quality is unmatched.',
         rating: 5,
         project: 'Global Learning Platform'

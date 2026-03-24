@@ -23,10 +23,10 @@ export default function EnterpriseSoftwarePage() {
     // Testimonial matching the quality assurance page layout
     const testimonial = {
         name: 'James Anderson',
-        role: 'CIO, Global Manufacturing Corp',
+        // role: 'CIO, Global Manufacturing Corp',
         content: 'Professional, reliable, and results-driven – BBMTech delivered exactly what we needed, on time and within budget. Their enterprise software transformed our operations.',
         rating: 5,
-        project: 'Enterprise Resource Planning System'
+        project: 'Resource Planning System'
     };
 
     // Enterprise Services with individual links (ID 3 has no link)

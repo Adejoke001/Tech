@@ -254,8 +254,8 @@ export default function QualityAssurancePage() {
 
   // Testimonial
   const testimonial = {
-    name: "Michael Rodriguez",
-    role: "CTO, FinTech Solutions Inc.",
+    name: "Michael",
+    role: "C.O. FinTech Inc.",
     content:
       "Their QA team identified critical security vulnerabilities that our internal team missed. The depth of their testing saved us from potential compliance issues.",
     rating: 5,

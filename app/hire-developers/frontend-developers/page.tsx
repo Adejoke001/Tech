@@ -40,8 +40,8 @@ export default function FrontendDevelopersPage() {
 
   // Testimonial matching your page layout
   const testimonial = {
-    name: "Michael Rodriguez",
-    role: "Head of Product, TechScale Inc.",
+    name: "Michael",
+    role: "Head of Product",
     content:
       "The frontend developers from BBMTech delivered pixel-perfect interfaces 50% faster than our estimates. Their expertise in React and performance optimization transformed our user experience.",
     rating: 5,

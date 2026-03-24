@@ -43,7 +43,7 @@ export default function AIAutomationConsultingPage() {
 
   const testimonial = {
     name: "David Wilson",
-    role: "CEO, TechInnovate Corp",
+    role: "CEO, Innovative group",
     content:
       "BBMTech showed us exactly how to use AI solutions to solve our biggest business problems. The guidance was invaluable for our digital transformation.",
     rating: 5,

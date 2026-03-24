@@ -41,8 +41,8 @@ export default function MobileAppDevelopersPage() {
 
   // Testimonial
   const testimonial = {
-    name: "Jessica Chen",
-    role: "Product Director, RetailTech Pro",
+    name: "Jessica",
+    role: "Product Director",
     content:
       "BBMTech's mobile developers delivered a cross-platform app that reduced our development time by 40% while maintaining native-like performance on both iOS and Android.",
     rating: 5,

@@ -23,8 +23,8 @@ export default function FullStackDevelopersPage() {
 
     // Testimonial for full-stack
     const testimonial = {
-        name: 'Michael Rodriguez',
-        role: 'CTO, FinTech Solutions',
+        name: 'Michael',
+        role: 'C.O. FinTech Solutions',
         content: 'BBMTech\'s full-stack team delivered a complete web platform in 4 months that handles 50,000+ daily transactions. Their end-to-end expertise saved us 30% in development costs.',
         rating: 5,
         project: 'Enterprise Banking Platform'

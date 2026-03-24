@@ -25,9 +25,9 @@ export default function MediaPage() {
 
     // ----- HERO TESTIMONIAL -----
     const testimonial = {
-        name: 'David Chen',
-        role: 'CTO, StreamFlix',
-        content: 'ValueCoders built our OTT platform from scratch – it handles millions of daily streams with zero buffering. Their deep media expertise and commitment to quality exceeded our expectations.',
+        name: 'David Mich',
+        role: 'CTO, Streamers',
+        content: 'BBMTech built our OTT platform from scratch – it handles millions of daily streams with zero buffering. Their deep media expertise and commitment to quality exceeded our expectations.',
         rating: 5,
         project: 'OTT Streaming Platform'
     };

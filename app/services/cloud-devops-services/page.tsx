@@ -21,8 +21,8 @@ export default function CloudServicesPage() {
     const [hoveredIndustry, setHoveredIndustry] = useState<number | null>(null);
 
     const testimonial = {
-        name: 'Jonathan Miller',
-        role: 'CTO, TechFlow Solutions',
+        name: 'Jonathan',
+        role: 'CTO, Tech Solutions',
         content: 'Outstanding results, clear communication, and a dedicated team. We\'re extremely satisfied with their IT services.',
         rating: 5,
         project: 'Enterprise Cloud Migration'
