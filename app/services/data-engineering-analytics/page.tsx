@@ -29,7 +29,7 @@ export default function DataEngineeringAnalyticsPage() {
         role: 'Chief Data Officer',
         content: 'Outstanding results, clear communication, and a dedicated team. We\'re extremely satisfied with their data engineering and analytics services.',
         rating: 5,
-        // project: 'Enterprise Data Platform Migration'
+        project: 'Data Migration'
     };
 
     // ===== COMPLETE DATA ENGINEERING SERVICES (From first website) =====
@@ -385,9 +385,9 @@ export default function DataEngineeringAnalyticsPage() {
                             </div>
                             <MessageSquare className={styles.quoteIcon} />
                             <p className={styles.testimonialText}>&quot;{testimonial.content}&quot;</p>
-                            {/* <div className={styles.testimonialProject}>
+                            <div className={styles.testimonialProject}>
                                 <Award size={16} /> {testimonial.project}
-                            </div> */}
+                            </div>
                         </div>
                     </motion.div>
                 </div>

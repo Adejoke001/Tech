@@ -22,7 +22,7 @@ export default function UIUXDesignPage() {
 
     const testimonial = {
         name: 'Rebecca Chidi',
-        // role: 'Product Director, TechVision Inc.',
+        role: 'Product Director.',
         content: 'They go above and beyond to ensure quality and satisfaction. A true partner in every sense. Their designs increased our user retention by 40%.',
         rating: 5,
         project: 'Enterprise Platform design'
