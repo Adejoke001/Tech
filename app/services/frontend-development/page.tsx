@@ -19,7 +19,7 @@ export default function FrontendPage() {
     // ----- HERO TESTIMONIAL -----
     const testimonial = {
         name: 'Samantha',
-        role: 'Product Lead, Creative Studio',
+        role: 'Product Lead',
         content: 'A seamless experience from start to finish. Their attention to detail is unmatched!',
         rating: 5,
         project: 'E-commerce Redesign'

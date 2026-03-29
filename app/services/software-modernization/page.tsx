@@ -17,7 +17,7 @@ export default function ModernizationPage() {
     // ----- HERO TESTIMONIAL -----
     const testimonial = {
         name: 'James',
-        role: 'CTO, FinTech Solutions',
+        role: 'Head of IT',
         content: 'Professional, reliable, and results-driven – they delivered exactly what we needed, on time and within budget.',
         rating: 5,
         project: 'Legacy to Cloud Migration'
@@ -231,24 +231,7 @@ export default function ModernizationPage() {
             image: 'https://images.unsplash.com/photo-1598128558393-70ff21433be0?auto=format&fit=crop&w=800&q=80',
             color: '#8B5CF6'
         },
-        // {
-        //     name: 'Fintech',
-        //     desc: 'Disrupting traditional finance with secure payments, trading platforms, and digital banking.',
-        //     image: 'https://images.unsplash.com/photo-1560472354-b33ff0c44a43?auto=format&fit=crop&w=800&q=80',
-        //     color: '#F59E0B'
-        // },
-        // {
-        //     name: 'Education & eLearning',
-        //     desc: 'Shaping digital learning with LMS, virtual classrooms, and interactive tools.',
-        //     image: 'https://images.unsplash.com/photo-1524178232363-1fb2b075b655?auto=format&fit=crop&w=800&q=80',
-        //     color: '#EC4899'
-        // },
-        // {
-        //     name: 'Banking & Fintech',
-        //     desc: 'Streamlining financial growth with core banking systems and compliance‑ready infrastructure.',
-        //     image: 'https://images.unsplash.com/photo-1551434678-e076c223a692?auto=format&fit=crop&w=800&q=80',
-        //     color: '#06B6D4'
-        // },
+        
     ];
 
     // ============ COMPANY STATS ============

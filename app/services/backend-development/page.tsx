@@ -24,7 +24,7 @@ export default function BackendPage() {
     // ----- HERO TESTIMONIAL -----
     const testimonial = {
         name: 'James',
-        role: 'CTO, FinScale',
+        role: 'CTO, Fintech Startup',
         content: 'Professional, reliable, and results-driven – they delivered exactly what we needed, on time and within budget.',
         rating: 5,
         project: 'Scalable Payment Gateway'

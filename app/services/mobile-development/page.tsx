@@ -309,46 +309,33 @@ export default function MobilePage() {
     const testimonials = [
         {
             name: 'James Kelly',
-            role: 'Co-founder, Miracle Choice',
+            role: 'Data Analyst',
             content: 'The Project managers took a lot of time to understand our project before coming up with a contract or what they thought we needed. I had the reassurance from the start that the project managers knew what type of project I wanted and what my needs were. That is reassuring, and that is why we chose BBMTech.',
             initials: 'JK',
             color: '#3B82F6'
         },
         {
             name: 'Judith Mueller',
-            role: 'Executive Director, Mueller Health Foundation',
+            role: 'Executive Director, Judith Foundation',
             content: 'The team at BBMTech has provided us with exceptional services in creating this one-of-a-kind portal, and it has been a fantastic experience. I was particularly impressed by how efficiently and quickly the team always came up with creative solutions.',
             initials: 'JM',
             color: '#10B981'
         },
         {
-            name: 'Kris Bruynson',
-            role: 'Director, Storloft',
+            name: 'Kay Andrews',
+            role: 'Director of Affairs',
             content: 'BBMTech had great technical expertise, both in front-end and back-end development. Other project management was well organized. Account management was friendly and always available. I would give BBMTech ten out of ten!',
-            initials: 'KB',
+            initials: 'KA',
             color: '#8B5CF6'
         },
         {
-            name: 'Mohammed Mirza',
-            role: 'Director, LOCALMASTERCHEFS LTD',
+            name: 'Mohammed Mira',
+            role: 'Director, FashionHint',
             content: 'Huge thank you to BBMTech; they have been a massive help in enabling us to start developing our project within a few weeks, so it has been great! I have already recommended it to one of my friends.',
             initials: 'MM',
             color: '#F59E0B'
         },
-        {
-            name: 'Mr. Savarni',
-            role: 'Founder, sbspco.com',
-            content: 'We got an awesome product! I would highly recommend BBMTech to anyone for their professional attitude & customer care.',
-            initials: 'MS',
-            color: '#EC4899'
-        },
-        {
-            name: 'Jame Thompson',
-            role: 'edinstitute.com.au',
-            content: 'We outsourced our website development to BBMTech, and we are super happy with their services. Highly recommend them.',
-            initials: 'JT',
-            color: '#06B6D4'
-        },
+        
     ];
 
     // ============ TRUSTED BY ============

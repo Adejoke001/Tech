@@ -608,15 +608,6 @@ export default function ProductDevelopment() {
                   </motion.button>
                 </Link>
 
-                {/* <Link href="/portfolio" className={styles.linkWrapper}>
-                  <motion.button
-                    className={styles.secondaryButton}
-                    whileHover={{ scale: 1.05 }}
-                    whileTap={{ scale: 0.95 }}
-                  >
-                    View Our Portfolio
-                  </motion.button>
-                </Link> */}
               </motion.div>
             </motion.div>
 
