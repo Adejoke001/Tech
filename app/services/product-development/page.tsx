@@ -122,7 +122,7 @@ export default function ProductDevelopment() {
       color: "#10b981",
       link: "/solutions/solutions-startups",
       bgColor: "bg-gradient-to-br from-emerald-50 to-teal-50",
-      ctaText: "Launch Your Startup Idea",
+      ctaText: "Launch Startup Idea",
     },
     {
       title: "Enterprises",
