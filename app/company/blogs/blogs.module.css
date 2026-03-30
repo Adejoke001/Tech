@@ -29,6 +29,47 @@
     line-height: 1.5;
 }
 
+.flexRow {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    width: 100%;
+}
+
+.inputBase {
+    flex: 1 1 auto;
+    min-width: 0;
+    height: 44px;
+    padding: 0.75rem 1rem;
+    border-radius: 9999px;
+    border: 1px solid var(--gray-300);
+    background: var(--white);
+}
+
+.inputBase:focus {
+    outline: none;
+    border-color: var(--primary-blue);
+}
+
+.iconButton {
+    flex: 0 0 44px;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    background: var(--gradient-primary);
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    cursor: pointer;
+    transition: transform 0.2s ease;
+}
+
+.iconButton:hover {
+    transform: scale(1.05);
+}
+
 /* ===== HERO ===== */
 .heroSection {
     position: relative;
