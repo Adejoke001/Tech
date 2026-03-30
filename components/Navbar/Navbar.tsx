@@ -3,6 +3,7 @@
 import { useState } from "react";
 import Link from "next/link";
 import styles from "./navbar.module.css";
+import Image from "next/image";
 
 // Simple icons
 const MenuIcon = () => <span className="text-3xl">☰</span>;
@@ -129,12 +130,21 @@ export default function Navbar() {
     >
       <div className={styles.container}>
         <div className={styles.mainNav}>
-          <Link
+         <Link
             href="/"
-            className={`${styles.logo} ${isNavbarHovered ? styles.logoHovered : ""}`}
+            className={styles.logoLink}
             onClick={closeAll}
           >
-            BBMTech
+            <div className={styles.logoWrapper}>
+              <Image
+                src="/bbm2.png"
+                alt="Company Logo"
+                fill
+                sizes="(max-width: 768px) 100px, (max-width: 1200px) 120px, 140px"
+                className={styles.logoImage}
+                priority
+              />
+            </div>
           </Link>
 
           <div className={styles.desktopMenu}>

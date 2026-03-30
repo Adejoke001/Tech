@@ -8,7 +8,7 @@ import Booking from '@/components/Booking/Booking'
 const inter = Inter({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
-  title: 'Your IT Solutions Company',
+  title: 'BBM Multiconneect Global Technology',
   description: 'Professional IT services and software development',
 }
 

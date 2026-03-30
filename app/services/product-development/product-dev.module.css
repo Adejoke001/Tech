@@ -1,13 +1,4 @@
-/* ===== GLOBAL & CONTAINER ===== */
-.container {
-  max-width: 1400px;
-  margin: 0 auto;
-  padding: 0 2rem;
-  position: relative;
-  z-index: 2;
-}
-
-/* ===== HERO SECTION ===== */
+/* Hero Section with Background Image */
 .heroSection {
   position: relative;
   min-height: 90vh;
@@ -42,6 +33,15 @@
   z-index: 1;
 }
 
+.container {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0 2rem;
+  position: relative;
+  z-index: 2;
+}
+
+/* Hero Grid - Normal flow (hero content first, testimonial second) */
 .heroGrid {
   display: flex;
   flex-direction: column;
@@ -117,6 +117,7 @@
   margin-top: 0.25rem;
 }
 
+/* Hero Buttons - Centered */
 .heroButtons {
   display: flex;
   gap: 1rem;
@@ -126,9 +127,9 @@
 .linkWrapper {
   text-decoration: none;
   color: inherit;
-  display: block;
 }
 
+/* Primary Button - Centered */
 .primaryButton {
   background: linear-gradient(135deg, #10b981 0%, #3b82f6 100%);
   color: white;
@@ -138,7 +139,7 @@
   font-weight: 600;
   border-radius: 8px;
   cursor: pointer;
-  display: inline-flex;
+  display: flex;
   align-items: center;
   justify-content: center;
   gap: 0.5rem;
@@ -151,6 +152,7 @@
   transform: translateY(-2px);
 }
 
+/* Secondary Button - Centered */
 .secondaryButton {
   background: transparent;
   color: white;
@@ -161,7 +163,7 @@
   border-radius: 8px;
   cursor: pointer;
   transition: all 0.3s ease;
-  display: inline-flex;
+  display: flex;
   align-items: center;
   justify-content: center;
 }
@@ -176,6 +178,7 @@
   height: 1.25rem;
 }
 
+/* Hero Testimonial - Smaller and appears below hero content on mobile */
 .heroTestimonial {
   display: flex;
   flex-direction: column;
@@ -185,7 +188,7 @@
 
 @media (max-width: 1023px) {
   .heroTestimonial {
-    order: 2;
+    order: 2; /* Ensures testimonial appears after hero content on mobile */
   }
 }
 
@@ -195,6 +198,7 @@
   }
 }
 
+/* Smaller Testimonial Card */
 .testimonialCard {
   background: rgba(255, 255, 255, 0.95);
   backdrop-filter: blur(10px);
@@ -315,6 +319,7 @@
   height: 0.875rem;
 }
 
+/* Trust Badges - Smaller */
 .trustBadges {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -338,7 +343,7 @@
   font-weight: 500;
 }
 
-/* ===== SECTION COMMON STYLES ===== */
+/* Section Common Styles */
 .sectionHeader {
   text-align: center;
   margin-bottom: 4rem;
@@ -364,7 +369,7 @@
   margin: 0 auto;
 }
 
-/* ===== GROWTH SECTION – FIXED MARGINS & CENTERING (MOBILE ONLY) ===== */
+/* Growth Section - Centered buttons */
 .growthSection {
   padding: 5rem 0;
   background: #f9fafb;
@@ -376,7 +381,6 @@
   gap: 2rem;
   max-width: 1000px;
   margin: 0 auto;
-  width: 100%;
 }
 
 @media (min-width: 768px) {
@@ -395,7 +399,6 @@
   height: 100%;
   display: flex;
   flex-direction: column;
-  margin: 0;
 }
 
 .cardHeader {
@@ -469,6 +472,7 @@
   margin-top: auto;
 }
 
+/* Card Button - Centered */
 .cardButton {
   background: linear-gradient(135deg, #10b981 0%, #3b82f6 100%);
   color: white;
@@ -491,7 +495,7 @@
   box-shadow: 0 8px 25px rgba(16, 185, 129, 0.3);
 }
 
-/* ===== STATS SECTION ===== */
+/* Stats Section - Centered buttons */
 .statsSection {
   padding: 5rem 0;
   background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%);
@@ -578,6 +582,7 @@
   color: #94a3b8;
 }
 
+/* Stats CTA Button - Centered */
 .statsCtaButton {
   background: transparent;
   color: white;
@@ -587,7 +592,7 @@
   font-weight: 600;
   border-radius: 8px;
   cursor: pointer;
-  display: inline-flex;
+  display: flex;
   align-items: center;
   justify-content: center;
   gap: 0.5rem;
@@ -600,7 +605,7 @@
   border-color: rgba(255, 255, 255, 0.3);
 }
 
-/* ===== PROCESS SECTION ===== */
+/* Process Section - Centered buttons */
 .processSection {
   padding: 5rem 0;
   background: #f9fafb;
@@ -680,14 +685,14 @@
   height: 0.875rem;
 }
 
+/* Process CTA - Centered */
 .processCta {
   display: flex;
   justify-content: center;
   margin-top: 3rem;
   width: 100%;
 }
-
-/* ===== ENGINEERING SOLUTIONS SECTION ===== */
+/* Engineering Solutions Section - SIMPLIFIED WITH JS CHECKERBOARD */
 .engineeringSection {
   padding: 3rem 0;
   background: #fff5e6;
@@ -701,6 +706,8 @@
   margin-bottom: 3rem;
 }
 
+
+/* ENGINEERING  CARD STYLES */
 .engineeringCard {
   padding: 1.5rem 1rem;
   position: relative;
@@ -714,6 +721,7 @@
   cursor: pointer;
 }
 
+/* Top border animation */
 .engineeringCard::before {
   content: '';
   position: absolute;
@@ -735,6 +743,7 @@
   box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.1);
 }
 
+/* Icon container */
 .engineeringIconWrapper {
   width: 60px;
   height: 60px;
@@ -757,6 +766,7 @@
   color: white;
 }
 
+/* Title */
 .engineeringName {
   font-size: 1.25rem;
   font-weight: bold;
@@ -769,6 +779,7 @@
   color: #10b981;
 }
 
+/* Description */
 .engineeringDescription {
   color: #6b7280;
   line-height: 1.5;
@@ -776,6 +787,7 @@
   margin-bottom: 1rem;
 }
 
+/* Arrow button */
 .engineeringArrow {
   display: flex;
   align-items: center;
@@ -804,12 +816,78 @@
   color: white;
 }
 
+/* CTA Button */
 .engineeringCta {
   text-align: center;
   margin-top: 2rem;
 }
 
-/* ===== TECH TRENDS SECTION ===== */
+/* Primary Button Styling */
+.primaryButton {
+  background: linear-gradient(135deg, #10b981 0%, #3b82f6 100%);
+  color: white;
+  border: none;
+  padding: 1rem 2rem;
+  font-size: 1rem;
+  font-weight: 600;
+  border-radius: 8px;
+  cursor: pointer;
+  display: inline-flex;
+  align-self: center;
+  justify-self: center;
+  gap: 0.5rem;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 15px rgba(16, 185, 129, 0.3);
+}
+
+.primaryButton:hover {
+  box-shadow: 0 6px 20px rgba(16, 185, 129, 0.4);
+  transform: translateY(-2px);
+}
+
+.buttonIcon {
+  width: 1.25rem;
+  height: 1.25rem;
+}
+
+/* Responsive adjustments */
+@media (max-width: 480px) {
+  .engineeringSection {
+    padding: 1.5rem 0;
+  }
+  
+  .engineeringCard {
+    padding: 1.25rem 0.75rem;
+    min-height: 180px;
+  }
+  
+  .engineeringIconWrapper {
+    width: 50px;
+    height: 50px;
+  }
+  
+  .solutionIcon {
+    width: 1.25rem;
+    height: 1.25rem;
+  }
+  
+  .engineeringName {
+    font-size: 1.125rem;
+  }
+  
+  .engineeringDescription {
+    font-size: 0.8rem;
+  }
+}
+
+/* Link wrapper */
+.linkWrapper {
+  text-decoration: none;
+  color: inherit;
+  display: block;
+}
+
+/* Tech Section - Centered buttons */
 .techSection {
   padding: 5rem 0;
   background: #f9fafb;
@@ -921,11 +999,12 @@
   gap: 0.75rem;
 }
 
+/* Tech CTA - Centered */
 .techCta {
   text-align: center;
 }
 
-/* ===== INDUSTRIES SECTION ===== */
+/* Industries Section - Centered buttons */
 .industriesSection {
   padding: 5rem 0;
   background: white;
@@ -983,6 +1062,7 @@
   margin-bottom: 1.5rem;
 }
 
+/* Expand Button - Centered */
 .expandButton {
   background: transparent;
   color: #10b981;
@@ -1037,6 +1117,7 @@
   margin-top: 0.125rem;
 }
 
+/* Industry CTA Button - Centered */
 .industryCtaButton {
   background: linear-gradient(135deg, #10b981 0%, #3b82f6 100%);
   color: white;
@@ -1059,7 +1140,7 @@
   box-shadow: 0 8px 25px rgba(16, 185, 129, 0.3);
 }
 
-/* ===== FAQ SECTION ===== */
+/* FAQ Section with Toggle - Centered buttons */
 .faqSection {
   padding: 5rem 0;
   background: #f9fafb;
@@ -1145,6 +1226,7 @@
   margin-bottom: 1.5rem;
 }
 
+/* FAQ CTA Button - Centered */
 .faqCtaButton {
   background: transparent;
   color: #10b981;
@@ -1154,7 +1236,7 @@
   font-weight: 600;
   border-radius: 8px;
   cursor: pointer;
-  display: inline-flex;
+  display: flex;
   align-items: center;
   justify-content: center;
   gap: 0.5rem;
@@ -1177,6 +1259,7 @@
   line-height: 1.6;
 }
 
+/* FAQ Buttons - Centered */
 .faqButtons {
   display: flex;
   gap: 1rem;
@@ -1184,58 +1267,131 @@
   flex-wrap: wrap;
 }
 
-/* ===== RESPONSIVE FINE-TUNING (ONLY MOBILE: BUTTON PADDING & MARGINS) ===== */
+/* Responsive Adjustments */
 @media (max-width: 768px) {
-  .container {
-    padding: 0 1rem;
+  .heroTitle {
+    font-size: 2.5rem;
   }
-
-  /* Adjust growth card padding for better spacing on small screens */
-  .growthCard {
-    padding: 1.5rem;
+  
+  .heroSubtitle {
+    font-size: 1.125rem;
+    max-width: 100%;
   }
-
-  /* Reduce button padding on all buttons for small screens */
-  .cardButton,
+  
+  .sectionTitle {
+    font-size: 2rem;
+  }
+  
+  .statsGrid {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+  
+  .statNumber {
+    font-size: 2.5rem;
+  }
+  
+  .heroGrid {
+    grid-template-columns: 1fr;
+  }
+  
+  .heroContent {
+    text-align: center;
+  }
+  
+  .heroButtons {
+    justify-content: center;
+  }
+  
   .primaryButton,
-  .secondaryButton,
-  .statsCtaButton,
-  .industryCtaButton,
-  .faqCtaButton,
-  .processCta .primaryButton,
-  .engineeringCta .primaryButton,
-  .techCta .primaryButton {
-    padding: 0.75rem 1.25rem;
+  .secondaryButton {
+    justify-content: center;
+  }
+  
+  .trustBadges {
+    grid-template-columns: 1fr;
+    max-width: 280px;
+  }
+
+  .engineeringGrid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1px;
+  }
+  
+  .engineeringCard {
+    padding: 1.25rem;
+    min-height: 160px;
+  }
+  
+  .engineeringIconWrapper {
+    width: 2.5rem;
+    height: 2.5rem;
+  }
+  
+  .solutionIcon {
+    width: 1.25rem;
+    height: 1.25rem;
+  }
+  
+  .engineeringName {
     font-size: 0.9rem;
   }
-
-  /* Ensure the growth grid remains centered with equal margins */
-  .growthGrid {
-    gap: 1.5rem;
+  
+  .engineeringDescription {
+    font-size: 0.7rem;
   }
 }
 
 @media (max-width: 480px) {
-  .container {
-    padding: 0 0.75rem;
+  .heroTitle {
+    font-size: 2rem;
   }
-
-  .growthCard {
-    padding: 1.25rem;
+  
+  .heroSubtitle {
+    font-size: 1rem;
   }
-
-  .growthGrid {
-    gap: 1rem;
+  
+  .heroButtons {
+    flex-direction: column;
+    width: 100%;
   }
-
-  /* Further reduce button padding for very small screens */
-  .cardButton,
+  
   .primaryButton,
-  .secondaryButton,
-  .statsCtaButton,
-  .industryCtaButton,
-  .faqCtaButton {
-    padding: 0.6rem 1rem;
-    font-size: 0.85rem;
+  .secondaryButton {
+    width: 100%;
+  }
+  
+  .sectionTitle {
+    font-size: 1.75rem;
+  }
+  
+  .processGrid {
+    grid-template-columns: 1fr;
+  }
+  
+  .engineeringGrid {
+    grid-template-columns: 1fr;
+  }
+  
+  .engineeringCard {
+    padding: 1rem;
+    min-height: 140px;
+  }
+  
+  .techGrid {
+    grid-template-columns: 1fr;
+  }
+  
+  .industriesGrid {
+    grid-template-columns: 1fr;
+  }
+  
+  .faqButtons {
+    flex-direction: column;
+  }
+  
+  .faqButtons button {
+    width: 100%;
   }
 }
+

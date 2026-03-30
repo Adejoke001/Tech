@@ -10,7 +10,7 @@
 
 .navbarHovered {
   background: white;
-  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.436);
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
 }
 
 .container {
@@ -23,21 +23,89 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 1rem 0;
+  padding: 0.6rem 0; /* reduced height */
+  transition: padding 0.3s ease;
 }
 
-.logo {
-  font-size: 1.5rem;
-  font-weight: bold;
-  color: white;
+@media (min-width: 768px) {
+  .mainNav {
+    padding: 0.4rem 0;
+  }
+}
+
+/* Logo Styles */
+.logoLink {
+  display: flex;
+  align-items: center;
   text-decoration: none;
-  transition: color 0.3s ease;
+  flex-shrink: 0;
 }
 
-.logoHovered {
-  color: #333;
+.logoWrapper {
+  position: relative;
+  width: 140px;  /* increased from 120px */
+  height: 55px;  /* still controlled so navbar doesn't grow */
+  display: flex;
+  align-items: center;
 }
 
+/* Responsive width only */
+@media (min-width: 640px) {
+  .logoWrapper {
+    width: 160px;
+  }
+}
+
+@media (min-width: 768px) {
+  .logoWrapper {
+    width: 180px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .logoWrapper {
+    width: 210px;
+  }
+}
+
+@media (min-width: 1280px) {
+  .logoWrapper {
+    width: 230px;
+  }
+}
+
+/* 🔥 BIGGER LOGO */
+.logoImage {
+  object-fit: contain;
+  height: 100%;
+  width: auto;
+  transform: scale(1.6); /* increased (was ~1.2–1.5) */
+  transition: all 0.3s ease;
+}
+
+@media (min-width: 640px) {
+  .logoImage {
+    transform: scale(1.8);
+  }
+}
+
+@media (min-width: 1024px) {
+  .logoImage {
+    transform: scale(2.2); /* strong desktop presence */
+  }
+}
+
+/* hover effect (slightly stronger) */
+.logoLink:hover .logoImage {
+  transform: scale(2.05);
+  opacity: 0.95;
+}
+/* When navbar has white background */
+.navbarHovered .logoImage {
+  filter: drop-shadow(0 1px 2px rgba(0, 0, 0, 0.1));
+}
+
+/* Desktop Menu */
 .desktopMenu {
   display: none;
 }
@@ -50,7 +118,7 @@
   }
 }
 
-/* Dropdown Container */
+/* Dropdown */
 .dropdownContainer {
   position: relative;
 }
@@ -59,7 +127,7 @@
   color: white;
   font-weight: 500;
   font-size: 1rem;
-  padding: 0.5rem 0;
+  padding: 0.3rem 0; /* reduced */
   display: flex;
   align-items: center;
   transition: all 0.3s ease;
@@ -76,7 +144,7 @@
 .dropdownButton:hover::after {
   content: '';
   position: absolute;
-  bottom: 0;
+  bottom: -2px;
   left: 0;
   width: 100%;
   height: 2px;
@@ -87,16 +155,12 @@
   color: #333;
 }
 
-.dropdownButtonHovered:hover {
-  color: rgb(61, 48, 48);
-}
-
 /* Dropdown Menu */
 .dropdownMenu {
   position: absolute;
   top: 100%;
   left: 0;
-  width: 20rem; /* Increased width to accommodate icons */
+  width: 20rem;
   background: white;
   box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
   border-radius: 0.5rem;
@@ -105,7 +169,7 @@
   opacity: 0;
   visibility: hidden;
   transform: translateY(8px);
-  transition: all 0.3s ease;
+  transition: all 0.25s ease;
   z-index: 1000;
 }
 
@@ -120,8 +184,8 @@
   padding: 0.5rem 1rem;
   color: #374151;
   font-size: 0.875rem;
-  transition: all 0.3s ease;
   text-decoration: none;
+  transition: all 0.2s ease;
 }
 
 .dropdownLink:hover {
@@ -143,12 +207,12 @@
   justify-content: center;
 }
 
-/* Regular Nav Link */
+/* Nav Links */
 .navLink {
   color: white;
   font-weight: 500;
   font-size: 1rem;
-  padding: 0.5rem 0;
+  padding: 0.3rem 0; /* reduced */
   transition: all 0.3s ease;
   text-decoration: none;
   position: relative;
@@ -161,19 +225,15 @@
 .navLink:hover::after {
   content: '';
   position: absolute;
-  bottom: 0;
+  bottom: -2px;
   left: 0;
   width: 100%;
   height: 2px;
-  background-color:#FFAD00;
+  background-color: #FFAD00;
 }
 
 .navLinkHovered {
   color: #333;
-}
-
-.navLinkHovered:hover {
-  color: rgb(49, 38, 38);
 }
 
 /* Contact Button */
@@ -181,10 +241,10 @@
   display: none;
   background-color: whitesmoke;
   color: rgb(49, 38, 38);
-  padding: 0.7rem 1.7rem;
+  padding: 0.5rem 1.5rem; /* reduced */
   border-radius: 20px;
   font-weight: 500;
-  font-size: 0.900rem;
+  font-size: 0.85rem;
   transition: all 0.3s ease;
   border: none;
   cursor: pointer;
@@ -197,7 +257,6 @@
 
 .contactButtonHovered {
   background-color: #FFAD00;
-  color: rgb(49, 38, 38);
 }
 
 @media (min-width: 1024px) {
@@ -209,7 +268,7 @@
 /* Mobile Menu Button */
 .mobileMenuButton {
   color: white;
-  padding: 0.5rem;
+  padding: 0.4rem;
   transition: color 0.3s ease;
   background: none;
   border: none;
@@ -228,22 +287,19 @@
 
 /* Mobile Menu */
 .mobileMenu {
-  margin-top: 1rem;
+  margin-top: 0.5rem;
   background: white;
   border-radius: 0.5rem;
   box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
   overflow-y: auto;
   max-height: 80vh;
-  padding: 0;
 }
 
-/* Increased padding for mobile links */
 .mobileLink {
   display: block;
-  padding: 1.5rem 1.5rem; /* Increased vertical padding */
+  padding: 1.2rem 1.5rem;
   color: #374151;
   font-weight: 500;
-  font-size: 1rem;
   text-decoration: none;
   border-bottom: 1px solid #f3f4f6;
   transition: all 0.3s ease;
@@ -254,7 +310,7 @@
   color: #FFAD00;
 }
 
-/* Mobile Dropdown Styling */
+/* Mobile Dropdown */
 .mobileDropdownContainer {
   border-bottom: 1px solid #f3f4f6;
 }
@@ -264,68 +320,43 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 1.5rem 1.5rem; /* Increased vertical padding */
+  padding: 1.2rem 1.5rem;
   background: none;
   border: none;
-  font-size: 1rem;
   font-weight: 500;
   color: #374151;
   cursor: pointer;
-  text-align: left;
-  transition: all 0.3s ease;
-}
-
-.mobileDropdownButton:hover {
-  background-color: #f9fafb;
-  color: #FFAD00;
-}
-
-.dropdownArrow {
-  font-size: 0.75rem;
-  color: #9ca3af;
 }
 
 .mobileDropdownMenu {
   background-color: #f9fafb;
-  padding: 0.5rem 0;
-  border-top: 1px solid #e5e7eb;
 }
 
 .mobileDropdownLink {
   display: flex;
   align-items: center;
   gap: 0.75rem;
-  padding: 1rem 1.5rem 1rem 2.5rem; /* Increased vertical padding */
+  padding: 0.9rem 1.5rem 0.9rem 2.5rem;
   text-decoration: none;
   color: #4b5563;
   font-size: 0.9rem;
-  transition: all 0.2s ease;
 }
 
 .mobileDropdownLink:hover {
   background-color: #eff6ff;
   color: #FFAD00;
-  padding-left: 2.75rem; /* Subtle indentation shift */
 }
 
-/* Mobile Contact Button - improved spacing */
+/* Mobile Contact */
 .mobileContactButton {
   display: block;
   width: calc(100% - 3rem);
-  margin: 2rem 1.5rem; /* Increased top/bottom margin */
+  margin: 1.5rem;
   background-color: #FFAD00;
   color: black;
-  padding: 1rem; /* Slightly increased padding */
+  padding: 0.9rem;
   border-radius: 0.5rem;
   font-weight: 600;
-  font-size: 1rem;
-  border: none;
-  cursor: pointer;
   text-align: center;
   text-decoration: none;
-  transition: background-color 0.3s ease;
-}
-
-.mobileContactButton:hover {
-  background-color: #e69c00;
 }

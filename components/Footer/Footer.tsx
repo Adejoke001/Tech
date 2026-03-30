@@ -176,13 +176,13 @@ const Footer = () => {
             © {currentYear} BBMTech. All rights reserved.
           </div>
           <div className={styles.bottomLinks}>
-            <Link href="/privacy" className={styles.bottomLink}>
+            <Link href="/company/privacy-policy" className={styles.bottomLink}>
               Privacy Policy
             </Link>
-            <Link href="/disclaimer" className={styles.bottomLink}>
+            <Link href="/company/disclaimer" className={styles.bottomLink}>
               Disclaimer
             </Link>
-            <Link href="/terms" className={styles.bottomLink}>
+            <Link href="/company/terms-of-service" className={styles.bottomLink}>
               Terms of Service
             </Link>
           </div>
