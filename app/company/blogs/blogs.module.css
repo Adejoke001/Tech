@@ -29,6 +29,7 @@
     line-height: 1.5;
 }
 
+/* ===== FLEX & INPUT BASE ===== */
 .flexRow {
     display: flex;
     align-items: center;
@@ -133,46 +134,6 @@
     line-height: 1.6;
 }
 
-/* ===== FEATURED IN SECTION (removed but kept in case you want it later) ===== */
-.featuredInSection {
-    padding: 2rem 0;
-    background: var(--white);
-    border-bottom: 1px solid var(--gray-200);
-}
-.container {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 0 2rem;
-}
-.featuredInLabel {
-    text-align: center;
-    color: var(--gray-500);
-    font-size: 0.875rem;
-    font-weight: 600;
-    text-transform: uppercase;
-    letter-spacing: 0.05em;
-    margin-bottom: 1.5rem;
-}
-.featuredInLogos {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 3rem;
-    flex-wrap: wrap;
-}
-.featuredInLogo {
-    opacity: 0.7;
-    transition: opacity 0.2s ease;
-}
-.featuredInLogo:hover {
-    opacity: 1;
-}
-.logoPlaceholder {
-    font-size: 1rem;
-    font-weight: 600;
-    color: var(--gray-600);
-}
-
 /* ===== MAIN LAYOUT ===== */
 .mainLayout {
     display: flex;
@@ -211,6 +172,7 @@
     margin-bottom: 2rem;
     box-shadow: 0 5px 20px rgba(0,0,0,0.02);
     transition: box-shadow 0.2s ease;
+    overflow-x: hidden; /* Prevents overflow on small screens */
 }
 .sidebarWidget:hover {
     box-shadow: 0 10px 30px rgba(0,0,0,0.05);
@@ -221,12 +183,14 @@
     display: flex;
     align-items: center;
     gap: 0.5rem;
+    width: 100%;
 }
 .searchInput,
 .newsletterInput {
     flex: 1;
+    min-width: 0; /* Allows input to shrink below default size */
+    height: 44px;
     padding: 0.75rem 1rem;
-    height: 44px; /* 🔥 fixed height */
     border: 1px solid var(--gray-300);
     border-radius: 9999px;
     font-size: 0.95rem;
@@ -234,20 +198,17 @@
     box-sizing: border-box;
     transition: border-color 0.2s ease;
 }
-
 .searchInput:focus,
 .newsletterInput:focus {
     outline: none;
     border-color: var(--primary-blue);
 }
-
 .searchButton,
 .newsletterButton {
-    flex-shrink: 0; /* 🔥 prevents squishing */
+    flex-shrink: 0;
     width: 44px;
     height: 44px;
-    min-width: 44px; /* 🔥 ensures it never collapses */
-    aspect-ratio: 1 / 1; /* 🔥 keeps perfect circle */
+    min-width: 44px;
     border-radius: 50%;
     background: var(--gradient-primary);
     color: white;
@@ -258,7 +219,6 @@
     cursor: pointer;
     transition: transform 0.2s ease;
 }
-
 .searchButton:hover,
 .newsletterButton:hover {
     transform: scale(1.05);
@@ -400,38 +360,6 @@
     font-size: 0.95rem;
     margin-bottom: 1rem;
     line-height: 1.5;
-}
-.newsletterForm {
-    display: flex;
-    gap: 0.5rem;
-}
-.newsletterInput {
-    flex: 1;
-    padding: 0.75rem 1rem;
-    border: 1px solid var(--gray-300);
-    border-radius: 2rem;
-    font-size: 0.95rem;
-    background: var(--white);
-}
-.newsletterInput:focus {
-    outline: none;
-    border-color: var(--primary-blue);
-}
-.newsletterButton {
-    background: var(--gradient-primary);
-    color: white;
-    border: none;
-    width: 42px;
-    height: 42px;
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    cursor: pointer;
-    transition: transform 0.2s ease;
-}
-.newsletterButton:hover {
-    transform: scale(1.05);
 }
 .clearFiltersButton {
     margin-top: 1rem;
@@ -624,7 +552,7 @@
     line-height: 1.5;
     display: -webkit-box;
     -webkit-line-clamp: 2;
-    line-clamp:initial;
+    line-clamp: initial;
     -webkit-box-orient: vertical;
     overflow: hidden;
 }
@@ -726,7 +654,6 @@
     display: -webkit-box;
     -webkit-line-clamp: 2;
     line-clamp: initial;
-    /* -webkit-box-orient: vertical; */
     overflow: hidden;
 }
 .postFooter {
@@ -799,6 +726,11 @@
 .guideSection {
     padding: 5rem 0;
     background: var(--gradient-section-light);
+}
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 2rem;
 }
 .guideGrid {
     display: grid;
@@ -950,7 +882,7 @@
     }
 }
 @media (max-width: 768px) {
-    .heroSection{
+    .heroSection {
         padding: 90px 1.3rem 55px;
         min-height: 60vh;
     }
@@ -991,17 +923,43 @@
         font-size: 1rem;
     }
 }
+@media (max-width: 600px) {
+    /* Fix for search and newsletter buttons extending outside container */
+    .sidebarWidget {
+        padding: 1rem;
+    }
+    .searchBox,
+    .newsletterForm {
+        gap: 0.5rem;
+    }
+    .searchInput,
+    .newsletterInput {
+        height: 42px;
+        padding: 0.65rem 0.875rem;
+        font-size: 0.9rem;
+    }
+    .searchButton,
+    .newsletterButton {
+        width: 42px;
+        height: 42px;
+        min-width: 42px;
+    }
+    .searchButton svg,
+    .newsletterButton svg {
+        width: 18px;
+        height: 18px;
+    }
+}
 @media (max-width: 480px) {
-    .heroSection{
-        padding: 90px 1.3rem 55px;
+    .heroSection {
+        padding: 90px 1rem 55px;
         min-height: 65vh;
-        
     }
     .container {
         padding: 0 1rem;
     }
     .sidebarWidget {
-        padding: 1.25rem;
+        padding: 1rem;
     }
     .widgetTitle {
         font-size: 1.125rem;
@@ -1029,26 +987,31 @@
         padding: 0.75rem 1.5rem;
         font-size: 0.875rem;
     }
-}
-
-@media (max-width: 480px) {
+    /* Extra small devices: ensure inputs and buttons stay inside */
     .searchInput,
     .newsletterInput {
-        height: 42px;
-        padding: 0.65rem 1rem;
-        font-size: 0.9rem;
+        height: 40px;
+        padding: 0.5rem 0.75rem;
+        font-size: 0.85rem;
     }
-
     .searchButton,
     .newsletterButton {
-        width: 42px;
-        height: 42px;
-        min-width: 42px;
+        width: 40px;
+        height: 40px;
+        min-width: 40px;
     }
-
-    .searchButton svg,
-    .newsletterButton svg {
-        width: 18px;
-        height: 18px;
+    .searchBox,
+    .newsletterForm {
+        gap: 0.4rem;
+    }
+}
+@media (max-width: 360px) {
+    /* Prevent any chance of overflow on very narrow screens */
+    .sidebarWidget {
+        padding: 0.75rem;
+    }
+    .searchInput,
+    .newsletterInput {
+        padding: 0.5rem 0.6rem;
     }
 }
