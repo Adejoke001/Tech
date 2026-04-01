@@ -1,7 +1,10 @@
 /* Hero Section with Background Image */
 .heroSection {
+  transform-origin: top center;
+}
+.heroSection {
   position: relative;
-  min-height: 90vh;
+  min-height: 100vh;
   width: 100%;
   display: flex;
   align-items: center;
@@ -20,7 +23,9 @@
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+  background-attachment: fixed;
   z-index: 0;
+  inset: 0;
 }
 
 .overlay {
@@ -29,7 +34,7 @@
   left: 0;
   width: 100%;
   height: 100%;
-  background: linear-gradient(90deg, rgba(15, 23, 42, 0.9) 0%, rgba(15, 23, 42, 0.7) 50%, rgba(15, 23, 42, 0.4) 100%);
+  background: linear-gradient(90deg, rgba(15, 23, 42, 0.9) 0%, rgba(15, 23, 42, 0.7) 50%, rgba(15, 23, 42, 0.7) 100%);
   z-index: 1;
 }
 
@@ -45,7 +50,7 @@
 .heroGrid {
   display: flex;
   flex-direction: column;
-  gap: 3rem;
+  gap: 3.5rem;
   align-items: center;
 }
 
@@ -54,8 +59,9 @@
     flex-direction: row;
     display: grid;
     grid-template-columns: 7fr 5fr;
-    gap: 4rem;
+    gap: 3rem;
     align-items: center;
+    overflow-x: hidden;
   }
 }
 

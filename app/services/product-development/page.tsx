@@ -49,7 +49,7 @@ export default function ProductDevelopment() {
 
   const { scrollYProgress } = useScroll();
   const heroOpacity = useTransform(scrollYProgress, [0, 0.2], [1, 0]);
-  const heroScale = useTransform(scrollYProgress, [0, 0.2], [1, 0.95]);
+  // const heroScale = useTransform(scrollYProgress, [0, 0.2], [1, 1]);
 
   // Counter animation for stats
   const [expertCount, setExpertCount] = useState(0);
@@ -532,9 +532,9 @@ export default function ProductDevelopment() {
   return (
     <>
       {/* Hero Section with Background Image */}
-      <motion.section
+      <motion.section 
         className={styles.heroSection}
-        style={{ opacity: heroOpacity, scale: heroScale }}
+        style={{ opacity: heroOpacity}}
       >
         <div className={styles.heroBackground}></div>
         <div className={styles.overlay}></div>
@@ -679,6 +679,7 @@ export default function ProductDevelopment() {
           </div>
         </div>
       </motion.section>
+    
 
       {/* Growth Stage Solutions */}
       <section className={styles.growthSection}>

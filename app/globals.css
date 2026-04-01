@@ -24,5 +24,31 @@
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: Arial, 'Inter', Helvetica, sans-serif;
+  font-family: 'Inter', system-ui, -apple-system, sans-serif;
 }
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Space Grotesk', 'Inter', sans-serif;
+  letter-spacing: -0.02em;
+}
+
+p {
+  font-family: 'Inter', sans-serif;
+  
+}
+
+button {
+  font-family: 'Inter', sans-serif;
+}
+a {
+  font-family: 'Inter', sans-serif;
+  
+}
+input, textarea, select {
+  font-family: 'Inter', sans-serif;
+}
+code, pre {
+  font-family: 'Fira Code', monospace;
+}
+
+
+
