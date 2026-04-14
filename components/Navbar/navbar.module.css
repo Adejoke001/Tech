@@ -23,7 +23,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0.6rem 0; /* reduced height */
+  padding: 0.5rem 0;
   transition: padding 0.3s ease;
 }
 
@@ -41,18 +41,36 @@
   flex-shrink: 0;
 }
 
+/* Mobile spacing fix – adds breathing room between logo and menu button */
+@media (max-width: 1023px) {
+  .logoLink {
+    margin-right: 1rem;
+  }
+}
+
 .logoWrapper {
   position: relative;
-  width: 140px;  /* increased from 120px */
-  height: 55px;  /* still controlled so navbar doesn't grow */
+  width: 140px; /* increased from 100px for better mobile visibility */
+  height: 70px;
   display: flex;
   align-items: center;
 }
 
-/* Responsive width only */
+.logoImage {
+  object-fit: contain;
+  height: 100%;
+  width: auto;
+  transform: scale(1.4); /* bigger base scale */
+  transition: all 0.3s ease;
+}
+
+/* Responsive adjustments – grow gradually */
 @media (min-width: 640px) {
   .logoWrapper {
     width: 160px;
+  }
+  .logoImage {
+    transform: scale(1.6);
   }
 }
 
@@ -60,46 +78,38 @@
   .logoWrapper {
     width: 180px;
   }
-}
-
-@media (min-width: 1024px) {
-  .logoWrapper {
-    width: 210px;
-  }
-}
-
-@media (min-width: 1280px) {
-  .logoWrapper {
-    width: 230px;
-  }
-}
-
-/* 🔥 BIGGER LOGO */
-.logoImage {
-  object-fit: contain;
-  height: 100%;
-  width: auto;
-  transform: scale(1.6); /* increased (was ~1.2–1.5) */
-  transition: all 0.3s ease;
-}
-
-@media (min-width: 640px) {
   .logoImage {
     transform: scale(1.8);
   }
 }
 
 @media (min-width: 1024px) {
+  .logoWrapper {
+    width: 210px;
+  }
   .logoImage {
-    transform: scale(2.2); /* strong desktop presence */
+    transform: scale(2.0);
+  }
+  .logoLink {
+    margin-right: 0; /* remove extra margin on desktop */
   }
 }
 
-/* hover effect (slightly stronger) */
+@media (min-width: 1280px) {
+  .logoWrapper {
+    width: 250px;
+  }
+  .logoImage {
+    transform: scale(2.2);
+  }
+}
+
+/* Hover effect */
 .logoLink:hover .logoImage {
   transform: scale(2.05);
   opacity: 0.95;
 }
+
 /* When navbar has white background */
 .navbarHovered .logoImage {
   filter: drop-shadow(0 1px 2px rgba(0, 0, 0, 0.1));
@@ -127,7 +137,7 @@
   color: white;
   font-weight: 500;
   font-size: 1rem;
-  padding: 0.3rem 0; /* reduced */
+  padding: 0.3rem 0;
   display: flex;
   align-items: center;
   transition: all 0.3s ease;
@@ -213,7 +223,7 @@
   color: white;
   font-weight: 500;
   font-size: 1rem;
-  padding: 0.3rem 0; /* reduced */
+  padding: 0.3rem 0;
   transition: all 0.3s ease;
   text-decoration: none;
   position: relative;
@@ -242,10 +252,10 @@
   display: none;
   background-color: whitesmoke;
   color: rgb(49, 38, 38);
-  padding: 0.5rem 1.5rem; /* reduced */
+  padding: 0.6rem 1.6rem;
   border-radius: 20px;
   font-weight: 500;
-  font-size: 0.85rem;
+  font-size: 0.95rem;
   transition: all 0.3s ease;
   border: none;
   cursor: pointer;

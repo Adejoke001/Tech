@@ -20,7 +20,7 @@ export default function WebDevelopmentPage() {
     const testimonial = {
         name: 'Rachael Ajayi',
         role: 'CTO, Uber solutions',
-        content: 'BBMTech built our custom web application from the ground up. Their agile process, clear communication, and technical excellence delivered a platform that scaled effortlessly with our business.',
+        content: 'BBMcoders built our custom web application from the ground up. Their agile process, clear communication, and technical excellence delivered a platform that scaled effortlessly with our business.',
         rating: 5,
         project: 'Enterprise Platform'
     };

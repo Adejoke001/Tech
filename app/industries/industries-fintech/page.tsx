@@ -53,7 +53,7 @@ export default function FinTechPage() {
     name: "Sarah Chen",
     role: "CFO, Finorg Capital",
     content:
-      "BBMTech delivered a robust loan processing system that handles 50,000+ daily transactions with zero downtime. Their deep FinTech expertise and commitment to security exceeded our expectations.",
+      "BBMcoders delivered a robust loan processing system that handles 50,000+ daily transactions with zero downtime. Their deep FinTech expertise and commitment to security exceeded our expectations.",
     rating: 5,
     project: "Enterprise Lending Platform",
   };
@@ -844,7 +844,7 @@ export default function FinTechPage() {
           <div className={styles.sectionHeader}>
             <h2 className={styles.sectionTitle} style={{ color: "white" }}>
               Why Partner with{" "}
-              <span className={styles.titleHighlight}>BBMTech</span> for
+              <span className={styles.titleHighlight}>BBMcoders</span> for
               FinTech Innovation?
             </h2>
             <p

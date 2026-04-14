@@ -26,7 +26,7 @@ export default function CybersecurityServicesPage() {
     const testimonial = {
         name: 'Damola Alex',
         role: 'CIS, Finance org.',
-        content: 'BBMTech transformed our security posture with their comprehensive governance framework. We saw 40% fewer security incidents within the first quarter.',
+        content: 'BBMcoders transformed our security posture with their comprehensive governance framework. We saw 40% fewer security incidents within the first quarter.',
         rating: 5,
         project: 'Enterprise Security Governance',
     };

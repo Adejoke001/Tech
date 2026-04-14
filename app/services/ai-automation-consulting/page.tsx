@@ -45,7 +45,7 @@ export default function AIAutomationConsultingPage() {
     name: "David Wilson",
     role: "CEO, Innovative group",
     content:
-      "BBMTech showed us exactly how to use AI solutions to solve our biggest business problems. The guidance was invaluable for our digital transformation.",
+      "BBMcoders showed us exactly how to use AI solutions to solve our biggest business problems. The guidance was invaluable for our digital transformation.",
     rating: 5,
     project: "Enterprise AI Transformation",
   };
@@ -469,7 +469,7 @@ export default function AIAutomationConsultingPage() {
       id: 2,
       name: "Retail & eCommerce",
       description:
-        "Enhancing retail journeys with demand forecasting, personalized recommendations, and inventory optimization.",
+        "Enhancing retail journeys with demand forecasting, personalized recommendations, inventory optimization.",
       icon: "🛍️",
       color: "#8b5cf6",
       image:

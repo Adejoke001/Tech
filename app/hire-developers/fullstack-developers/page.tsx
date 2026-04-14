@@ -25,7 +25,7 @@ export default function FullStackDevelopersPage() {
     const testimonial = {
         name: 'Michael',
         role: 'C.O. FinTech Solutions',
-        content: 'BBMTech\'s full-stack team delivered a complete web platform in 4 months that handles 50,000+ daily transactions. Their end-to-end expertise saved us 30% in development costs.',
+        content: 'BBMcoders\' full-stack team delivered a complete web platform in 4 months that handles 50,000+ daily transactions. Their end-to-end expertise saved us 30% in development costs.',
         rating: 5,
         project: 'Enterprise Banking Platform'
     };
@@ -540,7 +540,7 @@ export default function FullStackDevelopersPage() {
             totalCost: 'Variable, often higher'
         },
         {
-            model: 'BBMTech',
+            model: 'BBMcoders',
             timeToHire: '1-2 weeks',
             timeToStart: '1-2 weeks',
             trainingCost: '$0',
@@ -613,7 +613,7 @@ export default function FullStackDevelopersPage() {
         }
     ];
 
-    // Why Choose BBMTech Features
+    // Why Choose BBMcoders Features
     const whyChooseFeatures = [
         { feature: 'Workstatus™ powered Proof of Work', icon: <CheckCircle /> },
         { feature: 'Top 1% developers, rigorously vetted', icon: <Award /> },
@@ -654,9 +654,7 @@ export default function FullStackDevelopersPage() {
                             <h1 className={styles.mainTitle}>
                                 Hire Expert <span className={styles.highlight}>Full Stack Developers</span>
                             </h1>
-                            <p className={styles.subheadline}>
-                                Since 2004, providing full-stack developers who keep your website up-to-date and dynamic
-                            </p>
+                            
                             <p className={styles.heroDescription}>
                                 Hire our expert full-stack developers proficient in MEAN stack, MERN framework, Laravel/PHP,
                                 and Java for seamless end-to-end development. Get complete web solutions with frontend and
@@ -671,7 +669,7 @@ export default function FullStackDevelopersPage() {
                             className={styles.buttonContainer}
                         >
                             <Link href="/contact" className={styles.ctaButton}>
-                                Hire Full-Stack Developers
+                                Hire Full-Stack Devs
                                 <ArrowRight className={styles.buttonIcon} />
                             </Link>
                             {/* <Link href="#expertise" className={styles.secondaryButton}>
@@ -852,7 +850,7 @@ export default function FullStackDevelopersPage() {
             <section className={styles.benefitsSection}>
                 <div className={styles.sectionHeader}>
                     <h2 className={styles.sectionTitle}>
-                        Why Hire Full Stack Developers <span className={styles.titleHighlight}>From BBMTech?</span>
+                        Why Hire Full Stack Developers <span className={styles.titleHighlight}>From BBMcoders?</span>
                     </h2>
                     <p className={styles.sectionDescription}>
                         Hiring full-stack software engineers is the need of the hour for businesses of all sizes.
@@ -1124,14 +1122,14 @@ export default function FullStackDevelopersPage() {
                 </div>
             </section>
 
-            {/* ===== WHY CHOOSE BBMTech SECTION ===== */}
+            {/* ===== WHY CHOOSE BBMcoders SECTION ===== */}
             <section className={styles.whyChooseSection}>
                 <div className={styles.sectionHeader}>
                     <h2 className={styles.sectionTitle}>
-                        Why Hire Full Stack Developers <span className={styles.titleHighlight}>From BBMTech?</span>
+                        Why Hire Full Stack Developers <span className={styles.titleHighlight}>From BBMcoders?</span>
                     </h2>
                     <p className={styles.sectionDescription}>
-                        Hiring full-stack developers with BBMTech is easy and transparent.
+                        Hiring full-stack developers with BBMcoders is easy and transparent.
                         We follow well-defined processes on all our engagements for peace of mind.
                     </p>
                 </div>
@@ -1159,7 +1157,7 @@ export default function FullStackDevelopersPage() {
             <section className={styles.comparisonSection}>
                 <div className={styles.sectionHeader}>
                     <h2 className={styles.sectionTitle}>
-                        Comparative Analysis: <span className={styles.titleHighlight}>In-House, Freelancers, or BBMTech</span>
+                        Comparative Analysis: <span className={styles.titleHighlight}>In-House, Freelancers, or BBMcoders</span>
                     </h2>
                     <p className={styles.sectionDescription}>
                         We offer a dedicated team of highly skilled full-stack developers. Here is a quick comparison
@@ -1174,7 +1172,7 @@ export default function FullStackDevelopersPage() {
                             {hiringComparison.map((model, idx) => (
                                 <div key={idx} className={styles.headerCell}>
                                     {model.model}
-                                    {model.model === 'BBMTech' && (
+                                    {model.model === 'BBMcoders' && (
                                         <div className={styles.bestChoiceBadge}>Best Choice</div>
                                     )}
                                 </div>
@@ -1288,7 +1286,7 @@ export default function FullStackDevelopersPage() {
                         Frequently Asked <span className={styles.titleHighlight}>Questions</span>
                     </h2>
                     <p className={styles.sectionDescription}>
-                        Get answers to common questions about hiring full-stack developers from BBMTech.
+                        Get answers to common questions about hiring full-stack developers from BBMcoders.
                     </p>
                 </div>
 

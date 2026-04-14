@@ -133,10 +133,10 @@ export default function BlogsPage() {
                         transition={{ duration: 0.6 }}
                     >
                         <h1 className={styles.heroTitle}>
-                            BBMtech Insights <span className={styles.highlight}>For Modern Builders</span>
+                            BBMcoders Insights <span className={styles.highlight}>For Modern Builders</span>
                         </h1>
                         <p className={styles.heroSubtitle}>
-                            Practical advice, in‑depth tutorials, and expert perspectives from the BBMtech engineering team.<br />
+                            Practical advice, in‑depth tutorials, and expert perspectives from the BBMcoders engineering team.<br />
                             Stay ahead in software innovation, AI, and cloud architecture.
                         </p>
                     </motion.div>

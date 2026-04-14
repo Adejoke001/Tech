@@ -220,25 +220,25 @@ export default function SaasArchitecturePage() {
         {
             name: 'James Kelly',
             role: 'Data Analyst',
-            content: 'The Project managers took a lot of time to understand our project before coming up with a contract or what they thought we needed. I had the reassurance from the start that the project managers knew what type of project I wanted and what my needs were. That is reassuring, and that\'s why we chose BBMTech.',
+            content: 'The Project managers took a lot of time to understand our project before coming up with a contract or what they thought we needed. I had the reassurance from the start that the project managers knew what type of project I wanted and what my needs were. That is reassuring, and that\'s why we chose BBMcoders.',
             image: '/images/user.png'
         },
         {
             name: 'Judith Mueller',
             role: 'Executive Director, Judith Foundation',
-            content: 'The team at BBMTech has provided us with exceptional services in creating this one-of-a-kind portal, and it has been a fantastic experience. I was particularly impressed by how efficiently and quickly the team always came up with creative solutions to provide us with all the functionalities within the portal we had requested.',
+            content: 'The team at BBMcoders has provided us with exceptional services in creating this one-of-a-kind portal, and it has been a fantastic experience. I was particularly impressed by how efficiently and quickly the team always came up with creative solutions to provide us with all the functionalities within the portal we had requested.',
             image: '/images/user.png'
         },
         {
             name: 'chris',
             role: 'Director, Storgaze',
-            content: 'BBMTech had great technical expertise, both in front-end and back-end development. Other project management was well organized. Account management was friendly and always available. I would give BBMTech ten out of ten!',
+            content: 'BBMcoders had great technical expertise, both in front-end and back-end development. Other project management was well organized. Account management was friendly and always available. I would give BBMcoders ten out of ten!',
             image: '/images/user.png'
         },
         {
             name: 'Mohammed Mira',
             role: 'Director, FashionHint',
-            content: 'Huge thank you to BBMTech; they have been a massive help in enabling us to start developing our project within a few weeks, so it\'s been great! There have been two small bumps in the road, but overall, It\'s been a fantastic service. I have already recommended it to one of my friends.',
+            content: 'Huge thank you to BBMcoders; they have been a massive help in enabling us to start developing our project within a few weeks, so it\'s been great! There have been two small bumps in the road, but overall, It\'s been a fantastic service. I have already recommended it to one of my friends.',
             image: '/images/user.png'
         }
     ];
@@ -246,15 +246,15 @@ export default function SaasArchitecturePage() {
     // ============ FAQS ============
     const faqs = [
         {
-            question: 'Why should I choose BBMTech for SaaS consulting and development services?',
-            answer: 'BBMTech is a trusted name for SaaS consulting and development services. With over two decades of engineering experience and a clientele base of global brands, we have been setting higher industry benchmarks. What gives us an edge is our end-to-end solutions, experienced team of top 1% industry talent, flexibility to work in your timezone, and a diverse portfolio built over two decades.'
+            question: 'Why should I choose BBMcoders for SaaS consulting and development services?',
+            answer: 'BBMcoders is a trusted name for SaaS consulting and development services. With over two decades of engineering experience and a clientele base of global brands, we have been setting higher industry benchmarks. What gives us an edge is our end-to-end solutions, experienced team of top 1% industry talent, flexibility to work in your timezone, and a diverse portfolio built over two decades.'
         },
         {
-            question: 'How does BBMTech help with shorter GTM time and a more successful product?',
+            question: 'How does BBMcoders help with shorter GTM time and a more successful product?',
             answer: 'We help with shorter GTM time by providing a collaborative approach that involves our clients in the development process. Our SaaS consultants follow an agile development methodology that enables us to deliver projects quickly while ensuring high-quality standards, allowing our clients to launch their products faster and with greater success.'
         },
         {
-            question: 'Can BBMTech help turn my idea into a product?',
+            question: 'Can BBMcoders help turn my idea into a product?',
             answer: 'Yes, we can help you create a product plan around your idea. Through proven SaaS consulting methods, our experts work collaboratively with our clients to understand their requirements, create a roadmap, and provide a detailed estimate of the project’s cost and timeline.'
         },
         {
@@ -399,7 +399,7 @@ export default function SaasArchitecturePage() {
                             SaaS Consulting & <span className={styles.titleHighlight}>Development Services</span>
                         </h2>
                         <p className={styles.sectionDescription}>
-                            As a trusted SaaS consulting company, we help clients achieve their product milestones through expert SaaS development and strategic consulting services. With BBMTech – get end-to-end SaaS expertise – from strategy to uptime – tailored to your growth.
+                            As a trusted SaaS consulting company, we help clients achieve their product milestones through expert SaaS development and strategic consulting services. With BBMcoders – get end-to-end SaaS expertise – from strategy to uptime – tailored to your growth.
                         </p>
                     </div>
                     <div className={styles.servicesGrid}>
@@ -440,7 +440,7 @@ export default function SaasArchitecturePage() {
                             Grow Your Business with a <span className={styles.titleHighlight}>Cutting-Edge SaaS Strategy</span>
                         </h2>
                         <p className={styles.sectionDescription}>
-                            Predictable outcomes. Enterprise standards. With BBMTech, you get velocity without compromising quality, compliance, or cost efficiency – every sprint, every release.
+                            Predictable outcomes. Enterprise standards. With BBMcoders, you get velocity without compromising quality, compliance, or cost efficiency – every sprint, every release.
                         </p>
                     </div>
                     <div className={styles.valueGrid}>
@@ -761,7 +761,7 @@ export default function SaasArchitecturePage() {
                             Frequently Asked <span className={styles.titleHighlight}>Questions</span>
                         </h2>
                         <p className={styles.sectionDescription}>
-                            Let’s look at some of the common concerns of clients related to SaaS consulting and development services, and how BBMTech provides the right solution.
+                            Let’s look at some of the common concerns of clients related to SaaS consulting and development services, and how BBMcoders provides the right solution.
                         </p>
                     </div>
 

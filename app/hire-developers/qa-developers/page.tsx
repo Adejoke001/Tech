@@ -27,7 +27,7 @@ export default function QATestersPage() {
     const testimonial = {
         name: 'Sarah Chidi',
         role: 'VP of Engineering',
-        content: 'BBMTech’s QA engineers integrated seamlessly into our sprints. They caught 40% more edge cases than our previous setup, and our release confidence has never been higher.',
+        content: 'BBMcoders’ QA engineers integrated seamlessly into our sprints. They caught 40% more edge cases than our previous setup, and our release confidence has never been higher.',
         rating: 5,
         project: 'FinTech Trading Platform'
     };
@@ -361,7 +361,7 @@ export default function QATestersPage() {
         }
     ];
 
-    // ----- WHY HIRE FROM BBMTech (feature list) -----
+    // ----- WHY HIRE FROM BBMcoders (feature list) -----
     const whyChooseFeatures = [
         { feature: 'Workstatus™ powered Proof of Work', icon: <CheckCircle /> },
         { feature: 'Top 1% QA engineers, rigorously vetted', icon: <Award /> },
@@ -428,7 +428,7 @@ export default function QATestersPage() {
             totalCost: 'Variable, often higher'
         },
         {
-            model: 'BBMTech QA',
+            model: 'BBMcoders QA',
             timeToHire: '1‑2 weeks',
             timeToStart: '1‑2 weeks',
             trainingCost: '$0',
@@ -472,7 +472,7 @@ export default function QATestersPage() {
             answer: 'Manual testing is performed by a human tester exploring the application, ideal for usability, exploratory, and ad‑hoc scenarios. Automated testing uses scripts to execute pre‑defined tests, perfect for regression, load, and repetitive checks. We provide both and help you decide the right mix.'
         },
         {
-            question: 'How quickly can I hire a QA engineer from BBMTech?',
+            question: 'How quickly can I hire a QA engineer from BBMcoders?',
             answer: 'We can onboard a pre‑vetted QA engineer within 1–2 weeks. For urgent needs, we have a pool of ready‑to‑start testers who can begin in 48 hours.'
         },
         {
@@ -718,7 +718,7 @@ export default function QATestersPage() {
             <section className={styles.benefitsSection}>
                 <div className={styles.sectionHeader}>
                     <h2 className={styles.sectionTitle}>
-                        Why Hire QA Engineers <span className={styles.titleHighlight}>From BBMTech</span>
+                        Why Hire QA Engineers <span className={styles.titleHighlight}>From BBMcoders</span>
                     </h2>
                     <p className={styles.sectionDescription}>
                         Access world‑class testing talent at a fraction of the local cost. Here’s why smart companies 
@@ -897,11 +897,11 @@ export default function QATestersPage() {
                 </div>
             </section>
 
-            {/* ===== WHY CHOOSE BBMTech ===== */}
+            {/* ===== WHY CHOOSE BBMcoders ===== */}
             <section className={styles.whyChooseSection}>
                 <div className={styles.sectionHeader}>
                     <h2 className={styles.sectionTitle}>
-                        Why Hire QA Engineers <span className={styles.titleHighlight}>From BBMTech?</span>
+                        Why Hire QA Engineers <span className={styles.titleHighlight}>From BBMcoders?</span>
                     </h2>
                     <p className={styles.sectionDescription}>
                         We provide reliable QA engineers with faster turnaround times and better ROI. 
@@ -967,10 +967,10 @@ export default function QATestersPage() {
             <section className={styles.comparisonSection}>
                 <div className={styles.sectionHeader}>
                     <h2 className={styles.sectionTitle}>
-                        Comparative Analysis: <span className={styles.titleHighlight}>In‑House, Freelancers, or BBMTech</span>
+                        Comparative Analysis: <span className={styles.titleHighlight}>In‑House, Freelancers, or BBMcoders</span>
                     </h2>
                     <p className={styles.sectionDescription}>
-                        See why a dedicated QA team from BBMTech outperforms other hiring options.
+                        See why a dedicated QA team from BBMcoders outperforms other hiring options.
                     </p>
                 </div>
 
@@ -981,7 +981,7 @@ export default function QATestersPage() {
                             {hiringComparison.map((model, idx) => (
                                 <div key={idx} className={styles.headerCell}>
                                     {model.model}
-                                    {model.model === 'BBMTech QA' && (
+                                    {model.model === 'BBMcoders QA' && (
                                         <div className={styles.bestChoiceBadge}>Best Choice</div>
                                     )}
                                 </div>
@@ -1095,7 +1095,7 @@ export default function QATestersPage() {
                         Frequently Asked <span className={styles.titleHighlight}>Questions</span>
                     </h2>
                     <p className={styles.sectionDescription}>
-                        Get answers to common questions about hiring QA engineers from BBMTech.
+                        Get answers to common questions about hiring QA engineers from BBMcoders.
                     </p>
                 </div>
 

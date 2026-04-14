@@ -279,25 +279,25 @@ export default function ApplicationDevelopmentPage() {
         {
             name: 'James Kelly',
             role: 'Data Analyst',
-            content: 'The Project managers took a lot of time to understand our project before coming up with a contract or what they thought we needed. I had the reassurance from the start that the project managers knew what type of project I wanted and what my needs were. That is reassuring, and that\'s why we chose BBMTech.',
+            content: 'The Project managers took a lot of time to understand our project before coming up with a contract or what they thought we needed. I had the reassurance from the start that the project managers knew what type of project I wanted and what my needs were. That is reassuring, and that\'s why we chose BBMcoders.',
             image: '/images/user.png'
         },
         {
             name: 'Judith Mueller',
             role: 'Executive Director, Judith Foundation',
-            content: 'The team at BBMTech has provided us with exceptional services in creating this one-of-a-kind portal, and it has been a fantastic experience. I was particularly impressed by how efficiently and quickly the team always came up with creative solutions to provide us with all the functionalities within the portal we had requested.',
+            content: 'The team at BBMcoders has provided us with exceptional services in creating this one-of-a-kind portal, and it has been a fantastic experience. I was particularly impressed by how efficiently and quickly the team always came up with creative solutions to provide us with all the functionalities within the portal we had requested.',
             image: '/images/user.png'
         },
         {
             name: 'chris',
             role: 'Director, Storgaze',
-            content: 'BBMTech had great technical expertise, both in front-end and back-end development. Other project management was well organized. Account management was friendly and always available. I would give BBMTech ten out of ten!',
+            content: 'BBMcoders had great technical expertise, both in front-end and back-end development. Other project management was well organized. Account management was friendly and always available. I would give BBMcoders ten out of ten!',
             image: '/images/user.png'
         },
         {
             name: 'Mohammed Mira',
             role: 'Director, FashionHint',
-            content: 'Huge thank you to BBMTech; they have been a massive help in enabling us to start developing our project within a few weeks, so it\'s been great! There have been two small bumps in the road, but overall, It\'s been a fantastic service. I have already recommended it to one of my friends.',
+            content: 'Huge thank you to BBMcoders; they have been a massive help in enabling us to start developing our project within a few weeks, so it&apos;s been great! There have been two small bumps in the road, but overall, It\'s been a fantastic service. I have already recommended it to one of my friends.',
             image: '/images/user.png'
         }
     ];
@@ -597,7 +597,7 @@ export default function ApplicationDevelopmentPage() {
                 <div className={styles.container}>
                     <div className={styles.sectionHeader}>
                         <h2 className={styles.sectionTitle}>
-                            Build Scalable Apps with <span className={styles.titleHighlight}>BBMTech</span>
+                            Build Scalable Apps with <span className={styles.titleHighlight}>BBMcoders</span>
                         </h2>
                         <p className={styles.sectionDescription}>
                             As a leading mobile app development service provider, we build apps meticulously designed to solve your business challenges and deliver measurable ROI.
@@ -1061,7 +1061,7 @@ export default function ApplicationDevelopmentPage() {
                     <div className={styles.ctaCard}>
                         <h2 className={styles.ctaTitle}>Off-the-Shelf Software Not Meeting Your Needs?</h2>
                         <p className={styles.ctaDescription}>
-                            BBMTech delivers custom application development services aligned to your business processes and growth plans.
+                            BBMcoders delivers custom application development services aligned to your business processes and growth plans.
                         </p>
                         <div className={styles.ctaButtons}>
                             <Link href="/contact" className={styles.ctaPrimary}>

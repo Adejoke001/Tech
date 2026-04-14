@@ -632,7 +632,7 @@ export default function UIUXDesignPage() {
                         Our Product <span className={styles.titleHighlight}>UI/UX Design</span> Services
                     </h2>
                     <p className={styles.sectionDescription}>
-                        Increase user retention with UI/UX design services by BBMTech. We create innovative,
+                        Increase user retention with UI/UX design services by BBMcoders. We create innovative,
                         custom-design interfaces to propel your brand forward and boost user retention.
                     </p>
                 </div>
@@ -935,7 +935,7 @@ export default function UIUXDesignPage() {
             <section className={styles.whyChooseSection}>
                 <div className={styles.sectionHeader}>
                     <h2 className={styles.sectionWhiteMust}>
-                        Why Choose <span className={styles.titleHighlightWhite}>BBMTech</span> for Design
+                        Why Choose <span className={styles.titleHighlightWhite}>BBMcoders</span> for Design
                     </h2>
                     <p className={styles.sectionDescriptionWhite}>
                         With years of industry-relevant experience, our team deeply understands users&apos; needs

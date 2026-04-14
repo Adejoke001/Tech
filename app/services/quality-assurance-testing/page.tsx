@@ -39,7 +39,7 @@ export default function QualityAssurancePage() {
   useEffect(() => {
     if (isStatsInView) {
       const bugTimer = setInterval(() => {
-        setBugCount((prev) => (prev >= 50000 ? 50000 : prev + 1000));
+        setBugCount((prev) => (prev >= 20000 ? 20000 : prev + 1000));
       }, 10);
 
       const projectTimer = setInterval(() => {
@@ -47,11 +47,11 @@ export default function QualityAssurancePage() {
       }, 10);
 
       const coverageTimer = setInterval(() => {
-        setCoverageCount((prev) => (prev >= 98 ? 98 : prev + 1));
+        setCoverageCount((prev) => (prev >= 98 ? 98 : prev + 10));
       }, 30);
 
       const clientTimer = setInterval(() => {
-        setClientCount((prev) => (prev >= 650 ? 650 : prev + 10));
+        setClientCount((prev) => (prev >= 1600 ? 1600 : prev + 30));
       }, 10);
 
       return () => {
@@ -259,7 +259,7 @@ export default function QualityAssurancePage() {
     content:
       "Their QA team identified critical security vulnerabilities that our internal team missed. The depth of their testing saved us from potential compliance issues.",
     rating: 5,
-    project: "Banking Platform Security Audit",
+    project: "Banking Platform Security",
   };
 
   // FAQs

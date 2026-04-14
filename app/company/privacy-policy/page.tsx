@@ -191,7 +191,7 @@ export default function PrivacyPage() {
                         <div className={styles.contactCard}>
                             <div className={styles.contactItem}>
                                 <Mail size={18} />
-                                <span>privacy@bbmtech.com</span>
+                                <span>privacy@bbmcoders.com</span>
                             </div>
                             <div className={styles.contactItem}>
                                 <Phone size={18} />

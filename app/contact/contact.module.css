@@ -135,7 +135,7 @@
 .floatingTextarea:not(:placeholder-shown) ~ .floatingLabel {
   top: 0;
   transform: translateY(-50%);
-  font-size: 0.75rem;
+  font-size: 0.95rem;
   color: #10b981;
   background-color: white;
   padding: 0 0.3rem;

@@ -26,7 +26,7 @@ export default function MobilePage() {
     const testimonial = {
         name: 'James Kelly',
         role: 'Co-founder, Miracle Choice',
-        content: 'The Project managers took a lot of time to understand our project before coming up with a contract or what they thought we needed. The project managers knew what type of project I wanted from the start. That is reassuring, and that is why we chose BBMTech.',
+        content: 'The Project managers took a lot of time to understand our project before coming up with a contract or what they thought we needed. The project managers knew what type of project I wanted from the start. That is reassuring, and that is why we chose BBMcoders.',
         rating: 5,
         project: 'Mobile App Development',
         initials: 'JK',
@@ -310,28 +310,28 @@ export default function MobilePage() {
         {
             name: 'James Kelly',
             role: 'Data Analyst',
-            content: 'The Project managers took a lot of time to understand our project before coming up with a contract or what they thought we needed. I had the reassurance from the start that the project managers knew what type of project I wanted and what my needs were. That is reassuring, and that is why we chose BBMTech.',
+            content: 'The Project managers took a lot of time to understand our project before coming up with a contract or what they thought we needed. I had the reassurance from the start that the project managers knew what type of project I wanted and what my needs were. That is reassuring, and that is why we chose BBMcoders.',
             initials: 'JK',
             color: '#3B82F6'
         },
         {
             name: 'Judith Mueller',
             role: 'Executive Director, Judith Foundation',
-            content: 'The team at BBMTech has provided us with exceptional services in creating this one-of-a-kind portal, and it has been a fantastic experience. I was particularly impressed by how efficiently and quickly the team always came up with creative solutions.',
+            content: 'The team at BBMcoders has provided us with exceptional services in creating this one-of-a-kind portal, and it has been a fantastic experience. I was particularly impressed by how efficiently and quickly the team always came up with creative solutions.',
             initials: 'JM',
             color: '#10B981'
         },
         {
             name: 'Kay Andrews',
             role: 'Director of Affairs',
-            content: 'BBMTech had great technical expertise, both in front-end and back-end development. Other project management was well organized. Account management was friendly and always available. I would give BBMTech ten out of ten!',
+            content: 'BBMcoders had great technical expertise, both in front-end and back-end development. Other project management was well organized. Account management was friendly and always available. I would give BBMcoders ten out of ten!',
             initials: 'KA',
             color: '#8B5CF6'
         },
         {
             name: 'Mohammed Mira',
             role: 'Director, FashionHint',
-            content: 'Huge thank you to BBMTech; they have been a massive help in enabling us to start developing our project within a few weeks, so it has been great! I have already recommended it to one of my friends.',
+            content: 'Huge thank you to BBMcoders; they have been a massive help in enabling us to start developing our project within a few weeks, so it has been great! I have already recommended it to one of my friends.',
             initials: 'MM',
             color: '#F59E0B'
         },

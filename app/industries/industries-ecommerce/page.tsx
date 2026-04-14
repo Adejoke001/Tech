@@ -71,7 +71,7 @@ export default function ECommercePage() {
     name: "Michael",
     role: "CEO, Styleglo",
     content:
-      "ValueCoders built our multi-vendor E-Commerce platform from scratch – it handles 100,000+ daily transactions with zero downtime. Their deep retail expertise and commitment to quality exceeded our expectations.",
+      "BBMcoders built our multi-vendor E-Commerce platform from scratch – it handles 100,000+ daily transactions with zero downtime. Their deep retail expertise and commitment to quality exceeded our expectations.",
     rating: 5,
     project: "Multi-Vendor Marketplace",
   };
@@ -1123,7 +1123,7 @@ export default function ECommercePage() {
           <div className={styles.sectionHeader}>
             <h2 className={styles.sectionTitle} style={{ color: "white" }}>
               Why Partner With{" "}
-              <span className={styles.titleHighlight}>BBMTech</span>?
+              <span className={styles.titleHighlight}>BBMcoders</span>?
             </h2>
             <p
               className={styles.sectionDescription}

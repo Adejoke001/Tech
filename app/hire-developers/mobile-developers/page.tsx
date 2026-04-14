@@ -44,7 +44,7 @@ export default function MobileAppDevelopersPage() {
     name: "Jessica",
     role: "Product Director",
     content:
-      "BBMTech's mobile developers delivered a cross-platform app that reduced our development time by 40% while maintaining native-like performance on both iOS and Android.",
+      "BBMcoders' mobile developers delivered a cross-platform app that reduced our development time by 40% while maintaining native-like performance on both iOS and Android.",
     rating: 5,
     project: "Retail E-Commerce Platform",
   };
@@ -410,7 +410,7 @@ export default function MobileAppDevelopersPage() {
       deliverySupport: "Limited",
     },
     {
-      model: "BBMTech",
+      model: "BBMcoders",
       timeToHire: "1 day - 2 weeks",
       timeToStart: "1 day - 2 weeks",
       trainingCost: "0",
@@ -542,7 +542,7 @@ export default function MobileAppDevelopersPage() {
   // FAQs
   const faqs = [
     {
-      question: "How quickly can I hire mobile app developers from BBMTech?",
+      question: "How quickly can I hire mobile app developers from BBMcoders?",
       answer:
         "We can onboard dedicated mobile app developers in 24-48 hours. Our vetting process ensures you get pre-screened, experienced developers who match your specific mobile development requirements.",
     },
@@ -574,7 +574,7 @@ export default function MobileAppDevelopersPage() {
     },
   ];
 
-  // Why Choose BBMTech Features
+  // Why Choose BBMcoders Features
   const whyChooseFeatures = [
     "Workstatus™ powered Proof of Work",
     "Top 1% developers, rigorously vetted",
@@ -1032,12 +1032,12 @@ export default function MobileAppDevelopersPage() {
         <div className={styles.sectionHeader}>
           <h2 className={styles.sectionTitle}>
             Why Hire Mobile App Developers{" "}
-            <span className={styles.titleHighlight}>From BBMTech?</span>
+            <span className={styles.titleHighlight}>From BBMcoders?</span>
           </h2>
           <p className={styles.sectionDescription}>
-            BBMTech provides remote mobile app developers for all your
+            BBMcoders provides remote mobile app developers for all your
             mobile app development requirements. Hiring Nigeria app developers
-            from BBMTech is a 100% transparent process.
+            from BBMcoders is a 100% transparent process.
           </p>
         </div>
 
@@ -1064,7 +1064,7 @@ export default function MobileAppDevelopersPage() {
           <h2 className={styles.sectionTitle}>
             Comparative Analysis:{" "}
             <span className={styles.titleHighlight}>
-              In-House, Freelancers, or BBMTech
+              In-House, Freelancers, or BBMcoders
             </span>
           </h2>
           <p className={styles.sectionDescription}>
@@ -1186,7 +1186,7 @@ export default function MobileAppDevelopersPage() {
           </h2>
           <p className={styles.sectionDescription}>
             Get answers to common questions about hiring mobile app developers
-            from BBMTech.
+            from BBMcoders.
           </p>
         </div>
 

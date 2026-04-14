@@ -371,7 +371,7 @@ export default function FrontendPage() {
                          Front-End Development for <span className={styles.highlight}>Exceptional User Experiences</span>
                         </h1>
                         <p className={styles.heroSubtitle}>
-                            Having challenges with your website or application&apos;s user experience? BBMTech offers expert front-end development services, combining strong UI engineering with performance, accessibility, and long-term maintainability.
+                            Having challenges with your website or application&apos;s user experience? BBMcoders offers expert front-end development services, combining strong UI engineering with performance, accessibility, and long-term maintainability.
                         </p>
                         <div className={styles.heroButtons}>
                             <Link href="/contact" className={styles.primaryButton}>
@@ -442,7 +442,7 @@ export default function FrontendPage() {
                             Front-End Development <span className={styles.titleHighlight}>Services We Offer</span>
                         </h2>
                         <p className={styles.sectionDescription}>
-                            BBMTech stands at the forefront of front-end development. Our front end development services are built to transform your design into high-performance, responsive, maintainable web experiences.
+                            BBMcoders stands at the forefront of front-end development. Our front end development services are built to transform your design into high-performance, responsive, maintainable web experiences.
                         </p>
                     </div>
                     <div className={styles.servicesGrid}>

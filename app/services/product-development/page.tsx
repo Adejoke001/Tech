@@ -1,7 +1,7 @@
 "use client";
 
 import { useState, useRef, useEffect } from "react";
-import { motion, useInView, useScroll, useTransform } from "framer-motion";
+import { motion, useScroll, useTransform } from "framer-motion";
 import Image from "next/image";
 import Link from "next/link";
 import {
@@ -45,56 +45,56 @@ export default function ProductDevelopment() {
 
   const statsRef = useRef(null);
   const processRef = useRef(null);
-  const isStatsInView = useInView(statsRef, { once: true, amount: 0.3 });
+  // const isStatsInView = useInView(statsRef, { once: true, amount: 0.3 });
 
   const { scrollYProgress } = useScroll();
   const heroOpacity = useTransform(scrollYProgress, [0, 0.2], [1, 0]);
   // const heroScale = useTransform(scrollYProgress, [0, 0.2], [1, 1]);
 
   // Counter animation for stats
-  const [expertCount, setExpertCount] = useState(0);
-  const [yearsCount, setYearsCount] = useState(0);
-  const [customerCount, setCustomerCount] = useState(0);
+  // const [expertCount, setExpertCount] = useState(0);
+  // const [yearsCount, setYearsCount] = useState(0);
+  // const [customerCount, setCustomerCount] = useState(0);
 
-  useEffect(() => {
-    if (isStatsInView) {
-      const expertTimer = setInterval(() => {
-        setExpertCount((prev) => {
-          if (prev >= 675) {
-            clearInterval(expertTimer);
-            return 675;
-          }
-          return prev + 15;
-        });
-      }, 20);
+  // useEffect(() => {
+  //   if (isStatsInView) {
+  //     const expertTimer = setInterval(() => {
+  //       setExpertCount((prev) => {
+  //         if (prev >= 675) {
+  //           clearInterval(expertTimer);
+  //           return 675;
+  //         }
+  //         return prev + 15;
+  //       });
+  //     }, 20);
 
-      const yearsTimer = setInterval(() => {
-        setYearsCount((prev) => {
-          if (prev >= 20) {
-            clearInterval(yearsTimer);
-            return 20;
-          }
-          return prev + 1;
-        });
-      }, 50);
+  //     const yearsTimer = setInterval(() => {
+  //       setYearsCount((prev) => {
+  //         if (prev >= 20) {
+  //           clearInterval(yearsTimer);
+  //           return 20;
+  //         }
+  //         return prev + 1;
+  //       });
+  //     }, 50);
 
-      const customerTimer = setInterval(() => {
-        setCustomerCount((prev) => {
-          if (prev >= 2500) {
-            clearInterval(customerTimer);
-            return 2500;
-          }
-          return prev + 50;
-        });
-      }, 10);
+  //     const customerTimer = setInterval(() => {
+  //       setCustomerCount((prev) => {
+  //         if (prev >= 2500) {
+  //           clearInterval(customerTimer);
+  //           return 2500;
+  //         }
+  //         return prev + 50;
+  //       });
+  //     }, 10);
 
-      return () => {
-        clearInterval(expertTimer);
-        clearInterval(yearsTimer);
-        clearInterval(customerTimer);
-      };
-    }
-  }, [isStatsInView]);
+  //     return () => {
+  //       clearInterval(expertTimer);
+  //       clearInterval(yearsTimer);
+  //       clearInterval(customerTimer);
+  //     };
+  //   }
+  // }, [isStatsInView]);
 
   // Toggle FAQ
   const toggleFaq = (index: number) => {
@@ -495,13 +495,13 @@ export default function ProductDevelopment() {
   const faqs = [
     {
       question:
-        "Why should I choose BBMTech for software engineering, consulting, and outsourcing?",
+        "Why should I choose BBMcoders for software engineering, consulting, and outsourcing?",
       answer:
         "We are a highly experienced and qualified team of professionals with a proven track record of delivering quality software solutions to clients. Here are a few reasons to choose us: 675+ vetted developers, expertise across 50+ tech stacks, proven delivery in complex enterprise projects, 97% client satisfaction rate, and 20+ years of industry experience.",
     },
     {
       question:
-        "Can I test the services of BBMTech before committing to long-term engagement?",
+        "Can I test the services of BBMcoders before committing to long-term engagement?",
       answer:
         "Yes! We offer a free trial to clients worldwide. This is to give our potential customers a risk-free way to try our software development services before committing to long-term engagement. We strongly believe in our products and services and want to allow everyone to experience firsthand the value we can bring. Just fill out a form and connect with our team.",
     },
@@ -514,7 +514,7 @@ export default function ProductDevelopment() {
       question:
         "Is outsourcing software development risky? How do you ensure IP (Intellectual Property) and data protection?",
       answer:
-        "Software product development outsourcing is not risky at all if you outsource your project to a reputed company. BBMTech ensures IP (Intellectual Property) & data protection in the following ways: We sign a Non-Disclosure Agreement (NDA), meet special industry regulations such as GDPR, HIPAA, etc., follow secure coding and data protection practices, establish firewalls, encryption, and VPN services to prevent online security breaches. All our employees are strictly verified before recruitment.",
+        "Software product development outsourcing is not risky at all if you outsource your project to a reputed company. BBMcoders ensures IP (Intellectual Property) & data protection in the following ways: We sign a Non-Disclosure Agreement (NDA), meet special industry regulations such as GDPR, HIPAA, etc., follow secure coding and data protection practices, establish firewalls, encryption, and VPN services to prevent online security breaches. All our employees are strictly verified before recruitment.",
     },
     {
       question:
@@ -586,7 +586,7 @@ export default function ProductDevelopment() {
                   </div>
                 </div>
                 <div className={styles.statMini}>
-                  <div className={styles.statMiniNumber}>4200+</div>
+                  <div className={styles.statMiniNumber}>2500+</div>
                   <div className={styles.statMiniLabel}>Projects</div>
                 </div>
               </motion.div>
@@ -648,7 +648,7 @@ export default function ProductDevelopment() {
 
                 <Quote className={styles.quoteIcon} />
                 <p className={styles.testimonialContent}>
-                  &quot;BBMTech transformed our legacy system into a modern
+                  &quot;BBMcoders transformed our legacy system into a modern
                   cloud platform with zero downtime.&quot;
                 </p>
 
@@ -796,7 +796,7 @@ export default function ProductDevelopment() {
               designed to deliver measurable impact on your bottom line.
             </p>
 
-            <div className={styles.statsGrid}>
+            {/* <div className={styles.statsGrid}>
               <motion.div
                 className={styles.statItem}
                 initial={{ scale: 0 }}
@@ -863,7 +863,7 @@ export default function ProductDevelopment() {
                 <div className={styles.statLabel}>Client Satisfaction</div>
                 <div className={styles.statSubtext}>Repeat Business Rate</div>
               </motion.div>
-            </div>
+            </div> */}
 
             <Link href="/company/testimonials" className={styles.linkWrapper}>
               <motion.button
@@ -1124,7 +1124,7 @@ export default function ProductDevelopment() {
             </h2>
             <p className={styles.sectionDescription}>
               Get what you are looking for to fulfill your software development
-              and outsourcing needs at BBMTech, with our expertise on all
+              and outsourcing needs at BBMcoders, with our expertise on all
               in-demand technologies & platforms.
             </p>
           </motion.div>

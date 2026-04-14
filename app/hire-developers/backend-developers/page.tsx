@@ -55,7 +55,7 @@ export default function BackendDevelopersPage() {
     name: "Sarah Johnson",
     role: "CTO, FinSecure Inc.",
     content:
-      "The backend developers from BBMTech built a fault-tolerant system that handles 50,000+ transactions per second with 99.99% uptime. Their architecture decisions saved us 40% on cloud costs.",
+      "The backend developers from BBMcoders built a fault-tolerant system that handles 50,000+ transactions per second with 99.99% uptime. Their architecture decisions saved us 40% on cloud costs.",
     rating: 5,
     project: "Financial Transaction Platform",
   };
@@ -313,7 +313,7 @@ export default function BackendDevelopersPage() {
       deliverySupport: "Limited",
     },
     {
-      model: "BBMTech",
+      model: "BBMcoders",
       timeToHire: "1 day - 2 weeks",
       timeToStart: "1 day - 2 weeks",
       trainingCost: "0",
@@ -444,7 +444,7 @@ export default function BackendDevelopersPage() {
   // FAQs (Same as frontend but backend-focused)
   const faqs = [
     {
-      question: "How quickly can I hire backend developers from BBMTech?",
+      question: "How quickly can I hire backend developers from BBMcoders?",
       answer:
         "We can onboard dedicated backend developers in 24-48 hours. Our vetting process is streamlined to provide you with pre-screened, experienced developers who match your specific requirements.",
     },
@@ -548,7 +548,7 @@ export default function BackendDevelopersPage() {
                 performance
               </p>
               <p className={styles.heroDescription}>
-                Hire dedicated backend developers from BBMTech with 5+ years of
+                Hire dedicated backend developers from BBMcoders with 5+ years of
                 average experience. Expertise in Node.js, .NET, Python, PHP,
                 Laravel, Ruby on Rails, and GoLang for building secure,
                 high-performance backend systems.
@@ -836,12 +836,12 @@ export default function BackendDevelopersPage() {
       <section className={styles.benefitsSection}>
         <div className={styles.sectionHeader}>
           <h2 className={styles.sectionTitle}>
-            Why Choose BBMTech for{" "}
+            Why Choose BBMcoders for{" "}
             <span className={styles.titleHighlight}>Backend Development?</span>
           </h2>
           <p className={styles.sectionDescription}>
             If you&apos;re looking for top-tier backend developers, trust
-            BBMTech. With years of experience in the industry, our team of
+            BBMcoders. With years of experience in the industry, our team of
             experienced professionals helps you build robust backend solutions
             that cater to your business needs.
           </p>
@@ -985,7 +985,7 @@ export default function BackendDevelopersPage() {
           <h2 className={styles.sectionTitle}>
             Comparative Analysis:{" "}
             <span className={styles.titleHighlight}>
-              In-House, Freelancers, or BBMTech
+              In-House, Freelancers, or BBMcoders
             </span>
           </h2>
           <p className={styles.sectionDescription}>
@@ -1111,7 +1111,7 @@ export default function BackendDevelopersPage() {
           </h2>
           <p className={styles.sectionDescription}>
             Get answers to common questions about hiring backend developers from
-            BBMTech.
+            BBMcoders.
           </p>
         </div>
 

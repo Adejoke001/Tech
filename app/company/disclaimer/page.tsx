@@ -163,7 +163,7 @@ export default function DisclaimerPage() {
                         <div className={styles.contactCard}>
                             <div className={styles.contactItem}>
                                 <Mail size={18} />
-                                <span>legal@bbmtech.com</span>
+                                <span>legal@bbmcoders.com</span>
                             </div>
                             <div className={styles.contactItem}>
                                 <Phone size={18} />

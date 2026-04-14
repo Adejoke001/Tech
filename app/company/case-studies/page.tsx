@@ -32,7 +32,7 @@ export default function CaseStudiesPage() {
             solution: 'We designed and developed a cloud-native, microservices-based OTT platform using AWS, Node.js, and React. Key features included adaptive bitrate streaming (HLS), a global CDN integration for low-latency delivery, personalized recommendation engine powered by AI/ML, and a robust content management system for the admin team. We implemented a serverless architecture for automatic scaling and used WebSockets for real-time features like live chat during events.',
             results: 'The platform launched successfully, handling over 1 million concurrent viewers for a major live sports event with zero buffering issues. Within six months, StreamFlix onboarded 5 million new users. The new infrastructure reduced video start time by 70% and operational costs by 40% compared to their initial estimates. The client received overwhelmingly positive feedback on the user experience and platform stability.',
             testimonial: {
-                quote: "BBMTech didn't just build us a platform; they built a foundation for our entire business. Their technical expertise and commitment to quality were evident at every stage. We couldn't be happier with the result.",
+                quote: "BBMcoders didn't just build us a platform; they built a foundation for our entire business. Their technical expertise and commitment to quality were evident at every stage. We couldn't be happier with the result.",
                 author: 'Michael Chen',
                 role: 'CTO, StreamFlix Entertainment',
             },
@@ -55,7 +55,7 @@ export default function CaseStudiesPage() {
             solution: 'We developed a modern, responsive LXP (Learning Experience Platform) with a React frontend and a Python/Django backend. We integrated AI-powered recommendation algorithms to suggest relevant content based on user behavior and learning goals. We also built interactive dashboards for students to track progress and for instructors to gain insights into class performance. The platform was designed to be mobile-first and included offline access for students in regions with limited connectivity.',
             results: 'The new platform led to a 40% increase in student engagement and a 25% improvement in course completion rates within the first year. EduGlobal was able to expand into 5 new international markets due to the platform\'s scalability and multi-language support. The intuitive interface and personalized learning paths received high praise from both students and educators.',
             testimonial: {
-                quote: "The team at BBMTech truly understood our vision. They built a platform that not only meets our current needs but is also ready for the future of education. The AI features have been a game-changer for our students.",
+                quote: "The team at BBMcoders truly understood our vision. They built a platform that not only meets our current needs but is also ready for the future of education. The AI features have been a game-changer for our students.",
                 author: 'Sarah Johnson',
                 role: 'Director of Learning, EduGlobal Solutions',
             },
@@ -78,7 +78,7 @@ export default function CaseStudiesPage() {
             solution: 'We built a real-time fraud detection engine using Apache Kafka for stream processing and a machine learning model (trained on historical transaction data) to score transaction risk. The system was integrated with their core lending platform via secure APIs. We developed a dashboard for fraud analysts to review flagged transactions, investigate patterns, and provide feedback to continuously improve the ML model. The entire architecture was deployed on a highly available cloud infrastructure.',
             results: 'The new system reduced fraudulent transaction losses by 95% within the first three months. It processes thousands of transactions per second with sub-100ms latency, virtually eliminating customer friction. The adaptive ML model continuously learns and improves, detecting new fraud patterns hours, not weeks, after they emerge. The client regained customer trust and saw a 20% increase in loan application conversion rates.',
             testimonial: {
-                quote: "BBMTech delivered a solution that was both highly sophisticated and practical. They took the time to understand our business, and the result is a fraud detection system that is incredibly effective and has paid for itself many times over.",
+                quote: "BBMcoders delivered a solution that was both highly sophisticated and practical. They took the time to understand our business, and the result is a fraud detection system that is incredibly effective and has paid for itself many times over.",
                 author: 'David Lee',
                 role: 'Head of Risk, FinScale Capital',
             },
@@ -101,7 +101,7 @@ export default function CaseStudiesPage() {
             solution: 'We designed and built a comprehensive supply chain management platform that integrated with their existing ERP, WMS, and carrier APIs. The platform provides a single dashboard for real-time tracking of shipments, inventory levels across warehouses, and automated customs documentation. We implemented role-based access controls for different stakeholders (e.g., clients, warehouse staff, logistics coordinators). The system also includes predictive analytics to forecast potential delays and suggest alternative routes.',
             results: 'The new platform streamlined operations, resulting in a 30% increase in overall efficiency. Clients gained full visibility into their supply chain, leading to a significant boost in satisfaction and retention. Manual data entry errors were reduced by 90%, and the time to process customs documentation was cut in half. The platform successfully onboarded over 10,000 suppliers and partners.',
             testimonial: {
-                quote: "This platform has transformed how we do business. Our clients love the transparency, and our team is finally working with a single source of truth. BBMTech delivered a complex project flawlessly.",
+                quote: "This platform has transformed how we do business. Our clients love the transparency, and our team is finally working with a single source of truth. BBMcoders delivered a complex project flawlessly.",
                 author: 'Maria Rodriguez',
                 role: 'COO, Global Logistics Corp',
             },
@@ -125,7 +125,7 @@ export default function CaseStudiesPage() {
             solution: 'We developed a custom telemedicine platform with end-to-end encryption, role-based access, and full HIPAA compliance. The platform integrates with major EHR systems via FHIR APIs, allowing doctors to access patient records during consultations. We built a WebRTC-based video module with adaptive quality for low-bandwidth environments, a secure chat system, and an automated appointment scheduler. The mobile app was developed in React Native for both iOS and Android.',
             results: 'The platform was deployed in under 4 months and now serves over 200 hospitals and clinics. It handles over 50,000 virtual consultations per month with an average user rating of 4.9 stars. Doctors report significant time savings, and patient no-show rates dropped by 35%. The solution passed all HIPAA security audits with zero findings.',
             testimonial: {
-                quote: "BBMTech delivered a platform that is both highly secure and incredibly easy to use. Our patients love the convenience, and our staff has embraced it fully. They were true partners throughout the journey.",
+                quote: "BBMcoders delivered a platform that is both highly secure and incredibly easy to use. Our patients love the convenience, and our staff has embraced it fully. They were true partners throughout the journey.",
                 author: 'Dr. Emily Carter',
                 role: 'Chief Medical Information Officer, HealthConnect',
             },
@@ -149,7 +149,7 @@ export default function CaseStudiesPage() {
             solution: 'We built an end-to-end IoT platform using edge devices to collect vibration, temperature, and power consumption data from machines. Data is streamed via MQTT to Azure IoT Hub, then processed using Azure Stream Analytics and machine learning models (trained on historical failure data) to predict anomalies. A custom dashboard visualizes machine health, alerts maintenance teams, and integrates with their ERP for automated work orders. The solution supports both modern and retrofitted sensors.',
             results: 'The platform reduced unplanned downtime by 40% within the first year, saving the company over $2 million. Maintenance teams now move from reactive to predictive, extending machine life and improving production efficiency. The client has expanded the solution to three additional plants and plans to integrate with their supply chain system.',
             testimonial: {
-                quote: "This predictive maintenance platform has been a game-changer for our operations. The team at BBMTech understood our complex environment and delivered a solution that exceeded our expectations. We're now able to anticipate problems before they happen.",
+                quote: "This predictive maintenance platform has been a game-changer for our operations. The team at BBMcoders understood our complex environment and delivered a solution that exceeded our expectations. We're now able to anticipate problems before they happen.",
                 author: 'Robert Green',
                 role: 'Plant Operations Director, Industrial Solutions Ltd.',
             },

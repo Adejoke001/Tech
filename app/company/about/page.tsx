@@ -50,7 +50,7 @@ export default function AboutPage() {
         {
             name: 'Chidi Okonkwo',
             role: 'VP - Operations',
-            bio: 'Chidi oversees BBMTech\'s vast engineering organization, which drives the company\'s core programming.',
+            bio: 'Chidi oversees BBMcoders\'s vast engineering organization, which drives the company\'s core programming.',
             image: '/images/user.png',
         },
         {
@@ -93,7 +93,7 @@ export default function AboutPage() {
 
     // ----- TIMELINE -----
     const timeline = [
-        { year: '2004', event: 'BBMTech was founded in Lagos, Nigeria, with a vision to deliver IT outsourcing services worldwide.' },
+        { year: '2004', event: 'BBMcoders was founded in Lagos, Nigeria, with a vision to deliver IT outsourcing services worldwide.' },
         { year: '2010', event: 'Expanded operations to serve clients across Africa, Europe, and North America.' },
         { year: '2015', event: 'Reached 500+ skilled professionals and launched dedicated development centers.' },
         { year: '2020', event: 'Celebrated 16 years of excellence with 2500+ successful projects delivered globally.' },
@@ -114,37 +114,37 @@ export default function AboutPage() {
         {
             name: 'James Kelly',
             role: 'Co-founder, Miracle Choice',
-            content: 'The Project managers took a lot of time to understand project. They knew what quality & output we expected. It\'s reassuring, and that\'s why we chose BBMTech.',
+            content: 'The Project managers took a lot of time to understand project. They knew what quality & output we expected. It\'s reassuring, and that\'s why we chose BBMcoders.',
             image: '/images/user.png',
         },
         {
             name: 'Kris Bruynson',
             role: 'Director, Storloft',
-            content: 'BBMTech has technical expertise in front-end and back-end development. Account management was friendly and always available. I would give them ten out of ten!',
+            content: 'BBMcoders has technical expertise in front-end and back-end development. Account management was friendly and always available. I would give them ten out of ten!',
             image: '/images/user.png',
         },
         {
             name: 'Mohammed Mirza',
             role: 'Director, LOCALMASTERCHEFS LTD',
-            content: 'Huge thank you to BBMTech, they have been a massive help in enabling us to start developing our project within a few weeks. I have already recommended it to one of my friends.',
+            content: 'Huge thank you to BBMcoders, they have been a massive help in enabling us to start developing our project within a few weeks. I have already recommended it to one of my friends.',
             image: '/images/user.png',
         },
         {
             name: 'Mr. Savarni',
             role: 'Founder, sbspco.com',
-            content: 'We got an awesome product! I would highly recommend BBMTech to anyone for their professional attitude & customer care.',
+            content: 'We got an awesome product! I would highly recommend BBMcoders to anyone for their professional attitude & customer care.',
             image: '/images/user.png',
         },
         {
             name: 'Judith Mueller',
             role: 'Executive Director, Mueller Health Foundation',
-            content: 'BBMTech provided us with exceptional services in creating a one-of-a-kind portal. Impressed with how efficient and quick the team was.',
+            content: 'BBMcoders provided us with exceptional services in creating a one-of-a-kind portal. Impressed with how efficient and quick the team was.',
             image: '/images/user.png',
         },
         {
             name: 'Jame Thompson',
             role: 'edinstitute.com.au',
-            content: 'We outsourced our website development to BBMTech, and we are super happy with their services. Highly recommend them.',
+            content: 'We outsourced our website development to BBMcoders, and we are super happy with their services. Highly recommend them.',
             image: '/images/user.png',
         },
     ];
@@ -163,7 +163,7 @@ export default function AboutPage() {
                 <div className={styles.heroBackground}>
                     <Image
                         src="https://images.unsplash.com/photo-1557804506-669a67965ba0?auto=format&fit=crop&w=1920&q=80"
-                        alt="About BBMTech"
+                        alt="About BBMcoders"
                         fill
                         className={styles.heroImage}
                         priority
@@ -178,7 +178,7 @@ export default function AboutPage() {
                         transition={{ duration: 0.6 }}
                     >
                         <div className={styles.heroBadge}>
-                            <Sparkles size={16} /> About BBMTech
+                            <Sparkles size={16} /> About BBMcoders
                         </div>
                         <h1 className={styles.heroTitle}>
                             We Are – Software Development Company <span className={styles.highlight}>Since 2004</span>
@@ -214,7 +214,7 @@ export default function AboutPage() {
                                 </div>
                                 <div className={styles.founderInfo}>
                                     <h4>Adebayo Ogunlesi</h4>
-                                    <p>CEO, BBMTech</p>
+                                    <p>CEO, BBMcoders</p>
                                 </div>
                             </div>
                         </div>
@@ -270,7 +270,7 @@ export default function AboutPage() {
                             20+ Years of <span className={styles.titleHighlight}>Proud Existence</span>
                         </h2>
                         <p className={styles.sectionDescription}>
-                            BBMTech set its first stone down in 2004 in Lagos, Nigeria, and has been thriving ever since. We deliver exceptional technology solutions for world-class businesses in every industry – from dynamic startups and SMBs to Fortune 500 companies.
+                            BBMcoders set its first stone down in 2004 in Lagos, Nigeria, and has been thriving ever since. We deliver exceptional technology solutions for world-class businesses in every industry – from dynamic startups and SMBs to Fortune 500 companies.
                         </p>
                     </div>
                     <div className={styles.timelineGrid}>

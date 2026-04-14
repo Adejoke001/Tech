@@ -121,9 +121,9 @@ const SoftwareDevelopmentServices = () => {
   },
 ];
   const stats = [
-    { value: 675, suffix: "+", label: "Full-time Staff" },
+    { value: 100, suffix: "+", label: "Full-time Staff" },
     { value: 20, suffix: "+", label: "Years Experience" },
-    { value: 2500, suffix: "+", label: "Satisfied", description: "Customers" }
+    { value: 1600, suffix: "+", label: "Satisfied", description: "Customers" }
   ];
 
  useEffect(() => {

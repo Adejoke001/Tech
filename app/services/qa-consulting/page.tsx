@@ -415,9 +415,9 @@ export default function QAStrategyConsultingPage() {
   ];
 
   const companyStats = [
-    { value: "700+", label: "Full-time Staff" },
+    { value: "100+", label: "Full-time Staff" },
     { value: "20+", label: "Years Experience" },
-    { value: "4500+", label: "Satisfied Customers" },
+    { value: "1600+", label: "Satisfied Clients" },
     { value: "95%", label: "Client Retention" },
   ];
 
@@ -612,7 +612,7 @@ export default function QAStrategyConsultingPage() {
             Services
           </h2>
           <p className={styles.sectionDescription}>
-            As India&apos;s leading software QA consulting firm, we combine deep
+            As Nigeria&apos;s leading software QA consulting firm, we combine deep
             expertise with innovative strategies to deliver tailored testing
             solutions.
           </p>
@@ -713,7 +713,7 @@ export default function QAStrategyConsultingPage() {
         <div className={styles.sectionHeader}>
           <h2 className={styles.sectionTitleWhite}>
             Why Choose{" "}
-            <span className={styles.titleHighlightWhite}>BBMTech</span> for QA
+            <span className={styles.titleHighlightWhite}>BBMcoders</span> for QA
             Consulting
           </h2>
           <p className={styles.sectionDescriptionWhite}>
