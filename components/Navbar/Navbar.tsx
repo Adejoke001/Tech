@@ -137,7 +137,7 @@ export default function Navbar() {
           >
             <div className={styles.logoWrapper}>
               <Image
-                src="/bbmcoders.png"
+                src="/image.png"
                 alt="Company Logo"
                 fill
                 sizes="(max-width: 768px) 100px, (max-width: 1200px) 120px, 140px"

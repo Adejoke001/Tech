@@ -8,11 +8,6 @@
   transition: all 0.3s ease;
 }
 
-.navbarHovered {
-  background: white;
-  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
-}
-
 .container {
   max-width: 1200px;
   margin: 0 auto;
@@ -33,7 +28,7 @@
   }
 }
 
-/* Logo Styles */
+/* Logo Styles - MODERATE REDUCTION */
 .logoLink {
   display: flex;
   align-items: center;
@@ -44,14 +39,14 @@
 /* Mobile spacing fix – adds breathing room between logo and menu button */
 @media (max-width: 1023px) {
   .logoLink {
-    margin-right: 1rem;
+    margin-right: 1.2rem;
   }
 }
 
 .logoWrapper {
   position: relative;
-  width: 140px; /* increased from 100px for better mobile visibility */
-  height: 70px;
+  width: 120px;   /* was 140px originally */
+  height: 60px;   /* was 70px originally */
   display: flex;
   align-items: center;
 }
@@ -60,57 +55,57 @@
   object-fit: contain;
   height: 100%;
   width: auto;
-  transform: scale(1.4); /* bigger base scale */
+  transform: scale(1.2);   /* slightly reduced from 1.4 */
   transition: all 0.3s ease;
 }
 
-/* Responsive adjustments – grow gradually */
+/* Responsive adjustments – moderate growth */
 @media (min-width: 640px) {
   .logoWrapper {
+    width: 130px;
+  }
+  .logoImage {
+    transform: scale(1.3);
+  }
+}
+
+@media (min-width: 768px) {
+  .logoWrapper {
+    width: 140px;
+  }
+  .logoImage {
+    transform: scale(1.4);
+  }
+}
+
+@media (min-width: 1024px) {
+  .logoWrapper {
     width: 160px;
+  }
+  .logoImage {
+    transform: scale(1.5);
+  }
+  .logoLink {
+    margin-right: 0;
+  }
+}
+
+@media (min-width: 1280px) {
+  .logoWrapper {
+    width: 180px;
   }
   .logoImage {
     transform: scale(1.6);
   }
 }
 
-@media (min-width: 768px) {
-  .logoWrapper {
-    width: 180px;
-  }
-  .logoImage {
-    transform: scale(1.8);
-  }
-}
-
-@media (min-width: 1024px) {
-  .logoWrapper {
-    width: 210px;
-  }
-  .logoImage {
-    transform: scale(2.0);
-  }
-  .logoLink {
-    margin-right: 0; /* remove extra margin on desktop */
-  }
-}
-
-@media (min-width: 1280px) {
-  .logoWrapper {
-    width: 250px;
-  }
-  .logoImage {
-    transform: scale(2.2);
-  }
-}
-
-/* Hover effect */
+/* Hover effect - slight increase */
 .logoLink:hover .logoImage {
-  transform: scale(2.05);
+  transform: scale(1.08);
   opacity: 0.95;
 }
 
-/* When navbar has white background */
+/* When navbar has white background (no longer used, but keep for safety) */
 .navbarHovered .logoImage {
   filter: drop-shadow(0 1px 2px rgba(0, 0, 0, 0.1));
 }
@@ -147,8 +142,9 @@
   position: relative;
 }
 
+/* Hover – text stays white, only underline appears */
 .dropdownButton:hover {
-  color: rgb(61, 48, 48);
+  color: white;
 }
 
 .dropdownButton:hover::after {
@@ -162,8 +158,9 @@
   background-color: #FFAD00;
 }
 
+/* Keep white when navbar is hovered */
 .dropdownButtonHovered {
-  color: #333;
+  color: white;
 }
 
 /* Dropdown Menu */
@@ -218,7 +215,7 @@
   justify-content: center;
 }
 
-/* Nav Links */
+/* Nav Links (if used elsewhere) */
 .navLink {
   color: white;
   font-weight: 500;
@@ -230,7 +227,7 @@
 }
 
 .navLink:hover {
-  color: rgb(49, 38, 38);
+  color: white;
 }
 
 .navLink:hover::after {
@@ -244,7 +241,7 @@
 }
 
 .navLinkHovered {
-  color: #333;
+  color: white;
 }
 
 /* Contact Button */
@@ -279,7 +276,7 @@
 /* Mobile Menu Button */
 .mobileMenuButton {
   color: white;
-  padding: 0.4rem;
+  padding: 0.3rem;
   transition: color 0.3s ease;
   background: none;
   border: none;
@@ -287,7 +284,7 @@
 }
 
 .mobileMenuButtonHovered {
-  color: #333;
+  color: white;
 }
 
 @media (min-width: 1024px) {
