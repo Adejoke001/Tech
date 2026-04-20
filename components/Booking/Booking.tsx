@@ -1,5 +1,6 @@
 'use client';
 import React, { useState, useRef, FormEvent, ChangeEvent, DragEvent } from 'react';
+import Link from 'next/link';
 import styles from './booking.module.css';
 
 const Booking = () => {
@@ -11,7 +12,6 @@ const Booking = () => {
     setIsDragging(false);
     const files = e.dataTransfer.files;
     if (files.length > 0) {
-      // Handle file upload logic here
       console.log('Files dropped:', files);
     }
   };
@@ -19,7 +19,6 @@ const Booking = () => {
   const handleFileInput = (e: ChangeEvent<HTMLInputElement>) => {
     const files = e.target.files;
     if (files && files.length > 0) {
-      // Handle file upload logic here
       console.log('Files selected:', files);
     }
   };
@@ -40,18 +39,40 @@ const Booking = () => {
 
   const handleSubmit = (e: FormEvent<HTMLFormElement>) => {
     e.preventDefault();
-    // Handle form submission logic here
     console.log('Form submitted');
+  };
+
+  // ✅ Dynamic mailto generator
+  const createMailtoLink = (email: string, subject: string, body: string) => {
+    return `mailto:${email}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+  };
+
+  // ✅ Email click handler
+  const handleEmailClick = () => {
+    const email = 'hello@bbmcoders.com';
+
+    const subject = 'Inquiry from BBM Coders Website';
+    const body = `Hello BBM Coders,
+
+I would like to get in touch regarding...
+
+Best regards,
+[Your Name]`;
+
+    const mailtoLink = createMailtoLink(email, subject, body);
+
+    window.location.href = mailtoLink;
   };
 
   return (
     <section className={styles.bookingSection}>
       <div className={styles.container}>
         <div className={styles.bookingContent}>
-          {/* Left Side - Content */}
+          {/* Left Side */}
           <div className={styles.contentSide}>
             <div className={styles.contactOptions}>
-              <div className={styles.contactItem}>
+              {/* Book A Call */}
+              <Link href="/contact" className={styles.contactItem}>
                 <div className={styles.iconWrapper}>
                   <span className={styles.icon}>📞</span>
                 </div>
@@ -59,9 +80,17 @@ const Booking = () => {
                   <h3 className={styles.contentTitle}>Book A Call</h3>
                   <p className={styles.contentDescription}>BBMcoders</p>
                 </div>
-              </div>
+              </Link>
 
-              <div className={styles.contactItem}>
+              {/* ✅ Email us (dynamic mailto) */}
+              <div
+                onClick={handleEmailClick}
+                className={styles.contactItem}
+                role="button"
+                tabIndex={0}
+                onKeyDown={(e) => e.key === 'Enter' && handleEmailClick()}
+                style={{ cursor: 'pointer' }}
+              >
                 <div className={styles.iconWrapper}>
                   <span className={styles.icon}>📧</span>
                 </div>
@@ -73,7 +102,9 @@ const Booking = () => {
             </div>
 
             <div className={styles.trustedBy}>
-              <p className={styles.trustedText}>Trusted by Startups and Fortune 500 companies</p>
+              <p className={styles.trustedText}>
+                Trusted by Startups and Fortune 500 companies
+              </p>
             </div>
 
             <div className={styles.statsContainer}>
@@ -81,7 +112,9 @@ const Booking = () => {
                 <div className={styles.statIcon}>⭐</div>
                 <div className={styles.statContent}>
                   <h4 className={styles.statNumber}>20+ years of experience</h4>
-                  <p className={styles.statDescription}>We can handle projects of all complexities.</p>
+                  <p className={styles.statDescription}>
+                    We can handle projects of all complexities.
+                  </p>
                 </div>
               </div>
 
@@ -89,7 +122,9 @@ const Booking = () => {
                 <div className={styles.statIcon}>⭐</div>
                 <div className={styles.statContent}>
                   <h4 className={styles.statNumber}>2500+ satisfied customers</h4>
-                  <p className={styles.statDescription}>Startups to Fortune 500, we have worked with all.</p>
+                  <p className={styles.statDescription}>
+                    Startups to Fortune 500, we have worked with all.
+                  </p>
                 </div>
               </div>
 
@@ -97,7 +132,9 @@ const Booking = () => {
                 <div className={styles.statIcon}>⭐</div>
                 <div className={styles.statContent}>
                   <h4 className={styles.statNumber}>675+ in-house team</h4>
-                  <p className={styles.statDescription}>Top 1% industry talent to ensure your digital success.</p>
+                  <p className={styles.statDescription}>
+                    Top 1% industry talent to ensure your digital success.
+                  </p>
                 </div>
               </div>
             </div>
@@ -116,7 +153,9 @@ const Booking = () => {
                     <input
                       type="text"
                       id="firstName"
+                      name="firstName"
                       className={styles.formInput}
+                      autoComplete="given-name"
                       required
                     />
                   </div>
@@ -127,7 +166,9 @@ const Booking = () => {
                     <input
                       type="text"
                       id="lastName"
+                      name="lastName"
                       className={styles.formInput}
+                      autoComplete="family-name"
                       required
                     />
                   </div>
@@ -141,7 +182,9 @@ const Booking = () => {
                     <input
                       type="email"
                       id="email"
+                      name="email"
                       className={styles.formInput}
+                      autoComplete="email"
                       required
                     />
                   </div>
@@ -152,7 +195,9 @@ const Booking = () => {
                     <input
                       type="tel"
                       id="phone"
+                      name="phone"
                       className={styles.formInput}
+                      autoComplete="tel"
                       required
                     />
                   </div>
@@ -165,7 +210,9 @@ const Booking = () => {
                   <input
                     type="text"
                     id="company"
+                    name="company"
                     className={styles.formInput}
+                    autoComplete="organization"
                   />
                 </div>
 
@@ -175,6 +222,7 @@ const Booking = () => {
                   </label>
                   <textarea
                     id="message"
+                    name="message"
                     className={styles.formTextarea}
                     rows={3}
                     placeholder="Project Brief..."
@@ -182,11 +230,11 @@ const Booking = () => {
                 </div>
 
                 <div className={styles.formGroup}>
-                  <label className={styles.formLabel}>
-                    Attach Files
-                  </label>
-                  <div 
-                    className={`${styles.fileDropZone} ${isDragging ? styles.dragover : ''}`}
+                  <label className={styles.formLabel}>Attach Files</label>
+                  <div
+                    className={`${styles.fileDropZone} ${
+                      isDragging ? styles.dragover : ''
+                    }`}
                     onDrop={handleFileDrop}
                     onDragOver={handleDragOver}
                     onDragLeave={handleDragLeave}
