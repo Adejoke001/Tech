@@ -62,7 +62,7 @@ export default function TermsPage() {
                     <section className={styles.termsSection}>
                         <h2 className={styles.sectionTitle}>1. Acceptance of Terms</h2>
                         <p className={styles.sectionText}>
-                            By accessing or using the website, services, or applications (collectively, the &quot;Services&quot;) provided by BBM Multiconnect Global Technology (&quot;Company&quot;, &quot;we&quot;, &quot;us&quot;, &quot;our&quot;), you agree to be bound by these Terms of Service (&quot;Terms&quot;). If you do not agree to all of these Terms, you may not access or use the Services.
+                            By accessing or using the website, services, or applications (collectively, the &quot;Services&quot;) provided by BBMcoders (&quot;Company&quot;, &quot;we&quot;, &quot;us&quot;, &quot;our&quot;), you agree to be bound by these Terms of Service (&quot;Terms&quot;). If you do not agree to all of these Terms, you may not access or use the Services.
                         </p>
                         <p className={styles.sectionText}>
                             These Terms apply to all visitors, users, and others who access the Services (&quot;Users&quot;). We reserve the right to update or modify these Terms at any time without prior notice. Your continued use of the Services after any such changes constitutes your acceptance of the new Terms.
@@ -91,7 +91,7 @@ export default function TermsPage() {
                     <section className={styles.termsSection}>
                         <h2 className={styles.sectionTitle}>3. Intellectual Property</h2>
                         <p className={styles.sectionText}>
-                            All content, features, and functionality of the Services, including but not limited to text, graphics, logos, icons, images, audio clips, video clips, data compilations, and software, are the exclusive property of BBM Multiconnect Global Technology or its licensors and are protected by Nigerian and international copyright, trademark, patent, trade secret, and other intellectual property laws.
+                            All content, features, and functionality of the Services, including but not limited to text, graphics, logos, icons, images, audio clips, video clips, data compilations, and software, are the exclusive property of BBMcoders or its licensors and are protected by Nigerian and international copyright, trademark, patent, trade secret, and other intellectual property laws.
                         </p>
                         <p className={styles.sectionText}>
                             You may not reproduce, distribute, modify, create derivative works of, publicly display, publicly perform, republish, download, store, or transmit any of the material on our Services without our prior written consent, except as incidental to normal web browsing or as expressly permitted by these Terms.
@@ -135,7 +135,7 @@ export default function TermsPage() {
                     <section className={styles.termsSection}>
                         <h2 className={styles.sectionTitle}>7. Limitation of Liability</h2>
                         <p className={styles.sectionText}>
-                            TO THE MAXIMUM EXTENT PERMITTED BY APPLICABLE LAW, IN NO EVENT SHALL BBM MULTICONNECT GLOBAL TECHNOLOGY, ITS AFFILIATES, DIRECTORS, EMPLOYEES, OR AGENTS BE LIABLE FOR ANY INDIRECT, PUNITIVE, INCIDENTAL, SPECIAL, CONSEQUENTIAL, OR EXEMPLARY DAMAGES, INCLUDING WITHOUT LIMITATION DAMAGES FOR LOSS OF PROFITS, GOODWILL, USE, DATA, OR OTHER INTANGIBLE LOSSES, ARISING OUT OF OR RELATING TO THE USE OF, OR INABILITY TO USE, THE SERVICES.
+                            TO THE MAXIMUM EXTENT PERMITTED BY APPLICABLE LAW, IN NO EVENT SHALL BBMcoders, ITS AFFILIATES, DIRECTORS, EMPLOYEES, OR AGENTS BE LIABLE FOR ANY INDIRECT, PUNITIVE, INCIDENTAL, SPECIAL, CONSEQUENTIAL, OR EXEMPLARY DAMAGES, INCLUDING WITHOUT LIMITATION DAMAGES FOR LOSS OF PROFITS, GOODWILL, USE, DATA, OR OTHER INTANGIBLE LOSSES, ARISING OUT OF OR RELATING TO THE USE OF, OR INABILITY TO USE, THE SERVICES.
                         </p>
                         <p className={styles.sectionText}>
                             IN NO EVENT SHALL OUR TOTAL LIABILITY TO YOU FOR ALL CLAIMS ARISING OUT OF OR RELATING TO THESE TERMS OR THE SERVICES EXCEED THE AMOUNT YOU PAID US, IF ANY, FOR ACCESSING THE SERVICES DURING THE TWELVE (12) MONTHS PRECEDING THE CLAIM.
@@ -146,7 +146,7 @@ export default function TermsPage() {
                     <section className={styles.termsSection}>
                         <h2 className={styles.sectionTitle}>8. Indemnification</h2>
                         <p className={styles.sectionText}>
-                            You agree to defend, indemnify, and hold harmless BBM Multiconnect Global Technology, its affiliates, and their respective directors, officers, employees, and agents from and against any and all claims, damages, obligations, losses, liabilities, costs, or debt, and expenses (including but not limited to attorney&apos;s fees) arising from:
+                            You agree to defend, indemnify, and hold harmless BBMcoders, its affiliates, and their respective directors, officers, employees, and agents from and against any and all claims, damages, obligations, losses, liabilities, costs, or debt, and expenses (including but not limited to attorney&apos;s fees) arising from:
                         </p>
                         <ul className={styles.termsList}>
                             <li>Your use of and access to the Services;</li>
@@ -179,7 +179,7 @@ export default function TermsPage() {
                     <section className={styles.termsSection}>
                         <h2 className={styles.sectionTitle}>11. Entire Agreement</h2>
                         <p className={styles.sectionText}>
-                            These Terms constitute the entire agreement between you and BBM Multiconnect Global Technology regarding the use of the Services, superseding any prior agreements between you and us relating to your use of the Services.
+                            These Terms constitute the entire agreement between you and BBMcoders regarding the use of the Services, superseding any prior agreements between you and us relating to your use of the Services.
                         </p>
                     </section>
 
@@ -206,7 +206,7 @@ export default function TermsPage() {
                     </section>
 
                     <div className={styles.termsFooter}>
-                        <p>These Terms of Service were last updated on {lastUpdated} and apply to all users of the BBM Multiconnect Global Technology website and services.</p>
+                        <p>These Terms of Service were last updated on {lastUpdated} and apply to all users of the BBMcoders website and services.</p>
                     </div>
                 </div>
             </div>

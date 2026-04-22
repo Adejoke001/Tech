@@ -480,7 +480,7 @@ export default function EnterpriseSolutionPage() {
                                 Enterprise <span className={styles.highlight}>IT Operations</span> Services
                             </h1>
                             <p className={styles.subheadline}>
-                                From handling mission-critical workloads to ensuring zero disruption – our enterprise IT operations services are designed to help your business grow without operational hurdles.
+                                Our enterprise IT operations services are designed to help your business grow without operational hurdles.
                             </p>
                             <p className={styles.heroDescription}>
                                 We help enterprises streamline, automate, and scale their IT operations with 99.9% uptime, 30% faster incident resolution, and enterprise-grade security.

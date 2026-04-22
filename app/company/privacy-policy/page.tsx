@@ -39,7 +39,7 @@ export default function PrivacyPage() {
                             Privacy <span className={styles.highlight}>Policy</span>
                         </h1>
                         <p className={styles.heroDescription}>
-                            At BBM Multiconnect Global Technology, we are committed to protecting your privacy and ensuring the security of your personal information.
+                            At BBMcoders, we are committed to protecting your privacy and ensuring the security of your personal information.
                         </p>
                         <div className={styles.heroMeta}>
                             <Shield size={16} />
@@ -56,7 +56,7 @@ export default function PrivacyPage() {
                     <section className={styles.policySection}>
                         <h2 className={styles.sectionTitle}>Introduction</h2>
                         <p className={styles.sectionText}>
-                            Welcome to BBM Multiconnect Global Technology. We respect your privacy and are committed to protecting your personal data. This privacy policy will inform you about how we look after your personal data when you visit our website (regardless of where you visit it from) and tell you about your privacy rights and how the law protects you.
+                            Welcome to BBMcoders. We respect your privacy and are committed to protecting your personal data. This privacy policy will inform you about how we look after your personal data when you visit our website (regardless of where you visit it from) and tell you about your privacy rights and how the law protects you.
                         </p>
                         <p className={styles.sectionText}>
                             This privacy policy applies to all information collected through our website, services, and any related applications or communications.
@@ -205,7 +205,7 @@ export default function PrivacyPage() {
                     </section>
 
                     <div className={styles.policyFooter}>
-                        <p>This privacy policy was created for BBM Multiconnect Global Technology and is effective as of {lastUpdated}.</p>
+                        <p>This privacy policy was created for BBMcoders and is effective as of {lastUpdated}.</p>
                     </div>
                 </div>
             </div>
