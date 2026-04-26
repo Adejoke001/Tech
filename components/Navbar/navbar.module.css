@@ -28,7 +28,7 @@
   }
 }
 
-/* Logo Styles - MODERATE REDUCTION */
+/* Logo Styles - wrapper height 60px, logo scaled larger */
 .logoLink {
   display: flex;
   align-items: center;
@@ -45,27 +45,29 @@
 
 .logoWrapper {
   position: relative;
-  width: 120px;   /* was 140px originally */
-  height: 60px;   /* was 70px originally */
+  width: 140px;
+  height: 60px;               /* reduced from 70px */
   display: flex;
   align-items: center;
+  overflow: visible;          /* prevents clipping of scaled logo */
 }
 
 .logoImage {
   object-fit: contain;
   height: 100%;
   width: auto;
-  transform: scale(1.2);   /* slightly reduced from 1.4 */
+  transform: scale(1.7);      /* bumped up from 1.4 to make logo bigger overall */
+  transform-origin: center;
   transition: all 0.3s ease;
 }
 
-/* Responsive adjustments – moderate growth */
+/* Responsive adjustments – higher scales to compensate for smaller wrapper */
 @media (min-width: 640px) {
   .logoWrapper {
     width: 130px;
   }
   .logoImage {
-    transform: scale(1.3);
+    transform: scale(1.8);    /* was 1.5 */
   }
 }
 
@@ -74,7 +76,7 @@
     width: 140px;
   }
   .logoImage {
-    transform: scale(1.4);
+    transform: scale(1.9);    /* was 1.6 */
   }
 }
 
@@ -83,7 +85,7 @@
     width: 160px;
   }
   .logoImage {
-    transform: scale(1.5);
+    transform: scale(2);    /* was 1.7 */
   }
   .logoLink {
     margin-right: 0;
@@ -95,13 +97,13 @@
     width: 180px;
   }
   .logoImage {
-    transform: scale(1.6);
+    transform: scale(2.1);    /* was 1.8 */
   }
 }
 
-/* Hover effect - slight increase */
+/* Hover effect - slight extra increase */
 .logoLink:hover .logoImage {
-  transform: scale(1.08);
+  transform: scale(1.05);
   opacity: 0.95;
 }
 
