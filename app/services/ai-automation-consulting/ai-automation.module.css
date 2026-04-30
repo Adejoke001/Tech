@@ -11,7 +11,7 @@
   position: relative;
   min-height: 90vh;
   padding: 120px 2rem 80px;
-  background: linear-gradient(135deg, #1e293b 0%, #0f172a 100%);
+  background: linear-gradient(135deg, rgba(15, 23, 42, 0.88) 0%, rgba(30, 41, 59, 83) 100%);
   display: flex;
   align-items: center;
   justify-content: center;

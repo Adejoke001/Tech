@@ -46,7 +46,7 @@
 .logoWrapper {
   position: relative;
   width: 140px;
-  height: 60px;               /* reduced from 70px */
+  height: 72px;               /* reduced from 70px */
   display: flex;
   align-items: center;
   overflow: visible;          /* prevents clipping of scaled logo */
@@ -56,9 +56,10 @@
   object-fit: contain;
   height: 100%;
   width: auto;
-  transform: scale(1.7);      /* bumped up from 1.4 to make logo bigger overall */
+  transform: scale(2.1);      /* bumped up from 1.4 to make logo bigger overall */
   transform-origin: center;
   transition: all 0.3s ease;
+ 
 }
 
 /* Responsive adjustments – higher scales to compensate for smaller wrapper */
@@ -67,7 +68,7 @@
     width: 130px;
   }
   .logoImage {
-    transform: scale(1.8);    /* was 1.5 */
+    transform: scale(1.7);    /* was 1.5 */
   }
 }
 
@@ -85,7 +86,7 @@
     width: 160px;
   }
   .logoImage {
-    transform: scale(2);    /* was 1.7 */
+    transform: scale(2.0);    /* was 1.7 */
   }
   .logoLink {
     margin-right: 0;
@@ -283,6 +284,9 @@
   background: none;
   border: none;
   cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .mobileMenuButtonHovered {
@@ -370,3 +374,4 @@
   text-align: center;
   text-decoration: none;
 }
+

@@ -220,8 +220,7 @@ export default function ECommercePage() {
       points: [
         "Modular setup",
         "CMS/PIM integration",
-        "Performance optimization",
-      ],
+        "Performance optimization"],
     },
     {
       title: "Platform Migration & Replatforming",
@@ -231,6 +230,18 @@ export default function ECommercePage() {
       color: "#10B981",
       points: ["Data mapping", "SEO preservation", "Quality checks"],
     },
+    {
+  title: "E-Commerce Performance & Scalability Engineering",
+  description:
+    "Optimize speed, scalability, and reliability to handle high traffic and maximize conversions.",
+  icon: <Rocket />,
+  color: "#EF4444",
+  points: [
+    "Performance optimization",
+    "Load balancing",
+    "Caching strategies",
+    "High-traffic readiness"],
+},
   ];
 
   // ============ TECHNOLOGY EXPERTISE (expanded) ============
@@ -594,7 +605,7 @@ export default function ECommercePage() {
               className={styles.buttonContainer}
             >
               <Link href="/contact" className={styles.ctaButton}>
-                Build Your E-Commerce Solution
+                Build E-Commerce Solution
                 <ArrowRight className={styles.buttonIcon} />
               </Link>
              

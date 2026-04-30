@@ -4,11 +4,11 @@ import { useState } from "react";
 import Link from "next/link";
 import styles from "./navbar.module.css";
 import Image from "next/image";
+import { Menu, X } from "lucide-react";
 
 // Simple icons
-const MenuIcon = () => <span className="text-3xl">☰</span>;
-const CloseIcon = () => <span className="text-3xl">✕</span>;
-
+const MenuIcon = () => <Menu size={27} />;
+const CloseIcon = () => <X size={27} />;
 // Dropdown icons
 const ProductIcon = () => <span className={styles.dropdownIcon}>📦</span>;
 const SoftwareIcon = () => <span className={styles.dropdownIcon}>💻</span>;

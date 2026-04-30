@@ -48,7 +48,7 @@ export default function ProductDevelopment() {
   // const isStatsInView = useInView(statsRef, { once: true, amount: 0.3 });
 
   const { scrollYProgress } = useScroll();
-  const heroOpacity = useTransform(scrollYProgress, [0, 0.2], [1, 0]);
+ const heroOpacity = useTransform(scrollYProgress, [0, 0.3], [1, 0.7]);
   // const heroScale = useTransform(scrollYProgress, [0, 0.2], [1, 1]);
 
   // Counter animation for stats

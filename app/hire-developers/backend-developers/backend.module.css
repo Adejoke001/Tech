@@ -16,7 +16,7 @@
     
     /* Gradient Backgrounds */
     --gradient-section-light: linear-gradient(135deg, rgba(59, 130, 246, 0.03) 0%, rgba(16, 185, 129, 0.03) 100%);
-    --gradient-section-dark: linear-gradient(135deg, rgba(15, 23, 42, 0.98) 0%, rgba(30, 41, 59, 0.95) 100%);
+    --gradient-section-dark: linear-gradient(135deg, rgba(15, 23, 42, 0.88) 0%, rgba(30, 41, 59, 83) 100%);
     
     /* Neutral Colors */
     --dark-bg: #0F172A;
