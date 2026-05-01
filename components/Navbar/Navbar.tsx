@@ -136,13 +136,20 @@ export default function Navbar() {
             onClick={closeAll}
           >
             <div className={styles.logoWrapper}>
-              <Image
+              {/* <Image
                 src="/new7.png"
                 alt="Company Logo"
                 fill
                 sizes="(max-width: 768px) 100px, (max-width: 1200px) 120px, 140px"
                 className={styles.logoImage}
                 priority
+              /> */}
+              <img 
+                src="/new7.png"
+                alt="Company Logo"
+                width="140"
+                loading="lazy"
+                decoding="async"
               />
             </div>
           </Link>

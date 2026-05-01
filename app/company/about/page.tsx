@@ -110,44 +110,44 @@ export default function AboutPage() {
     ];
 
     // ----- CLIENT TESTIMONIALS (with image placeholder) -----
-    const testimonials = [
-        {
-            name: 'James Kelly',
-            role: 'Co-founder, Miracle Choice',
-            content: 'The Project managers took a lot of time to understand project. They knew what quality & output we expected. It\'s reassuring, and that\'s why we chose BBMcoders.',
-            image: '/images/user.png',
-        },
-        {
-            name: 'Kris Bruynson',
-            role: 'Director, Storloft',
-            content: 'BBMcoders has technical expertise in front-end and back-end development. Account management was friendly and always available. I would give them ten out of ten!',
-            image: '/images/user.png',
-        },
-        {
-            name: 'Mohammed Mirza',
-            role: 'Director, LOCALMASTERCHEFS LTD',
-            content: 'Huge thank you to BBMcoders, they have been a massive help in enabling us to start developing our project within a few weeks. I have already recommended it to one of my friends.',
-            image: '/images/user.png',
-        },
-        {
-            name: 'Mr. Savarni',
-            role: 'Founder, sbspco.com',
-            content: 'We got an awesome product! I would highly recommend BBMcoders to anyone for their professional attitude & customer care.',
-            image: '/images/user.png',
-        },
-        {
-            name: 'Judith Mueller',
-            role: 'Executive Director, Mueller Health Foundation',
-            content: 'BBMcoders provided us with exceptional services in creating a one-of-a-kind portal. Impressed with how efficient and quick the team was.',
-            image: '/images/user.png',
-        },
-        {
-            name: 'Jame Thompson',
-            role: 'edinstitute.com.au',
-            content: 'We outsourced our website development to BBMcoders, and we are super happy with their services. Highly recommend them.',
-            image: '/images/user.png',
-        },
-    ];
+   const testimonials = [
+    {
+        name: 'Daniel Foster',
+        role: 'CEO, BrightPath Solutions',
+        content: 'Working with BBMcoders was a smooth experience from start to finish. Their team quickly understood our requirements and delivered exactly what we envisioned, on time and within budget.',
+        image: '/images/user.png',
+    },
+    {
+        name: 'Angela Morris',
+        role: 'Product Manager, NexaCore',
+        content: 'The level of professionalism and communication from BBMcoders stood out. They kept us informed throughout the project and handled every challenge with confidence.',
+        image: '/images/user.png',
+    },
+    {
+        name: 'Samuel Okoye',
+        role: 'Founder, AgroLink Africa',
+        content: 'BBMcoders helped us turn our idea into a fully functional platform in record time. Their technical knowledge and commitment made a huge difference for our startup.',
+        image: '/images/user.png',
+    },
+    {
+        name: 'Laura Chen',
+        role: 'Operations Lead, FinEdge Group',
+        content: 'We were impressed by how detail-oriented the BBMcoders team is. They delivered a reliable and scalable solution that exceeded our expectations.',
+        image: '/images/user.png',
+    },
+    {
+        name: 'Michael Grant',
+        role: 'Director, UrbanTech Labs',
+        content: 'From design to deployment, BBMcoders demonstrated real expertise. Their ability to translate our ideas into a clean, user-friendly product was outstanding.',
+        image: '/images/user.png',
+    },
+    {
+        name: 'Fatima Bello',
+        role: 'Co-founder, HealthBridge Nigeria',
+        content: 'Choosing BBMcoders was one of the best decisions we made. Their support, speed, and quality of work have been exceptional throughout our collaboration.',
+        image: '/images/user.png',
+    },
+];
 
     // ----- COMPANY STATS -----
     const companyStats = [

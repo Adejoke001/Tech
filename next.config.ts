@@ -24,11 +24,16 @@ const nextConfig = {
       },
       // Add more domains as needed
     ],
+    unoptimized: true,
   },
 
    experimental: {
     turbo: false
   },
+
+  output: 'export',
 };
+
+
 
 export default nextConfig;
