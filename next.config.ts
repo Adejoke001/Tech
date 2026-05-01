@@ -1,33 +1,37 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
+  output: "export",
+
+  trailingSlash: true, // 👈 fixes 404 on refresh in cPanel
+
   images: {
+    unoptimized: true, // 👈 REQUIRED for static export
     remotePatterns: [
       {
-        protocol: 'https',
-        hostname: 'images.unsplash.com',
-        pathname: '/**',
+        protocol: "https",
+        hostname: "images.unsplash.com",
+        pathname: "/**",
       },
       {
-        protocol: 'https',
-        hostname: 'plus.unsplash.com',
-        pathname: '/**',
+        protocol: "https",
+        hostname: "plus.unsplash.com",
+        pathname: "/**",
       },
       {
-        protocol: 'https',
-        hostname: 'i.pravatar.cc',
-        pathname: '/**',
+        protocol: "https",
+        hostname: "i.pravatar.cc",
+        pathname: "/**",
       },
       {
-        protocol: 'https',
-        hostname: 'randomuser.me',
-        pathname: '/**',
+        protocol: "https",
+        hostname: "randomuser.me",
+        pathname: "/**",
       },
-      // Add more domains as needed
     ],
   },
 
-   experimental: {
-    turbo: false
+  experimental: {
+    turbo: false,
   },
 };
 
