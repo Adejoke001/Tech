@@ -65,14 +65,14 @@ const Solutions = () => {
             </p>
             
             <div className="ctaButtons fadeIn staggerDelay3">
-              <Link href="/get-started" className="primaryButton">
+              <Link href="/contact" className="primaryButton">
                 Start Your Project
                 <span className="buttonIcon">→</span>
               </Link>
-              <Link href="/our-process" className="secondaryButton">
+              {/* <Link href="/our-process" className="secondaryButton">
                 Our Process
                 <span className="buttonIcon">→</span>
-              </Link>
+              </Link> */}
             </div>
             
             {/* Stats */}

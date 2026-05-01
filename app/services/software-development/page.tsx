@@ -48,7 +48,7 @@ export default function SoftwareDev() {
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.4, duration: 0.8 }}
             >
-              <span className={styles.highlight}>ValueCoders</span> delivers end-to-end software development solutions that transform your business vision into reality. Our expert team builds scalable, secure applications using cutting-edge technologies to drive growth and innovation for startups and enterprises alike.
+              <span className={styles.highlight}>BBMcoders</span> delivers end-to-end software development solutions that transform your business vision into reality. Our expert team builds scalable, secure applications using cutting-edge technologies to drive growth and innovation for startups and enterprises alike.
             </motion.p>
 
             {/* CTA Button */}
@@ -61,9 +61,10 @@ export default function SoftwareDev() {
               whileTap={{ scale: 0.95 }}
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
-              transition={{ delay: 0.3, duration: 0.3 }}
-            >
+              transition={{ delay: 0.3, duration: 0.3 }}>
+                <a href="/contact">
               Get Free Consultation
+              </a>
             </motion.button>
           </motion.div>
         </div>
@@ -84,10 +85,10 @@ export default function SoftwareDev() {
                 transition={{ duration: 0.3 }}
               >
                 <Image 
-                  src="/images/testimonial.jpg" 
+                  src="/images/user.png" 
                   alt="Rebecca - Client"
-                  width={100}
-                  height={100}
+                  width={90}
+                  height={90}
                   className={styles.clientImage}
                 />
               </motion.div>

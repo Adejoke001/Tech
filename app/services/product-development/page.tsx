@@ -1,7 +1,7 @@
 "use client";
 
 import { useState, useRef, useEffect } from "react";
-import { motion, useInView, useScroll, useTransform } from "framer-motion";
+import { motion, useScroll, useTransform } from "framer-motion";
 import Image from "next/image";
 import Link from "next/link";
 import {
@@ -13,7 +13,6 @@ import {
   ArrowRight,
   Star,
   Quote,
-  ChevronRight,
   Building2,
   Briefcase,
   FileText,
@@ -30,7 +29,6 @@ import {
   AlertTriangle,
   GitMerge,
   Target as TargetIcon,
-  // TrendingUp as TrendingUpIcon,
   Plus,
   Minus,
   Heart,
@@ -38,68 +36,65 @@ import {
   ShieldCheck,
   Server,
   // Smartphone as SmartphoneIcon,
-  
 } from "lucide-react";
 import styles from "./product-dev.module.css";
 
 export default function ProductDevelopment() {
-  // const [hoveredCard, setHoveredCard] = useState<number | null>(null);
   const [openFaqIndex, setOpenFaqIndex] = useState<number | null>(0);
-  const [openIndustryIndex, setOpenIndustryIndex] = useState<number | null>(0);
+  const [openIndustryIndex, setOpenIndustryIndex] = useState<number | null>(null);
 
   const statsRef = useRef(null);
   const processRef = useRef(null);
-  const isStatsInView = useInView(statsRef, { once: true, amount: 0.3 });
-  // const isProcessInView = useInView(processRef, { once: true, amount: 0.3 });
+  // const isStatsInView = useInView(statsRef, { once: true, amount: 0.3 });
 
   const { scrollYProgress } = useScroll();
-  const heroOpacity = useTransform(scrollYProgress, [0, 0.2], [1, 0]);
-  const heroScale = useTransform(scrollYProgress, [0, 0.2], [1, 0.95]);
+ const heroOpacity = useTransform(scrollYProgress, [0, 0.3], [1, 0.7]);
+  // const heroScale = useTransform(scrollYProgress, [0, 0.2], [1, 1]);
 
   // Counter animation for stats
-  const [expertCount, setExpertCount] = useState(0);
-  const [yearsCount, setYearsCount] = useState(0);
-  const [customerCount, setCustomerCount] = useState(0);
+  // const [expertCount, setExpertCount] = useState(0);
+  // const [yearsCount, setYearsCount] = useState(0);
+  // const [customerCount, setCustomerCount] = useState(0);
 
-  useEffect(() => {
-    if (isStatsInView) {
-      const expertTimer = setInterval(() => {
-        setExpertCount((prev) => {
-          if (prev >= 675) {
-            clearInterval(expertTimer);
-            return 675;
-          }
-          return prev + 15;
-        });
-      }, 20);
+  // useEffect(() => {
+  //   if (isStatsInView) {
+  //     const expertTimer = setInterval(() => {
+  //       setExpertCount((prev) => {
+  //         if (prev >= 675) {
+  //           clearInterval(expertTimer);
+  //           return 675;
+  //         }
+  //         return prev + 15;
+  //       });
+  //     }, 20);
 
-      const yearsTimer = setInterval(() => {
-        setYearsCount((prev) => {
-          if (prev >= 20) {
-            clearInterval(yearsTimer);
-            return 20;
-          }
-          return prev + 1;
-        });
-      }, 50);
+  //     const yearsTimer = setInterval(() => {
+  //       setYearsCount((prev) => {
+  //         if (prev >= 20) {
+  //           clearInterval(yearsTimer);
+  //           return 20;
+  //         }
+  //         return prev + 1;
+  //       });
+  //     }, 50);
 
-      const customerTimer = setInterval(() => {
-        setCustomerCount((prev) => {
-          if (prev >= 2500) {
-            clearInterval(customerTimer);
-            return 2500;
-          }
-          return prev + 50;
-        });
-      }, 10);
+  //     const customerTimer = setInterval(() => {
+  //       setCustomerCount((prev) => {
+  //         if (prev >= 2500) {
+  //           clearInterval(customerTimer);
+  //           return 2500;
+  //         }
+  //         return prev + 50;
+  //       });
+  //     }, 10);
 
-      return () => {
-        clearInterval(expertTimer);
-        clearInterval(yearsTimer);
-        clearInterval(customerTimer);
-      };
-    }
-  }, [isStatsInView]);
+  //     return () => {
+  //       clearInterval(expertTimer);
+  //       clearInterval(yearsTimer);
+  //       clearInterval(customerTimer);
+  //     };
+  //   }
+  // }, [isStatsInView]);
 
   // Toggle FAQ
   const toggleFaq = (index: number) => {
@@ -125,9 +120,9 @@ export default function ProductDevelopment() {
       ],
       icon: <Rocket className={styles.stageIcon} />,
       color: "#10b981",
-      link: "/solutions/startups",
+      link: "/solutions/solutions-startups",
       bgColor: "bg-gradient-to-br from-emerald-50 to-teal-50",
-      ctaText: "Launch Your Startup Idea",
+      ctaText: "Launch Startup Idea",
     },
     {
       title: "Enterprises",
@@ -141,7 +136,7 @@ export default function ProductDevelopment() {
       ],
       icon: <Building2 className={styles.stageIcon} />,
       color: "#3b82f6",
-      link: "/solutions/enterprises",
+      link: "/solutions/solutions-enterprises",
       bgColor: "bg-gradient-to-br from-blue-50 to-indigo-50",
       ctaText: "Modernize Your Enterprise",
     },
@@ -229,73 +224,97 @@ export default function ProductDevelopment() {
       name: "CRM Systems",
       description: "Custom Customer Relationship Management solutions",
       icon: <Users className={styles.solutionIcon} />,
-      color: "#10b981",
-      link: "/solutions/crm",
+      color: "#1f2937",
     },
     {
       name: "Workforce Management",
       description: "Employee scheduling and productivity tools",
       icon: <Briefcase className={styles.solutionIcon} />,
-      color: "#3b82f6",
-      link: "/solutions/workforce",
+      color: "#1f2937",
     },
     {
       name: "HR Management",
       description: "Human Resource and talent management systems",
       icon: <UsersIcon className={styles.solutionIcon} />,
-      color: "#8b5cf6",
-      link: "/solutions/hr",
+      color: "#1f2937",
     },
     {
       name: "Supply Chain",
       description: "End-to-end supply chain management solutions",
       icon: <GitBranch className={styles.solutionIcon} />,
-      color: "#f59e0b",
-      link: "/solutions/supply-chain",
+      color: "#1f2937",
     },
     {
       name: "Fleet Management",
       description: "Vehicle tracking and logistics management",
       icon: <Truck className={styles.solutionIcon} />,
-      color: "#ef4444",
-      link: "/solutions/fleet",
+      color: "#1f2937",
     },
     {
       name: "Operations",
       description: "Business operations optimization software",
       icon: <Settings className={styles.solutionIcon} />,
-      color: "#06b6d4",
-      link: "/solutions/operations",
+      color: "#1f2937",
     },
     {
       name: "Asset Management",
       description: "Enterprise asset tracking and maintenance",
       icon: <Package className={styles.solutionIcon} />,
-      color: "#8b5cf6",
-      link: "/solutions/assets",
+      color: "#1f2937",
     },
     {
       name: "Content Management",
       description: "Custom CMS for content publishing",
       icon: <FileText className={styles.solutionIcon} />,
-      color: "#10b981",
-      link: "/solutions/cms",
+      color: "#1f2937",
     },
     {
       name: "Healthcare Systems",
       description: "Medical records and patient management",
       icon: <Heart className={styles.solutionIcon} />,
-      color: "#ef4444",
-      link: "/solutions/healthcare",
+      color: "#1f2937",
     },
     {
       name: "E-commerce Platforms",
       description: "Custom online store solutions",
       icon: <ShoppingCart className={styles.solutionIcon} />,
-      color: "#f59e0b",
-      link: "/solutions/ecommerce",
+      color: "#1f2937",
     },
   ];
+
+
+  // Add these with your other hooks
+  const gridRef = useRef<HTMLDivElement>(null);
+  const [columnCount, setColumnCount] = useState(5); // default desktop
+
+  useEffect(() => {
+    const updateColumnCount = () => {
+      const width = window.innerWidth;
+
+      if (width < 640) {
+        // Small mobile
+        setColumnCount(2);
+      } else if (width < 768) {
+        // Mobile
+        setColumnCount(2);
+      } else if (width < 1024) {
+        // Tablet
+        setColumnCount(3);
+      } else {
+        // Desktop
+        setColumnCount(5);
+      }
+    };
+
+    // Initial call
+    updateColumnCount();
+
+    // Add resize listener
+    window.addEventListener("resize", updateColumnCount);
+
+    // Cleanup
+    return () => window.removeEventListener("resize", updateColumnCount);
+  }, []);
 
   // Tech Trends - Updated with 6 items
   const techTrends = [
@@ -311,7 +330,7 @@ export default function ProductDevelopment() {
         "Process Automation",
         "Computer Vision",
       ],
-      link: "/technologies/ai-ml",
+      // link: "/technologies/ai-ml",
     },
     {
       name: "Blockchain",
@@ -325,7 +344,7 @@ export default function ProductDevelopment() {
         "NFT Platforms",
         "Supply Chain Tracking",
       ],
-      link: "/technologies/blockchain",
+      // link: "/technologies/blockchain",
     },
     {
       name: "Computer Vision",
@@ -339,7 +358,7 @@ export default function ProductDevelopment() {
         "Quality Inspection",
         "Augmented Reality",
       ],
-      link: "/technologies/computer-vision",
+      // link: "/technologies/computer-vision",
     },
     {
       name: "Internet of Things",
@@ -353,7 +372,7 @@ export default function ProductDevelopment() {
         "Wearable Devices",
         "Asset Tracking",
       ],
-      link: "/technologies/iot",
+      // link: "/technologies/iot",
     },
     {
       name: "Mixed Reality",
@@ -367,7 +386,7 @@ export default function ProductDevelopment() {
         "3D Visualization",
         "Virtual Tours",
       ],
-      link: "/technologies/mixed-reality",
+      // link: "/technologies/mixed-reality",
     },
     {
       name: "Edge Computing",
@@ -381,7 +400,7 @@ export default function ProductDevelopment() {
         "Smart Cities",
         "Industrial Automation",
       ],
-      link: "/technologies/edge-computing",
+      // link: "/technologies/edge-computing",
     },
   ];
 
@@ -399,7 +418,7 @@ export default function ProductDevelopment() {
         "Healthcare Analytics",
         "Medical Device Integration",
       ],
-      link: "/industries/healthcare",
+      link: "/industries/industries-health",
     },
     {
       name: "Media & Entertainment",
@@ -413,7 +432,7 @@ export default function ProductDevelopment() {
         "Audience Analytics",
         "Advertising Platforms",
       ],
-      link: "/industries/media",
+      link: "/industries/industries-media",
     },
     {
       name: "Retail & eCommerce",
@@ -427,7 +446,7 @@ export default function ProductDevelopment() {
         "Customer Analytics",
         "Omnichannel Retail",
       ],
-      link: "/industries/retail",
+      link: "/industries/industries-ecommerce",
     },
     {
       name: "FinTech",
@@ -441,7 +460,7 @@ export default function ProductDevelopment() {
         "Blockchain Solutions",
         "Regulatory Compliance",
       ],
-      link: "/industries/fintech",
+      link: "/industries/industries-fintech",
     },
     {
       name: "Education & eLearning",
@@ -455,35 +474,34 @@ export default function ProductDevelopment() {
         "Skill Assessment",
         "Corporate Training",
       ],
-      link: "/industries/education",
+      link: "/industries/industries-education",
     },
     {
-      name: "Manufacturing",
-      description:
-        "Industrial software solutions for smart factories, supply chain optimization, quality control, IoT integration, and predictive maintenance systems.",
-      icon: "🏭",
-      details: [
-        "Smart Factory Solutions",
-        "Supply Chain Optimization",
-        "Quality Control Systems",
-        "IoT Integration",
-        "Predictive Maintenance",
-      ],
-      link: "/industries/manufacturing",
-    },
+  name: "Internet of Things (IoT)",
+  description: "Building secure, scalable IoT ecosystems that connect devices, process real‑time data, and enable smart automation across industries like manufacturing, healthcare, and smart cities.",
+  icon: "📡",
+  details: [
+    "IoT Platform Development",
+    "Device Management & Connectivity",
+    "Real‑time Data Analytics",
+    "Edge Computing Solutions",
+    "IoT Security & Compliance"
+  ],
+  link: "/industries/industries-iot"
+}
   ];
 
   // FAQs with toggle functionality
   const faqs = [
     {
       question:
-        "Why should I choose ValueCoders for software engineering, consulting, and outsourcing?",
+        "Why should I choose BBMcoders for software engineering, consulting, and outsourcing?",
       answer:
         "We are a highly experienced and qualified team of professionals with a proven track record of delivering quality software solutions to clients. Here are a few reasons to choose us: 675+ vetted developers, expertise across 50+ tech stacks, proven delivery in complex enterprise projects, 97% client satisfaction rate, and 20+ years of industry experience.",
     },
     {
       question:
-        "Can I test the services of ValueCoders before committing to long-term engagement?",
+        "Can I test the services of BBMcoders before committing to long-term engagement?",
       answer:
         "Yes! We offer a free trial to clients worldwide. This is to give our potential customers a risk-free way to try our software development services before committing to long-term engagement. We strongly believe in our products and services and want to allow everyone to experience firsthand the value we can bring. Just fill out a form and connect with our team.",
     },
@@ -496,7 +514,7 @@ export default function ProductDevelopment() {
       question:
         "Is outsourcing software development risky? How do you ensure IP (Intellectual Property) and data protection?",
       answer:
-        "Software product development outsourcing is not risky at all if you outsource your project to a reputed company. ValueCoders ensures IP (Intellectual Property) & data protection in the following ways: We sign a Non-Disclosure Agreement (NDA), meet special industry regulations such as GDPR, HIPAA, etc., follow secure coding and data protection practices, establish firewalls, encryption, and VPN services to prevent online security breaches. All our employees are strictly verified before recruitment.",
+        "Software product development outsourcing is not risky at all if you outsource your project to a reputed company. BBMcoders ensures IP (Intellectual Property) & data protection in the following ways: We sign a Non-Disclosure Agreement (NDA), meet special industry regulations such as GDPR, HIPAA, etc., follow secure coding and data protection practices, establish firewalls, encryption, and VPN services to prevent online security breaches. All our employees are strictly verified before recruitment.",
     },
     {
       question:
@@ -511,33 +529,12 @@ export default function ProductDevelopment() {
     },
   ];
 
-  // Testimonials for right side
-  // const testimonials = [
-  //   {
-  //     name: "Sarah Johnson",
-  //     role: "CTO, TechScale Inc.",
-  //     content:
-  //       "ValueCoders transformed our legacy system into a modern cloud platform with zero downtime. Their expertise and dedication were exceptional.",
-  //     rating: 5,
-  //     company: "Fortune 500 Company",
-  //   },
-  //   {
-  //     name: "Michael Chen",
-  //     role: "Product Director, Finova",
-  //     content:
-  //       "The team delivered our fintech platform ahead of schedule. Their technical knowledge and communication were outstanding throughout.",
-  //     rating: 5,
-  //     company: "FinTech Startup",
-  //   },
-  // ];
-
   return (
     <>
-      
       {/* Hero Section with Background Image */}
-      <motion.section
+      <motion.section 
         className={styles.heroSection}
-        style={{ opacity: heroOpacity, scale: heroScale }}
+        style={{ opacity: heroOpacity}}
       >
         <div className={styles.heroBackground}></div>
         <div className={styles.overlay}></div>
@@ -589,7 +586,7 @@ export default function ProductDevelopment() {
                   </div>
                 </div>
                 <div className={styles.statMini}>
-                  <div className={styles.statMiniNumber}>4200+</div>
+                  <div className={styles.statMiniNumber}>2500+</div>
                   <div className={styles.statMiniLabel}>Projects</div>
                 </div>
               </motion.div>
@@ -611,15 +608,6 @@ export default function ProductDevelopment() {
                   </motion.button>
                 </Link>
 
-                <Link href="/portfolio" className={styles.linkWrapper}>
-                  <motion.button
-                    className={styles.secondaryButton}
-                    whileHover={{ scale: 1.05 }}
-                    whileTap={{ scale: 0.95 }}
-                  >
-                    View Our Portfolio
-                  </motion.button>
-                </Link>
               </motion.div>
             </motion.div>
 
@@ -634,7 +622,7 @@ export default function ProductDevelopment() {
                 <div className={styles.testimonialHeader}>
                   <div className={styles.testimonialAvatar}>
                     <Image
-                      src="/images/testimonial1.jpg"
+                      src="/images/user.png"
                       alt="Sarah Johnson"
                       width={50}
                       height={50}
@@ -644,7 +632,7 @@ export default function ProductDevelopment() {
                   <div className={styles.testimonialInfo}>
                     <h4 className={styles.testimonialName}>Sarah Johnson</h4>
                     <p className={styles.testimonialRole}>
-                      CTO, TechScale Inc.
+                      CTO, TechBim Inc.
                     </p>
                     <div className={styles.testimonialRating}>
                       {[...Array(5)].map((_, i) => (
@@ -660,7 +648,7 @@ export default function ProductDevelopment() {
 
                 <Quote className={styles.quoteIcon} />
                 <p className={styles.testimonialContent}>
-                  &quot;ValueCoders transformed our legacy system into a modern
+                  &quot;BBMcoders transformed our legacy system into a modern
                   cloud platform with zero downtime.&quot;
                 </p>
 
@@ -669,10 +657,10 @@ export default function ProductDevelopment() {
                     <Building2 className={styles.badgeIcon} />
                     Fortune 500 Company
                   </div>
-                  <Link href="/testimonials" className={styles.readMoreLink}>
+                  {/* <Link href="/testimonials" className={styles.readMoreLink}>
                     Read More
                     <ChevronRight className={styles.linkIcon} />
-                  </Link>
+                  </Link> */}
                 </div>
               </div>
 
@@ -691,6 +679,7 @@ export default function ProductDevelopment() {
           </div>
         </div>
       </motion.section>
+    
 
       {/* Growth Stage Solutions */}
       <section className={styles.growthSection}>
@@ -724,8 +713,6 @@ export default function ProductDevelopment() {
                 transition={{ duration: 0.6, delay: index * 0.2 }}
                 viewport={{ once: true }}
                 whileHover={{ y: -10, transition: { duration: 0.3 } }}
-                // onMouseEnter={() => setHoveredCard(index)}
-                // onMouseLeave={() => setHoveredCard(null)}
               >
                 <div className={styles.cardHeader}>
                   <div
@@ -809,7 +796,7 @@ export default function ProductDevelopment() {
               designed to deliver measurable impact on your bottom line.
             </p>
 
-            <div className={styles.statsGrid}>
+            {/* <div className={styles.statsGrid}>
               <motion.div
                 className={styles.statItem}
                 initial={{ scale: 0 }}
@@ -876,9 +863,9 @@ export default function ProductDevelopment() {
                 <div className={styles.statLabel}>Client Satisfaction</div>
                 <div className={styles.statSubtext}>Repeat Business Rate</div>
               </motion.div>
-            </div>
+            </div> */}
 
-            <Link href="/about/achievements" className={styles.linkWrapper}>
+            <Link href="/company/testimonials" className={styles.linkWrapper}>
               <motion.button
                 className={styles.statsCtaButton}
                 whileHover={{ scale: 1.05 }}
@@ -948,34 +935,23 @@ export default function ProductDevelopment() {
               </motion.div>
             ))}
           </div>
-          <Link href="/contact" className={styles.linkWrapper}>
-            <motion.button
-              className={styles.primaryButton}
-              whileHover={{ scale: 1.05 }}
-              whileTap={{ scale: 0.95 }}
-            >
-              Start Your Project
-              <ArrowRight className={styles.buttonIcon} />
-            </motion.button>
-          </Link>
-
-          {/* <div className={styles.processCta}>
-            <Link href="/process" className={styles.linkWrapper}>
+          <div className={styles.processCta}>
+            <Link href="/contact" className={styles.linkWrapper}>
               <motion.button
-                className={styles.secondaryButton}
+                className={styles.primaryButton}
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
               >
-                Explore Our Full Process
+                Start Your Project
+                <ArrowRight className={styles.buttonIcon} />
               </motion.button>
             </Link>
-           
-          </div> */}
+          </div>
         </div>
       </section>
 
-      {/* Engineering Solutions */}
-      <section className={styles.solutionsSection}>
+      {/* Engineering Solutions with Perfect Checkerboard */}
+      <section className={styles.engineeringSection}>
         <div className={styles.container}>
           <motion.div
             className={styles.sectionHeader}
@@ -995,44 +971,47 @@ export default function ProductDevelopment() {
             </p>
           </motion.div>
 
-          <div className={styles.solutionsGrid}>
-            {engineeringSolutions.map((solution, index) => (
-              <Link
-                key={solution.name}
-                href={solution.link}
-                className={styles.linkWrapper}
-              >
+          <div
+            className={styles.engineeringGrid}
+            ref={gridRef}
+            style={{
+              gridTemplateColumns: `repeat(${columnCount}, 1fr)`,
+            }}
+          >
+            {engineeringSolutions.map((solution, index) => {
+              const column = index % columnCount;
+              const row = Math.floor(index / columnCount);
+              const isLight = (row + column) % 2 === 0;
+              const backgroundColor = isLight ? "#fff5e6" : "#ffdc94";
+
+              return (
                 <motion.div
-                  className={styles.solutionCard}
+                  key={solution.name}
+                  className={styles.engineeringCard}
+                  style={{ backgroundColor }}
                   initial={{ opacity: 0, scale: 0.8 }}
                   whileInView={{ opacity: 1, scale: 1 }}
                   transition={{ duration: 0.4, delay: index * 0.05 }}
                   viewport={{ once: true }}
-                  whileHover={{
-                    scale: 1.05,
-                    boxShadow: `0 20px 40px ${solution.color}20`,
-                  }}
+                  whileHover={{ transform: "translateY(-3px)" }}
                 >
-                  <div
-                    className={styles.solutionIconWrapper}
-                    style={{ color: solution.color }}
-                  >
+                  <div className={styles.engineeringIconWrapper}>
                     {solution.icon}
                   </div>
-                  <h3 className={styles.solutionName}>{solution.name}</h3>
-                  <p className={styles.solutionDescription}>
+                  <h3 className={styles.engineeringName}>{solution.name}</h3>
+                  <p className={styles.engineeringDescription}>
                     {solution.description}
                   </p>
-                  <div className={styles.solutionArrow}>
+                  <div className={styles.engineeringArrow}>
                     <ArrowRight className={styles.arrowIcon} />
                   </div>
                 </motion.div>
-              </Link>
-            ))}
+              );
+            })}
           </div>
 
-          <div className={styles.solutionsCta}>
-            <Link href="/solutions" className={styles.linkWrapper}>
+          <div className={styles.engineeringCta}>
+            <Link href="/solutions/specialized-solutions" className={styles.linkWrapper}>
               <motion.button
                 className={styles.primaryButton}
                 whileHover={{ scale: 1.05 }}
@@ -1045,6 +1024,7 @@ export default function ProductDevelopment() {
           </div>
         </div>
       </section>
+
 
       {/* Tech Trends - Now 6 items */}
       <section className={styles.techSection}>
@@ -1069,63 +1049,52 @@ export default function ProductDevelopment() {
 
           <div className={styles.techGrid}>
             {techTrends.map((trend, index) => (
-              <Link
+              <motion.div
                 key={trend.name}
-                href={trend.link}
-                className={styles.linkWrapper}
+                className={styles.techCard}
+                initial={{ opacity: 0, y: 30 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.6, delay: index * 0.1 }}
+                viewport={{ once: true }}
+                whileHover={{
+                  y: -10,
+                  borderColor: trend.color,
+                  boxShadow: `0 20px 40px ${trend.color}20`,
+                }}
               >
-                <motion.div
-                  className={styles.techCard}
-                  initial={{ opacity: 0, y: 30 }}
-                  whileInView={{ opacity: 1, y: 0 }}
-                  transition={{ duration: 0.6, delay: index * 0.1 }}
-                  viewport={{ once: true }}
-                  whileHover={{
-                    y: -10,
-                    borderColor: trend.color,
-                    boxShadow: `0 20px 40px ${trend.color}20`,
-                  }}
+                <div
+                  className={styles.techIconWrapper}
+                  style={{ color: trend.color }}
                 >
-                  <div
-                    className={styles.techIconWrapper}
-                    style={{ color: trend.color }}
-                  >
-                    {trend.icon}
-                  </div>
-                  <h3 className={styles.techName}>{trend.name}</h3>
-                  <p className={styles.techDescription}>{trend.description}</p>
+                  {trend.icon}
+                </div>
+                <h3 className={styles.techName}>{trend.name}</h3>
+                <p className={styles.techDescription}>{trend.description}</p>
 
-                  <div className={styles.applicationsList}>
-                    {trend.applications.slice(0, 3).map((app, idx) => (
-                      <div key={idx} className={styles.applicationItem}>
-                        <div
-                          className={styles.applicationDot}
-                          style={{ backgroundColor: trend.color }}
-                        ></div>
-                        {app}
-                      </div>
-                    ))}
-                    {/* {trend.applications.length > 3 && (
-                      <div className={styles.moreItems}>
-                        +{trend.applications.length - 3} more
-                      </div>
-                    )} */}
-                  </div>
+                <div className={styles.applicationsList}>
+                  {trend.applications.slice(0, 3).map((app, idx) => (
+                    <div key={idx} className={styles.applicationItem}>
+                      <div
+                        className={styles.applicationDot}
+                        style={{ backgroundColor: trend.color }}
+                      ></div>
+                      {app}
+                    </div>
+                  ))}
+                </div>
 
-                  <motion.div
-                    whileHover={{ x: 5 }}
-                    transition={{ duration: 0.3 }}
-                    className={styles.techLink}
-                  >
-                    <span>Explore {trend.name}</span>
-                    <ChevronRight className={styles.linkIcon} />
-                  </motion.div>
+                <motion.div
+                  whileHover={{ x: 5 }}
+                  transition={{ duration: 0.3 }}
+                  className={styles.techLink}
+                >
+
                 </motion.div>
-              </Link>
+              </motion.div>
             ))}
           </div>
 
-          <div className={styles.techCta}>
+          {/* <div className={styles.techCta}>
             <Link href="/technologies" className={styles.linkWrapper}>
               <motion.button
                 className={styles.primaryButton}
@@ -1136,7 +1105,7 @@ export default function ProductDevelopment() {
                 <ArrowRight className={styles.buttonIcon} />
               </motion.button>
             </Link>
-          </div>
+          </div> */}
         </div>
       </section>
 
@@ -1155,7 +1124,7 @@ export default function ProductDevelopment() {
             </h2>
             <p className={styles.sectionDescription}>
               Get what you are looking for to fulfill your software development
-              and outsourcing needs at ValueCoders, with our expertise on all
+              and outsourcing needs at BBMcoders, with our expertise on all
               in-demand technologies & platforms.
             </p>
           </motion.div>
@@ -1256,9 +1225,8 @@ export default function ProductDevelopment() {
             {faqs.map((faq, index) => (
               <motion.div
                 key={faq.question}
-                className={`${styles.faqCard} ${
-                  openFaqIndex === index ? styles.faqCardOpen : ""
-                }`}
+                className={`${styles.faqCard} ${openFaqIndex === index ? styles.faqCardOpen : ""
+                  }`}
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.4, delay: index * 0.1 }}
@@ -1393,19 +1361,3 @@ const Package = ({ className }: { className?: string }) => (
     />
   </svg>
 );
-
-// const Award = ({ className }: { className?: string }) => (
-//   <svg
-//     className={className}
-//     fill="none"
-//     viewBox="0 0 24 24"
-//     stroke="currentColor"
-//   >
-//     <path
-//       strokeLinecap="round"
-//       strokeLinejoin="round"
-//       strokeWidth={2}
-//       d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"
-//     />
-//   </svg>
-// );

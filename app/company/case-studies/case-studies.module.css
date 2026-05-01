@@ -1,0 +1,560 @@
+/* ==== COLOR PALETTE ==== */
+.pageWrapper {
+    --primary-blue: #3B82F6;
+    --primary-green: #10B981;
+    --gradient-primary: linear-gradient(135deg, #3B82F6, #10B981);
+    --gradient-primary-dark: linear-gradient(135deg, #2563EB, #059669);
+    
+    --secondary-purple: #8B5CF6;
+    --secondary-amber: #F59E0B;
+    --secondary-pink: #EC4899;
+    --secondary-cyan: #06B6D4;
+    
+    --gradient-section-light: linear-gradient(135deg, rgba(59, 130, 246, 0.03) 0%, rgba(16, 185, 129, 0.03) 100%);
+    --gradient-section-dark: linear-gradient(135deg, rgba(15, 23, 42, 0.98) 0%, rgba(30, 41, 59, 0.95) 100%);
+    
+    --dark-bg: #0F172A;
+    --dark-surface: #1E293B;
+    --gray-900: #1F2937;
+    --gray-800: #374151;
+    --gray-700: #4B5563;
+    --gray-600: #6B7280;
+    --gray-500: #9CA3AF;
+    --gray-400: #D1D5DB;
+    --gray-300: #E5E7EB;
+    --gray-200: #F3F4F6;
+    --gray-100: #F9FAFB;
+    --white: #FFFFFF;
+    
+    width: 100%;
+    overflow-x: hidden;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, sans-serif;
+    background-color: var(--white);
+    line-height: 1.5;
+}
+
+/* ===== HERO (minimal) ===== */
+.heroSection {
+    position: relative;
+    min-height: 60vh;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    overflow: hidden;
+    padding: 120px 2rem 80px;
+}
+
+.heroBackground {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+}
+
+.heroImage {
+    object-fit: cover;
+    object-position: center;
+}
+
+.heroOverlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(135deg, rgba(15,23,42,0.9) 0%, rgba(30,41,59,0.85) 100%);
+    z-index: 1;
+}
+
+.heroContent {
+    position: relative;
+    z-index: 2;
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+    color: white;
+}
+
+.heroInner {
+    max-width: 800px;
+    text-align: left;
+}
+
+.heroBadge {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    background: rgba(255,255,255,0.1);
+    color: rgba(255,255,255,0.9);
+    padding: 0.5rem 1.25rem;
+    border-radius: 2rem;
+    font-size: 0.875rem;
+    font-weight: 500;
+    margin-bottom: 1.5rem;
+    border: 1px solid rgba(255,255,255,0.2);
+    backdrop-filter: blur(8px);
+}
+
+.heroTitle {
+    font-size: clamp(2.5rem, 5vw, 4rem);
+    font-weight: 800;
+    line-height: 1.1;
+    margin-bottom: 1.5rem;
+    letter-spacing: -0.02em;
+}
+
+.highlight {
+    background: var(--gradient-primary);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.heroSubtitle {
+    font-size: 1.125rem;
+    color: rgba(255,255,255,0.8);
+    max-width: 600px;
+    line-height: 1.6;
+}
+
+/* ===== CASE STUDIES GRID ===== */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 2rem;
+}
+
+.caseStudiesSection {
+    padding: 5rem 0;
+    background: var(--white);
+}
+
+.caseStudiesGrid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 2rem;
+}
+
+.caseCard {
+    background: var(--white);
+    border-radius: 1.5rem;
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.03);
+    border: 1px solid var(--gray-200);
+    transition: all 0.3s ease;
+}
+
+.caseCard:hover {
+    box-shadow: 0 20px 40px rgba(0,0,0,0.06);
+}
+
+.caseCardImageWrapper {
+    position: relative;
+    width: 100%;
+    height: 220px;
+    overflow: hidden;
+}
+
+.caseCardImage {
+    object-fit: cover;
+    transition: transform 0.5s ease;
+}
+
+.caseCard:hover .caseCardImage {
+    transform: scale(1.05);
+}
+
+.caseCardCategory {
+    position: absolute;
+    top: 1rem;
+    left: 1rem;
+    padding: 0.35rem 1rem;
+    border-radius: 2rem;
+    font-size: 0.75rem;
+    font-weight: 600;
+    color: white;
+    text-transform: uppercase;
+    letter-spacing: 0.02em;
+    z-index: 2;
+}
+
+.caseCardContent {
+    padding: 1.5rem;
+}
+
+.caseCardTitle {
+    font-size: 1.25rem;
+    font-weight: 700;
+    color: var(--gray-900);
+    margin-bottom: 0.25rem;
+    line-height: 1.3;
+}
+
+.caseCardClient {
+    font-size: 0.9rem;
+    color: var(--gray-600);
+    margin-bottom: 1.25rem;
+}
+
+.caseCardButton {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    background: none;
+    border: none;
+    color: var(--primary-blue);
+    font-weight: 600;
+    font-size: 0.95rem;
+    cursor: pointer;
+    padding: 0;
+    transition: gap 0.2s ease;
+}
+
+.caseCardButton:hover {
+    gap: 0.75rem;
+}
+
+/* ===== MODAL ===== */
+.modalOverlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0,0,0,0.75);
+    backdrop-filter: blur(8px);
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem;
+}
+
+.modalContent {
+    background: var(--white);
+    border-radius: 2rem;
+    max-width: 900px;
+    width: 100%;
+    max-height: 90vh;
+    overflow-y: auto;
+    position: relative;
+    box-shadow: 0 30px 60px rgba(0,0,0,0.3);
+}
+
+.modalClose {
+    position: absolute;
+    top: 1.5rem;
+    right: 1.5rem;
+    background: var(--gray-100);
+    border: none;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    color: var(--gray-600);
+    transition: all 0.2s ease;
+    z-index: 10;
+}
+
+.modalClose:hover {
+    background: var(--gray-200);
+    color: var(--gray-900);
+    transform: rotate(90deg);
+}
+
+.modalInner {
+    padding: 3rem;
+}
+
+.modalHeader {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 2rem;
+    gap: 1rem;
+}
+
+.modalTitle {
+    font-size: 1.75rem;
+    font-weight: 700;
+    color: var(--gray-900);
+    line-height: 1.2;
+    margin-bottom: 0.25rem;
+}
+
+.modalClient {
+    font-size: 1rem;
+    color: var(--gray-600);
+}
+
+.modalCategory {
+    padding: 0.35rem 1rem;
+    border-radius: 2rem;
+    font-size: 0.75rem;
+    font-weight: 600;
+    color: white;
+    text-transform: uppercase;
+    letter-spacing: 0.02em;
+    white-space: nowrap;
+}
+
+.modalStats {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem;
+    background: var(--gradient-section-light);
+    border-radius: 1rem;
+    padding: 1.5rem;
+    margin-bottom: 2rem;
+}
+
+.modalStat {
+    text-align: center;
+}
+
+.modalStatValue {
+    font-size: 1.75rem;
+    font-weight: 800;
+    color: var(--gray-900);
+    line-height: 1.2;
+    margin-bottom: 0.25rem;
+}
+
+.modalStatLabel {
+    font-size: 0.8rem;
+    color: var(--gray-600);
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 0.02em;
+}
+
+.modalSections {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    margin-bottom: 2rem;
+}
+
+.modalSection {
+    border-left: 3px solid;
+    padding-left: 1.5rem;
+}
+
+.modalSectionHeader {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    margin-bottom: 0.75rem;
+}
+
+.modalSectionHeader h3 {
+    font-size: 1.25rem;
+    font-weight: 700;
+    color: var(--gray-900);
+    margin: 0;
+}
+
+.modalText {
+    color: var(--gray-700);
+    line-height: 1.7;
+    font-size: 0.95rem;
+    margin: 0;
+}
+
+.modalTestimonial {
+    background: var(--gradient-section-light);
+    border-radius: 1rem;
+    padding: 2rem;
+    margin-bottom: 2rem;
+    position: relative;
+}
+
+.testimonialQuoteIcon {
+    position: absolute;
+    top: 1rem;
+    left: 1rem;
+    opacity: 0.1;
+}
+
+.testimonialText {
+    font-size: 1rem;
+    line-height: 1.7;
+    color: var(--gray-800);
+    font-style: italic;
+    margin-bottom: 1rem;
+    position: relative;
+    z-index: 2;
+}
+
+.testimonialAuthor {
+    display: flex;
+    flex-direction: column;
+}
+
+.testimonialAuthor strong {
+    font-weight: 700;
+    color: var(--gray-900);
+}
+
+.testimonialAuthor span {
+    font-size: 0.875rem;
+    color: var(--gray-600);
+}
+
+.modalTech {
+    margin-bottom: 2rem;
+}
+
+.modalTech h4 {
+    font-size: 1rem;
+    font-weight: 600;
+    color: var(--gray-800);
+    margin-bottom: 1rem;
+}
+
+.modalTechList {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+}
+
+.techTag {
+    background: var(--gray-100);
+    color: var(--gray-700);
+    padding: 0.35rem 1rem;
+    border-radius: 2rem;
+    font-size: 0.8rem;
+    font-weight: 500;
+    border: 1px solid var(--gray-200);
+}
+
+.modalFooter {
+    text-align: center;
+}
+
+.modalButton {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    background: var(--gradient-primary);
+    color: white;
+    padding: 0.75rem 2rem;
+    border-radius: 3rem;
+    font-weight: 600;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(59,130,246,0.3);
+}
+
+.modalButton:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 25px rgba(59,130,246,0.4);
+}
+
+/* ===== CTA ===== */
+.ctaSection {
+    padding: 5rem 2rem;
+    background: var(--white);
+}
+
+.ctaCard {
+    max-width: 800px;
+    margin: 0 auto;
+    background: #ffe8b7;
+    border-radius: 3rem;
+    padding: 4rem 2rem;
+    text-align: center;
+    border: 1px solid var(--gray-200);
+    box-shadow: 0 30px 60px rgba(0,0,0,0.05);
+}
+
+.ctaTitle {
+    font-size: 2.5rem;
+    font-weight: 800;
+    color: var(--gray-900);
+    margin-bottom: 1rem;
+    letter-spacing: -0.02em;
+}
+
+.ctaDescription {
+    color: var(--gray-600);
+    font-size: 1.125rem;
+    max-width: 500px;
+    margin: 0 auto 2rem;
+    line-height: 1.6;
+}
+
+.ctaButtons {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.ctaPrimary {
+    background: var(--gradient-primary);
+    color: white;
+    padding: 1rem 2.5rem;
+    border-radius: 3rem;
+    font-weight: 600;
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(59,130,246,0.3);
+}
+
+.ctaPrimary:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 25px rgba(59,130,246,0.4);
+}
+
+.buttonIcon {
+    width: 1.25rem;
+    height: 1.25rem;
+}
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 768px) {
+    .modalInner {
+        padding: 2rem;
+    }
+    .modalHeader {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .modalStats {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+    }
+    .modalStat {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        text-align: left;
+    }
+    .modalStatValue {
+        font-size: 1.25rem;
+    }
+    .modalStatLabel {
+        font-size: 0.75rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .caseStudiesGrid {
+        grid-template-columns: 1fr;
+    }
+    .modalInner {
+        padding: 1.5rem;
+    }
+    .modalTitle {
+        font-size: 1.5rem;
+    }
+}
