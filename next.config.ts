@@ -28,15 +28,13 @@ const nextConfig = {
         pathname: "/**",
       },
     ],
-    unoptimized: true,
   },
 
   experimental: {
     turbo: false,
   },
 
-  output: 'export',
-  trailingSlash: true,
+
 };
 
 
