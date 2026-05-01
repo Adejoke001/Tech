@@ -1,18 +1,18 @@
-import React from 'react';
-import styles from './projectInMind.module.css';
-import Image from 'next/image';
+import React from "react";
+import styles from "./projectInMind.module.css";
+import Image from "next/image";
 
 interface ProjectInMindProps {
   imageAlt?: string;
 }
 
-const ProjectInMind: React.FC<ProjectInMindProps> = ({ 
-  imageAlt = "Project Collaboration" 
+const ProjectInMind: React.FC<ProjectInMindProps> = ({
+  imageAlt = "Project Collaboration",
 }) => {
   const stats = [
     { id: 1, value: "50+", label: "Industry Sectors" },
     { id: 2, value: "97%", label: "Client Satisfaction" },
-    { id: 3, value: "4200+", label: "Projects" }
+    { id: 3, value: "4200+", label: "Projects" },
   ];
 
   return (
@@ -22,7 +22,7 @@ const ProjectInMind: React.FC<ProjectInMindProps> = ({
           {/* Left Column - Image */}
           <div className={styles.imageColumn}>
             <div className={styles.imageContainer}>
-              <Image 
+              <Image
                 src={"/images/project.jpg"}
                 alt={imageAlt}
                 fill
@@ -35,51 +35,46 @@ const ProjectInMind: React.FC<ProjectInMindProps> = ({
           {/* Right Column - Content */}
           <div className={styles.contentColumn}>
             <div className={styles.textContent}>
-              <h2 className={styles.title}>
-                Got a Project in Mind?
-              </h2>
-              
+              <h2 className={styles.title}>Got a Project in Mind?</h2>
+
               <p className={styles.description}>
-                Let&apos;s transform your concept into a market-winning product. Our teams integrate 
-                seamlessly with yours, bringing speed, skill, and scalability to every project.
+                Let&apos;s transform your concept into a market-winning product.
+                Our teams integrate seamlessly with yours, bringing speed,
+                skill, and scalability to every project.
               </p>
 
               {/* Stats */}
               <div className={styles.statsGrid}>
                 {stats.map((stat) => (
                   <div key={stat.id} className={styles.statItem}>
-                    <div className={styles.statValue}>
-                      {stat.value}
-                    </div>
-                    <div className={styles.statLabel}>
-                      {stat.label}
-                    </div>
+                    <div className={styles.statValue}>{stat.value}</div>
+                    <div className={styles.statLabel}>{stat.label}</div>
                   </div>
                 ))}
               </div>
 
               {/* Contact Button */}
-              <button 
+              <a
                 className={styles.contactButton}
-                type="button"
+                href="/contact" // Replace with your actual contact link
                 aria-label="Contact us for your project"
               >
                 CONTACT US
-                <svg 
-                  className={styles.buttonArrow} 
-                  width="16" 
-                  height="16" 
-                  viewBox="0 0 16 16" 
+                <svg
+                  className={styles.buttonArrow}
+                  width="16"
+                  height="16"
+                  viewBox="0 0 16 16"
                   fill="none"
                   aria-hidden="true"
                   focusable="false"
                 >
-                  <path 
-                    d="M8 0L6.59 1.41L12.17 7H0V9H12.17L6.59 14.59L8 16L16 8L8 0Z" 
+                  <path
+                    d="M8 0L6.59 1.41L12.17 7H0V9H12.17L6.59 14.59L8 16L16 8L8 0Z"
                     fill="currentColor"
                   />
                 </svg>
-              </button>
+              </a>
             </div>
           </div>
         </div>

@@ -8,45 +8,45 @@ const Footer = () => {
 
   const footerLinks = {
     company: [
-      { name: "About Us", href: "/about" },
-      { name: "Our Team", href: "/team" },
-      { name: "Careers", href: "/careers" },
-      { name: "Blog", href: "/blog" },
-      { name: "Clients & Testimonials", href: "/testimonials" },
+      { name: "About Us", href: "/company/about" },
+      // { name: "Our Team", href: "/team" },
+      { name: "Case Studies", href: "/company/case-studies" },
+      { name: "Blog", href: "/company/blogs" },
+      { name: "Clients & Testimonials", href: "/company/testimonials" },
     ],
     services: [
       { name: "Web Development", href: "/services/web-development" },
-      { name: "Mobile Apps", href: "/services/mobile-apps" },
+      { name: "Mobile Apps", href: "/services/mobile-development" },
       { name: "UI/UX Design", href: "/services/ui-ux-design" },
-      { name: "Digital Marketing", href: "/services/digital-marketing" },
-      { name: "Consulting", href: "/services/consulting" },
+      // { name: "Digital Marketing", href: "/services/digital-marketing" },
+      { name: "Consulting", href: "/services/qa-consulting" },
     ],
     ourExpertise: [
       {
         name: "Software Product Engineering",
-        href: "/expertise/product-engineering",
+        href: "/services/software-development",
       },
       {
         name: "Application Development",
-        href: "/expertise/application-development",
+        href: "/services/application-development",
       },
-      { name: "Staff Augmentation", href: "/expertise/staff-augmentation" },
-      { name: "Cloud Services", href: "/expertise/cloud-services" },
-      { name: "AI & ML", href: "/expertise/ai-ml" },
+      // { name: "Staff Augmentation", href: "/expertise/staff-augmentation" },
+      { name: "Cloud Services", href: "/services/cloud-devops-services" },
+      { name: "AI & ML", href: "/services/machine-learning" },
     ],
     hireDevelopers: [
-      { name: "Hire AI Engineers", href: "/hire/ai-engineers" },
-      { name: "Hire Backend Developers", href: "/hire/backend-developers" },
+      { name: "Hire AI Engineers", href: "/hire/data-ai-developers" },
+      { name: "Hire Backend Developers", href: "/hire-developers/backend-developers" },
       { name: "Hire Frontend Developers", href: "/hire/frontend-developers" },
-      {
-        name: "Hire Blockchain Developers",
-        href: "/hire/blockchain-developers",
-      },
-      { name: "Hire Mobile App Developers", href: "/hire/mobile-developers" },
+      // {
+      //   name: "Hire Blockchain Developers",
+      //   href: "/hire/blockchain-developers",
+      // },
+      { name: "Hire Mobile App Developers", href: "/hire-developers/mobile-developers" },
     ],
     clientsWeServe: [
-      { name: "For Startups", href: "/clients/startups" },
-      { name: "For Enterprises", href: "/clients/enterprises" },
+      { name: "For Startups", href: "/solutions/solutions-startups" },
+      { name: "For Enterprises", href: "/solutions/solutions-enterprises" },
     ],
   };
 
@@ -138,7 +138,7 @@ const Footer = () => {
             <div className={styles.contactDetails}>
               <div className={styles.contactItem}>
                 <span className={styles.contactIcon}>📧</span>
-                <span>hello@valuecoders.com</span>
+                <span>hello@bbmcoders.com</span>
               </div>
               <div className={styles.contactItem}>
                 <span className={styles.contactIcon}>📞</span>
@@ -173,16 +173,16 @@ const Footer = () => {
         {/* Bottom Bar */}
         <div className={styles.bottomBar}>
           <div className={styles.copyright}>
-            © {currentYear} ValueCoders. All rights reserved.
+            © {currentYear} BBMcoders. All rights reserved.
           </div>
           <div className={styles.bottomLinks}>
-            <Link href="/privacy" className={styles.bottomLink}>
+            <Link href="/company/privacy-policy" className={styles.bottomLink}>
               Privacy Policy
             </Link>
-            <Link href="/disclaimer" className={styles.bottomLink}>
+            <Link href="/company/disclaimer" className={styles.bottomLink}>
               Disclaimer
             </Link>
-            <Link href="/terms" className={styles.bottomLink}>
+            <Link href="/company/terms-of-service" className={styles.bottomLink}>
               Terms of Service
             </Link>
           </div>

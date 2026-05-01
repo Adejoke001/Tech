@@ -2,13 +2,14 @@
   background: linear-gradient(135deg, #f8fafc 0%, #f1f5f9 100%);
   min-height: 100vh;
   padding: 4rem 0 0 0;
-  overflow-x: hidden; /* Prevent horizontal scrolling */
+  overflow-x: hidden;
+  margin-top: 3rem;
 }
 
 .container {
   max-width: 1200px;
   margin: 0 auto;
-  padding: 0 1rem; /* Reduced padding for small screens */
+  padding: 0 1rem;
   width: 100%;
   box-sizing: border-box;
 }
@@ -17,13 +18,13 @@
 .contactContent {
   display: grid;
   grid-template-columns: 1fr;
-  gap: 2rem; /* Reduced gap for small screens */
+  gap: 2rem;
   margin-bottom: 0;
   width: 100%;
   box-sizing: border-box;
 }
 
-/* Form Section - White Background */
+/* Form Section */
 .formSection {
   order: 1;
   width: 100%;
@@ -31,7 +32,7 @@
 
 .formContainer {
   background: white;
-  padding: 2rem; /* Reduced padding for small screens */
+  padding: 2rem;
   border-radius: 16px;
   box-shadow: 0 10px 40px rgba(0, 0, 0, 0.08);
   border: 1px solid #e2e8f0;
@@ -40,7 +41,7 @@
 }
 
 .formTitle {
-  font-size: 1.75rem; /* Smaller for mobile */
+  font-size: 1.75rem;
   font-weight: 700;
   color: #1e293b;
   margin-bottom: 0.75rem;
@@ -50,7 +51,7 @@
 .formDescription {
   color: #64748b;
   margin-bottom: 2rem;
-  font-size: 1rem; /* Smaller for mobile */
+  font-size: 1rem;
   line-height: 1.6;
   text-align: center;
 }
@@ -65,10 +66,105 @@
 .formRow {
   display: grid;
   grid-template-columns: 1fr;
-  gap: 1rem; /* Reduced gap for small screens */
+  gap: 1rem;
   width: 100%;
 }
 
+/* ---------- FLOATING LABEL WRAPPER ---------- */
+.inputWrapper {
+  position: relative;
+  width: 100%;
+  margin-bottom: 0.25rem;
+}
+
+/* Base styles for input and textarea */
+.floatingInput,
+.floatingTextarea {
+  width: 100%;
+  padding: 1rem 1rem 0.5rem 1rem;
+  font-size: 1rem;
+  border: 2px solid #e2e8f0;
+  border-radius: 8px;
+  background: white;
+  color: #1e293b;
+  transition: all 0.2s ease;
+  font-family: inherit;
+  box-sizing: border-box;
+}
+
+.floatingTextarea {
+  resize: vertical;
+  padding-top: 1.2rem;
+  line-height: 1.5;
+}
+
+.floatingInput:focus,
+.floatingTextarea:focus {
+  outline: none;
+  border-color: #10b981;
+  box-shadow: 0 0 0 3px rgba(16, 185, 129, 0.1);
+  background: #f8fafc;
+}
+
+/* The floating label */
+.floatingLabel {
+  position: absolute;
+  left: 1rem;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: white;
+  padding: 0 0.25rem;
+  font-size: 1rem;
+  color: #64748b;
+  pointer-events: none;
+  transition: 0.2s ease all;
+  font-weight: 500;
+  white-space: nowrap;
+}
+
+/* For textarea, adjust initial top position */
+.inputWrapper:has(.floatingTextarea) .floatingLabel {
+  top: 1rem;
+  transform: translateY(0);
+}
+
+/* When input is focused OR has content (not empty) */
+.floatingInput:focus ~ .floatingLabel,
+.floatingInput:not(:placeholder-shown) ~ .floatingLabel,
+.floatingTextarea:focus ~ .floatingLabel,
+.floatingTextarea:not(:placeholder-shown) ~ .floatingLabel {
+  top: 0;
+  transform: translateY(-50%);
+  font-size: 0.95rem;
+  color: #10b981;
+  background-color: white;
+  padding: 0 0.3rem;
+}
+
+/* For textarea variation */
+.inputWrapper:has(.floatingTextarea) .floatingLabel {
+  top: 0.8rem;
+  transform: translateY(0);
+}
+.inputWrapper:has(.floatingTextarea:focus) .floatingLabel,
+.inputWrapper:has(.floatingTextarea:not(:placeholder-shown)) .floatingLabel {
+  top: 0;
+  transform: translateY(-50%);
+}
+
+/* Keep label blue on focus */
+.floatingInput:focus ~ .floatingLabel,
+.floatingTextarea:focus ~ .floatingLabel {
+  color: #10b981;
+}
+
+/* Placeholder is hidden but needed for :placeholder-shown */
+.floatingInput::placeholder,
+.floatingTextarea::placeholder {
+  color: transparent;
+}
+
+/* ---------- Normal form group (for select) ---------- */
 .formGroup {
   display: flex;
   flex-direction: column;
@@ -84,10 +180,8 @@
   letter-spacing: 0.5px;
 }
 
-.formInput,
-.formSelect,
-.formTextarea {
-  padding: 0.875rem 1rem; /* Slightly smaller padding */
+.formSelect {
+  padding: 0.875rem 1rem;
   border: 2px solid #e2e8f0;
   border-radius: 8px;
   font-size: 1rem;
@@ -99,27 +193,19 @@
   box-sizing: border-box;
 }
 
-.formInput:focus,
-.formSelect:focus,
-.formTextarea:focus {
+.formSelect:focus {
   outline: none;
   border-color: #10b981;
   box-shadow: 0 0 0 3px rgba(16, 185, 129, 0.1);
-  background: #f8fafc;
 }
 
-.formTextarea {
-  resize: vertical;
-  min-height: 120px;
-  line-height: 1.5;
-}
-
+/* Submit Button */
 .submitButton {
   background: #FFAD00;
   color: #1e293b;
   border: none;
-  padding: 1.125rem 2rem; /* Slightly smaller */
-  font-size: 1rem; /* Smaller for mobile */
+  padding: 1.125rem 2rem;
+  font-size: 1rem;
   font-weight: 700;
   border-radius: 10px;
   cursor: pointer;
@@ -132,7 +218,7 @@
   box-shadow: 0 4px 15px rgba(255, 173, 0, 0.25);
   text-transform: uppercase;
   letter-spacing: 0.5px;
-  width: 100%; /* Full width on mobile */
+  width: 100%;
 }
 
 .submitButton:hover {
@@ -150,7 +236,7 @@
   transform: translateX(4px);
 }
 
-/* Info Section - Dark Background */
+/* Info Section (Dark) */
 .infoSection {
   order: 2;
   width: 100%;
@@ -158,7 +244,7 @@
 
 .infoContainer {
   background: linear-gradient(135deg, #1e293b 0%, #0f172a 100%);
-  padding: 2rem; /* Reduced padding for small screens */
+  padding: 2rem;
   border-radius: 16px;
   box-shadow: 0 10px 40px rgba(0, 0, 0, 0.15);
   color: white;
@@ -167,7 +253,7 @@
 }
 
 .infoTitle {
-  font-size: 1.75rem; /* Smaller for mobile */
+  font-size: 1.75rem;
   font-weight: 700;
   color: white;
   margin-bottom: 0.75rem;
@@ -176,7 +262,7 @@
 
 .infoDescription {
   color: #94a3b8;
-  font-size: 1rem; /* Smaller for mobile */
+  font-size: 1rem;
   line-height: 1.6;
   margin-bottom: 2rem;
   text-align: center;
@@ -191,16 +277,15 @@
 
 .contactMethod {
   display: flex;
-  flex-direction: column; /* Stack on mobile */
-  align-items: center; /* Center align on mobile */
-  justify-content: center;
+  flex-direction: column;
+  align-items: center;
   gap: 1rem;
-  padding: 1.5rem; /* Reduced padding for mobile */
+  padding: 1.5rem;
   background: rgba(255, 255, 255, 0.05);
   border-radius: 12px;
   transition: all 0.3s ease;
   border: 1px solid #334155;
-  text-align: center; /* Center text on mobile */
+  text-align: center;
   width: 100%;
   box-sizing: border-box;
 }
@@ -213,9 +298,9 @@
 }
 
 .methodIcon {
-  font-size: 1.75rem; /* Slightly smaller */
-  width: 60px; /* Smaller on mobile */
-  height: 60px; /* Smaller on mobile */
+  font-size: 1.75rem;
+  width: 60px;
+  height: 60px;
   background: linear-gradient(135deg, #10b981, #34d399);
   border-radius: 12px;
   display: flex;
@@ -231,14 +316,14 @@
 }
 
 .methodTitle {
-  font-size: 1.25rem; /* Smaller for mobile */
+  font-size: 1.25rem;
   font-weight: 600;
   color: white;
   margin-bottom: 0.5rem;
 }
 
 .methodDetail {
-  font-size: 1.125rem; /* Smaller for mobile */
+  font-size: 1.125rem;
   font-weight: 700;
   color: #10b981;
   margin-bottom: 0.25rem;
@@ -249,10 +334,10 @@
   font-size: 0.875rem;
 }
 
-/* Features Section - Separate row with dark background */
+/* Features Section */
 .featuresSection {
   background: linear-gradient(135deg, #1e293b 0%, #0f172a 100%);
-  padding: 3rem 0; /* Reduced padding for mobile */
+  padding: 3rem 0;
   margin: 3rem 0 0 0;
   width: 100%;
   box-sizing: border-box;
@@ -265,7 +350,7 @@
 }
 
 .featuresTitle {
-  font-size: 2rem; /* Smaller for mobile */
+  font-size: 2rem;
   font-weight: 700;
   color: white;
   margin-bottom: 1rem;
@@ -273,9 +358,9 @@
 
 .featuresDescription {
   color: #94a3b8;
-  font-size: 1.125rem; /* Smaller for mobile */
+  font-size: 1.125rem;
   line-height: 1.6;
-  margin-bottom: 2rem; /* Reduced margin for mobile */
+  margin-bottom: 2rem;
   max-width: 600px;
   margin-left: auto;
   margin-right: auto;
@@ -283,8 +368,8 @@
 
 .featuresGrid {
   display: grid;
-  grid-template-columns: 1fr; /* Single column on very small screens */
-  gap: 1rem; /* Reduced gap for mobile */
+  grid-template-columns: 1fr;
+  gap: 1rem;
   max-width: 800px;
   margin: 0 auto;
   width: 100%;
@@ -293,9 +378,9 @@
 .featureItem {
   display: flex;
   align-items: center;
-  justify-content: flex-start; /* Align to start on mobile */
+  justify-content: flex-start;
   gap: 1rem;
-  padding: 1.5rem; /* Reduced padding for mobile */
+  padding: 1.5rem;
   background: rgba(255, 255, 255, 0.05);
   border-radius: 12px;
   border: 2px solid #334155;
@@ -314,8 +399,8 @@
 }
 
 .featureIcon {
-  width: 40px; /* Smaller on mobile */
-  height: 40px; /* Smaller on mobile */
+  width: 40px;
+  height: 40px;
   background: linear-gradient(135deg, #FFAD00, #ffbb33);
   border-radius: 8px;
   display: flex;
@@ -323,7 +408,7 @@
   justify-content: center;
   color: #1e293b;
   font-weight: bold;
-  font-size: 1rem; /* Smaller on mobile */
+  font-size: 1rem;
   flex-shrink: 0;
   box-shadow: 0 4px 15px rgba(255, 173, 0, 0.3);
 }
@@ -331,14 +416,14 @@
 .featureText {
   color: #e2e8f0;
   font-weight: 600;
-  font-size: 1rem; /* Smaller for mobile */
+  font-size: 1rem;
   line-height: 1.4;
 }
 
 /* Map Section */
 .mapSection {
   background: white;
-  padding: 3rem 0; /* Reduced padding for mobile */
+  padding: 3rem 0;
   width: 100%;
   box-sizing: border-box;
 }
@@ -363,13 +448,13 @@
   border: none;
   display: block;
   width: 100%;
-  height: 350px; /* Slightly smaller on mobile */
+  height: 350px;
 }
 
 .mapOverlay {
   position: absolute;
-  bottom: 15px; /* Adjusted for mobile */
-  right: 15px; /* Adjusted for mobile */
+  bottom: 15px;
+  right: 15px;
   z-index: 10;
 }
 
@@ -377,8 +462,8 @@
   background: #FFAD00;
   color: #1e293b;
   border: none;
-  padding: 0.875rem 1.5rem; /* Smaller on mobile */
-  font-size: 0.875rem; /* Smaller on mobile */
+  padding: 0.875rem 1.5rem;
+  font-size: 0.875rem;
   font-weight: 600;
   border-radius: 8px;
   cursor: pointer;
@@ -393,62 +478,50 @@
   box-shadow: 0 6px 20px rgba(16, 185, 129, 0.4);
 }
 
-/* Small Mobile Styles (320px - 480px) */
+/* Responsive */
 @media (max-width: 480px) {
   .container {
-    padding: 0 0.75rem; /* Even smaller padding for very small screens */
+    padding: 0 0.75rem;
   }
-  
   .contactSection {
     padding: 1.5rem 0 0 0;
   }
-  
   .formContainer,
   .infoContainer {
-    padding: 1.5rem 1rem; /* Even smaller padding */
+    padding: 1.5rem 1rem;
   }
-  
   .formTitle,
   .infoTitle {
     font-size: 1.5rem;
   }
-  
   .contactMethod {
     padding: 1.25rem 1rem;
   }
-  
   .methodIcon {
     width: 50px;
     height: 50px;
     font-size: 1.5rem;
   }
-  
   .featuresSection {
     padding: 2rem 0;
     margin: 2rem 0 0 0;
   }
-  
   .featuresTitle {
     font-size: 1.75rem;
   }
-  
   .featuresDescription {
     font-size: 1rem;
     margin-bottom: 1.5rem;
   }
-  
   .featureItem {
     padding: 1.25rem 1rem;
   }
-  
   .mapSection {
     padding: 2rem 0;
   }
-  
   .mapIframe {
     height: 300px;
   }
-  
   .mapOverlay {
     position: relative;
     bottom: auto;
@@ -456,80 +529,58 @@
     text-align: center;
     margin-top: 1rem;
   }
-  
   .directionsButton {
     width: 100%;
   }
 }
 
-/* Tablet Styles */
 @media (min-width: 768px) {
   .container {
     padding: 0 1.5rem;
   }
-  
   .contactContent {
     grid-template-columns: 1fr 1fr;
     gap: 3rem;
   }
-  
-  .formSection {
-    order: 1;
-  }
-  
-  .infoSection {
-    order: 2;
-  }
-  
   .formRow {
     grid-template-columns: 1fr 1fr;
   }
-  
   .contactMethod {
-    flex-direction: row; /* Back to row on tablet */
-    align-items: flex-start; /* Align to start on tablet */
-    text-align: left; /* Left align on tablet */
+    flex-direction: row;
+    align-items: flex-start;
+    text-align: left;
   }
-  
   .featuresGrid {
     grid-template-columns: repeat(2, 1fr);
     gap: 1.5rem;
   }
-  
   .submitButton {
-    width: auto; /* Auto width on larger screens */
+    width: auto;
   }
 }
 
-/* Desktop Styles */
 @media (min-width: 1024px) {
   .contactContent {
     gap: 4rem;
   }
-  
   .formContainer,
   .infoContainer {
     padding: 3rem;
   }
-  
   .formTitle,
   .infoTitle {
     font-size: 2.25rem;
   }
-  
   .contactMethod {
     padding: 2rem;
   }
-  
   .featuresTitle {
     font-size: 2.5rem;
   }
-  
   .featuresGrid {
     grid-template-columns: repeat(4, 1fr);
     gap: 2rem;
   }
-  
   .featureItem {
     flex-direction: column;
     text-align: center;
@@ -538,26 +589,21 @@
   }
 }
 
-/* Extra small devices (phones, 320px and down) */
 @media (max-width: 320px) {
   .container {
     padding: 0 0.5rem;
   }
-  
   .formContainer,
   .infoContainer {
     padding: 1rem 0.75rem;
   }
-  
   .formTitle,
   .infoTitle {
     font-size: 1.375rem;
   }
-  
   .contactMethod {
     padding: 1rem 0.75rem;
   }
-  
   .methodIcon {
     width: 45px;
     height: 45px;

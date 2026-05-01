@@ -22,9 +22,8 @@ const Contact = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    // Handle form submission here
     console.log('Form submitted:', formData);
-    // You can add your API call here
+    // Add your API call here
   };
 
   const contactInfo = [
@@ -60,7 +59,7 @@ const Contact = () => {
 
   const features = [
     "97% Client Satisfaction Rate",
-    "50+ Industry Experts", 
+    "50+ Industry Experts",
     "4200+ Projects Delivered",
     "24/7 Project Support"
   ];
@@ -70,7 +69,7 @@ const Contact = () => {
       <div className={styles.container}>
         <div className={styles.contactContent}>
           {/* Contact Form - White Background */}
-          <motion.div 
+          <motion.div
             className={styles.formSection}
             initial={{ opacity: 0, x: -50 }}
             animate={{ opacity: 1, x: 0 }}
@@ -84,59 +83,80 @@ const Contact = () => {
 
               <form className={styles.contactForm} onSubmit={handleSubmit}>
                 <div className={styles.formRow}>
-                  <div className={styles.formGroup}>
-                    <label htmlFor="name" className={styles.formLabel}>Full Name *</label>
+                  {/* Floating label for Full Name */}
+                  <div className={styles.inputWrapper}>
                     <input
                       type="text"
                       id="name"
                       name="name"
                       value={formData.name}
                       onChange={handleChange}
-                      className={styles.formInput}
+                      placeholder=" "
                       required
+                      className={styles.floatingInput}
                     />
+                    <label htmlFor="name" className={styles.floatingLabel}>
+                      Full Name *
+                    </label>
                   </div>
-                  <div className={styles.formGroup}>
-                    <label htmlFor="email" className={styles.formLabel}>Work Email *</label>
+
+                  {/* Floating label for Work Email */}
+                  <div className={styles.inputWrapper}>
                     <input
                       type="email"
                       id="email"
                       name="email"
                       value={formData.email}
                       onChange={handleChange}
-                      className={styles.formInput}
+                      placeholder=" "
                       required
+                      className={styles.floatingInput}
                     />
+                    <label htmlFor="email" className={styles.floatingLabel}>
+                      Work Email *
+                    </label>
                   </div>
                 </div>
 
                 <div className={styles.formRow}>
-                  <div className={styles.formGroup}>
-                    <label htmlFor="phone" className={styles.formLabel}>Phone Number</label>
+                  {/* Floating label for Phone Number */}
+                  <div className={styles.inputWrapper}>
                     <input
                       type="tel"
                       id="phone"
                       name="phone"
                       value={formData.phone}
                       onChange={handleChange}
-                      className={styles.formInput}
+                      placeholder=" "
+                      className={styles.floatingInput}
                     />
+                    <label htmlFor="phone" className={styles.floatingLabel}>
+                      Phone Number
+                    </label>
                   </div>
-                  <div className={styles.formGroup}>
-                    <label htmlFor="company" className={styles.formLabel}>Company</label>
+
+                  {/* Floating label for Company */}
+                  <div className={styles.inputWrapper}>
                     <input
                       type="text"
                       id="company"
                       name="company"
                       value={formData.company}
                       onChange={handleChange}
-                      className={styles.formInput}
+                      placeholder=" "
+                      className={styles.floatingInput}
                     />
+                    <label htmlFor="company" className={styles.floatingLabel}>
+                      Company
+                    </label>
                   </div>
                 </div>
 
+                {/* Normal select field (keeps static label) */}
                 <div className={styles.formGroup}>
-                  <label htmlFor="projectType" className={styles.formLabel}>Project Type</label>
+                  <label htmlFor="projectType" className={styles.formLabel}>
+                    Project Type
+                  </label>
                   <select
                     id="projectType"
                     name="projectType"
@@ -151,21 +171,24 @@ const Contact = () => {
                   </select>
                 </div>
 
-                <div className={styles.formGroup}>
-                  <label htmlFor="message" className={styles.formLabel}>Project Details *</label>
+                {/* Floating label for Message (textarea) */}
+                <div className={styles.inputWrapper}>
                   <textarea
                     id="message"
                     name="message"
                     value={formData.message}
                     onChange={handleChange}
-                    className={styles.formTextarea}
-                    rows={5}
+                    placeholder=" "
                     required
-                    placeholder="Tell us about your project requirements, timeline, and any specific needs..."
+                    rows={5}
+                    className={styles.floatingTextarea}
                   />
+                  <label htmlFor="message" className={styles.floatingLabel}>
+                    Project Details *
+                  </label>
                 </div>
 
-                <motion.button 
+                <motion.button
                   type="submit"
                   className={styles.submitButton}
                   whileHover={{ scale: 1.02 }}
@@ -173,7 +196,7 @@ const Contact = () => {
                 >
                   Send Message
                   <svg className={styles.buttonArrow} width="20" height="20" viewBox="0 0 20 20" fill="none">
-                    <path d="M10 0L8.59 1.41L14.17 7H0V9H14.17L8.59 14.59L10 16L20 10L10 0Z" fill="currentColor"/>
+                    <path d="M10 0L8.59 1.41L14.17 7H0V9H14.17L8.59 14.59L10 16L20 10L10 0Z" fill="currentColor" />
                   </svg>
                 </motion.button>
               </form>
@@ -181,7 +204,7 @@ const Contact = () => {
           </motion.div>
 
           {/* Contact Information - Dark Background */}
-          <motion.div 
+          <motion.div
             className={styles.infoSection}
             initial={{ opacity: 0, x: 50 }}
             animate={{ opacity: 1, x: 0 }}
@@ -195,7 +218,7 @@ const Contact = () => {
 
               <div className={styles.contactMethods}>
                 {contactInfo.map((item, index) => (
-                  <motion.div 
+                  <motion.div
                     key={index}
                     className={styles.contactMethod}
                     whileHover={{ scale: 1.02 }}
@@ -215,10 +238,10 @@ const Contact = () => {
         </div>
       </div>
 
-      {/* Features Section - Separate row above map with dark background */}
+      {/* Features Section */}
       <div className={styles.featuresSection}>
         <div className={styles.container}>
-          <motion.div 
+          <motion.div
             className={styles.featuresContainer}
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
@@ -248,7 +271,7 @@ const Contact = () => {
       {/* Map Section */}
       <div className={styles.mapSection}>
         <div className={styles.container}>
-          <motion.div 
+          <motion.div
             className={styles.mapContainer}
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
@@ -256,7 +279,6 @@ const Contact = () => {
           >
             <div className={styles.mapContent}>
               <div className={styles.mapWrapper}>
-                {/* Temporary UK Map */}
                 <iframe
                   src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2429729.141258394!2d-7.230347562499989!3d52.83903680000001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47d0a98a6c1ed5df%3A0xf4e19525332d8ea8!2sUnited%20Kingdom!5e0!3m2!1sen!2suk!4v1698765432100!5m2!1sen!2suk"
                   width="100%"

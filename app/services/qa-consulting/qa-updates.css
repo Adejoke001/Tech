@@ -1,0 +1,108 @@
+
+/* Update Testimonial Card */
+.testimonialCard {
+  background: rgba(255, 255, 255, 0.95);
+  backdrop-filter: blur(10px);
+  border-radius: 1.2rem;
+  padding: 1.5rem; /* Reduced padding */
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+  max-width: 380px; /* Reduced width */
+  margin: 0 auto;
+  margin-top: 2rem;
+}
+
+/* Service Icon Alignment Fix */
+.serviceIconWrapper {
+  position: absolute;
+  top: 1.5rem;
+  left: 1.5rem;
+  width: 3rem;
+  height: 3rem;
+  background: white;
+  border-radius: 0.75rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 10; /* Ensure on top */
+}
+
+/* Process Section Styles */
+.processSection {
+    padding: 5rem 2rem;
+    background: #ffffff;
+}
+
+.processGrid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+@media (min-width: 768px) {
+    .processGrid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (min-width: 1024px) {
+    .processGrid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+.processCard {
+    background: #f9fafb;
+    border-radius: 1rem;
+    padding: 2rem;
+    border: 1px solid #e5e7eb;
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+.processCard:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.05);
+    border-color: #34d399;
+}
+
+.processNumber {
+    font-size: 3rem;
+    font-weight: 900;
+    color: rgba(52, 211, 153, 0.1); /* Subtle green */
+    position: absolute;
+    top: 1rem;
+    right: 1.5rem;
+    line-height: 1;
+}
+
+.processTitle {
+    font-size: 1.25rem;
+    font-weight: 700;
+    color: #1f2937;
+    margin-bottom: 0.75rem;
+    position: relative;
+    z-index: 2;
+}
+
+.processDescription {
+    color: #6b7280;
+    line-height: 1.6;
+    font-size: 0.95rem;
+    position: relative;
+    z-index: 2;
+}
+
+/* Feature Tag Visibility is handled in JSX inline styles now, but we can ensure base styles are good */
+.featureTag {
+  padding: 0.25rem 0.75rem;
+  border-radius: 1rem;
+  font-size: 0.75rem;
+  font-weight: 600;
+  backdrop-filter: blur(10px);
+  /* Added shadow for better contrast against backgrounds if needed */
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1); 
+}

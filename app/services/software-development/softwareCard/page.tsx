@@ -20,102 +20,110 @@ const SoftwareDevelopmentServices = () => {
   const statsRef = useRef(null);
 
   const services = [
-    {
-      icon: <Lightbulb className="w-8 h-8" />,
-      title: "Product Ideation & Consulting",
-      description: "Validate ideas, build prototypes, and define the right tech stack.",
-      features: [
-        "Conduct market research to assess feasibility",
-        "Develop a strategic product roadmap",
-        "Create prototypes for early validation"
-      ]
-    },
-    {
-      icon: <Palette className="w-8 h-8" />,
-      title: "UI/UX Design",
-      description: "Design intuitive, engaging interfaces for seamless user experiences.",
-      features: [
-        "Research user behavior for optimized design",
-        "Ensure smooth navigation and accessibility",
-        "Maintain design consistency across platforms"
-      ]
-    },
-    {
-      icon: <Rocket className="w-8 h-8" />,
-      title: "MVP Development",
-      description: "Build functional MVPs to test ideas with minimal investment.",
-      features: [
-        "Prioritize core features for market readiness",
-        "Gather early user feedback for improvements",
-        "Manage resources for cost-efficient development"
-      ]
-    },
-    {
-      icon: <Cloud className="w-8 h-8" />,
-      title: "SaaS Development",
-      description: "Create scalable SaaS solutions with seamless upgrades.",
-      features: [
-        "Implement cloud-based architecture easily",
-        "Integrate tools like Slack and Google Analytics",
-        "Ensure easy maintenance & continuous updates"
-      ]
-    },
-    {
-      icon: <TestTube className="w-8 h-8" />,
-      title: "QA & Testing",
-      description: "Ensure critical aspects of production functioning, performance, & security.",
-      features: [
-        "Use manual and automated testing for reliability",
-        "Improve security, performance, and usability",
-        "Identify and fix vulnerabilities as soon as they're caught"
-      ]
-    },
-    {
-      icon: <RefreshCw className="w-8 h-8" />,
-      title: "Migration & Modernization",
-      description: "We upgrade legacy systems with zero downtime.",
-      features: [
-        "Migrate apps to the cloud for better scalability",
-        "Modernize software with the latest technologies",
-        "Integrate seamlessly with existing systems"
-      ]
-    },
-    {
-      icon: <TrendingUp className="w-8 h-8" />,
-      title: "Digital Transformation",
-      description: "Drive business growth with artificial intelligence, cloud, and automation.",
-      features: [
-        "Use modern tech for fast operations",
-        "Automate workflows for efficiency",
-        "Enable data-driven decision-making"
-      ]
-    },
-    {
-      icon: <Settings className="w-8 h-8" />,
-      title: "DevOps",
-      description: "Optimize software development with DevOps practices.",
-      features: [
-        "Implement CI/CD for faster releases",
-        "Automate infrastructure management",
-        "Improve team collaboration"
-      ]
-    },
-    {
-      icon: <Wrench className="w-8 h-8" />,
-      title: "Support & Maintenance",
-      description: "Provide technical assistance and continuous improvements for existing software.",
-      features: [
-        "Proactive issue detection",
-        "Performance monitoring services",
-        "System upgrade planning"
-      ]
-    },
-  ];
-
+  {
+    icon: <Lightbulb className="w-8 h-8" />,
+    title: "Product Ideation & Consulting",
+    description: "Validate ideas, build prototypes, and define the right tech stack.",
+    features: [
+      "Conduct market research to assess feasibility",
+      "Develop a strategic product roadmap",
+      "Create prototypes for early validation"
+    ],
+    link: "/services/product-discovery"  // custom URL
+  },
+  {
+    icon: <Palette className="w-8 h-8" />,
+    title: "UI/UX Design",
+    description: "Design intuitive, engaging interfaces for seamless user experiences.",
+    features: [
+      "Research user behavior for optimized design",
+      "Ensure smooth navigation and accessibility",
+      "Maintain design consistency across platforms"
+    ],
+    link: "/services/ui-ux-design"
+  },
+  {
+    icon: <Rocket className="w-8 h-8" />,
+    title: "MVP Development",
+    description: "Build functional MVPs to test ideas with minimal investment.",
+    features: [
+      "Prioritize core features for market readiness",
+      "Gather early user feedback for improvements",
+      "Manage resources for cost-efficient development"
+    ],
+    link: null  // no dedicated page – link will not appear
+  },
+  {
+    icon: <Cloud className="w-8 h-8" />,
+    title: "SaaS Development",
+    description: "Create scalable SaaS solutions with seamless upgrades.",
+    features: [
+      "Implement cloud-based architecture easily",
+      "Integrate tools like Slack and Google Analytics",
+      "Ensure easy maintenance & continuous updates"
+    ],
+    link: "/services/architecture"
+  },
+  {
+    icon: <TestTube className="w-8 h-8" />,
+    title: "QA & Testing",
+    description: "Ensure critical aspects of production functioning, performance, & security.",
+    features: [
+      "Use manual and automated testing for reliability",
+      "Improve security, performance, and usability",
+      "Identify and fix vulnerabilities as soon as they're caught"
+    ],
+    link: "/services/quality-assurance-testing"
+  },
+  {
+    icon: <RefreshCw className="w-8 h-8" />,
+    title: "Migration & Modernization",
+    description: "We upgrade legacy systems with zero downtime.",
+    features: [
+      "Migrate apps to the cloud for better scalability",
+      "Modernize software with the latest technologies",
+      "Integrate seamlessly with existing systems"
+    ],
+    link: "/services/software-modernization"
+  },
+  {
+    icon: <TrendingUp className="w-8 h-8" />,
+    title: "Digital Transformation",
+    description: "Drive business growth with artificial intelligence, cloud, and automation.",
+    features: [
+      "Use modern tech for fast operations",
+      "Automate workflows for efficiency",
+      "Enable data-driven decision-making"
+    ],
+    link: "/services/ai-automation-consulting"
+  },
+  {
+    icon: <Settings className="w-8 h-8" />,
+    title: "DevOps",
+    description: "Optimize software development with DevOps practices.",
+    features: [
+      "Implement CI/CD for faster releases",
+      "Automate infrastructure management",
+      "Improve team collaboration"
+    ],
+    link: "/services/cloud-devops-services"
+  },
+  {
+    icon: <Wrench className="w-8 h-8" />,
+    title: "Support & Maintenance",
+    description: "Provide technical assistance and continuous improvements for existing software.",
+    features: [
+      "Proactive issue detection",
+      "Performance monitoring services",
+      "System upgrade planning"
+    ],
+    link: null
+  },
+];
   const stats = [
-    { value: 675, suffix: "+", label: "Full-time Staff" },
+    { value: 100, suffix: "+", label: "Full-time Staff" },
     { value: 20, suffix: "+", label: "Years Experience" },
-    { value: 2500, suffix: "+", label: "Satisfied", description: "Customers" }
+    { value: 1600, suffix: "+", label: "Satisfied", description: "Customers" }
   ];
 
  useEffect(() => {
@@ -178,10 +186,12 @@ const SoftwareDevelopmentServices = () => {
                 ))}
               </div>
               
-              <a href="#" className={styles.learnMoreLink}>
-                Know More
-                <ArrowRight className={`${styles.arrow} w-4 h-4`} />
-              </a>
+             {service.link && (
+  <a href={service.link} className={styles.learnMoreLink}>
+    Know More
+    <ArrowRight className={`${styles.arrow} w-4 h-4`} />
+  </a>
+)}
             </div>
           ))}
         </div>
@@ -196,9 +206,11 @@ const SoftwareDevelopmentServices = () => {
                 <p className={styles.visionDescription}>
                   Turn your innovative ideas into a powerful software product. We provide expert development services to bring your vision to life.
                 </p>
-                <button className={styles.visionCtaButton}>
+                <a href="/contact">
+                  <button className={styles.visionCtaButton}>
                   Book a Free Consultation
                 </button>
+                </a>
               </div>
               <div className={styles.visionImageContainer}>
                 <Image
@@ -223,9 +235,11 @@ const SoftwareDevelopmentServices = () => {
                 <p className={styles.scaleDescription}>
                   From ideation to deployment, we handle it all. We craft powerful software solutions that capture markets and win customers.
                 </p>
-                <button className={styles.scaleCtaButton}>
+                <a href="/contact">
+                  <button className={styles.scaleCtaButton}>
                   Contact Us
                 </button>
+                </a>
               </div>
               <div className={styles.statsGrid} ref={statsRef}>
                 {stats.map((stat, index) => (

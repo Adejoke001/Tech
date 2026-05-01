@@ -1,0 +1,42 @@
+
+> valuecoders-clone@0.1.0 lint
+> eslint
+
+
+C:\Users\USER\Desktop\tech_company\valuecoders\app\services\ai-automation-consulting\page.tsx
+   603:33  error  `'` can be escaped with `&apos;`, `&lsquo;`, `&#39;`, `&rsquo;`  react/no-unescaped-entities
+   733:30  error  `'` can be escaped with `&apos;`, `&lsquo;`, `&#39;`, `&rsquo;`  react/no-unescaped-entities
+  1041:35  error  `'` can be escaped with `&apos;`, `&lsquo;`, `&#39;`, `&rsquo;`  react/no-unescaped-entities
+
+C:\Users\USER\Desktop\tech_company\valuecoders\app\services\cloud-devops-services\page.tsx
+  364:90  error  `'` can be escaped with `&apos;`, `&lsquo;`, `&#39;`, `&rsquo;`  react/no-unescaped-entities
+
+C:\Users\USER\Desktop\tech_company\valuecoders\app\services\data-engineering-analytics\page.tsx
+   17:25  warning  'MobileIcon' is defined but never used                           @typescript-eslint/no-unused-vars
+   17:47  warning  'TargetIcon' is defined but never used                           @typescript-eslint/no-unused-vars
+   18:17  warning  'PieChartIcon' is defined but never used                         @typescript-eslint/no-unused-vars
+   23:27  warning  'setActiveService' is assigned a value but never used            @typescript-eslint/no-unused-vars
+  388:67  error    `"` can be escaped with `&quot;`, `&ldquo;`, `&#34;`, `&rdquo;`  react/no-unescaped-entities
+  388:89  error    `"` can be escaped with `&quot;`, `&ldquo;`, `&#34;`, `&rdquo;`  react/no-unescaped-entities
+
+C:\Users\USER\Desktop\tech_company\valuecoders\app\services\enterprise-software-development\page.tsx
+    8:28  warning  'Zap' is defined but never used                                  @typescript-eslint/no-unused-vars
+    9:30  warning  'Lock' is defined but never used                                 @typescript-eslint/no-unused-vars
+    9:43  warning  'Workflow' is defined but never used                             @typescript-eslint/no-unused-vars
+   10:40  warning  'Star' is defined but never used                                 @typescript-eslint/no-unused-vars
+   11:47  warning  'Target' is defined but never used                               @typescript-eslint/no-unused-vars
+   12:27  warning  'PieChart' is defined but never used                             @typescript-eslint/no-unused-vars
+   12:37  warning  'Network' is defined but never used                              @typescript-eslint/no-unused-vars
+   13:29  warning  'Building' is defined but never used                             @typescript-eslint/no-unused-vars
+   13:49  warning  'Wrench' is defined but never used                               @typescript-eslint/no-unused-vars
+  356:71  error    `"` can be escaped with `&quot;`, `&ldquo;`, `&#34;`, `&rdquo;`  react/no-unescaped-entities
+  356:93  error    `"` can be escaped with `&quot;`, `&ldquo;`, `&#34;`, `&rdquo;`  react/no-unescaped-entities
+  417:75  error    `'` can be escaped with `&apos;`, `&lsquo;`, `&#39;`, `&rsquo;`  react/no-unescaped-entities
+  563:59  error    `'` can be escaped with `&apos;`, `&lsquo;`, `&#39;`, `&rsquo;`  react/no-unescaped-entities
+  563:76  error    `'` can be escaped with `&apos;`, `&lsquo;`, `&#39;`, `&rsquo;`  react/no-unescaped-entities
+  600:78  error    `'` can be escaped with `&apos;`, `&lsquo;`, `&#39;`, `&rsquo;`  react/no-unescaped-entities
+  745:27  error    `'` can be escaped with `&apos;`, `&lsquo;`, `&#39;`, `&rsquo;`  react/no-unescaped-entities
+  796:35  error    `'` can be escaped with `&apos;`, `&lsquo;`, `&#39;`, `&rsquo;`  react/no-unescaped-entities
+
+✖ 27 problems (14 errors, 13 warnings)
+

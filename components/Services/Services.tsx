@@ -9,6 +9,7 @@ const Services = () => {
       title: 'Software Development',
       description: 'Custom software solutions built with cutting-edge technologies for web, mobile, and desktop platforms.',
       features: ['Web Applications', 'Mobile Apps', 'Desktop Software', 'API Development']
+      // No custom link – will use /services/software-development
     },
     {
       icon: '📱',
@@ -20,25 +21,29 @@ const Services = () => {
       icon: '🤖',
       title: 'AI & ML Solutions',
       description: 'Intelligent solutions powered by artificial intelligence and machine learning algorithms.',
-      features: ['Machine Learning', 'Natural Language Processing', 'Computer Vision', 'Predictive Analytics']
+      features: ['Machine Learning', 'Natural Language Processing', 'Computer Vision', 'Predictive Analytics'],
+      link: '/services/ai-automation-consulting'
     },
     {
       icon: '☁️',
       title: 'Cloud Services',
       description: 'Scalable cloud infrastructure and deployment solutions for businesses of all sizes.',
-      features: ['Cloud Migration', 'DevOps', 'Serverless Architecture', 'Cloud Security']
+      features: ['Cloud Migration', 'DevOps', 'Serverless Architecture', 'Cloud Security'],
+      link: '/services/cloud-devops-services'   
     },
     {
       icon: '🔒',
       title: 'Cybersecurity',
       description: 'Comprehensive security solutions to protect your digital assets and data.',
-      features: ['Security Audits', 'Penetration Testing', 'Data Protection', 'Compliance']
+      features: ['Security Audits', 'Penetration Testing', 'Data Protection', 'Compliance'],
+      link: '/services/cybersecurity-services'
     },
     {
       icon: '📊',
       title: 'Data Analytics',
       description: 'Data-driven insights and analytics solutions to power your business decisions.',
-      features: ['Business Intelligence', 'Data Visualization', 'Big Data', 'Reporting']
+      features: ['Business Intelligence', 'Data Visualization', 'Big Data', 'Reporting'],
+      link: '/services/data-engineering-analytics'
     }
   ]
 
@@ -60,22 +65,9 @@ const Services = () => {
         <div className="servicesGrid">
           {services.map((service, index) => (
             <div key={index} className="serviceCard">
-              {/* Service Icon */}
-              <div className="serviceIcon">
-                {service.icon}
-              </div>
-
-              {/* Service Title */}
-              <h3 className="serviceTitle">
-                {service.title}
-              </h3>
-
-              {/* Service Description */}
-              <p className="serviceDescription">
-                {service.description}
-              </p>
-
-              {/* Features List */}
+              <div className="serviceIcon">{service.icon}</div>
+              <h3 className="serviceTitle">{service.title}</h3>
+              <p className="serviceDescription">{service.description}</p>
               <ul className="featuresList">
                 {service.features.map((feature, featureIndex) => (
                   <li key={featureIndex} className="featureItem">
@@ -84,10 +76,9 @@ const Services = () => {
                   </li>
                 ))}
               </ul>
-
-              {/* Learn More Link */}
+              {/* Learn More Link – uses custom link if provided, else default slug */}
               <Link 
-                href={`/services/${service.title.toLowerCase().replace(/\s+/g, '-')}`}
+                href={service.link || `/services/${service.title.toLowerCase().replace(/\s+/g, '-')}`}
                 className="learnMoreLink"
               >
                 Learn More
@@ -100,19 +91,14 @@ const Services = () => {
         {/* CTA Section */}
         <div className="ctaSection">
           <div className="ctaCard">
-            <h3 className="ctaTitle">
-              Ready to Start Your Project?
-            </h3>
+            <h3 className="ctaTitle">Ready to Start Your Project?</h3>
             <p className="ctaDescription">
               Let&apos;s discuss how our software development services can help your business grow.
             </p>
             <div className="ctaButtons">
-              <button className="primaryCtaButton">
+              <Link href="/contact" className="primaryCtaButton">
                 Get Free Consultation
-              </button>
-              <button className="secondaryCtaButton">
-                View All Services
-              </button>
+              </Link>
             </div>
           </div>
         </div>
