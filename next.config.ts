@@ -1,5 +1,6 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
+  
   output: "export",
 
   trailingSlash: true,
@@ -34,7 +35,5 @@ const nextConfig = {
     turbo: false,
   },
 };
-
-
 
 export default nextConfig;
