@@ -11,39 +11,39 @@ import styles from './testimonials.module.css';
 
 export default function TestimonialsPage() {
     // Client logos (placeholders – replace with actual logo images)
-    const clients = [
-        { name: 'Microsoft', logo: 'https://images.unsplash.com/photo-1611944212129-29977ae1398c?w=150&h=150&fit=crop' },
-        { name: 'Google', logo: 'https://images.unsplash.com/photo-1573804633927-bfcbcd909acd?w=150&h=150&fit=crop' },
-        { name: 'Amazon', logo: 'https://images.unsplash.com/photo-1523474253046-8cd2748b5fd2?w=150&h=150&fit=crop' },
-        { name: 'IBM', logo: 'https://images.unsplash.com/photo-1580894732444-8ecded7900cd?w=150&h=150&fit=crop' },
-        { name: 'SAP', logo: 'https://plus.unsplash.com/premium_photo-1668612061259-1650cc1427dd?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8b3JhY2xlfGVufDB8fDB8fHww' },
-        { name: 'Oracle', logo: 'https://images.unsplash.com/photo-1554774853-719586f82d77?w=150&h=150&fit=crop' },
-        // { name: 'Salesforce', logo: 'https://images.unsplash.com/photo-1557832935-74e5b484a9f8?w=150&h=150&fit=crop' },
-        // { name: 'Adobe', logo: 'https://images.unsplash.com/photo-1579403124614-197f69f818d8?w=150&h=150&fit=crop' },
-    ];
+    // const clients = [
+    //     { name: 'Microsoft', logo: 'https://images.unsplash.com/photo-1611944212129-29977ae1398c?w=150&h=150&fit=crop' },
+    //     { name: 'Google', logo: 'https://images.unsplash.com/photo-1573804633927-bfcbcd909acd?w=150&h=150&fit=crop' },
+    //     { name: 'Amazon', logo: 'https://images.unsplash.com/photo-1523474253046-8cd2748b5fd2?w=150&h=150&fit=crop' },
+    //     { name: 'IBM', logo: 'https://images.unsplash.com/photo-1580894732444-8ecded7900cd?w=150&h=150&fit=crop' },
+    //     { name: 'SAP', logo: 'https://plus.unsplash.com/premium_photo-1668612061259-1650cc1427dd?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8b3JhY2xlfGVufDB8fDB8fHww' },
+    //     { name: 'Oracle', logo: 'https://images.unsplash.com/photo-1554774853-719586f82d77?w=150&h=150&fit=crop' },
+    //     // { name: 'Salesforce', logo: 'https://images.unsplash.com/photo-1557832935-74e5b484a9f8?w=150&h=150&fit=crop' },
+    //     // { name: 'Adobe', logo: 'https://images.unsplash.com/photo-1579403124614-197f69f818d8?w=150&h=150&fit=crop' },
+    // ];
 
     // Testimonials data (from the reference site)
     const testimonials = [
         {
             id: 1,
             quote: "Huge thank you to BBMcoders; they have been a massive help in enabling us to start developing our project within a few weeks, so it's been great! There have been two small bumps in the road, but overall, It's been a fantastic service. I have already recommended it to one of my friends.",
-            name: 'Mohammed Faruq',
-            role: 'Director, Fabas.inc',
+            name: 'Faruq',
+            // role: 'Director, Fabas.inc',
             hasVideo: true,
             videoThumb: '/images/user.png',
         },
         {
             id: 2,
             quote: "BBMcoders is our go-to partner to help us realize our software needs; they are supportive, friendly, and always ready to help us when we face difficulties in the project. 10/10 would recommend.",
-            name: 'Michelle Angela',
-            role: 'CEO, M.A Limited',
+            name: 'Angela',
+            // role: 'CEO, M.A Limited',
             hasVideo: false,
         },
         {
             id: 3,
             quote: "BBMcoders had great technical expertise, both in front-end and back-end development. Other project management was well organized. Account management was friendly and always available. I would give BBMcoders ten out of ten!",
-            name: 'Albert Damilola',
-            role: 'Director, St.org',
+            name: 'Damilola',
+            // role: 'Director, St.org',
             hasVideo: true,
             videoThumb: '/images/user.png',
         },
@@ -51,51 +51,51 @@ export default function TestimonialsPage() {
             id: 4,
             quote: "Our internal development team was looking to partner with full stack experts that could lend a hand with a major project we were constructing. Value Coders is a great service and team of professionals that have proven to be knowledgeable and efficient in program development. Rohan S. was a key developer we worked with, highly skilled, providing recommendations to build out a production ready program.",
             name: 'William Francis',
-            role: 'Upthin',
+            // role: 'Upthin',
             hasVideo: false,
         },
         {
             id: 5,
             quote: "What we found with BBMcoders was they took time. The Project managers took a lot of time to start, to really understand our project before coming up with a contract or what they thought we needed. I had the reassurance from the start that the project Managers knew what type of project I wanted and what my needs were. I find that reassuring and that's really why we chose BBMcoders.",
-            name: 'James Adams',
-            role: 'Co-founder, MiraClo',
+            name: 'Adams',
+            // role: 'Co-founder, MiraClo',
             hasVideo: true,
             videoThumb: '/images/user.png',
         },
         {
             id: 6,
             quote: "We have been working with BBMcoders for the last year now and have deployed multiple developers at different points in time. We are really happy with the support we get from BBMcoders and the resources they provide.",
-            name: 'Roland Temitope',
-            role: 'Founder, R & T',
+            name: 'Temitope',
+            // role: 'Founder, R & T',
             hasVideo: false,
         },
         {
             id: 7,
             quote: "Working with BBMcoders was one of the smoothest experiences we've had. We had a fairly complex website in mind, with a lot of moving parts like custom layouts, animations, responsive design, content blocks, and backend logic. They not only delivered on all fronts, but elevated it. Every section felt sharp and well thought out. The layout adjustments, font choices, transitions, mobile responsiveness were all perfect. Even things we didn't mention got handled without being asked. What stood out was how quick and proactive they were. No delays, just clear communication and fast execution. Design tweaks, structural changes, last minute edits were all done smoothly. Despite a tight deadline and modest budget, they delivered above expectation, and made the handover process feel effortless. We'd work with them again without a second thought, and strongly recommend them to anyone looking for quality without hassle.",
-            name: 'Fahad Lawrence',
-            role: 'Founder, FahadLaw.com',
+            name: 'Fahad',
+            // role: 'Founder, FahadLaw.com',
             hasVideo: true,
             videoThumb: '/images/user.png',
         },
         {
             id: 8,
             quote: "We have worked with BBMcoders for more than a year, and their skilled team has allowed us to scale up during certain projects, thereby allowing our full-time team to focus on core platform functionality. Recommended.",
-            name: 'Adam Winson',
-            role: 'President & COO, Advisors cliff',
+            name: 'Winson',
+            // role: 'President & COO, Advisors cliff',
             hasVideo: false,
         },
         {
             id: 9,
             quote: "The team at BBMcoders really has provided us with exceptional services in creating this one-of-a-kind portal, and it has been a fantastic experience. I was particularly impressed how efficiently and quickly the team always came up with creative solutions to provide us with all the functionalities within the portal we had requested.",
-            name: 'Judith Muet',
-            role: 'Executive Director, Muet Foundation',
+            name: 'Judith .M',
+            // role: 'Executive Director, Muet Foundation',
             hasVideo: false,
         },
         {
             id: 10,
             quote: "BBMcoders has accelerated our project and brought a talented developer to our team. We worked with a back-end coder with many years of experience that understood integrations, business strategy and brought new ideas to the table that boosted our UI/UX. I highly recommend connecting with BBMcoders and meeting their team, interviewing a couple of coders, and picking the best one for your project. Thank you for the great work over the last several months!",
-            name: 'Michelle Fno',
-            role: 'Founder/CEO, Nav org',
+            name: 'Michelle',
+            // role: 'Founder/CEO, Nav org',
             hasVideo: true,
             videoThumb: '/images/user.png',
         },
@@ -103,42 +103,42 @@ export default function TestimonialsPage() {
             id: 11,
             quote: "We got an awesome product! I would highly recommend BBMcoders to anyone for their professional attitude & customer care. Hope success to them!",
             name: 'Mr. Samsom',
-            role: 'Founder, spco.com',
+            // role: 'Founder, spco.com',
             hasVideo: false,
         },
         {
             id: 12,
             quote: "We had the opportunity to work with BBMcoders on our website development. They demonstrated a very good understanding of the work scope, and assembled the team quickly. Challenges are a part of any development process, but BBMcoders tackled them in the right way, and involved their experts in the process. They approached each problem with professionalism and creativity, ensuring the project remained on track without compromising on quality. BBMcoders has met our expectations. Their dedication, expertise, and commitment to our project were evident throughout the process. I would recommend BBMcoders to anyone in need of improving or developing software product. This might have been our first project with them, but it won't be our last.",
-            name: 'Mohammad Bada',
-            role: 'Inventions LLC',
+            name: 'Mohammad',
+            // role: 'Inventions LLC',
             hasVideo: false,
         },
         {
             id: 13,
             quote: "We are pleased to recommend BBMcoders for their outstanding services. The company has successfully developed our website, demonstrating exceptional technical expertise, professionalism, and commitment throughout the entire process. Their team was responsive, reliable, and attentive to our requirements. We are fully satisfied with the quality of the work delivered and the overall collaboration.",
-            name: 'Robbert Edith',
-            role: 'CVT Val',
+            name: 'Edith',
+            // role: 'CVT Val',
             hasVideo: false,
         },
         {
             id: 14,
             quote: "I wanted to take a moment to appreciate the incredible work BBMcoders' team has done in creating the ORA wireframe. It is evident that a lot of thought, creativity, and precision have gone into this work, and it truly reflects in team's dedication and skill. The wireframe not only meets but exceeds our expectations, and we are deeply grateful for the contribution.",
-            name: 'Tim Team',
-            role: 'Tim World School',
+            name: 'Tim',
+            // role: 'Tim World School',
             hasVideo: false,
         },
         {
             id: 15,
             quote: "We outsourced our website development and coding to BBMcoders, and we are super happy with their services. We'd recommend them for any website development service for business development.",
             name: 'Jame Thompson',
-            role: 'institute.com.jt',
+            // role: 'institute.com.jt',
             hasVideo: false,
         },
         {
             id: 16,
             quote: "The team at BBMcoders has been a fantastic asset within our startup business. The senior management provides great support, guidance, and advice to get you up and running with your team. They provided flexible services with both fully retained staff members to join our team and also really flexible resources that we pull in at short notice to help out on specific skills/projects. We had the option to interview all the people working on our business and get to know them before they joined the team. It gave us great confidence that the people joining had already been part of BBMcoders for some time, and their capabilities were known.",
-            name: 'Andrew North',
-            role: 'Managing Director, Andrew Holdings Ltd.',
+            name: 'Andrew .N',
+            // role: 'Managing Director, Andrew Holdings Ltd.',
             hasVideo: true,
             videoThumb: '/images/user.png',
         },
@@ -146,28 +146,28 @@ export default function TestimonialsPage() {
             id: 17,
             quote: "I can't praise the development team at BBMcoders enough! They tackled every challenge I threw their way with ease. Their dedication and ability to think outside the box exceeded my expectations. Communication was excellent, with regular updates and quick responses to my queries. Their problem-solving skills and commitment to our success were remarkable. I highly recommend BBMcoders as a development partner.",
             name: 'Abraham',
-            role: 'AA Advisors',
+            // role: 'AA Advisors',
             hasVideo: false,
         },
         {
             id: 18,
             quote: "BBMcoders is a very professional development team. I used their expertise in the building of an online comparison tool. We defined a clear scope, and the team designed mock-ups first. With the help of online project tools and Skype Q&A sessions, you can really work together despite the great geographical distance. I would highly recommend the services of BBMcoders as they go the extra mile to deliver a good product.",
             name: 'Gerald',
-            role: 'Partner, G & TT',
+            // role: 'Partner, G & TT',
             hasVideo: true,
             videoThumb: '/images/user.png',
         },
         {
             id: 19,
             quote: "We have been working with BBMcoders since the start of 2020. After using BBMcoders for one project, we decided to outsource our entire development team to BBMcoders. We really like the flexibility and different skills that BBMcoders offers. We can quickly scale up and down as required. Since outsourcing to BBMcoders, our productivity has substantially increased. I appreciate the way that we have been able to outsource to BBMcoders but still maintain direct communications with the developers and control over their work. Thank you, BBMcoders!",
-            name: 'Kay Bruno',
-            role: 'IT Director.',
+            name: 'Kay',
+            // role: 'IT Director.',
             hasVideo: false,
         },
         {
             id: 20,
             quote: "We’ve been very pleased with the services provided by BBMcoders. Team members are prompt, kind, and deliver fantastic work. The new invoice styles have been great and help us to stay more organized. It’s been a reliable system for our team!",
-            name: 'DayT',
+            name: 'Franklin',
             role: '',
             hasVideo: false,
         },
@@ -208,7 +208,7 @@ export default function TestimonialsPage() {
             </section>
 
             {/* ===== OUR KEY CLIENTS SECTION ===== */}
-            <section className={styles.clientsSection}>
+            {/* <section className={styles.clientsSection}>
                 <div className={styles.container}>
                     <h2 className={styles.sectionTitle}>Our Key Clients</h2>
                     <p className={styles.sectionSubtitle}>
@@ -237,7 +237,7 @@ export default function TestimonialsPage() {
                         ))}
                     </div>
                 </div>
-            </section>
+            </section> */}
 
             {/* ===== TESTIMONIALS SECTION ===== */}
             <section className={styles.testimonialsSection}>

@@ -35,7 +35,7 @@ export default function MachineLearningPage() {
   // Hero testimonial
   const testimonial = {
     name: "Ahmed",
-    role: "Director, VisionHub Inc.",
+    // role: "Director, VisionHub Inc.",
     content:
       "Their ML team delivered a predictive analytics platform that improved our operational efficiency by 65%. The models have been running flawlessly for over 18 months.",
     rating: 5,
@@ -503,7 +503,7 @@ export default function MachineLearningPage() {
                 </div>
                 <div className={styles.testimonialInfo}>
                   <h4 className={styles.testimonialName}>{testimonial.name}</h4>
-                  <p className={styles.testimonialRole}>{testimonial.role}</p>
+                  {/* <p className={styles.testimonialRole}>{testimonial.role}</p> */}
                   <div className={styles.testimonialRating}>
                     {[...Array(testimonial.rating)].map((_, i) => (
                       <Star key={i} className={styles.starIcon} />
@@ -527,7 +527,7 @@ export default function MachineLearningPage() {
       </section>
 
       {/* Trusted By Section */}
-      <section className={styles.trustedSection}>
+      {/* <section className={styles.trustedSection}>
         <div className={styles.sectionHeader}>
           <p className={styles.trustedLabel}>
             Trusted by startups and Fortune 500 companies
@@ -546,7 +546,7 @@ export default function MachineLearningPage() {
             ))}
           </div>
         </div>
-      </section>
+      </section> */}
 
       {/* ML Services Section with Background Images */}
       <section className={styles.servicesSection}>

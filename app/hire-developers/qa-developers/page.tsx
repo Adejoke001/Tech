@@ -25,7 +25,7 @@ export default function QATestersPage() {
 
     // ----- HERO TESTIMONIAL -----
     const testimonial = {
-        name: 'Sarah Chidi',
+        name: 'Chidi',
         role: 'VP of Engineering',
         content: 'BBMcoders’ QA engineers integrated seamlessly into our sprints. They caught 40% more edge cases than our previous setup, and our release confidence has never been higher.',
         rating: 5,
@@ -599,7 +599,7 @@ export default function QATestersPage() {
             </section>
 
             {/* ===== TRUSTED BY SECTION ===== */}
-            <section className={styles.trustedSection}>
+            {/* <section className={styles.trustedSection}>
                 <div className={styles.sectionContent}>
                     <p className={styles.trustedLabel}>Trusted by startups and Fortune 500 companies</p>
                     <div className={styles.trustedLogos}>
@@ -617,7 +617,7 @@ export default function QATestersPage() {
                         ))}
                     </div>
                 </div>
-            </section>
+            </section> */}
 
             {/* ===== EXPERTISE SECTION ===== */}
             <section className={styles.expertiseSection} id="expertise">

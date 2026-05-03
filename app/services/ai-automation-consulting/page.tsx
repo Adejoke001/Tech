@@ -43,7 +43,7 @@ export default function AIAutomationConsultingPage() {
 
   const testimonial = {
     name: "David Wilson",
-    role: "CEO, Innovative group",
+    // role: "CEO, Innovative group",
     content:
       "BBMcoders showed us exactly how to use AI solutions to solve our biggest business problems. The guidance was invaluable for our digital transformation.",
     rating: 5,
@@ -688,7 +688,7 @@ export default function AIAutomationConsultingPage() {
                     <h4 className={styles.testimonialName}>
                       {testimonial.name}
                     </h4>
-                    <p className={styles.testimonialRole}>{testimonial.role}</p>
+                    {/* <p className={styles.testimonialRole}>{testimonial.role}</p> */}
                     <div className={styles.testimonialRating}>
                       {[...Array(testimonial.rating)].map((_, i) => (
                         <Star key={i} className={styles.starIcon} />

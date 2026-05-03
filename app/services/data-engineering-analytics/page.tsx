@@ -394,7 +394,7 @@ export default function DataEngineeringAnalyticsPage() {
             </section>
 
             {/* ===== TRUSTED BY ===== */}
-            <section className={styles.trustedBy}>
+            {/* <section className={styles.trustedBy}>
                 <div className={styles.sectionContent}>
                     <p className={styles.trustedLabel}>Trusted by Startups and Fortune 500 Companies</p>
                     <div className={styles.trustedLogos}>
@@ -403,7 +403,7 @@ export default function DataEngineeringAnalyticsPage() {
                         ))}
                     </div>
                 </div>
-            </section>
+            </section> */}
 
             {/* ===== COMPLETE SERVICES SECTION ===== */}
             <section id="services" className={styles.servicesSection}>

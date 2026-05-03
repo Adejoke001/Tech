@@ -50,8 +50,8 @@ export default function FinTechPage() {
 
   // ----- HERO TESTIMONIAL -----
   const testimonial = {
-    name: "Sarah Chen",
-    role: "CFO, Finorg Capital",
+    name: "Sarah .C",
+    // role: "CFO, Finorg Capital",
     content:
       "BBMcoders delivered a robust loan processing system that handles 50,000+ daily transactions with zero downtime. Their deep FinTech expertise and commitment to security exceeded our expectations.",
     rating: 5,
@@ -649,7 +649,7 @@ export default function FinTechPage() {
                 </p>
                 <div className={styles.testimonialAuthor}>
                   <h4>{testimonial.name}</h4>
-                  <p>{testimonial.role}</p>
+                  {/* <p>{testimonial.role}</p> */}
                 </div>
                 <div className={styles.ratings}>
                   <div className={styles.ratingItem}>
@@ -677,7 +677,7 @@ export default function FinTechPage() {
       </section>
 
       {/* ===== TRUSTED BY SECTION ===== */}
-      <section className={styles.trustedSection}>
+      {/* <section className={styles.trustedSection}>
         <div className={styles.sectionContent}>
           <p className={styles.trustedLabel}>
             Trusted by startups and Fortune 500 companies
@@ -697,7 +697,7 @@ export default function FinTechPage() {
             ))}
           </div>
         </div>
-      </section>
+      </section> */}
 
       {/* ===== FINTECH SOLUTIONS SECTION ===== */}
       <section className={styles.solutionsSection} id="solutions">

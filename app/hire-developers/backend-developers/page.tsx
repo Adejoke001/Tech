@@ -53,7 +53,7 @@ export default function BackendDevelopersPage() {
   // Testimonial matching your page layout
   const testimonial = {
     name: "Sarah Johnson",
-    role: "CTO, FinSecure Inc.",
+    // role: "CTO, FinSecure Inc.",
     content:
       "The backend developers from BBMcoders built a fault-tolerant system that handles 50,000+ transactions per second with 99.99% uptime. Their architecture decisions saved us 40% on cloud costs.",
     rating: 5,
@@ -595,7 +595,7 @@ export default function BackendDevelopersPage() {
                 </p>
                 <div className={styles.testimonialAuthor}>
                   <h4>{testimonial.name}</h4>
-                  <p>{testimonial.role}</p>
+                  {/* <p>{testimonial.role}</p> */}
                 </div>
 
                 <div className={styles.ratings}>
@@ -626,7 +626,7 @@ export default function BackendDevelopersPage() {
       </section>
 
       {/* ===== TRUSTED BY SECTION ===== */}
-      <section className={styles.trustedSection}>
+      {/* <section className={styles.trustedSection}>
         <div className={styles.sectionContent}>
           <p className={styles.trustedLabel}>
             Trusted by startups and Fortune 500 companies
@@ -648,7 +648,7 @@ export default function BackendDevelopersPage() {
             )}
           </div>
         </div>
-      </section>
+      </section> */}
 
       {/* ===== EXPERTISE SECTION ===== */}
       <section className={styles.expertiseSection} id="expertise">

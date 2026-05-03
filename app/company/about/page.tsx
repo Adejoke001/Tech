@@ -39,56 +39,56 @@ export default function AboutPage() {
         },
     ];
 
-    // ----- TEAM MEMBERS (with image placeholder) -----
+    // ----- TEAM MEMBERS (with image placeholder) 
     const teamMembers = [
         {
-            name: 'Adebayo Ogunlesi',
-            role: 'Founder & CEO',
-            bio: 'An entrepreneur at heart with love for technology, Adebayo uniquely blends business analysis, strategy, targeted objectives, and ROI with IT solutions.',
-            image: '/images/user.png', // placeholder image
+            name: 'Ben',
+            role: 'Chief Executive Officer',
+            bio: 'An entrepreneur at heart with love for technology, Ben uniquely blends business analysis, strategy, targeted objectives, and ROI with IT solutions.',
+            image: '/images/user.png', 
         },
         {
-            name: 'Chidi Okonkwo',
-            role: 'VP - Operations',
-            bio: 'Chidi oversees BBMcoders\'s vast engineering organization, which drives the company\'s core programming.',
+            name: 'Precious',
+            role: 'Software Engineer',
+            bio: 'Precious oversees BBMcoders\'s vast engineering organization, which drives the company\'s core programming.',
             image: '/images/user.png',
         },
         {
-            name: 'Folake Adeyemi',
-            role: 'VP - Digital Marketing',
-            bio: 'Folake heads the digital marketing department, where she manages the entire online presence of the company.',
+            name: 'Adejoke',
+            role: 'Frontend Developer',
+            bio: 'Adejoke heads the frontend development department, where she manages the entire frontend team.',
             image: '/images/user.png',
         },
         {
-            name: 'Emeka Nwachukwu',
-            role: 'VP - Human Resource',
-            bio: 'Emeka leads the HR team, responsible for the company\'s talent acquisition and culture.',
+            name: 'Stephen',
+            role: 'Software Engineer',
+            bio: 'Stephen leads the Mobile App team, responsible for the company\'s mobile app development.',
             image: '/images/user.png',
         },
-        {
-            name: 'Ngozi Eze',
-            role: 'Head Of Resourcing & Partnerships',
-            bio: 'Ngozi is a strategist and digital thought leader who bridges technology and client satisfaction.',
-            image: '/images/user.png',
-        },
-        {
-            name: 'Tunde Balogun',
-            role: 'Technical Manager',
-            bio: 'With a solid technical background, Tunde manages client communication, project management, and deliveries.',
-            image: '/images/user.png',
-        },
-        {
-            name: 'Yemi Adesina',
-            role: 'VP - Business Development',
-            bio: 'More than 15 years experience of background trading with emerging technologies; helps startups and SMEs build their co-branded teams.',
-            image: '/images/user.png',
-        },
-        {
-            name: 'Kemi Akintola',
-            role: 'Sr. IT Executive',
-            bio: 'Leads IT Department and responsible for providing high-quality technical services and finding appropriate tools to automate and accomplish jobs timely.',
-            image: '/images/user.png',
-        },
+        // {
+        //     name: 'Ngozi Eze',
+        //     role: 'Head Of Resourcing & Partnerships',
+        //     bio: 'Ngozi is a strategist and digital thought leader who bridges technology and client satisfaction.',
+        //     image: '/images/user.png',
+        // },
+        // {
+        //     name: 'Tunde Balogun',
+        //     role: 'Technical Manager',
+        //     bio: 'With a solid technical background, Tunde manages client communication, project management, and deliveries.',
+        //     image: '/images/user.png',
+        // },
+        // {
+        //     name: 'Yemi Adesina',
+        //     role: 'VP - Business Development',
+        //     bio: 'More than 15 years experience of background trading with emerging technologies; helps startups and SMEs build their co-branded teams.',
+        //     image: '/images/user.png',
+        // },
+        // {
+        //     name: 'Kemi Akintola',
+        //     role: 'Sr. IT Executive',
+        //     bio: 'Leads IT Department and responsible for providing high-quality technical services and finding appropriate tools to automate and accomplish jobs timely.',
+        //     image: '/images/user.png',
+        // },
     ];
 
     // ----- TIMELINE -----
@@ -112,38 +112,38 @@ export default function AboutPage() {
     // ----- CLIENT TESTIMONIALS (with image placeholder) -----
    const testimonials = [
     {
-        name: 'Daniel Foster',
-        role: 'CEO, BrightPath Solutions',
+        name: 'Daniel',
+        // role: 'CEO, BrightPath Solutions',
         content: 'Working with BBMcoders was a smooth experience from start to finish. Their team quickly understood our requirements and delivered exactly what we envisioned, on time and within budget.',
         image: '/images/user.png',
     },
     {
-        name: 'Angela Morris',
-        role: 'Product Manager, NexaCore',
+        name: 'Morris',
+        // role: 'Product Manager, NexaCore',
         content: 'The level of professionalism and communication from BBMcoders stood out. They kept us informed throughout the project and handled every challenge with confidence.',
         image: '/images/user.png',
     },
     {
         name: 'Samuel Okoye',
-        role: 'Founder, AgroLink Africa',
+        // role: 'Founder, AgroLink Africa',
         content: 'BBMcoders helped us turn our idea into a fully functional platform in record time. Their technical knowledge and commitment made a huge difference for our startup.',
         image: '/images/user.png',
     },
     {
-        name: 'Laura Chen',
-        role: 'Operations Lead, FinEdge Group',
+        name: 'Laura',
+        // role: 'Operations Lead, FinEdge Group',
         content: 'We were impressed by how detail-oriented the BBMcoders team is. They delivered a reliable and scalable solution that exceeded our expectations.',
         image: '/images/user.png',
     },
     {
-        name: 'Michael Grant',
-        role: 'Director, UrbanTech Labs',
+        name: 'Michael',
+        // role: 'Director, UrbanTech Labs',
         content: 'From design to deployment, BBMcoders demonstrated real expertise. Their ability to translate our ideas into a clean, user-friendly product was outstanding.',
         image: '/images/user.png',
     },
     {
         name: 'Fatima Bello',
-        role: 'Co-founder, HealthBridge Nigeria',
+        // role: 'Co-founder, HealthBridge Nigeria',
         content: 'Choosing BBMcoders was one of the best decisions we made. Their support, speed, and quality of work have been exceptional throughout our collaboration.',
         image: '/images/user.png',
     },
@@ -210,10 +210,10 @@ export default function AboutPage() {
                                     <Image src="/images/user.png" alt="Adebayo Ogunlesi" width={60} height={60} className={styles.avatarImage} />
                                 </div> */}
                                   <div className={styles.founderAvatar} style={{ backgroundColor: '#3B82F6', color: 'white' }}>
-                                    AO
+                                    BE
                                 </div>
                                 <div className={styles.founderInfo}>
-                                    <h4>Adebayo Ogunlesi</h4>
+                                    <h4>Ben</h4>
                                     <p>CEO, BBMcoders</p>
                                 </div>
                             </div>
@@ -401,7 +401,7 @@ export default function AboutPage() {
                                     </div>
                                     <div>
                                         <h4 className={styles.testimonialName}>{testimonial.name}</h4>
-                                        <p className={styles.testimonialRole}>{testimonial.role}</p>
+                                        {/* <p className={styles.testimonialRole}>{testimonial.role}</p> */}
                                     </div>
                                 </div>
                                 <p className={styles.testimonialContent}>&quot;{testimonial.content}&quot;</p>

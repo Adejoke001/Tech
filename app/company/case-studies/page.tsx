@@ -19,7 +19,7 @@ export default function CaseStudiesPage() {
         {
             id: 1,
             title: 'Global OTT Streaming Platform',
-            client: 'StreamFlix Entertainment',
+            // client: 'StreamFlix Entertainment',
             category: 'Media & Entertainment',
             image: 'https://images.unsplash.com/photo-1574375927938-d5a98e8ffe85?auto=format&fit=crop&w=800&q=80',
             color: '#3B82F6',
@@ -28,21 +28,21 @@ export default function CaseStudiesPage() {
                 { value: '50ms', label: 'Avg. Latency' },
                 { value: '99.99%', label: 'Uptime SLA' },
             ],
-            challenge: 'StreamFlix, a rapidly growing entertainment startup, needed to build a scalable, high-performance OTT platform from scratch. They faced intense competition from established players and required a solution that could handle millions of concurrent users during peak hours (e.g., new releases, live events) while maintaining flawless video quality across various devices and network conditions. Their existing infrastructure was fragmented and unable to support their ambitious growth plans.',
+            challenge: 'A rapidly growing entertainment startup, needed to build a scalable, high-performance OTT platform from scratch. They faced intense competition from established players and required a solution that could handle millions of concurrent users during peak hours (e.g., new releases, live events) while maintaining flawless video quality across various devices and network conditions. Their existing infrastructure was fragmented and unable to support their ambitious growth plans.',
             solution: 'We designed and developed a cloud-native, microservices-based OTT platform using AWS, Node.js, and React. Key features included adaptive bitrate streaming (HLS), a global CDN integration for low-latency delivery, personalized recommendation engine powered by AI/ML, and a robust content management system for the admin team. We implemented a serverless architecture for automatic scaling and used WebSockets for real-time features like live chat during events.',
             results: 'The platform launched successfully, handling over 1 million concurrent viewers for a major live sports event with zero buffering issues. Within six months, StreamFlix onboarded 5 million new users. The new infrastructure reduced video start time by 70% and operational costs by 40% compared to their initial estimates. The client received overwhelmingly positive feedback on the user experience and platform stability.',
             testimonial: {
                 quote: "BBMcoders didn't just build us a platform; they built a foundation for our entire business. Their technical expertise and commitment to quality were evident at every stage. We couldn't be happier with the result.",
                 author: 'Michael Chen',
-                role: 'CTO, StreamFlix Entertainment',
+                // role: 'CTO, StreamFlix Entertainment',
             },
-            technologies: ['AWS', 'Node.js', 'React', 'MongoDB', 'WebSockets', 'AI/ML'],
-            link: '/case-studies/streamflix',
+            technologies: ['AWS', 'Node.js', 'React', 'MongoDB', 'WebSockets', 'AI/ML', 'Golang'],
+            link: '/case-studies/stream',
         },
         {
             id: 2,
             title: 'AI-Powered Learning Management System',
-            client: 'EduGlobal Solutions',
+            // client: 'EduGlobal Solutions',
             category: 'Education Technology',
             image: 'https://images.unsplash.com/photo-1524995997946-a1c2e315a42f?auto=format&fit=crop&w=800&q=80',
             color: '#10B981',
@@ -51,21 +51,21 @@ export default function CaseStudiesPage() {
                 { value: '40%', label: 'Increase in Engagement' },
                 { value: '15+', label: 'Countries Deployed' },
             ],
-            challenge: 'EduGlobal, a leading provider of online courses, needed to modernize their legacy LMS. The old system was inflexible, had poor mobile support, and lacked the tools to provide personalized learning experiences. They wanted to leverage AI to recommend courses, adapt to student progress, and improve overall engagement and completion rates. They also needed a system that could scale to accommodate their rapidly growing global user base.',
+            challenge: 'A leading provider of online courses, needed to modernize their legacy LMS. The old system was inflexible, had poor mobile support, and lacked the tools to provide personalized learning experiences. They wanted to leverage AI to recommend courses, adapt to student progress, and improve overall engagement and completion rates. They also needed a system that could scale to accommodate their rapidly growing global user base.',
             solution: 'We developed a modern, responsive LXP (Learning Experience Platform) with a React frontend and a Python/Django backend. We integrated AI-powered recommendation algorithms to suggest relevant content based on user behavior and learning goals. We also built interactive dashboards for students to track progress and for instructors to gain insights into class performance. The platform was designed to be mobile-first and included offline access for students in regions with limited connectivity.',
             results: 'The new platform led to a 40% increase in student engagement and a 25% improvement in course completion rates within the first year. EduGlobal was able to expand into 5 new international markets due to the platform\'s scalability and multi-language support. The intuitive interface and personalized learning paths received high praise from both students and educators.',
             testimonial: {
                 quote: "The team at BBMcoders truly understood our vision. They built a platform that not only meets our current needs but is also ready for the future of education. The AI features have been a game-changer for our students.",
                 author: 'Sarah Johnson',
-                role: 'Director of Learning, EduGlobal Solutions',
+                // role: 'Director of Learning, EduGlobal Solutions',
             },
             technologies: ['React', 'Python/Django', 'TensorFlow', 'PostgreSQL', 'AWS'],
-            link: '/case-studies/eduglobal',
+            link: '/case-studies/edu',
         },
         {
             id: 3,
             title: 'Real-Time Fraud Detection System',
-            client: 'FinScale Capital',
+            // client: 'FinScale Capital',
             category: 'Financial Services',
             image: 'https://images.unsplash.com/photo-1560472354-b33ff0c44a43?auto=format&fit=crop&w=800&q=80',
             color: '#8B5CF6',
@@ -74,21 +74,21 @@ export default function CaseStudiesPage() {
                 { value: '<100ms', label: 'Real-Time Processing' },
                 { value: '$2.5M', label: 'Annual Losses Prevented' },
             ],
-            challenge: 'FinScale Capital, a fast-growing fintech company, was facing an increasing number of sophisticated fraud attempts on their digital lending platform. Their rule-based detection system was too slow and inflexible, resulting in significant financial losses and a poor customer experience (many false positives). They needed a real-time, AI-driven solution that could adapt to new fraud patterns and process transactions instantaneously without disrupting legitimate users.',
+            challenge: 'A fast-growing fintech company, was facing an increasing number of sophisticated fraud attempts on their digital lending platform. Their rule-based detection system was too slow and inflexible, resulting in significant financial losses and a poor customer experience (many false positives). They needed a real-time, AI-driven solution that could adapt to new fraud patterns and process transactions instantaneously without disrupting legitimate users.',
             solution: 'We built a real-time fraud detection engine using Apache Kafka for stream processing and a machine learning model (trained on historical transaction data) to score transaction risk. The system was integrated with their core lending platform via secure APIs. We developed a dashboard for fraud analysts to review flagged transactions, investigate patterns, and provide feedback to continuously improve the ML model. The entire architecture was deployed on a highly available cloud infrastructure.',
             results: 'The new system reduced fraudulent transaction losses by 95% within the first three months. It processes thousands of transactions per second with sub-100ms latency, virtually eliminating customer friction. The adaptive ML model continuously learns and improves, detecting new fraud patterns hours, not weeks, after they emerge. The client regained customer trust and saw a 20% increase in loan application conversion rates.',
             testimonial: {
                 quote: "BBMcoders delivered a solution that was both highly sophisticated and practical. They took the time to understand our business, and the result is a fraud detection system that is incredibly effective and has paid for itself many times over.",
                 author: 'David Lee',
-                role: 'Head of Risk, FinScale Capital',
+                // role: 'Head of Risk, FinScale Capital',
             },
             technologies: ['Python/ML', 'Apache Kafka', 'Node.js', 'PostgreSQL', 'AWS'],
-            link: '/case-studies/finscale',
+            link: '/case-studies/fin',
         },
         {
             id: 4,
             title: 'Enterprise Supply Chain Management Platform',
-            client: 'Global Logistics Corp',
+            // client: 'Global Logistics Corp',
             category: 'Logistics & Supply Chain',
             image: 'https://images.unsplash.com/photo-1504384308090-c894fdcc538d?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8ZW50ZXJwcmlzZXxlbnwwfHwwfHx8MA%3D%3D',
             color: '#F59E0B',
@@ -97,22 +97,22 @@ export default function CaseStudiesPage() {
                 { value: '10K+', label: 'Suppliers Connected' },
                 { value: 'Real-Time', label: 'Inventory Visibility' },
             ],
-            challenge: 'Global Logistics Corp, a major player in international freight, was struggling with disparate systems for managing warehousing, shipping, and customs documentation. This lack of integration led to data silos, manual errors, shipment delays, and a lack of real-time visibility for their clients. They needed a unified platform to streamline operations and improve customer satisfaction.',
+            challenge: 'A major player in international freight, was struggling with disparate systems for managing warehousing, shipping, and customs documentation. This lack of integration led to data silos, manual errors, shipment delays, and a lack of real-time visibility for their clients. They needed a unified platform to streamline operations and improve customer satisfaction.',
             solution: 'We designed and built a comprehensive supply chain management platform that integrated with their existing ERP, WMS, and carrier APIs. The platform provides a single dashboard for real-time tracking of shipments, inventory levels across warehouses, and automated customs documentation. We implemented role-based access controls for different stakeholders (e.g., clients, warehouse staff, logistics coordinators). The system also includes predictive analytics to forecast potential delays and suggest alternative routes.',
             results: 'The new platform streamlined operations, resulting in a 30% increase in overall efficiency. Clients gained full visibility into their supply chain, leading to a significant boost in satisfaction and retention. Manual data entry errors were reduced by 90%, and the time to process customs documentation was cut in half. The platform successfully onboarded over 10,000 suppliers and partners.',
             testimonial: {
                 quote: "This platform has transformed how we do business. Our clients love the transparency, and our team is finally working with a single source of truth. BBMcoders delivered a complex project flawlessly.",
                 author: 'Maria Rodriguez',
-                role: 'COO, Global Logistics Corp',
+                // role: 'COO, Global Logistics Corp',
             },
             technologies: ['React', 'Node.js', 'Microservices', 'Kafka', 'MongoDB', 'Docker'],
-            link: '/case-studies/global-logistics',
+            link: '/case-studies/global',
         },
         // New case study 5: Healthcare
         {
             id: 5,
             title: 'Telemedicine Platform for Remote Patient Care',
-            client: 'HealthConnect Medical',
+            // client: 'HealthConnect Medical',
             category: 'Healthcare',
             image: 'https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?auto=format&fit=crop&w=800&q=80',
             color: '#EC4899',
@@ -121,13 +121,13 @@ export default function CaseStudiesPage() {
                 { value: '50K+', label: 'Virtual Consultations/Month' },
                 { value: 'HIPAA', label: 'Compliant' },
             ],
-            challenge: 'HealthConnect Medical, a network of regional hospitals, needed to rapidly deploy a secure, scalable telemedicine platform to meet the surge in demand for remote consultations. They faced strict regulatory requirements (HIPAA), needed seamless integration with existing Electronic Health Record (EHR) systems, and required a solution that could handle video consultations, secure messaging, and appointment scheduling – all while providing a simple experience for both doctors and patients.',
+            challenge: 'A network of regional hospitals, needed to rapidly deploy a secure, scalable telemedicine platform to meet the surge in demand for remote consultations. They faced strict regulatory requirements (HIPAA), needed seamless integration with existing Electronic Health Record (EHR) systems, and required a solution that could handle video consultations, secure messaging, and appointment scheduling – all while providing a simple experience for both doctors and patients.',
             solution: 'We developed a custom telemedicine platform with end-to-end encryption, role-based access, and full HIPAA compliance. The platform integrates with major EHR systems via FHIR APIs, allowing doctors to access patient records during consultations. We built a WebRTC-based video module with adaptive quality for low-bandwidth environments, a secure chat system, and an automated appointment scheduler. The mobile app was developed in React Native for both iOS and Android.',
             results: 'The platform was deployed in under 4 months and now serves over 200 hospitals and clinics. It handles over 50,000 virtual consultations per month with an average user rating of 4.9 stars. Doctors report significant time savings, and patient no-show rates dropped by 35%. The solution passed all HIPAA security audits with zero findings.',
             testimonial: {
                 quote: "BBMcoders delivered a platform that is both highly secure and incredibly easy to use. Our patients love the convenience, and our staff has embraced it fully. They were true partners throughout the journey.",
                 author: 'Dr. Emily Carter',
-                role: 'Chief Medical Information Officer, HealthConnect',
+                // role: 'Chief Medical Information Officer, HealthConnect',
             },
             technologies: ['React', 'React Native', 'Node.js', 'WebRTC', 'FHIR APIs', 'AWS (HIPAA)'],
             link: '/case-studies/healthconnect',
@@ -136,7 +136,7 @@ export default function CaseStudiesPage() {
         {
             id: 6,
             title: 'IoT Predictive Maintenance Platform',
-            client: 'Industrial Solutions Ltd.',
+            // client: 'Industrial Solutions Ltd.',
             category: 'IoT & Manufacturing',
             image: 'https://images.unsplash.com/photo-1581091226033-d5c48150dbaa?auto=format&fit=crop&w=800&q=80',
             color: '#06B6D4',
@@ -145,16 +145,16 @@ export default function CaseStudiesPage() {
                 { value: '10K+', label: 'Sensors Connected' },
                 { value: '$2M', label: 'Annual Savings' },
             ],
-            challenge: 'Industrial Solutions Ltd., a large manufacturing company, was experiencing unplanned equipment downtime that cost millions annually. They had legacy machinery with no connectivity and wanted to implement a predictive maintenance solution to monitor machine health, predict failures, and schedule maintenance proactively. They needed a robust IoT platform that could collect data from various sensors, analyze it in real-time, and provide actionable insights.',
+            challenge: 'A large manufacturing company, was experiencing unplanned equipment downtime that cost millions annually. They had legacy machinery with no connectivity and wanted to implement a predictive maintenance solution to monitor machine health, predict failures, and schedule maintenance proactively. They needed a robust IoT platform that could collect data from various sensors, analyze it in real-time, and provide actionable insights.',
             solution: 'We built an end-to-end IoT platform using edge devices to collect vibration, temperature, and power consumption data from machines. Data is streamed via MQTT to Azure IoT Hub, then processed using Azure Stream Analytics and machine learning models (trained on historical failure data) to predict anomalies. A custom dashboard visualizes machine health, alerts maintenance teams, and integrates with their ERP for automated work orders. The solution supports both modern and retrofitted sensors.',
             results: 'The platform reduced unplanned downtime by 40% within the first year, saving the company over $2 million. Maintenance teams now move from reactive to predictive, extending machine life and improving production efficiency. The client has expanded the solution to three additional plants and plans to integrate with their supply chain system.',
             testimonial: {
                 quote: "This predictive maintenance platform has been a game-changer for our operations. The team at BBMcoders understood our complex environment and delivered a solution that exceeded our expectations. We're now able to anticipate problems before they happen.",
                 author: 'Robert Green',
-                role: 'Plant Operations Director, Industrial Solutions Ltd.',
+                // role: 'Plant Operations Director, Industrial Solutions Ltd.',
             },
             technologies: ['Azure IoT Hub', 'MQTT', 'Stream Analytics', 'ML (Python)', 'React', 'Docker'],
-            link: '/case-studies/industrial-solutions',
+            link: '/case-studies/solutions',
         },
     ];
 
@@ -232,7 +232,7 @@ export default function CaseStudiesPage() {
                                 </div>
                                 <div className={styles.caseCardContent}>
                                     <h3 className={styles.caseCardTitle}>{study.title}</h3>
-                                    <p className={styles.caseCardClient}>{study.client}</p>
+                                    {/* <p className={styles.caseCardClient}>{study.client}</p> */}
                                     <button
                                         onClick={() => openCaseStudy(study.id)}
                                         className={styles.caseCardButton}
@@ -273,7 +273,7 @@ export default function CaseStudiesPage() {
                                 <div className={styles.modalHeader}>
                                     <div className={styles.modalHeaderLeft}>
                                         <h2 className={styles.modalTitle}>{activeCase.title}</h2>
-                                        <p className={styles.modalClient}>{activeCase.client}</p>
+                                        {/* <p className={styles.modalClient}>{activeCase.client}</p> */}
                                     </div>
                                     <div 
                                         className={styles.modalCategory}
@@ -326,7 +326,7 @@ export default function CaseStudiesPage() {
                                     <p className={styles.testimonialText}>{activeCase.testimonial.quote}</p>
                                     <div className={styles.testimonialAuthor}>
                                         <strong>{activeCase.testimonial.author}</strong>
-                                        <span>{activeCase.testimonial.role}</span>
+                                        {/* <span>{activeCase.testimonial.role}</span> */}
                                     </div>
                                 </div>
 

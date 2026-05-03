@@ -255,7 +255,7 @@ export default function QualityAssurancePage() {
   // Testimonial
   const testimonial = {
     name: "Michael",
-    role: "C.O. FinTech Inc.",
+    // role: "C.O. FinTech Inc.",
     content:
       "Their QA team identified critical security vulnerabilities that our internal team missed. The depth of their testing saved us from potential compliance issues.",
     rating: 5,
@@ -353,7 +353,7 @@ export default function QualityAssurancePage() {
                 <p className={styles.testimonialText}>{testimonial.content}</p>
                 <div className={styles.testimonialAuthor}>
                   <h4>{testimonial.name}</h4>
-                  <p>{testimonial.role}</p>
+                  {/* <p>{testimonial.role}</p> */}
                 </div>
 
                 <div className={styles.ratings}>

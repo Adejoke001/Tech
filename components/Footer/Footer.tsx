@@ -35,9 +35,9 @@ const Footer = () => {
       { name: "AI & ML", href: "/services/machine-learning" },
     ],
     hireDevelopers: [
-      { name: "Hire AI Engineers", href: "/hire/data-ai-developers" },
+      { name: "Hire AI Engineers", href: "/services/ai-automation-consulting" },
       { name: "Hire Backend Developers", href: "/hire-developers/backend-developers" },
-      { name: "Hire Frontend Developers", href: "/hire/frontend-developers" },
+      { name: "Hire Frontend Developers", href: "/hire-developers/frontend-developers" },
       // {
       //   name: "Hire Blockchain Developers",
       //   href: "/hire/blockchain-developers",

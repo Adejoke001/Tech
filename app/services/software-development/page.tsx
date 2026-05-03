@@ -162,7 +162,7 @@ export default function SoftwareDev() {
           </motion.div>
 
           {/* Trusted Clients Section */}
-          <motion.div 
+          {/* <motion.div 
             className={styles.trustedClients}
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
@@ -199,7 +199,7 @@ export default function SoftwareDev() {
                 </motion.div>
               ))}
             </div>
-          </motion.div>
+          </motion.div> */}
         </div>
       </div>
 

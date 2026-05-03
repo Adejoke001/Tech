@@ -391,7 +391,7 @@ export default function EnterpriseSoftwarePage() {
             </section>
 
             {/* ===== TRUSTED BY SECTION ===== */}
-            <section className={styles.trustedSection}>
+            {/* <section className={styles.trustedSection}>
                 <div className={styles.sectionContent}>
                     <p className={styles.trustedLabel}>Trusted by startups and Fortune 500 companies</p>
                     <div className={styles.trustedLogos}>
@@ -409,7 +409,7 @@ export default function EnterpriseSoftwarePage() {
                         ))}
                     </div>
                 </div>
-            </section>
+            </section> */}
 
             {/* ===== ENTERPRISE SERVICES SECTION (with per‑service links) ===== */}
             <section className={styles.servicesSection}>

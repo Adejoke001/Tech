@@ -25,7 +25,7 @@ export default function CybersecurityServicesPage() {
     // Testimonial matching the enterprise software page layout
     const testimonial = {
         name: 'Damola Alex',
-        role: 'CIS, Finance org.',
+        // role: 'CIS, Finance org.',
         content: 'BBMcoders transformed our security posture with their comprehensive governance framework. We saw 40% fewer security incidents within the first quarter.',
         rating: 5,
         project: 'Enterprise Security Governance',
@@ -468,7 +468,7 @@ export default function CybersecurityServicesPage() {
                                 <p className={styles.testimonialText}>&quot;{testimonial.content}&quot;</p>
                                 <div className={styles.testimonialAuthor}>
                                     <h4>{testimonial.name}</h4>
-                                    <p>{testimonial.role}</p>
+                                    {/* <p>{testimonial.role}</p> */}
                                 </div>
 
                                 <div className={styles.ratings}>
@@ -497,7 +497,7 @@ export default function CybersecurityServicesPage() {
             </section>
 
             {/* ===== TRUSTED BY SECTION ===== */}
-            <section className={styles.trustedSection}>
+            {/* <section className={styles.trustedSection}>
                 <div className={styles.sectionContent}>
                     <p className={styles.trustedLabel}>Trusted by security-conscious organizations worldwide</p>
                     <div className={styles.trustedLogos}>
@@ -515,7 +515,7 @@ export default function CybersecurityServicesPage() {
                         ))}
                     </div>
                 </div>
-            </section>
+            </section> */}
 
             {/* ===== CORE SERVICES SECTION ===== */}
             <section className={styles.servicesSection}>

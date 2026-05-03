@@ -53,7 +53,7 @@ export default function DisclaimerPage() {
                     <section className={styles.disclaimerSection}>
                         <h2 className={styles.sectionTitle}>General Information</h2>
                         <p className={styles.sectionText}>
-                            The information provided by <strong>BBM Multiconnect Global Technology</strong> (“we”, “us”, or “our”) on this website is for general informational purposes only. All information on the site is provided in good faith, however we make no representation or warranty of any kind, express or implied, regarding the accuracy, adequacy, validity, reliability, availability, or completeness of any information on the site.
+                            The information provided by <strong>BBMCoders</strong> (“we”, “us”, or “our”) on this website is for general informational purposes only. All information on the site is provided in good faith, however we make no representation or warranty of any kind, express or implied, regarding the accuracy, adequacy, validity, reliability, availability, or completeness of any information on the site.
                         </p>
                         <p className={styles.sectionText}>
                             Under no circumstance shall we have any liability to you for any loss or damage of any kind incurred as a result of the use of the site or reliance on any information provided on the site. Your use of the site and your reliance on any information on the site is solely at your own risk.
@@ -64,7 +64,7 @@ export default function DisclaimerPage() {
                     <section className={styles.disclaimerSection}>
                         <h2 className={styles.sectionTitle}>No Warranties</h2>
                         <p className={styles.sectionText}>
-                            This website is provided “as is,” without any representations or warranties, express or implied. BBM Multiconnect Global Technology makes no representations or warranties in relation to this website or the information and materials provided on this website.
+                            This website is provided “as is,” without any representations or warranties, express or implied. BBMCoders makes no representations or warranties in relation to this website or the information and materials provided on this website.
                         </p>
                         <p className={styles.sectionText}>
                             Without prejudice to the generality of the foregoing paragraph, we do not warrant that:
@@ -93,7 +93,7 @@ export default function DisclaimerPage() {
                     <section className={styles.disclaimerSection}>
                         <h2 className={styles.sectionTitle}>External Links Disclaimer</h2>
                         <p className={styles.sectionText}>
-                            Our website may contain links to external websites that are not provided or maintained by or in any way affiliated with BBM Multiconnect Global Technology. Please note that we do not guarantee the accuracy, relevance, timeliness, or completeness of any information on these external websites.
+                            Our website may contain links to external websites that are not provided or maintained by or in any way affiliated with BBMCoders. Please note that we do not guarantee the accuracy, relevance, timeliness, or completeness of any information on these external websites.
                         </p>
                         <p className={styles.sectionText}>
                             We have no control over the content and practices of any third-party sites and accept no responsibility for them or for any loss or damage that may arise from your use of them.
@@ -104,7 +104,7 @@ export default function DisclaimerPage() {
                     <section className={styles.disclaimerSection}>
                         <h2 className={styles.sectionTitle}>Limitation of Liability</h2>
                         <p className={styles.sectionText}>
-                            To the fullest extent permitted by applicable law, in no event shall BBM Multiconnect Global Technology, its affiliates, directors, employees, or agents be liable for any indirect, punitive, incidental, special, consequential, or exemplary damages, including without limitation damages for loss of profits, goodwill, use, data, or other intangible losses, arising out of or relating to the use of, or inability to use, this website.
+                            To the fullest extent permitted by applicable law, in no event shall BBMCoders, its affiliates, directors, employees, or agents be liable for any indirect, punitive, incidental, special, consequential, or exemplary damages, including without limitation damages for loss of profits, goodwill, use, data, or other intangible losses, arising out of or relating to the use of, or inability to use, this website.
                         </p>
                         <p className={styles.sectionText}>
                             In no event shall our total liability to you for all damages, losses, and causes of action exceed the amount paid by you, if any, for accessing this website.
@@ -134,7 +134,7 @@ export default function DisclaimerPage() {
                     <section className={styles.disclaimerSection}>
                         <h2 className={styles.sectionTitle}>Views Expressed Disclaimer</h2>
                         <p className={styles.sectionText}>
-                            The views and opinions expressed on our website are those of the authors and do not necessarily reflect the official policy or position of BBM Multiconnect Global Technology. Any content provided by our bloggers or authors is of their opinion and is not intended to malign any religion, ethnic group, club, organization, company, individual, or anyone or anything.
+                            The views and opinions expressed on our website are those of the authors and do not necessarily reflect the official policy or position of BBMCoders. Any content provided by our bloggers or authors is of their opinion and is not intended to malign any religion, ethnic group, club, organization, company, individual, or anyone or anything.
                         </p>
                     </section>
 
@@ -177,7 +177,7 @@ export default function DisclaimerPage() {
                     </section>
 
                     {/* <div className={styles.disclaimerFooter}>
-                        <p>This disclaimer was created for BBM Multiconnect Global Technology and is effective as of {lastUpdated}.</p>
+                        <p>This disclaimer was created for BBMCoders and is effective as of {lastUpdated}.</p>
                     </div> */}
                 </div>
             </div>

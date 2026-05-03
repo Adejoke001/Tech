@@ -630,10 +630,10 @@ export default function ProductDevelopment() {
                     />
                   </div>
                   <div className={styles.testimonialInfo}>
-                    <h4 className={styles.testimonialName}>Sarah Johnson</h4>
-                    <p className={styles.testimonialRole}>
+                    <h4 className={styles.testimonialName}>Frank Johnson</h4>
+                    {/* <p className={styles.testimonialRole}>
                       CTO, TechBim Inc.
-                    </p>
+                    </p> */}
                     <div className={styles.testimonialRating}>
                       {[...Array(5)].map((_, i) => (
                         <Star

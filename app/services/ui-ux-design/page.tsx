@@ -21,7 +21,7 @@ export default function UIUXDesignPage() {
     const [hoveredIndustry, setHoveredIndustry] = useState<number | null>(null);
 
     const testimonial = {
-        name: 'Rebecca Chidi',
+        name: 'Rebecca',
         role: 'Product Director.',
         content: 'They go above and beyond to ensure quality and satisfaction. A true partner in every sense. Their designs increased our user retention by 40%.',
         rating: 5,
@@ -605,7 +605,7 @@ export default function UIUXDesignPage() {
             </section>
 
             {/* ===== TRUSTED BY ===== */}
-            <section className={styles.trustedSection}>
+            {/* <section className={styles.trustedSection}>
                 <div className={styles.sectionContent}>
                     <p className={styles.trustedLabel}>Trusted by startups and Fortune 500 companies</p>
                     <div className={styles.trustedLogos}>
@@ -623,7 +623,7 @@ export default function UIUXDesignPage() {
                         ))}
                     </div>
                 </div>
-            </section>
+            </section> */}
 
             {/* ===== DESIGN SERVICES ===== */}
             <section className={styles.servicesSection}>

@@ -34,9 +34,9 @@ export default function QAStrategyConsultingPage() {
 
   const testimonial = {
     name: "Jonathan Mill",
-    role: "C.O. FinTech",
+    // role: "C.O. FinTech",
     content:
-      "Outstanding results, clear communication, and a dedicated team. ValueCoders QA consulting transformed our testing, achieving a 95% reduction in bugs and cutting time-to-market by 40%.",
+      "Outstanding results, clear communication, and a dedicated team. BBMCoders QA consulting transformed our testing, achieving a 95% reduction in bugs and cutting time-to-market by 40%.",
     rating: 5,
     project: "Financial Platform",
   };
@@ -513,7 +513,7 @@ export default function QAStrategyConsultingPage() {
                     <h4 className={styles.testimonialName}>
                       {testimonial.name}
                     </h4>
-                    <p className={styles.testimonialRole}>{testimonial.role}</p>
+                    {/* <p className={styles.testimonialRole}>{testimonial.role}</p> */}
                     <div className={styles.testimonialRating}>
                       {[...Array(testimonial.rating)].map((_, i) => (
                         <Star key={i} className={styles.starIcon} />
@@ -538,7 +538,7 @@ export default function QAStrategyConsultingPage() {
       </section>
 
       {/* Trusted By Section */}
-      <section className={styles.trustedSection}>
+      {/* <section className={styles.trustedSection}>
         <div className={styles.sectionHeader}>
           <p className={styles.trustedLabel}>
             Trusted by startups and Fortune 500 companies
@@ -564,7 +564,7 @@ export default function QAStrategyConsultingPage() {
             ))}
           </div>
         </div>
-      </section>
+      </section> */}
 
       {/* Strategic Benefits Banner */}
       <section className={styles.benefitsBanner}>

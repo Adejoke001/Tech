@@ -414,7 +414,7 @@ export default function FrontendPage() {
             </section>
 
             {/* ===== TRUSTED BY SECTION ===== */}
-            <section className={styles.trustedSection}>
+            {/* <section className={styles.trustedSection}>
                 <div className={styles.container}>
                     <p className={styles.trustedLabel}>Trusted by startups and Fortune 500 companies</p>
                     <div className={styles.trustedLogos}>
@@ -432,7 +432,7 @@ export default function FrontendPage() {
                         ))}
                     </div>
                 </div>
-            </section>
+            </section> */}
 
             {/* ===== FRONTEND SERVICES SECTION ===== */}
             <section className={styles.servicesSection} id="services">

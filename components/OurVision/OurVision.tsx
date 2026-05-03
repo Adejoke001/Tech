@@ -75,7 +75,7 @@ const OurVision = () => {
             </div>
 
             {/* Trusted Clients - Moved to right column */}
-            <div className={styles.clientsSection}>
+            {/* <div className={styles.clientsSection}>
               <p className={styles.clientsTitle}>Trusted by Industry Leaders</p>
               <div className={styles.clientsGrid}>
                 {trustedClients.map((client) => (
@@ -97,7 +97,7 @@ const OurVision = () => {
                   </div>
                 ))}
               </div>
-            </div>
+            </div> */}
           </div>
         </div>
       </div>
