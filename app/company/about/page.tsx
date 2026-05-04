@@ -110,7 +110,7 @@ export default function AboutPage() {
     ];
 
     // ----- CLIENT TESTIMONIALS (with image placeholder) -----
-   const testimonials = [
+    const testimonials = [
     {
         name: 'Daniel',
         // role: 'CEO, BrightPath Solutions',
@@ -147,7 +147,7 @@ export default function AboutPage() {
         content: 'Choosing BBMcoders was one of the best decisions we made. Their support, speed, and quality of work have been exceptional throughout our collaboration.',
         image: '/images/user.png',
     },
-];
+    ];
 
     // ----- COMPANY STATS -----
     const companyStats = [
