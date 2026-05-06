@@ -35,7 +35,7 @@ export default function MachineLearningPage() {
   // Hero testimonial
   const testimonial = {
     name: "Ahmed",
-    role: "Director, VisionHub Inc.",
+    // role: "Director, VisionHub Inc.",
     content:
       "Their ML team delivered a predictive analytics platform that improved our operational efficiency by 65%. The models have been running flawlessly for over 18 months.",
     rating: 5,
@@ -44,182 +44,182 @@ export default function MachineLearningPage() {
 
   // Main services with background images and hover effects
   const mlServices = [
-    {
-      id: 1,
-      title: "ML Development Solutions",
-      description:
-        "Custom machine learning solutions tailored to your business needs, leveraging cutting-edge algorithms and data analysis techniques.",
-      icon: <Brain className={styles.serviceIcon} />,
-      image: "/images/mldev.jpg",
-      color: "#60a5fa",
-      features: [
-        "Custom Algorithms",
-        "Predictive Models",
-        "Real-time Analytics",
-      ],
-    },
-    {
-      id: 2,
-      title: "MLOps Consulting",
-      description:
-        "Get expert guidance on implementing MLOps practices to streamline your machine learning lifecycle, from development to deployment and maintenance.",
-      icon: <Cpu className={styles.serviceIcon} />,
-      image:
-        "https://plus.unsplash.com/premium_photo-1726079247228-993af4c05db8?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8bWFjaGluZSUyMGxlYXJuaW5nJTIwY29uc3VsdGluZ3xlbnwwfHwwfHx8MA%3D%3D",
-      color: "#34d399",
-      features: ["CI/CD Pipelines", "Model Monitoring", "Automated Deployment"],
-    },
-    {
-      id: 3,
-      title: "Computer Vision",
-      description:
-        "Unlock the power of computer vision with our advanced solutions, enabling automated image and video analysis for diverse applications.",
-      icon: <Eye className={styles.serviceIcon} />,
-      image: "/images/comvision.jpg",
-      color: "#8b5cf6",
-      features: [
-        "Object Detection",
-        "Facial Recognition",
-        "Quality Inspection",
-      ],
-    },
-    {
-      id: 4,
-      title: "ML Model Engineering",
-      description:
-        "Our ML Model Engineering Services ensure the development and optimization of high-performance machine learning models for your projects.",
-      icon: <TrendingUp className={styles.serviceIcon} />,
-      image:
-        "https://plus.unsplash.com/premium_photo-1683120963435-6f9355d4a776?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NXx8YXJ0aWZpY2lhbCUyMGludGVsbGlnZW5jZXxlbnwwfHwwfHx8MA%3D%3D",
-      color: "#f59e0b",
-      features: [
-        "Model Tuning",
-        "Performance Optimization",
-        "Scalable Architecture",
-      ],
-    },
-    {
-      id: 5,
-      title: "Robotic Process Automation",
-      description:
-        "Automate repetitive tasks and improve process efficiency with our Robotic Process Automation services, powered by machine learning technology.",
-      icon: <Bot className={styles.serviceIcon} />,
-      image:
-        "https://images.unsplash.com/photo-1563968743333-044cef800494?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8N3x8cm9ib3RpYyUyMHByb2Nlc3MlMjBhdXRvbWF0aW9ufGVufDB8fDB8fHww",
-      color: "#ef4444",
-      features: [
-        "Process Automation",
-        "Intelligent Bots",
-        "Workflow Optimization",
-      ],
-    },
-    {
-      id: 6,
-      title: "Natural Language Processing",
-      description:
-        "Transform unstructured text data into actionable insights with our NLP solutions, enabling sentiment analysis, chatbots, and intelligent document processing.",
-      icon: <MessageSquare className={styles.serviceIcon} />,
-      image:
-        "https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?auto=format&fit=crop&w=600",
-      color: "#3b82f6",
-      features: [
-        "Sentiment Analysis",
-        "Chatbot Development",
-        "Text Classification",
-      ],
-    },
-  ];
+  {
+    id: 1,
+    title: "ML Development Solutions",
+    description:
+      "Custom machine learning solutions tailored to your business needs, leveraging cutting-edge algorithms and data analysis techniques.",
+    icon: <Brain className={styles.serviceIcon} />,
+    image: "/images/mldev.jpg",
+    color: "#3b82f6", // Blue
+    features: [
+      "Custom Algorithms",
+      "Predictive Models",
+      "Real-time Analytics",
+    ],
+  },
+  {
+    id: 2,
+    title: "MLOps Consulting",
+    description:
+      "Get expert guidance on implementing MLOps practices to streamline your machine learning lifecycle, from development to deployment and maintenance.",
+    icon: <Cpu className={styles.serviceIcon} />,
+    image:
+      "https://plus.unsplash.com/premium_photo-1726079247228-993af4c05db8?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8bWFjaGluZSUyMGxlYXJuaW5nJTIwY29uc3VsdGluZ3xlbnwwfHwwfHx8MA%3D%3D",
+    color: "#10b981", // Green
+    features: ["CI/CD Pipelines", "Model Monitoring", "Automated Deployment"],
+  },
+  {
+    id: 3,
+    title: "Computer Vision",
+    description:
+      "Unlock the power of computer vision with our advanced solutions, enabling automated image and video analysis for diverse applications.",
+    icon: <Eye className={styles.serviceIcon} />,
+    image: "/images/comvision.jpg",
+    color: "#3b82f6", // Blue
+    features: [
+      "Object Detection",
+      "Facial Recognition",
+      "Quality Inspection",
+    ],
+  },
+  {
+    id: 4,
+    title: "ML Model Engineering",
+    description:
+      "Our ML Model Engineering Services ensure the development and optimization of high-performance machine learning models for your projects.",
+    icon: <TrendingUp className={styles.serviceIcon} />,
+    image:
+      "https://plus.unsplash.com/premium_photo-1683120963435-6f9355d4a776?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NXx8YXJ0aWZpY2lhbCUyMGludGVsbGlnZW5jZXxlbnwwfHwwfHx8MA%3D%3D",
+    color: "#10b981", // Green
+    features: [
+      "Model Tuning",
+      "Performance Optimization",
+      "Scalable Architecture",
+    ],
+  },
+  {
+    id: 5,
+    title: "Robotic Process Automation",
+    description:
+      "Automate repetitive tasks and improve process efficiency with our Robotic Process Automation services, powered by machine learning technology.",
+    icon: <Bot className={styles.serviceIcon} />,
+    image:
+      "https://images.unsplash.com/photo-1563968743333-044cef800494?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8N3x8cm9ib3RpYyUyMHByb2Nlc3MlMjBhdXRvbWF0aW9ufGVufDB8fDB8fHww",
+    color: "#3b82f6", // Blue
+    features: [
+      "Process Automation",
+      "Intelligent Bots",
+      "Workflow Optimization",
+    ],
+  },
+  {
+    id: 6,
+    title: "Natural Language Processing",
+    description:
+      "Transform unstructured text data into actionable insights with our NLP solutions, enabling sentiment analysis, chatbots, and intelligent document processing.",
+    icon: <MessageSquare className={styles.serviceIcon} />,
+    image:
+      "https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?auto=format&fit=crop&w=600",
+    color: "#10b981", // Green
+    features: [
+      "Sentiment Analysis",
+      "Chatbot Development",
+      "Text Classification",
+    ],
+  },
+];
 
-  // Industry solutions - no background images
-  const industries = [
-    {
-      id: 1,
-      name: "Healthcare",
-      description:
-        "Building smart healthcare solutions with HIPAA compliance, medical device testing, and EHR validation.",
-      icon: "🏥",
-      color: "#34d399",
-      solutions: [
-        "HIPAA Compliance",
-        "Medical Device Testing",
-        "EHR Validation",
-      ],
-      link: "/industries/industries-health",
-    },
-    {
-      id: 2,
-      name: "Fintech & Banking",
-      description:
-        "Disrupting traditional finance with PCI DSS compliance, fraud detection, and transaction security.",
-      icon: "💰",
-      color: "#f59e0b",
-      solutions: [
-        "PCI DSS Compliance",
-        "Fraud Detection",
-        "Transaction Security",
-      ],
-      link: "/industries/industries-fintech",
-    },
-    {
-      id: 3,
-      name: "Retail & eCommerce",
-      description:
-        "Enhancing retail journeys with payment gateway testing, inventory management, and user experience.",
-      icon: "🛍️",
-      color: "#8b5cf6",
-      solutions: [
-        "Payment Gateway Testing",
-        "Inventory Management",
-        "User Experience",
-      ],
-      link: "/industries/industries-ecommerce",
-    },
-    {
-      id: 4,
-      name: "Media & Entertainment",
-      description:
-        "Custom tech to empower brands with streaming quality, content delivery, and platform compatibility.",
-      icon: "🎬",
-      color: "#ef4444",
-      solutions: [
-        "Streaming Quality",
-        "Content Delivery",
-        "Platform Compatibility",
-      ],
-      link: "/industries/industries-media",
-    },
-    {
-      id: 5,
-      name: "Education & eLearning",
-      description:
-        "Shaping digital learning with LMS testing, accessibility compliance, and scalability testing.",
-      icon: "🎓",
-      color: "#3b82f6",
-      solutions: [
-        "LMS Testing",
-        "Accessibility Compliance",
-        "Scalability Testing",
-      ],
-      link: "/industries/industries-education",
-    },
-    {
-      id: 6,
-      name: "Internet of Things (IoT)",
-      description:
-        "Secure, scalable IoT solutions connecting devices and enabling real‑time data insights for industrial automation, smart homes, and asset tracking.",
-      icon: "📡",
-      color: "#06b6d4",
-      challenges:
-        "Device heterogeneity, real‑time data processing, connectivity reliability, and end‑to‑end security.",
-      solutions: [
-        "Device Connectivity & Management",
-        "Real‑time Data Processing",
-        "Edge Computing Solutions",
-        "IoT Security & Compliance",
-      ],
-      link: "/industries/industries-iot",
-    },
-  ];
+// Industry solutions - no background images
+const industries = [
+  {
+    id: 1,
+    name: "Healthcare",
+    description:
+      "Building smart healthcare solutions with HIPAA compliance, medical device testing, and EHR validation.",
+    icon: "🏥",
+    color: "#10b981", // Green
+    solutions: [
+      "HIPAA Compliance",
+      "Medical Device Testing",
+      "EHR Validation",
+    ],
+    link: "/industries/industries-health",
+  },
+  {
+    id: 2,
+    name: "Fintech & Banking",
+    description:
+      "Disrupting traditional finance with PCI DSS compliance, fraud detection, and transaction security.",
+    icon: "💰",
+    color: "#3b82f6", // Blue
+    solutions: [
+      "PCI DSS Compliance",
+      "Fraud Detection",
+      "Transaction Security",
+    ],
+    link: "/industries/industries-fintech",
+  },
+  {
+    id: 3,
+    name: "Retail & eCommerce",
+    description:
+      "Enhancing retail journeys with payment gateway testing, inventory management, and user experience.",
+    icon: "🛍️",
+    color: "#10b981", // Green
+    solutions: [
+      "Payment Gateway Testing",
+      "Inventory Management",
+      "User Experience",
+    ],
+    link: "/industries/industries-ecommerce",
+  },
+  {
+    id: 4,
+    name: "Media & Entertainment",
+    description:
+      "Custom tech to empower brands with streaming quality, content delivery, and platform compatibility.",
+    icon: "🎬",
+    color: "#3b82f6", // Blue
+    solutions: [
+      "Streaming Quality",
+      "Content Delivery",
+      "Platform Compatibility",
+    ],
+    link: "/industries/industries-media",
+  },
+  {
+    id: 5,
+    name: "Education & eLearning",
+    description:
+      "Shaping digital learning with LMS testing, accessibility compliance, and scalability testing.",
+    icon: "🎓",
+    color: "#10b981", // Green
+    solutions: [
+      "LMS Testing",
+      "Accessibility Compliance",
+      "Scalability Testing",
+    ],
+    link: "/industries/industries-education",
+  },
+  {
+    id: 6,
+    name: "Internet of Things (IoT)",
+    description:
+      "Secure, scalable IoT solutions connecting devices and enabling real‑time data insights for industrial automation, smart homes, and asset tracking.",
+    icon: "📡",
+    color: "#3b82f6", // Blue
+    challenges:
+      "Device heterogeneity, real‑time data processing, connectivity reliability, and end‑to‑end security.",
+    solutions: [
+      "Device Connectivity & Management",
+      "Real‑time Data Processing",
+      "Edge Computing Solutions",
+      "IoT Security & Compliance",
+    ],
+    link: "/industries/industries-iot",
+  },
+];
   // Use cases with background image section
   const useCases = [
     {
@@ -503,7 +503,7 @@ export default function MachineLearningPage() {
                 </div>
                 <div className={styles.testimonialInfo}>
                   <h4 className={styles.testimonialName}>{testimonial.name}</h4>
-                  <p className={styles.testimonialRole}>{testimonial.role}</p>
+                  {/* <p className={styles.testimonialRole}>{testimonial.role}</p> */}
                   <div className={styles.testimonialRating}>
                     {[...Array(testimonial.rating)].map((_, i) => (
                       <Star key={i} className={styles.starIcon} />
@@ -527,7 +527,7 @@ export default function MachineLearningPage() {
       </section>
 
       {/* Trusted By Section */}
-      <section className={styles.trustedSection}>
+      {/* <section className={styles.trustedSection}>
         <div className={styles.sectionHeader}>
           <p className={styles.trustedLabel}>
             Trusted by startups and Fortune 500 companies
@@ -546,7 +546,7 @@ export default function MachineLearningPage() {
             ))}
           </div>
         </div>
-      </section>
+      </section> */}
 
       {/* ML Services Section with Background Images */}
       <section className={styles.servicesSection}>

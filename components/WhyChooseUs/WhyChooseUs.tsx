@@ -1,5 +1,5 @@
 import React from 'react'
-import './WhyChooseUs.modules.css'
+import styles from './WhyChooseUs.module.css'  // Fixed import
 
 const WhyChooseUs = () => {
   const processes = [
@@ -46,14 +46,14 @@ const WhyChooseUs = () => {
   ]
 
   return (
-    <section className="whyChooseSection" id="why-choose-us">
-      <div className="container">
+    <section className={styles.whyChooseSection} id="why-choose-us">
+      <div className={styles.container}>
         {/* Section Header */}
-        <div className="sectionHeader fadeInUp">
-          <h2 className="sectionTitle">
-            Proven Processes That Turn Tech Projects Into <br/><span className="titleAccent">Wins</span>
+        <div className={styles.sectionHeader}>
+          <h2 className={styles.sectionTitle}>
+            Proven Processes That Turn Tech Projects Into <br/><span className={styles.titleAccent}>Wins</span>
           </h2>
-          <p className="sectionDescription">
+          <p className={styles.sectionDescription}>
             From first consultation to final deployment, we ensure every milestone is delivered on time, 
             on budget, and on target. Our process blends strategic insight with flawless execution, 
             so you see ROI from day one.
@@ -61,23 +61,23 @@ const WhyChooseUs = () => {
         </div>
 
         {/* Process Grid */}
-        <div className="processGrid">
-          <div className="processRow">
+        <div className={styles.processGrid}>
+          <div className={styles.processRow}>
             {processes.slice(0, 4).map((process, index) => (
               <div 
                 key={index}
-                className={`processCard fadeInUp staggerDelay${index + 1}`}
+                className={styles.processCard}
               >
-                <div className="cardContent">
-                  <div className="processIcon">
+                <div className={styles.cardContent}>
+                  <div className={styles.processIcon}>
                     {process.icon}
                   </div>
                   
-                  <h3 className="processTitle">
+                  <h3 className={styles.processTitle}>
                     {process.title}
                   </h3>
                   
-                  <p className="processDescription">
+                  <p className={styles.processDescription}>
                     {process.description}
                   </p>
                 </div>
@@ -85,22 +85,22 @@ const WhyChooseUs = () => {
             ))}
           </div>
           
-          <div className="processRow">
+          <div className={styles.processRow}>
             {processes.slice(4, 8).map((process, index) => (
               <div 
                 key={index + 4}
-                className={`processCard fadeInUp staggerDelay${index + 5}`}
+                className={styles.processCard}
               >
-                <div className="cardContent">
-                  <div className="processIcon">
+                <div className={styles.cardContent}>
+                  <div className={styles.processIcon}>
                     {process.icon}
                   </div>
                   
-                  <h3 className="processTitle">
+                  <h3 className={styles.processTitle}>
                     {process.title}
                   </h3>
                   
-                  <p className="processDescription">
+                  <p className={styles.processDescription}>
                     {process.description}
                   </p>
                 </div>

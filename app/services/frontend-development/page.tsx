@@ -48,7 +48,7 @@ export default function FrontendPage() {
             title: 'Single Page Apps Development',
             description: 'Boost performance with single-page apps that deliver flexible user experiences and improved speed and efficiency.',
             icon: <Zap />,
-            color: '#8B5CF6',
+            color: '#3B82F6',
             features: ['Flexible user experiences', 'Expert development services', 'Improved speed and efficiency']
         },
         {
@@ -56,7 +56,7 @@ export default function FrontendPage() {
             title: 'UI/UX Development',
             description: 'Tailored interfaces for every device with expert UI/UX design customized for your business.',
             icon: <Figma />,
-            color: '#F59E0B',
+            color: '#10B981',
             features: ['Expert UI/UX design', 'Customized for your business', 'Seamless cross-device functionality']
         },
         {
@@ -64,7 +64,7 @@ export default function FrontendPage() {
             title: 'Progressive Web Apps Development',
             description: 'PWAs for a native-like experience with mobile-friendly solutions and native app performance.',
             icon: <Smartphone />,
-            color: '#EC4899',
+            color: '#3B82F6',
             features: ['Mobile-friendly solutions', 'Native app performance', 'Seamless user experience']
         },
         {
@@ -72,7 +72,7 @@ export default function FrontendPage() {
             title: 'CMS Development',
             description: 'Build a responsive, reliable CMS with top-tier reliability, comprehensive solutions, and seamless content management.',
             icon: <Database />,
-            color: '#06B6D4',
+            color: '#10B981',
             features: ['Top-tier reliability', 'Comprehensive solutions', 'Seamless content management']
         },
     ];
@@ -295,7 +295,7 @@ export default function FrontendPage() {
     ];
 
     // ============ TRUSTED BY ============
-    const trustedCompanies = ['Microsoft', 'Amazon', 'Google', 'IBM', 'SAP', 'Oracle'];
+    // const trustedCompanies = ['Microsoft', 'Amazon', 'Google', 'IBM', 'SAP', 'Oracle'];
 
     // ============ INDUSTRIES ============
     const industries = [
@@ -414,7 +414,7 @@ export default function FrontendPage() {
             </section>
 
             {/* ===== TRUSTED BY SECTION ===== */}
-            <section className={styles.trustedSection}>
+            {/* <section className={styles.trustedSection}>
                 <div className={styles.container}>
                     <p className={styles.trustedLabel}>Trusted by startups and Fortune 500 companies</p>
                     <div className={styles.trustedLogos}>
@@ -432,7 +432,7 @@ export default function FrontendPage() {
                         ))}
                     </div>
                 </div>
-            </section>
+            </section> */}
 
             {/* ===== FRONTEND SERVICES SECTION ===== */}
             <section className={styles.servicesSection} id="services">

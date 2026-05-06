@@ -24,7 +24,7 @@ export default function ScaleUpsSolutionPage() {
     // ----- HERO TESTIMONIAL -----
     const testimonial = {
         name: 'Alexander',
-        role: 'CTO, ParnTech',
+        // role: 'CTO, ParnTech',
         content: 'Our startup scaled smoothly thanks to their expertise and commitment to quality. Truly dependable!',
         rating: 5,
         project: 'Series Partner'
@@ -367,25 +367,25 @@ export default function ScaleUpsSolutionPage() {
         {
             name: 'James Kelly',
             role: 'Data Analyst',
-            content: 'The Project managers took a lot of time to understand our project before coming up with a contract or what they thought we needed. I had the reassurance from the start that the project managers knew what type of project I wanted and what my needs were. That is reassuring, and that\'s why we chose BBMTech.',
+            content: 'The Project managers took a lot of time to understand our project before coming up with a contract or what they thought we needed. I had the reassurance from the start that the project managers knew what type of project I wanted and what my needs were. That is reassuring, and that\'s why we chose BBMCoders.',
             image: '/images/user.png'
         },
         {
             name: 'Judith Mueller',
-            role: 'Executive Director, Judith Foundation',
-            content: 'The team at BBMTech has provided us with exceptional services in creating this one-of-a-kind portal, and it has been a fantastic experience. I was particularly impressed by how efficiently and quickly the team always came up with creative solutions to provide us with all the functionalities within the portal we had requested.',
+            // role: 'Executive Director, Judith Foundation',
+            content: 'The team at BBMCoders has provided us with exceptional services in creating this one-of-a-kind portal, and it has been a fantastic experience. I was particularly impressed by how efficiently and quickly the team always came up with creative solutions to provide us with all the functionalities within the portal we had requested.',
             image: '/images/user.png'
         },
         {
             name: 'chris',
-            role: 'Director, Storgaze',
-            content: 'BBMTech had great technical expertise, both in front-end and back-end development. Other project management was well organized. Account management was friendly and always available. I would give BBMTech ten out of ten!',
+            // role: 'Director, Storgaze',
+            content: 'BBMCoders had great technical expertise, both in front-end and back-end development. Other project management was well organized. Account management was friendly and always available. I would give BBMCoders ten out of ten!',
             image: '/images/user.png'
         },
         {
             name: 'Mohammed Mira',
-            role: 'Director, FashionHint',
-            content: 'Huge thank you to BBMTech; they have been a massive help in enabling us to start developing our project within a few weeks, so it\'s been great! There have been two small bumps in the road, but overall, It\'s been a fantastic service. I have already recommended it to one of my friends.',
+            // role: 'Director, FashionHint',
+            content: 'Huge thank you to BBMCoders; they have been a massive help in enabling us to start developing our project within a few weeks, so it\'s been great! There have been two small bumps in the road, but overall, It\'s been a fantastic service. I have already recommended it to one of my friends.',
             image: '/images/user.png'
         }
     ];
@@ -418,7 +418,7 @@ export default function ScaleUpsSolutionPage() {
     // ----- FAQS (original simple design) -----
     const faqs = [
         {
-            question: 'How does BBMTech help startups scale effectively?',
+            question: 'How does BBMCoders help startups scale effectively?',
             answer: 'We offer focused development teams, agile development, and scalable technology solutions to enable startups to grow without infrastructure or hiring issues.'
         },
         {
@@ -426,7 +426,7 @@ export default function ScaleUpsSolutionPage() {
             answer: 'We usually onboard startups within days, not weeks. Our flexible staffing models ensure you get the right experts quickly, so you don’t lose momentum in your scaling journey.'
         },
         {
-            question: 'Can BBMTech handle both product development and post-launch scaling?',
+            question: 'Can BBMCoders handle both product development and post-launch scaling?',
             answer: 'Yes, we help with the whole cycle – from MVP development to scaling and optimizing the infrastructure, and adding features as the number of users increases.'
         },
         {
@@ -466,7 +466,7 @@ export default function ScaleUpsSolutionPage() {
                                 <Sparkles size={18} /> Scale Your Startup
                             </div>
                             <h1 className={styles.mainTitle}>
-                                Scale Your Startup with <span className={styles.highlight}>BBMTech</span>
+                                Scale Your Startup with <span className={styles.highlight}>BBMCoders</span>
                             </h1>
                             <p className={styles.subheadline}>
                                 Our expert teams, smart strategies, and flexible staffing enable your startup to scale securely and efficiently.
@@ -514,7 +514,7 @@ export default function ScaleUpsSolutionPage() {
                                 <p className={styles.testimonialText}>&quot;{testimonial.content}&quot;</p>
                                 <div className={styles.testimonialAuthor}>
                                     <h4>{testimonial.name}</h4>
-                                    <p>{testimonial.role}</p>
+                                    {/* <p>{testimonial.role}</p> */}
                                 </div>
                                 <div className={styles.ratings}>
                                     <div className={styles.ratingItem}>
@@ -540,7 +540,7 @@ export default function ScaleUpsSolutionPage() {
             </section>
 
             {/* ===== TRUSTED BY SECTION ===== */}
-            <section className={styles.trustedSection}>
+            {/* <section className={styles.trustedSection}>
                 <div className={styles.sectionContent}>
                     <p className={styles.trustedLabel}>Trusted by startups and Fortune 500 companies</p>
                     <div className={styles.trustedLogos}>
@@ -558,7 +558,7 @@ export default function ScaleUpsSolutionPage() {
                         ))}
                     </div>
                 </div>
-            </section>
+            </section> */}
 
             {/* ===== EXPERTISE SECTION (6 cards) ===== */}
             <section className={styles.expertiseSection} id="expertise">
@@ -567,7 +567,7 @@ export default function ScaleUpsSolutionPage() {
                         How Our Experts Drive <span className={styles.titleHighlight}>Startup Success</span>
                     </h2>
                     <p className={styles.sectionDescription}>
-                        At BBMTech, our experts help growth-stage startups scale seamlessly by combining deep technical expertise with proven strategies. We assist startups in growing sustainably by refining MVPs and building scalable SaaS products, always ensuring efficiency, performance, and reliability.
+                        At BBMCoders, our experts help growth-stage startups scale seamlessly by combining deep technical expertise with proven strategies. We assist startups in growing sustainably by refining MVPs and building scalable SaaS products, always ensuring efficiency, performance, and reliability.
                     </p>
                 </div>
 
@@ -738,7 +738,7 @@ export default function ScaleUpsSolutionPage() {
                         Your Reliable <span className={styles.titleHighlight}>Scale Startup Solution</span>
                     </h2>
                     <p className={styles.sectionDescription}>
-                        At BBMTech, we help startups to scale their solutions, which maintain the stability of products, increase performance, and speed up growth.
+                        At BBMCoders, we help startups to scale their solutions, which maintain the stability of products, increase performance, and speed up growth.
                     </p>
                 </div>
 

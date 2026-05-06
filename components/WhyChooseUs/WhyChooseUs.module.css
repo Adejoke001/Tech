@@ -1,6 +1,6 @@
 .whyChooseSection {
   padding: 2.3rem 0;
-  background: #fff5e6;
+  background: var(--gray-100, #f9fafb);
   position: relative;
   overflow: hidden;
 }
@@ -22,13 +22,13 @@
   font-size: 2.5rem;
   margin-top: 20px;
   font-weight: bold;
-  color: #1f2937;
+  color: var(--gray-900, #1f2937);
   margin-bottom: 0.75rem;
   line-height: 1.2;
 }
 
 .titleAccent {
-  background: linear-gradient(135deg, #10b981 0%, #34d399 100%);
+  background: var(--gradient-primary, linear-gradient(135deg, #3B82F6, #10B981));
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
@@ -36,7 +36,7 @@
 
 .sectionDescription {
   font-size: 1.1rem;
-  color: #6b7280;
+  color: var(--gray-500, #6b7280);
   max-width: 850px;
   margin: 0 auto;
   line-height: 1.6;
@@ -65,11 +65,11 @@
 
 /* Mobile: Alternate background for stacked cards */
 .processCard:nth-child(odd) {
-  background: #fff5e6;
+  background: var(--gray-100, #f9fafb);
 }
 
 .processCard:nth-child(even) {
-  background: #ffdc94;
+  background: var(--gray-200, #f3f4f6);
 }
 
 .processCard::before {
@@ -79,7 +79,7 @@
   left: 0;
   right: 0;
   height: 3px;
-  background: linear-gradient(90deg, #10b981, #34d399);
+  background: var(--gradient-primary, linear-gradient(90deg, #3B82F6, #10B981));
   transform: scaleX(0);
   transition: transform 0.4s ease;
 }
@@ -103,7 +103,7 @@
   width: 60px;
   height: 60px;
   margin: 0 auto 0.75rem;
-  background: linear-gradient(135deg, #10b981, #34d399);
+  background: var(--gradient-primary, linear-gradient(135deg, #3B82F6, #10B981));
   border-radius: 50%;
   display: flex;
   align-items: center;
@@ -120,17 +120,17 @@
 .processTitle {
   font-size: 1.25rem;
   font-weight: bold;
-  color: #1f2937;
+  color: var(--gray-900, #1f2937);
   margin-bottom: 0.5rem;
   transition: color 0.3s ease;
 }
 
 .processCard:hover .processTitle {
-  color: #10b981;
+  color: var(--primary-green, #10b981);
 }
 
 .processDescription {
-  color: #6b7280;
+  color: var(--gray-500, #6b7280);
   line-height: 1.5;
   font-size: 0.9rem;
 }
@@ -148,25 +148,25 @@
   /* Tablet: Reset mobile styles and apply row-based patterns */
   .processCard:nth-child(odd),
   .processCard:nth-child(even) {
-    background: #fff5e6;
+    background: var(--gray-100, #f9fafb);
   }
   
   /* First row: Light → Dark → Light → Dark */
   .processRow:nth-child(1) .processCard:nth-child(odd) {
-    background: #fff5e6;
+    background: var(--gray-100, #f9fafb);
   }
   
   .processRow:nth-child(1) .processCard:nth-child(even) {
-    background: #ffdc94;
+    background: var(--gray-200, #f3f4f6);
   }
   
   /* Second row: Dark → Light → Dark → Light */
   .processRow:nth-child(2) .processCard:nth-child(odd) {
-    background: #ffdc94;
+    background: var(--gray-200, #f3f4f6);
   }
   
   .processRow:nth-child(2) .processCard:nth-child(even) {
-    background: #fff5e6;
+    background: var(--gray-100, #f9fafb);
   }
 }
 
@@ -187,19 +187,19 @@
   
   /* Desktop: Same checkerboard pattern as tablet */
   .processRow:nth-child(1) .processCard:nth-child(odd) {
-    background: #fff5e6;
+    background: var(--gray-100, #f9fafb);
   }
   
   .processRow:nth-child(1) .processCard:nth-child(even) {
-    background: #ffdc94;
+    background: var(--gray-200, #f3f4f6);
   }
   
   .processRow:nth-child(2) .processCard:nth-child(odd) {
-    background: #ffdc94;
+    background: var(--gray-200, #f3f4f6);
   }
   
   .processRow:nth-child(2) .processCard:nth-child(even) {
-    background: #fff5e6;
+    background: var(--gray-100, #f9fafb);
   }
 }
 

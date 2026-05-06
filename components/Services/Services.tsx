@@ -1,6 +1,6 @@
 import React from 'react'
 import Link from 'next/link'
-import './services.modules.css'
+import styles from './services.module.css'  
 
 const Services = () => {
   const services = [
@@ -9,7 +9,6 @@ const Services = () => {
       title: 'Software Development',
       description: 'Custom software solutions built with cutting-edge technologies for web, mobile, and desktop platforms.',
       features: ['Web Applications', 'Mobile Apps', 'Desktop Software', 'API Development']
-      // No custom link – will use /services/software-development
     },
     {
       icon: '📱',
@@ -48,30 +47,30 @@ const Services = () => {
   ]
 
   return (
-    <section className="servicesSection">
-      <div className="container">
+    <section className={styles.servicesSection}>
+      <div className={styles.container}>
         {/* Section Header */}
-        <div className="sectionHeader">
-          <h2 className="sectionTitle">
-            Our <span className="titleAccent">Services</span>
+        <div className={styles.sectionHeader}>
+          <h2 className={styles.sectionTitle}>
+            Our <span className={styles.titleAccent}>Services</span>
           </h2>
-          <p className="sectionDescription">
+          <p className={styles.sectionDescription}>
             We offer end-to-end software development services with 17+ years of expertise, 
             delivering scalable and robust solutions for businesses worldwide.
           </p>
         </div>
 
         {/* Services Grid */}
-        <div className="servicesGrid">
+        <div className={styles.servicesGrid}>
           {services.map((service, index) => (
-            <div key={index} className="serviceCard">
-              <div className="serviceIcon">{service.icon}</div>
-              <h3 className="serviceTitle">{service.title}</h3>
-              <p className="serviceDescription">{service.description}</p>
-              <ul className="featuresList">
+            <div key={index} className={styles.serviceCard}>
+              <div className={styles.serviceIcon}>{service.icon}</div>
+              <h3 className={styles.serviceTitle}>{service.title}</h3>
+              <p className={styles.serviceDescription}>{service.description}</p>
+              <ul className={styles.featuresList}>
                 {service.features.map((feature, featureIndex) => (
-                  <li key={featureIndex} className="featureItem">
-                    <span className="featureDot"></span>
+                  <li key={featureIndex} className={styles.featureItem}>
+                    <span className={styles.featureDot}></span>
                     {feature}
                   </li>
                 ))}
@@ -79,24 +78,24 @@ const Services = () => {
               {/* Learn More Link – uses custom link if provided, else default slug */}
               <Link 
                 href={service.link || `/services/${service.title.toLowerCase().replace(/\s+/g, '-')}`}
-                className="learnMoreLink"
+                className={styles.learnMoreLink}
               >
                 Learn More
-                <span className="arrow">→</span>
+                <span className={styles.arrow}>→</span>
               </Link>
             </div>
           ))}
         </div>
 
         {/* CTA Section */}
-        <div className="ctaSection">
-          <div className="ctaCard">
-            <h3 className="ctaTitle">Ready to Start Your Project?</h3>
-            <p className="ctaDescription">
+        <div className={styles.ctaSection}>
+          <div className={styles.ctaCard}>
+            <h3 className={styles.ctaTitle}>Ready to Start Your Project?</h3>
+            <p className={styles.ctaDescription}>
               Let&apos;s discuss how our software development services can help your business grow.
             </p>
-            <div className="ctaButtons">
-              <Link href="/contact" className="primaryCtaButton">
+            <div className={styles.ctaButtons}>
+              <Link href="/contact" className={styles.primaryCtaButton}>
                 Get Free Consultation
               </Link>
             </div>

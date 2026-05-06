@@ -80,6 +80,7 @@ const ProjectInMind: React.FC<ProjectInMindProps> = ({
         </div>
       </div>
     </section>
+
   );
 };
 

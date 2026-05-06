@@ -19,7 +19,7 @@ export default function WebDevelopmentPage() {
     // ----- HERO TESTIMONIAL -----
     const testimonial = {
         name: 'Rachael Ajayi',
-        role: 'CTO, Uber solutions',
+        // role: 'CTO, Uber solutions',
         content: 'BBMcoders built our custom web application from the ground up. Their agile process, clear communication, and technical excellence delivered a platform that scaled effortlessly with our business.',
         rating: 5,
         project: 'Enterprise Platform'
@@ -361,7 +361,7 @@ export default function WebDevelopmentPage() {
                                 <p className={styles.testimonialText}>&quot;{testimonial.content}</p>
                                 <div className={styles.testimonialAuthor}>
                                     <strong>{testimonial.name}</strong>
-                                    <span>{testimonial.role}</span>
+                                    {/* <span>{testimonial.role}</span> */}
                                 </div>
                                 <div className={styles.testimonialRating}>
                                     {[...Array(testimonial.rating)].map((_, i) => (
@@ -375,7 +375,7 @@ export default function WebDevelopmentPage() {
             </section>
 
             {/* ===== TRUSTED BY SECTION ===== */}
-            <section className={styles.trustedSection}>
+            {/* <section className={styles.trustedSection}>
                 <div className={styles.container}>
                     <p className={styles.trustedLabel}>Trusted by startups and Fortune 500 companies</p>
                     <div className={styles.trustedLogos}>
@@ -393,7 +393,7 @@ export default function WebDevelopmentPage() {
                         ))}
                     </div>
                 </div>
-            </section>
+            </section> */}
 
             {/* ===== WEB SERVICES SECTION ===== */}
             <section className={styles.servicesSection} id="services">

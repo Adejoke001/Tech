@@ -25,7 +25,7 @@ export default function StartupsSolutionPage() {
     // ----- HERO TESTIMONIAL -----
     const testimonial = {
         name: 'George',
-        role: 'Co-founder, iDesign',
+        // role: 'Co-founder, iDesign',
         content: 'As a young startup, we often felt stuck managing scattered tools and workflows. Their solutions brought everything together, saving us time and reducing daily frustrations.',
         rating: 5,
         project: 'Startup Growth Partner'
@@ -410,7 +410,7 @@ export default function StartupsSolutionPage() {
                                 <p className={styles.testimonialText}>&quot;{testimonial.content}&quot;</p>
                                 <div className={styles.testimonialAuthor}>
                                     <h4>{testimonial.name}</h4>
-                                    <p>{testimonial.role}</p>
+                                    {/* <p>{testimonial.role}</p> */}
                                 </div>
                                 <div className={styles.ratings}>
                                     <div className={styles.ratingItem}>
@@ -436,7 +436,7 @@ export default function StartupsSolutionPage() {
             </section>
 
             {/* ===== TRUSTED BY SECTION ===== */}
-            <section className={styles.trustedSection}>
+            {/* <section className={styles.trustedSection}>
                 <div className={styles.sectionContent}>
                     <p className={styles.trustedLabel}>Trusted by startups and Fortune 500 companies</p>
                     <div className={styles.trustedLogos}>
@@ -454,7 +454,7 @@ export default function StartupsSolutionPage() {
                         ))}
                     </div>
                 </div>
-            </section>
+            </section> */}
 
             {/* ===== EXPERTISE SECTION (7 cards) ===== */}
             <section className={styles.expertiseSection} id="expertise">

@@ -62,7 +62,7 @@ export default function EducationPage() {
     // ----- HERO TESTIMONIAL -----
     const testimonial = {
         name: 'Sarah Johnson',
-        role: 'Director of Learning, EduTech',
+        // role: 'Director of Learning, EduTech',
         content: 'BBMcoders built our custom LMS from the ground up – it now serves 50,000+ students across 20 countries. Their deep understanding of EdTech and commitment to quality is unmatched.',
         rating: 5,
         project: 'Global Learning Platform'
@@ -399,7 +399,7 @@ export default function EducationPage() {
                                 <p className={styles.testimonialText}>&quot;{testimonial.content}&quot;</p>
                                 <div className={styles.testimonialAuthor}>
                                     <h4>{testimonial.name}</h4>
-                                    <p>{testimonial.role}</p>
+                                    {/* <p>{testimonial.role}</p> */}
                                 </div>
                                 <div className={styles.ratings}>
                                     <div className={styles.ratingItem}>
@@ -425,7 +425,7 @@ export default function EducationPage() {
             </section>
 
             {/* ===== TRUSTED BY SECTION ===== */}
-            <section className={styles.trustedSection}>
+            {/* <section className={styles.trustedSection}>
                 <div className={styles.sectionContent}>
                     <p className={styles.trustedLabel}>Trusted by startups and Fortune 500 companies</p>
                     <div className={styles.trustedLogos}>
@@ -443,7 +443,7 @@ export default function EducationPage() {
                         ))}
                     </div>
                 </div>
-            </section>
+            </section> */}
 
             {/* ===== EDUCATION SOLUTIONS SECTION ===== */}
             <section className={styles.solutionsSection} id="solutions">

@@ -1,19 +1,46 @@
-/* app/globals.css - FIXED ORDER */
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+/* app/globals.css */
+@import url('https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,100..900&family=Space+Grotesk:wght@400;500;600;700&family=Fira+Code:wght@400;500;600&display=swap');
 @import "tailwindcss";
 
 :root {
   --background: #ffffff;
   --foreground: #171717;
+  
+  /* ===== YOUR BRAND COLORS - ALWAYS AVAILABLE ===== */
+  /* Primary Brand Colors */
+  --primary-blue: #3B82F6;
+  --primary-green: #10B981;
+  --gradient-primary: linear-gradient(135deg, #3B82F6, #10B981);
+  --gradient-primary-dark: linear-gradient(135deg, #2563EB, #059669);
+
+  /* Neutral Grays */
+  --gray-900: #1F2937;
+  --gray-800: #374151;
+  --gray-700: #4B5563;
+  --gray-600: #6B7280;
+  --gray-500: #9CA3AF;
+  --gray-400: #D1D5DB;
+  --gray-300: #E5E7EB;
+  --gray-200: #F3F4F6;
+  --gray-100: #F9FAFB;
+
+  /* Surface Colors */
+  --dark-bg: #0F172A;
+  --dark-surface: #1E293B;
+  --white: #FFFFFF;
+
+  /* Gradients for Sections */
+  --gradient-section-light: linear-gradient(135deg, rgba(59, 130, 246, 0.03) 0%, rgba(16, 185, 129, 0.03) 100%);
+  --gradient-section-dark: linear-gradient(135deg, rgba(15, 23, 42, 0.88) 0%, rgba(30, 41, 59, 0.83) 100%);
+
+  /* Semantic */
+  --color-success: #10b981;
+  --color-warning: #f59e0b;
+  --color-error: #ef4444;
+  --color-info: #3b82f6;
 }
 
-/* @theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: 'Inter', sans-serif;
-  --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
-} */
-
+/* Optional: Dark mode overrides if needed */
 @media (prefers-color-scheme: dark) {
   :root {
     --background: #0a0a0a;
@@ -26,28 +53,16 @@ body {
   color: var(--foreground);
   font-family: 'Inter', system-ui, -apple-system, sans-serif;
 }
+
 h1, h2, h3, h4, h5, h6 {
   font-family: 'Space Grotesk', 'Inter', sans-serif;
   letter-spacing: -0.02em;
 }
 
-p {
+p, button, a, input, textarea, select {
   font-family: 'Inter', sans-serif;
-  
 }
 
-button {
-  font-family: 'Inter', sans-serif;
-}
-a {
-  font-family: 'Inter', sans-serif;
-  
-}
-input, textarea, select {
-  font-family: 'Inter', sans-serif;
-}
 code, pre {
   font-family: 'Fira Code', monospace;
 }
-
-

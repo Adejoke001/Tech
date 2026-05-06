@@ -34,9 +34,9 @@ export default function QAStrategyConsultingPage() {
 
   const testimonial = {
     name: "Jonathan Mill",
-    role: "C.O. FinTech",
+    // role: "C.O. FinTech",
     content:
-      "Outstanding results, clear communication, and a dedicated team. ValueCoders QA consulting transformed our testing, achieving a 95% reduction in bugs and cutting time-to-market by 40%.",
+      "Outstanding results, clear communication, and a dedicated team. BBMCoders QA consulting transformed our testing, achieving a 95% reduction in bugs and cutting time-to-market by 40%.",
     rating: 5,
     project: "Financial Platform",
   };
@@ -50,7 +50,7 @@ export default function QAStrategyConsultingPage() {
       icon: <Settings className={styles.serviceIcon} />,
       image:
         "https://images.unsplash.com/photo-1560264357-8d9202250f21?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTF8fHF1YWxpdHklMjBhc3N1cmFuY2V8ZW58MHx8MHx8fDA%3D",
-      color: "#df920bff",
+      color: "#3b82f6",
       features: ["Project Analysis", "Strategy Design", "Cost Estimation"],
     },
     {
@@ -76,7 +76,7 @@ export default function QAStrategyConsultingPage() {
       icon: <TrendingUp className={styles.serviceIcon} />,
       image:
         "https://images.unsplash.com/photo-1555949963-aa79dcee981c?auto=format&fit=crop&w=800&q=80",
-      color: "#8b5cf6",
+      color: "#3b82f6",
       features: [
         "Problem Identification",
         "Strategy Development",
@@ -91,7 +91,7 @@ export default function QAStrategyConsultingPage() {
       icon: <Shield className={styles.serviceIcon} />,
       image:
         "https://images.unsplash.com/photo-1504384308090-c894fdcc538d?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8cXVhbGl0eSUyMGFzc3VyYW5jZXxlbnwwfHwwfHx8MA%3D%3D",
-      color: "#ef4444",
+      color: "#10b981",
       features: [
         "Compliance Audit",
         "Certification Roadmap",
@@ -121,7 +121,7 @@ export default function QAStrategyConsultingPage() {
       icon: <TestTube className={styles.serviceIcon} />,
       image:
         "https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=800&q=80",
-      color: "#06b6d4",
+      color: "#10b981",
       features: [
         "Custom Scenarios",
         "Automation Feasibility",
@@ -147,7 +147,7 @@ export default function QAStrategyConsultingPage() {
         "Accelerate time to market with streamlined QA processes that eliminate bottlenecks without quality loss.",
       icon: <Zap className={styles.benefitIcon} />,
       metric: "40%",
-      color: "#f59e0b",
+      color: "#3b82f6",
     },
     {
       id: 3,
@@ -156,7 +156,7 @@ export default function QAStrategyConsultingPage() {
         "Ensure flawless software with optimized QA testing that identifies and eliminates defects for smooth launches.",
       icon: <Target className={styles.benefitIcon} />,
       metric: "100%",
-      color: "#8b5cf6",
+      color: "#10b981",
     },
     {
       id: 4,
@@ -165,7 +165,7 @@ export default function QAStrategyConsultingPage() {
         "Achieve exceptional quality with cost-effective solutions and skilled professionals delivering precise results.",
       icon: <DollarSign className={styles.benefitIcon} />,
       metric: "30%",
-      color: "#ef4444",
+      color: "#3b82f6",
     },
     {
       id: 5,
@@ -174,7 +174,7 @@ export default function QAStrategyConsultingPage() {
         "Build a tailored QA strategy with structured testing processes ensuring quality at every stage.",
       icon: <ClipboardList className={styles.benefitIcon} />,
       metric: "100%",
-      color: "#3b82f6",
+      color: "#10b981",
     },
     {
       id: 6,
@@ -183,7 +183,7 @@ export default function QAStrategyConsultingPage() {
         "Leverage the perfect mix of manual and automated testing for early defect detection and efficiency.",
       icon: <GitMerge className={styles.benefitIcon} />,
       metric: "50:50",
-      color: "#06b6d4",
+      color: "#3b82f6",
     },
     {
       id: 7,
@@ -201,7 +201,7 @@ export default function QAStrategyConsultingPage() {
         "Deliver high-quality software that meets user expectations, leading to increased satisfaction and loyalty.",
       icon: <Users className={styles.benefitIcon} />,
       metric: "98%",
-      color: "#8b5cf6",
+      color: "#10b981",
     },
   ];
 
@@ -296,7 +296,7 @@ export default function QAStrategyConsultingPage() {
       description:
         "Building smart healthcare solutions with HIPAA compliance, medical device testing, and EHR validation.",
       icon: "🏥",
-      color: "#34d399",
+      color: "#10b981",
       solutions: [
         "HIPAA Compliance",
         "Medical Device Testing",
@@ -310,7 +310,7 @@ export default function QAStrategyConsultingPage() {
       description:
         "Disrupting traditional finance with PCI DSS compliance, fraud detection, and transaction security.",
       icon: "💰",
-      color: "#f59e0b",
+      color: "#3b82f6",
       solutions: [
         "PCI DSS Compliance",
         "Fraud Detection",
@@ -324,7 +324,7 @@ export default function QAStrategyConsultingPage() {
       description:
         "Enhancing retail journeys with payment gateway testing, inventory management, and user experience.",
       icon: "🛍️",
-      color: "#8b5cf6",
+      color: "#10b981",
       solutions: [
         "Payment Gateway Testing",
         "Inventory Management",
@@ -338,7 +338,7 @@ export default function QAStrategyConsultingPage() {
       description:
         "Custom tech to empower brands with streaming quality, content delivery, and platform compatibility.",
       icon: "🎬",
-      color: "#ef4444",
+      color: "#3b82f6",
       solutions: [
         "Streaming Quality",
         "Content Delivery",
@@ -352,7 +352,7 @@ export default function QAStrategyConsultingPage() {
       description:
         "Shaping digital learning with LMS testing, accessibility compliance, and scalability testing.",
       icon: "🎓",
-      color: "#3b82f6",
+      color: "#10b981",
       solutions: [
         "LMS Testing",
         "Accessibility Compliance",
@@ -366,7 +366,7 @@ export default function QAStrategyConsultingPage() {
       description:
         "Secure, scalable IoT solutions connecting devices and enabling real‑time data insights for industrial automation, smart homes, and asset tracking.",
       icon: "📡",
-      color: "#06b6d4",
+      color: "#3b82f6",
       challenges:
         "Device heterogeneity, real‑time data processing, connectivity reliability, and end‑to‑end security.",
       solutions: [
@@ -386,7 +386,7 @@ export default function QAStrategyConsultingPage() {
       title: "Basic QA Audit",
       description:
         "Process audit and improvement suggestions for small-scale projects.",
-      color: "#34d399",
+      color: "#10b981",
     },
     {
       id: 2,
@@ -394,7 +394,7 @@ export default function QAStrategyConsultingPage() {
       title: "End-to-End Setup",
       description:
         "Complete QA strategy, planning, and execution for growing businesses.",
-      color: "#f59e0b",
+      color: "#3b82f6",
     },
     {
       id: 3,
@@ -402,7 +402,7 @@ export default function QAStrategyConsultingPage() {
       description:
         "Test automation framework design with continuous integration support.",
       title: "Automation Framework",
-      color: "#8b5cf6",
+      color: "#10b981",
     },
     {
       id: 4,
@@ -410,7 +410,7 @@ export default function QAStrategyConsultingPage() {
       title: "Enterprise Compliance",
       description:
         "Pre-certification QA consulting ensuring compliance with industry standards.",
-      color: "#ef4444",
+      color: "#3b82f6",
     },
   ];
 
@@ -513,7 +513,7 @@ export default function QAStrategyConsultingPage() {
                     <h4 className={styles.testimonialName}>
                       {testimonial.name}
                     </h4>
-                    <p className={styles.testimonialRole}>{testimonial.role}</p>
+                    {/* <p className={styles.testimonialRole}>{testimonial.role}</p> */}
                     <div className={styles.testimonialRating}>
                       {[...Array(testimonial.rating)].map((_, i) => (
                         <Star key={i} className={styles.starIcon} />
@@ -538,7 +538,7 @@ export default function QAStrategyConsultingPage() {
       </section>
 
       {/* Trusted By Section */}
-      <section className={styles.trustedSection}>
+      {/* <section className={styles.trustedSection}>
         <div className={styles.sectionHeader}>
           <p className={styles.trustedLabel}>
             Trusted by startups and Fortune 500 companies
@@ -564,7 +564,7 @@ export default function QAStrategyConsultingPage() {
             ))}
           </div>
         </div>
-      </section>
+      </section> */}
 
       {/* Strategic Benefits Banner */}
       <section className={styles.benefitsBanner}>

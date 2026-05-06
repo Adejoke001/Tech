@@ -1,3 +1,4 @@
+/* ===== NAVBAR STYLES ===== */
 .navbar {
   background: transparent;
   position: absolute;
@@ -28,7 +29,7 @@
   }
 }
 
-/* Logo Styles - wrapper height 60px, logo scaled larger */
+/* Logo Styles */
 .logoLink {
   display: flex;
   align-items: center;
@@ -36,7 +37,6 @@
   flex-shrink: 0;
 }
 
-/* Mobile spacing fix – adds breathing room between logo and menu button */
 @media (max-width: 1023px) {
   .logoLink {
     margin-right: 1.2rem;
@@ -46,29 +46,27 @@
 .logoWrapper {
   position: relative;
   width: 140px;
-  height: 72px;               /* reduced from 70px */
+  height: 72px;
   display: flex;
   align-items: center;
-  overflow: visible;          /* prevents clipping of scaled logo */
+  overflow: visible;
 }
 
 .logoImage {
   object-fit: contain;
   height: 100%;
   width: auto;
-  transform: scale(2.1);      /* bumped up from 1.4 to make logo bigger overall */
+  transform: scale(2.1);
   transform-origin: center;
   transition: all 0.3s ease;
- 
 }
 
-/* Responsive adjustments – higher scales to compensate for smaller wrapper */
 @media (min-width: 640px) {
   .logoWrapper {
     width: 130px;
   }
   .logoImage {
-    transform: scale(1.7);    /* was 1.5 */
+    transform: scale(1.7);
   }
 }
 
@@ -77,7 +75,7 @@
     width: 140px;
   }
   .logoImage {
-    transform: scale(1.9);    /* was 1.6 */
+    transform: scale(1.9);
   }
 }
 
@@ -86,7 +84,7 @@
     width: 160px;
   }
   .logoImage {
-    transform: scale(2.0);    /* was 1.7 */
+    transform: scale(2.0);
   }
   .logoLink {
     margin-right: 0;
@@ -98,17 +96,15 @@
     width: 180px;
   }
   .logoImage {
-    transform: scale(2.1);    /* was 1.8 */
+    transform: scale(2.1);
   }
 }
 
-/* Hover effect - slight extra increase */
 .logoLink:hover .logoImage {
   transform: scale(1.05);
   opacity: 0.95;
 }
 
-/* When navbar has white background (no longer used, but keep for safety) */
 .navbarHovered .logoImage {
   filter: drop-shadow(0 1px 2px rgba(0, 0, 0, 0.1));
 }
@@ -132,7 +128,7 @@
 }
 
 .dropdownButton {
-  color: white;
+  color: #ffffff;  /* White navlink */
   font-weight: 500;
   font-size: 1rem;
   padding: 0.3rem 0;
@@ -145,9 +141,8 @@
   position: relative;
 }
 
-/* Hover – text stays white, only underline appears */
 .dropdownButton:hover {
-  color: white;
+  color: #ffffff;  /* Stay white on hover */
 }
 
 .dropdownButton:hover::after {
@@ -158,24 +153,22 @@
   width: 100%;
   height: 2px;
   margin-bottom: 5px;
-  background-color: #FFAD00;
+  background-color: var(--primary-blue);
 }
 
-/* Keep white when navbar is hovered */
 .dropdownButtonHovered {
-  color: white;
+  color: #ffffff;
 }
 
-/* Dropdown Menu */
 .dropdownMenu {
   position: absolute;
   top: 100%;
   left: 0;
   width: 20rem;
-  background: white;
+  background: #ffffff;  /* White background */
   box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
   border-radius: 0.5rem;
-  border: 1px solid #e5e7eb;
+  border: 1px solid var(--gray-300);
   padding: 0.75rem 0;
   opacity: 0;
   visibility: hidden;
@@ -193,15 +186,15 @@
 .dropdownLink {
   display: block;
   padding: 0.5rem 1rem;
-  color: #374151;
+  color: var(--gray-700);
   font-size: 0.875rem;
   text-decoration: none;
   transition: all 0.2s ease;
 }
 
 .dropdownLink:hover {
-  background-color: #eff6ff;
-  color: #FFAD00;
+  background-color: var(--gray-100);
+  color: var(--primary-blue);
 }
 
 .dropdownLinkContent {
@@ -218,9 +211,9 @@
   justify-content: center;
 }
 
-/* Nav Links (if used elsewhere) */
+/* Nav Links */
 .navLink {
-  color: white;
+  color: #ffffff;  /* White navlink */
   font-weight: 500;
   font-size: 1rem;
   padding: 0.3rem 0;
@@ -230,7 +223,7 @@
 }
 
 .navLink:hover {
-  color: white;
+  color: #ffffff;  /* Stay white on hover */
 }
 
 .navLink:hover::after {
@@ -240,11 +233,11 @@
   left: 0;
   width: 100%;
   height: 2px;
-  background-color: #FFAD00;
+  background-color: var(--primary-blue);
 }
 
 .navLinkHovered {
-  color: white;
+  color: #ffffff;
 }
 
 /* Contact Button */
@@ -262,12 +255,14 @@
 }
 
 .contactButton:hover {
-  background-color: #FFAD00;
+  background: var(--gradient-primary);
+  color: white;
   transform: translateY(-1px);
 }
 
 .contactButtonHovered {
-  background-color: #FFAD00;
+  background: var(--gradient-primary);
+  color: white;
 }
 
 @media (min-width: 1024px) {
@@ -278,7 +273,7 @@
 
 /* Mobile Menu Button */
 .mobileMenuButton {
-  color: white;
+  color: #ffffff;  /* White */
   padding: 0.3rem;
   transition: color 0.3s ease;
   background: none;
@@ -290,7 +285,7 @@
 }
 
 .mobileMenuButtonHovered {
-  color: white;
+  color: #ffffff;
 }
 
 @media (min-width: 1024px) {
@@ -302,7 +297,7 @@
 /* Mobile Menu */
 .mobileMenu {
   margin-top: 0.5rem;
-  background: white;
+  background: #ffffff;  /* White background */
   border-radius: 0.5rem;
   box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
   overflow-y: auto;
@@ -312,21 +307,21 @@
 .mobileLink {
   display: block;
   padding: 1.2rem 1.5rem;
-  color: #374151;
+  color: var(--gray-700);
   font-weight: 500;
   text-decoration: none;
-  border-bottom: 1px solid #f3f4f6;
+  border-bottom: 1px solid var(--gray-100);
   transition: all 0.3s ease;
 }
 
 .mobileLink:hover {
-  background-color: #f9fafb;
-  color: #FFAD00;
+  background-color: var(--gray-100);
+  color: var(--primary-blue);
 }
 
 /* Mobile Dropdown */
 .mobileDropdownContainer {
-  border-bottom: 1px solid #f3f4f6;
+  border-bottom: 1px solid var(--gray-100);
 }
 
 .mobileDropdownButton {
@@ -338,12 +333,12 @@
   background: none;
   border: none;
   font-weight: 500;
-  color: #374151;
+  color: var(--gray-700);
   cursor: pointer;
 }
 
 .mobileDropdownMenu {
-  background-color: #f9fafb;
+  background-color: var(--gray-100);
 }
 
 .mobileDropdownLink {
@@ -352,13 +347,13 @@
   gap: 0.75rem;
   padding: 0.9rem 1.5rem 0.9rem 2.5rem;
   text-decoration: none;
-  color: #4b5563;
+  color: var(--gray-500);
   font-size: 0.9rem;
 }
 
 .mobileDropdownLink:hover {
-  background-color: #eff6ff;
-  color: #FFAD00;
+  background-color: var(--gray-200);
+  color: var(--primary-blue);
 }
 
 /* Mobile Contact */
@@ -366,12 +361,11 @@
   display: block;
   width: calc(100% - 3rem);
   margin: 1.5rem;
-  background-color: #FFAD00;
-  color: black;
+  background: var(--gradient-primary);
+  color: white;
   padding: 0.9rem;
   border-radius: 0.5rem;
   font-weight: 600;
   text-align: center;
   text-decoration: none;
 }
-

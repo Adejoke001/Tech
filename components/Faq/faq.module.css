@@ -1,6 +1,8 @@
+/* faq.module.css */
+
 .faqSection {
   padding: 4rem 0;
-  background: white;
+  background: var(--white, white);
   position: relative;
 }
 
@@ -19,13 +21,13 @@
 .sectionTitle {
   font-size: 2.5rem;
   font-weight: 700;
-  color: #1e293b;
+  color: var(--gray-900, #1e293b);
   line-height: 1.2;
   margin-bottom: 1rem;
 }
 
 .titleAccent {
-  background: linear-gradient(135deg, #10b981, #34d399);
+  background: var(--gradient-primary, linear-gradient(135deg, #3B82F6, #10B981));
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
@@ -33,7 +35,7 @@
 
 .sectionDescription {
   font-size: 1.25rem;
-  color: #64748b;
+  color: var(--gray-500, #64748b);
   line-height: 1.6;
   max-width: 600px;
   margin: 0 auto;
@@ -54,21 +56,21 @@
 }
 
 .faqItem {
-  border: 1px solid #e2e8f0;
+  border: 1px solid var(--gray-300, #e2e8f0);
   border-radius: 12px;
   overflow: hidden;
   transition: all 0.3s ease;
-  background: white;
+  background: var(--white, white);
 }
 
 .faqItem:hover {
-  border-color: #cbd5e1;
+  border-color: var(--gray-400, #cbd5e1);
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
 }
 
 .faqItem.active {
-  border-color: #FFAD00;
-  box-shadow: 0 8px 25px rgba(255, 173, 0, 0.15);
+  border-color: var(--primary-blue, #3B82F6);
+  box-shadow: 0 8px 25px rgba(59, 130, 246, 0.15);
 }
 
 .faqQuestion {
@@ -86,18 +88,18 @@
 }
 
 .faqQuestion:hover {
-  background: #f8fafc;
+  background: var(--gray-100, #f8fafc);
 }
 
 .faqItem.active .faqQuestion {
-  background: #fffaf0;
-  border-bottom: 1px solid #e2e8f0;
+  background: var(--gray-100, #f8fafc);
+  border-bottom: 1px solid var(--gray-300, #e2e8f0);
 }
 
 .questionText {
   font-size: 1.125rem;
   font-weight: 600;
-  color: #1e293b;
+  color: var(--gray-900, #1e293b);
   line-height: 1.4;
 }
 
@@ -114,7 +116,7 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  background: #64748b;
+  background: var(--gray-500, #64748b);
   transition: all 0.3s ease;
 }
 
@@ -131,7 +133,7 @@
   transform: translate(-50%, -50%);
   width: 2px;
   height: 14px;
-  background: #64748b;
+  background: var(--gray-500, #64748b);
   transition: all 0.3s ease;
 }
 
@@ -139,11 +141,11 @@
   width: 14px;
   height: 2px;
   opacity: 0;
-  background: #FFAD00;
+  background: var(--primary-blue, #3B82F6);
 }
 
 .faqItem.active .plusIcon {
-  background: #FFAD00;
+  background: var(--primary-blue, #3B82F6);
 }
 
 .faqItem.active .plusIcon::before {
@@ -152,7 +154,7 @@
 
 .faqItem.active .minusIcon {
   opacity: 1;
-  background: #FFAD00;
+  background: var(--primary-blue, #3B82F6);
 }
 
 .faqAnswer {
@@ -167,12 +169,12 @@
 
 .answerContent {
   padding: 0 1.5rem 1.5rem;
-  color: #475569;
+  color: var(--gray-700, #475569);
   line-height: 1.6;
   font-size: 1rem;
 }
 
-/* Side Content - Updated for Sticky Behavior */
+/* Side Content - Sticky Behavior */
 .sideContent {
   display: flex;
   justify-content: center;
@@ -183,14 +185,14 @@
 }
 
 .helpCard {
-  background: linear-gradient(135deg, #10b981, #34d399);
+  background: var(--gradient-primary, linear-gradient(135deg, #3B82F6, #10B981));
   padding: 2.5rem;
   border-radius: 16px;
   text-align: center;
   color: white;
   max-width: 400px;
   width: 100%;
-  box-shadow: 0 10px 30px rgba(16, 185, 129, 0.2);
+  box-shadow: 0 10px 30px rgba(59, 130, 246, 0.2);
 }
 
 .helpIcon {
@@ -213,8 +215,8 @@
 }
 
 .helpButton .buttonLink {
-  background: #FFAD00;
-  color: #1e293b;
+  background: white;
+  color: var(--primary-blue, #3B82F6);
   border: none;
   padding: 1rem 2rem;
   font-size: 1rem;
@@ -225,13 +227,15 @@
   display: inline-flex;
   align-items: center;
   gap: 0.5rem;
-  box-shadow: 0 4px 12px rgba(255, 173, 0, 0.3);
+  text-decoration: none;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 }
 
 .helpButton .buttonLink:hover {
-  background: #10b981;
-  color: white;
-  box-shadow: 0 6px 20px rgba(16, 185, 129, 0.4);
+  background: var(--gray-100, #f8fafc);
+  color: var(--primary-green, #10b981);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
 }
 
 .buttonArrow {

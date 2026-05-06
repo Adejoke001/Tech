@@ -48,13 +48,13 @@
   border-radius: 12px;
   overflow: hidden;
   transition: all 0.4s ease;
-  background: var(--dark-secondary, #1e293b);
+  background: var(--dark-surface, #1e293b);
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
 }
 
 .solutionCard:hover {
   transform: translateY(-8px);
-  box-shadow: 0 20px 40px rgba(16, 185, 129, 0.2);
+  box-shadow: 0 20px 40px rgba(59, 130, 246, 0.2);
 }
 
 .cardImage {
@@ -66,7 +66,7 @@
 .imagePlaceholder {
   width: 100%;
   height: 100%;
-  background: linear-gradient(135deg, var(--primary-green, #10b981), #059669);
+  background: var(--gradient-primary, linear-gradient(135deg, #3B82F6, #10B981));
   display: flex;
   align-items: center;
   justify-content: center;
@@ -102,7 +102,7 @@
   left: 0;
   right: 0;
   bottom: 0;
-  background: linear-gradient(135deg, rgba(16, 185, 129, 0.95), rgba(5, 150, 105, 0.95));
+  background: var(--gradient-primary, linear-gradient(135deg, #3B82F6, #10B981));
   color: white;
   padding: 2rem 1.5rem;
   display: flex;

@@ -242,14 +242,14 @@ export default function CloudServicesPage() {
             </section>
 
             {/* ===== TRUSTED BY ===== */}
-            <section className={styles.trustedBy}>
+            {/* <section className={styles.trustedBy}>
                 <p className={styles.trustedLabel}>Trusted by startups and Fortune 500 companies</p>
                 <div className={styles.trustedLogos}>
                     {['Microsoft', 'Google', 'Amazon', 'IBM', 'Oracle'].map((logo, i) => (
                         <div key={i} className={styles.logoItem}>{logo}</div>
                     ))}
                 </div>
-            </section>
+            </section> */}
 
             {/* ===== MAIN CONTENT TABS ===== */}
             <section className={styles.mainContent}>

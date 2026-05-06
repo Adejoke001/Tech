@@ -1,21 +1,21 @@
 'use client';
-import React, { useState } from 'react';
+// import React, { useState } from 'react';
 import styles from './ourvision.module.css';
 import Image from 'next/image';
 
 const OurVision = () => {
-  const [imageErrors, setImageErrors] = useState<{[key: number]: boolean}>({});
+  // const [imageErrors, setImageErrors] = useState<{[key: number]: boolean}>({});
   
-  const trustedClients = [
-    { id: 1, name: "GoodFirms", logo: "/images/goodfirm.png" },
-    { id: 2, name: "Clutch", logo: "/images/clutch.png" },
-    { id: 3, name: "TopDevelopers", logo: "/images/topdevelopers.png" },
-    { id: 4, name: "DesignRush", logo: "/images/designrush.png" }
-  ];
+  // const trustedClients = [
+  //   { id: 1, name: "GoodFirms", logo: "/images/goodfirm.png" },
+  //   { id: 2, name: "Clutch", logo: "/images/clutch.png" },
+  //   { id: 3, name: "TopDevelopers", logo: "/images/topdevelopers.png" },
+  //   { id: 4, name: "DesignRush", logo: "/images/designrush.png" }
+  // ];
 
-  const handleImageError = (clientId: number) => {
-    setImageErrors(prev => ({ ...prev, [clientId]: true }));
-  };
+  // const handleImageError = (clientId: number) => {
+  //   setImageErrors(prev => ({ ...prev, [clientId]: true }));
+  // };
 
   return (
     <section className={styles.visionSection}>
@@ -75,7 +75,7 @@ const OurVision = () => {
             </div>
 
             {/* Trusted Clients - Moved to right column */}
-            <div className={styles.clientsSection}>
+            {/* <div className={styles.clientsSection}>
               <p className={styles.clientsTitle}>Trusted by Industry Leaders</p>
               <div className={styles.clientsGrid}>
                 {trustedClients.map((client) => (
@@ -97,7 +97,7 @@ const OurVision = () => {
                   </div>
                 ))}
               </div>
-            </div>
+            </div> */}
           </div>
         </div>
       </div>

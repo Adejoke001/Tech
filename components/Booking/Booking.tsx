@@ -1,41 +1,41 @@
 'use client';
-import React, { useState, useRef, FormEvent, ChangeEvent, DragEvent } from 'react';
+import React, {FormEvent } from 'react';
 import Link from 'next/link';
 import styles from './booking.module.css';
 
 const Booking = () => {
-  const fileInputRef = useRef<HTMLInputElement>(null);
-  const [isDragging, setIsDragging] = useState(false);
+  // const fileInputRef = useRef<HTMLInputElement>(null);
+  // const [isDragging, setIsDragging] = useState(false);
 
-  const handleFileDrop = (e: DragEvent<HTMLDivElement>) => {
-    e.preventDefault();
-    setIsDragging(false);
-    const files = e.dataTransfer.files;
-    if (files.length > 0) {
-      console.log('Files dropped:', files);
-    }
-  };
+  // const handleFileDrop = (e: DragEvent<HTMLDivElement>) => {
+  //   e.preventDefault();
+  //   setIsDragging(false);
+  //   const files = e.dataTransfer.files;
+  //   if (files.length > 0) {
+  //     console.log('Files dropped:', files);
+  //   }
+  // };
 
-  const handleFileInput = (e: ChangeEvent<HTMLInputElement>) => {
-    const files = e.target.files;
-    if (files && files.length > 0) {
-      console.log('Files selected:', files);
-    }
-  };
+  // const handleFileInput = (e: ChangeEvent<HTMLInputElement>) => {
+  //   const files = e.target.files;
+  //   if (files && files.length > 0) {
+  //     console.log('Files selected:', files);
+  //   }
+  // };
 
-  const handleDragOver = (e: DragEvent<HTMLDivElement>) => {
-    e.preventDefault();
-    setIsDragging(true);
-  };
+  // const handleDragOver = (e: DragEvent<HTMLDivElement>) => {
+  //   e.preventDefault();
+  //   setIsDragging(true);
+  // };
 
-  const handleDragLeave = (e: DragEvent<HTMLDivElement>) => {
-    e.preventDefault();
-    setIsDragging(false);
-  };
+  // const handleDragLeave = (e: DragEvent<HTMLDivElement>) => {
+  //   e.preventDefault();
+  //   setIsDragging(false);
+  // };
 
-  const handleBrowseClick = () => {
-    fileInputRef.current?.click();
-  };
+  // const handleBrowseClick = () => {
+  //   fileInputRef.current?.click();
+  // };
 
   const handleSubmit = (e: FormEvent<HTMLFormElement>) => {
     e.preventDefault();
@@ -229,7 +229,7 @@ Best regards,
                   ></textarea>
                 </div>
 
-                <div className={styles.formGroup}>
+                {/* <div className={styles.formGroup}>
                   <label className={styles.formLabel}>Attach Files</label>
                   <div
                     className={`${styles.fileDropZone} ${
@@ -255,7 +255,7 @@ Best regards,
                       </span>
                     </div>
                   </div>
-                </div>
+                </div> */}
 
                 <div className={styles.buttonContainer}>
                   <button type="submit" className={styles.submitButton}>

@@ -11,7 +11,7 @@
   position: relative;
   min-height: 90vh;
   padding: 120px 2rem 80px;
-  background: linear-gradient(135deg, rgba(15, 23, 42, 0.88) 0%, rgba(30, 41, 59, 83) 100%);
+  background: linear-gradient(135deg, rgba(15, 23, 42, 0.92) 0%, rgba(30, 41, 59, 0.92) 100%);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -59,17 +59,17 @@
 .sparkleIcon {
   width: 1.5rem;
   height: 1.5rem;
-  color: #60a5fa;
+  color: var(--primary-blue);
 }
 
 .heroBadge {
-  background: rgba(96, 165, 250, 0.2);
-  color: #93c5fd;
+  background: rgba(59, 130, 246, 0.2);
+  color: var(--gray-300);
   padding: 0.5rem 1rem;
   border-radius: 2rem;
   font-size: 0.875rem;
   font-weight: 600;
-  border: 1px solid rgba(96, 165, 250, 0.3);
+  border: 1px solid rgba(59, 130, 246, 0.3);
 }
 
 .heroTitle {
@@ -81,7 +81,7 @@
 }
 
 .gradientText {
-  background: linear-gradient(135deg, #60a5fa 0%, #34d399 100%);
+  background: var(--gradient-primary);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
@@ -89,7 +89,7 @@
 
 .heroDescription {
   font-size: 1.25rem;
-  color: #cbd5e1;
+  color: var(--gray-300);
   line-height: 1.6;
   margin-bottom: 2.5rem;
   max-width: 600px;
@@ -102,26 +102,26 @@
 }
 
 .primaryButton {
-  background: linear-gradient(135deg, #60a5fa, #34d399);
+  background: var(--gradient-primary);
   color: white;
   border: none;
   padding: 1rem 2rem;
   font-size: 1rem;
   font-weight: 600;
-  border-radius: 8px;
+  border-radius: 50px;
   cursor: pointer;
   display: inline-flex;
   align-items: center;
   gap: 0.5rem;
   transition: all 0.3s ease;
   text-decoration: none;
-  box-shadow: 0 4px 15px rgba(96, 165, 250, 0.3);
+  box-shadow: 0 4px 15px rgba(59, 130, 246, 0.3);
 }
 
 .primaryButton:hover {
   transform: translateY(-2px);
-  box-shadow: 0 6px 20px rgba(96, 165, 250, 0.4);
-  background: linear-gradient(135deg, #7dd3fc, #6ee7b7);
+  box-shadow: 0 6px 20px rgba(59, 130, 246, 0.4);
+  background: var(--gradient-primary-dark);
 }
 
 .buttonIcon {
@@ -129,7 +129,7 @@
   height: 1.25rem;
 }
 
-/* Hero Testimonial - Updated */
+/* Hero Testimonial */
 .heroTestimonial {
   display: flex;
   flex-direction: column;
@@ -171,20 +171,20 @@
   height: 80px;
   border-radius: 50%;
   object-fit: cover;
-  border: 3px solid #34d399;
+  border: 3px solid var(--primary-green);
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
 }
 
 .testimonialName {
   font-size: 1.125rem;
   font-weight: 700;
-  color: #1f2937;
+  color: var(--gray-900);
   margin: 0 0 0.25rem 0;
 }
 
 .testimonialRole {
   font-size: 0.875rem;
-  color: #6b7280;
+  color: var(--gray-500);
   margin: 0 0 0.5rem 0;
 }
 
@@ -202,13 +202,13 @@
 .quoteIcon {
   width: 1.5rem;
   height: 1.5rem;
-  color: #34d399;
+  color: var(--primary-green);
   margin-bottom: 1rem;
   opacity: 0.7;
 }
 
 .testimonialContent {
-  color: #4b5563;
+  color: var(--gray-700);
   font-size: 1rem;
   line-height: 1.6;
   margin-bottom: 1.5rem;
@@ -216,7 +216,7 @@
 }
 
 .testimonialFooter {
-  border-top: 1px solid #e5e7eb;
+  border-top: 1px solid var(--gray-300);
   padding-top: 1rem;
 }
 
@@ -224,7 +224,7 @@
   display: flex;
   align-items: center;
   gap: 0.5rem;
-  color: #6b7280;
+  color: var(--gray-500);
   font-size: 0.875rem;
   font-weight: 500;
 }
@@ -232,13 +232,13 @@
 .badgeIcon {
   width: 1rem;
   height: 1rem;
-  color: #34d399;
+  color: var(--primary-green);
 }
 
 /* Trusted Section */
 .trustedSection {
   padding: 3rem 2rem;
-  background: #f9fafb;
+  background: var(--gray-100);
 }
 
 .sectionHeader {
@@ -249,7 +249,7 @@
 
 .trustedLabel {
   font-size: 1rem;
-  color: #6b7280;
+  color: var(--gray-500);
   font-weight: 600;
   margin-bottom: 2rem;
   text-transform: uppercase;
@@ -264,7 +264,7 @@
 }
 
 .logoItem {
-  background: white;
+  background: var(--white);
   padding: 1rem 2rem;
   border-radius: 0.5rem;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
@@ -276,7 +276,7 @@
 }
 
 .logoPlaceholder {
-  color: #6b7280;
+  color: var(--gray-500);
   font-weight: 600;
   font-size: 0.875rem;
 }
@@ -285,13 +285,17 @@
 .sectionTitle {
   font-size: 2.5rem;
   font-weight: 700;
-  color: #1f2937;
+  color: var(--gray-900);
   margin-bottom: 1rem;
   line-height: 1.2;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
 }
 
 .titleHighlight {
-  background: linear-gradient(135deg, #60a5fa, #34d399);
+  background: var(--gradient-primary);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
@@ -299,10 +303,11 @@
 
 .sectionDescription {
   font-size: 1.125rem;
-  color: #6b7280;
+  color: var(--gray-500);
   line-height: 1.6;
   max-width: 800px;
   margin: 0 auto 3rem;
+  text-align: center;
 }
 
 /* Strategic Benefits Banner */
@@ -322,12 +327,15 @@
   font-size: 2.5rem;
   font-weight: 800;
   text-align: center;
-  color: #1f2937;
+  color: var(--gray-900);
   margin-bottom: 1rem;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .benefitsHighlight {
-  background: linear-gradient(135deg, #60a5fa, #34d399);
+  background: var(--gradient-primary);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
@@ -335,7 +343,7 @@
 
 .benefitsDescription {
   font-size: 1.125rem;
-  color: #6b7280;
+  color: var(--gray-500);
   text-align: center;
   max-width: 700px;
   margin: 0 auto 3rem;
@@ -362,18 +370,12 @@
   }
 }
 
-@media (min-width: 1200px) {
-  .statsGrid {
-    grid-template-columns: repeat(4, 1fr);
-  }
-}
-
 .statCard {
-  background: #f9fafb;
+  background: var(--gray-100);
   border-radius: 1rem;
   padding: 2rem;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
-  border: 2px solid #e5e7eb;
+  border: 2px solid var(--gray-300);
   text-align: center;
   transition: all 0.3s ease;
 }
@@ -392,14 +394,14 @@
   align-items: center;
   justify-content: center;
   border-radius: 0.75rem;
-  background: rgba(96, 165, 250, 0.1);
+  background: rgba(59, 130, 246, 0.1);
   padding: 0.75rem;
 }
 
 .benefitIcon {
   width: 1.5rem;
   height: 1.5rem;
-  color: #60a5fa;
+  color: var(--primary-blue);
 }
 
 .statMetric {
@@ -407,7 +409,7 @@
   font-weight: 800;
   line-height: 1;
   margin-bottom: 0.5rem;
-  background: linear-gradient(135deg, #60a5fa, #34d399);
+  background: var(--gradient-primary);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
@@ -416,17 +418,17 @@
 .statTitle {
   font-size: 1.25rem;
   font-weight: 700;
-  color: #1f2937;
+  color: var(--gray-900);
   margin-bottom: 0.75rem;
 }
 
 .statDescription {
-  color: #6b7280;
+  color: var(--gray-500);
   line-height: 1.6;
   font-size: 0.95rem;
 }
 
-/* Main QA Services - Updated with better mobile visibility */
+/* Main QA Services */
 .servicesSection {
   padding: 5rem 2rem;
   background: white;
@@ -497,7 +499,7 @@
 
 .serviceContent {
   position: absolute;
-  bottom: 1.5rem; /* Reduced from 2rem */
+  bottom: 1.5rem;
   left: 1.5rem;
   right: 1.5rem;
   z-index: 2;
@@ -506,20 +508,19 @@
 
 .serviceTitle {
   font-size: 1.5rem;
-  font-weight: 800; /* Increased from 700 for better visibility */
-  margin-bottom: 0.5rem; /* Reduced from 0.75rem */
+  font-weight: 800;
+  margin-bottom: 0.5rem;
   color: white;
-  padding-top: 0;
-  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5); /* Added shadow for better contrast */
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
 }
 
 .serviceExcerpt {
   font-size: 0.95rem;
-  color: #ffffff; /* Changed from #e5e7eb for better visibility */
+  color: var(--white);
   line-height: 1.5;
   margin-bottom: 1.5rem;
-  font-weight: 600; /* Added weight for better visibility */
-  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.5); /* Added shadow for better contrast */
+  font-weight: 600;
+  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.5);
 }
 
 .serviceFeatures {
@@ -542,8 +543,8 @@
   color: white;
   font-size: 0.975rem;
   text-align: left;
-  font-weight: 500; /* Added weight for better visibility */
-  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.5); /* Added shadow for better contrast */
+  font-weight: 500;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.5);
 }
 
 .featureIcon {
@@ -557,7 +558,7 @@
   align-items: center;
   justify-content: center;
   gap: 0.5rem;
-  font-weight: 700; /* Increased from 600 for better visibility */
+  font-weight: 700;
   text-decoration: none;
   font-size: 0.875rem;
   color: white;
@@ -565,8 +566,8 @@
   padding: 0.75rem 1.5rem;
   border-radius: 8px;
   margin-top: 1rem;
-  background: linear-gradient(135deg, #60a5fa, #34d399);
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3); /* Added shadow for better visibility */
+  background: var(--gradient-primary);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
 }
 
 .linkIcon {
@@ -588,53 +589,53 @@
   .serviceContent {
     left: 1rem;
     right: 1rem;
-    bottom: 1rem; /* Reduced further for mobile */
+    bottom: 1rem;
   }
   
   .serviceTitle {
-    font-size: 1.35rem; /* Slightly larger for mobile */
+    font-size: 1.35rem;
     font-weight: 800;
     margin-bottom: 0.5rem;
-    text-shadow: 0 2px 6px rgba(0, 0, 0, 0.7); /* Stronger shadow for mobile */
+    text-shadow: 0 2px 6px rgba(0, 0, 0, 0.7);
   }
   
   .serviceExcerpt {
     font-size: 0.95rem;
     font-weight: 600;
     margin-bottom: 1rem;
-    text-shadow: 0 1px 4px rgba(0, 0, 0, 0.7); /* Stronger shadow for mobile */
+    text-shadow: 0 1px 4px rgba(0, 0, 0, 0.7);
   }
   
   .featureItem {
     font-size: 0.85rem;
     font-weight: 500;
-    text-shadow: 0 1px 3px rgba(0, 0, 0, 0.7); /* Stronger shadow for mobile */
+    text-shadow: 0 1px 3px rgba(0, 0, 0, 0.7);
   }
   
   .serviceLink {
     font-weight: 700;
     padding: 0.65rem 1.25rem;
     font-size: 0.85rem;
-    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.4); /* Stronger shadow for mobile */
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.4);
   }
 }
 
 @media (max-width: 480px) {
   .serviceCard {
-    height: 360px; /* Slightly reduced height for mobile */
+    height: 360px;
   }
   
   .serviceContent {
     left: 0.75rem;
     right: 0.75rem;
-    bottom: 0.75rem; /* Reduced further for small mobile */
+    bottom: 0.75rem;
   }
   
   .serviceTitle {
     font-size: 1.25rem;
     font-weight: 800;
     margin-bottom: 0.4rem;
-    text-shadow: 0 2px 8px rgba(0, 0, 0, 0.8); /* Even stronger shadow for small mobile */
+    text-shadow: 0 2px 8px rgba(0, 0, 0, 0.8);
   }
   
   .serviceExcerpt {
@@ -642,27 +643,27 @@
     font-weight: 600;
     margin-bottom: 0.75rem;
     line-height: 1.4;
-    text-shadow: 0 1px 5px rgba(0, 0, 0, 0.8); /* Even stronger shadow for small mobile */
+    text-shadow: 0 1px 5px rgba(0, 0, 0, 0.8);
   }
   
   .featureItem {
     font-size: 0.8rem;
     font-weight: 500;
-    text-shadow: 0 1px 4px rgba(0, 0, 0, 0.8); /* Even stronger shadow for small mobile */
+    text-shadow: 0 1px 4px rgba(0, 0, 0, 0.8);
   }
   
   .serviceLink {
     font-weight: 700;
     padding: 0.6rem 1rem;
     font-size: 0.8rem;
-    box-shadow: 0 3px 12px rgba(0, 0, 0, 0.5); /* Even stronger shadow for small mobile */
+    box-shadow: 0 3px 12px rgba(0, 0, 0, 0.5);
   }
 }
 
 /* Why Choose Us */
 .whyChooseSection {
   padding: 5rem 2rem;
-  background: linear-gradient(135deg, #1e293b 0%, #0f172a 100%);
+  background: linear-gradient(135deg, var(--dark-surface) 0%, var(--dark-bg) 100%);
   position: relative;
 }
 
@@ -673,10 +674,13 @@
   margin-bottom: 1rem;
   line-height: 1.2;
   text-align: center;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .titleHighlightWhite {
-  background: linear-gradient(135deg, #60a5fa, #34d399);
+  background: var(--gradient-primary);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
@@ -684,7 +688,7 @@
 
 .sectionDescriptionWhite {
   font-size: 1.125rem;
-  color: #cbd5e1;
+  color: var(--gray-300);
   line-height: 1.7;
   max-width: 800px;
   margin: 0 auto 3rem;
@@ -728,7 +732,7 @@
 .chooseIconWrapper {
   width: 4rem;
   height: 4rem;
-  background: rgba(96, 165, 250, 0.1);
+  background: rgba(59, 130, 246, 0.1);
   border-radius: 1rem;
   display: flex;
   align-items: center;
@@ -739,7 +743,7 @@
 .chooseIcon {
   width: 2rem;
   height: 2rem;
-  color: #60a5fa;
+  color: var(--primary-blue);
 }
 
 .chooseTitle {
@@ -750,7 +754,7 @@
 }
 
 .chooseDescription {
-  color: #cbd5e1;
+  color: var(--gray-300);
   line-height: 1.6;
   font-size: 0.95rem;
 }
@@ -785,14 +789,14 @@
 .statValue {
   font-size: 2rem;
   font-weight: 800;
-  color: #60a5fa;
+  color: var(--primary-blue);
   line-height: 1;
   margin-bottom: 0.5rem;
 }
 
 .statLabel {
   font-size: 0.875rem;
-  color: #cbd5e1;
+  color: var(--gray-300);
   font-weight: 600;
   text-transform: uppercase;
   letter-spacing: 0.05em;
@@ -801,7 +805,7 @@
 /* Industries Section */
 .industriesSection {
   padding: 5rem 2rem;
-  background: #f9fafb;
+  background: var(--gray-100);
 }
 
 .industriesGrid {
@@ -825,14 +829,14 @@
 }
 
 .industryCard {
-  background: white;
+  background: var(--white);
   border-radius: 1rem;
   padding: 2rem;
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
   display: flex;
   flex-direction: column;
   gap: 1.5rem;
-  border-left: 4px solid;
+  border-left: 4px solid var(--primary-green);
   transition: all 0.3s ease;
 }
 
@@ -860,12 +864,12 @@
 .industryName {
   font-size: 1.5rem;
   font-weight: 700;
-  color: #1f2937;
+  color: var(--gray-900);
   margin: 0;
 }
 
 .industryDescription {
-  color: #4b5563;
+  color: var(--gray-700);
   line-height: 1.6;
   margin: 0;
 }
@@ -877,7 +881,7 @@
 .solutionsTitle {
   font-size: 1.125rem;
   font-weight: 600;
-  color: #1f2937;
+  color: var(--gray-900);
   margin-bottom: 0.75rem;
 }
 
@@ -891,7 +895,7 @@
   display: flex;
   align-items: flex-start;
   gap: 0.75rem;
-  color: #4b5563;
+  color: var(--gray-700);
   margin-bottom: 0.75rem;
   font-size: 0.95rem;
 }
@@ -921,12 +925,12 @@
   transition: all 0.3s ease;
   font-size: 0.875rem;
   min-width: 160px;
-  background: linear-gradient(135deg, #60a5fa, #34d399);
+  background: var(--gradient-primary);
 }
 
 .industryLink:hover {
   transform: translateY(-2px);
-  box-shadow: 0 6px 16px rgba(96, 165, 250, 0.3);
+  box-shadow: 0 6px 16px rgba(59, 130, 246, 0.3);
   gap: 0.75rem;
 }
 
@@ -961,10 +965,10 @@
   border-radius: 1rem;
   padding: 2rem;
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
-  border: 1px solid #e5e7eb;
+  border: 1px solid var(--gray-300);
   text-align: center;
   transition: all 0.3s ease;
-  border-top: 4px solid;
+  border-top: 4px solid var(--primary-green);
   display: flex;
   flex-direction: column;
 }
@@ -982,9 +986,9 @@
 .priceRange {
   font-size: 2rem;
   font-weight: 800;
-  color: #1f2937;
+  color: var(--gray-900);
   margin-bottom: 0.5rem;
-  background: linear-gradient(135deg, #60a5fa, #34d399);
+  background: var(--gradient-primary);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
@@ -993,12 +997,12 @@
 .pricingTitle {
   font-size: 1.5rem;
   font-weight: 700;
-  color: #1f2937;
+  color: var(--gray-900);
   margin-bottom: 1rem;
 }
 
 .pricingDescription {
-  color: #6b7280;
+  color: var(--gray-500);
   line-height: 1.6;
   font-size: 0.95rem;
 }
@@ -1015,14 +1019,14 @@
   border-radius: 8px;
   transition: all 0.3s ease;
   font-size: 0.875rem;
-  background: linear-gradient(135deg, #60a5fa, #34d399);
+  background: var(--gradient-primary);
   min-width: 160px;
   margin-top: auto;
 }
 
 .pricingButton:hover {
   transform: translateY(-2px);
-  box-shadow: 0 6px 16px rgba(96, 165, 250, 0.3);
+  box-shadow: 0 6px 16px rgba(59, 130, 246, 0.3);
   gap: 0.75rem;
 }
 
@@ -1045,13 +1049,13 @@
   border-radius: 1rem;
   overflow: hidden;
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
-  border: 1px solid #e5e7eb;
+  border: 1px solid var(--gray-300);
   transition: all 0.3s ease;
 }
 
 .faqCard:hover {
-  border-color: #60a5fa;
-  box-shadow: 0 10px 25px rgba(96, 165, 250, 0.1);
+  border-color: var(--primary-blue);
+  box-shadow: 0 10px 25px rgba(59, 130, 246, 0.1);
 }
 
 .faqQuestion {
@@ -1062,7 +1066,7 @@
   text-align: left;
   font-size: 1.125rem;
   font-weight: 600;
-  color: #1f2937;
+  color: var(--gray-900);
   cursor: pointer;
   display: flex;
   justify-content: space-between;
@@ -1071,7 +1075,7 @@
 }
 
 .faqQuestion:hover {
-  background: #f8fafc;
+  background: var(--gray-100);
 }
 
 .faqQuestionContent {
@@ -1083,13 +1087,13 @@
 .faqIcon {
   width: 1.5rem;
   height: 1.5rem;
-  color: #60a5fa;
+  color: var(--primary-blue);
   flex-shrink: 0;
 }
 
 .faqToggle {
   font-size: 1.5rem;
-  color: #60a5fa;
+  color: var(--primary-blue);
   font-weight: 400;
   flex-shrink: 0;
   transition: transform 0.3s ease;
@@ -1101,7 +1105,7 @@
 
 .faqAnswer {
   padding: 0 1.5rem 1.5rem;
-  color: #6b7280;
+  color: var(--gray-500);
   line-height: 1.6;
   font-size: 1rem;
 }
@@ -1110,7 +1114,7 @@
 .ctaSection {
   text-align: center;
   padding: 3rem 2rem;
-  background: linear-gradient(135deg, #1e293b 0%, #0f172a 100%);
+  background: linear-gradient(135deg, var(--dark-surface) 0%, var(--dark-bg) 100%);
   border-radius: 1.5rem;
   box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
   max-width: 800px;
@@ -1126,7 +1130,7 @@
   font-weight: 800;
   color: white;
   margin-bottom: 1rem;
-  background: linear-gradient(135deg, #ffffff, #60a5fa);
+  background: linear-gradient(135deg, #ffffff, var(--primary-blue));
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
@@ -1149,7 +1153,7 @@
 }
 
 .ctaPrimary {
-  background: linear-gradient(135deg, #60a5fa, #34d399);
+  background: var(--gradient-primary);
   color: white;
   border: none;
   padding: 1rem 2rem;
@@ -1162,13 +1166,13 @@
   gap: 0.5rem;
   transition: all 0.3s ease;
   text-decoration: none;
-  box-shadow: 0 4px 15px rgba(96, 165, 250, 0.3);
+  box-shadow: 0 4px 15px rgba(59, 130, 246, 0.3);
 }
 
 .ctaPrimary:hover {
   transform: translateY(-2px);
-  box-shadow: 0 6px 20px rgba(96, 165, 250, 0.4);
-  background: linear-gradient(135deg, #7dd3fc, #6ee7b7);
+  box-shadow: 0 6px 20px rgba(59, 130, 246, 0.4);
+  background: var(--gradient-primary-dark);
 }
 
 /* Responsive Design */
@@ -1277,69 +1281,69 @@
 
 /* Process Section */
 .processSection {
-    padding: 5rem 2rem;
-    background: #ffffff;
+  padding: 5rem 2rem;
+  background: var(--white);
 }
 
 .processGrid {
-    display: grid;
-    grid-template-columns: 1fr;
-    gap: 2rem;
-    max-width: 1200px;
-    margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
 @media (min-width: 768px) {
-    .processGrid {
-        grid-template-columns: repeat(2, 1fr);
-    }
+  .processGrid {
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
 
 @media (min-width: 1024px) {
-    .processGrid {
-        grid-template-columns: repeat(3, 1fr);
-    }
+  .processGrid {
+    grid-template-columns: repeat(3, 1fr);
+  }
 }
 
 .processCard {
-    background: #f9fafb;
-    border-radius: 1rem;
-    padding: 2rem;
-    border: 1px solid #e5e7eb;
-    transition: all 0.3s ease;
-    position: relative;
-    overflow: hidden;
+  background: var(--gray-100);
+  border-radius: 1rem;
+  padding: 2rem;
+  border: 1px solid var(--gray-300);
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
 }
 
 .processCard:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 10px 20px rgba(0,0,0,0.05);
-    border-color: #34d399;
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.05);
+  border-color: var(--primary-green);
 }
 
 .processNumber {
-    font-size: 3rem;
-    font-weight: 900;
-    color: rgba(52, 211, 153, 0.1);
-    position: absolute;
-    top: 1rem;
-    right: 1.5rem;
-    line-height: 1;
+  font-size: 3rem;
+  font-weight: 900;
+  color: rgba(52, 211, 153, 0.1);
+  position: absolute;
+  top: 1rem;
+  right: 1.5rem;
+  line-height: 1;
 }
 
 .processTitle {
-    font-size: 1.25rem;
-    font-weight: 700;
-    color: #1f2937;
-    margin-bottom: 0.75rem;
-    position: relative;
-    z-index: 2;
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: var(--gray-900);
+  margin-bottom: 0.75rem;
+  position: relative;
+  z-index: 2;
 }
 
 .processDescription {
-    color: #6b7280;
-    line-height: 1.6;
-    font-size: 0.95rem;
-    position: relative;
-    z-index: 2;
+  color: var(--gray-500);
+  line-height: 1.6;
+  font-size: 0.95rem;
+  position: relative;
+  z-index: 2;
 }

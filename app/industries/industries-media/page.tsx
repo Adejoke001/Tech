@@ -26,10 +26,10 @@ export default function MediaPage() {
     // ----- HERO TESTIMONIAL -----
     const testimonial = {
         name: 'David Mich',
-        role: 'CTO, Streamers',
+        // role: 'CTO, Streamers',
         content: 'BBMcoders built our OTT platform from scratch – it handles millions of daily streams with zero buffering. Their deep media expertise and commitment to quality exceeded our expectations.',
         rating: 5,
-        project: 'OTT Streaming Platform'
+        project: 'Streaming Platform'
     };
 
     // ============ MEDIA SOLUTIONS (10 cards from "Software Solutions for Media & Entertainment") ============
@@ -397,7 +397,7 @@ export default function MediaPage() {
                                 <p className={styles.testimonialText}>&quot;{testimonial.content}&quot;</p>
                                 <div className={styles.testimonialAuthor}>
                                     <h4>{testimonial.name}</h4>
-                                    <p>{testimonial.role}</p>
+                                    {/* <p>{testimonial.role}</p> */}
                                 </div>
                                 <div className={styles.ratings}>
                                     <div className={styles.ratingItem}>
@@ -423,7 +423,7 @@ export default function MediaPage() {
             </section>
 
             {/* ===== TRUSTED BY SECTION ===== */}
-            <section className={styles.trustedSection}>
+            {/* <section className={styles.trustedSection}>
                 <div className={styles.sectionContent}>
                     <p className={styles.trustedLabel}>Trusted by startups and Fortune 500 companies</p>
                     <div className={styles.trustedLogos}>
@@ -441,7 +441,7 @@ export default function MediaPage() {
                         ))}
                     </div>
                 </div>
-            </section>
+            </section> */}
 
             {/* ===== MEDIA SOLUTIONS SECTION ===== */}
             <section className={styles.solutionsSection} id="solutions">

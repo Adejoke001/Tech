@@ -150,7 +150,7 @@ export default function ProductDevelopment() {
       description:
         "Gather requirements, define scope, conduct market research, and prevent scope creep through detailed analysis.",
       icon: <Search className={styles.processIcon} />,
-      color: "#8b5cf6",
+      color: "#10b981",
       duration: "1-2 Weeks",
     },
     {
@@ -159,7 +159,7 @@ export default function ProductDevelopment() {
       description:
         "Assemble top experts, define team structure, allocate resources, and build a scalable product roadmap.",
       icon: <UsersIcon className={styles.processIcon} />,
-      color: "#10b981",
+      color: "#3b82f6",
       duration: "1 Week",
     },
     {
@@ -168,7 +168,7 @@ export default function ProductDevelopment() {
       description:
         "Generate detailed cost estimates, budget planning, ROI analysis, and optimize project expenses.",
       icon: <DollarSign className={styles.processIcon} />,
-      color: "#f59e0b",
+      color: "#10b981",
       duration: "3-5 Days",
     },
     {
@@ -177,7 +177,7 @@ export default function ProductDevelopment() {
       description:
         "Identify potential threats, create mitigation strategies, ensure compliance, and guarantee smooth development.",
       icon: <AlertTriangle className={styles.processIcon} />,
-      color: "#ef4444",
+      color: "#3b82f6",
       duration: "Ongoing",
     },
     {
@@ -186,7 +186,7 @@ export default function ProductDevelopment() {
       description:
         "Implement structured change management processes, stakeholder communication, and keep projects on track.",
       icon: <GitMerge className={styles.processIcon} />,
-      color: "#06b6d4",
+      color: "#10b981",
       duration: "Ongoing",
     },
     {
@@ -195,7 +195,7 @@ export default function ProductDevelopment() {
       description:
         "Review KPIs, performance metrics, user feedback, and gauge project health and success at each milestone.",
       icon: <TargetIcon className={styles.processIcon} />,
-      color: "#8b5cf6",
+      color: "#3b82f6",
       duration: "Weekly",
     },
     {
@@ -351,7 +351,7 @@ export default function ProductDevelopment() {
       description:
         "Harness the power of AI-driven vision systems to automate tasks, enhance security, improve decision-making, and create immersive user experiences across various industries.",
       icon: <Eye className={styles.trendIcon} />,
-      color: "#8b5cf6",
+      color: "#10b981",
       applications: [
         "Facial Recognition",
         "Object Detection",
@@ -365,7 +365,7 @@ export default function ProductDevelopment() {
       description:
         "Connect and control smart devices with intelligent IoT solutions that optimize operations, enhance efficiency, enable predictive maintenance, and create smart ecosystems.",
       icon: <CpuIcon className={styles.trendIcon} />,
-      color: "#f59e0b",
+      color: "#3b82f6",
       applications: [
         "Smart Home Systems",
         "Industrial IoT",
@@ -379,7 +379,7 @@ export default function ProductDevelopment() {
       description:
         "Blend the digital and physical worlds with immersive AR/VR experiences for business, entertainment, training, retail, and industrial applications with 3D visualization.",
       icon: <Globe className={styles.trendIcon} />,
-      color: "#ef4444",
+      color: "#10b981",
       applications: [
         "AR Shopping",
         "VR Training",
@@ -393,7 +393,7 @@ export default function ProductDevelopment() {
       description:
         "Process data closer to the source with edge computing solutions that reduce latency, improve response times, enhance security, and enable real-time processing for critical applications.",
       icon: <Server className={styles.trendIcon} />,
-      color: "#06b6d4",
+      color: "#3b82f6",
       applications: [
         "Real-time Analytics",
         "Autonomous Systems",
@@ -600,10 +600,10 @@ export default function ProductDevelopment() {
                 <Link href="/contact" className={styles.linkWrapper}>
                   <motion.button
                     className={styles.primaryButton}
-                    whileHover={{ scale: 1.05 }}
+                    whileHover={{  y: -2 }}
                     whileTap={{ scale: 0.95 }}
                   >
-                    Book Free Consultation
+                    Book Consultation
                     <ArrowRight className={styles.buttonIcon} />
                   </motion.button>
                 </Link>
@@ -630,10 +630,10 @@ export default function ProductDevelopment() {
                     />
                   </div>
                   <div className={styles.testimonialInfo}>
-                    <h4 className={styles.testimonialName}>Sarah Johnson</h4>
-                    <p className={styles.testimonialRole}>
+                    <h4 className={styles.testimonialName}>Frank Johnson</h4>
+                    {/* <p className={styles.testimonialRole}>
                       CTO, TechBim Inc.
-                    </p>
+                    </p> */}
                     <div className={styles.testimonialRating}>
                       {[...Array(5)].map((_, i) => (
                         <Star
@@ -982,7 +982,7 @@ export default function ProductDevelopment() {
               const column = index % columnCount;
               const row = Math.floor(index / columnCount);
               const isLight = (row + column) % 2 === 0;
-              const backgroundColor = isLight ? "#fff5e6" : "#ffdc94";
+              const backgroundColor = isLight ? "var(--gray-100, #f9fafb)" : "var(--gray-200, #f3f4f6)";
 
               return (
                 <motion.div
@@ -1212,7 +1212,7 @@ export default function ProductDevelopment() {
           >
             <h2 className={styles.sectionTitle}>
               Frequently{" "}
-              <span className={styles.titleAccent}>Asked Questions</span>
+              <span className={styles.title}>Asked Questions</span>
             </h2>
             <p className={styles.sectionDescription}>
               Have questions related to Software Engineering and IT Outsourcing?

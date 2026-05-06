@@ -497,7 +497,7 @@ export default function ApiDevelopmentPage() {
             </section>
 
             {/* ===== TRUSTED BY ===== */}
-            <section className={styles.trustedBy}>
+            {/* <section className={styles.trustedBy}>
                 <div className={styles.sectionContent}>
                     <p className={styles.trustedLabel}>Trusted by Industry Leaders</p>
                     <div className={styles.trustedLogos}>
@@ -506,7 +506,7 @@ export default function ApiDevelopmentPage() {
                         ))}
                     </div>
                 </div>
-            </section>
+            </section> */}
 
             {/* ===== SERVICES OVERVIEW ===== */}
             <section className={styles.servicesOverview}>

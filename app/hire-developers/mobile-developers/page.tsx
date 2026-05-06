@@ -698,7 +698,7 @@ export default function MobileAppDevelopersPage() {
       </section>
 
       {/* ===== TRUSTED BY SECTION ===== */}
-      <section className={styles.trustedSection}>
+      {/* <section className={styles.trustedSection}>
         <div className={styles.sectionContent}>
           <p className={styles.trustedLabel}>
             Trusted by startups and Fortune 500 companies
@@ -720,7 +720,7 @@ export default function MobileAppDevelopersPage() {
             )}
           </div>
         </div>
-      </section>
+      </section> */}
 
       {/* ===== EXPERTISE SECTION ===== */}
       <section className={styles.expertiseSection} id="expertise">

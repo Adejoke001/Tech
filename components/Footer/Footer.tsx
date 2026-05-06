@@ -1,6 +1,15 @@
 import React from "react";
 import Link from "next/link";
-import { Linkedin, Twitter, Github, Facebook, Instagram } from "lucide-react";
+import { 
+  Linkedin, 
+  Twitter, 
+  Github, 
+  Facebook, 
+  Instagram, 
+  Mail, 
+  Phone, 
+  MapPin 
+} from "lucide-react";
 import styles from "./footer.module.css";
 
 const Footer = () => {
@@ -9,7 +18,6 @@ const Footer = () => {
   const footerLinks = {
     company: [
       { name: "About Us", href: "/company/about" },
-      // { name: "Our Team", href: "/team" },
       { name: "Case Studies", href: "/company/case-studies" },
       { name: "Blog", href: "/company/blogs" },
       { name: "Clients & Testimonials", href: "/company/testimonials" },
@@ -18,7 +26,6 @@ const Footer = () => {
       { name: "Web Development", href: "/services/web-development" },
       { name: "Mobile Apps", href: "/services/mobile-development" },
       { name: "UI/UX Design", href: "/services/ui-ux-design" },
-      // { name: "Digital Marketing", href: "/services/digital-marketing" },
       { name: "Consulting", href: "/services/qa-consulting" },
     ],
     ourExpertise: [
@@ -30,18 +37,13 @@ const Footer = () => {
         name: "Application Development",
         href: "/services/application-development",
       },
-      // { name: "Staff Augmentation", href: "/expertise/staff-augmentation" },
       { name: "Cloud Services", href: "/services/cloud-devops-services" },
       { name: "AI & ML", href: "/services/machine-learning" },
     ],
     hireDevelopers: [
-      { name: "Hire AI Engineers", href: "/hire/data-ai-developers" },
+      { name: "Hire AI Engineers", href: "/services/ai-automation-consulting" },
       { name: "Hire Backend Developers", href: "/hire-developers/backend-developers" },
-      { name: "Hire Frontend Developers", href: "/hire/frontend-developers" },
-      // {
-      //   name: "Hire Blockchain Developers",
-      //   href: "/hire/blockchain-developers",
-      // },
+      { name: "Hire Frontend Developers", href: "/hire-developers/frontend-developers" },
       { name: "Hire Mobile App Developers", href: "/hire-developers/mobile-developers" },
     ],
     clientsWeServe: [
@@ -49,6 +51,26 @@ const Footer = () => {
       { name: "For Enterprises", href: "/solutions/solutions-enterprises" },
     ],
   };
+
+  // Office Locations (4 grids)
+  const officeLocations = [
+    {
+      country: "Nigeria (Lagos)",
+      address: "Lagos, Nigeria",
+    },
+    {
+      country: "United States (New York)",
+      address: "xyzcity",
+    },
+    {
+      country: "United Kingdom (London)",
+      address: "xyzcity",
+    },
+    {
+      country: "India (Bangalore)",
+      address: "xyzcity",
+    },
+  ];
 
   const socialLinks = [
     { name: "LinkedIn", icon: Linkedin, href: "https://linkedin.com" },
@@ -132,20 +154,39 @@ const Footer = () => {
           </div>
         </div>
 
+        {/* Address Section (4 grids) */}
+        <div className={styles.addressSection}>
+          <div className={styles.addressGrid}>
+            {officeLocations.map((location, index) => (
+              <div key={index} className={styles.addressCard}>
+                <h4 className={styles.addressCountry}>{location.country}</h4>
+                <p className={styles.addressText}>{location.address}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+
         {/* Contact Info with Social Links */}
         <div className={styles.contactSection}>
           <div className={styles.contactInfo}>
             <div className={styles.contactDetails}>
+              {/* Email - with Mail SVG icon */}
               <div className={styles.contactItem}>
-                <span className={styles.contactIcon}>📧</span>
-                <span>hello@bbmcoders.com</span>
+                <Mail size={18} className={styles.contactIcon} />
+                <a href="mailto:hello@bbmcoders.com" className={styles.contactLink}>
+                  hello@bbmcoders.com
+                </a>
               </div>
+              {/* Phone - with Phone SVG icon */}
               <div className={styles.contactItem}>
-                <span className={styles.contactIcon}>📞</span>
-                <span>+1 (555) 123-4567</span>
+                <Phone size={18} className={styles.contactIcon} />
+                <a href="tel:+15551234567" className={styles.contactLink}>
+                  +1 (555) 123-4567
+                </a>
               </div>
+              {/* Address - with MapPin SVG icon */}
               <div className={styles.contactItem}>
-                <span className={styles.contactIcon}>📍</span>
+                <MapPin size={18} className={styles.contactIcon} />
                 <span>123 Business District, Tech City</span>
               </div>
             </div>
@@ -157,7 +198,6 @@ const Footer = () => {
                     key={social.name}
                     href={social.href}
                     className={styles.socialLink}
-                    /* aria-label={social.name} */
                     aria-label={`Follow us on ${social.name}`}
                     target="_blank"
                     rel="noopener noreferrer nofollow"

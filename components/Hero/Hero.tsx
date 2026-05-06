@@ -1,60 +1,59 @@
 import React from "react";
-import "./hero.modules.css";
+import styles from "./hero.module.css";
 
 export default function Hero() {
   return (
-    <section className="heroSection">
-      <div className="overlay"></div>
+      <section className={styles.heroSection}>
+        <div className={styles.overlay}></div>
 
-      {/* Content Container */}
-      <div className="content">
-        {/* Main Headline */}
-        <div className="headline">
-          <h1 className="mainTitle">
-            <span className="softwareDev">Software Development</span>
-            <span className="companyText">Company</span>
-          </h1>
+        {/* Content Container */}
+        <div className={styles.content}>
+          {/* Main Headline */}
+          <div className={styles.headline}>
+            <h1 className={styles.mainTitle}>
+              <span className={styles.softwareDev}>Software Development</span>
+              <span className={styles.companyText}>Company</span>
+            </h1>
 
-          {/* Subheadline */}
-          <p className="subheadline">
-            From agile MVPs to enterprise-grade platforms, we design, develop,
-            and maintain 
-            {" "}
-            <span className="highlight">future-ready software that delivers results – on time, on budget, and without compromise.</span>
-          </p>
-        </div>
-
-        {/* Awards & Recognition */}
-        <div className="awardsSection">
-          <div className="awardsCard">
-            <p className="awardsText">
-              🏆 Voted #1 IT Outsourcing Company by
-              <span className="awardsHighlight">
-                {" "}
-                GoodFirms, Clutch, & many more
-              </span>
+            {/* Subheadline */}
+            <p className={styles.subheadline}>
+              From agile MVPs to enterprise-grade platforms, we design, develop,
+              and maintain{" "}
+              <span>future-ready software that delivers results – on time, on budget, and without compromise.</span>
             </p>
-            <div className="awardsLogos">
-              <span className="awardsLogo">GoodFirms</span>
-              <span className="awardsDivider">•</span>
-              <span className="awardsLogo">Clutch</span>
-              <span className="awardsDivider">•</span>
-              <span className="awardsLogo">TopDevelopers</span>
-              <span className="awardsDivider">•</span>
-              <span className="awardsLogo">DesignRush</span>
+          </div>
+
+          {/* Awards & Recognition */}
+          <div className={styles.awardsSection}>
+            <div className={styles.awardsCard}>
+              <p className={styles.awardsText}>
+                🏆 Voted #1 IT Outsourcing Company by
+                <span className={styles.awardsHighlight}>
+                  {" "}
+                  GoodFirms, Clutch, & many more
+                </span>
+              </p>
+              <div className={styles.awardsLogos}>
+                <span className={styles.awardsLogo}>GoodFirms</span>
+                <span className={styles.awardsDivider}>•</span>
+                <span className={styles.awardsLogo}>Clutch</span>
+                <span className={styles.awardsDivider}>•</span>
+                <span className={styles.awardsLogo}>TopDevelopers</span>
+                <span className={styles.awardsDivider}>•</span>
+                <span className={styles.awardsLogo}>DesignRush</span>
+              </div>
             </div>
           </div>
         </div>
-      </div>
 
-      {/* Scroll Indicator */}
-      <div className="scrollIndicator">
-        <div className="bounce">
-          <div className="scrollCircle">
-            <div className="scrollDot"></div>
+        {/* Scroll Indicator */}
+        <div className={styles.scrollIndicator}>
+          <div className={styles.bounce}>
+            <div className={styles.scrollCircle}>
+              <div className={styles.scrollDot}></div>
+            </div>
           </div>
         </div>
-      </div>
-    </section>
+      </section>
   );
 }

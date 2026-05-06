@@ -21,7 +21,7 @@ export default function UIUXDesignPage() {
     const [hoveredIndustry, setHoveredIndustry] = useState<number | null>(null);
 
     const testimonial = {
-        name: 'Rebecca Chidi',
+        name: 'Rebecca',
         role: 'Product Director.',
         content: 'They go above and beyond to ensure quality and satisfaction. A true partner in every sense. Their designs increased our user retention by 40%.',
         rating: 5,
@@ -35,7 +35,7 @@ export default function UIUXDesignPage() {
             title: 'Desktop/Web App Design',
             description: 'Holistic approach ensuring your site looks impressive with seamless navigation flow.',
             icon: <Monitor className={styles.serviceIcon} />,
-            color: '#60a5fa', // Blue
+            color: '#10b981', 
             features: ['Seamless navigation flow', 'High-impact visuals', 'Responsive design', 'User-centered layouts'],
             deliverables: ['Wireframes', 'Interactive prototypes', 'Design system', 'Style guide'],
             benefits: 'Increases user engagement by 35% and reduces bounce rates'
@@ -45,7 +45,7 @@ export default function UIUXDesignPage() {
             title: 'Mobile App Design',
             description: 'Crafting stunning visual experiences that are both meaningful and memorable.',
             icon: <Smartphone className={styles.serviceIcon} />,
-            color: '#34d399', // Green
+            color: '#3b82f6', 
             features: ['Consistent cross-device UI', 'High user retention', 'Gesture-based interactions', 'Mobile-first approach'],
             deliverables: ['App screens', 'Micro-interactions', 'Icon sets', 'Mobile design system'],
             benefits: 'Boosts user retention by 40% and improves app store ratings'
@@ -55,7 +55,7 @@ export default function UIUXDesignPage() {
             title: 'SaaS UI/UX Design',
             description: 'Cutting-edge SaaS UI tailored to your software product\'s target audience.',
             icon: <Cloud className={styles.serviceIcon} />,
-            color: '#8b5cf6', // Purple
+            color: '#10b981', 
             features: ['Ensures fast onboarding', 'High subscription retention', 'Dashboard designs', 'Analytics visualization'],
             deliverables: ['SaaS dashboard', 'Admin panels', 'Data visualization', 'User management UI'],
             benefits: 'Improves subscription retention by 30% and user adoption'
@@ -65,7 +65,7 @@ export default function UIUXDesignPage() {
             title: 'Usability Testing',
             description: 'Identify potential problems users may have with your product before launch.',
             icon: <Search className={styles.serviceIcon} />,
-            color: '#f59e0b', // Amber
+            color: '#3b82f6', // Amber
             features: ['Saves time & money', 'Reduced bounce rates', 'User behavior analysis', 'A/B testing'],
             deliverables: ['Test reports', 'Heatmaps', 'User journey maps', 'Improvement recommendations'],
             benefits: 'Reduces development costs by 25% and improves user satisfaction'
@@ -75,7 +75,7 @@ export default function UIUXDesignPage() {
             title: 'Design Audit',
             description: 'Assess and refine your design components and guidelines for cohesive identity.',
             icon: <Eye className={styles.serviceIcon} />,
-            color: '#ef4444', // Red
+            color: '#10b981', // Red
             features: ['Maintain cohesive identity', 'Boost conversion rates', 'Accessibility check', 'Performance audit'],
             deliverables: ['Audit report', 'Accessibility score', 'Performance metrics', 'Redesign roadmap'],
             benefits: 'Increases conversion rates by 45% and brand consistency'
@@ -85,7 +85,7 @@ export default function UIUXDesignPage() {
             title: 'UI/UX Consulting',
             description: 'Navigate complex design challenges with strategic guidance and expertise.',
             icon: <Users className={styles.serviceIcon} />,
-            color: '#06b6d4', // Cyan
+            color: '#3b82f6', // Cyan
             features: ['Optimize digital experiences', 'Increase product engagement', 'Design strategy', 'Competitive analysis'],
             deliverables: ['Strategy document', 'Competitive analysis', 'Roadmap planning', 'Team training'],
             benefits: 'Drives product engagement by 55% and business growth'
@@ -100,7 +100,7 @@ export default function UIUXDesignPage() {
             description: 'Conduct user research to understand behaviors, needs, and preferences. Analyze competitive landscape.',
             activities: ['User interviews & surveys', 'Competitive analysis', 'Market research', 'Goal definition', 'Stakeholder workshops'],
             icon: <Search />,
-            color: '#60a5fa',
+            color: '#10b981',
             duration: '1-2 weeks',
             output: 'Research report & user insights'
         },
@@ -110,7 +110,7 @@ export default function UIUXDesignPage() {
             description: 'Create user personas and map user journeys to identify pain points and opportunities.',
             activities: ['Persona creation', 'Journey mapping', 'Pain point analysis', 'Opportunity identification', 'Task analysis'],
             icon: <Users />,
-            color: '#34d399',
+            color: '#3b82f6',
             duration: '1 week',
             output: 'User personas & journey maps'
         },
@@ -120,7 +120,7 @@ export default function UIUXDesignPage() {
             description: 'Structure content hierarchy and create wireframes for optimal layout and navigation.',
             activities: ['Content strategy', 'Site mapping', 'Wireframing', 'User flow design', 'Navigation design'],
             icon: <Layout />,
-            color: '#8b5cf6',
+            color: '#10b981',
             duration: '1-2 weeks',
             output: 'Wireframes & site maps'
         },
@@ -130,7 +130,7 @@ export default function UIUXDesignPage() {
             description: 'Build interactive prototypes to demonstrate flow, functionality, and user interactions.',
             activities: ['Interactive prototyping', 'UI component design', 'Motion design', 'User testing', 'Feedback iteration'],
             icon: <Figma />,
-            color: '#f59e0b',
+            color: '#3b82f6',
             duration: '2-3 weeks',
             output: 'Interactive prototypes'
         },
@@ -140,7 +140,7 @@ export default function UIUXDesignPage() {
             description: 'Apply visual elements including colors, typography, imagery, and brand identity.',
             activities: ['Visual design', 'Design system', 'Style guide', 'Asset creation', 'Brand integration'],
             icon: <Palette />,
-            color: '#ef4444',
+            color: '#10b981',
             duration: '2-3 weeks',
             output: 'High-fidelity designs & assets'
         },
@@ -150,7 +150,7 @@ export default function UIUXDesignPage() {
             description: 'Usability testing, developer handoff, and quality assurance for implementation.',
             activities: ['Usability testing', 'Developer handoff', 'Quality assurance', 'Performance testing', 'Launch support'],
             icon: <TestTube />,
-            color: '#06b6d4',
+            color: '#3b82f6',
             duration: '1-2 weeks',
             output: 'Final designs & documentation'
         }
@@ -232,42 +232,42 @@ export default function UIUXDesignPage() {
             description: 'Good UI/UX design creates user-friendly and enjoyable experiences that are intuitive, efficient, and visually pleasing.',
             impact: '85% higher satisfaction',
             icon: <Heart />,
-            color: '#ef4444'
+            color: '#10b981'
         },
         {
             title: 'Increases Engagement & Retention',
             description: 'Intuitive and engaging design encourages users to explore and interact more deeply, leading to higher retention rates.',
             impact: '40% more engagement',
             icon: <TrendingUp />,
-            color: '#34d399'
+            color: '#3b82f6'
         },
         {
             title: 'Drives Business Growth',
             description: 'Well-designed UI/UX attracts and retains users, differentiates from competitors, and creates positive brand reputation.',
             impact: '60% growth acceleration',
             icon: <LineChart />,
-            color: '#60a5fa'
+            color: '#10b981'
         },
         {
             title: 'Reduces Development Costs',
             description: 'Early identification of usability issues reduces the need for extensive redesigns and development iterations later.',
             impact: '30% cost reduction',
             icon: <Banknote />,
-            color: '#f59e0b'
+            color: '#3b82f6'
         },
         {
             title: 'Improves Usability',
             description: 'Effective layout, navigation, and information hierarchy enhance product usability and reduce user frustration.',
             impact: '90% task completion',
             icon: <CheckCircle />,
-            color: '#8b5cf6'
+            color: '#10b981'
         },
         {
             title: 'Builds Brand Identity',
             description: 'Consistent visual elements create cohesive brand experiences that reinforce brand recognition and loyalty.',
             impact: '95% brand consistency',
             icon: <Award />,
-            color: '#06b6d4'
+            color: '#3b82f6'
         }
     ];
 
@@ -276,7 +276,7 @@ export default function UIUXDesignPage() {
         {
             category: 'Design & Prototyping',
             icon: <Figma />,
-            color: '#60a5fa',
+            color: '#10b981',
             tools: [
                 { name: 'Figma', type: 'Primary Design' },
                 { name: 'Sketch', type: 'UI Design' },
@@ -290,7 +290,7 @@ export default function UIUXDesignPage() {
         {
             category: 'User Research',
             icon: <Search />,
-            color: '#34d399',
+            color: '#3b82f6',
             tools: [
                 { name: 'Maze', type: 'Usability Testing' },
                 { name: 'UserTesting', type: 'Remote Testing' },
@@ -304,7 +304,7 @@ export default function UIUXDesignPage() {
         {
             category: 'Collaboration & Handoff',
             icon: <Users />,
-            color: '#8b5cf6',
+            color: '#10b981',
             tools: [
                 { name: 'Zeplin', type: 'Design Handoff' },
                 { name: 'Abstract', type: 'Version Control' },
@@ -318,7 +318,7 @@ export default function UIUXDesignPage() {
         {
             category: 'Analytics & Testing',
             icon: <BarChart />,
-            color: '#f59e0b',
+            color: '#3b82f6',
             tools: [
                 { name: 'Google Analytics', type: 'Web Analytics' },
                 { name: 'Mixpanel', type: 'Product Analytics' },
@@ -332,7 +332,7 @@ export default function UIUXDesignPage() {
         {
             category: 'Motion & Interaction',
             icon: <PlayCircle />,
-            color: '#ef4444',
+            color: '#10b981',
             tools: [
                 { name: 'After Effects', type: 'Motion Design' },
                 { name: 'Lottie', type: 'Animation Library' },
@@ -346,7 +346,7 @@ export default function UIUXDesignPage() {
         {
             category: 'Design Systems',
             icon: <Layers />,
-            color: '#06b6d4',
+            color: '#3b82f6',
             tools: [
                 { name: 'Storybook', type: 'Component Library' },
                 { name: 'Zeroheight', type: 'Documentation' },
@@ -366,42 +366,42 @@ export default function UIUXDesignPage() {
             title: "Nigeria's Top 10% Design Talent",
             description: 'Access elite UI/UX designers with proven expertise in cutting-edge design methodologies and tools.',
             icon: <Award className={styles.chooseIcon} />,
-            color: '#60a5fa'
+            color: '#10b981'
         },
         {
             id: 2,
             title: 'Trusted by Startups to Fortune 500',
             description: 'Proven track record with businesses of all sizes across diverse industries and verticals.',
             icon: <Globe className={styles.chooseIcon} />,
-            color: '#34d399'
+            color: '#3b82f6'
         },
         {
             id: 3,
             title: 'Idea to Deployment, We Handle All',
             description: 'End-to-end design solutions from initial concept to final implementation and launch.',
             icon: <Workflow className={styles.chooseIcon} />,
-            color: '#8b5cf6'
+            color: '#10b981'
         },
         {
             id: 4,
             title: 'Time-Zone Friendly Global Presence',
             description: 'Seamless collaboration across time zones with our distributed expert design teams.',
             icon: <Clock className={styles.chooseIcon} />,
-            color: '#f59e0b'
+            color: '#3b82f6'
         },
         {
             id: 5,
             title: 'Top-tier Data Security Protocols',
             description: 'Enterprise-grade security measures to protect your sensitive information and IP.',
             icon: <ShieldIcon className={styles.chooseIcon} />,
-            color: '#ef4444'
+            color: '#10b981'
         },
         {
             id: 6,
             title: 'On-time Delivery, No Surprises',
             description: 'Reliable project timelines with transparent communication throughout the design process.',
             icon: <CheckCircle className={styles.chooseIcon} />,
-            color: '#06b6d4'
+            color: '#3b82f6'
         }
     ];
 
@@ -412,21 +412,21 @@ export default function UIUXDesignPage() {
             icon: '🏥',
             desc: 'Intuitive patient portals, telehealth interfaces, medical dashboard designs with HIPAA compliance and accessibility standards.',
             image: 'https://images.unsplash.com/photo-1551601651-2a8555f1a136?auto=format&fit=crop&w=800&q=80',
-            color: '#34d399'
+            color: '#10b981'
         },
         {
             name: 'Fintech & Banking',
             icon: '🏦',
             desc: 'Secure banking interfaces, investment dashboards, payment apps with flawless user journeys and regulatory compliance.',
             image: 'https://images.unsplash.com/photo-1551434678-e076c223a692?auto=format&fit=crop&w=800&q=80',
-            color: '#60a5fa'
+            color: '#3b82f6'
         },
         {
             name: 'Retail & eCommerce',
             icon: '🛍️',
             desc: 'Conversion-optimized shopping experiences, personalized interfaces, seamless checkout flows and inventory management UIs.',
             image: 'https://images.unsplash.com/photo-1441986300917-64674bd600d8?auto=format&fit=crop&w=800&q=80',
-            color: '#8b5cf6'
+            color: '#10b981'
         },
     ];
 
@@ -465,42 +465,42 @@ export default function UIUXDesignPage() {
             description: 'Ensure your software supports quick user adoption and efficient task completion.',
             features: ['Minimal clicks for frequent actions', 'Intuitive layout with clear navigation'],
             icon: <Settings />,
-            color: '#60a5fa'
+            color: '#3b82f6'
         },
         {
             title: 'Scalable Architecture',
             description: 'Your software should grow with your business without performance bottlenecks.',
             features: ['Supports high-volume transactions', 'Modular structure for future upgrades'],
             icon: <LineChart />,
-            color: '#34d399'
+            color: '#10b981'
         },
         {
             title: 'Strong Security Controls',
             description: 'Protect critical enterprise data at every touchpoint of your system.',
             features: ['Role-based user access', 'End-to-end encryption protocols'],
             icon: <Lock />,
-            color: '#8b5cf6'
+            color: '#3b82f6'
         },
         {
             title: 'Real-Time Data Access',
             description: 'Enable your teams to make faster, smarter decisions using live system data.',
             features: ['Instant reporting dashboards', 'Continuous database syncing'],
             icon: <BarChart />,
-            color: '#f59e0b'
+            color: '#10b981'
         },
         {
             title: 'Seamless Integration',
             description: 'Your enterprise solution should connect easily with existing tools and platforms.',
             features: ['Pre-built API compatibility', 'No-code third-party app connectors'],
             icon: <GitBranch />,
-            color: '#ef4444'
+            color: '#3b82f6'
         },
         {
             title: 'Accessibility Compliance',
             description: 'Ensure your design is usable by people with diverse abilities and disabilities.',
             features: ['WCAG 2.1 compliance', 'Screen reader optimization'],
             icon: <Eye />,
-            color: '#06b6d4'
+            color: '#10b981'
         }
     ];
 
@@ -545,7 +545,7 @@ export default function UIUXDesignPage() {
                             className={styles.buttonContainer}
                         >
                             <Link href="/contact" className={styles.ctaButton}>
-                                Start Your Design Project
+                                Design Your Project
                                 <ArrowRight className={styles.buttonIcon} />
                             </Link>
                         </motion.div>
@@ -605,7 +605,7 @@ export default function UIUXDesignPage() {
             </section>
 
             {/* ===== TRUSTED BY ===== */}
-            <section className={styles.trustedSection}>
+            {/* <section className={styles.trustedSection}>
                 <div className={styles.sectionContent}>
                     <p className={styles.trustedLabel}>Trusted by startups and Fortune 500 companies</p>
                     <div className={styles.trustedLogos}>
@@ -623,7 +623,7 @@ export default function UIUXDesignPage() {
                         ))}
                     </div>
                 </div>
-            </section>
+            </section> */}
 
             {/* ===== DESIGN SERVICES ===== */}
             <section className={styles.servicesSection}>

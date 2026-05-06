@@ -25,7 +25,7 @@ export default function CybersecurityServicesPage() {
     // Testimonial matching the enterprise software page layout
     const testimonial = {
         name: 'Damola Alex',
-        role: 'CIS, Finance org.',
+        // role: 'CIS, Finance org.',
         content: 'BBMcoders transformed our security posture with their comprehensive governance framework. We saw 40% fewer security incidents within the first quarter.',
         rating: 5,
         project: 'Enterprise Security Governance',
@@ -47,7 +47,7 @@ export default function CybersecurityServicesPage() {
             title: 'IT Compliance Services',
             description: 'Ensure regulatory compliance with frameworks like ISO 27001, SOC 2, GDPR, and HIPAA.',
             icon: <FileCheck className={styles.serviceIcon} />,
-            color: '#10B981',
+            color: '#3b82f6',
             features: ['Compliance gap analysis', 'Policy development', 'Audit preparation', 'Regulatory reporting'],
             detailedDescription: 'Navigate complex regulatory landscapes with our compliance expertise, reducing legal risks and building customer trust. We help you achieve and maintain compliance with global standards.'
         },
@@ -56,7 +56,7 @@ export default function CybersecurityServicesPage() {
             title: 'Risk Management Solutions',
             description: 'Proactive identification, assessment, and mitigation of cybersecurity risks.',
             icon: <AlertTriangle className={styles.serviceIcon} />,
-            color: '#8B5CF6',
+            color: '#3b82F6',
             features: ['Risk assessment', 'Threat modeling', 'Risk treatment planning', 'Continuous monitoring'],
             detailedDescription: 'Implement enterprise risk management frameworks to protect against operational, financial, and reputational risks. Our solutions help you make data-driven security decisions.'
         },
@@ -65,7 +65,7 @@ export default function CybersecurityServicesPage() {
             title: 'Quality & Security Governance',
             description: 'Integrated governance framework for security, quality, and compliance.',
             icon: <Lock className={styles.serviceIcon} />,
-            color: '#F59E0B',
+            color: '#3b82f6',
             features: ['Governance framework design', 'Policy enforcement', 'Security metrics', 'Compliance tracking'],
             detailedDescription: 'Establish governance frameworks that align security, quality, and business objectives for sustainable protection and competitive advantage.'
         },
@@ -74,7 +74,7 @@ export default function CybersecurityServicesPage() {
             title: 'Incident Response',
             description: 'Rapid response and recovery from security incidents and breaches.',
             icon: <Zap className={styles.serviceIcon} />,
-            color: '#EC4899',
+            color: '#3b82f6',
             features: ['Incident response planning', 'Forensic analysis', 'Breach containment', 'Recovery procedures'],
             detailedDescription: 'Minimize damage from security incidents with our rapid response capabilities and post-incident improvement plans. We help you build resilient security operations.'
         },
@@ -83,7 +83,7 @@ export default function CybersecurityServicesPage() {
             title: 'Security Architecture',
             description: 'Design and implement robust security architectures for applications and infrastructure.',
             icon: <Network className={styles.serviceIcon} />,
-            color: '#06B6D4',
+            color: '#3b82f6',
             features: ['Security blueprint design', 'Zero-trust architecture', 'Cloud security', 'Identity management'],
             detailedDescription: 'Build security into your architecture from the ground up with defense-in-depth principles and modern security patterns.'
         }
@@ -96,7 +96,7 @@ export default function CybersecurityServicesPage() {
             title: 'Governance Baseline & Maturity Audit',
             description: 'Assess current security posture, compliance maturity, and define baseline KPIs through structured assessments and maturity audits.',
             icon: <FileText />,
-            color: '#3B82F6'
+            color: '#10b981'
         },
         {
             step: 2,
@@ -110,28 +110,28 @@ export default function CybersecurityServicesPage() {
             title: 'Data Security Governance',
             description: 'Protect business-critical assets and customer trust through robust data security frameworks aligned with GDPR, HIPAA, and ISO 27001.',
             icon: <Database />,
-            color: '#8B5CF6'
+            color: '#10b981'
         },
         {
             step: 4,
             title: 'Enterprise Governance and Compliance Framework',
             description: 'Ensure consistent governance and compliance across teams, systems, and delivery units for enterprise-grade control.',
             icon: <ClipboardCheck />,
-            color: '#F59E0B'
+            color: '#10b981'
         },
         {
             step: 5,
             title: 'Continuous Audits & Optimization Loops',
             description: 'Turn compliance data into continuous improvement through regular audits, insights, and governance refinements.',
             icon: <RefreshCw />,
-            color: '#EC4899'
+            color: '#10b981'
         },
         {
             step: 6,
             title: 'Cloud Security Governance',
             description: 'Extend governance controls to cloud environments ensuring visibility and compliance across multi-cloud architectures.',
             icon: <Cloud />,
-            color: '#06B6D4'
+            color: '#10b981'
         }
     ];
 
@@ -145,31 +145,31 @@ export default function CybersecurityServicesPage() {
         },
         {
             category: 'Solution Implementation',
-            color: '#10B981',
+            color: '#3b82f6',
             items: ['Workflow automation', 'Custom solution development', 'Software deployment', 'Technology optimization'],
             description: 'Optimize catastrophe management by speeding "time to value" and mitigating implementation risks.'
         },
         {
             category: 'Business Management',
-            color: '#8B5CF6',
+            color: '#3b82f6',
             items: ['Agile risk modeling', 'Regulatory demand support', 'Portfolio risk analysis', 'Exposure data enrichment'],
             description: 'Forge an agile modeling and risk management setup with global analyst support.'
         },
         {
             category: 'Real-time Monitoring',
-            color: '#F59E0B',
+            color: '#3b82f6',
             items: ['Instant threat detection', 'Proactive alerts', 'Operational continuity', 'Compliance monitoring'],
             description: '24/7 monitoring with immediate notifications for emerging risks.'
         },
         {
             category: 'Predictive Modeling',
-            color: '#EC4899',
+            color: '#3b82f6',
             items: ['Historical data analysis', 'Risk forecasting algorithms', 'Early warning systems', 'Scenario analysis'],
             description: 'Utilize historical data and advanced algorithms to forecast potential risks.'
         },
         {
             category: 'Industry Risk Solutions',
-            color: '#06B6D4',
+            color: '#3b82f6',
             items: ['Sector-specific frameworks', 'Regulatory compliance mapping', 'Industry threat intelligence', 'Best practice implementation'],
             description: 'Tailored risk management for financial, healthcare, manufacturing, and other sectors.'
         }
@@ -180,7 +180,7 @@ export default function CybersecurityServicesPage() {
         {
             category: 'Security Testing Tools',
             icon: <Shield />,
-            color: '#3B82F6',
+            color: '#10b981',
             technologies: ['Burp Suite', 'Nessus', 'Metasploit', 'OWASP ZAP', 'Nmap', 'Acunetix']
         },
         {
@@ -192,25 +192,25 @@ export default function CybersecurityServicesPage() {
         {
             category: 'Monitoring & SIEM',
             icon: <Eye />,
-            color: '#8B5CF6',
+            color: '#10b981',
             technologies: ['Splunk', 'ELK Stack', 'ArcSight', 'QRadar', 'Azure Sentinel', 'Sumo Logic']
         },
         {
             category: 'Cloud Security',
             icon: <Cloud />,
-            color: '#F59E0B',
+            color: '#10b981',
             technologies: ['AWS Security Hub', 'Azure Security Center', 'GCP Security', 'CloudTrail', 'Prisma Cloud', 'CrowdStrike']
         },
         {
             category: 'Identity & Access',
             icon: <Lock />,
-            color: '#EC4899',
+            color: '#10b981',
             technologies: ['Okta', 'Azure AD', 'Ping Identity', 'ForgeRock', 'Auth0', 'Keycloak']
         },
         {
             category: 'Risk Management Platforms',
             icon: <AlertTriangle />,
-            color: '#06B6D4',
+            color: '#10b981',
             technologies: ['RiskLens', 'MetricStream', 'Resolver', 'LogicGate', 'SAI Global', 'ProcessUnity']
         }
     ];
@@ -468,7 +468,7 @@ export default function CybersecurityServicesPage() {
                                 <p className={styles.testimonialText}>&quot;{testimonial.content}&quot;</p>
                                 <div className={styles.testimonialAuthor}>
                                     <h4>{testimonial.name}</h4>
-                                    <p>{testimonial.role}</p>
+                                    {/* <p>{testimonial.role}</p> */}
                                 </div>
 
                                 <div className={styles.ratings}>
@@ -497,7 +497,7 @@ export default function CybersecurityServicesPage() {
             </section>
 
             {/* ===== TRUSTED BY SECTION ===== */}
-            <section className={styles.trustedSection}>
+            {/* <section className={styles.trustedSection}>
                 <div className={styles.sectionContent}>
                     <p className={styles.trustedLabel}>Trusted by security-conscious organizations worldwide</p>
                     <div className={styles.trustedLogos}>
@@ -515,7 +515,7 @@ export default function CybersecurityServicesPage() {
                         ))}
                     </div>
                 </div>
-            </section>
+            </section> */}
 
             {/* ===== CORE SERVICES SECTION ===== */}
             <section className={styles.servicesSection}>

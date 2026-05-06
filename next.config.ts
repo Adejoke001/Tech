@@ -1,11 +1,12 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
+  
   output: "export",
 
-  trailingSlash: true, // 👈 fixes 404 on refresh in cPanel
+  trailingSlash: true,
 
   images: {
-    unoptimized: true, // 👈 REQUIRED for static export
+    unoptimized: true, 
     remotePatterns: [
       {
         protocol: "https",
@@ -33,10 +34,6 @@ const nextConfig = {
   experimental: {
     turbo: false,
   },
-
-
 };
-
-
 
 export default nextConfig;

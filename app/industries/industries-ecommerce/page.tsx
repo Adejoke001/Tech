@@ -69,7 +69,7 @@ export default function ECommercePage() {
   // ----- HERO TESTIMONIAL (unchanged) -----
   const testimonial = {
     name: "Michael",
-    role: "CEO, Styleglo",
+    // role: "CEO, Styleglo",
     content:
       "BBMcoders built our multi-vendor E-Commerce platform from scratch – it handles 100,000+ daily transactions with zero downtime. Their deep retail expertise and commitment to quality exceeded our expectations.",
     rating: 5,
@@ -637,7 +637,7 @@ export default function ECommercePage() {
                 </p>
                 <div className={styles.testimonialAuthor}>
                   <h4>{testimonial.name}</h4>
-                  <p>{testimonial.role}</p>
+                  {/* <p>{testimonial.role}</p> */}
                 </div>
                 <div className={styles.ratings}>
                   <div className={styles.ratingItem}>
@@ -667,7 +667,7 @@ export default function ECommercePage() {
       </section>
 
       {/* ===== TRUSTED BY SECTION ===== */}
-      <section className={styles.trustedSection}>
+      {/* <section className={styles.trustedSection}>
         <div className={styles.sectionContent}>
           <p className={styles.trustedLabel}>
             Trusted by startups and Fortune 500 companies
@@ -687,7 +687,7 @@ export default function ECommercePage() {
             ))}
           </div>
         </div>
-      </section>
+      </section> */}
 
       {/* ===== CORE SOLUTIONS SECTION (new design) ===== */}
       <section className={styles.coreSolutionsSection} id="solutions">

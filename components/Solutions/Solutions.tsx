@@ -1,6 +1,6 @@
 import React from 'react'
 import Link from 'next/link'
-import './solutions.modules.css'
+import styles from './solutions.module.css'  // Fixed import
 
 const Solutions = () => {
   const visualItems = [
@@ -44,59 +44,55 @@ const Solutions = () => {
   ]
 
   return (
-    <section className="solutionSection">
-      <div className="container">
-        <div className="contentWrapper">
+    <section className={styles.solutionSection}>
+      <div className={styles.container}>
+        <div className={styles.contentWrapper}>
           {/* Text Content */}
-          <div className="textContent">
-            <div className="badge fadeIn">
-              <span className="badgeIcon">🚀</span>
+          <div className={styles.textContent}>
+            <div className={styles.badge}>
+              <span className={styles.badgeIcon}>🚀</span>
               Engineering Excellence
             </div>
             
-            <h1 className="mainTitle fadeIn staggerDelay1">
-              Engineering Solutions for <span className="titleAccent">Every Stage of Growth</span>
+            <h1 className={styles.mainTitle}>
+              Engineering Solutions for <span className={styles.titleAccent}>Every Stage of Growth</span>
             </h1>
             
-            <p className="description fadeIn staggerDelay2">
+            <p className={styles.description}>
               We help startups and enterprises turn ideas into powerful, scalable software. 
               Whether you&apos;re building something new, upgrading legacy systems, or scaling 
               complex platforms, we make it faster, smarter, and easier – without compromise.
             </p>
             
-            <div className="ctaButtons fadeIn staggerDelay3">
-              <Link href="/contact" className="primaryButton">
+            <div className={styles.ctaButtons}>
+              <Link href="/contact" className={styles.primaryButton}>
                 Start Your Project
-                <span className="buttonIcon">→</span>
+                <span className={styles.buttonIcon}>→</span>
               </Link>
-              {/* <Link href="/our-process" className="secondaryButton">
-                Our Process
-                <span className="buttonIcon">→</span>
-              </Link> */}
             </div>
             
             {/* Stats */}
-            <div className="statsGrid fadeIn">
+            <div className={styles.statsGrid}>
               {stats.map((stat, index) => (
-                <div key={index} className="statItem">
-                  <div className="statNumber">{stat.number}</div>
-                  <div className="statLabel">{stat.label}</div>
+                <div key={index} className={styles.statItem}>
+                  <div className={styles.statNumber}>{stat.number}</div>
+                  <div className={styles.statLabel}>{stat.label}</div>
                 </div>
               ))}
             </div>
           </div>
           
           {/* Visual Content */}
-          <div className="visualContent">
-            <div className="visualGrid">
+          <div className={styles.visualContent}>
+            <div className={styles.visualGrid}>
               {visualItems.map((item, index) => (
                 <div 
                   key={index}
-                  className={`visualCard slideInRight staggerDelay${index % 3}`}
+                  className={styles.visualCard}
                 >
-                  <div className="visualIcon">{item.icon}</div>
-                  <h3 className="visualTitle">{item.title}</h3>
-                  <p className="visualDescription">{item.description}</p>
+                  <div className={styles.visualIcon}>{item.icon}</div>
+                  <h3 className={styles.visualTitle}>{item.title}</h3>
+                  <p className={styles.visualDescription}>{item.description}</p>
                 </div>
               ))}
             </div>

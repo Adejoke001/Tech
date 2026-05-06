@@ -48,7 +48,7 @@ export default function SoftwareDev() {
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.4, duration: 0.8 }}
             >
-              <span className={styles.highlight}>BBMcoders</span> delivers end-to-end software development solutions that transform your business vision into reality. Our expert team builds scalable, secure applications using cutting-edge technologies to drive growth and innovation for startups and enterprises alike.
+              <span> BBMcoders</span> delivers end-to-end software development solutions that transform your business vision into reality. Our expert team builds scalable, secure applications using cutting-edge technologies to drive growth and innovation for startups and enterprises alike.
             </motion.p>
 
             {/* CTA Button */}
@@ -162,7 +162,7 @@ export default function SoftwareDev() {
           </motion.div>
 
           {/* Trusted Clients Section */}
-          <motion.div 
+          {/* <motion.div 
             className={styles.trustedClients}
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
@@ -199,7 +199,7 @@ export default function SoftwareDev() {
                 </motion.div>
               ))}
             </div>
-          </motion.div>
+          </motion.div> */}
         </div>
       </div>
 

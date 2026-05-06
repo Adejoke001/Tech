@@ -36,31 +36,31 @@ export default function DataEngineeringAnalyticsPage() {
     const engineeringServices = [
         { icon: <Database />, title: 'Data Engineering Consulting', desc: 'Design scalable data architectures aligned with business objectives for optimized performance.', features: ['Better decision-making & efficiency', 'Design scalable data architectures', 'Develop customized data strategies'], color: '#3B82F6' },
         { icon: <UploadCloud />, title: 'Data Collection', desc: 'Implement custom data extraction and real-time integration methods that suit your unique needs.', features: ['Gather high-quality data', 'Utilize custom extraction methods', 'Enable real-time data integration'], color: '#10B981' },
-        { icon: <Filter />, title: 'Data Cleaning and Processing', desc: 'Our expertise ensures reliable datasets, reducing errors and enabling precise analytics.', features: ['Improve data accuracy and integrity', 'Data integrity for reliable analytics', 'Standardize data formats'], color: '#8B5CF6' },
-        { icon: <Workflow />, title: 'AIops, MLops, DataOps', desc: 'Integration of AI, ML, and DataOps optimizes workflows, accelerating data-driven innovations.', features: ['Automate data pipelines', 'Enhance data-driven innovations', 'Accelerate deployment cycles'], color: '#F59E0B' },
-        { icon: <GitMerge />, title: 'Data Integration and Analysis', desc: 'Our ETL processes and analytical tools deliver seamless data integration and actionable insights.', features: ['Drive smarter business decisions', 'Utilize analytical tools', 'Merge disparate datasets'], color: '#EC4899' },
-        { icon: <Layers />, title: 'Data Mining and Architecture', desc: 'Scalable architecture designs ensure efficient data flow, supporting advanced analytics.', features: ['Discover hidden opportunities', 'Support advanced analytics', 'Facilitate large-scale data storage'], color: '#06B6D4' },
-        { icon: <PieChart />, title: 'Data Visualization', desc: 'Intuitive dashboards that simplify trends and patterns for non-technical stakeholders.', features: ['Translate complex data into meaningful insights', 'Enable quick decision-making', 'Use tools like Tableau and Power BI'], color: '#84CC16' },
-        { icon: <HardDrive />, title: 'Data Management and Governance', desc: 'Implement advanced tools to manage and protect your data, upholding quality and integrity.', features: ['Ensure data compliance and accessibility', 'Use robust governance frameworks', 'Establish clear data ownership'], color: '#EF4444' },
+        { icon: <Filter />, title: 'Data Cleaning and Processing', desc: 'Our expertise ensures reliable datasets, reducing errors and enabling precise analytics.', features: ['Improve data accuracy and integrity', 'Data integrity for reliable analytics', 'Standardize data formats'], color: '#3b82f6' },
+        { icon: <Workflow />, title: 'AIops, MLops, DataOps', desc: 'Integration of AI, ML, and DataOps optimizes workflows, accelerating data-driven innovations.', features: ['Automate data pipelines', 'Enhance data-driven innovations', 'Accelerate deployment cycles'], color: '#10b981' },
+        { icon: <GitMerge />, title: 'Data Integration and Analysis', desc: 'Our ETL processes and analytical tools deliver seamless data integration and actionable insights.', features: ['Drive smarter business decisions', 'Utilize analytical tools', 'Merge disparate datasets'], color: '#3b82f6' },
+        { icon: <Layers />, title: 'Data Mining and Architecture', desc: 'Scalable architecture designs ensure efficient data flow, supporting advanced analytics.', features: ['Discover hidden opportunities', 'Support advanced analytics', 'Facilitate large-scale data storage'], color: '#10b981' },
+        { icon: <PieChart />, title: 'Data Visualization', desc: 'Intuitive dashboards that simplify trends and patterns for non-technical stakeholders.', features: ['Translate complex data into meaningful insights', 'Enable quick decision-making', 'Use tools like Tableau and Power BI'], color: '#3b82f6' },
+        { icon: <HardDrive />, title: 'Data Management and Governance', desc: 'Implement advanced tools to manage and protect your data, upholding quality and integrity.', features: ['Ensure data compliance and accessibility', 'Use robust governance frameworks', 'Establish clear data ownership'], color: '#10b981' },
         { icon: <Shield />, title: 'Data Security', desc: 'End-to-end encryption and monitoring solutions to protect against breaches and ensure compliance.', features: ['Use cutting-edge security protocols', 'Ensure compliance with regulations', 'Safeguard data assets'], color: '#0EA5E9' },
-        { icon: <Server />, title: 'Data Migration and Warehouse', desc: 'Design centralized data warehouses, improving analytics and business intelligence capabilities.', features: ['Facilitate smooth transitions', 'Minimize data transfer downtime', 'Use business intelligence services'], color: '#14B8A6' },
-        { icon: <Workflow />, title: 'Data Pipeline', desc: 'Our expertise ensures efficient extraction, transformation, and loading of data across platforms.', features: ['Use custom-built pipelines', 'Automate data workflows', 'Integrate monitoring tools'], color: '#8B5CF6' },
+        { icon: <Server />, title: 'Data Migration and Warehouse', desc: 'Design centralized data warehouses, improving analytics and business intelligence capabilities.', features: ['Facilitate smooth transitions', 'Minimize data transfer downtime', 'Use business intelligence services'], color: '#3b82f6' },
+        { icon: <Workflow />, title: 'Data Pipeline', desc: 'Our expertise ensures efficient extraction, transformation, and loading of data across platforms.', features: ['Use custom-built pipelines', 'Automate data workflows', 'Integrate monitoring tools'], color: '#10b981' },
         { icon: <Cloud />, title: 'Cloud Transformation', desc: 'Utilize top cloud platforms like AWS and Azure to modernize your infrastructure.', features: ['Scalability and flexibility', 'Accessibility and collaboration', 'Optimize costs with cloud'], color: '#3B82F6' },
     ];
 
     // ===== COMPLETE DATA ANALYTICS SERVICES (From second website) =====
     const analyticsServices = [
-        { icon: <BarChart3 />, title: 'Data Analytics Consulting', desc: 'Expert data strategies helping businesses maximize value from data investments.', features: ['Data roadmap development', 'Analytics use-case identification', 'Business-driven data planning'], color: '#3B82F6' },
-        { icon: <LineChart />, title: 'Data Analytics Implementation', desc: 'Integrating advanced analytics seamlessly into business operations for real-time decision-making.', features: ['End-to-end implementation', 'Custom solution integration', 'Process optimization'], color: '#10B981' },
-        { icon: <BarChart />, title: 'Managed Data Analysis', desc: 'End-to-end analytics services managed by experts, freeing your team to focus on core priorities.', features: ['On-demand analytics support', 'Insight generation', 'Report automation'], color: '#8B5CF6' },
-        { icon: <RefreshCw />, title: 'Data Analytics Modernization', desc: 'Modernize legacy analytics systems to enhance performance, scalability, and cost efficiency.', features: ['Cloud migration support', 'Tool & tech upgrades', 'Infrastructure reengineering'], color: '#F59E0B' },
-        { icon: <Database />, title: 'Data Management Services', desc: 'Comprehensive data lifecycle management ensures security, integrity, and compliance.', features: ['Data governance setup', 'Centralized storage', 'Quality assurance processes'], color: '#EC4899' },
-        { icon: <Server />, title: 'Data Integration & Warehousing', desc: 'Consolidate data from various sources into a single warehouse for faster access and insights.', features: ['ETL pipeline setup', 'Unified data access', 'Scalable warehousing'], color: '#06B6D4' },
-        { icon: <Cloud />, title: 'Analytics as a Service (AaaS)', desc: 'Cloud-powered analytics platform offering insights without infrastructure investment.', features: ['Subscription-based analytics', 'Instant data visualizations', 'Minimal IT involvement'], color: '#84CC16' },
-        { icon: <Brain />, title: 'Predictive Analytics', desc: 'Use historical data to forecast trends, mitigate risks, and guide strategic decisions.', features: ['AI/ML-based forecasting', 'Trend prediction', 'Risk assessment models'], color: '#EF4444' },
-        { icon: <Cpu />, title: 'Big Data Analytics', desc: 'Utilize large-scale data with modern platforms to unlock patterns and business-critical insights.', features: ['Data lake architecture development', 'Stream and batch data pipelines', 'Scalable data storage optimization'], color: '#0EA5E9' },
-        { icon: <Brain />, title: 'AI & ML Analytics', desc: 'Enable intelligent decision-making through predictive models, classification systems, and automation.', features: ['Machine learning model deployment', 'Customer intent prediction', 'Anomaly detection models'], color: '#14B8A6' },
-        { icon: <Lock />, title: 'Blockchain Analytics', desc: 'Ensure transparency, security, and compliance with real-time blockchain activity monitoring.', features: ['Transaction validation tracking', 'Smart contract audit dashboards', 'Fraud and anomaly detection'], color: '#8B5CF6' },
+        { icon: <BarChart3 />, title: 'Data Analytics Consulting', desc: 'Expert data strategies helping businesses maximize value from data investments.', features: ['Data roadmap development', 'Analytics use-case identification', 'Business-driven data planning'], color: '#10b981' },
+        { icon: <LineChart />, title: 'Data Analytics Implementation', desc: 'Integrating advanced analytics seamlessly into business operations for real-time decision-making.', features: ['End-to-end implementation', 'Custom solution integration', 'Process optimization'], color: '#3b82f6' },
+        { icon: <BarChart />, title: 'Managed Data Analysis', desc: 'End-to-end analytics services managed by experts, freeing your team to focus on core priorities.', features: ['On-demand analytics support', 'Insight generation', 'Report automation'], color: '#10b981' },
+        { icon: <RefreshCw />, title: 'Data Analytics Modernization', desc: 'Modernize legacy analytics systems to enhance performance, scalability, and cost efficiency.', features: ['Cloud migration support', 'Tool & tech upgrades', 'Infrastructure reengineering'], color: '#3b82f6' },
+        { icon: <Database />, title: 'Data Management Services', desc: 'Comprehensive data lifecycle management ensures security, integrity, and compliance.', features: ['Data governance setup', 'Centralized storage', 'Quality assurance processes'], color: '#10b981' },
+        { icon: <Server />, title: 'Data Integration & Warehousing', desc: 'Consolidate data from various sources into a single warehouse for faster access and insights.', features: ['ETL pipeline setup', 'Unified data access', 'Scalable warehousing'], color: '#3b82f6' },
+        { icon: <Cloud />, title: 'Analytics as a Service (AaaS)', desc: 'Cloud-powered analytics platform offering insights without infrastructure investment.', features: ['Subscription-based analytics', 'Instant data visualizations', 'Minimal IT involvement'], color: '#10b981' },
+        { icon: <Brain />, title: 'Predictive Analytics', desc: 'Use historical data to forecast trends, mitigate risks, and guide strategic decisions.', features: ['AI/ML-based forecasting', 'Trend prediction', 'Risk assessment models'], color: '#3b82f6' },
+        { icon: <Cpu />, title: 'Big Data Analytics', desc: 'Utilize large-scale data with modern platforms to unlock patterns and business-critical insights.', features: ['Data lake architecture development', 'Stream and batch data pipelines', 'Scalable data storage optimization'], color: '#10b981' },
+        { icon: <Brain />, title: 'AI & ML Analytics', desc: 'Enable intelligent decision-making through predictive models, classification systems, and automation.', features: ['Machine learning model deployment', 'Customer intent prediction', 'Anomaly detection models'], color: '#3b82f6' },
+        { icon: <Lock />, title: 'Blockchain Analytics', desc: 'Ensure transparency, security, and compliance with real-time blockchain activity monitoring.', features: ['Transaction validation tracking', 'Smart contract audit dashboards', 'Fraud and anomaly detection'], color: '#10b981' },
         { icon: <Wifi />, title: 'IoT Analytics', desc: 'Utilize sensor and edge data for smarter operations, real-time alerts, and predictive actions.', features: ['Sensor activity dashboards', 'Real-time equipment monitoring', 'Predictive maintenance for IoT devices'], color: '#3B82F6' },
     ];
 
@@ -77,19 +77,19 @@ export default function DataEngineeringAnalyticsPage() {
                 title: 'ERP Analytics',
                 icon: <Settings />,
                 analytics: ['Workflow performance metrics', 'Cross-departmental data synchronization', 'Real-time ERP data dashboards', 'Order-to-cash and procure-to-pay cycle analytics', 'Exception handling and error trend analysis'],
-                color: '#10B981'
+                color: '#3b82f6'
             },
             {
                 title: 'Sourcing & Stock Management',
                 icon: <Target />,
                 analytics: ['AI-powered demand forecasting', 'Procurement efficiency analytics', 'Inventory turnover and reorder optimization', 'Supplier reliability and delivery performance', 'Stock-out and overstock trend analysis'],
-                color: '#8B5CF6'
+                color: '#3b82f6'
             },
             {
                 title: 'Asset Management',
                 icon: <Building />,
                 analytics: ['Predictive maintenance models', 'Asset usage & depreciation tracking', 'Lifecycle cost and ROI analysis', 'Downtime and incident frequency tracking', 'Scheduled vs. unscheduled maintenance comparison'],
-                color: '#F59E0B'
+                color: '#3b82f6'
             },
         ],
         industry: [
@@ -97,25 +97,25 @@ export default function DataEngineeringAnalyticsPage() {
                 title: 'Healthcare Analytics',
                 icon: <ShieldCheck />,
                 analytics: ['Patient history and trend dashboards', 'Predictive health risk modeling', 'Real-time bed occupancy tracking', 'Claims and billing anomaly detection', 'Diagnostic accuracy insights'],
-                color: '#EC4899'
+                color: '#10b981'
             },
             {
                 title: 'Manufacturing Analytics',
                 icon: <CpuIcon />,
                 analytics: ['Machine performance and downtime tracking', 'Yield and scrap rate analysis', 'Process cycle time analytics', 'Quality assurance trend monitoring', 'Energy consumption efficiency'],
-                color: '#06B6D4'
+                color: '#10b981'
             },
             {
                 title: 'BFSI Analytics',
                 icon: <BarChart />,
                 analytics: ['Credit risk scoring models', 'AI-based fraud monitoring', 'Transaction pattern recognition', 'Portfolio performance dashboards', 'KYC/AML compliance analytics'],
-                color: '#84CC16'
+                color: '#10b981'
             },
             {
                 title: 'Transportation & Logistics',
                 icon: <Globe />,
                 analytics: ['Route efficiency heatmaps', 'Real-time fleet tracking dashboards', 'Fuel consumption trend analysis', 'Warehouse logistics dashboards', 'Shipment delay predictions'],
-                color: '#EF4444'
+                color: '#10b981'
             },
         ],
         technology: [
@@ -123,19 +123,19 @@ export default function DataEngineeringAnalyticsPage() {
                 title: 'IoT Analytics',
                 icon: <Wifi />,
                 analytics: ['Sensor activity dashboards', 'Real-time equipment monitoring', 'Environmental condition tracking', 'Predictive maintenance for IoT devices', 'Device connectivity health reports'],
-                color: '#0EA5E9'
+                color: '#3b82f6'
             },
             {
                 title: 'Big Data Analytics',
                 icon: <Database />,
                 analytics: ['Data lake architecture development', 'Stream and batch data pipelines', 'Scalable data storage optimization', 'Hadoop and Spark implementation', 'Enterprise-wide analytics integration'],
-                color: '#14B8A6'
+                color: '#3b82f6'
             },
             {
                 title: 'AI & ML Analytics',
                 icon: <Brain />,
                 analytics: ['Machine learning model deployment', 'Customer intent prediction', 'Anomaly detection models', 'Demand forecasting engines', 'NLP-based sentiment analysis'],
-                color: '#8B5CF6'
+                color: '#3b82f6'
             },
             {
                 title: 'Blockchain Analytics',
@@ -168,37 +168,37 @@ export default function DataEngineeringAnalyticsPage() {
 
     // ===== HIRING MODELS (Complete from both websites) =====
     const hiringModels = [
-        {
-            title: 'Fixed Price Model',
-            description: 'For businesses with well-defined project scope and requirements.',
-            price: 'From $25,000',
-            features: ['Simplified process', 'Higher predictability', 'Greater transparency', 'Reduced risk', 'Low management efforts'],
-            color: '#10B981',
-            gradient: 'linear-gradient(135deg, #10B981 0%, #34D399 100%)',
-            bestFor: ['Specific Data Migration', 'Dashboard Implementation', 'Compliance Projects'],
-            icon: <FileText />
-        },
-        {
-            title: 'Dedicated Hiring Model',
-            description: 'For businesses with long-term requirements or complex development process.',
-            price: 'From $8,500 /month',
-            features: ['Complete control', 'More flexibility', 'Focused and dedicated approach', 'Faster time to market', 'Staff Augmentation'],
-            color: '#3B82F6',
-            gradient: 'linear-gradient(135deg, #3B82F6 0%, #60A5FA 100%)',
-            bestFor: ['Ongoing Data Management', 'Analytics Implementation', 'Continuous Optimization'],
-            icon: <Users />
-        },
-        {
-            title: 'Time & Material Model',
-            description: 'For businesses looking to pay for completed project instead of committing to fixed cost.',
-            price: '$75 - $200 /hour',
-            features: ['Faster project start', 'Flexibility to adapt', 'Pay as you go model', 'Easy scaling', 'Transparent billing'],
-            color: '#8B5CF6',
-            gradient: 'linear-gradient(135deg, #8B5CF6 0%, #A78BFA 100%)',
-            bestFor: ['Data Consulting', 'Proof of Concepts', 'Emergency Support'],
-            icon: <Clock />
-        },
-    ];
+    {
+        title: 'Fixed Price Model',
+        description: 'For businesses with well-defined project scope and requirements.',
+        price: 'From $25,000',
+        features: ['Simplified process', 'Higher predictability', 'Greater transparency', 'Reduced risk', 'Low management efforts'],
+        color: '#3B82F6',
+        gradient: 'linear-gradient(135deg, #3B82F6 0%, #2563EB 100%)',
+        bestFor: ['Specific Data Migration', 'Dashboard Implementation', 'Compliance Projects'],
+        icon: <FileText />
+    },
+    {
+        title: 'Dedicated Hiring Model',
+        description: 'For businesses with long-term requirements or complex development process.',
+        price: 'From $8,500 /month',
+        features: ['Complete control', 'More flexibility', 'Focused and dedicated approach', 'Faster time to market', 'Staff Augmentation'],
+        color: '#3B82F6',
+        gradient: 'linear-gradient(135deg, #3B82F6 0%, #2563EB 100%)',
+        bestFor: ['Ongoing Data Management', 'Analytics Implementation', 'Continuous Optimization'],
+        icon: <Users />
+    },
+    {
+        title: 'Time & Material Model',
+        description: 'For businesses looking to pay for completed project instead of committing to fixed cost.',
+        price: '$75 - $200 /hour',
+        features: ['Faster project start', 'Flexibility to adapt', 'Pay as you go model', 'Easy scaling', 'Transparent billing'],
+        color: '#3B82F6',
+        gradient: 'linear-gradient(135deg, #3B82F6 0%, #2563EB 100%)',
+        bestFor: ['Data Consulting', 'Proof of Concepts', 'Emergency Support'],
+        icon: <Clock />
+    },
+];
 
     // ===== KEY BENEFITS SECTION (From both websites) =====
     const keyBenefits = [
@@ -220,7 +220,7 @@ export default function DataEngineeringAnalyticsPage() {
             desc: 'We begin by understanding your data needs and business objectives.',
             details: ['Business requirement analysis', 'Data source identification', 'Success metric definition', 'Stakeholder interviews'],
             icon: <FileText />,
-            color: '#3B82F6',
+            color: '#10b981',
             duration: '2-4 weeks'
         },
         {
@@ -238,7 +238,7 @@ export default function DataEngineeringAnalyticsPage() {
             desc: 'Clean and organize data, ensuring accuracy and consistency.',
             details: ['Data validation rules', 'Error detection & correction', 'Format standardization', 'Anomaly detection setup'],
             icon: <Filter />,
-            color: '#8B5CF6',
+            color: '#10b981',
             duration: '2-3 weeks'
         },
         {
@@ -247,7 +247,7 @@ export default function DataEngineeringAnalyticsPage() {
             desc: 'Combine data from different systems into a cohesive whole.',
             details: ['ETL/ELT pipeline development', 'Data warehouse design', 'Schema optimization', 'Performance tuning'],
             icon: <GitMerge />,
-            color: '#F59E0B',
+            color: '#10b981',
             duration: '3-5 weeks'
         },
         {
@@ -256,7 +256,7 @@ export default function DataEngineeringAnalyticsPage() {
             desc: 'Generate actionable insights through analysis and intuitive visual tools.',
             details: ['Statistical analysis', 'ML model development', 'Dashboard creation', 'Report automation'],
             icon: <BarChart3 />,
-            color: '#EC4899',
+            color: '#10b981',
             duration: '3-4 weeks'
         },
         {
@@ -265,7 +265,7 @@ export default function DataEngineeringAnalyticsPage() {
             desc: 'Deploy the solution and continuously monitor performance for optimization.',
             details: ['Production deployment', 'Performance monitoring', 'Security validation', 'Ongoing optimization'],
             icon: <RefreshCw />,
-            color: '#06B6D4',
+            color: '#10b981',
             duration: '2-4 weeks'
         },
     ];
@@ -284,14 +284,14 @@ export default function DataEngineeringAnalyticsPage() {
             icon: '🛍️',
             desc: 'Enhancing retail journeys with real-time inventory tracking, personalized customer experiences, and scalable infrastructure to handle peak shopping seasons seamlessly.',
             image: 'https://images.unsplash.com/photo-1441986300917-64674bd600d8?auto=format&fit=crop&w=800&q=80',
-            color: '#8B5CF6'
+            color: '#10b981'
         },
         {
             name: 'Media & Entertainment',
             icon: '🎬',
             desc: 'Custom tech to empower brands with content delivery networks, streaming optimization, and audience analytics for personalized media experiences.',
             image: 'https://plus.unsplash.com/premium_photo-1664303677453-ca2ad8f7dd8d?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTN8fG1lZGlhJTIwYW5kJTIwZW50ZXJ0YWlubWVudHxlbnwwfHwwfHx8MA%3D%3D',
-            color: '#3B82F6'
+            color: '#10b981'
         },
     ];
 
@@ -394,7 +394,7 @@ export default function DataEngineeringAnalyticsPage() {
             </section>
 
             {/* ===== TRUSTED BY ===== */}
-            <section className={styles.trustedBy}>
+            {/* <section className={styles.trustedBy}>
                 <div className={styles.sectionContent}>
                     <p className={styles.trustedLabel}>Trusted by Startups and Fortune 500 Companies</p>
                     <div className={styles.trustedLogos}>
@@ -403,7 +403,7 @@ export default function DataEngineeringAnalyticsPage() {
                         ))}
                     </div>
                 </div>
-            </section>
+            </section> */}
 
             {/* ===== COMPLETE SERVICES SECTION ===== */}
             <section id="services" className={styles.servicesSection}>

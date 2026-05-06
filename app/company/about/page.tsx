@@ -39,55 +39,42 @@ export default function AboutPage() {
         },
     ];
 
-    // ----- TEAM MEMBERS (with image placeholder) -----
+    // ----- TEAM MEMBERS (with LinkedIn URLs) -----
     const teamMembers = [
         {
-            name: 'Adebayo Ogunlesi',
-            role: 'Founder & CEO',
-            bio: 'An entrepreneur at heart with love for technology, Adebayo uniquely blends business analysis, strategy, targeted objectives, and ROI with IT solutions.',
-            image: '/images/user.png', // placeholder image
+            name: 'Bernard U. Odefe',
+            role: 'Chief Executive Officer',
+            bio: 'CEO & -CO Founder. Technical Lead, Software Architect, System Analyst, Server Engineer and Architectural Specification Writer.',
+            image: '/images/user.png',
+            linkedin: 'https://linkedin.com/in/bernard-odefe', 
         },
         {
-            name: 'Chidi Okonkwo',
-            role: 'VP - Operations',
-            bio: 'Chidi oversees BBMcoders\'s vast engineering organization, which drives the company\'s core programming.',
+            name: 'Precious Uyomere k.',
+            role: 'Computer Engineer',
+            bio: 'Precious is an NSE-certified Computer Engineer with five years of experience building scalable systems, driving BBMcoders’ core engineering with precision and reliability.',
             image: '/images/user.png',
+            linkedin: 'https://www.linkedin.com/in/precious-uyomere-588909175/', 
         },
         {
-            name: 'Folake Adeyemi',
-            role: 'VP - Digital Marketing',
-            bio: 'Folake heads the digital marketing department, where she manages the entire online presence of the company.',
+            name: 'Adejoke Adejoke',
+            role: 'Frontend Developer',
+            bio: 'Adejoke is a React and Next.js Frontend Developer who leads her team in building fast, scalable, user-focused web experiences, turning ideas into high-performing products.',
             image: '/images/user.png',
+            linkedin: 'https://www.linkedin.com/in/akinade20/', 
         },
         {
-            name: 'Emeka Nwachukwu',
-            role: 'VP - Human Resource',
-            bio: 'Emeka leads the HR team, responsible for the company\'s talent acquisition and culture.',
+            name: 'Stephen Agbo',
+            role: 'Computer Engineer',
+            bio: 'Stephen is a Mobile App Developer who leads the team in building intuitive, high-performance applications, driving seamless mobile experiences from concept to launch.',
             image: '/images/user.png',
+            linkedin: 'https://www.linkedin.com/in/stephen-agbo-564167247/', 
         },
         {
-            name: 'Ngozi Eze',
-            role: 'Head Of Resourcing & Partnerships',
-            bio: 'Ngozi is a strategist and digital thought leader who bridges technology and client satisfaction.',
+            name: 'Goodness Owolabi',
+            role: 'Fullstack Developer',
+            bio: 'Goodness is a software engineer who builds innovative, scalable solutions, turning complex challenges into efficient, high-impact products.',
             image: '/images/user.png',
-        },
-        {
-            name: 'Tunde Balogun',
-            role: 'Technical Manager',
-            bio: 'With a solid technical background, Tunde manages client communication, project management, and deliveries.',
-            image: '/images/user.png',
-        },
-        {
-            name: 'Yemi Adesina',
-            role: 'VP - Business Development',
-            bio: 'More than 15 years experience of background trading with emerging technologies; helps startups and SMEs build their co-branded teams.',
-            image: '/images/user.png',
-        },
-        {
-            name: 'Kemi Akintola',
-            role: 'Sr. IT Executive',
-            bio: 'Leads IT Department and responsible for providing high-quality technical services and finding appropriate tools to automate and accomplish jobs timely.',
-            image: '/images/user.png',
+            linkedin: 'https://www.linkedin.com/in/goodness-owolabi-82a690332/', 
         },
     ];
 
@@ -101,7 +88,7 @@ export default function AboutPage() {
         { year: '2026', event: 'Accelerated digital transformation services with AI-driven solutions and strengthening global partnerships.' }
     ];
 
-    // ----- AWARDS & RECOGNITIONS (placeholder) -----
+    // ----- AWARDS & RECOGNITIONS -----
     const awards = [
         { name: 'Great Place to Work', year: '2023', logo: '🏆' },
         { name: 'Top Software Developer', year: '2022', logo: '⭐' },
@@ -109,49 +96,43 @@ export default function AboutPage() {
         { name: 'Fastest Growing Tech Company', year: '2020', logo: '🚀' },
     ];
 
-    // ----- CLIENT TESTIMONIALS (with image placeholder) -----
-   const testimonials = [
-    {
-        name: 'Daniel Foster',
-        role: 'CEO, BrightPath Solutions',
-        content: 'Working with BBMcoders was a smooth experience from start to finish. Their team quickly understood our requirements and delivered exactly what we envisioned, on time and within budget.',
-        image: '/images/user.png',
-    },
-    {
-        name: 'Angela Morris',
-        role: 'Product Manager, NexaCore',
-        content: 'The level of professionalism and communication from BBMcoders stood out. They kept us informed throughout the project and handled every challenge with confidence.',
-        image: '/images/user.png',
-    },
-    {
-        name: 'Samuel Okoye',
-        role: 'Founder, AgroLink Africa',
-        content: 'BBMcoders helped us turn our idea into a fully functional platform in record time. Their technical knowledge and commitment made a huge difference for our startup.',
-        image: '/images/user.png',
-    },
-    {
-        name: 'Laura Chen',
-        role: 'Operations Lead, FinEdge Group',
-        content: 'We were impressed by how detail-oriented the BBMcoders team is. They delivered a reliable and scalable solution that exceeded our expectations.',
-        image: '/images/user.png',
-    },
-    {
-        name: 'Michael Grant',
-        role: 'Director, UrbanTech Labs',
-        content: 'From design to deployment, BBMcoders demonstrated real expertise. Their ability to translate our ideas into a clean, user-friendly product was outstanding.',
-        image: '/images/user.png',
-    },
-    {
-        name: 'Fatima Bello',
-        role: 'Co-founder, HealthBridge Nigeria',
-        content: 'Choosing BBMcoders was one of the best decisions we made. Their support, speed, and quality of work have been exceptional throughout our collaboration.',
-        image: '/images/user.png',
-    },
-];
+    // ----- CLIENT TESTIMONIALS -----
+    const testimonials = [
+        {
+            name: 'Daniel',
+            content: 'Working with BBMcoders was a smooth experience from start to finish. Their team quickly understood our requirements and delivered exactly what we envisioned, on time and within budget.',
+            image: '/images/user.png',
+        },
+        {
+            name: 'Morris',
+            content: 'The level of professionalism and communication from BBMcoders stood out. They kept us informed throughout the project and handled every challenge with confidence.',
+            image: '/images/user.png',
+        },
+        {
+            name: 'Samuel Okoye',
+            content: 'BBMcoders helped us turn our idea into a fully functional platform in record time. Their technical knowledge and commitment made a huge difference for our startup.',
+            image: '/images/user.png',
+        },
+        {
+            name: 'Laura',
+            content: 'We were impressed by how detail-oriented the BBMcoders team is. They delivered a reliable and scalable solution that exceeded our expectations.',
+            image: '/images/user.png',
+        },
+        {
+            name: 'Michael',
+            content: 'From design to deployment, BBMcoders demonstrated real expertise. Their ability to translate our ideas into a clean, user-friendly product was outstanding.',
+            image: '/images/user.png',
+        },
+        {
+            name: 'Fatima Bello',
+            content: 'Choosing BBMcoders was one of the best decisions we made. Their support, speed, and quality of work have been exceptional throughout our collaboration.',
+            image: '/images/user.png',
+        },
+    ];
 
     // ----- COMPANY STATS -----
     const companyStats = [
-        { value: '700+', label: 'Full-time Staff', icon: <Users />, description: 'Top 1% industry talent' },
+        { value: '700+', label: 'Full-time Staff', icon: <Users />, description: 'Top 10% industry talent' },
         { value: '20+', label: 'Years Experience', icon: <Award />, description: 'Since 2004' },
         { value: '4500+', label: 'Satisfied Clients', icon: <MessageSquare />, description: 'Global client base' },
     ];
@@ -206,14 +187,11 @@ export default function AboutPage() {
                                 We help businesses unveil and satisfy demand for digital transformation by providing engineering and consulting services that foster competitiveness and innovation.
                             </p>
                             <div className={styles.missionFounder}>
-                                {/* <div className={styles.founderAvatar}>
-                                    <Image src="/images/user.png" alt="Adebayo Ogunlesi" width={60} height={60} className={styles.avatarImage} />
-                                </div> */}
-                                  <div className={styles.founderAvatar} style={{ backgroundColor: '#3B82F6', color: 'white' }}>
-                                    AO
+                                <div className={styles.founderAvatar} style={{ backgroundColor: '#3B82F6', color: 'white' }}>
+                                    BO
                                 </div>
                                 <div className={styles.founderInfo}>
-                                    <h4>Adebayo Ogunlesi</h4>
+                                    <h4>Bernard U. Odefe</h4>
                                     <p>CEO, BBMcoders</p>
                                 </div>
                             </div>
@@ -321,7 +299,7 @@ export default function AboutPage() {
                 </div>
             </section>
 
-            {/* ===== TEAM SECTION ===== */}
+            {/* ===== TEAM SECTION with LinkedIn links ===== */}
             <section className={styles.teamSection}>
                 <div className={styles.container}>
                     <div className={styles.sectionHeader}>
@@ -334,21 +312,28 @@ export default function AboutPage() {
                     </div>
                     <div className={styles.teamGrid}>
                         {teamMembers.map((member, index) => (
-                            <motion.div
+                            <Link
                                 key={index}
-                                className={styles.teamCard}
-                                initial={{ opacity: 0, y: 20 }}
-                                whileInView={{ opacity: 1, y: 0 }}
-                                transition={{ duration: 0.4, delay: index * 0.05 }}
-                                viewport={{ once: true }}
+                                href={member.linkedin}
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                style={{ textDecoration: 'none' }}
                             >
-                                <div className={styles.teamAvatar}>
-                                    <Image src={member.image} alt={member.name} width={120} height={120} className={styles.teamImage} />
-                                </div>
-                                <h3 className={styles.teamName}>{member.name}</h3>
-                                <p className={styles.teamRole}>{member.role}</p>
-                                <p className={styles.teamBio}>{member.bio}</p>
-                            </motion.div>
+                                <motion.div
+                                    className={styles.teamCard}
+                                    initial={{ opacity: 0, y: 20 }}
+                                    whileInView={{ opacity: 1, y: 0 }}
+                                    transition={{ duration: 0.4, delay: index * 0.05 }}
+                                    viewport={{ once: true }}
+                                >
+                                    <div className={styles.teamAvatar}>
+                                        <Image src={member.image} alt={member.name} width={120} height={120} className={styles.teamImage} />
+                                    </div>
+                                    <h3 className={styles.teamName}>{member.name}</h3>
+                                    <p className={styles.teamRole}>{member.role}</p>
+                                    <p className={styles.teamBio}>{member.bio}</p>
+                                </motion.div>
+                            </Link>
                         ))}
                     </div>
                 </div>
@@ -401,7 +386,6 @@ export default function AboutPage() {
                                     </div>
                                     <div>
                                         <h4 className={styles.testimonialName}>{testimonial.name}</h4>
-                                        <p className={styles.testimonialRole}>{testimonial.role}</p>
                                     </div>
                                 </div>
                                 <p className={styles.testimonialContent}>&quot;{testimonial.content}&quot;</p>

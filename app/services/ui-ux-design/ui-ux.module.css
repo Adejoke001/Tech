@@ -1,31 +1,24 @@
-/* ui-ux-design.module.css */
-
 /* ===== ORIGINAL COLOR PALETTE (Matching your previous pages) ===== */
 .pageWrapper {
-    /* Your Original Primary Colors */
-    --primary-blue: #60a5fa;
-    --primary-green: #34d399;
-    --gradient-primary: linear-gradient(135deg, #60a5fa, #34d399);
+    /* Your Standard Brand Colors */
+    --primary-blue: #3B82F6;
+    --primary-green: #10B981;
+    --gradient-primary: linear-gradient(135deg, #3B82F6, #10B981);
+    --gradient-primary-dark: linear-gradient(135deg, #2563EB, #059669);
     
-    /* Your Original Secondary Colors */
-    --secondary-purple: #8b5cf6;
-    --secondary-amber: #f59e0b;
-    --secondary-red: #ef4444;
-    --secondary-cyan: #06b6d4;
-    
-    /* Your Original Neutral Colors */
-    --dark-bg: #0f172a;
-    --dark-surface: #1e293b;
-    --gray-900: #1f2937;
+    /* Neutral Colors */
+    --dark-bg: #0F172A;
+    --dark-surface: #1E293B;
+    --gray-900: #1F2937;
     --gray-800: #374151;
-    --gray-700: #4b5563;
-    --gray-600: #6b7280;
-    --gray-500: #9ca3af;
-    --gray-400: #d1d5db;
-    --gray-300: #e5e7eb;
-    --gray-200: #f3f4f6;
-    --gray-100: #f9fafb;
-    --white: #ffffff;
+    --gray-700: #4B5563;
+    --gray-600: #6B7280;
+    --gray-500: #9CA3AF;
+    --gray-400: #D1D5DB;
+    --gray-300: #E5E7EB;
+    --gray-200: #F3F4F6;
+    --gray-100: #F9FAFB;
+    --white: #FFFFFF;
     
     width: 100%;
     overflow-x: hidden;
@@ -181,8 +174,9 @@
 }
 
 .ctaButton:hover {
+    background: var(--gradient-primary-dark);
     transform: translateY(-2px);
-    box-shadow: 0 6px 20px rgba(96, 165, 250, 0.4);
+    box-shadow: 0 6px 20px rgba(59, 130, 246, 0.4);
 }
 
 .buttonIcon {
@@ -1397,8 +1391,9 @@
 }
 
 .ctaPrimary:hover {
+    background: var(--gradient-primary-dark);
     transform: translateY(-2px);
-    box-shadow: 0 6px 20px rgba(96, 165, 250, 0.4);
+    box-shadow: 0 6px 20px rgba(59, 130, 246, 0.4);
 }
 
 .ctaSecondary {

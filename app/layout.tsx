@@ -5,6 +5,7 @@ import Footer from '@/components/Footer/Footer'
 import Navbar from '@/components/Navbar/Navbar'
 import Booking from '@/components/Booking/Booking'
 
+
 const inter = Inter({ subsets: ['latin'] })
 
 export const metadata: Metadata = {

@@ -3,7 +3,7 @@
 import { useState } from "react";
 import Link from "next/link";
 import styles from "./navbar.module.css";
-import Image from "next/image";
+// import Image from "next/image";
 import { Menu, X } from "lucide-react";
 
 // Simple icons
