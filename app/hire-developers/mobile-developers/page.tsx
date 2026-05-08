@@ -57,7 +57,7 @@ export default function MobileAppDevelopersPage() {
       description:
         "Native Android (Kotlin/Java), Native iOS (Swift/Objective-C), and cross-platform apps using Flutter, React Native, and Xamarin.",
       icon: <Smartphone className={styles.expertiseIcon} />,
-      color: "#3B82F6",
+      color: "#10b981",
       features: [
         "Native Android development",
         "Native iOS development",
@@ -86,7 +86,7 @@ export default function MobileAppDevelopersPage() {
       description:
         "RESTful & GraphQL API integration, real-time communication with WebSockets, and social media, payment, and map integrations.",
       icon: <GitBranch className={styles.expertiseIcon} />,
-      color: "#8B5CF6",
+      color: "#10b981",
       features: [
         "REST/GraphQL APIs",
         "WebSocket integration",
@@ -100,7 +100,7 @@ export default function MobileAppDevelopersPage() {
       description:
         "Migrating legacy apps to modern tech stacks, converting hybrid apps to native or cross-platform, and updating UI/UX.",
       icon: <RefreshCw className={styles.expertiseIcon} />,
-      color: "#F59E0B",
+      color: "#10b981",
       features: [
         "Legacy app migration",
         "Hybrid to native conversion",
@@ -114,7 +114,7 @@ export default function MobileAppDevelopersPage() {
       description:
         "CPU, GPU, memory optimization, battery & network usage tuning, faster load times, and smooth user interactions.",
       icon: <Zap className={styles.expertiseIcon} />,
-      color: "#EC4899",
+      color: "#10b981",
       features: [
         "CPU/GPU optimization",
         "Battery usage tuning",
@@ -128,7 +128,7 @@ export default function MobileAppDevelopersPage() {
       description:
         "Firebase, AWS, GCP, Azure Mobile App services, serverless architecture, and real-time sync for multi-device experiences.",
       icon: <Cloud className={styles.expertiseIcon} />,
-      color: "#06B6D4",
+      color: "#10b981",
       features: [
         "Firebase integration",
         "AWS Mobile services",
@@ -142,7 +142,7 @@ export default function MobileAppDevelopersPage() {
       description:
         "Manual, automated & regression testing with XCTest, Espresso, Appium, Detox, and device lab testing across OS versions.",
       icon: <ShieldCheck className={styles.expertiseIcon} />,
-      color: "#8B5CF6",
+      color: "#10b981",
       features: [
         "Automated testing",
         "Device lab testing",
@@ -206,7 +206,7 @@ export default function MobileAppDevelopersPage() {
     },
     "data-storage": {
       title: "Data Storage & Databases",
-      color: "#8B5CF6",
+      color: "#3b82f6",
       technologies: [
         "Firebase/Firestore",
         "Realm",
@@ -218,7 +218,7 @@ export default function MobileAppDevelopersPage() {
     },
     "platforms-apis": {
       title: "Platforms & APIs",
-      color: "#F59E0B",
+      color: "#10b981",
       technologies: [
         "REST APIs",
         "GraphQL",
@@ -232,7 +232,7 @@ export default function MobileAppDevelopersPage() {
     },
     "qa-tools": {
       title: "QA Tools",
-      color: "#EC4899",
+      color: "#3b82f6",
       technologies: [
         "XCTest",
         "Espresso",
@@ -244,7 +244,7 @@ export default function MobileAppDevelopersPage() {
     },
     devops: {
       title: "DevOps",
-      color: "#06B6D4",
+      color: "#10b981",
       technologies: [
         "Bitrise",
         "Codemagic",
@@ -359,7 +359,7 @@ export default function MobileAppDevelopersPage() {
         "Agile sprints management",
         "Comprehensive documentation",
       ],
-      color: "#10B981",
+      color: "#3b82f6",
     },
     {
       title: "Extended Team for Scaling",
@@ -372,7 +372,7 @@ export default function MobileAppDevelopersPage() {
         "Product scaling focus",
         "Enterprise support",
       ],
-      color: "#8B5CF6",
+      color: "#3b82F6",
     },
     {
       title: "Specialized Development Pods",
@@ -385,7 +385,7 @@ export default function MobileAppDevelopersPage() {
         "Cross-functional teams",
         "Advanced architecture",
       ],
-      color: "#F59E0B",
+      color: "#3b82f6",
     },
   ];
 
@@ -441,7 +441,7 @@ export default function MobileAppDevelopersPage() {
         "Productivity tools",
         "Entertainment apps",
       ],
-      color: "#3B82F6",
+      color: "#10b981",
     },
     {
       title: "Secure Mobile Backends",
@@ -467,7 +467,7 @@ export default function MobileAppDevelopersPage() {
         "In-app purchases",
         "Push notifications",
       ],
-      color: "#8B5CF6",
+      color: "#10b981",
     },
     {
       title: "Scalable Mobile Solutions",
@@ -480,7 +480,7 @@ export default function MobileAppDevelopersPage() {
         "Database optimization",
         "CDN integration",
       ],
-      color: "#F59E0B",
+      color: "#10b981",
     },
 
     {
@@ -494,7 +494,7 @@ export default function MobileAppDevelopersPage() {
         "Serverless architecture",
         "Real-time data sync",
       ],
-      color: "#0891b2",
+      color: "#10b981",
     },
     {
       title: "API Development & Third-Party Integration",
@@ -507,7 +507,7 @@ export default function MobileAppDevelopersPage() {
         "Social media login",
         "Map service integration",
       ],
-      color: "#dc2626",
+      color: "#10b981",
     },
   ];
 

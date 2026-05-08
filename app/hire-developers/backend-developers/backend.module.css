@@ -8,15 +8,11 @@
     --gradient-primary: linear-gradient(135deg, #3B82F6, #10B981);
     --gradient-primary-dark: linear-gradient(135deg, #2563EB, #059669);
     
-    /* Secondary Colors */
-    --secondary-purple: #8B5CF6;
-    --secondary-amber: #F59E0B;
-    --secondary-pink: #EC4899;
-    --secondary-cyan: #06B6D4;
+    /* REMOVED: --secondary-purple, --secondary-amber, --secondary-pink, --secondary-cyan */
     
     /* Gradient Backgrounds */
     --gradient-section-light: linear-gradient(135deg, rgba(59, 130, 246, 0.03) 0%, rgba(16, 185, 129, 0.03) 100%);
-    --gradient-section-dark: linear-gradient(135deg, rgba(15, 23, 42, 0.88) 0%, rgba(30, 41, 59, 83) 100%);
+    --gradient-section-dark: linear-gradient(135deg, rgba(15, 23, 42, 0.92) 0%, rgba(30, 41, 59, 0.92) 100%);
     
     /* Neutral Colors */
     --dark-bg: #0F172A;
@@ -95,7 +91,7 @@
     align-items: center;
     gap: 0.5rem;
     background: rgba(59, 130, 246, 0.2);
-    color: #93c5fd;
+    color: var(--gray-300);
     padding: 0.5rem 1.25rem;
     border-radius: 2rem;
     font-size: 0.875rem;
@@ -194,9 +190,9 @@
 }
 
 .ctaButton:hover {
+    background: var(--gradient-primary-dark);
     transform: translateY(-2px);
     box-shadow: 0 6px 20px rgba(59, 130, 246, 0.4);
-    background: var(--gradient-primary-dark);
 }
 
 .secondaryButton {
@@ -539,7 +535,7 @@
 .expertiseCard:hover {
     transform: translateY(-8px);
     box-shadow: 0 12px 25px rgba(0, 0, 0, 0.1);
-    border-color: var(--primary-blue);
+    border-color: var(--primary-green);
 }
 
 .expertiseHeader {
@@ -613,7 +609,7 @@
     display: inline-flex;
     align-items: center;
     gap: 0.5rem;
-    color: var(--primary-blue);
+    color: var(--primary-green);
     font-weight: 600;
     text-decoration: none;
     font-size: 0.95rem;
@@ -681,6 +677,9 @@
 }
 
 .techTab.active {
+    background: var(--gradient-primary);
+    color: white;
+    border-color: transparent;
     box-shadow: 0 4px 12px rgba(59, 130, 246, 0.15);
     transform: translateY(-2px);
 }
@@ -1109,6 +1108,7 @@
 
 .buildExamples li svg {
     flex-shrink: 0;
+    color: var(--primary-green);
 }
 
 /* ===== COMPARISON SECTION ===== */
@@ -1207,7 +1207,6 @@
     z-index: 2;
 }
 
-/* Reduce padding for all screen sizes */
 .statCard {
     background: rgba(255, 255, 255, 0.05);
     border-radius: 1rem;
@@ -1259,7 +1258,6 @@
     line-height: 1.2;
 }
 
-/* For tablets and small desktops - 2 columns */
 @media (max-width: 768px) {
     .statsGrid {
         grid-template-columns: repeat(2, 1fr);
@@ -1282,7 +1280,6 @@
     }
 }
 
-/* For iPhone 12 and most phones - 2 columns with tighter spacing */
 @media (max-width: 450px) {
     .statsSection {
         padding: 2.5rem 1rem;
@@ -1315,7 +1312,6 @@
     }
 }
 
-/* For very small phones - 1 column */
 @media (max-width: 350px) {
     .statsGrid {
         grid-template-columns: 1fr;
@@ -1599,9 +1595,9 @@
 }
 
 .ctaPrimary:hover {
+    background: var(--gradient-primary-dark);
     transform: translateY(-2px);
     box-shadow: 0 6px 20px rgba(59, 130, 246, 0.4);
-    background: var(--gradient-primary-dark);
 }
 
 .ctaSecondary {
@@ -1797,7 +1793,6 @@
     }
 }
 
-/* ===== FIX TESTIMONIAL CARD ALIGNMENT FOR 768px - 1024px ===== */
 @media (min-width: 768px) and (max-width: 1024px) {
   .rightContent {
     align-items: center; 

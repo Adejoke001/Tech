@@ -4,7 +4,7 @@ import Image from 'next/image';
 import Link from 'next/link';
 import { motion } from 'framer-motion';
 import {
-   ArrowRight, Shield, Phone, Mail, MapPin,
+    ArrowRight, Shield, Phone, Mail, MapPin,
 } from 'lucide-react';
 import styles from './privacy.module.css';
 
@@ -191,11 +191,15 @@ export default function PrivacyPage() {
                         <div className={styles.contactCard}>
                             <div className={styles.contactItem}>
                                 <Mail size={18} />
-                                <span>privacy@bbmcoders.com</span>
+                                <a href="mailto:legal@bbmcoders.com" style={{ color: 'inherit', textDecoration: 'none' }}>
+                                    support@bbmcoders.com
+                                </a>
                             </div>
                             <div className={styles.contactItem}>
                                 <Phone size={18} />
-                                <span>+234 (0) 123 456 7890</span>
+                                <a href="tel:+15551234567" style={{ color: 'inherit', textDecoration: 'none' }}>
+                                    +1 (555) 123-4567
+                                </a>
                             </div>
                             <div className={styles.contactItem}>
                                 <MapPin size={18} />

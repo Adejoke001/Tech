@@ -141,6 +141,7 @@
 .heroCta {
     display: flex;
     gap: 1rem;
+    border-radius: 50%;
 }
 
 .ctaButtonPrimary {
@@ -148,7 +149,7 @@
     box-shadow: 0 4px 15px rgba(59, 130, 246, 0.3);
     color: white;
     border: none;
-    padding: 1rem 2rem;
+    padding: 1rem 1.8rem;
     font-size: 1rem;
     font-weight: 600;
     border-radius: 0.5rem;
@@ -759,7 +760,7 @@
 }
 
 /* ===== PRICING SECTION ===== */
-.pricingSection {
+/* .pricingSection {
     padding: 6rem 0;
     background: linear-gradient(135deg, #f8fafc 0%, #f1f5f9 100%);
     border-bottom: 1px solid #e5e7eb;
@@ -856,11 +857,11 @@
     transform: translateY(-2px);
     box-shadow: 0 6px 20px rgba(59, 130, 246, 0.4);
     gap: 0.75rem;
-}
+} */
 
 /* ===== HIRING SECTION ===== */
 .hiringSection {
-    padding: 6rem 0;
+    padding: 4rem 0;
     background: white;
     position: relative;
     border-bottom: 1px solid #e5e7eb;
@@ -868,27 +869,27 @@
 
 .hiringGrid {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
-    gap: 2rem;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 1.5rem;
     max-width: 1200px;
     margin: 0 auto;
 }
 
 .hiringCard {
     background: white;
-    border-radius: 1.5rem;
+    border-radius: 1rem;
     overflow: hidden;
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
     transition: all 0.3s ease;
 }
 
 .hiringCard:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+    transform: translateY(-3px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.12);
 }
 
 .modelHeader {
-    padding: 2.5rem 2rem;
+    padding: 1.5rem 1.5rem;
     color: white;
     text-align: center;
     position: relative;
@@ -896,55 +897,55 @@
 }
 
 .modelIcon {
-    width: 4rem;
-    height: 4rem;
-    border-radius: 1rem;
+    width: 3rem;
+    height: 3rem;
+    border-radius: 0.75rem;
     background: rgba(255, 255, 255, 0.2);
     display: flex;
     align-items: center;
     justify-content: center;
-    margin: 0 auto 1.5rem;
+    margin: 0 auto 1rem;
     color: white;
-    font-size: 1.5rem;
+    font-size: 1.25rem;
 }
 
 .modelPrice {
-    font-size: 2rem;
+    font-size: 1.5rem;
     font-weight: 800;
-    margin-bottom: 0.5rem;
+    margin-bottom: 0.25rem;
     color: white;
 }
 
 .modelHeader h3 {
-    font-size: 1.75rem;
+    font-size: 1.25rem;
     font-weight: 700;
     margin: 0;
     color: white;
 }
 
 .modelBody {
-    padding: 2.5rem 2rem;
+    padding: 1.5rem 1.5rem;
 }
 
 .modelDesc {
     color: #6b7280;
-    font-size: 1rem;
-    line-height: 1.6;
-    margin-bottom: 2rem;
+    font-size: 0.875rem;
+    line-height: 1.5;
+    margin-bottom: 1.25rem;
     text-align: center;
 }
 
 .modelFeatures {
     list-style: none;
     padding: 0;
-    margin: 0 0 2rem 0;
+    margin: 0 0 1.25rem 0;
 }
 
 .modelFeatures li {
     color: #4b5563;
-    margin-bottom: 0.75rem;
-    font-size: 0.95rem;
-    padding-left: 1.5rem;
+    margin-bottom: 0.5rem;
+    font-size: 0.85rem;
+    padding-left: 1.25rem;
     position: relative;
 }
 
@@ -952,11 +953,12 @@
     content: '✓';
     position: absolute;
     left: 0;
-    color: #10B981;
+    color: var(--primary-green);
+    font-size: 0.75rem;
 }
 
 .modelBestFor {
-    margin-bottom: 2rem;
+    margin-bottom: 1.25rem;
 }
 
 .bestForTags {
@@ -967,10 +969,10 @@
 }
 
 .bestForTag {
-    padding: 0.5rem 1rem;
+    padding: 0.25rem 0.75rem;
     background: #f3f4f6;
     border-radius: 2rem;
-    font-size: 0.875rem;
+    font-size: 0.7rem;
     color: #6b7280;
 }
 
@@ -980,8 +982,9 @@
     color: white;
     font-weight: 600;
     text-decoration: none;
-    padding: 1rem 2rem;
-    border-radius: 2rem;
+    padding: 0.6rem 1rem;
+    font-size: 0.875rem;
+    border-radius: 1.5rem;
     transition: all 0.3s ease;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
 }

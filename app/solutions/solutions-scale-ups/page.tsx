@@ -24,7 +24,6 @@ export default function ScaleUpsSolutionPage() {
     // ----- HERO TESTIMONIAL -----
     const testimonial = {
         name: 'Alexander',
-        // role: 'CTO, ParnTech',
         content: 'Our startup scaled smoothly thanks to their expertise and commitment to quality. Truly dependable!',
         rating: 5,
         project: 'Series Partner'
@@ -37,7 +36,7 @@ export default function ScaleUpsSolutionPage() {
             title: 'Product Discovery & Technical Strategy',
             description: 'Our specialists analyze your product, market, and technical requirements to create a clear growth strategy that accelerates scaling.',
             icon: <Compass className={styles.expertiseIcon} />,
-            color: '#3B82F6',
+            color: '#10b981',
             features: [
                 'Define business goals',
                 'Build the right architecture',
@@ -65,7 +64,7 @@ export default function ScaleUpsSolutionPage() {
             title: 'Full-Scale Product Development',
             description: 'Our team transforms MVPs into enterprise-grade solutions with robust features, ensuring smooth evolution from early-stage product to scalable platform.',
             icon: <Layers3 className={styles.expertiseIcon} />,
-            color: '#8B5CF6',
+            color: '#10b981',
             features: [
                 'Strategic planning & roadmap',
                 'Feature expansion',
@@ -79,7 +78,7 @@ export default function ScaleUpsSolutionPage() {
             title: 'SaaS Architecture & Development',
             description: 'We build scale startup solutions that support rapid user growth, strong integrations, secure data management, and seamless cloud deployment.',
             icon: <CloudCog className={styles.expertiseIcon} />,
-            color: '#F59E0B',
+            color: '#10b981',
             features: [
                 'Cloud‑ready architecture',
                 'API & third‑party integration',
@@ -93,7 +92,7 @@ export default function ScaleUpsSolutionPage() {
             title: 'QA & Performance Optimization',
             description: 'Our QA experts test performance, security, scalability, and system resilience to ensure your product remains reliable even under heavy load.',
             icon: <Gauge className={styles.expertiseIcon} />,
-            color: '#EC4899',
+            color: '#10b981',
             features: [
                 'Load & stress testing',
                 'Performance tuning',
@@ -107,7 +106,7 @@ export default function ScaleUpsSolutionPage() {
             title: 'CTO-as-a-Service for Scale',
             description: 'Our experienced CTO consultants guide startups with strategic leadership, architecture design, and cost-effective scaling strategies.',
             icon: <BriefcaseIcon className={styles.expertiseIcon} />,
-            color: '#06B6D4',
+            color: '#10b981',
             features: [
                 'Expert technology leadership',
                 'Scalable product planning',
@@ -156,28 +155,28 @@ export default function ScaleUpsSolutionPage() {
             range: '$60,000 – $100,000',
             description: 'Strengthen your platform with integrations, automation, and scalability upgrades.',
             icon: <GitBranch />,
-            color: '#10B981',
+            color: '#3b82f6',
             bestFor: 'Platform strengthening'
         },
         {
             range: '$90,000 – $150,000',
             description: 'Build advanced modules or industry-specific features that help capture new markets.',
             icon: <Layers />,
-            color: '#8B5CF6',
+            color: '#3b82f6',
             bestFor: 'New market entry'
         },
         {
             range: '$120,000 – $180,000',
             description: 'Redesign and re-architect your product for better UX, security, and reliability at scale.',
             icon: <RefreshCw />,
-            color: '#F59E0B',
+            color: '#1082f6',
             bestFor: 'Re‑architecture'
         },
         {
             range: '$180,000 – $250,000+',
             description: 'Develop enterprise-grade solutions with compliance, analytics, and AI-driven capabilities.',
             icon: <Shield />,
-            color: '#EC4899',
+            color: '#3b82f6',
             bestFor: 'Enterprise scale'
         }
     ];
@@ -189,7 +188,7 @@ export default function ScaleUpsSolutionPage() {
             title: 'Product Review',
             description: 'Evaluate current product strengths, gaps, and scalability challenges.',
             icon: <Search />,
-            color: '#3B82F6'
+            color: '#10b981'
         },
         {
             step: 2,
@@ -203,28 +202,28 @@ export default function ScaleUpsSolutionPage() {
             title: 'Agile Development',
             description: 'Iterative feature building with flexibility to adapt as the product scales.',
             icon: <WorkflowIcon />,
-            color: '#8B5CF6'
+            color: '#10b981'
         },
         {
             step: 4,
             title: 'Performance Checks',
             description: 'Run quality, speed, and load tests to ensure reliability under growing demand.',
             icon: <Gauge />,
-            color: '#F59E0B'
+            color: '#10b981'
         },
         {
             step: 5,
             title: 'Deployment & Monitoring',
             description: 'Enable seamless cloud scaling with real-time tracking and system stability.',
             icon: <Cloud />,
-            color: '#EC4899'
+            color: '#10b981'
         },
         {
             step: 6,
             title: 'Support & Improvements',
             description: 'Provide ongoing updates, fixes, and optimizations to sustain long-term growth.',
             icon: <RefreshCw />,
-            color: '#06B6D4'
+            color: '#10b981'
         }
     ];
 
@@ -234,7 +233,7 @@ export default function ScaleUpsSolutionPage() {
             title: 'Infrastructure that Fails to Scale',
             description: 'Simple systems cannot keep up as users grow. Slow applications and downtime frustrate customers and harm your brand.',
             icon: <AlertTriangle />,
-            color: '#EF4444',
+            color: '#10b981',
             points: [
                 'Servers overloaded with traffic',
                 'Poor system integration'
@@ -244,7 +243,7 @@ export default function ScaleUpsSolutionPage() {
             title: 'Rising Security Risks',
             description: 'The bigger your startup grows, the bigger the target you become. Many scale startups do not invest enough in security until it is too late.',
             icon: <Shield />,
-            color: '#F59E0B',
+            color: '#10b981',
             points: [
                 'Lack of compliance and weak data protection',
                 'Unsecured cloud setups'
@@ -254,7 +253,7 @@ export default function ScaleUpsSolutionPage() {
             title: 'High IT Costs Without Control',
             description: 'Scaling often means spending more on IT, but without planning, costs rise fast and profits fall.',
             icon: <DollarSign />,
-            color: '#EC4899',
+            color: '#10b981',
             points: [
                 'Unchecked cloud usage bills',
                 'Expensive in‑house IT hiring'
@@ -264,7 +263,7 @@ export default function ScaleUpsSolutionPage() {
             title: 'Lack of Skilled IT Support',
             description: 'Growing startups often outpace their team’s skill level. Without the right expertise, technology becomes a bottleneck.',
             icon: <Users />,
-            color: '#8B5CF6',
+            color: '#10b981',
             points: [
                 'Delays in fixing IT issues',
                 'Poor adoption of new tools'
@@ -274,7 +273,7 @@ export default function ScaleUpsSolutionPage() {
             title: 'Integration Complexity & Technical Debt',
             description: 'As startups scale, they accumulate technical debt and face integration challenges between new and legacy systems, slowing down feature delivery.',
             icon: <GitBranch />,
-            color: '#3B82F6',
+            color: '#10b981',
             points: [
                 'Legacy system integration',
                 'Accumulated technical debt',
@@ -285,7 +284,7 @@ export default function ScaleUpsSolutionPage() {
             title: 'Scalability of Architecture & Performance',
             description: 'Monolithic architectures and inefficient database designs become bottlenecks under exponential user growth, causing latency and downtime.',
             icon: <Layers />,
-            color: '#06B6D4',
+            color: '#10b981',
             points: [
                 'Database connection limits',
                 'Inefficient caching strategies',
@@ -314,28 +313,28 @@ export default function ScaleUpsSolutionPage() {
             title: 'Strong Cybersecurity Protection',
             description: 'With growth, startups become targets for cyber threats. Providers secure your operations with proactive monitoring and risk management.',
             icon: <ShieldCheck />,
-            color: '#8B5CF6',
+            color: '#3b82f6',
             points: ['24×7 security coverage', 'Data breach prevention']
         },
         {
             title: 'Cost-Effective Operations',
             description: 'Maintaining a full IT team is expensive. Service providers reduce costs while still delivering enterprise-grade support.',
             icon: <Wallet />,
-            color: '#F59E0B',
+            color: '#10b981',
             points: ['Lower hiring expenses', 'Predictable monthly pricing']
         },
         {
             title: 'Focus on Core Business',
             description: 'By outsourcing IT, your team spends more time on product and customers. The provider ensures technology runs smoothly.',
             icon: <Target />,
-            color: '#EC4899',
+            color: '#3b82f6',
             points: ['Reduced internal workload', 'Faster time to market']
         },
         {
             title: 'Faster Innovation & Time‑to‑Market',
             description: 'With dedicated IT partners, startups accelerate feature rollouts, experiment faster, and beat competitors to market without compromising quality.',
             icon: <Rocket />,
-            color: '#F59E0B',
+            color: '#10b981',
             points: [
                 'Rapid prototyping',
                 'Continuous delivery pipelines',
@@ -346,18 +345,18 @@ export default function ScaleUpsSolutionPage() {
 
     // ----- PARTNER HIGHLIGHTS -----
     const partnerHighlights = [
-        { text: 'Nigeria’s top 1% engineering talent', icon: <Award />, color: '#3B82F6' },
-        { text: 'Trusted by startups to Fortune 500', icon: <Building2 />, color: '#10B981' },
-        { text: 'End-to-end product delivery', icon: <Rocket />, color: '#8B5CF6' },
-        { text: 'Time-zone friendly collaboration', icon: <Globe />, color: '#F59E0B' },
-        { text: 'Predictable timelines & transparent estimates', icon: <Calendar />, color: '#EC4899' },
-        { text: 'Ongoing support, monitoring & optimization', icon: <Activity />, color: '#06B6D4' }
+        { text: 'Nigeria’s top 10% engineering talent', icon: <Award />, color: '#3B82F6' },
+        { text: 'Trusted by startups to Fortune 500', icon: <Building2 />, color: '#3b82f6' },
+        { text: 'End-to-end product delivery', icon: <Rocket />, color: '#3b82F6' },
+        { text: 'Time-zone friendly collaboration', icon: <Globe />, color: '#3b82f6' },
+        { text: 'Predictable timelines & transparent estimates', icon: <Calendar />, color: '#3b82f6' },
+        { text: 'Ongoing support, monitoring & optimization', icon: <Activity />, color: '#3b82f6' }
     ];
 
     // ----- COMPANY STATS (with 92% stat from URL) -----
     const companyStats = [
         { value: '92%', label: 'Faster Market Entry', icon: <TrendingUp />, description: 'Scale‑up clients report faster growth' },
-        { value: '700+', label: 'Full‑time Staff', icon: <Users />, description: 'Top 1% industry talent' },
+        { value: '700+', label: 'Full‑time Staff', icon: <Users />, description: 'Top 10% industry talent' },
         { value: '20+', label: 'Years Experience', icon: <Award />, description: 'Since 2004' },
         { value: '4500+', label: 'Satisfied Clients', icon: <HeadphonesIcon />, description: 'Startups to Fortune 500' }
     ];
@@ -365,13 +364,13 @@ export default function ScaleUpsSolutionPage() {
     // ----- CLIENT TESTIMONIALS (from URL) -----
     const testimonials = [
         {
-            name: 'James Kelly',
+            name: 'James',
             role: 'Data Analyst',
             content: 'The Project managers took a lot of time to understand our project before coming up with a contract or what they thought we needed. I had the reassurance from the start that the project managers knew what type of project I wanted and what my needs were. That is reassuring, and that\'s why we chose BBMCoders.',
             image: '/images/user.png'
         },
         {
-            name: 'Judith Mueller',
+            name: 'Rebecca',
             // role: 'Executive Director, Judith Foundation',
             content: 'The team at BBMCoders has provided us with exceptional services in creating this one-of-a-kind portal, and it has been a fantastic experience. I was particularly impressed by how efficiently and quickly the team always came up with creative solutions to provide us with all the functionalities within the portal we had requested.',
             image: '/images/user.png'
@@ -383,7 +382,7 @@ export default function ScaleUpsSolutionPage() {
             image: '/images/user.png'
         },
         {
-            name: 'Mohammed Mira',
+            name: 'Ibrahim',
             // role: 'Director, FashionHint',
             content: 'Huge thank you to BBMCoders; they have been a massive help in enabling us to start developing our project within a few weeks, so it\'s been great! There have been two small bumps in the road, but overall, It\'s been a fantastic service. I have already recommended it to one of my friends.',
             image: '/images/user.png'

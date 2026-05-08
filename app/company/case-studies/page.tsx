@@ -68,7 +68,7 @@ export default function CaseStudiesPage() {
             // client: 'FinScale Capital',
             category: 'Financial Services',
             image: 'https://images.unsplash.com/photo-1560472354-b33ff0c44a43?auto=format&fit=crop&w=800&q=80',
-            color: '#8B5CF6',
+            color: '#3b82F6',
             stats: [
                 { value: '95%', label: 'Fraud Detection Accuracy' },
                 { value: '<100ms', label: 'Real-Time Processing' },
@@ -91,7 +91,7 @@ export default function CaseStudiesPage() {
             // client: 'Global Logistics Corp',
             category: 'Logistics & Supply Chain',
             image: 'https://images.unsplash.com/photo-1504384308090-c894fdcc538d?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8ZW50ZXJwcmlzZXxlbnwwfHwwfHx8MA%3D%3D',
-            color: '#F59E0B',
+            color: '#10b981',
             stats: [
                 { value: '30%', label: 'Operational Efficiency Gain' },
                 { value: '10K+', label: 'Suppliers Connected' },
@@ -115,7 +115,7 @@ export default function CaseStudiesPage() {
             // client: 'HealthConnect Medical',
             category: 'Healthcare',
             image: 'https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?auto=format&fit=crop&w=800&q=80',
-            color: '#EC4899',
+            color: '#3b82f6',
             stats: [
                 { value: '200+', label: 'Hospitals Connected' },
                 { value: '50K+', label: 'Virtual Consultations/Month' },
@@ -139,7 +139,7 @@ export default function CaseStudiesPage() {
             // client: 'Industrial Solutions Ltd.',
             category: 'IoT & Manufacturing',
             image: 'https://images.unsplash.com/photo-1581091226033-d5c48150dbaa?auto=format&fit=crop&w=800&q=80',
-            color: '#06B6D4',
+            color: '#10b981',
             stats: [
                 { value: '40%', label: 'Downtime Reduction' },
                 { value: '10K+', label: 'Sensors Connected' },

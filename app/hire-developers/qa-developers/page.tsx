@@ -26,7 +26,6 @@ export default function QATestersPage() {
     // ----- HERO TESTIMONIAL -----
     const testimonial = {
         name: 'Chidi',
-        role: 'VP of Engineering',
         content: 'BBMcoders’ QA engineers integrated seamlessly into our sprints. They caught 40% more edge cases than our previous setup, and our release confidence has never been higher.',
         rating: 5,
         project: 'FinTech Trading Platform'
@@ -39,7 +38,7 @@ export default function QATestersPage() {
             title: 'Automated Testing',
             description: 'Accelerate releases with robust automation frameworks. We implement Selenium, Cypress, Playwright and more for reliable, repeatable test execution.',
             icon: <TestTube className={styles.expertiseIcon} />,
-            color: '#3B82F6',
+            color: '#10b981',
             features: [
                 'Cross‑browser test automation',
                 'Parallel execution & cloud grids',
@@ -67,7 +66,7 @@ export default function QATestersPage() {
             title: 'Performance, Security & Compliance',
             description: 'Load testing, vulnerability scanning, and compliance audits (GDPR, HIPAA, PCI‑DSS).',
             icon: <Shield className={styles.expertiseIcon} />,
-            color: '#8B5CF6',
+            color: '#10b981',
             features: [
                 'Stress & endurance testing',
                 'OWASP Top 10 scanning',
@@ -81,7 +80,7 @@ export default function QATestersPage() {
             title: 'Test Strategy & Planning',
             description: 'Structured QA blueprints that align with your development goals. We define scope, risks, and entry/exit criteria.',
             icon: <PenTool className={styles.expertiseIcon} />,
-            color: '#F59E0B',
+            color: '#10b981',
             features: [
                 'Requirement traceability',
                 'Risk‑based testing approach',
@@ -95,7 +94,7 @@ export default function QATestersPage() {
             title: 'Test Execution & Quality Reporting',
             description: 'Manual and automated test cycles with clear defect tracking. We deliver actionable dashboards.',
             icon: <BarChart3 className={styles.expertiseIcon} />,
-            color: '#EC4899',
+            color: '#10b981',
             features: [
                 'Sprint‑aligned test cycles',
                 'Defect triage & prioritisation',
@@ -109,7 +108,7 @@ export default function QATestersPage() {
             title: 'CI/CD & DevOps Integration',
             description: 'Embed quality gates into your pipeline. We integrate testing tools with Jenkins, GitHub Actions, Azure DevOps, and more.',
             icon: <GitBranch className={styles.expertiseIcon} />,
-            color: '#06B6D4',
+            color: '#10b981',
             features: [
                 'Shift‑left testing',
                 'Automated regression on every commit',
@@ -131,31 +130,31 @@ export default function QATestersPage() {
         'automation': {
             title: 'Automation Testing',
             icon: <Terminal />,
-            color: '#10B981',
+            color: '#3b82f6',
             technologies: ['Selenium', 'Appium', 'Cypress', 'Playwright', 'Katalon Studio']
         },
         'performance': {
             title: 'Performance & Load Testing',
             icon: <Gauge />,
-            color: '#8B5CF6',
+            color: '#3b82F6',
             technologies: ['JMeter', 'Locust', 'Gatling', 'BlazeMeter']
         },
         'security': {
             title: 'Security & Code Quality',
             icon: <Fingerprint />,
-            color: '#F59E0B',
+            color: '#3b82f6',
             technologies: ['OWASP ZAP', 'Burp Suite', 'SonarQube', 'Nessus']
         },
         'functional': {
             title: 'Functional & Regression Testing',
             icon: <Box />,
-            color: '#EC4899',
+            color: '#3b82f6',
             technologies: ['BrowserStack', 'LambdaTest', 'Postman', 'SoapUI']
         },
         'ci-cd': {
             title: 'CI/CD & DevOps Integration',
             icon: <Settings />,
-            color: '#06B6D4',
+            color: '#3b82f6',
             technologies: ['Jenkins', 'GitHub Actions', 'GitLab CI', 'Bitrise', 'Azure DevOps']
         }
     };
@@ -171,7 +170,7 @@ export default function QATestersPage() {
     ];
 
     // ----- BENEFITS OF QA TESTING (why hire from India) -----
-    const whyIndiaBenefits = [
+    const whybbmBenefits = [
         {
             title: 'Cost‑effective QA',
             description: 'Reduce QA costs by 40‑60% without compromising quality. Pay only for the hours you need.',
@@ -180,10 +179,10 @@ export default function QATestersPage() {
             details: ['Competitive hourly rates', 'No recruitment fees', 'Flexible engagement']
         },
         {
-            title: 'Top 1% Talent',
+            title: 'Top 10% Talent',
             description: 'Rigorous vetting process ensures you get testers who master both manual and automation.',
             icon: '🎯',
-            benefit: 'Top 1% Testers',
+            benefit: 'Top 10% Testers',
             details: ['8‑step screening', 'Hands‑on assignments', 'Domain expertise']
         },
         {
@@ -237,7 +236,7 @@ export default function QATestersPage() {
             description: 'Responsive web apps, native iOS/Android, and cross‑platform mobile apps.',
             icon: <Smartphone />,
             examples: ['E‑commerce stores', 'Banking apps', 'SaaS dashboards', 'Social platforms'],
-            color: '#3B82F6',
+            color: '#10b981',
             technologies: ['Selenium', 'Appium', 'Cypress', 'BrowserStack']
         },
         {
@@ -253,7 +252,7 @@ export default function QATestersPage() {
             description: 'REST, GraphQL, microservices, and database integrity testing.',
             icon: <Database />,
             examples: ['Payment APIs', 'Inventory sync', 'Authentication', 'Reporting engines'],
-            color: '#8B5CF6',
+            color: '#10b981',
             technologies: ['Postman', 'SoapUI', 'JMeter', 'New Relic']
         },
         {
@@ -261,7 +260,7 @@ export default function QATestersPage() {
             description: 'Load, stress, and endurance testing to ensure stability under peak traffic.',
             icon: <Gauge />,
             examples: ['Flash sales', 'Live events', 'High‑frequency trading', 'IoT backends'],
-            color: '#F59E0B',
+            color: '#10b981',
             technologies: ['JMeter', 'Gatling', 'k6', 'BlazeMeter']
         },
         {
@@ -269,7 +268,7 @@ export default function QATestersPage() {
             description: 'Vulnerability assessment, penetration testing, and regulatory compliance.',
             icon: <Shield />,
             examples: ['GDPR audits', 'PCI‑DSS validation', 'OWASP checks', 'Pen tests'],
-            color: '#EC4899',
+            color: '#10b981',
             technologies: ['OWASP ZAP', 'Burp Suite', 'Nessus', 'SonarQube']
         },
         {
@@ -277,7 +276,7 @@ export default function QATestersPage() {
             description: 'Modernisation testing, mainframe integration, and SAP/Oracle validation.',
             icon: <RefreshCw />,
             examples: ['System migrations', 'ERP upgrades', 'Legacy UI testing', 'Data reconciliation'],
-            color: '#06B6D4',
+            color: '#10b981',
             technologies: ['Selenium', 'UFT', 'Tosca', 'IBM RFT']
         }
     ];
@@ -355,7 +354,7 @@ export default function QATestersPage() {
                 'Compliance & audit support',
                 'Executive dashboards'
             ],
-            color: '#EC4899',
+            color: '#3b82f6',
             bestFor: 'Global Enterprises',
             timeline: 'Long‑term partnership'
         }
@@ -383,7 +382,7 @@ export default function QATestersPage() {
             title: 'Team Augmentation',
             description: 'Enhance your internal QA capacity with our pre‑vetted testers. They integrate quickly, boost coverage, and support faster release cycles.',
             icon: <UsersIcon />,
-            color: '#3B82F6',
+            color: '#10b981',
             link: '/team-augmentation'
         },
         {
@@ -397,7 +396,7 @@ export default function QATestersPage() {
             title: 'QA Outsourcing',
             description: 'Outsource your entire QA lifecycle – from strategy to execution. Our experts deliver reliable, scalable testing that supports your long‑term product goals.',
             icon: <Cloud />,
-            color: '#8B5CF6',
+            color: '#10b981',
             link: '/outsourcing'
         }
     ];
@@ -461,7 +460,7 @@ export default function QATestersPage() {
             icon: '🏥',
             desc: 'Telemedicine platforms, patient portals, health tracking apps, and medical management systems with HIPAA-compliant security.',
             image: 'https://images.unsplash.com/photo-1551601651-2a8555f1a136?auto=format&fit=crop&w=800&q=80',
-            color: '#8B5CF6'
+            color: '#3b82f6'
         }
     ];
 
@@ -521,13 +520,13 @@ export default function QATestersPage() {
                             className={styles.headline}
                         >
                             <div className={styles.heroBadge}>
-                                <Sparkles size={18} /> Top 1% QA Engineers
+                                <Sparkles size={18} /> Top QA Engineers
                             </div>
                             <h1 className={styles.mainTitle}>
                                 Hire Expert <span className={styles.highlight}>QA & Testing</span> Engineers
                             </h1>
                             <p className={styles.subheadline}>
-                                Top 1% QA testers dedicated to delivering flawless product quality
+                                QA testers dedicated to delivering flawless product quality
                             </p>
                             <p className={styles.heroDescription}>
                                 We connect you with experienced QA engineers who seamlessly integrate with your team, 
@@ -573,7 +572,7 @@ export default function QATestersPage() {
                                 <p className={styles.testimonialText}>&quot;{testimonial.content}&quot;</p>
                                 <div className={styles.testimonialAuthor}>
                                     <h4>{testimonial.name}</h4>
-                                    <p>{testimonial.role}</p>
+                                    
                                 </div>
                                 <div className={styles.ratings}>
                                     <div className={styles.ratingItem}>
@@ -727,7 +726,7 @@ export default function QATestersPage() {
                 </div>
 
                 <div className={styles.benefitsGrid}>
-                    {whyIndiaBenefits.map((benefit, index) => (
+                    {whybbmBenefits.map((benefit, index) => (
                         <motion.div
                             key={index}
                             className={styles.benefitCard}

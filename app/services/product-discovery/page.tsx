@@ -34,7 +34,7 @@ export default function ProductDiscoveryPage() {
             title: 'Market Research & Competitive Analysis',
             description: 'Validate product direction against real market demand.',
             icon: <BarChart3 />,
-            color: '#3B82F6',
+            color: '#10b981',
             features: [
                 'Market trends, size, and growth analysis',
                 'Competitive feature, pricing, and positioning review',
@@ -58,7 +58,7 @@ export default function ProductDiscoveryPage() {
             title: 'Feature Prioritization & MVP Planning',
             description: 'Define what to build first and what to defer.',
             icon: <TargetIcon />,
-            color: '#8B5CF6',
+            color: '#10b981',
             features: [
                 'Core vs non-core feature identification',
                 'MVP scope aligned with business impact',
@@ -70,7 +70,7 @@ export default function ProductDiscoveryPage() {
             title: 'Technical Feasibility Assessment',
             description: 'Confirm technical viability before development begins.',
             icon: <Cpu />,
-            color: '#F59E0B',
+            color: '#10b981',
             features: [
                 'Scalability, integration, and performance assessment',
                 'Technical risk and dependency analysis',
@@ -82,7 +82,7 @@ export default function ProductDiscoveryPage() {
             title: 'Budget & Timeline Planning',
             description: 'Create realistic plans that support predictable delivery.',
             icon: <Calendar />,
-            color: '#EC4899',
+            color: '#10b981',
             features: [
                 'Cost estimation and phase-wise budgeting',
                 'Timeline planning with milestones and dependencies',
@@ -94,7 +94,7 @@ export default function ProductDiscoveryPage() {
             title: 'Security & Compliance Planning',
             description: 'Address security and regulatory requirements early.',
             icon: <Shield />,
-            color: '#06B6D4',
+            color: '#10b981',
             features: [
                 'Identification of relevant compliance standards',
                 'Data protection and security requirement analysis',
@@ -106,19 +106,19 @@ export default function ProductDiscoveryPage() {
     // ============ USPS (from URL) ============
     const usps = [
         { text: "Nigeria's Top 10% Software Talent", icon: <Award />, color: '#3B82F6' },
-        { text: 'Trusted by Startups to Fortune 500', icon: <Building2 />, color: '#10B981' },
-        { text: 'Idea to Deployment, We Handle All', icon: <Rocket />, color: '#8B5CF6' },
-        { text: 'Time-Zone Friendly: Global Presence', icon: <Globe />, color: '#F59E0B' },
-        { text: 'Top-tier Data Security Protocols', icon: <Lock />, color: '#EC4899' },
-        { text: 'On-time Delivery, No Surprises', icon: <Clock />, color: '#06B6D4' },
+        { text: 'Trusted by Startups to Fortune 500', icon: <Building2 />, color: '#3b82f6' },
+        { text: 'Idea to Deployment, We Handle All', icon: <Rocket />, color: '#3b82F6' },
+        { text: 'Time-Zone Friendly: Global Presence', icon: <Globe />, color: '#3b82f6' },
+        { text: 'Top-tier Data Security Protocols', icon: <Lock />, color: '#3b82f6' },
+        { text: 'On-time Delivery, No Surprises', icon: <Clock />, color: '#3b82f6' },
     ];
 
     // ============ PROCESS STEPS (from URL) ============
     const processSteps = [
-        { step: 1, title: 'Discovery Kick-off', description: 'Align goals, stakeholders, and success criteria.', icon: <Compass />, color: '#3B82F6' },
+        { step: 1, title: 'Discovery Kick-off', description: 'Align goals, stakeholders, and success criteria.', icon: <Compass />, color: '#10b981' },
         { step: 2, title: 'Research & Validation', description: 'Assess problems, users, and feasibility.', icon: <Search />, color: '#10B981' },
-        { step: 3, title: 'Definition & Design', description: 'Document requirements and solution direction.', icon: <FileText />, color: '#8B5CF6' },
-        { step: 4, title: 'Roadmap & Handover', description: 'Deliver actionable artifacts for development.', icon: <ArrowRight />, color: '#F59E0B' },
+        { step: 3, title: 'Definition & Design', description: 'Document requirements and solution direction.', icon: <FileText />, color: '#10b981' },
+        { step: 4, title: 'Roadmap & Handover', description: 'Deliver actionable artifacts for development.', icon: <ArrowRight />, color: '#10b981' },
     ];
 
     // ============ HIRING MODELS (from URL) ============
@@ -136,7 +136,7 @@ export default function ProductDiscoveryPage() {
             title: 'Dedicated Teams / Delivery Pods',
             description: 'Dedicated squad with Tech Lead + Engineers + QA. Shared accountability for predictable sprint delivery.',
             icon: <Target />,
-            color: '#10B981',
+            color: '#3b82f6',
             features: ['Milestone-based or fixed-cost', 'We own sprint delivery metrics', 'Weekly demos'],
             billing: 'Milestone-based, T&M with commitments, or Fixed-Cost',
             bestFor: 'Products needing speed, cross-team coordination'
@@ -145,7 +145,7 @@ export default function ProductDiscoveryPage() {
             title: 'Development Centers',
             description: 'Long-term, scaled teams with your branding, culture, processes. Full infrastructure, HR, security & compliance.',
             icon: <Building2 />,
-            color: '#8B5CF6',
+            color: '#3b82f6',
             features: ['Long-term retainer', 'BOT (Build–Operate–Transfer) options', 'Multi-year partnerships'],
             billing: 'Long-term retainer, BOT',
             bestFor: 'Enterprises needing sustained large-scale capacity'
@@ -155,26 +155,22 @@ export default function ProductDiscoveryPage() {
     // ============ CLIENT TESTIMONIALS (from URL) ============
     const testimonials = [
         {
-            name: 'James Kelly',
-            role: 'Data Analyst',
+            name: 'James',
             content: 'The Project managers took a lot of time to understand our project before coming up with a contract or what they thought we needed. I had the reassurance from the start that the project managers knew what type of project I wanted and what my needs were. That is reassuring, and that\'s why we chose BBMcoders.',
             image: '/images/user.png'
         },
         {
-            name: 'Judith Mueller',
-            role: 'Executive Director, Judith Foundation',
+            name: 'Rebecca',
             content: 'The team at BBMcoders has provided us with exceptional services in creating this one-of-a-kind portal, and it has been a fantastic experience. I was particularly impressed by how efficiently and quickly the team always came up with creative solutions to provide us with all the functionalities within the portal we had requested.',
             image: '/images/user.png'
         },
         {
             name: 'Chris',
-            role: 'Director, Storgaze',
             content: 'BBMcoders had great technical expertise, both in front-end and back-end development. Other project management was well organized. Account management was friendly and always available. I would give BBMcoders ten out of ten!',
             image: '/images/user.png'
         },
         {
-            name: 'Mohammed Mira',
-            role: 'Director, FashionHint',
+            name: 'Ibrahim',
             content: 'Huge thank you to BBMcoders; they have been a massive help in enabling us to start developing our project within a few weeks, so it\'s been great! There have been two small bumps in the road, but overall, It\'s been a fantastic service. I have already recommended it to one of my friends.',
             image: '/images/user.png'
         }
@@ -208,7 +204,7 @@ export default function ProductDiscoveryPage() {
     ];
 
     // ============ TRUSTED BY ============
-    const trustedCompanies = ['Microsoft', 'Amazon', 'Google', 'IBM', 'SAP', 'Oracle'];
+    // const trustedCompanies = ['Microsoft', 'Amazon', 'Google', 'IBM', 'SAP', 'Oracle'];
 
     // ============ INDUSTRIES ============
     const industries = [
@@ -231,7 +227,7 @@ export default function ProductDiscoveryPage() {
             icon: '🎬',
             desc: 'Custom tech to empower brands – streaming, content delivery, and audience analytics.',
             image: 'https://images.unsplash.com/photo-1598128558393-70ff21433be0?auto=format&fit=crop&w=800&q=80',
-            color: '#8B5CF6'
+            color: '#3b82f6'
         },
         
     ];
@@ -267,10 +263,10 @@ export default function ProductDiscoveryPage() {
                             We align stakeholders, requirements, and feasibility to move into development with confidence.
                         </p>
                         <div className={styles.heroButtons}>
-                            <Link href="/contact" className={styles.primaryButton}>
+                            {/* <Link href="/contact" className={styles.primaryButton}>
                                 Start Your Discovery <ArrowRight size={18} />
-                            </Link>
-                            <Link href="#services" className={styles.secondaryButton}>
+                            </Link> */}
+                            <Link href="#services" className={styles.primaryButton}>
                                 Explore Services
                             </Link>
                         </div>
@@ -296,7 +292,7 @@ export default function ProductDiscoveryPage() {
                                 <p className={styles.testimonialText}>&quot;{testimonial.content}&quot;</p>
                                 <div className={styles.testimonialAuthor}>
                                     <strong>{testimonial.name}</strong>
-                                    <span>{testimonial.role}</span>
+                                    
                                 </div>
                                 <div className={styles.testimonialRating}>
                                     {[...Array(testimonial.rating)].map((_, i) => (
@@ -310,7 +306,7 @@ export default function ProductDiscoveryPage() {
             </section>
 
             {/* ===== TRUSTED BY SECTION ===== */}
-            <section className={styles.trustedSection}>
+            {/* <section className={styles.trustedSection}>
                 <div className={styles.container}>
                     <p className={styles.trustedLabel}>Trusted by startups and Fortune 500 companies</p>
                     <div className={styles.trustedLogos}>
@@ -328,7 +324,7 @@ export default function ProductDiscoveryPage() {
                         ))}
                     </div>
                 </div>
-            </section>
+            </section> */}
 
             {/* ===== DISCOVERY SERVICES SECTION ===== */}
             <section className={styles.servicesSection} id="services">
@@ -373,15 +369,6 @@ export default function ProductDiscoveryPage() {
 
             {/* ===== WHY CHOOSE US SECTION ===== */}
             <section className={styles.whyChooseSection}>
-                <div className={styles.whyBackground}>
-                    <Image
-                        src="https://images.unsplash.com/photo-1557804506-669a67965ba0?auto=format&fit=crop&w=1920&q=80"
-                        alt="Why Choose Us"
-                        fill
-                        className={styles.whyBgImage}
-                    />
-                    <div className={styles.whyOverlay}></div>
-                </div>
                 <div className={styles.whyContent}>
                     <div className={styles.container}>
                         <div className={styles.sectionHeader}>
@@ -609,7 +596,7 @@ export default function ProductDiscoveryPage() {
                                     </div>
                                     <div className={styles.testimonialAuthorInfo}>
                                         <h4>{testimonials[activeTestimonial].name}</h4>
-                                        <p>{testimonials[activeTestimonial].role}</p>
+                                    
                                     </div>
                                 </div>
                             </motion.div>
@@ -693,9 +680,7 @@ export default function ProductDiscoveryPage() {
                             <Link href="/contact" className={styles.ctaPrimary}>
                                 Start Your Discovery <ArrowRight size={18} />
                             </Link>
-                            <Link href="/contact" className={styles.ctaSecondary}>
-                                Get a Free Consultation
-                            </Link>
+                            
                         </div>
                     </div>
                 </div>

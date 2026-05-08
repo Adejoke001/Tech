@@ -30,19 +30,19 @@ const Contact = () => {
     {
       icon: '📧',
       title: 'Email Us',
-      details: 'hello@yourcompany.com',
+      details: 'contact@bbmcoders.com',
       description: 'Send us an email anytime'
     },
     {
       icon: '📞',
       title: 'Call Us',
-      details: '+1 (555) 123-4567',
+      details: '+234 7060970212',
       description: 'Mon to Fri 9am to 6pm'
     },
     {
       icon: '📍',
       title: 'Visit Us',
-      details: '123 Business District, City, State 12345',
+      details: 'Lagos, Nigeria.',
       description: 'Come say hello at our office'
     }
   ];
@@ -269,7 +269,7 @@ const Contact = () => {
       </div>
 
       {/* Map Section */}
-      <div className={styles.mapSection}>
+      {/* <div className={styles.mapSection}>
         <div className={styles.container}>
           <motion.div
             className={styles.mapContainer}
@@ -299,7 +299,7 @@ const Contact = () => {
             </div>
           </motion.div>
         </div>
-      </div>
+      </div> */}
     </section>
   );
 };

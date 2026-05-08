@@ -8,13 +8,10 @@
     --gradient-primary: linear-gradient(135deg, #2563EB, #059669);
     --gradient-primary-dark: linear-gradient(135deg, #1D4ED8, #047857);
 
-    --secondary-purple: #7C3AED;
-    --secondary-amber: #D97706;
-    --secondary-pink: #DB2777;
-    --secondary-cyan: #0891B2;
+    /* REMOVED: --secondary-purple, --secondary-amber, --secondary-pink, --secondary-cyan */
 
     --gradient-section-light: linear-gradient(135deg, rgba(37, 99, 235, 0.03) 0%, rgba(5, 150, 105, 0.03) 100%);
-    --gradient-section-dark: linear-gradient(135deg, rgba(15, 23, 42, 0.98) 0%, rgba(30, 41, 59, 0.95) 100%);
+    --gradient-section-dark: linear-gradient(135deg, rgba(15, 23, 42, 0.92) 0%, rgba(30, 41, 59, 0.92) 100%);
 
     --dark-bg: #0F172A;
     --dark-surface: #1E293B;
@@ -75,7 +72,7 @@
     left: 0;
     width: 100%;
     height: 100%;
-    background: linear-gradient(135deg, rgba(15,23,42,0.88) 0%, rgba(30,41,59,0.84) 100%);
+    background: var(--gradient-section-dark);
     z-index: 1;
 }
 
@@ -97,14 +94,14 @@
     display: inline-flex;
     align-items: center;
     gap: 0.5rem;
-    background: rgba(255,255,255,0.12);
-    color: rgba(255,255,255,0.95);
+    background: rgba(37, 99, 235, 0.2);
+    color: var(--gray-300);
     padding: 0.5rem 1.25rem;
     border-radius: 2rem;
     font-size: 0.875rem;
     font-weight: 500;
     margin-bottom: 1.5rem;
-    border: 1px solid rgba(255,255,255,0.2);
+    border: 1px solid rgba(37, 99, 235, 0.3);
     backdrop-filter: blur(8px);
 }
 
@@ -201,7 +198,7 @@
 }
 
 .contactCard {
-    background: var(--gray-100);
+    background: var(--white);
     border-radius: 1rem;
     padding: 1.5rem;
     margin-top: 1.5rem;
@@ -240,24 +237,24 @@
 .ctaCard {
     max-width: 700px;
     margin: 0 auto;
-    background: var(--white);
+    background: linear-gradient(135deg, var(--dark-bg) 0%, var(--dark-surface) 100%);
     border-radius: 2rem;
     padding: 3rem 2rem;
     text-align: center;
-    border: 1px solid var(--gray-200);
+    border: 1px solid var(--gray-800);
     box-shadow: 0 20px 40px rgba(0,0,0,0.05);
 }
 
 .ctaTitle {
     font-size: 2rem;
     font-weight: 700;
-    color: var(--gray-900);
+    color: var(--gray-200);
     margin-bottom: 1rem;
     letter-spacing: -0.01em;
 }
 
 .ctaDescription {
-    color: var(--gray-600);
+    color: var(--gray-400);
     font-size: 1rem;
     max-width: 450px;
     margin: 0 auto 1.5rem;
@@ -279,6 +276,7 @@
 }
 
 .ctaButton:hover {
+    background: var(--gradient-primary-dark);
     transform: translateY(-2px);
     box-shadow: 0 6px 18px rgba(37, 99, 235, 0.35);
 }
@@ -315,4 +313,18 @@
     .ctaCard {
         padding: 2rem 1.5rem;
     }
+}
+
+.contactLink {
+    color: inherit;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.25rem;
+}
+
+.contactItem a:hover {
+    transform: translateX(4px);
+    gap: 0.5rem;
 }

@@ -8,7 +8,7 @@ import {
     Code, GitMerge, Shield, Zap, Cloud, Server,
     Database, Award, CheckCircle,
     MessageSquare, Star, Sparkles, ChevronRight,
-    Lock, Globe, Workflow, RefreshCw, Wifi,
+    Lock, Workflow, RefreshCw, Wifi,
     FileText, PieChart,
     BarChart, Bell, Network, Smartphone,
     Circle, Terminal,
@@ -31,14 +31,18 @@ export default function ApiDevelopmentPage() {
         project: 'Enterprise API Ecosystem'
     };
 
-    // ===== API DEVELOPMENT SERVICES =====
+    // ===== API DEVELOPMENT SERVICES (All Green) =====
+    type CSSVariables = React.CSSProperties & {
+        '--service-color'?: string;
+        '--card-color'?: string;
+    };
     const apiDevelopmentServices = [
         {
             icon: <Code />,
             title: 'Custom API Development',
             desc: 'Build secure, scalable, and high-performance custom APIs tailored to your business requirements.',
             features: ['RESTful API design', 'GraphQL implementation', 'API versioning strategy', 'Performance optimization'],
-            color: '#3B82F6'
+            color: '#10B981'
         },
         {
             icon: <GitMerge />,
@@ -52,78 +56,78 @@ export default function ApiDevelopmentPage() {
             title: 'API Security',
             desc: 'Implement enterprise-grade security measures to protect your APIs from vulnerabilities.',
             features: ['OAuth 2.0 & JWT implementation', 'Rate limiting & throttling', 'API gateway security', 'Security testing & audits'],
-            color: '#8B5CF6'
+            color: '#10B981'
         },
         {
             icon: <Zap />,
             title: 'API Performance Optimization',
             desc: 'Optimize API response times, throughput, and reliability for high-demand applications.',
             features: ['Response time optimization', 'Caching strategies', 'Load balancing', 'Database query optimization'],
-            color: '#F59E0B'
+            color: '#10B981'
         },
         {
             icon: <Cloud />,
             title: 'Cloud API Development',
             desc: 'Develop cloud-native APIs using AWS, Azure, or Google Cloud for maximum scalability.',
             features: ['AWS API Gateway', 'Azure API Management', 'Google Cloud Endpoints', 'Serverless API architecture'],
-            color: '#06B6D4'
+            color: '#10B981'
         },
         {
             icon: <Database />,
             title: 'Database API Development',
             desc: 'Create efficient APIs for database operations with optimized queries and transactions.',
             features: ['SQL/NoSQL database APIs', 'ORM implementation', 'Query optimization', 'Transaction management'],
-            color: '#EC4899'
+            color: '#10B981'
         },
         {
             icon: <Workflow />,
             title: 'Microservices API',
             desc: 'Design and implement APIs for microservices architecture with service discovery and communication.',
             features: ['Service mesh implementation', 'API gateway setup', 'Inter-service communication', 'Load balancing'],
-            color: '#84CC16'
+            color: '#10B981'
         },
         {
             icon: <Smartphone />,
             title: 'Mobile API Development',
             desc: 'Build APIs specifically optimized for mobile applications with offline capabilities.',
             features: ['Mobile-first API design', 'Push notification APIs', 'Offline synchronization', 'Battery optimization'],
-            color: '#EF4444'
+            color: '#10B981'
         },
         {
             icon: <Webhook />,
             title: 'Webhook Implementation',
             desc: 'Implement reliable webhook systems for real-time event notifications and data streaming.',
             features: ['Event-driven architecture', 'Webhook security', 'Retry mechanisms', 'Payload validation'],
-            color: '#0EA5E9'
+            color: '#10B981'
         },
         {
             icon: <BarChart />,
             title: 'API Analytics & Monitoring',
             desc: 'Implement comprehensive monitoring, analytics, and reporting for your APIs.',
             features: ['Real-time API monitoring', 'Usage analytics dashboards', 'Performance metrics', 'Alerting systems'],
-            color: '#14B8A6'
+            color: '#10B981'
         },
         {
             icon: <GitBranch />,
             title: 'API Versioning & Lifecycle',
             desc: 'Manage API versions, deprecation strategies, and complete API lifecycle management.',
             features: ['Version control strategies', 'Backward compatibility', 'Deprecation policies', 'Lifecycle automation'],
-            color: '#8B5CF6'
+            color: '#10B981'
         },
         {
             icon: <Lock />,
             title: 'API Gateway Implementation',
             desc: 'Deploy and configure API gateways for traffic management, security, and analytics.',
             features: ['Kong/Apigee setup', 'Traffic routing', 'Authentication/authorization', 'Analytics integration'],
-            color: '#3B82F6'
+            color: '#10B981'
         },
     ];
 
-    // ===== API INTEGRATION SERVICES =====
+    // ===== API INTEGRATION SERVICES (All Blue) =====
     const apiIntegrationServices = [
         {
             title: 'Third-Party API Integration',
-            icon: <Globe />,
+            icon: <GlobeIcon />,
             desc: 'Integrate popular third-party services like payment gateways, messaging, and cloud services.',
             integrations: ['Payment gateways (Stripe, PayPal)', 'Communication APIs (Twilio, SendGrid)', 'Social media APIs', 'Cloud storage APIs'],
             color: '#3B82F6'
@@ -133,39 +137,39 @@ export default function ApiDevelopmentPage() {
             icon: <Server />,
             desc: 'Connect legacy systems with modern applications through secure API bridges.',
             integrations: ['Mainframe integration', 'ERP/CRM system APIs', 'Database migration APIs', 'File system integration'],
-            color: '#10B981'
+            color: '#3B82F6'
         },
         {
             title: 'Cloud Service Integration',
             icon: <Cloud />,
             desc: 'Integrate with cloud platforms and services for enhanced functionality.',
             integrations: ['AWS services integration', 'Azure cloud services', 'Google Cloud APIs', 'SaaS platform integration'],
-            color: '#8B5CF6'
+            color: '#3B82F6'
         },
         {
             title: 'IoT & Device Integration',
             icon: <Wifi />,
             desc: 'Connect IoT devices and hardware through robust API interfaces.',
             integrations: ['Sensor data APIs', 'Device management APIs', 'Real-time telemetry', 'Firmware update APIs'],
-            color: '#F59E0B'
+            color: '#3B82F6'
         },
         {
             title: 'E-Commerce Integration',
             icon: <ShoppingBag />,
             desc: 'Integrate e-commerce platforms, payment systems, and inventory management.',
             integrations: ['Shopping cart APIs', 'Payment processing', 'Inventory management', 'Shipping & logistics APIs'],
-            color: '#EC4899'
+            color: '#3B82F6'
         },
         {
             title: 'Data & Analytics Integration',
             icon: <PieChart />,
             desc: 'Connect data sources and analytics platforms through standardized APIs.',
             integrations: ['Business intelligence tools', 'Data warehouse APIs', 'Real-time analytics', 'Reporting systems'],
-            color: '#06B6D4'
+            color: '#3B82F6'
         },
     ];
 
-    // ===== API TYPES WE DEVELOP =====
+    // ===== API TYPES WE DEVELOP (All Blue) =====
     const apiTypes = [
         {
             type: 'REST APIs',
@@ -181,7 +185,7 @@ export default function ApiDevelopmentPage() {
             desc: 'Query language for APIs providing clients with exactly the data they request.',
             features: ['Single endpoint', 'Flexible queries', 'Real-time subscriptions', 'Type system'],
             bestFor: ['Complex data requirements', 'Mobile applications', 'Real-time applications', 'Multi-platform systems'],
-            color: '#10B981'
+            color: '#3B82F6'
         },
         {
             type: 'SOAP APIs',
@@ -189,7 +193,7 @@ export default function ApiDevelopmentPage() {
             desc: 'Simple Object Access Protocol for structured information exchange.',
             features: ['XML-based messaging', 'WS-Security standards', 'ACID compliance', 'Enterprise features'],
             bestFor: ['Enterprise applications', 'Financial services', 'Government systems', 'Legacy integration'],
-            color: '#8B5CF6'
+            color: '#3B82F6'
         },
         {
             type: 'gRPC APIs',
@@ -197,7 +201,7 @@ export default function ApiDevelopmentPage() {
             desc: 'High-performance Remote Procedure Call framework using HTTP/2 and Protocol Buffers.',
             features: ['Binary serialization', 'HTTP/2 transport', 'Bidirectional streaming', 'Language agnostic'],
             bestFor: ['Microservices communication', 'Real-time streaming', 'Mobile applications', 'High-performance systems'],
-            color: '#F59E0B'
+            color: '#3B82F6'
         },
         {
             type: 'WebSocket APIs',
@@ -205,7 +209,7 @@ export default function ApiDevelopmentPage() {
             desc: 'Real-time, bidirectional communication between clients and servers.',
             features: ['Full-duplex communication', 'Low latency', 'Persistent connections', 'Real-time updates'],
             bestFor: ['Chat applications', 'Live dashboards', 'Gaming applications', 'Collaboration tools'],
-            color: '#EC4899'
+            color: '#3B82F6'
         },
         {
             type: 'Webhook APIs',
@@ -213,11 +217,11 @@ export default function ApiDevelopmentPage() {
             desc: 'Event-driven APIs that send real-time notifications to subscribed endpoints.',
             features: ['Event-driven architecture', 'HTTP callbacks', 'Retry mechanisms', 'Payload customization'],
             bestFor: ['Notifications systems', 'CI/CD pipelines', 'Order processing', 'Real-time updates'],
-            color: '#06B6D4'
+            color: '#3B82F6'
         },
     ];
 
-    // ===== API DEVELOPMENT PROCESS =====
+    // ===== API DEVELOPMENT PROCESS (All Green) =====
     const developmentProcess = [
         {
             step: 1,
@@ -225,7 +229,7 @@ export default function ApiDevelopmentPage() {
             desc: 'Understand business needs and technical requirements',
             activities: ['Stakeholder interviews', 'API specification analysis', 'Security requirements', 'Performance expectations'],
             icon: <FileText />,
-            color: '#3B82F6'
+            color: '#10B981'
         },
         {
             step: 2,
@@ -241,7 +245,7 @@ export default function ApiDevelopmentPage() {
             desc: 'Implement API endpoints and business logic',
             activities: ['Backend development', 'Database integration', 'Business logic implementation', 'Unit testing'],
             icon: <Terminal />,
-            color: '#8B5CF6'
+            color: '#10B981'
         },
         {
             step: 4,
@@ -249,7 +253,7 @@ export default function ApiDevelopmentPage() {
             desc: 'Comprehensive testing for quality assurance',
             activities: ['Integration testing', 'Performance testing', 'Security testing', 'Load testing'],
             icon: <CheckCircle />,
-            color: '#F59E0B'
+            color: '#10B981'
         },
         {
             step: 5,
@@ -257,7 +261,7 @@ export default function ApiDevelopmentPage() {
             desc: 'Deploy APIs to production environment',
             activities: ['CI/CD pipeline setup', 'Environment configuration', 'API gateway setup', 'Monitoring setup'],
             icon: <Cloud />,
-            color: '#EC4899'
+            color: '#10B981'
         },
         {
             step: 6,
@@ -265,11 +269,11 @@ export default function ApiDevelopmentPage() {
             desc: 'Ongoing support and optimization',
             activities: ['Performance monitoring', 'Security updates', 'Version management', 'Documentation updates'],
             icon: <RefreshCw />,
-            color: '#06B6D4'
+            color: '#10B981'
         },
     ];
 
-    // ===== TECHNOLOGIES WE USE =====
+    // ===== TECHNOLOGIES WE USE (Alternating Blue/Green) =====
     const technologies = [
         {
             category: 'Backend Frameworks',
@@ -284,32 +288,32 @@ export default function ApiDevelopmentPage() {
             icon: <FileText />
         },
         {
-            category: 'Authentication',
+            category: 'Authentication & Security',
             techs: ['OAuth 2.0', 'JWT', 'API Keys', 'OpenID Connect', 'SAML'],
-            color: '#8B5CF6',
+            color: '#3B82F6',
             icon: <KeyIcon />
         },
         {
             category: 'API Gateways',
             techs: ['Kong', 'Apigee', 'AWS API Gateway', 'Azure API Management', 'Tyk'],
-            color: '#F59E0B',
+            color: '#10B981',
             icon: <GitBranch />
         },
         {
             category: 'Testing Tools',
             techs: ['Postman', 'JMeter', 'SoapUI', 'Karate', 'RestAssured'],
-            color: '#EC4899',
+            color: '#3B82F6',
             icon: <CheckCircle />
         },
         {
-            category: 'Monitoring',
+            category: 'Monitoring & Analytics',
             techs: ['Datadog', 'New Relic', 'Prometheus', 'Grafana', 'ELK Stack'],
-            color: '#06B6D4',
+            color: '#10B981',
             icon: <BarChart />
         },
     ];
 
-    // ===== INDUSTRIES =====
+    // ===== INDUSTRIES (Alternating Blue/Green) =====
     const industries = [
         {
             name: 'Healthcare',
@@ -323,48 +327,54 @@ export default function ApiDevelopmentPage() {
             icon: '🛍️',
             desc: 'Scalable APIs for payment processing, inventory management, order fulfillment, CRM integration, and personalized shopping experiences.',
             image: 'https://images.unsplash.com/photo-1441986300917-64674bd600d8?auto=format&fit=crop&w=800&q=80',
-            color: '#8B5CF6'
+            color: '#3B82F6'
         },
         {
             name: 'Fintech & Banking',
             icon: '🏦',
             desc: 'High-security APIs for payment gateways, banking systems, fraud detection, regulatory compliance, and financial data aggregation.',
             image: 'https://images.unsplash.com/photo-1551434678-e076c223a692?auto=format&fit=crop&w=800&q=80',
-            color: '#3B82F6'
+            color: '#10B981'
         },
     ];
 
-    // ===== BENEFITS OF API DEVELOPMENT =====
+    // ===== BENEFITS OF API DEVELOPMENT (Alternating Blue/Green) =====
     const benefits = [
         {
             title: 'Improved Efficiency',
             desc: 'Automate processes and reduce manual work through API automation.',
-            icon: <Zap />
+            icon: <Zap />,
+            color: '#3B82F6'
         },
         {
             title: 'Enhanced Integration',
             desc: 'Connect disparate systems and applications seamlessly.',
-            icon: <GitMerge />
+            icon: <GitMerge />,
+            color: '#10B981'
         },
         {
             title: 'Scalability',
             desc: 'Build systems that can grow with your business needs.',
-            icon: <TrendingUp />
+            icon: <TrendingUp />,
+            color: '#3B82F6'
         },
         {
             title: 'Security',
             desc: 'Implement robust security protocols and access controls.',
-            icon: <Shield />
+            icon: <Shield />,
+            color: '#10B981'
         },
         {
             title: 'Cost Reduction',
             desc: 'Reduce development costs through reusable API components.',
-            icon: <Target />
+            icon: <Target />,
+            color: '#3B82F6'
         },
         {
             title: 'Innovation Enablement',
             desc: 'Create new business opportunities through API ecosystems.',
-            icon: <Sparkles />
+            icon: <Sparkles />,
+            color: '#10B981'
         },
     ];
 
@@ -403,34 +413,6 @@ export default function ApiDevelopmentPage() {
             a: 'We create comprehensive API documentation using OpenAPI/Swagger specifications, including endpoints, parameters, responses, authentication, and code examples. For testing, we implement unit tests, integration tests, performance tests, security tests, and load tests. We use tools like Postman, JMeter, and custom test automation frameworks to ensure API reliability.'
         },
     ];
-
-    // ===== PRICING =====
-    // const pricingTiers = [
-    //     {
-    //         title: 'Basic API Development',
-    //         price: '$15,000 - $35,000',
-    //         desc: 'For simple APIs with limited endpoints and standard features.',
-    //         features: ['Up to 10 API endpoints', 'Basic authentication', 'Standard documentation', 'Basic testing'],
-    //         bestFor: ['Startups', 'Proof of concepts', 'Simple integrations'],
-    //         color: '#10B981'
-    //     },
-    //     {
-    //         title: 'Enterprise API Suite',
-    //         price: '$35,000 - $75,000',
-    //         desc: 'Comprehensive API development with advanced features and integrations.',
-    //         features: ['Up to 50 API endpoints', 'Advanced security', 'Comprehensive documentation', 'Performance testing'],
-    //         bestFor: ['Medium businesses', 'Complex integrations', 'Mobile backends'],
-    //         color: '#3B82F6'
-    //     },
-    //     {
-    //         title: 'API Ecosystem',
-    //         price: '$75,000 - $150,000+',
-    //         desc: 'Complete API platform with microservices, gateways, and extensive integrations.',
-    //         features: ['Unlimited endpoints', 'Enterprise security', 'API gateway setup', '24/7 monitoring'],
-    //         bestFor: ['Large enterprises', 'Digital transformation', 'API-first companies'],
-    //         color: '#8B5CF6'
-    //     },
-    // ];
 
     return (
         <div className={styles.pageContainer}>
@@ -496,82 +478,113 @@ export default function ApiDevelopmentPage() {
                 </div>
             </section>
 
-            {/* ===== TRUSTED BY ===== */}
-            {/* <section className={styles.trustedBy}>
-                <div className={styles.sectionContent}>
-                    <p className={styles.trustedLabel}>Trusted by Industry Leaders</p>
-                    <div className={styles.trustedLogos}>
-                        {['Microsoft', 'Google', 'Amazon', 'IBM', 'Salesforce', 'Stripe'].map((logo, i) => (
-                            <div key={i} className={styles.logoItem}>{logo}</div>
-                        ))}
-                    </div>
-                </div>
-            </section> */}
-
             {/* ===== SERVICES OVERVIEW ===== */}
             <section className={styles.servicesOverview}>
                 <div className={styles.sectionBackground}></div>
+
                 <div className={styles.sectionContent}>
                     <div className={styles.sectionHeader}>
                         <h2>Comprehensive API Services</h2>
-                        <p>End-to-end API development and integration solutions tailored to your business needs</p>
+                        <p>
+                            End-to-end API development and integration solutions tailored
+                            to your business needs
+                        </p>
                     </div>
 
+                    {/* TABS */}
                     <div className={styles.servicesTabs}>
                         <button
-                            className={`${styles.serviceTab} ${activeTab === 'development' ? styles.active : ''}`}
+                            type="button"
+                            className={`${styles.serviceTab} ${activeTab === 'development' ? styles.active : ''
+                                }`}
                             onClick={() => setActiveTab('development')}
                         >
-                            <Code /> API Development
+                            <Code size={18} />
+                            API Development
                         </button>
+
                         <button
-                            className={`${styles.serviceTab} ${activeTab === 'integration' ? styles.active : ''}`}
+                            type="button"
+                            className={`${styles.serviceTab} ${activeTab === 'integration' ? styles.active : ''
+                                }`}
                             onClick={() => setActiveTab('integration')}
                         >
-                            <GitMerge /> API Integration
+                            <GitMerge size={18} />
+                            API Integration
                         </button>
                     </div>
 
+                    {/* DEVELOPMENT TAB */}
                     {activeTab === 'development' && (
                         <div className={styles.servicesGrid}>
                             {apiDevelopmentServices.map((service, idx) => (
-                                <motion.div
+                                <div
                                     key={idx}
                                     className={styles.serviceCard}
-                                    initial={{ opacity: 0, y: 20 }}
-                                    animate={{ opacity: 1, y: 0 }}
-                                    transition={{ delay: idx * 0.05 }}
-                                    style={{ '--service-color': service.color } as React.CSSProperties}
+                                    style={
+                                        {
+                                            '--service-color': service.color,
+                                        } as CSSVariables
+                                    }
                                 >
-                                    <div className={styles.serviceIcon}>
+                                    <div
+                                        className={styles.serviceIcon}
+                                        style={{ backgroundColor: service.color }}
+                                    >
                                         {service.icon}
                                     </div>
+
                                     <h3>{service.title}</h3>
+
                                     <p>{service.desc}</p>
+
                                     <ul className={styles.serviceFeatures}>
                                         {service.features.map((feature, fIdx) => (
                                             <li key={fIdx}>
-                                                <Circle size={6} />
+                                                <Circle
+                                                    size={6}
+                                                    fill={service.color}
+                                                    color={service.color}
+                                                />
                                                 {feature}
                                             </li>
                                         ))}
                                     </ul>
-                                </motion.div>
+                                </div>
                             ))}
                         </div>
                     )}
 
+                    {/* INTEGRATION TAB */}
                     {activeTab === 'integration' && (
                         <div className={styles.integrationGrid}>
                             {apiIntegrationServices.map((service, idx) => (
-                                <div key={idx} className={styles.integrationCard} style={{ borderTopColor: service.color }}>
-                                    <div className={styles.integrationIcon} style={{ color: service.color }}>
+                                <div
+                                    key={idx}
+                                    className={styles.integrationCard}
+                                    style={
+                                        {
+                                            '--card-color': service.color,
+                                        } as CSSVariables
+                                    }
+                                >
+                                    <div
+                                        className={styles.integrationIcon}
+                                        style={{
+                                            backgroundColor: `${service.color}15`,
+                                            color: service.color,
+                                        }}
+                                    >
                                         {service.icon}
                                     </div>
+
                                     <h3>{service.title}</h3>
+
                                     <p>{service.desc}</p>
+
                                     <div className={styles.integrationList}>
                                         <strong>Common Integrations:</strong>
+
                                         <ul>
                                             {service.integrations.map((item, iIdx) => (
                                                 <li key={iIdx}>{item}</li>
@@ -584,7 +597,6 @@ export default function ApiDevelopmentPage() {
                     )}
                 </div>
             </section>
-
             {/* ===== API TYPES ===== */}
             <section className={styles.apiTypesSection}>
                 <div className={styles.sectionContent}>
@@ -615,7 +627,7 @@ export default function ApiDevelopmentPage() {
                                     <strong>Best For:</strong>
                                     <div className={styles.bestForTags}>
                                         {api.bestFor.map((item, bIdx) => (
-                                            <span key={bIdx} className={styles.bestForTag} style={{ backgroundColor: `${api.color}15` }}>
+                                            <span key={bIdx} className={styles.bestForTag} style={{ backgroundColor: `${api.color}15`, color: api.color }}>
                                                 {item}
                                             </span>
                                         ))}
@@ -685,7 +697,7 @@ export default function ApiDevelopmentPage() {
                                 </div>
                                 <div className={styles.techList}>
                                     {tech.techs.map((item, tIdx) => (
-                                        <span key={tIdx} className={styles.techItem} style={{ backgroundColor: `${tech.color}10` }}>
+                                        <span key={tIdx} className={styles.techItem} style={{ backgroundColor: `${tech.color}10`, color: tech.color }}>
                                             {item}
                                         </span>
                                     ))}
@@ -707,7 +719,7 @@ export default function ApiDevelopmentPage() {
                     <div className={styles.benefitsGrid}>
                         {benefits.map((benefit, idx) => (
                             <div key={idx} className={styles.benefitCard}>
-                                <div className={styles.benefitIcon}>
+                                <div className={styles.benefitIcon} style={{ backgroundColor: `${benefit.color}10`, color: benefit.color }}>
                                     {benefit.icon}
                                 </div>
                                 <h4>{benefit.title}</h4>
@@ -717,47 +729,6 @@ export default function ApiDevelopmentPage() {
                     </div>
                 </div>
             </section>
-
-            {/* ===== PRICING SECTION ===== */}
-            {/* <section className={styles.pricingSection}>
-                <div className={styles.sectionContent}>
-                    <div className={styles.sectionHeader}>
-                        <h2>API Development Pricing</h2>
-                        <p>Transparent pricing based on complexity, features, and integration requirements</p>
-                    </div>
-
-                    <div className={styles.pricingGrid}>
-                        {pricingTiers.map((tier, idx) => (
-                            <div key={idx} className={styles.pricingCard} style={{ borderTopColor: tier.color }}>
-                                <div className={styles.pricingHeader}>
-                                    <h3>{tier.title}</h3>
-                                    <div className={styles.pricingAmount}>{tier.price}</div>
-                                </div>
-                                <p className={styles.pricingDesc}>{tier.desc}</p>
-                                <ul className={styles.pricingFeatures}>
-                                    {tier.features.map((feature, fIdx) => (
-                                        <li key={fIdx}>
-                                            <CheckCircle size={16} color={tier.color} />
-                                            {feature}
-                                        </li>
-                                    ))}
-                                </ul>
-                                <div className={styles.pricingBestFor}>
-                                    <strong>Ideal For:</strong>
-                                    <div className={styles.bestForList}>
-                                        {tier.bestFor.map((item, bIdx) => (
-                                            <div key={bIdx} className={styles.bestForItem}>{item}</div>
-                                        ))}
-                                    </div>
-                                </div>
-                                <Link href="/contact" className={styles.pricingCta} style={{ backgroundColor: tier.color }}>
-                                    Get Started
-                                </Link>
-                            </div>
-                        ))}
-                    </div>
-                </div>
-            </section> */}
 
             {/* ===== INDUSTRIES SECTION ===== */}
             <section className={styles.industriesSection}>
@@ -849,7 +820,6 @@ export default function ApiDevelopmentPage() {
                         <Link href="/contact" className={styles.ctaButtonPrimary}>
                             Start Your API Project <ChevronRight size={20} />
                         </Link>
-
                     </div>
                 </div>
             </section>
@@ -857,7 +827,7 @@ export default function ApiDevelopmentPage() {
     );
 }
 
-// Add missing ShoppingBag icon import
+// ShoppingBag icon component
 function ShoppingBag(props: React.SVGProps<SVGSVGElement>) {
     return (
         <svg

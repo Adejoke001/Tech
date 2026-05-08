@@ -37,7 +37,7 @@ export default function FullStackDevelopersPage() {
         title: 'Full Stack Web Development',
         description: 'Custom web solutions for startups, SMEs, and enterprises with end-to-end development capabilities. Our developers excel in building scalable, high-performance applications.',
         icon: <Code2 className={styles.expertiseIcon} />,
-        color: '#3B82F6',
+        color: '#10b981',
         features: ['MEAN/MERN Stack Development', 'Laravel/PHP Applications', 'Java Spring Boot Solutions', 'Complete Web Architecture'],
         details: 'End-to-end development from concept to deployment',
         link: '/services/web-development',
@@ -59,7 +59,7 @@ export default function FullStackDevelopersPage() {
         title: 'Back-end Development',
         description: 'Robust back-end development with microservices architecture, API development, and database optimization.',
         icon: <Server className={styles.expertiseIcon} />,
-        color: '#8B5CF6',
+        color: '#10b981',
         features: ['RESTful API Development', 'Database Design & Optimization', 'Server Architecture', 'Microservices Implementation'],
         details: 'Building scalable and secure server-side solutions',
         link: '/services/backend-development', 
@@ -69,7 +69,7 @@ export default function FullStackDevelopersPage() {
         title: 'MEAN & MERN Stack',
         description: 'Full-stack JavaScript development using MongoDB, Express, Angular/React, and Node.js for modern web applications.',
         icon: <Layers className={styles.expertiseIcon} />,
-        color: '#F59E0B',
+        color: '#10b981',
         features: ['MongoDB + Express.js', 'Angular/React.js Frontend', 'Node.js Backend', 'Real-time Applications'],
         details: 'JavaScript-based full stack solutions',
        
@@ -79,7 +79,7 @@ export default function FullStackDevelopersPage() {
         title: 'Support & Maintenance',
         description: 'Comprehensive support and maintenance services ensuring your applications run smoothly and securely.',
         icon: <ShieldCheck className={styles.expertiseIcon} />,
-        color: '#EC4899',
+        color: '#10b981',
         features: ['24/7 Technical Support', 'Bug Fixes & Updates', 'Performance Optimization', 'Security Patches'],
         details: 'Ongoing maintenance and support',
         
@@ -89,7 +89,7 @@ export default function FullStackDevelopersPage() {
         title: 'Cloud Deployment & CI/CD',
         description: 'Expert cloud deployment on AWS, Azure, GCP with automated CI/CD pipelines for seamless delivery.',
         icon: <CloudLightning className={styles.expertiseIcon} />,
-        color: '#06B6D4',
+        color: '#10b981',
         features: ['AWS/Azure/GCP Deployment', 'Docker & Kubernetes', 'CI/CD Pipelines', 'DevOps Implementation'],
         details: 'Cloud-native application deployment',
         link: '/services/cloud-devops-services',
@@ -112,7 +112,7 @@ export default function FullStackDevelopersPage() {
         'ui-toolkits': {
             title: 'UI Frameworks & Toolkits',
             icon: <Monitor />,
-            color: '#10B981',
+            color: '#3b82f6',
             technologies: [
                 'React Ant Design', 'Material-UI', 'Bootstrap', 'Semantic UI',
                 'Pure CSS', 'Angular Material', 'Vue.js', 'Next.js', 'Gatsby',
@@ -122,7 +122,7 @@ export default function FullStackDevelopersPage() {
         'hosting-platforms': {
             title: 'Hosting & Cloud Platforms',
             icon: <Cloud />,
-            color: '#8B5CF6',
+            color: '#3b82F6',
             technologies: [
                 'AWS EC2', 'AWS Lambda', 'Docker', 'Heroku', 'Firebase',
                 'Kubernetes', 'Azure', 'Google Cloud Platform', 'RackSpace',
@@ -132,7 +132,7 @@ export default function FullStackDevelopersPage() {
         'tools-utilities': {
             title: 'Development Tools & Utilities',
             icon: <Code />,
-            color: '#F59E0B',
+            color: '#3b82f6',
             technologies: [
                 'NPM/Yarn', 'REST APIs', 'GraphQL', 'JSON', 'Webpack',
                 'Babel', 'Jest', 'Mocha/Chai', 'ELK Stack', 'Gulp',
@@ -142,7 +142,7 @@ export default function FullStackDevelopersPage() {
         'orm-version-control': {
             title: 'ORM & Version Control',
             icon: <GitBranch />,
-            color: '#EC4899',
+            color: '#3b82f6',
             technologies: [
                 'Mongoose', 'Sequelize', 'TypeORM', 'Prisma', 'Git',
                 'GitHub/GitLab', 'SVN', 'Postman', 'Swagger', 'Xdebug',
@@ -152,7 +152,7 @@ export default function FullStackDevelopersPage() {
         'mobile-cross': {
             title: 'Mobile & Cross-Platform',
             icon: <Smartphone />,
-            color: '#06B6D4',
+            color: '#3b82f6',
             technologies: [
                 'React Native', 'Flutter', 'Ionic', 'Cordova',
                 'Xamarin', 'NativeScript', 'Swift', 'Kotlin'
@@ -282,7 +282,7 @@ export default function FullStackDevelopersPage() {
                 'Daily standups',
                 'Quality assurance'
             ],
-            color: '#10B981',
+            color: '#3b82f6',
             bestFor: 'Growing Businesses',
             timeline: '6-12 months'
         },
@@ -298,7 +298,7 @@ export default function FullStackDevelopersPage() {
                 'Dedicated project manager',
                 'SLA-backed delivery'
             ],
-            color: '#8B5CF6',
+            color: '#3b82f6',
             bestFor: 'Large Enterprises',
             timeline: '12+ months'
         },
@@ -314,7 +314,7 @@ export default function FullStackDevelopersPage() {
                 'Flexible engagement',
                 'Risk-free trial'
             ],
-            color: '#F59E0B',
+            color: '#3b82f6',
             bestFor: 'Special Projects',
             timeline: 'Flexible'
         }
@@ -327,7 +327,7 @@ export default function FullStackDevelopersPage() {
             description: 'End-to-end web solutions with modern frontends and scalable backends for various industries.',
             icon: <Code2 />,
             examples: ['SaaS platforms', 'E-commerce websites', 'CRM systems', 'Content management systems', 'Learning management systems'],
-            color: '#3B82F6',
+            color: '#10b981',
             technologies: ['React/Next.js', 'Node.js', 'PostgreSQL', 'AWS']
         },
         {
@@ -343,7 +343,7 @@ export default function FullStackDevelopersPage() {
             description: 'Applications with live data updates, notifications, and collaborative features for modern users.',
             icon: <Zap />,
             examples: ['Live dashboards', 'Chat applications', 'Collaboration tools', 'Real-time analytics', 'Stock trading platforms'],
-            color: '#8B5CF6',
+            color: '#10b981',
             technologies: ['Socket.io', 'WebSockets', 'Redis', 'React/Vue']
         },
         {
@@ -351,7 +351,7 @@ export default function FullStackDevelopersPage() {
             description: 'Applications designed for cloud deployment with containerization, scalability, and resilience.',
             icon: <Cloud />,
             examples: ['AWS/Azure applications', 'Docker containers', 'Kubernetes clusters', 'Serverless functions', 'Cloud migrations'],
-            color: '#F59E0B',
+            color: '#10b981',
             technologies: ['AWS/Azure/GCP', 'Docker', 'Kubernetes', 'Terraform']
         },
         {
@@ -359,7 +359,7 @@ export default function FullStackDevelopersPage() {
             description: 'Modern PWAs with offline capabilities, push notifications, and native app-like experience.',
             icon: <Smartphone />,
             examples: ['Offline-first apps', 'Push notifications', 'Home screen installation', 'App-like UX', 'Mobile-first solutions'],
-            color: '#EC4899',
+            color: '#10b981',
             technologies: ['PWA', 'Service Workers', 'Web App Manifest', 'React/Vue']
         },
         {
@@ -367,7 +367,7 @@ export default function FullStackDevelopersPage() {
             description: 'Upgrading and modernizing outdated systems with current technologies and best practices.',
             icon: <RefreshCw />,
             examples: ['System migrations', 'Tech stack upgrades', 'Database optimization', 'UI modernization', 'Performance tuning'],
-            color: '#06B6D4',
+            color: '#10b981',
             technologies: ['Modern frameworks', 'Cloud migration', 'Database migration', 'API integration']
         }
     ];
@@ -456,7 +456,7 @@ export default function FullStackDevelopersPage() {
     ];
 
     // Why Hire from India
-    const whyHireIndia = [
+    const whyHireBbmCoders = [
         {
             title: 'Cost-effective Talent',
             description: 'Excellent value for money with competitive rates and high-quality output, reducing development costs by 40-60%.',
@@ -573,7 +573,7 @@ export default function FullStackDevelopersPage() {
             icon: '🏥',
             desc: 'Telemedicine platforms, patient portals, health tracking apps, and medical management systems with HIPAA-compliant security.',
             image: 'https://images.unsplash.com/photo-1551601651-2a8555f1a136?auto=format&fit=crop&w=800&q=80',
-            color: '#8B5CF6'
+            color: '#3b82f6'
         }
     ];
 
@@ -859,7 +859,7 @@ export default function FullStackDevelopersPage() {
                 </div>
 
                 <div className={styles.benefitsGrid}>
-                    {whyHireIndia.map((benefit, index) => (
+                    {whyHireBbmCoders.map((benefit, index) => (
                         <motion.div
                             key={index}
                             className={styles.benefitCard}
@@ -1144,7 +1144,7 @@ export default function FullStackDevelopersPage() {
                             transition={{ duration: 0.4, delay: index * 0.05 }}
                             viewport={{ once: true }}
                         >
-                            <div className={styles.whyChooseIcon} style={{ color: technologyStack['database-languages'].color }}>
+                            <div className={styles.whyChooseIcon}>
                                 {item.icon}
                             </div>
                             <span>{item.feature}</span>

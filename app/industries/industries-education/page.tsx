@@ -74,7 +74,7 @@ export default function EducationPage() {
             title: 'Learning Management Systems (LMS)',
             description: 'Create, manage, and deliver online courses and training programs with a centralized platform.',
             icon: <Layers />,
-            color: '#3B82F6',
+            color: '#10b981',
             features: [
                 'Centralized course repository',
                 'Tracking and reporting',
@@ -96,7 +96,7 @@ export default function EducationPage() {
             title: 'Learning Experience Platform (LXP)',
             description: 'Modern, flexible learning environments with AI-powered discovery and sharing.',
             icon: <Zap />,
-            color: '#8B5CF6',
+            color: '#10b981',
             features: [
                 'AI-Powered recommendations',
                 'Peer interactions',
@@ -107,7 +107,7 @@ export default function EducationPage() {
             title: 'Remote Monitoring Software',
             description: 'Ensure integrity of online assessments with remote proctoring and ID verification.',
             icon: <Shield />,
-            color: '#F59E0B',
+            color: '#10b981',
             features: [
                 'Live Monitoring',
                 'Recording and review',
@@ -118,7 +118,7 @@ export default function EducationPage() {
             title: 'Mobile Learning Solutions',
             description: 'Convenient, flexible access to courses anytime, anywhere with mobile-optimized apps.',
             icon: <Smartphone />,
-            color: '#EC4899',
+            color: '#10b981',
             features: [
                 'Offline access',
                 'Push notifications',
@@ -129,7 +129,7 @@ export default function EducationPage() {
             title: 'Knowledge Management Solutions',
             description: 'Capture, store, and share organizational knowledge with centralized systems.',
             icon: <Database />,
-            color: '#06B6D4',
+            color: '#10b981',
             features: [
                 'Centralized knowledge base',
                 'Collaboration tools',
@@ -151,77 +151,77 @@ export default function EducationPage() {
             title: 'eLearning Software Development',
             description: 'Craft tailored solutions that resonate with modern learners.',
             icon: <Code />,
-            color: '#10B981',
+            color: '#3b82f6',
             points: ['Interactive courseware', 'Mobile learning apps', 'Multimedia content']
         },
         {
             title: 'eLearning Software Integration',
             description: 'Seamlessly connect your eLearning tools for an integrated experience.',
             icon: <GitBranch />,
-            color: '#8B5CF6',
+            color: '#3b82F6',
             points: ['LMS/CMS integration', 'Efficient data exchange', 'Connect with tools']
         },
         {
             title: 'eLearning Content Management',
             description: 'Empower with robust platforms for end-to-end content management.',
             icon: <FolderOpen />,
-            color: '#F59E0B',
+            color: '#3b82f6',
             points: ['Course creation', 'Delivery & tracking', 'Assessment & reporting']
         },
         {
             title: 'eLearning Software Modernization',
             description: 'Strengthen legacy platforms with future-ready, scalable experiences.',
             icon: <RefreshCw />,
-            color: '#EC4899',
+            color: '#3b82f6',
             points: ['Upgrade outdated LMS', 'Cloud-native migration', 'AI-enabled platforms']
         },
         {
             title: 'Digital Marketing Services',
             description: 'Enhance visibility and enrollment through targeted educational marketing.',
             icon: <Megaphone />,
-            color: '#06B6D4',
+            color: '#3b82f6',
             points: ['Strategic campaigns', 'SEO & content', 'Analytics-driven optimization']
         }
     ];
 
     // ============ TYPES OF eLEARNING SOFTWARE ============
     const softwareTypes = [
-        { name: 'Learning Management Systems (LMS)', desc: 'Manage training, create tests, track progress', icon: <Layers />, color: '#3B82F6' },
+        { name: 'Learning Management Systems (LMS)', desc: 'Manage training, create tests, track progress', icon: <Layers />, color: '#10b981' },
         { name: 'Course Management Systems (CMS)', desc: 'Create and publish online courses', icon: <Layout />, color: '#10B981' },
-        { name: 'Learning Content Management Systems (LCMS)', desc: 'Create and manage training material with advanced features', icon: <Database />, color: '#8B5CF6' }
+        { name: 'Learning Content Management Systems (LCMS)', desc: 'Create and manage training material with advanced features', icon: <Database />, color: '#10b981' }
     ];
 
     // ============ TOP TRENDS ============
     const trends = [
         { name: 'Mobile Learning (mLearning)', desc: 'Access educational content anytime, anywhere', icon: <Smartphone />, color: '#3B82F6' },
-        { name: 'Microlearning', desc: 'Short, bite-sized learning modules', icon: <Zap />, color: '#10B981' },
-        { name: 'Artificial Intelligence (AI)', desc: 'Personalized recommendations, intelligent tutoring', icon: <Cpu />, color: '#8B5CF6' },
-        { name: 'VR & AR', desc: 'Immersive and interactive learning environments', icon: <Box />, color: '#F59E0B' },
-        { name: 'Social Learning', desc: 'Peer collaboration, discussion forums', icon: <Users />, color: '#EC4899' },
-        { name: 'Gamification', desc: 'Game elements, rewards, leaderboards', icon: <Gamepad />, color: '#06B6D4' }
+        { name: 'Microlearning', desc: 'Short, bite-sized learning modules', icon: <Zap />, color: '#3b82f6' },
+        { name: 'Artificial Intelligence (AI)', desc: 'Personalized recommendations, intelligent tutoring', icon: <Cpu />, color: '#3b82F6' },
+        { name: 'VR & AR', desc: 'Immersive and interactive learning environments', icon: <Box />, color: '#10b981' },
+        { name: 'Social Learning', desc: 'Peer collaboration, discussion forums', icon: <Users />, color: '#10b981' },
+        { name: 'Gamification', desc: 'Game elements, rewards, leaderboards', icon: <Gamepad />, color: '#10b981' }
     ];
 
     // ============ SECURITY MEASURES ============
     const securityMeasures = [
         { text: 'User Authentication – passwords, MFA, SSO', icon: <Fingerprint />, color: '#3B82F6' },
-        { text: 'Data Encryption – in transit and at rest', icon: <Lock />, color: '#10B981' },
-        { text: 'Secure Communication – HTTPS/SSL', icon: <Globe />, color: '#8B5CF6' },
-        { text: 'Role-Based Access Control', icon: <Key />, color: '#F59E0B' },
-        { text: 'Regular Security Audits', icon: <Shield />, color: '#EC4899' },
-        { text: 'Secure Hosting & Infrastructure', icon: <Database />, color: '#06B6D4' },
+        { text: 'Data Encryption – in transit and at rest', icon: <Lock />, color: '#10b981' },
+        { text: 'Secure Communication – HTTPS/SSL', icon: <Globe />, color: '#3b82f6' },
+        { text: 'Role-Based Access Control', icon: <Key />, color: '#10b981' },
+        { text: 'Regular Security Audits', icon: <Shield />, color: '#3b82f6' },
+        { text: 'Secure Hosting & Infrastructure', icon: <Database />, color: '#10b981' },
         { text: 'Data Privacy & Compliance (GDPR)', icon: <BadgeCheck />, color: '#3B82F6' },
         { text: 'Security Awareness Training', icon: <Users />, color: '#10B981' }
     ];
 
     // ============ TECHNOLOGY STACK (for explorer) ============
     const techStack = [
-        { name: 'React / Next.js', category: 'Frontend', icon: <Code />, color: '#3B82F6', description: 'Dynamic, performant UIs' },
+        { name: 'React / Next.js', category: 'Frontend', icon: <Code />, color: '#10b981', description: 'Dynamic, performant UIs' },
         { name: 'Node.js', category: 'Backend', icon: <Server />, color: '#10B981', description: 'Scalable server-side logic' },
-        { name: 'Python / Django', category: 'Backend', icon: <Terminal />, color: '#8B5CF6', description: 'Rapid development, AI/ML ready' },
-        { name: 'AWS / Azure', category: 'Cloud', icon: <Cloud />, color: '#F59E0B', description: 'Secure, scalable infrastructure' },
-        { name: 'Figma', category: 'Design', icon: <Figma />, color: '#EC4899', description: 'Collaborative design systems' },
-        { name: 'MongoDB', category: 'Database', icon: <Database />, color: '#06B6D4', description: 'Flexible, document-based storage' },
-        { name: 'React Native', category: 'Mobile', icon: <Smartphone />, color: '#3B82F6', description: 'Cross-platform mobile apps' },
+        { name: 'Python / Django', category: 'Backend', icon: <Terminal />, color: '#10b981', description: 'Rapid development, AI/ML ready' },
+        { name: 'AWS / Azure', category: 'Cloud', icon: <Cloud />, color: '#10b981', description: 'Secure, scalable infrastructure' },
+        { name: 'Figma', category: 'Design', icon: <Figma />, color: '#10b981', description: 'Collaborative design systems' },
+        { name: 'MongoDB', category: 'Database', icon: <Database />, color: '#10b981', description: 'Flexible, document-based storage' },
+        { name: 'React Native', category: 'Mobile', icon: <Smartphone />, color: '#10b981', description: 'Cross-platform mobile apps' },
         { name: 'GraphQL', category: 'API', icon: <Hexagon />, color: '#10B981', description: 'Efficient data querying' }
     ];
 
@@ -234,15 +234,15 @@ export default function EducationPage() {
     // ============ WHY PARTNER WITH US ============
     const whyPartner = [
         { text: 'Trusted by Startups to Fortune 500', icon: <Building2 />, color: '#3B82F6' },
-        { text: 'Idea to Deployment, We Handle All', icon: <Rocket />, color: '#10B981' },
-        { text: 'Time-Zone Friendly: Global Presence', icon: <GlobeIcon />, color: '#8B5CF6' },
-        { text: 'Top-tier Data Security Protocols', icon: <LockIcon2 />, color: '#F59E0B' },
-        { text: 'On-time Delivery, No Surprises', icon: <ClockIcon />, color: '#EC4899' },
-        { text: 'First Time Right Process', icon: <ThumbsUp />, color: '#06B6D4' }
+        { text: 'Idea to Deployment, We Handle All', icon: <Rocket />, color: '#3b82f6' },
+        { text: 'Time-Zone Friendly: Global Presence', icon: <GlobeIcon />, color: '#3b82F6' },
+        { text: 'Top-tier Data Security Protocols', icon: <LockIcon2 />, color: '#3b82f6' },
+        { text: 'On-time Delivery, No Surprises', icon: <ClockIcon />, color: '#3b82f6' },
+        { text: 'First Time Right Process', icon: <ThumbsUp />, color: '#3b82f6' }
     ];
 
     // ============ TRUSTED BY ============
-    const trustedCompanies = ['Microsoft', 'Amazon', 'Google', 'IBM', 'SAP', 'Oracle'];
+    // const trustedCompanies = ['Microsoft', 'Amazon', 'Google', 'IBM', 'SAP', 'Oracle'];
 
     // ============ INDUSTRIES ============
     const industries = [
@@ -327,7 +327,7 @@ export default function EducationPage() {
                     style={{ transform: `translateY(${scrollY * 0.3}px)` }}
                 >
                     <Image
-                        src="https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80"
+                        src="https://media.istockphoto.com/id/2215674535/photo/young-asian-software-development-manager-leads-a-late-night-office-discussion-with-his.webp?a=1&b=1&s=612x612&w=0&k=20&c=9EzjAlCR7-xJG3mrH0kZRQuvCz08nBXfkYHHHgFjHNc="
                         alt="Hero background"
                         fill
                         className={styles.parallaxImage}
@@ -824,7 +824,7 @@ export default function EducationPage() {
                     </div>
                     <div className={styles.lxpCard}>
                         <div className={styles.lxpHeader}>
-                            <Zap className={styles.lxpIcon} style={{ color: '#8B5CF6' }} />
+                            <Zap className={styles.lxpIcon} style={{ color: '#10b981' }} />
                             <h3>LXP</h3>
                         </div>
                         <p className={styles.lxpDescription}>{lmsVsLxp.lxp}</p>
@@ -834,16 +834,6 @@ export default function EducationPage() {
 
             {/* ===== WHY PARTNER WITH US – BACKGROUND IMAGE ===== */}
             <section className={styles.partnerSection}>
-                <div className={styles.partnerBackground}>
-                    <Image
-                        src="https://images.unsplash.com/photo-1524995997946-a1c2e315a42f?auto=format&fit=crop&w=1920&q=80"
-                        alt="Education partnership background"
-                        fill
-                        className={styles.partnerBgImage}
-                        priority
-                    />
-                    <div className={styles.partnerOverlay}></div>
-                </div>
                 <div className={styles.partnerContent}>
                     <div className={styles.sectionHeader}>
                         <h2 className={styles.sectionTitle} style={{ color: 'white' }}>

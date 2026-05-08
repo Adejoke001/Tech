@@ -32,7 +32,7 @@ export default function FrontendPage() {
             title: 'Custom Front-end Development',
             description: 'Stand out with exceptional front-end solutions that combine quick loading speed, feature-packed designs, and intuitive user experiences.',
             icon: <Code />,
-            color: '#3B82F6',
+            color: '#10b981',
             features: ['Quick loading speed', 'Feature-packed designs', 'Intuitive user experience']
         },
         {
@@ -48,7 +48,7 @@ export default function FrontendPage() {
             title: 'Single Page Apps Development',
             description: 'Boost performance with single-page apps that deliver flexible user experiences and improved speed and efficiency.',
             icon: <Zap />,
-            color: '#3B82F6',
+            color: '#10b981',
             features: ['Flexible user experiences', 'Expert development services', 'Improved speed and efficiency']
         },
         {
@@ -64,7 +64,7 @@ export default function FrontendPage() {
             title: 'Progressive Web Apps Development',
             description: 'PWAs for a native-like experience with mobile-friendly solutions and native app performance.',
             icon: <Smartphone />,
-            color: '#3B82F6',
+            color: '#10b981',
             features: ['Mobile-friendly solutions', 'Native app performance', 'Seamless user experience']
         },
         {
@@ -96,11 +96,11 @@ export default function FrontendPage() {
     // ============ WHY CHOOSE US (from URL) ============
     const whyChooseUs = [
         { text: 'Design-to-Code Speed & Precision', icon: <Zap />, color: '#3B82F6' },
-        { text: 'Optimized for Real-World Performance', icon: <Gauge />, color: '#10B981' },
-        { text: 'Cross-Platform & Device-Ready Engineering', icon: <Smartphone />, color: '#8B5CF6' },
-        { text: 'Scalable Architecture for Growth', icon: <TrendingUp />, color: '#F59E0B' },
-        { text: 'Business-Driven Front-End Solutions', icon: <Target />, color: '#EC4899' },
-        { text: 'Global Talent with Flexible Engagement', icon: <Globe />, color: '#06B6D4' },
+        { text: 'Optimized for Real-World Performance', icon: <Gauge />, color: '#3b82f6' },
+        { text: 'Cross-Platform & Device-Ready Engineering', icon: <Smartphone />, color: '#3b82F6' },
+        { text: 'Scalable Architecture for Growth', icon: <TrendingUp />, color: '#3b82f6' },
+        { text: 'Business-Driven Front-End Solutions', icon: <Target />, color: '#3b82f6' },
+        { text: 'Global Talent with Flexible Engagement', icon: <Globe />, color: '#3b82f6' },
     ];
 
     // ============ TECHNOLOGIES (from URL) ============
@@ -115,12 +115,12 @@ export default function FrontendPage() {
 
     // ============ DEVELOPMENT PROCESS (from URL) ============
     const processSteps = [
-        { step: 1, title: 'Software Kick-off', description: 'Dive into bi-weekly sprints and rollouts aligned with project timelines.', icon: <FileText />, color: '#3B82F6' },
+        { step: 1, title: 'Software Kick-off', description: 'Dive into bi-weekly sprints and rollouts aligned with project timelines.', icon: <FileText />, color: '#10b981' },
         { step: 2, title: 'Task Execution & Development', description: 'Combined team tackles tasks, fulfilling user stories and sprint goals.', icon: <Code />, color: '#10B981' },
-        { step: 3, title: 'Daily Stand-ups', description: 'Daily check-ins led by Scrum Master to discuss progress and tackle challenges.', icon: <Users />, color: '#8B5CF6' },
-        { step: 4, title: 'Feature Quality Check', description: 'Quality Engineers rigorously test new features, ensuring seamless integration.', icon: <CheckCircle />, color: '#F59E0B' },
-        { step: 5, title: 'Backlog Updates', description: 'Our team keeps the sprint backlog updated, staying on track to meet objectives.', icon: <RefreshCwIcon />, color: '#EC4899' },
-        { step: 6, title: 'Sprint Reflections', description: 'Post-sprint reflections to refine strategies and enhance future sprints.', icon: <Users />, color: '#06B6D4' },
+        { step: 3, title: 'Daily Stand-ups', description: 'Daily check-ins led by Scrum Master to discuss progress and tackle challenges.', icon: <Users />, color: '#10b981' },
+        { step: 4, title: 'Feature Quality Check', description: 'Quality Engineers rigorously test new features, ensuring seamless integration.', icon: <CheckCircle />, color: '#10b981' },
+        { step: 5, title: 'Backlog Updates', description: 'Our team keeps the sprint backlog updated, staying on track to meet objectives.', icon: <RefreshCwIcon />, color: '#10b981' },
+        { step: 6, title: 'Sprint Reflections', description: 'Post-sprint reflections to refine strategies and enhance future sprints.', icon: <Users />, color: '#10b981' },
     ];
 
     // ============ HIRING MODELS (from URL) ============
@@ -138,7 +138,7 @@ export default function FrontendPage() {
             title: 'Dedicated Teams / Delivery Pods',
             description: 'Dedicated squad with Tech Lead + Engineers + QA. Shared accountability for predictable sprint delivery.',
             icon: <Target />,
-            color: '#10B981',
+            color: '#3b82f6',
             features: ['Milestone-based or fixed-cost', 'We own sprint delivery metrics', 'Weekly demos'],
             billing: 'Milestone-based, T&M with commitments, or Fixed-Cost',
             bestFor: 'Products needing speed, cross-team coordination'
@@ -147,7 +147,7 @@ export default function FrontendPage() {
             title: 'Development Centers',
             description: 'Long-term, scaled teams with your branding, culture, processes. Full infrastructure, HR, security & compliance.',
             icon: <Building2 />,
-            color: '#8B5CF6',
+            color: '#3b82F6',
             features: ['Long-term retainer', 'BOT (Build–Operate–Transfer) options', 'Multi-year partnerships'],
             billing: 'Long-term retainer, BOT',
             bestFor: 'Enterprises needing sustained large-scale capacity'
@@ -163,7 +163,7 @@ export default function FrontendPage() {
                 'Intuitive UI increases task completion and checkout success',
                 'Smoother interactions create a friction-free buying experience'
             ],
-            color: '#3B82F6'
+            color: '#3b82f6'
         },
         {
             title: 'How It Builds Customer Trust',
@@ -172,7 +172,7 @@ export default function FrontendPage() {
                 'Polished, modern interfaces improve credibility',
                 'Accessible design expands your reach to more customers'
             ],
-            color: '#10B981'
+            color: '#3b82f6'
         },
         {
             title: 'How It Increases Revenue',
@@ -181,7 +181,7 @@ export default function FrontendPage() {
                 'Better retention due to enjoyable user interactions',
                 'Higher engagement from mobile-first, responsive layouts'
             ],
-            color: '#8B5CF6'
+            color: '#3b82f6'
         },
     ];
 
@@ -212,7 +212,7 @@ export default function FrontendPage() {
                 'Smooth adaptation to new frameworks or tooling',
                 'Enables microfrontend scaling for large applications'
             ],
-            color: '#8B5CF6'
+            color: '#3b82f6'
         },
     ];
 
@@ -234,7 +234,7 @@ export default function FrontendPage() {
                 'Better landing page performance improves ROI on ad spend',
                 'Improved usability reduces drop-offs from paid campaigns'
             ],
-            color: '#10B981'
+            color: '#3b82f6'
         },
         {
             title: 'How It Enhances User Acquisition',
@@ -243,7 +243,7 @@ export default function FrontendPage() {
                 'Faster interactivity increases signup and conversion rates',
                 'Mobile-first optimization captures a larger audience'
             ],
-            color: '#8B5CF6'
+            color: '#3b82f6'
         },
     ];
 
@@ -318,29 +318,9 @@ export default function FrontendPage() {
             icon: '🎬',
             desc: 'Custom tech to empower brands – streaming, content delivery, and audience analytics.',
             image: 'https://images.unsplash.com/photo-1598128558393-70ff21433be0?auto=format&fit=crop&w=800&q=80',
-            color: '#8B5CF6'
+            color: '#3b82f6'
         },
-        // {
-        //     name: 'Fintech',
-        //     icon: '🏦',
-        //     desc: 'Disrupting traditional finance with secure payments, trading platforms, and digital banking.',
-        //     image: 'https://images.unsplash.com/photo-1560472354-b33ff0c44a43?auto=format&fit=crop&w=800&q=80',
-        //     color: '#F59E0B'
-        // },
-        // {
-        //     name: 'Education & eLearning',
-        //     icon: '📚',
-        //     desc: 'Shaping digital learning with LMS, virtual classrooms, and interactive tools.',
-        //     image: 'https://images.unsplash.com/photo-1524178232363-1fb2b075b655?auto=format&fit=crop&w=800&q=80',
-        //     color: '#EC4899'
-        // },
-        // {
-        //     name: 'Banking & Fintech',
-        //     icon: '💰',
-        //     desc: 'Streamlining financial growth with core banking systems and compliance‑ready infrastructure.',
-        //     image: 'https://images.unsplash.com/photo-1551434678-e076c223a692?auto=format&fit=crop&w=800&q=80',
-        //     color: '#06B6D4'
-        // },
+        
     ];
 
     return (
@@ -885,9 +865,7 @@ export default function FrontendPage() {
                             <Link href="/contact" className={styles.ctaPrimary}>
                                 Start Your Project <ArrowRight size={18} />
                             </Link>
-                            <Link href="/contact" className={styles.ctaSecondary}>
-                                Get a Free Consultation
-                            </Link>
+                            
                         </div>
                     </div>
                 </div>

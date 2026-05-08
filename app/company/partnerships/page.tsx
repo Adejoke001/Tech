@@ -26,7 +26,7 @@ export default function PartnershipPage() {
             title: 'Product Companies',
             description: 'Reduce time to market with our agile development process that seamlessly integrates into your project at any stage.',
             icon: <Building2 />,
-            color: '#3B82F6'
+            color: '#10b981'
         },
         {
             title: 'Technological Evangelists',
@@ -38,7 +38,7 @@ export default function PartnershipPage() {
             title: 'Digital Agencies',
             description: 'Leverage our specialized technical talent in AdTech, EdTech, and online video to deliver turnkey projects on time and within budget.',
             icon: <Globe />,
-            color: '#8B5CF6'
+            color: '#10b981'
         }
     ];
 
@@ -53,31 +53,31 @@ export default function PartnershipPage() {
             title: 'Pre-sales Assistance',
             description: 'We support you in tenders, proposals, RFP, RFI, and other pre-sales activities – completely free of charge.',
             icon: <Presentation />,
-            color: '#10B981'
+            color: '#3b82f6'
         },
         {
             title: 'Advanced Knowledge Base',
             description: 'Access tons of case studies, technical documents, and solution resources to accelerate your sales and delivery.',
             icon: <BookOpen />,
-            color: '#8B5CF6'
+            color: '#3b82F6'
         },
         {
             title: 'Advanced Delivery Engine',
             description: 'Our robust management and supervision guarantee 100% project success, with transparent processes and predictable outcomes.',
             icon: <Workflow />,
-            color: '#F59E0B'
+            color: '#3b82f6'
         },
         {
             title: 'Post-Delivery Support',
             description: 'Enjoy high-quality maintenance, production support, and implied warranties – we stand behind every project.',
             icon: <HeadphonesIcon />,
-            color: '#EC4899'
+            color: '#3b82f6'
         },
         {
             title: 'Training Programs',
             description: 'Stay ahead with exclusive training programs in emerging technologies and relevant market opportunities.',
             icon: <GraduationCap />,
-            color: '#06B6D4'
+            color: '#3b82f6'
         },
         {
             title: 'Revenue-Rich Portfolio',
@@ -89,7 +89,7 @@ export default function PartnershipPage() {
             title: 'Dedicated Partner Manager',
             description: 'You get a single point of contact who ensures smooth communication, quick resolutions, and proactive support.',
             icon: <Handshake />,
-            color: '#10B981'
+            color: '#3b82f6'
         }
     ];
 
@@ -110,17 +110,17 @@ export default function PartnershipPage() {
             title: 'Tri-party Agreement',
             description: 'A three-way contract between you, the client, and us – everyone participates actively. Preferred when partners use deferred financing.',
             icon: <FileText />,
-            color: '#8B5CF6'
+            color: '#3b82F6'
         }
     ];
 
     const whyPartnerPoints = [
-        { text: 'ISO 27001 Certified – enterprise-grade security', icon: <ShieldCheck />, color: '#3B82F6' },
+        { text: 'ISO 27001 Certified – enterprise-grade security', icon: <ShieldCheck />, color: '#10b981' },
         { text: '100% IP Protection & NDA compliance', icon: <Lock />, color: '#10B981' },
-        { text: 'Flexible engagement models – scale up/down anytime', icon: <TrendingUp />, color: '#8B5CF6' },
-        { text: 'Dedicated partner success manager', icon: <HeartHandshake />, color: '#F59E0B' },
-        { text: 'Co-branded marketing support', icon: <ThumbsUp />, color: '#EC4899' },
-        { text: 'Access to 650+ pre-vetted engineers', icon: <Users />, color: '#06B6D4' }
+        { text: 'Flexible engagement models – scale up/down anytime', icon: <TrendingUp />, color: '#10b981' },
+        { text: 'Dedicated partner success manager', icon: <HeartHandshake />, color: '#10b981' },
+        { text: 'Co-branded marketing support', icon: <ThumbsUp />, color: '#10b981' },
+        { text: 'Access to 650+ pre-vetted engineers', icon: <Users />, color: '#10b981' }
     ];
 
     return (

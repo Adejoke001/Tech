@@ -29,7 +29,7 @@ export default function EnterpriseSolutionPage() {
     const testimonial = {
         name: 'Benjamin',
         // role: 'CTO, Enterprise Solutions',
-        content: 'We needed to automate a lot of our manual IT processes to cut costs. BBMCoders delivered exactly that, helping us see real savings within months.',
+        content: 'We needed to automate a lot of our manual IT processes to cut costs. BBMcoders delivered exactly that, helping us see real savings within months.',
         rating: 5,
         project: 'Enterprise Transformation'
     };
@@ -41,7 +41,7 @@ export default function EnterpriseSolutionPage() {
         title: 'Managed IT Operations',
         description: 'End-to-end management ensuring stable, secure, and scalable enterprise IT environments. We provide 24×7 proactive monitoring and rapid incident response.',
         icon: <HardDrive className={styles.expertiseIcon} />,
-        color: '#3B82F6',
+        color: '#10b981',
         features: [
             'Proactive issue handling',
             '24×7 monitoring',
@@ -71,7 +71,7 @@ export default function EnterpriseSolutionPage() {
         title: 'DevOps Implementation',
         description: 'Streamlining enterprise workflows with automation, faster delivery, and continuous improvement through modern DevOps practices.',
         icon: <GitPullRequestIcon className={styles.expertiseIcon} />,
-        color: '#8B5CF6',
+        color: '#10b981',
         features: [
             'CI/CD pipelines',
             'Automated testing',
@@ -86,7 +86,7 @@ export default function EnterpriseSolutionPage() {
         title: 'IT Infrastructure Automation',
         description: 'Reducing manual tasks with enterprise-grade automation for speed, accuracy, and scalability across servers, networks, and applications.',
         icon: <Settings className={styles.expertiseIcon} />,
-        color: '#F59E0B',
+        color: '#10b981',
         features: [
             'Configuration management',
             'Workflow automation',
@@ -101,7 +101,7 @@ export default function EnterpriseSolutionPage() {
         title: 'Network Operations Management',
         description: 'Ensuring enterprise networks stay secure, reliable, and efficient under high-demand loads with real-time monitoring and threat detection.',
         icon: <NetworkIcon className={styles.expertiseIcon} />,
-        color: '#EC4899',
+        color: '#10b981',
         features: [
             'Traffic monitoring',
             'Threat detection',
@@ -116,7 +116,7 @@ export default function EnterpriseSolutionPage() {
         title: 'Disaster Recovery Planning',
         description: 'Preparing enterprises with tested recovery strategies for minimal downtime and data safety – including backup, replication, and failover.',
         icon: <DatabaseIcon className={styles.expertiseIcon} />,
-        color: '#06B6D4',
+        color: '#10b981',
         features: [
             'Data backup solutions',
             'System restore strategies',
@@ -165,7 +165,7 @@ export default function EnterpriseSolutionPage() {
             title: 'Increasing System Complexity',
             description: 'Enterprises handle multiple applications, networks, and data platforms. Managing these different parts internally creates silos, slowing down operations and causing delays.',
             icon: <Layers3 />,
-            color: '#EF4444',
+            color: '#10b981',
             points: [
                 'Hard to align old and new systems',
                 'Extra effort needed for smooth integration',
@@ -176,7 +176,7 @@ export default function EnterpriseSolutionPage() {
             title: 'Rising Cost Burden',
             description: 'Running IT operations inside the company is expensive. Skilled staff, training programs, and constant upgrades add up quickly. Budgets stretch when unexpected needs appear.',
             icon: <DollarSign />,
-            color: '#F59E0B',
+            color: '#10b981',
             points: [
                 'High spend on licenses and tools',
                 'Growing expense for expert resources',
@@ -187,7 +187,7 @@ export default function EnterpriseSolutionPage() {
             title: 'Security & Compliance Pressure',
             description: 'Enterprises face nonstop risks from cyber threats. Internal teams often cannot keep up with compliance rules while managing daily operations.',
             icon: <Shield />,
-            color: '#EC4899',
+            color: '#10b981',
             points: [
                 'Limited 24/7 monitoring',
                 'Risk of non‑compliance fines',
@@ -198,7 +198,7 @@ export default function EnterpriseSolutionPage() {
             title: 'Scalability Limitations',
             description: 'Business needs change fast, but internal IT teams struggle to match that speed. Scaling systems or resources quickly is a challenge, especially with limited manpower and outdated processes.',
             icon: <ScaleIcon />,
-            color: '#8B5CF6',
+            color: '#10b981',
             points: [
                 'Slower response to growth demands',
                 'Difficulty meeting sudden workload spikes',
@@ -209,7 +209,7 @@ export default function EnterpriseSolutionPage() {
             title: 'Talent Shortage & Skill Gaps',
             description: 'Finding and retaining IT professionals with modern skills (cloud, AI, DevOps) is increasingly difficult. Internal teams often lack the specialized expertise required for complex enterprise initiatives.',
             icon: <Users />,
-            color: '#3B82F6',
+            color: '#10b981',
             points: [
                 'Long hiring cycles for niche roles',
                 'High employee turnover in IT',
@@ -220,7 +220,7 @@ export default function EnterpriseSolutionPage() {
             title: 'Legacy System Modernization',
             description: 'Outdated legacy systems create technical debt, increase maintenance costs, and block innovation. Modernising without disrupting daily operations is a major challenge.',
             icon: <RefreshCw />,
-            color: '#06B6D4',
+            color: '#10b981',
             points: [
                 'Integration complexity with new platforms',
                 'Data migration risks',
@@ -233,10 +233,10 @@ export default function EnterpriseSolutionPage() {
     const signsEnterprise = [
         { text: 'Constant System Downtime', icon: <AlertTriangle />, color: '#3B82F6' },
         { text: 'Rising IT Costs', icon: <DollarSign />, color: '#10B981' },
-        { text: 'Security Concerns', icon: <Shield />, color: '#8B5CF6' },
-        { text: 'Slow Software Deployments', icon: <Clock />, color: '#F59E0B' },
-        { text: 'Poor System Performance', icon: <Activity />, color: '#EC4899' },
-        { text: 'Compliance Issues', icon: <CheckCircle />, color: '#06B6D4' },
+        { text: 'Security Concerns', icon: <Shield />, color: '#3b82f6' },
+        { text: 'Slow Software Deployments', icon: <Clock />, color: '#10b981' },
+        { text: 'Poor System Performance', icon: <Activity />, color: '#3b82f6' },
+        { text: 'Compliance Issues', icon: <CheckCircle />, color: '#10b981' },
         { text: 'Lack of IT Visibility', icon: <Eye />, color: '#3B82F6' }
     ];
 
@@ -246,7 +246,7 @@ export default function EnterpriseSolutionPage() {
             title: 'Smarter Incident Management',
             description: 'AI and ML help enterprises detect issues faster by analyzing large volumes of logs and system data. Instead of waiting for systems to fail, patterns are identified early.',
             icon: <Brain />,
-            color: '#3B82F6',
+            color: '#10b981',
             points: [
                 'Predictive alerts before failures',
                 'Faster problem resolution',
@@ -268,7 +268,7 @@ export default function EnterpriseSolutionPage() {
             title: 'Strengthened Security Operations',
             description: 'Cyber threats evolve daily, and manual monitoring cannot keep up. AI-driven tools scan for unusual activity and block threats in real time.',
             icon: <ShieldCheckIcon />,
-            color: '#8B5CF6',
+            color: '#10b981',
             points: [
                 'Real-time threat detection',
                 'Automated compliance monitoring',
@@ -279,7 +279,7 @@ export default function EnterpriseSolutionPage() {
             title: 'Improved Decision-Making',
             description: 'AI and ML provide insights from historical and live data. Enterprises use these insights to plan system upgrades, allocate resources, and manage user demands effectively.',
             icon: <LineChartIcon />,
-            color: '#F59E0B',
+            color: '#10b981',
             points: [
                 'Data-driven performance insights',
                 'Accurate demand forecasting',
@@ -290,7 +290,7 @@ export default function EnterpriseSolutionPage() {
             title: 'Intelligent Automation (RPA + AI)',
             description: 'Combining Robotic Process Automation with AI enables end‑to‑end process automation that adapts to changing inputs, reducing manual effort and error rates.',
             icon: <Repeat />,
-            color: '#EC4899',
+            color: '#10b981',
             points: [
                 'Cognitive document processing',
                 'Automated workflow orchestration',
@@ -301,7 +301,7 @@ export default function EnterpriseSolutionPage() {
             title: 'AI-Powered Customer Experience',
             description: 'AI analyses customer behaviour, predicts needs, and personalises interactions – leading to higher satisfaction, retention, and revenue.',
             icon: <HeartHandshake />,
-            color: '#06B6D4',
+            color: '#10b981',
             points: [
                 'Intelligent chatbots & virtual assistants',
                 'Personalised recommendations',
@@ -316,7 +316,7 @@ export default function EnterpriseSolutionPage() {
             title: 'Cost Efficiency & Resource Savings',
             description: 'Outsourcing helps enterprises reduce fixed costs. You avoid heavy spending on hiring, training, and infrastructure upgrades, turning large capital expenses into predictable operating costs.',
             icon: <Wallet />,
-            color: '#3B82F6',
+            color: '#10b981',
             points: [
                 'Lower staffing and training costs',
                 'No hidden infrastructure expenses',
@@ -338,7 +338,7 @@ export default function EnterpriseSolutionPage() {
             title: 'Improved Security & Compliance',
             description: 'With professional enterprise IT operations services, enterprises gain round-the-clock monitoring and quick threat response. Partners also ensure compliance with industry standards.',
             icon: <ShieldCheck />,
-            color: '#8B5CF6',
+            color: '#10b981',
             points: [
                 '24/7 monitoring and support',
                 'Strong compliance readiness',
@@ -349,7 +349,7 @@ export default function EnterpriseSolutionPage() {
             title: 'Focus On Core Business Growth',
             description: 'By outsourcing, your team can focus on revenue-generating activities. Expert partners handle IT tasks, while you concentrate on strategy and innovation.',
             icon: <Target />,
-            color: '#F59E0B',
+            color: '#10b981',
             points: [
                 'More time for business priorities',
                 'Streamlined enterprise process optimization',
@@ -360,7 +360,7 @@ export default function EnterpriseSolutionPage() {
             title: 'Scalability & Flexibility',
             description: 'Expert providers adjust IT operations as your needs grow. Whether scaling up resources or streamlining workloads, outsourced enterprise IT services provide flexibility that internal teams often cannot.',
             icon: <Scale />,
-            color: '#EC4899',
+            color: '#10b981',
             points: [
                 'On-demand scalability',
                 'Support for business expansion',
@@ -371,7 +371,7 @@ export default function EnterpriseSolutionPage() {
 
     // ----- COMPANY STATS (unchanged) -----
     const companyStats = [
-        { value: '700+', label: 'Full‑time Staff', icon: <Users />, description: 'Top 1% industry talent' },
+        { value: '700+', label: 'Full‑time Staff', icon: <Users />, description: 'Top 10% industry talent' },
         { value: '20+', label: 'Years Experience', icon: <Award />, description: 'Since 2004' },
         { value: '4500+', label: 'Satisfied Clients', icon: <HeadphonesIcon />, description: 'Startups to Fortune 500' },
         { value: '99.9%', label: 'Guaranteed Uptime', icon: <Shield />, description: 'Enterprise-grade reliability' }
@@ -380,13 +380,13 @@ export default function EnterpriseSolutionPage() {
     // ----- CLIENT TESTIMONIALS (unchanged) -----
     const testimonials = [
         {
-            name: 'James Kelly',
+            name: 'James',
             role: 'Data Analyst',
             content: 'The Project managers took a lot of time to understand our project before coming up with a contract or what they thought we needed. I had the reassurance from the start that the project managers knew what type of project I wanted and what my needs were. That is reassuring, and that\'s why we chose BBMCoders.',
             image: '/images/user.png'
         },
         {
-            name: 'Judith Mueller',
+            name: 'Rebecca',
             // role: 'Executive Director, Judith Foundation',
             content: 'The team at BBMCoders has provided us with exceptional services in creating this one-of-a-kind portal, and it has been a fantastic experience. I was particularly impressed by how efficiently and quickly the team always came up with creative solutions to provide us with all the functionalities within the portal we had requested.',
             image: '/images/user.png'
@@ -398,7 +398,7 @@ export default function EnterpriseSolutionPage() {
             image: '/images/user.png'
         },
         {
-            name: 'Mohammed ',
+            name: 'Ibrahim ',
             // role: 'Director, FashionHint',
             content: 'Huge thank you to BBMCoders; they have been a massive help in enabling us to start developing our project within a few weeks, so it\'s been great! There have been two small bumps in the road, but overall, It\'s been a fantastic service. I have already recommended it to one of my friends.',
             image: '/images/user.png'
@@ -426,7 +426,7 @@ export default function EnterpriseSolutionPage() {
             icon: '🏥',
             desc: 'Telemedicine platforms, patient portals, health tracking apps, and medical management systems with HIPAA-compliant security.',
             image: 'https://images.unsplash.com/photo-1551601651-2a8555f1a136?auto=format&fit=crop&w=800&q=80',
-            color: '#8B5CF6'
+            color: '#3b82f6'
         }
     ];
 
@@ -704,28 +704,28 @@ export default function EnterpriseSolutionPage() {
                             <p>AWS, Azure, GCP certified professionals ready to optimize your infrastructure.</p>
                         </div>
                         <div className={styles.partnerItem}>
-                            <div className={styles.partnerItemIcon} style={{ color: '#10B981' }}>
+                            <div className={styles.partnerItemIcon} style={{ color: '#3b82f6' }}>
                                 <Shield size={32} />
                             </div>
                             <h4>99.9% Guaranteed Uptime</h4>
                             <p>SLA‑backed availability with proactive monitoring and instant failover.</p>
                         </div>
                         <div className={styles.partnerItem}>
-                            <div className={styles.partnerItemIcon} style={{ color: '#8B5CF6' }}>
+                            <div className={styles.partnerItemIcon} style={{ color: '#3b82f6' }}>
                                 <Clock size={32} />
                             </div>
                             <h4>30% Faster Incident Resolution</h4>
                             <p>AI‑assisted root cause analysis and automated remediation workflows.</p>
                         </div>
                         <div className={styles.partnerItem}>
-                            <div className={styles.partnerItemIcon} style={{ color: '#F59E0B' }}>
+                            <div className={styles.partnerItemIcon} style={{ color: '#3b82f6' }}>
                                 <CheckCircle size={32} />
                             </div>
                             <h4>Automated Compliance Frameworks</h4>
                             <p>Audit‑ready infrastructure with continuous compliance checks.</p>
                         </div>
                         <div className={styles.partnerItem}>
-                            <div className={styles.partnerItemIcon} style={{ color: '#EC4899' }}>
+                            <div className={styles.partnerItemIcon} style={{ color: '#3b82f6' }}>
                                 <Cloud size={32} />
                             </div>
                             <h4>Scalable Cloud Architecture Experts</h4>

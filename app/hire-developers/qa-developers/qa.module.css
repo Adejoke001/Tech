@@ -1,17 +1,14 @@
-/* ==== COLOR PALETTE (identical to full-stack page) ==== */
+/* ==== COLOR PALETTE ==== */
 .pageWrapper {
     --primary-blue: #3B82F6;
     --primary-green: #10B981;
     --gradient-primary: linear-gradient(135deg, #3B82F6, #10B981);
     --gradient-primary-dark: linear-gradient(135deg, #2563EB, #059669);
     
-    --secondary-purple: #8B5CF6;
-    --secondary-amber: #F59E0B;
-    --secondary-pink: #EC4899;
-    --secondary-cyan: #06B6D4;
+    /* REMOVED: --secondary-purple, --secondary-amber, --secondary-pink, --secondary-cyan */
     
     --gradient-section-light: linear-gradient(135deg, rgba(59, 130, 246, 0.03) 0%, rgba(16, 185, 129, 0.03) 100%);
-    --gradient-section-dark: linear-gradient(135deg, rgba(15, 23, 42, 0.88) 0%, rgba(30, 41, 59, 83) 100%);
+    --gradient-section-dark: linear-gradient(135deg, rgba(15, 23, 42, 0.92) 0%, rgba(30, 41, 59, 0.92) 100%);
     
     --dark-bg: #0F172A;
     --dark-surface: #1E293B;
@@ -33,7 +30,7 @@
     line-height: 1.6;
 }
 
-/* ===== HERO SECTION (exact same as full-stack) ===== */
+/* ===== HERO SECTION ===== */
 .heroSection {
     position: relative;
     min-height: 85vh;
@@ -90,7 +87,7 @@
     align-items: center;
     gap: 0.5rem;
     background: rgba(59, 130, 246, 0.2);
-    color: #93c5fd;
+    color: var(--gray-300);
     padding: 0.5rem 1.25rem;
     border-radius: 2rem;
     font-size: 0.875rem;
@@ -165,9 +162,9 @@
 }
 
 .ctaButton:hover {
+    background: var(--gradient-primary-dark);
     transform: translateY(-2px);
     box-shadow: 0 6px 20px rgba(59, 130, 246, 0.4);
-    background: var(--gradient-primary-dark);
 }
 
 .secondaryButton {
@@ -454,7 +451,7 @@
     margin: 0 auto;
 }
 
-/* ===== EXPERTISE CARDS (identical to full-stack) ===== */
+/* ===== EXPERTISE CARDS ===== */
 .expertiseSection {
     padding: 5rem 2rem;
     background: var(--white);
@@ -496,7 +493,7 @@
 .expertiseCard:hover {
     transform: translateY(-8px);
     box-shadow: 0 12px 25px rgba(0, 0, 0, 0.1);
-    border-color: var(--primary-blue);
+    border-color: var(--primary-green);
 }
 
 .cardHeader {
@@ -579,6 +576,7 @@
     height: 1.125rem;
     flex-shrink: 0;
     margin-top: 0.125rem;
+    color: var(--primary-green);
 }
 
 .learnMoreLink {
@@ -668,6 +666,7 @@
     background: var(--gradient-section-light);
     border-radius: 0.75rem;
     flex-shrink: 0;
+    color: var(--primary-blue);
 }
 
 .techCategoryTitle {
@@ -701,6 +700,8 @@
 .techItem:hover {
     transform: translateY(-2px);
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+    border-color: var(--primary-blue);
+    color: var(--primary-blue);
 }
 
 /* ===== WHY HIRE FROM INDIA (benefits cards) ===== */
@@ -958,7 +959,7 @@
 .buildCard:hover {
     transform: translateY(-5px);
     box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
-    border-color: var(--primary-blue);
+    border-color: var(--primary-green);
 }
 
 .buildHeader {
@@ -977,6 +978,7 @@
     justify-content: center;
     background: var(--gradient-section-light);
     flex-shrink: 0;
+    color: var(--primary-blue);
 }
 
 .buildHeader h3 {
@@ -1024,6 +1026,7 @@
 .buildExamples li svg {
     flex-shrink: 0;
     margin-top: 0.125rem;
+    color: var(--primary-green);
 }
 
 .buildTechnologies {
@@ -1100,7 +1103,7 @@
     padding-top: 1.5rem;
     padding-bottom: 1.5rem;
     margin-bottom: 1.5rem;
-    border-bottom: 2px solid;
+    border-bottom: 2px solid var(--primary-green);
     text-align: center;
     position: relative;
 }
@@ -1114,6 +1117,7 @@
     font-size: 0.75rem;
     font-weight: 600;
     color: white;
+    background: var(--primary-blue);
     z-index: 5;
 }
 
@@ -1171,10 +1175,11 @@
 .pricingFeatures li svg {
     flex-shrink: 0;
     margin-top: 0.125rem;
+    color: var(--primary-green);
 }
 
 .pricingButton {
-    background: var(--primary-blue);
+    background: var(--gradient-primary);
     color: white;
     border: none;
     padding: 1rem 1.5rem;
@@ -1193,6 +1198,7 @@
 }
 
 .pricingButton:hover {
+    background: var(--gradient-primary-dark);
     transform: translateY(-2px);
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
 }
@@ -1244,6 +1250,7 @@
     width: 1.5rem;
     height: 1.5rem;
     flex-shrink: 0;
+    color: var(--primary-green);
 }
 
 .whyChooseCard span {
@@ -1253,7 +1260,7 @@
     flex-grow: 1;
 }
 
-/* ===== ENGAGEMENT MODELS (new) ===== */
+/* ===== ENGAGEMENT MODELS ===== */
 .engagementSection {
     padding: 5rem 2rem;
     background: var(--white);
@@ -1294,7 +1301,7 @@
 .engagementCard:hover {
     transform: translateY(-5px);
     box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
-    border-color: var(--primary-blue);
+    border-color: var(--primary-green);
 }
 
 .engagementIcon {
@@ -1306,6 +1313,7 @@
     justify-content: center;
     margin-bottom: 1.5rem;
     background: var(--gradient-section-light);
+    color: var(--primary-blue);
 }
 
 .engagementCard h3 {
@@ -1330,10 +1338,12 @@
     font-weight: 600;
     text-decoration: none;
     transition: all 0.3s ease;
+    color: var(--primary-blue);
 }
 
 .engagementLink:hover {
     gap: 0.75rem;
+    color: var(--primary-green);
 }
 
 /* ===== COMPARISON TABLE ===== */
@@ -1527,7 +1537,7 @@
     margin-top: 0.25rem;
 }
 
-/* ===== INDUSTRIES SECTION (EXACTLY AS PROVIDED) ===== */
+/* ===== INDUSTRIES SECTION ===== */
 .industriesSection {
     padding: 5rem 2rem;
     background: var(--white);
@@ -1626,7 +1636,7 @@
     color: var(--gray-300);
 }
 
-/* ===== FAQ SECTION (ORIGINAL SIMPLE DESIGN) ===== */
+/* ===== FAQ SECTION ===== */
 .faqSection {
     padding: 5rem 2rem;
     background: var(--white);
@@ -1797,9 +1807,9 @@
 }
 
 .ctaPrimary:hover {
+    background: var(--gradient-primary-dark);
     transform: translateY(-2px);
     box-shadow: 0 6px 20px rgba(59, 130, 246, 0.4);
-    background: var(--gradient-primary-dark);
 }
 
 .ctaSecondary {
@@ -2028,7 +2038,6 @@
     }
 }
 
-/* ===== FIX TESTIMONIAL CARD ALIGNMENT FOR 768px - 1024px ===== */
 @media (min-width: 768px) and (max-width: 1024px) {
   .rightContent {
     align-items: center; 
@@ -2082,4 +2091,3 @@
     font-size: 1rem;
   }
 }
-

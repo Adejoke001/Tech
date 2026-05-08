@@ -43,7 +43,7 @@ export const allPosts: BlogPost[] = [
     tags: ['Rust', 'Programming', 'Performance'],
     image: 'https://images.unsplash.com/photo-1621839673705-6617adf9e890?auto=format&fit=crop&w=800&q=80',
     slug: 'why-learn-rust',
-    color: '#F59E0B',
+    color: '#10b981',
   },
   {
     id: 2,
@@ -57,7 +57,7 @@ export const allPosts: BlogPost[] = [
     tags: ['AI', 'Prompt Engineering', 'LLM'],
     image: 'https://images.unsplash.com/photo-1677442136019-21780ecad995?auto=format&fit=crop&w=800&q=80',
     slug: 'prompt-engineering-guide',
-    color: '#8B5CF6',
+    color: '#3b82F6',
   },
   {
     id: 3,
@@ -71,7 +71,7 @@ export const allPosts: BlogPost[] = [
     tags: ['Kubernetes', 'Serverless', 'AWS'],
     image: 'https://images.unsplash.com/photo-1667372393119-3d4c48d07fc9?auto=format&fit=crop&w=800&q=80',
     slug: 'kubernetes-vs-serverless',
-    color: '#06B6D4',
+    color: '#10b981',
   },
   {
     id: 4,
@@ -85,7 +85,7 @@ export const allPosts: BlogPost[] = [
     tags: ['React', 'JavaScript', 'Web Development'],
     image: 'https://images.unsplash.com/photo-1633356122102-3fe601e05bd2?auto=format&fit=crop&w=800&q=80',
     slug: 'react-19-guide',
-    color: '#EC4899',
+    color: '#3b82f6',
   },
   {
     id: 5,
@@ -127,7 +127,7 @@ export const allPosts: BlogPost[] = [
     tags: ['Accessibility', 'a11y', 'UX'],
     image: 'https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=800&q=80',
     slug: 'accessible-web-apps',
-    color: '#F59E0B',
+    color: '#10b981',
   },
   {
     id: 8,
@@ -141,7 +141,7 @@ export const allPosts: BlogPost[] = [
     tags: ['PostgreSQL', 'MongoDB', 'Databases'],
     image: 'https://images.unsplash.com/photo-1544383835-bda2bc66a55d?auto=format&fit=crop&w=800&q=80',
     slug: 'mongodb-to-postgresql',
-    color: '#8B5CF6',
+    color: '#3b82F6',
   },
   {
     id: 9,
@@ -155,7 +155,7 @@ export const allPosts: BlogPost[] = [
     tags: ['Observability', 'Monitoring', 'DevOps'],
     image: 'https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=800&q=80',
     slug: 'observability-guide',
-    color: '#06B6D4',
+    color: '#10b981',
   },
   {
     id: 10,
@@ -169,7 +169,7 @@ export const allPosts: BlogPost[] = [
     tags: ['Team Culture', 'Hiring', 'Remote Work'],
     image: 'https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&w=800&q=80',
     slug: 'building-tech-team-culture',
-    color: '#10B981',
+    color: '#3b82f6',
   },
   {
     id: 11,
@@ -183,7 +183,7 @@ export const allPosts: BlogPost[] = [
     tags: ['WebAssembly', 'Serverless', 'Edge'],
     image: 'https://images.unsplash.com/photo-1555066931-4365d14bab8c?auto=format&fit=crop&w=800&q=80',
     slug: 'webassembly-2026',
-    color: '#EC4899',
+    color: '#10b981',
   },
   {
     id: 12,
@@ -211,7 +211,7 @@ export const allPosts: BlogPost[] = [
     tags: ['GraphQL', 'Federation', 'API'],
     image: 'https://images.unsplash.com/photo-1558494949-ef010cbdcc31?auto=format&fit=crop&w=800&q=80',
     slug: 'graphql-federation',
-    color: '#F59E0B',
+    color: '#10b981',
   },
   {
     id: 14,
@@ -225,7 +225,7 @@ export const allPosts: BlogPost[] = [
     tags: ['Testing', 'Vitest', 'JavaScript'],
     image: 'https://images.unsplash.com/photo-1580894894513-541e068a3e2b?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8c29mdHdhcmUlMjBlbmdpbmVlcmluZ3xlbnwwfHwwfHx8MA%3D%3D',
     slug: 'jest-to-vitest',
-    color: '#8B5CF6',
+    color: '#3b82f6',
   },
   {
     id: 15,
@@ -239,7 +239,7 @@ export const allPosts: BlogPost[] = [
     tags: ['WebSockets', 'Socket.io', 'Real-time'],
     image: 'https://images.unsplash.com/photo-1558494949-ef010cbdcc31?auto=format&fit=crop&w=800&q=80',
     slug: 'chat-app-websockets',
-    color: '#06B6D4',
+    color: '#10b981',
   },
   {
     id: 16,
@@ -253,7 +253,7 @@ export const allPosts: BlogPost[] = [
     tags: ['Open Source', 'Community', 'Career'],
     image: 'https://images.unsplash.com/photo-1542831371-29b0f74f9713?auto=format&fit=crop&w=800&q=80',
     slug: 'open-source-guide',
-    color: '#10B981',
+    color: '#3b82f6',
   },
   {
     id: 17,
@@ -267,7 +267,7 @@ export const allPosts: BlogPost[] = [
     tags: ['AI Agents', 'LangChain', 'Automation'],
     image: 'https://images.unsplash.com/photo-1677442136019-21780ecad995?auto=format&fit=crop&w=800&q=80',
     slug: 'ai-agents-guide',
-    color: '#EC4899',
+    color: '#10b981',
   },
   {
     id: 18,
@@ -295,7 +295,7 @@ export const allPosts: BlogPost[] = [
     tags: ['Monorepo', 'Nx', 'DevOps'],
     image: 'https://images.unsplash.com/photo-1558494949-ef010cbdcc31?auto=format&fit=crop&w=800&q=80',
     slug: 'monorepo-nx',
-    color: '#F59E0B',
+    color: '#10b981',
   },
   {
     id: 20,
@@ -309,7 +309,7 @@ export const allPosts: BlogPost[] = [
     tags: ['eBPF', 'Linux', 'Observability'],
     image: 'https://images.unsplash.com/photo-1629654291663-b91ad427698f?auto=format&fit=crop&w=800&q=80',
     slug: 'ebpf-intro',
-    color: '#8B5CF6',
+    color: '#3b82f6',
   },
   {
     id: 21,
@@ -323,7 +323,7 @@ export const allPosts: BlogPost[] = [
     tags: ['REST API', 'API Design', 'Developer Experience'],
     image: 'https://images.unsplash.com/photo-1558494949-ef010cbdcc31?auto=format&fit=crop&w=800&q=80',
     slug: 'rest-api-design',
-    color: '#06B6D4',
+    color: '#10b981',
   },
   {
     id: 22,
@@ -337,7 +337,7 @@ export const allPosts: BlogPost[] = [
     tags: ['MVP', 'Startup', 'Lean'],
     image: 'https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=800&q=80',
     slug: 'idea-to-mvp',
-    color: '#10B981',
+    color: '#3b82f6',
   },
   {
     id: 23,
@@ -351,7 +351,7 @@ export const allPosts: BlogPost[] = [
     tags: ['Next.js', 'React', 'Server Components'],
     image: 'https://images.unsplash.com/photo-1555066931-4365d14bab8c?auto=format&fit=crop&w=800&q=80',
     slug: 'nextjs-app-router',
-    color: '#EC4899',
+    color: '#10b981',
   },
   {
     id: 24,

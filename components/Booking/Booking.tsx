@@ -49,7 +49,7 @@ const Booking = () => {
 
   // ✅ Email click handler
   const handleEmailClick = () => {
-    const email = 'hello@bbmcoders.com';
+    const email = 'contact@bbmcoders.com';
 
     const subject = 'Inquiry from BBM Coders Website';
     const body = `Hello BBM Coders,

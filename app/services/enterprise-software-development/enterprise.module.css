@@ -413,7 +413,7 @@
 .serviceCard:hover {
     transform: translateY(-8px);
     box-shadow: 0 12px 25px rgba(0, 0, 0, 0.1);
-    border-color: var(--primary-blue);
+    border-color: var(--primary-green);
 }
 
 .serviceHeader {
@@ -494,6 +494,7 @@
 
 .learnMoreLink:hover {
     background: var(--gray-200);
+    color: linear-gradient(135deg, #2563EB, #059669);
     gap: 0.75rem;
 }
 

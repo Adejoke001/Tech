@@ -39,7 +39,7 @@ export default function MediaPage() {
             title: 'Mobile & Web Apps',
             description: 'Seamless content delivery, interactive experiences, and engaging platforms that captivate audiences across devices.',
             icon: <Smartphone />,
-            color: '#3B82F6',
+            color: '#10b981',
             features: [
                 'GEO-based AI development',
                 'Photo-realistic renders',
@@ -63,7 +63,7 @@ export default function MediaPage() {
             title: 'OTT Platform Development',
             description: 'Efficient on-demand video distribution with tailored OTT development solutions.',
             icon: <Film />,
-            color: '#8B5CF6',
+            color: '#10b981',
             features: [
                 'Expert consulting',
                 'Implementation & integration',
@@ -75,7 +75,7 @@ export default function MediaPage() {
             title: 'Customized Media Apps',
             description: 'Personalized content experiences – from AI photo editing to immersive news delivery.',
             icon: <Layers />,
-            color: '#F59E0B',
+            color: '#10b981',
             features: [
                 'AI photo editing',
                 'AI-powered news delivery',
@@ -87,7 +87,7 @@ export default function MediaPage() {
             title: 'Enterprise Mobility Solutions',
             description: 'Seamless, secure access to business data and applications from any device, anywhere.',
             icon: <Tablet />,
-            color: '#EC4899',
+            color: '#10b981',
             features: [
                 'Customizable mobile apps',
                 'Mobile device management',
@@ -99,7 +99,7 @@ export default function MediaPage() {
             title: 'Custom ERP',
             description: 'Streamline data management, budgeting, and logistics with tailored ERP solutions.',
             icon: <Database />,
-            color: '#06B6D4',
+            color: '#10b981',
             features: [
                 'Efficient data management',
                 'Accurate budgeting',
@@ -111,7 +111,7 @@ export default function MediaPage() {
             title: 'Chatbots Development',
             description: 'Intelligent chatbots that enhance engagement, analyze feedback, and predict preferences.',
             icon: <Bot />,
-            color: '#3B82F6',
+            color: '#10b981',
             features: [
                 'Enhanced engagement',
                 'Feedback analysis',
@@ -145,35 +145,35 @@ export default function MediaPage() {
             title: 'Media Content Management',
             description: 'Maximize content impact through efficient categorization, organization, and distribution.',
             icon: <FolderOpen />,
-            color: '#10B981',
+            color: '#3b82f6',
             points: ['Efficient categorization', 'Organize & distribute', 'Optimize visibility']
         },
         {
             title: 'Digital Publishing',
             description: 'Digitally publish, manage, and distribute content seamlessly for improved visibility.',
             icon: <BookOpen />,
-            color: '#8B5CF6',
+            color: '#3b82F6',
             points: ['Seamless organization', 'Improved visibility', 'Streamlined operations']
         },
         {
             title: 'Audience & Broadcasting Management',
             description: 'Efficiently handle digital assets, metadata, rights management, and distribution channels.',
             icon: <Radio />,
-            color: '#F59E0B',
+            color: '#3b82f6',
             points: ['Digital asset management', 'Rights management', 'Enhanced distribution']
         },
         {
             title: 'Ad Management',
             description: 'Maximize ROI through data-driven advertising campaigns and customized ad placements.',
             icon: <PieChart />,
-            color: '#EC4899',
+            color: '#3b82f6',
             points: ['Data-driven strategies', 'Customized ad placements', 'Maximum efficiency']
         },
         {
             title: 'Digital Marketing',
             description: 'Amplify reach with targeted digital marketing campaigns for media success.',
             icon: <Target />,
-            color: '#06B6D4',
+            color: '#3b82f6',
             points: ['SEO & content marketing', 'Social media strategies', 'OTT & app promotions']
         }
     ];
@@ -184,7 +184,7 @@ export default function MediaPage() {
             title: 'Big Data Analytics',
             description: 'Manage reputation and revenue effectively. Advanced analytics tools enable smarter market insights and improved user experiences.',
             icon: <Cpu />,
-            color: '#3B82F6'
+            color: '#10b981'
         },
         {
             title: 'Chatbot Development',
@@ -196,51 +196,51 @@ export default function MediaPage() {
             title: 'Blockchain',
             description: 'Enhance brand loyalty, strengthen security, safeguard identity, and enable secure payment transactions.',
             icon: <LinkChain />,
-            color: '#8B5CF6'
+            color: '#10b981'
         },
         {
             title: 'AR/VR',
             description: 'Immersive experiences that engage users, enhance training, and create captivating content for gaming and entertainment.',
             icon: <Box />,
-            color: '#F59E0B'
+            color: '#10b981'
         },
         {
             title: 'Artificial Intelligence',
             description: 'Drive automation, optimize data analysis, and enable intelligent decision-making across the industry.',
             icon: <Brain />,
-            color: '#EC4899'
+            color: '#10b981'
         }
     ];
 
     // ============ KEY FEATURES OF MEDIA & ENTERTAINMENT APPS ============
     const keyFeatures = [
         { text: 'Content Delivery – streaming, on-demand, offline', icon: <Tv />, color: '#3B82F6' },
-        { text: 'Personalized Recommendations – AI-driven content suggestions', icon: <ThumbsUp />, color: '#10B981' },
-        { text: 'Social Sharing – integrate with social platforms', icon: <Share />, color: '#8B5CF6' },
-        { text: 'Interactive Elements – quizzes, polls, gamification', icon: <Gamepad />, color: '#F59E0B' },
-        { text: 'User Profiles & Preferences – tailored experiences', icon: <User />, color: '#EC4899' },
-        { text: 'Push Notifications – re-engage users', icon: <Bell />, color: '#06B6D4' },
+        { text: 'Personalized Recommendations – AI-driven content suggestions', icon: <ThumbsUp />, color: '#3b82f6' },
+        { text: 'Social Sharing – integrate with social platforms', icon: <Share />, color: '#3b82F6' },
+        { text: 'Interactive Elements – quizzes, polls, gamification', icon: <Gamepad />, color: '#3b82F6' },
+        { text: 'User Profiles & Preferences – tailored experiences', icon: <User />, color: '#3b82f6' },
+        { text: 'Push Notifications – re-engage users', icon: <Bell />, color: '#3b82f6' },
         { text: 'Offline Mode – download for offline access', icon: <Download />, color: '#3B82F6' }
     ];
 
     // ============ MONETIZATION STRATEGIES ============
     const monetizationStrategies = [
         { text: 'In-App Purchases – premium content, virtual goods', icon: <ShoppingCart />, color: '#3B82F6' },
-        { text: 'Advertising Integration – targeted ads, sponsored content', icon: <PieChart />, color: '#10B981' },
-        { text: 'Subscriptions – recurring revenue, ad-free experience', icon: <CreditCard />, color: '#8B5CF6' },
-        { text: 'Freemium Model – core free, premium paid', icon: <Gift />, color: '#F59E0B' },
-        { text: 'Sponsorship & Partnerships – brand collaborations', icon: <Handshake />, color: '#EC4899' },
-        { text: 'Data Monetization – insights from anonymized data', icon: <Database />, color: '#06B6D4' }
+        { text: 'Advertising Integration – targeted ads, sponsored content', icon: <PieChart />, color: '#3b82f6' },
+        { text: 'Subscriptions – recurring revenue, ad-free experience', icon: <CreditCard />, color: '#3b82f6' },
+        { text: 'Freemium Model – core free, premium paid', icon: <Gift />, color: '#3b82f6' },
+        { text: 'Sponsorship & Partnerships – brand collaborations', icon: <Handshake />, color: '#3b82f6' },
+        { text: 'Data Monetization – insights from anonymized data', icon: <Database />, color: '#3b82f6' }
     ];
 
     // ============ WHY PARTNER WITH US ============
     const whyPartner = [
         { text: 'India’s Top 1% Software Talent', icon: <Award />, color: '#3B82F6' },
-        { text: 'Trusted by Startups to Fortune 500', icon: <Building2 />, color: '#10B981' },
-        { text: 'Idea to Deployment, We Handle All', icon: <Rocket />, color: '#8B5CF6' },
-        { text: 'Time-Zone Friendly: Global Presence', icon: <Globe />, color: '#F59E0B' },
-        { text: 'Top-tier Data Security Protocols', icon: <Lock />, color: '#EC4899' },
-        { text: 'On-time Delivery, No Surprises', icon: <Clock />, color: '#06B6D4' }
+        { text: 'Trusted by Startups to Fortune 500', icon: <Building2 />, color: '#3b82f6' },
+        { text: 'Idea to Deployment, We Handle All', icon: <Rocket />, color: '#3b82F6' },
+        { text: 'Time-Zone Friendly: Global Presence', icon: <Globe />, color: '#3b82f6' },
+        { text: 'Top-tier Data Security Protocols', icon: <Lock />, color: '#3b82f6' },
+        { text: 'On-time Delivery, No Surprises', icon: <Clock />, color: '#3b82f6' }
     ];
 
     // ============ CROSS-PLATFORM DEVELOPMENT BENEFITS ============
@@ -276,28 +276,28 @@ export default function MediaPage() {
             icon: '📚',
             desc: 'E-books, digital magazines, news portals, and content subscription platforms.',
             image: 'https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTJ8fGRpZ2l0YWx8ZW58MHx8MHx8fDA%3D',
-            color: '#8B5CF6'
+            color: '#3b82F6'
         },
         {
             name: 'Social Media',
             icon: '📱',
             desc: 'Social networking apps, video-sharing platforms, and community engagement tools.',
             image: 'https://images.unsplash.com/photo-1611162617213-7d7a39e9b1d7?auto=format&fit=crop&w=800&q=80',
-            color: '#F59E0B'
+            color: '#10b981'
         },
         {
             name: 'Music & Audio',
             icon: '🎵',
             desc: 'Music streaming, podcast platforms, audio editing tools, and sound recognition apps.',
             image: 'https://images.unsplash.com/photo-1511671782779-c97d3d27a1d4?auto=format&fit=crop&w=800&q=80',
-            color: '#EC4899'
+            color: '#3b82f6'
         },
         {
             name: 'Advertising',
             icon: '📺',
             desc: 'Ad management platforms, programmatic advertising, and audience analytics.',
             image: 'https://images.unsplash.com/photo-1557804506-669a67965ba0?auto=format&fit=crop&w=800&q=80',
-            color: '#06B6D4'
+            color: '#10b981'
         }
     ];
 
@@ -605,7 +605,7 @@ export default function MediaPage() {
                     <div className={styles.crossPlatformImageWrapper}>
                         <div className={styles.crossPlatformImageOverlay}></div>
                         <Image
-                            src="https://images.unsplash.com/photo-1551650975-87deedd944c3?auto=format&fit=crop&w=800&q=80"
+                            src="https://media.istockphoto.com/id/1979289147/photo/data-analysis-science-and-big-data-with-ai-technology-analyst-or-scientist-uses-a-computer.webp?a=1&b=1&s=612x612&w=0&k=20&c=IIZaVsQl6mMcOPgyPrVm8ZlCSBwKdwWju4TTnM7BM4Q="
                             alt="Cross-platform development"
                             fill
                             className={styles.crossPlatformImage}
@@ -620,7 +620,7 @@ export default function MediaPage() {
                     <div className={styles.monetizationImageWrapper}>
                         <div className={styles.monetizationImageOverlay}></div>
                         <Image
-                            src="https://images.unsplash.com/photo-1554224155-6726b3ff858f?auto=format&fit=crop&w=800&q=80"
+                            src="https://images.unsplash.com/photo-1542744173-8e7e53415bb0?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8ZGlnaXRhbCUyMG1hcmtldGluZ3xlbnwwfHwwfHx8MA%3D%3D"
                             alt="Monetization strategies"
                             fill
                             className={styles.monetizationImage}
@@ -658,16 +658,6 @@ export default function MediaPage() {
 
             {/* ===== WHY PARTNER WITH US – BACKGROUND IMAGE SECTION ===== */}
             <section className={styles.partnerSection}>
-                <div className={styles.partnerBackground}>
-                    <Image
-                        src="https://images.unsplash.com/photo-1574375927938-d5a98e8ffe85?auto=format&fit=crop&w=1920&q=80"
-                        alt="Media partnership background"
-                        fill
-                        className={styles.partnerBgImage}
-                        priority
-                    />
-                    <div className={styles.partnerOverlay}></div>
-                </div>
                 <div className={styles.partnerContent}>
                     <div className={styles.sectionHeader}>
                         <h2 className={styles.sectionTitle} style={{ color: 'white' }}>

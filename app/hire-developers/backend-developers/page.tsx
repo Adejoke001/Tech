@@ -52,7 +52,7 @@ export default function BackendDevelopersPage() {
 
   // Testimonial matching your page layout
   const testimonial = {
-    name: "Sarah Johnson",
+    name: "Sarah",
     // role: "CTO, FinSecure Inc.",
     content:
       "The backend developers from BBMcoders built a fault-tolerant system that handles 50,000+ transactions per second with 99.99% uptime. Their architecture decisions saved us 40% on cloud costs.",
@@ -68,7 +68,7 @@ export default function BackendDevelopersPage() {
       description:
         "Scalable database systems using MySQL, MongoDB, Cassandra with optimized queries and data modeling.",
       icon: <Database className={styles.expertiseIcon} />,
-      color: "#3B82F6",
+      color: "#10b981",
       features: [
         "Database design & optimization",
         "Query performance tuning",
@@ -98,7 +98,7 @@ export default function BackendDevelopersPage() {
       description:
         "Complete cloud solutions on AWS, Azure, and Google Cloud Platform with seamless migration strategies.",
       icon: <Cloud className={styles.expertiseIcon} />,
-      color: "#8B5CF6",
+      color: "#10b981",
       features: [
         "Cloud-native development",
         "Serverless architecture",
@@ -113,7 +113,7 @@ export default function BackendDevelopersPage() {
       description:
         "Robust APIs using REST, GraphQL, and SOAP with comprehensive third-party service integration.",
       icon: <GitPullRequest className={styles.expertiseIcon} />,
-      color: "#F59E0B",
+      color: "#10b981",
       features: [
         "REST/GraphQL API design",
         "WebSocket implementations",
@@ -128,7 +128,7 @@ export default function BackendDevelopersPage() {
       description:
         "Dedicated systems for mobile applications with real-time sync and offline capabilities.",
       icon: <Smartphone className={styles.expertiseIcon} />,
-      color: "#EC4899",
+      color: "#10b981",
       features: [
         "Push notification systems",
         "Real-time data sync",
@@ -143,7 +143,7 @@ export default function BackendDevelopersPage() {
       description:
         "Modernizing legacy systems with proven re-engineering techniques and maximum customization.",
       icon: <Settings className={styles.expertiseIcon} />,
-      color: "#06B6D4",
+      color: "#10b981",
       features: [
         "Legacy system modernization",
         "Code refactoring",
@@ -158,7 +158,7 @@ export default function BackendDevelopersPage() {
   const technologyStack = {
     libraries: {
       title: "Frameworks & Libraries",
-      color: "#3B82F6",
+      color: "#3B82f6",
       technologies: [
         "Node.js",
         "Python Django",
@@ -186,7 +186,7 @@ export default function BackendDevelopersPage() {
     },
     cloud: {
       title: "Cloud & DevOps",
-      color: "#8B5CF6",
+      color: "#10b981",
       technologies: [
         "AWS",
         "Azure",
@@ -200,7 +200,7 @@ export default function BackendDevelopersPage() {
     },
     tools: {
       title: "Development Tools",
-      color: "#F59E0B",
+      color: "#3b82f6",
       technologies: [
         "Git",
         "Postman",
@@ -344,7 +344,7 @@ export default function BackendDevelopersPage() {
         "Order processing",
         "Shipping integration",
       ],
-      color: "#EC4899",
+      color: "#10b981",
     },
     {
       title: "FinTech Platforms",
@@ -370,7 +370,7 @@ export default function BackendDevelopersPage() {
         "Telemedicine backends",
         "Medical billing",
       ],
-      color: "#3B82F6",
+      color: "#10b981",
     },
     {
       title: "IoT & Real-time Systems",
@@ -383,7 +383,7 @@ export default function BackendDevelopersPage() {
         "Sensor data processing",
         "Alert systems",
       ],
-      color: "#8B5CF6",
+      color: "#10b981",
     },
     {
       title: "SaaS Platforms",
@@ -396,7 +396,7 @@ export default function BackendDevelopersPage() {
         "Billing engines",
         "Analytics dashboards",
       ],
-      color: "#F59E0B",
+      color: "#10b981",
     },
     {
       title: "Media Streaming",
@@ -409,7 +409,7 @@ export default function BackendDevelopersPage() {
         "Media encoding",
         "DRM systems",
       ],
-      color: "#06B6D4",
+      color: "#10b981",
     },
   ];
 

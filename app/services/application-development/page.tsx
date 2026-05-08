@@ -39,7 +39,7 @@ export default function ApplicationDevelopmentPage() {
             title: 'Web App Development',
             description: 'Deliver high-performance, browser-based applications.',
             icon: <Globe />,
-            color: '#3B82F6',
+            color: '#10b981',
             features: ['Responsive, scalable web applications', 'API-first and integration-ready design', 'Optimized performance and reliability']
         },
         {
@@ -55,7 +55,7 @@ export default function ApplicationDevelopmentPage() {
             title: 'Cross-platform Development',
             description: 'Reach multiple platforms with a single, maintainable codebase.',
             icon: <Layers />,
-            color: '#8B5CF6',
+            color: '#10b981',
             features: ['Cross-platform architecture design', 'Reduced development time and cost', 'Consistent functionality across devices']
         },
         {
@@ -63,7 +63,7 @@ export default function ApplicationDevelopmentPage() {
             title: 'App Maintenance & Support',
             description: 'Maintain application stability after deployment.',
             icon: <HeadphonesIcon />,
-            color: '#F59E0B',
+            color: '#10b981',
             features: ['Proactive monitoring and issue resolution', 'Performance optimization', 'Security updates and enhancements']
         },
         {
@@ -71,7 +71,7 @@ export default function ApplicationDevelopmentPage() {
             title: 'Website & Portal Development',
             description: 'Design responsive websites and enterprise portals.',
             icon: <Layout />,
-            color: '#EC4899',
+            color: '#10b981',
             features: ['User-centric design and navigation', 'Secure access and role-based portals', 'Responsive, scalable web experiences']
         },
         {
@@ -79,7 +79,7 @@ export default function ApplicationDevelopmentPage() {
             title: 'Application Modernization',
             description: 'Upgrade legacy applications without disrupting operations.',
             icon: <RefreshCw />,
-            color: '#06B6D4',
+            color: '#10b981',
             features: ['Legacy re-engineering and refactoring', 'Improved scalability and performance', 'Reduced maintenance overhead']
         },
         {
@@ -87,7 +87,7 @@ export default function ApplicationDevelopmentPage() {
             title: 'API Development & Integration',
             description: 'Enable seamless data exchange across systems.',
             icon: <GitMerge />,
-            color: '#3B82F6',
+            color: '#10b981',
             features: ['Secure API development', 'Third-party and internal integrations', 'Improved system interoperability']
         },
         {
@@ -103,7 +103,7 @@ export default function ApplicationDevelopmentPage() {
             title: 'Cloud Application Development',
             description: 'Build applications designed for cloud scalability.',
             icon: <CloudIcon />,
-            color: '#8B5CF6',
+            color: '#10b981',
             features: ['Cloud-native and hybrid architectures', 'Flexible resource scaling', 'Secure, high-availability deployments']
         },
         {
@@ -111,7 +111,7 @@ export default function ApplicationDevelopmentPage() {
             title: 'Progressive Web App Development',
             description: 'Create fast, reliable web applications with app-like behavior.',
             icon: <Zap />,
-            color: '#F59E0B',
+            color: '#10b981',
             features: ['Offline-first and performance-optimized PWAs', 'Reduced development complexity', 'Improved accessibility across devices']
         },
         {
@@ -119,7 +119,7 @@ export default function ApplicationDevelopmentPage() {
             title: 'Wearables & Embedded Software',
             description: 'Develop applications for connected devices.',
             icon: <Cpu />,
-            color: '#EC4899',
+            color: '#10b981',
             features: ['Embedded software development', 'Device-level integration', 'Extended functionality across hardware platforms']
         },
         {
@@ -127,7 +127,7 @@ export default function ApplicationDevelopmentPage() {
             title: 'IoT App Development',
             description: 'Integrate IoT systems into business workflows.',
             icon: <Wifi />,
-            color: '#06B6D4',
+            color: '#10b981',
             features: ['Edge computing and data ingestion', 'API-driven IoT integrations', 'Remote monitoring and control applications']
         },
     ];
@@ -136,22 +136,22 @@ export default function ApplicationDevelopmentPage() {
     const appCategories = {
         industries: [
             { name: 'Enterprises & SaaS Providers', description: 'Build applications tailored to complex needs – multi-tenant platforms, secure, scalable architectures.', color: '#3B82F6' },
-            { name: 'Healthcare', description: 'Support data-driven healthcare operations – patient management systems, secure data handling and integrations.', color: '#10B981' },
+            { name: 'Healthcare', description: 'Support data-driven healthcare operations – patient management systems, secure data handling and integrations.', color: '#3b82f6' },
         ],
         functions: [
-            { name: 'Sales & Customer Experience', description: 'Enhance customer-facing interactions – custom portals, dashboards, integrated customer data.', color: '#8B5CF6' },
-            { name: 'Leadership & Strategy', description: 'Support informed decision-making – data-driven applications, scalable platforms for growth.', color: '#F59E0B' },
+            { name: 'Sales & Customer Experience', description: 'Enhance customer-facing interactions – custom portals, dashboards, integrated customer data.', color: '#10b981' },
+            { name: 'Leadership & Strategy', description: 'Support informed decision-making – data-driven applications, scalable platforms for growth.', color: '#10b981' },
         ]
     };
 
     // ============ VALUE PROPOSITIONS ============
     const valueProps = [
-        { text: 'Engineers with 20+ years application experience', icon: <Award />, color: '#3B82F6' },
+        { text: 'Engineers with 20+ years application experience', icon: <Award />, color: '#10b981' },
         { text: 'End-to-end development from architecture to deployment', icon: <Rocket />, color: '#10B981' },
-        { text: 'Scalable, secure application design', icon: <Shield />, color: '#8B5CF6' },
-        { text: 'Time-zone aligned delivery for global teams', icon: <Globe />, color: '#F59E0B' },
-        { text: '100% IP ownership and enterprise-grade security', icon: <Lock />, color: '#EC4899' },
-        { text: 'Predictable timelines and outcomes', icon: <Clock />, color: '#06B6D4' },
+        { text: 'Scalable, secure application design', icon: <Shield />, color: '#10b981' },
+        { text: 'Time-zone aligned delivery for global teams', icon: <Globe />, color: '#10b981' },
+        { text: '100% IP ownership and enterprise-grade security', icon: <Lock />, color: '#10b981' },
+        { text: 'Predictable timelines and outcomes', icon: <Clock />, color: '#10b981' },
     ];
 
     // ============ TECH STACKS ============
@@ -180,12 +180,12 @@ export default function ApplicationDevelopmentPage() {
 
     // ============ PROCESS STEPS ============
     const processSteps = [
-        { step: 1, title: 'Planning', description: 'We define the app’s purpose, target audience, and desired UX.', icon: <FileText />, color: '#3B82F6' },
+        { step: 1, title: 'Planning', description: 'We define the app’s purpose, target audience, and desired UX.', icon: <FileText />, color: '#10b981' },
         { step: 2, title: 'Design', description: 'Our team creates a visual structure and interactive prototype for user feedback.', icon: <Palette />, color: '#10B981' },
-        { step: 3, title: 'Development', description: 'Our experts build UI and server-side functionality to bring your idea to life.', icon: <Code />, color: '#8B5CF6' },
-        { step: 4, title: 'Testing', description: 'Our testing team ensures the app functions flawlessly across all devices.', icon: <TestTube />, color: '#F59E0B' },
-        { step: 5, title: 'Launch', description: 'Our professionals ensure the app is launched on time without any glitches.', icon: <Rocket />, color: '#EC4899' },
-        { step: 6, title: 'Maintenance', description: 'Our support team ensures continuous support & maintenance for future improvements.', icon: <Settings />, color: '#06B6D4' },
+        { step: 3, title: 'Development', description: 'Our experts build UI and server-side functionality to bring your idea to life.', icon: <Code />, color: '#10b981' },
+        { step: 4, title: 'Testing', description: 'Our testing team ensures the app functions flawlessly across all devices.', icon: <TestTube />, color: '#10b981' },
+        { step: 5, title: 'Launch', description: 'Our professionals ensure the app is launched on time without any glitches.', icon: <Rocket />, color: '#10b981' },
+        { step: 6, title: 'Maintenance', description: 'Our support team ensures continuous support & maintenance for future improvements.', icon: <Settings />, color: '#10b981' },
     ];
 
     // ============ HIRING MODELS ============
@@ -203,7 +203,7 @@ export default function ApplicationDevelopmentPage() {
             title: 'Dedicated Teams / Delivery Pods',
             description: 'Dedicated squad with Tech Lead + Engineers + QA. Shared accountability for predictable sprint delivery.',
             icon: <Target />,
-            color: '#10B981',
+            color: '#3b82f6',
             features: ['Milestone-based or fixed-cost', 'We own sprint delivery metrics', 'Weekly demos'],
             billing: 'Milestone-based, T&M with commitments, or Fixed-Cost',
             bestFor: 'Products needing speed, cross-team coordination'
@@ -212,7 +212,7 @@ export default function ApplicationDevelopmentPage() {
             title: 'Development Centers',
             description: 'Long-term, scaled teams with your branding, culture, processes. Full infrastructure, HR, security & compliance.',
             icon: <Building2 />,
-            color: '#8B5CF6',
+            color: '#3b82F6',
             features: ['Long-term retainer', 'BOT (Build–Operate–Transfer) options', 'Multi-year partnerships'],
             billing: 'Long-term retainer, BOT',
             bestFor: 'Enterprises needing sustained large-scale capacity'
@@ -277,26 +277,22 @@ export default function ApplicationDevelopmentPage() {
     // ============ CLIENT TESTIMONIALS ============
     const testimonials = [
         {
-            name: 'James Kelly',
-            role: 'Data Analyst',
+            name: 'James',
             content: 'The Project managers took a lot of time to understand our project before coming up with a contract or what they thought we needed. I had the reassurance from the start that the project managers knew what type of project I wanted and what my needs were. That is reassuring, and that\'s why we chose BBMcoders.',
             image: '/images/user.png'
         },
         {
-            name: 'Judith Mueller',
-            role: 'Executive Director, Judith Foundation',
+            name: 'Rebecca',
             content: 'The team at BBMcoders has provided us with exceptional services in creating this one-of-a-kind portal, and it has been a fantastic experience. I was particularly impressed by how efficiently and quickly the team always came up with creative solutions to provide us with all the functionalities within the portal we had requested.',
             image: '/images/user.png'
         },
         {
             name: 'chris',
-            role: 'Director, Storgaze',
             content: 'BBMcoders had great technical expertise, both in front-end and back-end development. Other project management was well organized. Account management was friendly and always available. I would give BBMcoders ten out of ten!',
             image: '/images/user.png'
         },
         {
-            name: 'Mohammed Mira',
-            role: 'Director, FashionHint',
+            name: 'Ibrahim',
             content: 'Huge thank you to BBMcoders; they have been a massive help in enabling us to start developing our project within a few weeks, so it&apos;s been great! There have been two small bumps in the road, but overall, It\'s been a fantastic service. I have already recommended it to one of my friends.',
             image: '/images/user.png'
         }
@@ -331,7 +327,7 @@ export default function ApplicationDevelopmentPage() {
     ];
 
     // ============ TRUSTED BY ============
-    const trustedCompanies = ['Microsoft', 'Amazon', 'Google', 'IBM', 'SAP', 'Oracle'];
+    // const trustedCompanies = ['Microsoft', 'Amazon', 'Google', 'IBM', 'SAP', 'Oracle'];
 
     // ============ INDUSTRIES ============
     const industries = [
@@ -347,35 +343,35 @@ export default function ApplicationDevelopmentPage() {
             icon: '🛍️',
             desc: 'Enhancing retail journeys with scalable platforms, inventory management, and omnichannel experiences.',
             image: 'https://images.unsplash.com/photo-1441986300917-64674bd600d8?auto=format&fit=crop&w=800&q=80',
-            color: '#10B981'
+            color: '#10b981'
         },
         {
             name: 'Media & Entertainment',
             icon: '🎬',
             desc: 'Custom tech to empower brands – streaming, content delivery, and audience analytics.',
             image: 'https://images.unsplash.com/photo-1598128558393-70ff21433be0?auto=format&fit=crop&w=800&q=80',
-            color: '#8B5CF6'
+            color: '#3b82f6'
         },
         {
             name: 'Fintech',
             icon: '🏦',
             desc: 'Disrupting traditional finance with secure payments, trading platforms, and digital banking.',
             image: 'https://images.unsplash.com/photo-1560472354-b33ff0c44a43?auto=format&fit=crop&w=800&q=80',
-            color: '#F59E0B'
+            color: '#10b981'
         },
         {
             name: 'Education & eLearning',
             icon: '📚',
             desc: 'Shaping digital learning with LMS, virtual classrooms, and interactive tools.',
             image: 'https://images.unsplash.com/photo-1524178232363-1fb2b075b655?auto=format&fit=crop&w=800&q=80',
-            color: '#EC4899'
+            color: '#3b82f6'
         },
         {
             name: 'Banking & Fintech',
             icon: '💰',
             desc: 'Streamlining financial growth with core banking systems and compliance‑ready infrastructure.',
             image: 'https://images.unsplash.com/photo-1551434678-e076c223a692?auto=format&fit=crop&w=800&q=80',
-            color: '#06B6D4'
+            color: '#10b981'
         },
     ];
 
@@ -410,10 +406,7 @@ export default function ApplicationDevelopmentPage() {
                             We analyze your goals, offer practical advice, and prioritize what works, delivering more than 90% user satisfaction every time.
                         </p>
                         <div className={styles.heroButtons}>
-                            <Link href="/contact" className={styles.primaryButton}>
-                                Start Your Project <ArrowRight size={18} />
-                            </Link>
-                            <Link href="#services" className={styles.secondaryButton}>
+                            <Link href="#services" className={styles.primaryButton}>
                                 Explore Services
                             </Link>
                         </div>
@@ -427,7 +420,7 @@ export default function ApplicationDevelopmentPage() {
                         <div className={styles.testimonialCard}>
                             <div className={styles.testimonialImage}>
                                 <Image
-                                    src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=100&h=100&fit=crop&crop=face"
+                                    src="/images/user.png"
                                     alt={testimonial.name}
                                     width={100}
                                     height={100}
@@ -465,7 +458,7 @@ export default function ApplicationDevelopmentPage() {
             </section>
 
             {/* ===== TRUSTED BY SECTION ===== */}
-            <section className={styles.trustedSection}>
+            {/* <section className={styles.trustedSection}>
                 <div className={styles.container}>
                     <p className={styles.trustedLabel}>Trusted by startups and Fortune 500 companies</p>
                     <div className={styles.trustedLogos}>
@@ -483,7 +476,7 @@ export default function ApplicationDevelopmentPage() {
                         ))}
                     </div>
                 </div>
-            </section>
+            </section> */}
 
             {/* ===== APPLICATION SERVICES SECTION ===== */}
             <section className={styles.servicesSection} id="services">
@@ -983,7 +976,7 @@ export default function ApplicationDevelopmentPage() {
                                     </div>
                                     <div className={styles.testimonialAuthorInfo}>
                                         <h4>{testimonials[activeTestimonial].name}</h4>
-                                        <p>{testimonials[activeTestimonial].role}</p>
+                                        
                                     </div>
                                 </div>
                             </motion.div>

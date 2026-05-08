@@ -65,7 +65,7 @@ export default function FrontendDevelopersPage() {
       description:
         "Fast-loading SPAs & PWAs using React, Angular, or Vue with secure API-driven dynamic content.",
       icon: <Layout className={styles.expertiseIcon} />,
-      color: "#3B82F6",
+      color: "#10b981",
       features: [
         "Single Page Applications",
         "Progressive Web Apps",
@@ -96,7 +96,7 @@ export default function FrontendDevelopersPage() {
       description:
         "Real-time UI updates and scalable architecture optimized for AWS, Azure & serverless backends.",
       icon: <Cloud className={styles.expertiseIcon} />,
-      color: "#8B5CF6",
+      color: "#10b981",
       features: [
         "AWS Amplify integration",
         "Azure Static Web Apps",
@@ -111,7 +111,7 @@ export default function FrontendDevelopersPage() {
       description:
         "Seamless dashboards, portals & workflows with scalable UI and role-based access control.",
       icon: <Users className={styles.expertiseIcon} />,
-      color: "#F59E0B",
+      color: "#10b981",
       features: [
         "Multi-tenant dashboards",
         "Role-based interfaces",
@@ -126,7 +126,7 @@ export default function FrontendDevelopersPage() {
       description:
         "WCAG-compliant experiences with lazy loading, performance tuning, and SEO-friendly interfaces.",
       icon: <Zap className={styles.expertiseIcon} />,
-      color: "#EC4899",
+      color: "#10b981",
       features: [
         "WCAG 2.1 compliance",
         "Performance optimization",
@@ -141,7 +141,7 @@ export default function FrontendDevelopersPage() {
       description:
         "Reusable UI components for faster builds and consistent brand experience across your product.",
       icon: <GitBranch className={styles.expertiseIcon} />,
-      color: "#06B6D4",
+      color: "#10b981",
       features: [
         "Storybook integration",
         "Design systems",
@@ -182,7 +182,7 @@ export default function FrontendDevelopersPage() {
     },
     tooling: {
       title: "Build, Tooling & Performance",
-      color: "#8B5CF6",
+      color: "#3b82f6",
       technologies: [
         "Webpack",
         "Vite",
@@ -196,7 +196,7 @@ export default function FrontendDevelopersPage() {
     },
     testing: {
       title: "Testing & QA Tools",
-      color: "#F59E0B",
+      color: "#10b981",
       technologies: [
         "Jest",
         "Cypress",
@@ -209,7 +209,7 @@ export default function FrontendDevelopersPage() {
     },
     design: {
       title: "Design & Prototyping Tools",
-      color: "#EC4899",
+      color: "#3b82f6",
       technologies: [
         "Figma",
         "Adobe XD",
@@ -222,7 +222,7 @@ export default function FrontendDevelopersPage() {
     },
     collaboration: {
       title: "Project Management & Collaboration",
-      color: "#06B6D4",
+      color: "#10b981",
       technologies: [
         "Jira",
         "Trello",
@@ -358,7 +358,7 @@ export default function FrontendDevelopersPage() {
         "Scalable online stores with seamless checkout and personalized shopping.",
       icon: <ShoppingBag />,
       examples: ["Online marketplaces", "Product catalogs", "Shopping carts"],
-      color: "#EC4899",
+      color: "#10b981",
     },
     {
       title: "FinTech & Banking Dashboards",
@@ -378,14 +378,14 @@ export default function FrontendDevelopersPage() {
         "Analytics platforms",
         "Real-time monitoring tools",
       ],
-      color: "#3B82F6",
+      color: "#10b981",
     },
     {
       title: "Cross-Platform Mobile UIs",
       description: "Native-like mobile experiences for iOS and Android.",
       icon: <Smartphone />,
       examples: ["E-commerce apps", "Social platforms", "Productivity tools"],
-      color: "#8B5CF6",
+      color: "#10b981",
     },
     {
       title: "Interactive Data Visualizations",
@@ -396,7 +396,7 @@ export default function FrontendDevelopersPage() {
         "Interactive graphs",
         "Real-time data feeds",
       ],
-      color: "#F59E0B",
+      color: "#10b981",
     },
     {
       title: "Conversion-Focused Experiences",
@@ -404,7 +404,7 @@ export default function FrontendDevelopersPage() {
         "User interfaces designed to maximize engagement and conversions.",
       icon: <TrendingUp />,
       examples: ["Landing pages", "Product showcases", "Customer portals"],
-      color: "#06B6D4",
+      color: "#10b981",
     },
   ];
 
@@ -432,7 +432,7 @@ export default function FrontendDevelopersPage() {
       desc: "Patient portals, telemedicine platforms, medical dashboards, and healthcare management systems with HIPAA-compliant interfaces.",
       image:
         "https://images.unsplash.com/photo-1551601651-2a8555f1a136?auto=format&fit=crop&w=800&q=80",
-      color: "#8B5CF6",
+      color: "#3b82f6",
     },
   ];
 

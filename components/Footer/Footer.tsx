@@ -54,22 +54,22 @@ const Footer = () => {
 
   // Office Locations (4 grids)
   const officeLocations = [
+    // {
+    //   country: "Nigeria (Lagos)",
+    //   address: "Lagos, Nigeria",
+    // },
     {
-      country: "Nigeria (Lagos)",
-      address: "Lagos, Nigeria",
+      country: "Nigeria, Ekiti State.",
+      address: "Adamolekun Estate, Adebayo, Ado-Ekiti.",
     },
-    {
-      country: "United States (New York)",
-      address: "xyzcity",
-    },
-    {
-      country: "United Kingdom (London)",
-      address: "xyzcity",
-    },
-    {
-      country: "India (Bangalore)",
-      address: "xyzcity",
-    },
+    // {
+    //   country: "United Kingdom (London)",
+    //   address: "xyzcity",
+    // },
+    // {
+    //   country: "India (Bangalore)",
+    //   address: "xyzcity",
+    // },
   ];
 
   const socialLinks = [
@@ -174,21 +174,22 @@ const Footer = () => {
               <div className={styles.contactItem}>
                 <Mail size={18} className={styles.contactIcon} />
                 <a href="mailto:hello@bbmcoders.com" className={styles.contactLink}>
-                  hello@bbmcoders.com
+                  support@bbmcoders.com
                 </a>
               </div>
               {/* Phone - with Phone SVG icon */}
               <div className={styles.contactItem}>
                 <Phone size={18} className={styles.contactIcon} />
                 <a href="tel:+15551234567" className={styles.contactLink}>
-                  +1 (555) 123-4567
+                  +234 7060970212
                 </a>
               </div>
               {/* Address - with MapPin SVG icon */}
-              <div className={styles.contactItem}>
+              {/* <div className={styles.contactItem}>
                 <MapPin size={18} className={styles.contactIcon} />
                 <span>123 Business District, Tech City</span>
-              </div>
+              </div> */}
+
             </div>
             <div className={styles.socialLinks}>
               {socialLinks.map((social) => {

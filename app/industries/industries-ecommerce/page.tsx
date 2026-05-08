@@ -83,7 +83,7 @@ export default function ECommercePage() {
       description:
         "Deliver seamless omni-channel experiences with CRM, loyalty programs, and in-store enhancements that boost retention.",
       icon: <Users />,
-      color: "#3B82F6",
+      color: "#10b981",
       stats: "30% higher retention",
       features: [
         "CRM & Marketing Automation",
@@ -110,7 +110,7 @@ export default function ECommercePage() {
       description:
         "Real-time visibility from production to point-of-sale with private label management and trade promotion.",
       icon: <Truck />,
-      color: "#8B5CF6",
+      color: "#10b981",
       stats: "25% cost reduction",
       features: [
         "Supply Chain",
@@ -124,7 +124,7 @@ export default function ECommercePage() {
       description:
         "Empower decisions with data warehousing, predictive analytics, and custom reporting dashboards.",
       icon: <BarChart3 />,
-      color: "#F59E0B",
+      color: "#10b981",
       stats: "2x faster decisions",
       features: ["Data Warehousing", "Reporting UI", "Predictive Analytics"],
     },
@@ -133,7 +133,7 @@ export default function ECommercePage() {
       description:
         "Enhance in-store experiences with facial and emotion recognition for personalized service.",
       icon: <Scan />,
-      color: "#EC4899",
+      color: "#10b981",
       stats: "40% engagement boost",
       features: ["Facial Recognition", "Emotion Recognition"],
     },
@@ -142,7 +142,7 @@ export default function ECommercePage() {
       description:
         "Enterprise-grade security with SIEM, IAM, and penetration testing to protect your business and customers.",
       icon: <Shield />,
-      color: "#06B6D4",
+      color: "#10b981",
       stats: "Zero breaches",
       features: ["SIEM", "Identity Management", "Penetration Testing"],
     },
@@ -167,7 +167,7 @@ export default function ECommercePage() {
       description:
         "Streamline cross-system integration and data management for maximum efficiency.",
       icon: <Workflow />,
-      color: "#10B981",
+      color: "#3b82f6",
       points: [
         "Cross-system integration",
         "Data management",
@@ -179,7 +179,7 @@ export default function ECommercePage() {
       description:
         "Custom POS, inventory tracking, CRM, and supply chain solutions tailored to your business.",
       icon: <Code />,
-      color: "#8B5CF6",
+      color: "#3b82F6",
       points: [
         "POS systems",
         "Inventory tracking",
@@ -192,7 +192,7 @@ export default function ECommercePage() {
       description:
         "End-to-end webstore creation with front-end design, back-end development, and mobile optimization.",
       icon: <Layout />,
-      color: "#F59E0B",
+      color: "#3b82f6",
       points: ["Front-end design", "Back-end development", "Mobile-optimized"],
     },
     {
@@ -200,7 +200,7 @@ export default function ECommercePage() {
       description:
         "Cutting-edge solutions with simplified carts, secure payments, and easy product management.",
       icon: <ShoppingBag />,
-      color: "#EC4899",
+      color: "#3b82f6",
       points: ["Shopping carts", "Payment integrations", "Product management"],
     },
     {
@@ -208,7 +208,7 @@ export default function ECommercePage() {
       description:
         "Seamless ERP integration, thorough testing, and SEO enhancement for maximum visibility.",
       icon: <GitBranch />,
-      color: "#06B6D4",
+      color: "#3b82f6",
       points: ["ERP integration", "Testing", "SEO enhancement"],
     },
     {
@@ -227,7 +227,7 @@ export default function ECommercePage() {
       description:
         "Future-ready commerce stack migration with minimal disruption and full SEO preservation.",
       icon: <RefreshCw />,
-      color: "#10B981",
+      color: "#3b82f6",
       points: ["Data mapping", "SEO preservation", "Quality checks"],
     },
     {
@@ -235,7 +235,7 @@ export default function ECommercePage() {
   description:
     "Optimize speed, scalability, and reliability to handle high traffic and maximize conversions.",
   icon: <Rocket />,
-  color: "#EF4444",
+  color: "#3b82f6",
   points: [
     "Performance optimization",
     "Load balancing",
@@ -251,7 +251,7 @@ export default function ECommercePage() {
       description:
         "Personalized recommendations, chatbots, and demand forecasting.",
       icon: <Brain />,
-      color: "#3B82F6",
+      color: "#10b981",
     },
     {
       title: "AR & VR",
@@ -264,28 +264,28 @@ export default function ECommercePage() {
       title: "IoT",
       description: "Smart shelves, connected devices, and proximity marketing.",
       icon: <Radio />,
-      color: "#8B5CF6",
+      color: "#10b981",
     },
     {
       title: "RPA",
       description:
         "Automated order processing, inventory updates, and invoicing.",
       icon: <Cpu />,
-      color: "#F59E0B",
+      color: "#10b981",
     },
     {
       title: "Blockchain",
       description:
         "Decentralized marketplaces, secure payments, and supply chain traceability.",
       icon: <LinkChain />,
-      color: "#EC4899",
+      color: "#10b981",
     },
     {
       title: "Compliance",
       description:
         "GDPR, PCI-DSS, and HIPAA-compliant data storage and processing.",
       icon: <ShieldIcon />,
-      color: "#06B6D4",
+      color: "#10b981",
     },
   ];
 
@@ -299,16 +299,16 @@ export default function ECommercePage() {
     {
       text: "Ease of Use – intuitive interface",
       icon: <Menu />,
-      color: "#10B981",
+      color: "#3b82f6",
     },
-    { text: "Features & Functionality", icon: <Grid />, color: "#8B5CF6" },
+    { text: "Features & Functionality", icon: <Grid />, color: "#3b82F6" },
     {
       text: "Payment Options – multiple gateways",
       icon: <DollarSign />,
-      color: "#F59E0B",
+      color: "#3b82f6",
     },
-    { text: "Integration Capabilities", icon: <GitBranch />, color: "#EC4899" },
-    { text: "Customer Support", icon: <Headphones />, color: "#06B6D4" },
+    { text: "Integration Capabilities", icon: <GitBranch />, color: "#3b82f6" },
+    { text: "Customer Support", icon: <Headphones />, color: "#3b82f6" },
     {
       text: "Cost – setup, transactions, subscriptions",
       icon: <CreditCard />,
@@ -321,7 +321,7 @@ export default function ECommercePage() {
     {
       text: "User Experience – intuitive navigation",
       icon: <Users />,
-      color: "#3B82F6",
+      color: "#10b981",
     },
     {
       text: "Responsive Design – mobile-first",
@@ -331,24 +331,24 @@ export default function ECommercePage() {
     {
       text: "Product Presentation – high-quality images",
       icon: <Eye />,
-      color: "#8B5CF6",
+      color: "#10b981",
     },
     {
       text: "Checkout Process – streamlined, minimal steps",
       icon: <ShoppingCart />,
-      color: "#F59E0B",
+      color: "#10b981",
     },
     {
       text: "Branding – consistent identity",
       icon: <Palette />,
-      color: "#EC4899",
+      color: "#10b981",
     },
     {
       text: "Search & Filters – robust discovery",
       icon: <Search />,
-      color: "#06B6D4",
+      color: "#10b981",
     },
-    { text: "Security – SSL, encryption", icon: <Lock />, color: "#3B82F6" },
+    { text: "Security – SSL, encryption", icon: <Lock />, color: "#10b981" },
   ];
 
   // ============ INVENTORY & FULFILLMENT PRACTICES ============
@@ -358,31 +358,31 @@ export default function ECommercePage() {
       icon: <FolderOpen />,
       color: "#3B82F6",
     },
-    { text: "Accurate Product Information", icon: <Tag />, color: "#10B981" },
+    { text: "Accurate Product Information", icon: <Tag />, color: "#3b82f6" },
     {
       text: "Variant Management – sizes, colors",
       icon: <Layers />,
-      color: "#8B5CF6",
+      color: "#3b82F6",
     },
     {
       text: "Real-time Inventory Tracking",
       icon: <Package />,
-      color: "#F59E0B",
+      color: "#3b82f6",
     },
     {
       text: "Stock Synchronization across channels",
       icon: <RefreshIcon />,
-      color: "#EC4899",
+      color: "#3b82f6",
     },
     {
       text: "Backorder & Preorder Management",
       icon: <Clock />,
-      color: "#06B6D4",
+      color: "#3b82f6",
     },
   ];
 
   const fulfillmentPractices = [
-    { text: "Order Management System", icon: <Database />, color: "#3B82F6" },
+    { text: "Order Management System", icon: <Database />, color: "#10b981" },
     {
       text: "Efficient Picking & Packing",
       icon: <Package />,
@@ -391,40 +391,40 @@ export default function ECommercePage() {
     {
       text: "Shipping Carrier Integration",
       icon: <TruckIcon />,
-      color: "#8B5CF6",
+      color: "#10b981",
     },
     {
       text: "Real-time Tracking for Customers",
       icon: <MapPin />,
-      color: "#F59E0B",
+      color: "#10b981",
     },
     {
       text: "Automated Returns & Exchanges",
       icon: <ReturnIcon />,
-      color: "#EC4899",
+      color: "#10b981",
     },
     {
       text: "Proactive Customer Communication",
       icon: <MessageCircle />,
-      color: "#06B6D4",
+      color: "#10b981",
     },
   ];
 
   // ============ PAYMENT & SECURITY PRACTICES ============
   const paymentPractices = [
     { text: "Reputable Payment Gateways", icon: <Wallet />, color: "#3B82F6" },
-    { text: "SSL Encryption", icon: <Lock />, color: "#10B981" },
-    { text: "PCI Compliance", icon: <BadgeCheck />, color: "#8B5CF6" },
-    { text: "Tokenization", icon: <Key />, color: "#F59E0B" },
+    { text: "SSL Encryption", icon: <Lock />, color: "#3b82f6" },
+    { text: "PCI Compliance", icon: <BadgeCheck />, color: "#3b82F6" },
+    { text: "Tokenization", icon: <Key />, color: "#3b82f6" },
     {
       text: "Fraud Prevention – AVS, CVV, 3D Secure",
       icon: <Fingerprint />,
-      color: "#EC4899",
+      color: "#3b82f6",
     },
     {
       text: "Multiple Payment Methods",
       icon: <CreditCard />,
-      color: "#06B6D4",
+      color: "#3b82f6",
     },
   ];
 
@@ -438,27 +438,27 @@ export default function ECommercePage() {
     {
       text: "Trusted by Startups to Fortune 500",
       icon: <Building2 />,
-      color: "#10B981",
+      color: "#3b82f6",
     },
     {
       text: "Idea to Deployment, We Handle All",
       icon: <Rocket />,
-      color: "#8B5CF6",
+      color: "#3b82F6",
     },
     {
       text: "Time-Zone Friendly: Global Presence",
       icon: <GlobeIcon />,
-      color: "#F59E0B",
+      color: "#3b82f6",
     },
     {
       text: "Top-tier Data Security Protocols",
       icon: <LockIcon2 />,
-      color: "#EC4899",
+      color: "#3b82f6",
     },
     {
       text: "On-time Delivery, No Surprises",
       icon: <ClockIcon />,
-      color: "#06B6D4",
+      color: "#3b82f6",
     },
   ];
 
@@ -496,7 +496,7 @@ export default function ECommercePage() {
       desc: "Quick-commerce platforms, subscription boxes, real-time inventory, and route-optimized delivery.",
       image:
         "https://images.unsplash.com/photo-1542838132-92c53300491e?auto=format&fit=crop&w=800&q=80",
-      color: "#8B5CF6",
+      color: "#3b82f6",
     },
     {
       name: "Home & Furniture",
@@ -504,7 +504,7 @@ export default function ECommercePage() {
       desc: "AR-based room planning, configurable products, white-glove delivery scheduling, and assembly services.",
       image:
         "https://images.unsplash.com/photo-1556228453-efd6c1ff04f6?auto=format&fit=crop&w=800&q=80",
-      color: "#F59E0B",
+      color: "#10b981",
     },
     {
       name: "Beauty & Cosmetics",
@@ -512,7 +512,7 @@ export default function ECommercePage() {
       desc: "Virtual try-on, skin analysis AI, subscription refills, and loyalty-driven reorder systems.",
       image:
         "https://images.unsplash.com/photo-1522335789203-aabd1fc54bc9?auto=format&fit=crop&w=800&q=80",
-      color: "#EC4899",
+      color: "#3b82f6",
     },
     {
       name: "B2B & Wholesale",
@@ -520,7 +520,7 @@ export default function ECommercePage() {
       desc: "Bulk pricing, quote management, corporate accounts, and seamless ERP integration.",
       image:
         "https://plus.unsplash.com/premium_photo-1664300442121-794e137b141c?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTd8fGIyYiUyMGFuZCUyMHdob2xlc2FsZXxlbnwwfHwwfHx8MA%3D%3D",
-      color: "#06B6D4",
+      color: "#10b981",
     },
   ];
 
@@ -593,8 +593,7 @@ export default function ECommercePage() {
               <p className={styles.heroDescription}>
                 From customer experience solutions to supply chain management,
                 data analytics, and cutting-edge AI/AR integrations – we deliver
-                secure, scalable E-Commerce platforms trusted by startups and
-                Fortune 500 companies.
+                secure, scalable E-Commerce platforms.
               </p>
             </motion.div>
 
@@ -1120,16 +1119,6 @@ export default function ECommercePage() {
 
       {/* ===== WHY PARTNER WITH US – BACKGROUND IMAGE SECTION ===== */}
       <section className={styles.partnerSection}>
-        <div className={styles.partnerBackground}>
-          <Image
-            src="https://images.unsplash.com/photo-1556740714-d1c44a10060a?auto=format&fit=crop&w=1920&q=80"
-            alt="E-Commerce partnership background"
-            fill
-            className={styles.partnerBgImage}
-            priority
-          />
-          <div className={styles.partnerOverlay}></div>
-        </div>
         <div className={styles.partnerContent}>
           <div className={styles.sectionHeader}>
             <h2 className={styles.sectionTitle} style={{ color: "white" }}>

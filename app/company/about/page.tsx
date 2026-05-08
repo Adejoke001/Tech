@@ -46,35 +46,30 @@ export default function AboutPage() {
             role: 'Chief Executive Officer',
             bio: 'CEO & -CO Founder. Technical Lead, Software Architect, System Analyst, Server Engineer and Architectural Specification Writer.',
             image: '/images/user.png',
-            linkedin: 'https://linkedin.com/in/bernard-odefe', 
         },
         {
             name: 'Precious Uyomere k.',
             role: 'Computer Engineer',
             bio: 'Precious is an NSE-certified Computer Engineer with five years of experience building scalable systems, driving BBMcoders’ core engineering with precision and reliability.',
-            image: '/images/user.png',
-            linkedin: 'https://www.linkedin.com/in/precious-uyomere-588909175/', 
+            image: '/images/user.png', 
         },
         {
             name: 'Adejoke Adejoke',
             role: 'Frontend Developer',
             bio: 'Adejoke is a React and Next.js Frontend Developer who leads her team in building fast, scalable, user-focused web experiences, turning ideas into high-performing products.',
             image: '/images/user.png',
-            linkedin: 'https://www.linkedin.com/in/akinade20/', 
         },
         {
             name: 'Stephen Agbo',
             role: 'Computer Engineer',
             bio: 'Stephen is a Mobile App Developer who leads the team in building intuitive, high-performance applications, driving seamless mobile experiences from concept to launch.',
             image: '/images/user.png',
-            linkedin: 'https://www.linkedin.com/in/stephen-agbo-564167247/', 
         },
         {
             name: 'Goodness Owolabi',
             role: 'Fullstack Developer',
             bio: 'Goodness is a software engineer who builds innovative, scalable solutions, turning complex challenges into efficient, high-impact products.',
             image: '/images/user.png',
-            linkedin: 'https://www.linkedin.com/in/goodness-owolabi-82a690332/', 
         },
     ];
 
@@ -312,13 +307,6 @@ export default function AboutPage() {
                     </div>
                     <div className={styles.teamGrid}>
                         {teamMembers.map((member, index) => (
-                            <Link
-                                key={index}
-                                href={member.linkedin}
-                                target="_blank"
-                                rel="noopener noreferrer"
-                                style={{ textDecoration: 'none' }}
-                            >
                                 <motion.div
                                     className={styles.teamCard}
                                     initial={{ opacity: 0, y: 20 }}
@@ -333,7 +321,6 @@ export default function AboutPage() {
                                     <p className={styles.teamRole}>{member.role}</p>
                                     <p className={styles.teamBio}>{member.bio}</p>
                                 </motion.div>
-                            </Link>
                         ))}
                     </div>
                 </div>

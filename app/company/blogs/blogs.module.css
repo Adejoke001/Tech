@@ -4,12 +4,12 @@
     --primary-green: #10B981;
     --gradient-primary: linear-gradient(135deg, #3B82F6, #10B981);
     --gradient-primary-dark: linear-gradient(135deg, #2563EB, #059669);
-    --secondary-purple: #8B5CF6;
-    --secondary-amber: #F59E0B;
-    --secondary-pink: #EC4899;
-    --secondary-cyan: #06B6D4;
+    
+    /* REMOVED: --secondary-purple, --secondary-amber, --secondary-pink, --secondary-cyan */
+    
     --gradient-section-light: linear-gradient(135deg, rgba(59, 130, 246, 0.03) 0%, rgba(16, 185, 129, 0.03) 100%);
-    --gradient-section-dark: linear-gradient(135deg, rgba(15, 23, 42, 0.98) 0%, rgba(30, 41, 59, 0.95) 100%);
+    --gradient-section-dark: linear-gradient(135deg, rgba(15, 23, 42, 0.92) 0%, rgba(30, 41, 59, 0.92) 100%);
+    
     --dark-bg: #0F172A;
     --dark-surface: #1E293B;
     --gray-900: #1F2937;
@@ -22,6 +22,7 @@
     --gray-200: #F3F4F6;
     --gray-100: #F9FAFB;
     --white: #FFFFFF;
+    
     width: 100%;
     overflow-x: hidden;
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, sans-serif;
@@ -99,7 +100,7 @@
     left: 0;
     width: 100%;
     height: 100%;
-    background: linear-gradient(135deg, rgba(15,23,42,0.9) 0%, rgba(30,41,59,0.85) 100%);
+    background: var(--gradient-section-dark);
     z-index: 1;
 }
 .heroContent {
@@ -172,7 +173,7 @@
     margin-bottom: 2rem;
     box-shadow: 0 5px 20px rgba(0,0,0,0.02);
     transition: box-shadow 0.2s ease;
-    overflow-x: hidden; /* Prevents overflow on small screens */
+    overflow-x: hidden;
 }
 .sidebarWidget:hover {
     box-shadow: 0 10px 30px rgba(0,0,0,0.05);
@@ -188,7 +189,7 @@
 .searchInput,
 .newsletterInput {
     flex: 1;
-    min-width: 0; /* Allows input to shrink below default size */
+    min-width: 0;
     height: 44px;
     padding: 0.75rem 1rem;
     border: 1px solid var(--gray-300);
@@ -424,6 +425,7 @@
     text-transform: uppercase;
     letter-spacing: 0.02em;
     margin-bottom: 0.75rem;
+    color: var(--primary-blue);
 }
 .featuredPostTitle {
     font-size: 1.5rem;
@@ -485,6 +487,7 @@
 .readMoreButton:hover {
     transform: translateY(-2px);
     box-shadow: 0 5px 15px rgba(59,130,246,0.3);
+    background: var(--gradient-primary-dark);
 }
 .workstatusTag {
     font-size: 0.9rem;
@@ -530,6 +533,7 @@
     text-transform: uppercase;
     letter-spacing: 0.02em;
     margin-bottom: 0.5rem;
+    color: var(--primary-blue);
 }
 .recentCardTitle {
     font-size: 1.125rem;
@@ -628,6 +632,7 @@
     color: white;
     text-transform: uppercase;
     letter-spacing: 0.02em;
+    background: var(--primary-blue);
 }
 .postContent {
     padding: 1.5rem;
@@ -720,6 +725,7 @@
 .loadMoreButton:hover {
     transform: translateY(-2px);
     box-shadow: 0 5px 15px rgba(59,130,246,0.3);
+    background: var(--gradient-primary-dark);
 }
 
 /* ===== E‑GUIDE SECTION ===== */
@@ -798,6 +804,7 @@
 .guideButton:hover {
     transform: translateY(-2px);
     box-shadow: 0 5px 20px rgba(59,130,246,0.3);
+    background: var(--gradient-primary-dark);
 }
 .guideImageWrapper {
     position: relative;
@@ -821,7 +828,7 @@
     pointer-events: none;
 }
 
-/* ===== FINAL CTA ===== */
+/* ===== FINAL CTA - DARK BACKGROUND ===== */
 .finalCtaSection {
     padding: 5rem 0;
     background: var(--white);
@@ -829,22 +836,22 @@
 .finalCtaCard {
     max-width: 700px;
     margin: 0 auto;
-    background: var(--gradient-section-light);
+    background: linear-gradient(135deg, var(--dark-bg) 0%, var(--dark-surface) 100%);
     border-radius: 3rem;
     padding: 4rem 2rem;
     text-align: center;
-    border: 1px solid var(--gray-200);
-    box-shadow: 0 30px 60px rgba(0,0,0,0.05);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    box-shadow: 0 30px 60px rgba(0,0,0,0.2);
 }
 .finalCtaTitle {
     font-size: 2.5rem;
     font-weight: 800;
-    color: var(--gray-900);
+    color: white;
     margin-bottom: 1rem;
     letter-spacing: -0.02em;
 }
 .finalCtaDescription {
-    color: var(--gray-600);
+    color: var(--gray-300);
     font-size: 1.125rem;
     max-width: 500px;
     margin: 0 auto 2rem;
@@ -866,6 +873,7 @@
 .finalCtaButton:hover {
     transform: translateY(-2px);
     box-shadow: 0 8px 25px rgba(59,130,246,0.4);
+    background: var(--gradient-primary-dark);
 }
 
 /* ===== RESPONSIVE FINE-TUNING ===== */
@@ -917,14 +925,13 @@
         font-size: 1rem;
     }
     .finalCtaTitle {
-        font-size: 1.75rem;
+        font-size: 2rem;
     }
     .finalCtaDescription {
         font-size: 1rem;
     }
 }
 @media (max-width: 600px) {
-    /* Fix for search and newsletter buttons extending outside container */
     .sidebarWidget {
         padding: 1rem;
     }
@@ -981,13 +988,12 @@
         padding: 0.75rem 1rem;
     }
     .finalCtaCard {
-        padding: 2rem 1rem;
+        padding: 3rem 1.5rem;
     }
     .finalCtaButton {
         padding: 0.75rem 1.5rem;
         font-size: 0.875rem;
     }
-    /* Extra small devices: ensure inputs and buttons stay inside */
     .searchInput,
     .newsletterInput {
         height: 40px;
@@ -1006,7 +1012,6 @@
     }
 }
 @media (max-width: 360px) {
-    /* Prevent any chance of overflow on very narrow screens */
     .sidebarWidget {
         padding: 0.75rem;
     }

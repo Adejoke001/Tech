@@ -38,7 +38,7 @@ export default function StartupsSolutionPage() {
             title: 'Startup Consulting',
             description: 'Strategic guidance for founders to make informed decisions, refine business models, and accelerate growth.',
             icon: <Compass className={styles.expertiseIcon} />,
-            color: '#3B82F6',
+            color: '#10b981',
             features: [
                 'Business model refinement',
                 'Market entry strategies',
@@ -64,7 +64,7 @@ export default function StartupsSolutionPage() {
             title: 'Team Augmentation',
             description: 'Expert professionals to quickly strengthen your startup team – flexible engagement, domain‑specific expertise.',
             icon: <TeamIcon className={styles.expertiseIcon} />,
-            color: '#8B5CF6',
+            color: '#10b981',
             features: [
                 'On-demand technical talent',
                 'Flexible engagement models',
@@ -90,7 +90,7 @@ export default function StartupsSolutionPage() {
             title: 'Operations & Process Optimization',
             description: 'Streamline workflows, improve operational efficiency, and support rapid growth.',
             icon: <Settings className={styles.expertiseIcon} />,
-            color: '#EC4899',
+            color: '#10b981',
             features: [
                 'Operational efficiency audits',
                 'Process automation planning',
@@ -103,7 +103,7 @@ export default function StartupsSolutionPage() {
             title: 'Funding & Investor Readiness',
             description: 'Prepare to secure investment and scale successfully – pitch decks, investor targeting, financial projections.',
             icon: <DollarSign className={styles.expertiseIcon} />,
-            color: '#06B6D4',
+            color: '#10b981',
             features: [
                 'Pitch deck preparation',
                 'Investor targeting strategies',
@@ -116,7 +116,7 @@ export default function StartupsSolutionPage() {
             title: 'Product Design & User Experience',
             description: 'Engaging, intuitive experiences that retain users, enhance satisfaction, and build brand loyalty.',
             icon: <Palette className={styles.expertiseIcon} />,
-            color: '#8B5CF6',
+            color: '#10b981',
             features: [
                 'UX research & testing',
                 'High‑impact interface design',
@@ -165,28 +165,28 @@ export default function StartupsSolutionPage() {
             range: '$30,000 – $70,000',
             description: 'MVP that helps you attract early users or investors.',
             icon: <Rocket />,
-            color: '#10B981',
+            color: '#3b82f6',
             bestFor: 'Early users'
         },
         {
             range: '$50,000 – $90,000',
             description: 'Growth-ready product with advanced features and better UX.',
             icon: <TrendingUp />,
-            color: '#8B5CF6',
+            color: '#3b82f6',
             bestFor: 'Growth stage'
         },
         {
             range: '$80,000 – $120,000',
             description: 'Complete, market-ready product with strong architecture and scalability.',
             icon: <Cloud />,
-            color: '#F59E0B',
+            color: '#3b82f6',
             bestFor: 'Market launch'
         },
         {
             range: '$120,000 – $200,000+',
             description: 'Large-scale enterprise application with advanced security and compliance.',
             icon: <Shield />,
-            color: '#EC4899',
+            color: '#3b82f6',
             bestFor: 'Enterprise scale'
         }
     ];
@@ -198,7 +198,7 @@ export default function StartupsSolutionPage() {
             title: 'Market Gap Analysis', 
             description: 'We study your space to find real growth opportunities and validate demand.',
             icon: <Search />,
-            color: '#3B82F6'
+            color: '#10b981'
         },
         { 
             step: 2, 
@@ -212,39 +212,39 @@ export default function StartupsSolutionPage() {
             title: 'Tech Stack Planning', 
             description: 'We design the right tools to fit your growth vision and future needs.',
             icon: <Cpu />,
-            color: '#8B5CF6'
+            color: '#10b981'
         },
         { 
             step: 4, 
             title: 'Team Structure Support', 
             description: 'We define key roles that push your startup forward, from devs to PMs.',
             icon: <TeamIcon />,
-            color: '#F59E0B'
+            color: '#10b981'
         },
         { 
             step: 5, 
             title: 'Funding Readiness', 
             description: 'We prepare your numbers and story for investor conversations.',
             icon: <Presentation />,
-            color: '#EC4899'
+            color: '#10b981'
         },
         { 
             step: 6, 
             title: 'Scalable Growth Execution', 
             description: 'We put plans into action with measurable, quick results.',
             icon: <BarChart3 />,
-            color: '#06B6D4'
+            color: '#10b981'
         }
     ];
 
     // ----- STARTUP PARTNER HIGHLIGHTS (from reference) -----
     const partnerHighlights = [
-        { text: 'Nigeria’s Top 1% Software Talent', icon: <Award />, color: '#3B82F6' },
-        { text: 'Investor-Ready Products', icon: <DollarSign />, color: '#10B981' },
-        { text: 'From MVP to Market Leader', icon: <Rocket />, color: '#8B5CF6' },
-        { text: 'Growth-Centric Strategy', icon: <Target />, color: '#F59E0B' },
-        { text: 'Time-Zone Friendly', icon: <Globe />, color: '#EC4899' },
-        { text: 'ISO 27001 Certified', icon: <ShieldCheck />, color: '#06B6D4' },
+        { text: 'Nigeria’s Top 10% Software Talent', icon: <Award />, color: '#3B82F6' },
+        { text: 'Investor-Ready Products', icon: <DollarSign />, color: '#3b82f6' },
+        { text: 'From MVP to Market Leader', icon: <Rocket />, color: '#3b82F6' },
+        { text: 'Growth-Centric Strategy', icon: <Target />, color: '#3b82f6' },
+        { text: 'Time-Zone Friendly', icon: <Globe />, color: '#3b82f6' },
+        { text: 'ISO 27001 Certified', icon: <ShieldCheck />, color: '#3b82f6' },
         { text: 'Agile Delivery, Zero Surprises', icon: <ThumbsUp />, color: '#3B82F6' }
     ];
 
@@ -258,27 +258,23 @@ export default function StartupsSolutionPage() {
     // ----- CLIENT TESTIMONIALS (from reference) -----
     const testimonials = [
         {
-            name: 'James Kelly',
-            role: 'Data Analyst',
-            content: 'The Project managers took a lot of time to understand our project before coming up with a contract or what they thought we needed. I had the reassurance from the start that the project managers knew what type of project I wanted and what my needs were. That is reassuring, and that\'s why we chose BBMTech.',
+            name: 'James',
+            content: 'The Project managers took a lot of time to understand our project before coming up with a contract or what they thought we needed. I had the reassurance from the start that the project managers knew what type of project I wanted and what my needs were. That is reassuring, and that\'s why we chose BBMcoders.',
             image: '/images/user.png'
         },
         {
-            name: 'Judith Mueller',
-            role: 'Executive Director, Judith Foundation',
-            content: 'The team at BBMTech has provided us with exceptional services in creating this one-of-a-kind portal, and it has been a fantastic experience. I was particularly impressed by how efficiently and quickly the team always came up with creative solutions to provide us with all the functionalities within the portal we had requested.',
+            name: 'Rebecca',
+            content: 'The team at BBMcoders has provided us with exceptional services in creating this one-of-a-kind portal, and it has been a fantastic experience. I was particularly impressed by how efficiently and quickly the team always came up with creative solutions to provide us with all the functionalities within the portal we had requested.',
             image: '/images/user.png'
         },
         {
             name: 'chris',
-            role: 'Director, Storgaze',
-            content: 'BBMTech had great technical expertise, both in front-end and back-end development. Other project management was well organized. Account management was friendly and always available. I would give BBMTech ten out of ten!',
+            content: 'BBMcoders had great technical expertise, both in front-end and back-end development. Other project management was well organized. Account management was friendly and always available. I would give BBMcoders ten out of ten!',
             image: '/images/user.png'
         },
         {
-            name: 'Mohammed Mira',
-            role: 'Director, FashionHint',
-            content: 'Huge thank you to BBMTech; they have been a massive help in enabling us to start developing our project within a few weeks, so it\'s been great! There have been two small bumps in the road, but overall, It\'s been a fantastic service. I have already recommended it to one of my friends.',
+            name: 'Ibrahim',
+            content: 'Huge thank you to BBMcoders; they have been a massive help in enabling us to start developing our project within a few weeks, so it\'s been great! There have been two small bumps in the road, but overall, It\'s been a fantastic service. I have already recommended it to one of my friends.',
             image: '/images/user.png'
         }
     ];
@@ -335,7 +331,7 @@ export default function StartupsSolutionPage() {
             answer: 'We offer pause/resume flexibility so you don’t carry fixed overhead during funding gaps.'
         },
         {
-            question: 'Why choose BBMTech over freelancers or agencies?',
+            question: 'Why choose BBMcoders over freelancers or agencies?',
             answer: 'Unlike freelancers, we offer dedicated, vetted teams with proven track records. Unlike agencies, we integrate with your roadmap and work as your engineering partner.'
         }
     ];
@@ -720,7 +716,6 @@ export default function StartupsSolutionPage() {
                                 </div>
                                 <div className={styles.testimonialAuthorInfo}>
                                     <h4>{testimonials[activeTestimonial].name}</h4>
-                                    <p>{testimonials[activeTestimonial].role}</p>
                                 </div>
                             </div>
                         </motion.div>
