@@ -6,12 +6,12 @@ import Link from 'next/link';
 import { motion, AnimatePresence } from 'framer-motion';
 import {
     Users, TrendingUp, CheckCircle, Award, MessageSquare, Sparkles,
-    Cloud, ChevronRight, HelpCircle, ArrowRight, GitBranch, HeadphonesIcon, 
+    Cloud, ChevronRight, HelpCircle, ArrowRight, GitBranch, HeadphonesIcon,
     RefreshCw, ShieldCheck, Layers, Shield, Globe, Target,
     Rocket, Calendar, Wallet, Briefcase, Compass,
     Briefcase as BriefcaseIcon, Palette, LineChart,
-    DollarSign, Search, Gauge, Activity, AlertTriangle, Building2, 
-    CloudCog, Workflow as WorkflowIcon, Layers3, 
+    DollarSign, Search, Gauge, Activity, AlertTriangle, Building2,
+    CloudCog, Workflow as WorkflowIcon, Layers3,
 } from 'lucide-react';
 import styles from './scaleups.module.css';
 
@@ -485,7 +485,7 @@ export default function ScaleUpsSolutionPage() {
                                 Scale Your Startup
                                 <ArrowRight className={styles.buttonIcon} />
                             </Link>
-                            
+
                         </motion.div>
                     </motion.div>
 
@@ -604,12 +604,12 @@ export default function ScaleUpsSolutionPage() {
                                     ))}
                                 </ul>
                             </div>
-                             {item.link && (
-            <Link href={item.link} className={styles.learnMoreLink}>
-                Learn More
-                <ChevronRight className={styles.linkIcon} />
-            </Link>
-        )}
+                            {item.link && (
+                                <Link href={item.link} className={styles.learnMoreLink}>
+                                    Learn More
+                                    <ChevronRight className={styles.linkIcon} />
+                                </Link>
+                            )}
                         </motion.div>
                     ))}
                 </div>
@@ -1034,7 +1034,7 @@ export default function ScaleUpsSolutionPage() {
                                 Book Free Consultation
                                 <ArrowRight className={styles.buttonIcon} />
                             </Link>
-                            
+
 
                         </div>
                     </div>

@@ -7,7 +7,7 @@ import { motion, AnimatePresence } from 'framer-motion';
 import {
     Sparkles, ArrowRight, Award, MessageSquare, CheckCircle,
     Globe, TrendingUp, FileText, TestTube, Clock, Zap, Shield,
-    Cpu, Radio, Brain, Compass, Code, Cloud, Server, Activity, Wifi, 
+    Cpu, Radio, Brain, Compass, Code, Cloud, Server, Activity, Wifi,
     Thermometer, Gauge, Factory,
     Layers, Settings, BarChart3,
 } from 'lucide-react';
@@ -158,26 +158,26 @@ export default function IoTPage() {
     // ============ INDUSTRIES ============
     const industries = [
         {
-                    name: 'Healthcare',
-                    icon: '🏥',
-                    desc: 'Building smart healthcare solutions with HIPAA‑compliance, telemedicine, and patient portals.',
-                    image: 'https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?auto=format&fit=crop&w=800&q=80',
-                    color: '#3B82F6'
-                },
-                {
-                    name: 'Retail & eCommerce',
-                    icon: '🛍️',
-                    desc: 'Enhancing retail journeys with scalable platforms, inventory management, and omnichannel experiences.',
-                    image: 'https://images.unsplash.com/photo-1441986300917-64674bd600d8?auto=format&fit=crop&w=800&q=80',
-                    color: '#10B981'
-                },
-                {
-                    name: 'Media & Entertainment',
-                    icon: '🎬',
-                    desc: 'Custom tech to empower brands – streaming, content delivery, and audience analytics.',
-                    image: 'https://images.unsplash.com/photo-1598128558393-70ff21433be0?auto=format&fit=crop&w=800&q=80',
-                    color: '#3b82f6'
-                },
+            name: 'Healthcare',
+            icon: '🏥',
+            desc: 'Building smart healthcare solutions with HIPAA‑compliance, telemedicine, and patient portals.',
+            image: 'https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?auto=format&fit=crop&w=800&q=80',
+            color: '#3B82F6'
+        },
+        {
+            name: 'Retail & eCommerce',
+            icon: '🛍️',
+            desc: 'Enhancing retail journeys with scalable platforms, inventory management, and omnichannel experiences.',
+            image: 'https://images.unsplash.com/photo-1441986300917-64674bd600d8?auto=format&fit=crop&w=800&q=80',
+            color: '#10B981'
+        },
+        {
+            name: 'Media & Entertainment',
+            icon: '🎬',
+            desc: 'Custom tech to empower brands – streaming, content delivery, and audience analytics.',
+            image: 'https://images.unsplash.com/photo-1598128558393-70ff21433be0?auto=format&fit=crop&w=800&q=80',
+            color: '#3b82f6'
+        },
     ];
 
     // ============ BENEFITS OF IOT ============

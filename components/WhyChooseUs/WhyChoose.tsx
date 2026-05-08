@@ -7,7 +7,7 @@ const WhyChoose = () => {
     {
       id: 1,
       title: "CRM",
-      image: "https://plus.unsplash.com/premium_photo-1733328013343-e5ee77acaf05?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8Y3VzdG9tZXIlMjByZWxhdGlvbnNoaXAlMjBtYW5hZ2VtZW50fGVufDB8fDB8fHww", 
+      image: "https://plus.unsplash.com/premium_photo-1733328013343-e5ee77acaf05?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8Y3VzdG9tZXIlMjByZWxhdGlvbnNoaXAlMjBtYW5hZ2VtZW50fGVufDB8fDB8fHww",
       description: "Custom CRM solutions that streamline customer relationships, automate sales processes, and provide actionable insights for business growth."
     },
     {
@@ -46,14 +46,14 @@ const WhyChoose = () => {
         {/* Solutions Grid */}
         <div className={styles.solutionsGrid}>
           {solutions.map((solution) => (
-            <div 
+            <div
               key={solution.id}
               className={styles.solutionCard}
             >
               <div className={styles.cardImage}>
                 {/* Using Next.js Image component */}
-                <Image 
-                  src={solution.image} 
+                <Image
+                  src={solution.image}
                   alt={solution.title}
                   fill
                   className={styles.image}
@@ -63,7 +63,7 @@ const WhyChoose = () => {
                   <h3 className={styles.solutionTitle}>{solution.title}</h3>
                 </div>
               </div>
-              
+
               {/* Hover Description */}
               <div className={styles.hoverContent}>
                 <div className={styles.hoverDescription}>

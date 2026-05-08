@@ -6,18 +6,18 @@ import Link from 'next/link';
 import { motion, AnimatePresence } from 'framer-motion';
 import { SVGProps } from 'react';
 import {
-    Smartphone, Code, Zap, Users, TrendingUp, 
-    CheckCircle, Award, MessageSquare, Sparkles, 
-    Cloud, ChevronRight, HelpCircle, ArrowRight, 
+    Smartphone, Code, Zap, Users, TrendingUp,
+    CheckCircle, Award, MessageSquare, Sparkles,
+    Cloud, ChevronRight, HelpCircle, ArrowRight,
     FileText, RefreshCw, Workflow, Server, Layers, Code2, Monitor,
     Shield, TestTube, Database, Globe, Lock, Clock, Target,
     Rocket, Wallet, Scale, Briefcase, Lightbulb, Compass,
     Palette, Search, Presentation, HeartHandshake, Gauge,
     AlertTriangle, Building2, Zap as ZapIcon, Repeat, KeyRound,
     Cpu as CpuChip, Brain, Sliders, Box, ShoppingCart, GitBranch,
-    Headphones, PenTool, Figma, Megaphone, Plug, Key, Radio,  
+    Headphones, PenTool, Figma, Megaphone, Plug, Key, Radio,
     FileJson, Braces, Lock as LockIcon, PlugZap, BadgeCheck, Store,
-    Settings as SettingsIcon, Briefcase as BriefcaseBusiness, 
+    Settings as SettingsIcon, Briefcase as BriefcaseBusiness,
     Shield as ShieldIcon2, Repeat as RepeatIcon, Fingerprint, Bot,
     Radio as RadioIcon, Handshake, Package, UsersRound, Microchip, Scan
 } from 'lucide-react';
@@ -39,62 +39,62 @@ export default function SpecializedSolutionsPage() {
     };
 
     const Wordpress = (props: SVGProps<SVGSVGElement>) => (
-  <svg
-    xmlns="http://www.w3.org/2000/svg"
-    width="24"
-    height="24"
-    viewBox="0 0 24 24"
-    fill="none"
-    stroke="currentColor"
-    strokeWidth="2"
-    strokeLinecap="round"
-    strokeLinejoin="round"
-    {...props}
-  >
-    <path d="M4 3h16a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2Z" />
-    <path d="M8 9h8" />
-    <path d="M8 13h4" />
-  </svg>
-);
+        <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            strokeWidth="2"
+            strokeLinecap="round"
+            strokeLinejoin="round"
+            {...props}
+        >
+            <path d="M4 3h16a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2Z" />
+            <path d="M8 9h8" />
+            <path d="M8 13h4" />
+        </svg>
+    );
 
-const Factory = (props: SVGProps<SVGSVGElement>) => (
-  <svg
-    xmlns="http://www.w3.org/2000/svg"
-    width="24"
-    height="24"
-    viewBox="0 0 24 24"
-    fill="none"
-    stroke="currentColor"
-    strokeWidth="2"
-    strokeLinecap="round"
-    strokeLinejoin="round"
-    {...props}
-  >
-    <path d="M2 20a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V8l-7 5V8l-7 5V4a2 2 0 0 0-2-2H4a2 2 0 0 0-2 2Z" />
-    <path d="M17 18h1" />
-    <path d="M12 18h1" />
-    <path d="M7 18h1" />
-  </svg>
-);
+    const Factory = (props: SVGProps<SVGSVGElement>) => (
+        <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            strokeWidth="2"
+            strokeLinecap="round"
+            strokeLinejoin="round"
+            {...props}
+        >
+            <path d="M2 20a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V8l-7 5V8l-7 5V4a2 2 0 0 0-2-2H4a2 2 0 0 0-2 2Z" />
+            <path d="M17 18h1" />
+            <path d="M12 18h1" />
+            <path d="M7 18h1" />
+        </svg>
+    );
 
-const BoxIcon = (props: SVGProps<SVGSVGElement>) => (
-  <svg
-    xmlns="http://www.w3.org/2000/svg"
-    width="24"
-    height="24"
-    viewBox="0 0 24 24"
-    fill="none"
-    stroke="currentColor"
-    strokeWidth="2"
-    strokeLinecap="round"
-    strokeLinejoin="round"
-    {...props}
-  >
-    <path d="M21 8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16Z" />
-    <path d="M3.3 7 12 12l8.7-5" />
-    <path d="M12 22V12" />
-  </svg>
-);
+    const BoxIcon = (props: SVGProps<SVGSVGElement>) => (
+        <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            strokeWidth="2"
+            strokeLinecap="round"
+            strokeLinejoin="round"
+            {...props}
+        >
+            <path d="M21 8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16Z" />
+            <path d="M3.3 7 12 12l8.7-5" />
+            <path d="M12 22V12" />
+        </svg>
+    );
 
 
     // ============ ISV & PRODUCT DEVELOPMENT PILLAR ============
@@ -356,7 +356,7 @@ const BoxIcon = (props: SVGProps<SVGSVGElement>) => (
             description: 'Free up internal resources to focus on strategic initiatives, sales, and customer relationships.',
             icon: <Target />,
             color: '#3b82f6'
-         }
+        }
     ];
 
     // ----- Types of White Label Partnerships -----
@@ -470,7 +470,7 @@ const BoxIcon = (props: SVGProps<SVGSVGElement>) => (
         { name: 'Role-based Access', icon: <LockIcon />, color: '#10B981' },
         { name: 'API Keys & Rate Limiting', icon: <KeyRound />, color: '#10B981' },
         { name: 'Compliance-ready', icon: <BadgeCheck />, color: '#10B981' },
-];
+    ];
 
     const apiProcess = [
         { step: 1, title: 'Discovery & Planning', description: 'Define API goals, consumers, and success metrics.', icon: <Search />, color: '#3B82F6' },
@@ -526,7 +526,7 @@ const BoxIcon = (props: SVGProps<SVGSVGElement>) => (
     ];
 
     // ============ INDUSTRIES ============
-   const industries = [
+    const industries = [
         {
             name: 'E-Commerce & Retail',
             icon: '🛍️',
@@ -603,10 +603,10 @@ const BoxIcon = (props: SVGProps<SVGSVGElement>) => (
                                 ISV, White Label & <span className={styles.highlight}>API Development</span>
                             </h1>
                             <p className={styles.subheadline}>
-                               From product strategy to white label delivery and API integration – we accelerate your entire software ecosystem.
+                                From product strategy to white label delivery and API integration – we accelerate your entire software ecosystem.
                             </p>
                             <p className={styles.heroDescription}>
-                               Whether you&apos;re an ISV building AI-powered apps, a digital agency scaling through white-label partnerships, or an enterprise modernising with APIs – we deliver the expertise, speed, and quality you need.
+                                Whether you&apos;re an ISV building AI-powered apps, a digital agency scaling through white-label partnerships, or an enterprise modernising with APIs – we deliver the expertise, speed, and quality you need.
                             </p>
                         </motion.div>
 
@@ -620,7 +620,7 @@ const BoxIcon = (props: SVGProps<SVGSVGElement>) => (
                                 Discuss Your Project
                                 <ArrowRight className={styles.buttonIcon} />
                             </Link>
-                            
+
                         </motion.div>
                     </motion.div>
 
@@ -705,21 +705,21 @@ const BoxIcon = (props: SVGProps<SVGSVGElement>) => (
                 </div>
 
                 <div className={styles.pillarTabs}>
-                    <button 
+                    <button
                         className={`${styles.pillarTab} ${activePillar === 'isv' ? styles.active : ''}`}
                         onClick={() => setActivePillar('isv')}
                     >
                         <Building2 className={styles.pillarIcon} />
                         <span>ISV & Product Development</span>
                     </button>
-                    <button 
+                    <button
                         className={`${styles.pillarTab} ${activePillar === 'white-label' ? styles.active : ''}`}
                         onClick={() => setActivePillar('white-label')}
                     >
                         <BriefcaseBusiness className={styles.pillarIcon} />
                         <span>White Label Services</span>
                     </button>
-                    <button 
+                    <button
                         className={`${styles.pillarTab} ${activePillar === 'api' ? styles.active : ''}`}
                         onClick={() => setActivePillar('api')}
                     >
@@ -890,7 +890,7 @@ const BoxIcon = (props: SVGProps<SVGSVGElement>) => (
                                         </div>
                                     ))}
                                 </div>
-                                
+
                                 <h3 className={styles.colTitle} style={{ marginTop: '2rem' }}>Security Best Practices</h3>
                                 <div className={styles.solutionsGrid}>
                                     {securityPractices.map((item, idx) => (
@@ -1442,13 +1442,13 @@ const BoxIcon = (props: SVGProps<SVGSVGElement>) => (
                     </div>
 
                     <div className={styles.testimonialArrows}>
-                        <button 
+                        <button
                             className={styles.testimonialArrow}
                             onClick={() => setActiveTestimonial((prev) => (prev === 0 ? testimonials.length - 1 : prev - 1))}
                         >
                             <ChevronRight className={styles.arrowLeft} />
                         </button>
-                        <button 
+                        <button
                             className={styles.testimonialArrow}
                             onClick={() => setActiveTestimonial((prev) => (prev === testimonials.length - 1 ? 0 : prev + 1))}
                         >

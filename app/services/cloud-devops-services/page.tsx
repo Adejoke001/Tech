@@ -130,7 +130,7 @@ export default function CloudServicesPage() {
             gradient: 'linear-gradient(135deg, #10B981 0%, #059669 100%)',
             bestFor: ['Cloud Consulting', 'Proof of Concepts', 'Emergency Support'],
             icon: <Clock />
-         },
+        },
     ];
 
     // ===== INDUSTRIES WE CATER TO (Reduced to three) =====
@@ -180,7 +180,7 @@ export default function CloudServicesPage() {
 
             {/* ===== HERO SECTION ===== */}
             <section className={styles.heroBackground}>
-              <div className={styles.heroContent}>
+                <div className={styles.heroContent}>
                     <motion.div className={styles.heroText} initial={{ opacity: 0, y: 30 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.8 }}>
                         <div className={styles.heroBadge}>
                             <Sparkles size={18} /> Secure & Scalable Cloud Solutions

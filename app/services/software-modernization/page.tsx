@@ -9,7 +9,7 @@ import {
     Users, Globe, Lock, Clock, Building2, Zap, Shield,
     Smartphone, Database, Cpu,
     Compass, Code, GitBranch, RefreshCw, Cloud, Target,
-    Server, Activity, Layers, TrendingUp, Eye, 
+    Server, Activity, Layers, TrendingUp, Eye,
 } from 'lucide-react';
 import styles from './modern.module.css';
 
@@ -125,11 +125,11 @@ export default function ModernizationPage() {
     ];
 
     const bbmCodersSolutions = [
-    { text: 'Cloud assessment & migration', icon: <Cloud />, color: '#3B82F6' },
-    { text: 'Digital forensics & cyber crime management', icon: <Shield />, color: '#10B981' },
-    { text: 'Information & application version management', icon: <Database />, color: '#3B82F6' },
-    { text: 'Providing dedicated, skilled teams within budget', icon: <Users />, color: '#10B981' },
-    { text: 'Technology consulting and smooth migration', icon: <Compass />, color: '#3B82F6' },
+        { text: 'Cloud assessment & migration', icon: <Cloud />, color: '#3B82F6' },
+        { text: 'Digital forensics & cyber crime management', icon: <Shield />, color: '#10B981' },
+        { text: 'Information & application version management', icon: <Database />, color: '#3B82F6' },
+        { text: 'Providing dedicated, skilled teams within budget', icon: <Users />, color: '#10B981' },
+        { text: 'Technology consulting and smooth migration', icon: <Compass />, color: '#3B82F6' },
     ];
 
     // ============ WHY PARTNER WITH US ============
@@ -190,26 +190,26 @@ export default function ModernizationPage() {
 
     // ============ TYPES OF APPLICATION MIGRATION ============
     const migrationTypes = [
-    { title: 'Lift-and-Shift Migration', desc: 'Move application as-is with minimal changes. Focus on scalability, cost-effectiveness.' },
-    { title: 'Replatforming', desc: 'Move to a new platform with almost no code changes (e.g., legacy server to containerization).' },
-    { title: 'Refactoring', desc: 'Make significant changes to architecture, design, or codebase while migrating.' },
-    { title: 'Re-architecting', desc: 'Substantial overhaul – break monolithic into microservices, adopt SOA or cloud-native.' },
-    { title: 'Hybrid Migration', desc: 'Combine on-premises and cloud components for gradual migration.' },
-    { title: 'Cloud-Native Migration', desc: 'Build and deploy applications specifically designed for cloud environments from the ground up.' },
+        { title: 'Lift-and-Shift Migration', desc: 'Move application as-is with minimal changes. Focus on scalability, cost-effectiveness.' },
+        { title: 'Replatforming', desc: 'Move to a new platform with almost no code changes (e.g., legacy server to containerization).' },
+        { title: 'Refactoring', desc: 'Make significant changes to architecture, design, or codebase while migrating.' },
+        { title: 'Re-architecting', desc: 'Substantial overhaul – break monolithic into microservices, adopt SOA or cloud-native.' },
+        { title: 'Hybrid Migration', desc: 'Combine on-premises and cloud components for gradual migration.' },
+        { title: 'Cloud-Native Migration', desc: 'Build and deploy applications specifically designed for cloud environments from the ground up.' },
     ];
 
     // ============ HOW MODERNIZATION ANTICIPATES CUSTOMER NEEDS ============
     const modernizationBenefits = [
-    { text: 'Scalability – accommodate increased user loads', icon: <TrendingUp />, color: '#3B82F6' },
-    { text: 'Agility – respond quickly to market changes', icon: <Zap />, color: '#10B981' },
-    { text: 'Personalization – tailored user experiences', icon: <Users />, color: '#3B82F6' },
-    { text: 'Data Insights – harness data for informed decisions', icon: <Database />, color: '#10B981' },
-    { text: 'Real-time Updates – keep current with trends', icon: <Clock />, color: '#3B82F6' },
-    { text: 'Multi-Channel Accessibility – web, mobile, etc.', icon: <Smartphone />, color: '#10B981' },
-    { text: 'Improved Performance – faster response times', icon: <Activity />, color: '#3B82F6' },
-    { text: 'Enhanced Security – protect against evolving threats', icon: <Shield />, color: '#10B981' },
-    { text: 'Integration Capabilities – seamless tool integration', icon: <GitBranch />, color: '#3B82F6' },
-    { text: 'Rapid Development – DevOps and Agile methodologies', icon: <Code />, color: '#10B981' },
+        { text: 'Scalability – accommodate increased user loads', icon: <TrendingUp />, color: '#3B82F6' },
+        { text: 'Agility – respond quickly to market changes', icon: <Zap />, color: '#10B981' },
+        { text: 'Personalization – tailored user experiences', icon: <Users />, color: '#3B82F6' },
+        { text: 'Data Insights – harness data for informed decisions', icon: <Database />, color: '#10B981' },
+        { text: 'Real-time Updates – keep current with trends', icon: <Clock />, color: '#3B82F6' },
+        { text: 'Multi-Channel Accessibility – web, mobile, etc.', icon: <Smartphone />, color: '#10B981' },
+        { text: 'Improved Performance – faster response times', icon: <Activity />, color: '#3B82F6' },
+        { text: 'Enhanced Security – protect against evolving threats', icon: <Shield />, color: '#10B981' },
+        { text: 'Integration Capabilities – seamless tool integration', icon: <GitBranch />, color: '#3B82F6' },
+        { text: 'Rapid Development – DevOps and Agile methodologies', icon: <Code />, color: '#10B981' },
     ];
 
     // ============ INDUSTRIES ============
@@ -232,7 +232,7 @@ export default function ModernizationPage() {
             image: 'https://images.unsplash.com/photo-1598128558393-70ff21433be0?auto=format&fit=crop&w=800&q=80',
             color: '#3b82f6'
         },
-        
+
     ];
 
     // ============ COMPANY STATS ============
@@ -383,46 +383,46 @@ export default function ModernizationPage() {
             </section>
 
             {/* ===== APPROACH SECTION ===== */}
-<section className={styles.approachSection}>
-    <div className={styles.container}>
-        <div className={styles.approachGrid}>
-            {/* Left Column - Concerns */}
-            <div className={styles.concernsCol}>
-                <h3 className={styles.approachTitle}>Common Concerns</h3>
-                <ul className={styles.concernsList}>
-                    {commonConcerns.map((item, idx) => (
-                        <li key={idx}>
-                            <span className={styles.concernDot}></span>
-                            {item}
-                        </li>
-                    ))}
-                </ul>
-            </div>
+            <section className={styles.approachSection}>
+                <div className={styles.container}>
+                    <div className={styles.approachGrid}>
+                        {/* Left Column - Concerns */}
+                        <div className={styles.concernsCol}>
+                            <h3 className={styles.approachTitle}>Common Concerns</h3>
+                            <ul className={styles.concernsList}>
+                                {commonConcerns.map((item, idx) => (
+                                    <li key={idx}>
+                                        <span className={styles.concernDot}></span>
+                                        {item}
+                                    </li>
+                                ))}
+                            </ul>
+                        </div>
 
-            {/* Right Column - Solutions */}
-            <div className={styles.solutionsCol}>
-                <h3 className={styles.approachTitle}>BBMcoders Has You Covered</h3>
-                <div className={styles.solutionsList}>
-                    {bbmCodersSolutions.map((item, idx) => (
-                        <motion.div
-                            key={idx}
-                            className={styles.solutionItem}
-                            initial={{ opacity: 0, x: -10 }}
-                            whileInView={{ opacity: 1, x: 0 }}
-                            transition={{ duration: 0.3, delay: idx * 0.05 }}
-                            viewport={{ once: true }}
-                        >
-                            <div className={styles.solutionItemIcon} style={{ color: item.color }}>
-                                {item.icon}
+                        {/* Right Column - Solutions */}
+                        <div className={styles.solutionsCol}>
+                            <h3 className={styles.approachTitle}>BBMcoders Has You Covered</h3>
+                            <div className={styles.solutionsList}>
+                                {bbmCodersSolutions.map((item, idx) => (
+                                    <motion.div
+                                        key={idx}
+                                        className={styles.solutionItem}
+                                        initial={{ opacity: 0, x: -10 }}
+                                        whileInView={{ opacity: 1, x: 0 }}
+                                        transition={{ duration: 0.3, delay: idx * 0.05 }}
+                                        viewport={{ once: true }}
+                                    >
+                                        <div className={styles.solutionItemIcon} style={{ color: item.color }}>
+                                            {item.icon}
+                                        </div>
+                                        <span>{item.text}</span>
+                                    </motion.div>
+                                ))}
                             </div>
-                            <span>{item.text}</span>
-                        </motion.div>
-                    ))}
+                        </div>
+                    </div>
                 </div>
-            </div>
-        </div>
-    </div>
-         </section>
+            </section>
 
             {/* ===== WHY PARTNER WITH US SECTION ===== */}
             <section className={styles.whyPartnerSection}>
@@ -574,89 +574,89 @@ export default function ModernizationPage() {
             </section>
 
             {/* ===== UNDERSTANDING SECTION ===== */}
-<section className={styles.understandingSection}>
-    <div className={styles.container}>
-        <div className={styles.sectionHeader}>
-            <h2 className={styles.sectionTitle}>
-                Understanding Application <span className={styles.titleHighlight}>Migration and Modernization</span>
-            </h2>
-        </div>
+            <section className={styles.understandingSection}>
+                <div className={styles.container}>
+                    <div className={styles.sectionHeader}>
+                        <h2 className={styles.sectionTitle}>
+                            Understanding Application <span className={styles.titleHighlight}>Migration and Modernization</span>
+                        </h2>
+                    </div>
 
-        {/* Migration vs Modernization */}
-        <div className={styles.comparisonGrid}>
-            <div className={styles.comparisonCard}>
-                <h3 className={styles.comparisonTitle} style={{ color: 'var(--primary-blue)', borderBottomColor: 'var(--primary-blue)' }}>
-                    Application Migration
-                </h3>
-                <ul className={styles.comparisonList}>
-                    {migrationVsModernization.migration.map((item, idx) => (
-                        <li key={idx}>
-                            <ArrowRight size={14} style={{ color: 'var(--primary-blue)' }} />
-                            <span>{item}</span>
-                        </li>
-                    ))}
-                </ul>
-            </div>
-            <div className={styles.comparisonCard}>
-                <h3 className={styles.comparisonTitle} style={{ color: 'var(--primary-green)', borderBottomColor: 'var(--primary-green)' }}>
-                    Application Modernization
-                </h3>
-                <ul className={styles.comparisonList}>
-                    {migrationVsModernization.modernization.map((item, idx) => (
-                        <li key={idx}>
-                            <ArrowRight size={14} style={{ color: 'var(--primary-green)' }} />
-                            <span>{item}</span>
-                        </li>
-                    ))}
-                </ul>
-            </div>
-        </div>
-
-        {/* Types of Migration */}
-<div className={styles.migrationTypesSection}>
-    <h3 className={styles.migrationTypesTitle}>Types of <span className={styles.titleHighlight} >Application Migration</span></h3>
-    <div className={styles.migrationTypesGrid}>
-        {migrationTypes.map((type, index) => (
-            <motion.div
-                key={index}
-                className={styles.migrationTypeCard}
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.4, delay: index * 0.05 }}
-                viewport={{ once: true }}
-            >
-                <h4>{type.title}</h4>
-                <p>{type.desc}</p>
-            </motion.div>
-        ))}
-    </div>
-</div>
-
-        {/* Modernization Benefits */}
-        <div>
-            <h3 className={styles.modernizationBenefitsTitle}>
-                How Modernization Anticipates <span className={styles.titleHighlight}>Customer Needs</span>
-            </h3>
-            <div className={styles.modernizationBenefitsGrid}>
-                {modernizationBenefits.map((item, index) => (
-                    <motion.div
-                        key={index}
-                        className={styles.modernizationBenefitCard}
-                        initial={{ opacity: 0, y: 20 }}
-                        whileInView={{ opacity: 1, y: 0 }}
-                        transition={{ duration: 0.4, delay: index * 0.02 }}
-                        viewport={{ once: true }}
-                    >
-                        <div className={styles.modernizationBenefitIcon} style={{ color: item.color }}>
-                            {item.icon}
+                    {/* Migration vs Modernization */}
+                    <div className={styles.comparisonGrid}>
+                        <div className={styles.comparisonCard}>
+                            <h3 className={styles.comparisonTitle} style={{ color: 'var(--primary-blue)', borderBottomColor: 'var(--primary-blue)' }}>
+                                Application Migration
+                            </h3>
+                            <ul className={styles.comparisonList}>
+                                {migrationVsModernization.migration.map((item, idx) => (
+                                    <li key={idx}>
+                                        <ArrowRight size={14} style={{ color: 'var(--primary-blue)' }} />
+                                        <span>{item}</span>
+                                    </li>
+                                ))}
+                            </ul>
                         </div>
-                        <span>{item.text}</span>
-                    </motion.div>
-                ))}
-            </div>
-        </div>
-    </div>
-         </section>
+                        <div className={styles.comparisonCard}>
+                            <h3 className={styles.comparisonTitle} style={{ color: 'var(--primary-green)', borderBottomColor: 'var(--primary-green)' }}>
+                                Application Modernization
+                            </h3>
+                            <ul className={styles.comparisonList}>
+                                {migrationVsModernization.modernization.map((item, idx) => (
+                                    <li key={idx}>
+                                        <ArrowRight size={14} style={{ color: 'var(--primary-green)' }} />
+                                        <span>{item}</span>
+                                    </li>
+                                ))}
+                            </ul>
+                        </div>
+                    </div>
+
+                    {/* Types of Migration */}
+                    <div className={styles.migrationTypesSection}>
+                        <h3 className={styles.migrationTypesTitle}>Types of <span className={styles.titleHighlight} >Application Migration</span></h3>
+                        <div className={styles.migrationTypesGrid}>
+                            {migrationTypes.map((type, index) => (
+                                <motion.div
+                                    key={index}
+                                    className={styles.migrationTypeCard}
+                                    initial={{ opacity: 0, y: 20 }}
+                                    whileInView={{ opacity: 1, y: 0 }}
+                                    transition={{ duration: 0.4, delay: index * 0.05 }}
+                                    viewport={{ once: true }}
+                                >
+                                    <h4>{type.title}</h4>
+                                    <p>{type.desc}</p>
+                                </motion.div>
+                            ))}
+                        </div>
+                    </div>
+
+                    {/* Modernization Benefits */}
+                    <div>
+                        <h3 className={styles.modernizationBenefitsTitle}>
+                            How Modernization Anticipates <span className={styles.titleHighlight}>Customer Needs</span>
+                        </h3>
+                        <div className={styles.modernizationBenefitsGrid}>
+                            {modernizationBenefits.map((item, index) => (
+                                <motion.div
+                                    key={index}
+                                    className={styles.modernizationBenefitCard}
+                                    initial={{ opacity: 0, y: 20 }}
+                                    whileInView={{ opacity: 1, y: 0 }}
+                                    transition={{ duration: 0.4, delay: index * 0.02 }}
+                                    viewport={{ once: true }}
+                                >
+                                    <div className={styles.modernizationBenefitIcon} style={{ color: item.color }}>
+                                        {item.icon}
+                                    </div>
+                                    <span>{item.text}</span>
+                                </motion.div>
+                            ))}
+                        </div>
+                    </div>
+                </div>
+            </section>
             {/* ===== FINAL CTA ===== */}
             <section className={styles.ctaSection}>
                 <div className={styles.container}>

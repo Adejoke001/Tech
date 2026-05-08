@@ -51,177 +51,177 @@ export default function AIAutomationConsultingPage() {
   };
 
   const aiServices = [
-  {
-    id: 1,
-    title: "AI Strategy Development",
-    description:
-      "Helps businesses define clear AI goals, roadmap, and strategies aligned with business objectives.",
-    icon: <Target className={styles.serviceIcon} />,
-    color: "#3b82f6", // Blue
-    features: [
-      "Tailored AI Adoption Roadmap",
-      "Business-Driven AI Initiatives",
-      "Future-Ready Innovation Planning",
-    ],
-    detailedFeatures: [
-      "Comprehensive AI maturity assessment",
-      "Business case development with ROI projections",
-      "Technology stack recommendations",
-      "Implementation roadmap with milestones",
-    ],
-  },
-  {
-    id: 2,
-    title: "AI Integration",
-    description:
-      "Seamlessly embeds AI solutions into existing systems for enhanced efficiency and scalability.",
-    icon: <GitMerge className={styles.serviceIcon} />,
-    color: "#3b82f6", 
-    features: [
-      "Smooth AI System Deployment",
-      "Integration with Legacy Software",
-      "Process Automation and Optimization",
-    ],
-    detailedFeatures: [
-      "Legacy system integration and modernization",
-      "Custom API development and management",
-      "Real-time data pipeline setup",
-      "Cloud migration and optimization",
-    ],
-  },
-  {
-    id: 3,
-    title: "AI Solution Development",
-    description:
-      "Custom AI-powered solutions designed to solve industry-specific business challenges effectively.",
-    icon: <Cpu className={styles.serviceIcon} />,
-    color: "#3b82f6", // Blue
-    features: [
-      "End-to-End AI Applications",
-      "Industry-Specific AI Models",
-      "Scalable, Reliable AI Solutions",
-    ],
-    detailedFeatures: [
-      "Custom AI model development and training",
-      "End-to-end ML pipeline architecture",
-      "Model performance optimization and tuning",
-      "Scalable deployment strategies",
-    ],
-  },
-  {
-    id: 4,
-    title: "Generative AI Consulting",
-    description:
-      "Guides businesses in leveraging Generative AI for automation, content creation, and productivity.",
-    icon: <Brain className={styles.serviceIcon} />,
-    color: "#3b82f6", // Green
-    features: [
-      "Use-case Identification",
-      "Generative AI Implementation",
-      "Creative AI-Driven Solutions",
-    ],
-    detailedFeatures: [
-      "Generative AI use-case identification",
-      "LLM implementation and fine-tuning",
-      "Content automation and generation",
-      "Workflow optimization with AI",
-    ],
-  },
-  {
-    id: 5,
-    title: "Data Engineering & Management",
-    description:
-      "Builds strong data pipelines and frameworks for AI readiness and informed decision-making.",
-    icon: <Database className={styles.serviceIcon} />,
-    color: "#3b82f6", // Blue
-    features: [
-      "Data Cleaning & Processing",
-      "Scalable Data Architecture",
-      "Real-time Data Pipelines",
-    ],
-    detailedFeatures: [
-      "Scalable data pipeline architecture",
-      "Data quality assessment and management",
-      "Real-time analytics implementation",
-      "Data governance and compliance",
-    ],
-  },
-  {
-    id: 6,
-    title: "AI Ethics and Governance",
-    description:
-      "Ensures responsible AI practices with compliance, transparency, and ethical implementation frameworks.",
-    icon: <Shield className={styles.serviceIcon} />,
-    color: "#3b82f6", // Green
-    features: [
-      "AI Risk Assessment",
-      "Bias Detection & Mitigation",
-      "Ethical AI Compliance",
-    ],
-    detailedFeatures: [
-      "AI bias detection and mitigation",
-      "Regulatory compliance framework",
-      "Transparency and explainability protocols",
-      "Comprehensive risk assessment",
-    ],
-  },
-];
+    {
+      id: 1,
+      title: "AI Strategy Development",
+      description:
+        "Helps businesses define clear AI goals, roadmap, and strategies aligned with business objectives.",
+      icon: <Target className={styles.serviceIcon} />,
+      color: "#3b82f6", // Blue
+      features: [
+        "Tailored AI Adoption Roadmap",
+        "Business-Driven AI Initiatives",
+        "Future-Ready Innovation Planning",
+      ],
+      detailedFeatures: [
+        "Comprehensive AI maturity assessment",
+        "Business case development with ROI projections",
+        "Technology stack recommendations",
+        "Implementation roadmap with milestones",
+      ],
+    },
+    {
+      id: 2,
+      title: "AI Integration",
+      description:
+        "Seamlessly embeds AI solutions into existing systems for enhanced efficiency and scalability.",
+      icon: <GitMerge className={styles.serviceIcon} />,
+      color: "#3b82f6",
+      features: [
+        "Smooth AI System Deployment",
+        "Integration with Legacy Software",
+        "Process Automation and Optimization",
+      ],
+      detailedFeatures: [
+        "Legacy system integration and modernization",
+        "Custom API development and management",
+        "Real-time data pipeline setup",
+        "Cloud migration and optimization",
+      ],
+    },
+    {
+      id: 3,
+      title: "AI Solution Development",
+      description:
+        "Custom AI-powered solutions designed to solve industry-specific business challenges effectively.",
+      icon: <Cpu className={styles.serviceIcon} />,
+      color: "#3b82f6", // Blue
+      features: [
+        "End-to-End AI Applications",
+        "Industry-Specific AI Models",
+        "Scalable, Reliable AI Solutions",
+      ],
+      detailedFeatures: [
+        "Custom AI model development and training",
+        "End-to-end ML pipeline architecture",
+        "Model performance optimization and tuning",
+        "Scalable deployment strategies",
+      ],
+    },
+    {
+      id: 4,
+      title: "Generative AI Consulting",
+      description:
+        "Guides businesses in leveraging Generative AI for automation, content creation, and productivity.",
+      icon: <Brain className={styles.serviceIcon} />,
+      color: "#3b82f6", // Green
+      features: [
+        "Use-case Identification",
+        "Generative AI Implementation",
+        "Creative AI-Driven Solutions",
+      ],
+      detailedFeatures: [
+        "Generative AI use-case identification",
+        "LLM implementation and fine-tuning",
+        "Content automation and generation",
+        "Workflow optimization with AI",
+      ],
+    },
+    {
+      id: 5,
+      title: "Data Engineering & Management",
+      description:
+        "Builds strong data pipelines and frameworks for AI readiness and informed decision-making.",
+      icon: <Database className={styles.serviceIcon} />,
+      color: "#3b82f6", // Blue
+      features: [
+        "Data Cleaning & Processing",
+        "Scalable Data Architecture",
+        "Real-time Data Pipelines",
+      ],
+      detailedFeatures: [
+        "Scalable data pipeline architecture",
+        "Data quality assessment and management",
+        "Real-time analytics implementation",
+        "Data governance and compliance",
+      ],
+    },
+    {
+      id: 6,
+      title: "AI Ethics and Governance",
+      description:
+        "Ensures responsible AI practices with compliance, transparency, and ethical implementation frameworks.",
+      icon: <Shield className={styles.serviceIcon} />,
+      color: "#3b82f6", // Green
+      features: [
+        "AI Risk Assessment",
+        "Bias Detection & Mitigation",
+        "Ethical AI Compliance",
+      ],
+      detailedFeatures: [
+        "AI bias detection and mitigation",
+        "Regulatory compliance framework",
+        "Transparency and explainability protocols",
+        "Comprehensive risk assessment",
+      ],
+    },
+  ];
 
   const strategicBenefits = [
-  {
-    id: 1,
-    title: "Faster Implementation",
-    description:
-      "Accelerate AI adoption with expert guidance and streamlined deployment processes.",
-    icon: <Zap className={styles.benefitIcon} />,
-    color: "#10b981", // Blue
-    bgColor: "rgba(16, 185, 129, 0.1)",
-  },
-  {
-    id: 2,
-    title: "High ROI Potential",
-    description:
-      "Maximize returns with data-driven AI strategies tailored to your business objectives.",
-    icon: <TrendingUp className={styles.benefitIcon} />,
-    color: "#10b981", // Green
-    bgColor: "rgba(16, 185, 129, 0.1)",
-  },
-  {
-    id: 3,
-    title: "Technology Neutral",
-    description:
-      "Objective recommendations focused on your needs, not vendor preferences.",
-    icon: <Target className={styles.benefitIcon} />,
-    color: "#10b981", // Blue
-    bgColor: "rgba(16, 185, 129, 0.1)",
-  },
-  {
-    id: 4,
-    title: "Predictable Budgeting",
-    description:
-      "Transparent pricing and fixed-cost models to prevent cost overruns.",
-    icon: <Shield className={styles.benefitIcon} />,
-    color: "#10b981", // Green
-    bgColor: "rgba(16, 185, 129, 0.1)",
-  },
-  {
-    id: 5,
-    title: "Round-the-clock Support",
-    description: "24/7 assistance from top AI consultants and engineers.",
-    icon: <Clock className={styles.benefitIcon} />,
-    color: "#10b981", // Blue
-    bgColor: "rgba(16, 185, 129, 0.1)",
-  },
-  {
-    id: 6,
-    title: "Proven Client Satisfaction",
-    description:
-      "Track record of delivering exceptional AI consulting services.",
-    icon: <Users className={styles.benefitIcon} />,
-    color: "#10b981", // Green
-    bgColor: "rgba(16, 185, 129, 0.1)",
-  },
-];
+    {
+      id: 1,
+      title: "Faster Implementation",
+      description:
+        "Accelerate AI adoption with expert guidance and streamlined deployment processes.",
+      icon: <Zap className={styles.benefitIcon} />,
+      color: "#10b981", // Blue
+      bgColor: "rgba(16, 185, 129, 0.1)",
+    },
+    {
+      id: 2,
+      title: "High ROI Potential",
+      description:
+        "Maximize returns with data-driven AI strategies tailored to your business objectives.",
+      icon: <TrendingUp className={styles.benefitIcon} />,
+      color: "#10b981", // Green
+      bgColor: "rgba(16, 185, 129, 0.1)",
+    },
+    {
+      id: 3,
+      title: "Technology Neutral",
+      description:
+        "Objective recommendations focused on your needs, not vendor preferences.",
+      icon: <Target className={styles.benefitIcon} />,
+      color: "#10b981", // Blue
+      bgColor: "rgba(16, 185, 129, 0.1)",
+    },
+    {
+      id: 4,
+      title: "Predictable Budgeting",
+      description:
+        "Transparent pricing and fixed-cost models to prevent cost overruns.",
+      icon: <Shield className={styles.benefitIcon} />,
+      color: "#10b981", // Green
+      bgColor: "rgba(16, 185, 129, 0.1)",
+    },
+    {
+      id: 5,
+      title: "Round-the-clock Support",
+      description: "24/7 assistance from top AI consultants and engineers.",
+      icon: <Clock className={styles.benefitIcon} />,
+      color: "#10b981", // Blue
+      bgColor: "rgba(16, 185, 129, 0.1)",
+    },
+    {
+      id: 6,
+      title: "Proven Client Satisfaction",
+      description:
+        "Track record of delivering exceptional AI consulting services.",
+      icon: <Users className={styles.benefitIcon} />,
+      color: "#10b981", // Green
+      bgColor: "rgba(16, 185, 129, 0.1)",
+    },
+  ];
 
   const aiTechnologies = [
     {
@@ -385,162 +385,162 @@ export default function AIAutomationConsultingPage() {
   ];
 
   const whyChooseUs = [
-  {
-    id: 1,
-    title: "Nigeria's Top 10% AI Talent",
-    description:
-      "Access elite AI consultants with proven expertise in cutting-edge technologies.",
-    icon: <Award className={styles.chooseIcon} />,
-    color: "#3b82f6", // Blue
-  },
-  {
-    id: 2,
-    title: "Trusted by Startups to Fortune 500",
-    description:
-      "Proven track record with businesses of all sizes across diverse industries.",
-    icon: <Users className={styles.chooseIcon} />,
-    color: "#10b981", // Green
-  },
-  {
-    id: 3,
-    title: "End-to-End AI Solutions",
-    description:
-      "From strategy to deployment, we handle all aspects of AI implementation.",
-    icon: <Workflow className={styles.chooseIcon} />,
-    color: "#3b82f6", // Blue
-  },
-  {
-    id: 4,
-    title: "Time-Zone Friendly Global Presence",
-    description:
-      "Seamless collaboration across time zones with our distributed expert teams.",
-    icon: <Globe className={styles.chooseIcon} />,
-    color: "#10b981", // Green
-  },
-  {
-    id: 5,
-    title: "Top-tier Data Security Protocols",
-    description:
-      "Enterprise-grade security measures to protect your sensitive information.",
-    icon: <Lock className={styles.chooseIcon} />,
-    color: "#3b82f6", // Blue
-  },
-  {
-    id: 6,
-    title: "On-time Delivery, No Surprises",
-    description:
-      "Reliable project timelines with transparent communication throughout.",
-    icon: <CheckCircle className={styles.chooseIcon} />,
-    color: "#10b981", // Green
-  },
-];
+    {
+      id: 1,
+      title: "Nigeria's Top 10% AI Talent",
+      description:
+        "Access elite AI consultants with proven expertise in cutting-edge technologies.",
+      icon: <Award className={styles.chooseIcon} />,
+      color: "#3b82f6", // Blue
+    },
+    {
+      id: 2,
+      title: "Trusted by Startups to Fortune 500",
+      description:
+        "Proven track record with businesses of all sizes across diverse industries.",
+      icon: <Users className={styles.chooseIcon} />,
+      color: "#10b981", // Green
+    },
+    {
+      id: 3,
+      title: "End-to-End AI Solutions",
+      description:
+        "From strategy to deployment, we handle all aspects of AI implementation.",
+      icon: <Workflow className={styles.chooseIcon} />,
+      color: "#3b82f6", // Blue
+    },
+    {
+      id: 4,
+      title: "Time-Zone Friendly Global Presence",
+      description:
+        "Seamless collaboration across time zones with our distributed expert teams.",
+      icon: <Globe className={styles.chooseIcon} />,
+      color: "#10b981", // Green
+    },
+    {
+      id: 5,
+      title: "Top-tier Data Security Protocols",
+      description:
+        "Enterprise-grade security measures to protect your sensitive information.",
+      icon: <Lock className={styles.chooseIcon} />,
+      color: "#3b82f6", // Blue
+    },
+    {
+      id: 6,
+      title: "On-time Delivery, No Surprises",
+      description:
+        "Reliable project timelines with transparent communication throughout.",
+      icon: <CheckCircle className={styles.chooseIcon} />,
+      color: "#10b981", // Green
+    },
+  ];
 
   const industries = [
-  {
-    id: 1,
-    name: "Healthcare",
-    description:
-      "Building smart healthcare solutions with AI-powered diagnostics, predictive analytics, and patient care optimization.",
-    icon: "🏥",
-    color: "#10b981", // Green
-    image:
-      "https://images.unsplash.com/photo-1551601651-2a8555f1a136?auto=format&fit=crop&w=800&q=80",
-    solutions: [
-      "AI Diagnostics",
-      "Predictive Analytics",
-      "Patient Care Optimization",
-      "Drug Discovery",
-    ],
-    link: "/industries/industries-health",
-  },
-  {
-    id: 2,
-    name: "Retail & eCommerce",
-    description:
-      "Enhancing retail journeys with demand forecasting, personalized recommendations, inventory optimization.",
-    icon: "🛍️",
-    color: "#3b82f6", // Blue
-    image:
-      "https://images.unsplash.com/photo-1441986300917-64674bd600d8?auto=format&fit=crop&w=800&q=80",
-    solutions: [
-      "Demand Forecasting",
-      "Personalized Recommendations",
-      "Inventory Optimization",
-      "Customer Analytics",
-    ],
-    link: "/industries/industries-ecommerce",
-  },
-  {
-    id: 3,
-    name: "Media & Entertainment",
-    description:
-      "Custom tech to empower brands with content personalization, recommendation engines, and audience analytics.",
-    icon: "🎬",
-    color: "#10b981", // Green
-    image:
-      "https://images.unsplash.com/photo-1573152143286-0c422b4d2175?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8bWVkaWF8ZW58MHx8MHx8fDA%3D",
-    solutions: [
-      "Content Personalization",
-      "Recommendation Engines",
-      "Audience Analytics",
-      "Content Generation",
-    ],
-    link: "/industries/industries-media",
-  },
-];
+    {
+      id: 1,
+      name: "Healthcare",
+      description:
+        "Building smart healthcare solutions with AI-powered diagnostics, predictive analytics, and patient care optimization.",
+      icon: "🏥",
+      color: "#10b981", // Green
+      image:
+        "https://images.unsplash.com/photo-1551601651-2a8555f1a136?auto=format&fit=crop&w=800&q=80",
+      solutions: [
+        "AI Diagnostics",
+        "Predictive Analytics",
+        "Patient Care Optimization",
+        "Drug Discovery",
+      ],
+      link: "/industries/industries-health",
+    },
+    {
+      id: 2,
+      name: "Retail & eCommerce",
+      description:
+        "Enhancing retail journeys with demand forecasting, personalized recommendations, inventory optimization.",
+      icon: "🛍️",
+      color: "#3b82f6", // Blue
+      image:
+        "https://images.unsplash.com/photo-1441986300917-64674bd600d8?auto=format&fit=crop&w=800&q=80",
+      solutions: [
+        "Demand Forecasting",
+        "Personalized Recommendations",
+        "Inventory Optimization",
+        "Customer Analytics",
+      ],
+      link: "/industries/industries-ecommerce",
+    },
+    {
+      id: 3,
+      name: "Media & Entertainment",
+      description:
+        "Custom tech to empower brands with content personalization, recommendation engines, and audience analytics.",
+      icon: "🎬",
+      color: "#10b981", // Green
+      image:
+        "https://images.unsplash.com/photo-1573152143286-0c422b4d2175?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8bWVkaWF8ZW58MHx8MHx8fDA%3D",
+      solutions: [
+        "Content Personalization",
+        "Recommendation Engines",
+        "Audience Analytics",
+        "Content Generation",
+      ],
+      link: "/industries/industries-media",
+    },
+  ];
 
 
   const hiringModels = [
-  {
-    id: 1,
-    title: "Fixed Price Model",
-    description:
-      "Ideal for well-defined projects with clear requirements and deliverables.",
-    color: "#10b981", // Green
-    features: [
-      "Defined scope and timeline",
-      "Fixed budget",
-      "Predictable costs",
-      "Lower management overhead",
-    ],
-    price: "$15K - $100K",
-    bestFor: ["MVP Development", "Pilot Projects", "Specific Features"],
-  },
-  {
-    id: 2,
-    title: "Dedicated Team Model",
-    description:
-      "Perfect for long-term projects requiring dedicated resources and flexibility.",
-    color: "#3b82f6", // Blue
-    features: [
-      "Dedicated AI experts",
-      "Flexible scaling",
-      "Agile methodology",
-      "Direct communication",
-    ],
-    price: "$8K - $25K/month",
-    bestFor: [
-      "Enterprise Solutions",
-      "Ongoing Development",
-      "Complex Projects",
-    ],
-  },
-  {
-    id: 3,
-    title: "Time & Material Model",
-    description:
-      "Suitable for evolving projects where requirements may change during development.",
-    color: "#10b981", // Green
-    features: [
-      "Pay for actual work",
-      "Flexible requirements",
-      "Transparent billing",
-      "Easy scaling",
-    ],
-    price: "$50 - $150/hour",
-    bestFor: ["Research Projects", "Prototyping", "Evolving Requirements"],
-  },
-];
+    {
+      id: 1,
+      title: "Fixed Price Model",
+      description:
+        "Ideal for well-defined projects with clear requirements and deliverables.",
+      color: "#10b981", // Green
+      features: [
+        "Defined scope and timeline",
+        "Fixed budget",
+        "Predictable costs",
+        "Lower management overhead",
+      ],
+      price: "$15K - $100K",
+      bestFor: ["MVP Development", "Pilot Projects", "Specific Features"],
+    },
+    {
+      id: 2,
+      title: "Dedicated Team Model",
+      description:
+        "Perfect for long-term projects requiring dedicated resources and flexibility.",
+      color: "#3b82f6", // Blue
+      features: [
+        "Dedicated AI experts",
+        "Flexible scaling",
+        "Agile methodology",
+        "Direct communication",
+      ],
+      price: "$8K - $25K/month",
+      bestFor: [
+        "Enterprise Solutions",
+        "Ongoing Development",
+        "Complex Projects",
+      ],
+    },
+    {
+      id: 3,
+      title: "Time & Material Model",
+      description:
+        "Suitable for evolving projects where requirements may change during development.",
+      color: "#10b981", // Green
+      features: [
+        "Pay for actual work",
+        "Flexible requirements",
+        "Transparent billing",
+        "Easy scaling",
+      ],
+      price: "$50 - $150/hour",
+      bestFor: ["Research Projects", "Prototyping", "Evolving Requirements"],
+    },
+  ];
 
   const companyStats = [
     { value: "700+", label: "AI Experts", icon: <Users /> },
@@ -733,88 +733,88 @@ export default function AIAutomationConsultingPage() {
         </div>
       </section>
 
-     {/* Main AI Services - No Background Images */}
-<section className={styles.servicesSection}>
-  <div className={styles.sectionHeader}>
-    <h2 className={styles.sectionTitle}>
-      Our <span className={styles.titleHighlight}>AI Consulting</span>{" "}
-      Services
-    </h2>
-    <p className={styles.sectionDescription}>
-      As Nigeria&apos;s leading AI consulting company, we combine deep
-      expertise with innovative strategies to deliver tailored AI
-      solutions for your business challenges.
-    </p>
-  </div>
-
-  <div className={styles.servicesGrid}>
-    {aiServices.map((service) => (
-      <motion.div
-        key={service.id}
-        className={styles.serviceCard}
-        initial={{ opacity: 0, y: 20 }}
-        whileInView={{ opacity: 1, y: 0 }}
-        viewport={{ once: true }}
-        transition={{ duration: 0.5 }}
-        onMouseEnter={() => setHoveredService(service.id)}
-        onMouseLeave={() => setHoveredService(null)}
-        style={{ "--service-color": service.color } as React.CSSProperties}
-      >
-        <div className={styles.serviceCardContent}>
-          <div
-            className={styles.serviceIconWrapper}
-            style={{ backgroundColor: service.color }}
-          >
-            {service.icon}
-          </div>
-
-          <h3 className={styles.serviceTitle}>{service.title}</h3>
-          <p className={styles.serviceDescription}>{service.description}</p>
-
-          <div className={styles.serviceFeatures}>
-            {service.features.map((feat, idx) => (
-              <span
-                key={idx}
-                className={styles.featureTag}
-                style={{
-                  backgroundColor: `${service.color}15`,
-                  color: service.color,
-                  border: `1px solid ${service.color}30`,
-                }}
-              >
-                {feat}
-              </span>
-            ))}
-          </div>
-
-          <AnimatePresence>
-            {hoveredService === service.id && (
-              <motion.div
-                className={styles.serviceDetails}
-                initial={{ opacity: 0, height: 0 }}
-                animate={{ opacity: 1, height: "auto" }}
-                exit={{ opacity: 0, height: 0 }}
-                transition={{ duration: 0.3 }}
-              >
-                <ul className={styles.detailedFeatures}>
-                  {service.detailedFeatures.map((detail, idx) => (
-                    <li key={idx} className={styles.detailedFeature}>
-                      <CheckCircle
-                        className={styles.detailIcon}
-                        style={{ color: service.color }}
-                      />
-                      <span>{detail}</span>
-                    </li>
-                  ))}
-                </ul>
-              </motion.div>
-            )}
-          </AnimatePresence>
+      {/* Main AI Services - No Background Images */}
+      <section className={styles.servicesSection}>
+        <div className={styles.sectionHeader}>
+          <h2 className={styles.sectionTitle}>
+            Our <span className={styles.titleHighlight}>AI Consulting</span>{" "}
+            Services
+          </h2>
+          <p className={styles.sectionDescription}>
+            As Nigeria&apos;s leading AI consulting company, we combine deep
+            expertise with innovative strategies to deliver tailored AI
+            solutions for your business challenges.
+          </p>
         </div>
-      </motion.div>
-    ))}
-  </div>
-</section>
+
+        <div className={styles.servicesGrid}>
+          {aiServices.map((service) => (
+            <motion.div
+              key={service.id}
+              className={styles.serviceCard}
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.5 }}
+              onMouseEnter={() => setHoveredService(service.id)}
+              onMouseLeave={() => setHoveredService(null)}
+              style={{ "--service-color": service.color } as React.CSSProperties}
+            >
+              <div className={styles.serviceCardContent}>
+                <div
+                  className={styles.serviceIconWrapper}
+                  style={{ backgroundColor: service.color }}
+                >
+                  {service.icon}
+                </div>
+
+                <h3 className={styles.serviceTitle}>{service.title}</h3>
+                <p className={styles.serviceDescription}>{service.description}</p>
+
+                <div className={styles.serviceFeatures}>
+                  {service.features.map((feat, idx) => (
+                    <span
+                      key={idx}
+                      className={styles.featureTag}
+                      style={{
+                        backgroundColor: `${service.color}15`,
+                        color: service.color,
+                        border: `1px solid ${service.color}30`,
+                      }}
+                    >
+                      {feat}
+                    </span>
+                  ))}
+                </div>
+
+                <AnimatePresence>
+                  {hoveredService === service.id && (
+                    <motion.div
+                      className={styles.serviceDetails}
+                      initial={{ opacity: 0, height: 0 }}
+                      animate={{ opacity: 1, height: "auto" }}
+                      exit={{ opacity: 0, height: 0 }}
+                      transition={{ duration: 0.3 }}
+                    >
+                      <ul className={styles.detailedFeatures}>
+                        {service.detailedFeatures.map((detail, idx) => (
+                          <li key={idx} className={styles.detailedFeature}>
+                            <CheckCircle
+                              className={styles.detailIcon}
+                              style={{ color: service.color }}
+                            />
+                            <span>{detail}</span>
+                          </li>
+                        ))}
+                      </ul>
+                    </motion.div>
+                  )}
+                </AnimatePresence>
+              </div>
+            </motion.div>
+          ))}
+        </div>
+      </section>
 
       {/* AI Technologies Stack - Redesigned Section */}
       <section className={styles.technologiesSection}>

@@ -625,7 +625,7 @@ export default function MobileAppDevelopersPage() {
               </p>
             </motion.div>
 
-           
+
             <motion.div
               initial={{ opacity: 0, y: 10 }}
               animate={{ opacity: 1, y: 0 }}
@@ -636,7 +636,7 @@ export default function MobileAppDevelopersPage() {
                 Hire Developers Now
                 <ArrowRight className={styles.buttonIcon} />
               </Link>
-              
+
             </motion.div>
           </motion.div>
 
@@ -777,7 +777,7 @@ export default function MobileAppDevelopersPage() {
                     </li>
                   ))}
                 </ul>
-{/* 
+                {/* 
                 <Link
                   href={`/hire/mobile/${expertise.id}`}
                   className={styles.learnMoreLink}
@@ -816,7 +816,7 @@ export default function MobileAppDevelopersPage() {
                 borderColor:
                   activeTechTab === tabKey
                     ? technologyStack[tabKey as keyof typeof technologyStack]
-                        .color
+                      .color
                     : "transparent",
               }}
             >

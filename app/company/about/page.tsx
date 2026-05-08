@@ -51,7 +51,7 @@ export default function AboutPage() {
             name: 'Precious Uyomere k.',
             role: 'Computer Engineer',
             bio: 'Precious is an NSE-certified Computer Engineer with five years of experience building scalable systems, driving BBMcoders’ core engineering with precision and reliability.',
-            image: '/images/user.png', 
+            image: '/images/user.png',
         },
         {
             name: 'Adejoke Adejoke',
@@ -307,20 +307,21 @@ export default function AboutPage() {
                     </div>
                     <div className={styles.teamGrid}>
                         {teamMembers.map((member, index) => (
-                                <motion.div
-                                    className={styles.teamCard}
-                                    initial={{ opacity: 0, y: 20 }}
-                                    whileInView={{ opacity: 1, y: 0 }}
-                                    transition={{ duration: 0.4, delay: index * 0.05 }}
-                                    viewport={{ once: true }}
-                                >
-                                    <div className={styles.teamAvatar}>
-                                        <Image src={member.image} alt={member.name} width={120} height={120} className={styles.teamImage} />
-                                    </div>
-                                    <h3 className={styles.teamName}>{member.name}</h3>
-                                    <p className={styles.teamRole}>{member.role}</p>
-                                    <p className={styles.teamBio}>{member.bio}</p>
-                                </motion.div>
+                            <motion.div
+                                key={index}
+                                className={styles.teamCard}
+                                initial={{ opacity: 0, y: 20 }}
+                                whileInView={{ opacity: 1, y: 0 }}
+                                transition={{ duration: 0.4, delay: index * 0.05 }}
+                                viewport={{ once: true }}
+                            >
+                                <div className={styles.teamAvatar}>
+                                    <Image src={member.image} alt={member.name} width={120} height={120} className={styles.teamImage} />
+                                </div>
+                                <h3 className={styles.teamName}>{member.name}</h3>
+                                <p className={styles.teamRole}>{member.role}</p>
+                                <p className={styles.teamBio}>{member.bio}</p>
+                            </motion.div>
                         ))}
                     </div>
                 </div>

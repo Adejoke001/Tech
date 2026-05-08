@@ -32,70 +32,70 @@ export default function FullStackDevelopersPage() {
 
     // Full Stack Expertise Areas
     const fullStackExpertise = [
-    {
-        id: 1,
-        title: 'Full Stack Web Development',
-        description: 'Custom web solutions for startups, SMEs, and enterprises with end-to-end development capabilities. Our developers excel in building scalable, high-performance applications.',
-        icon: <Code2 className={styles.expertiseIcon} />,
-        color: '#10b981',
-        features: ['MEAN/MERN Stack Development', 'Laravel/PHP Applications', 'Java Spring Boot Solutions', 'Complete Web Architecture'],
-        details: 'End-to-end development from concept to deployment',
-        link: '/services/web-development',
-        
-    },
-    {
-        id: 2,
-        title: 'Front-end Development',
-        description: 'Expertise in modern front-end frameworks including React, Vue, Angular with focus on responsive design and user experience.',
-        icon: <Monitor className={styles.expertiseIcon} />,
-        color: '#10B981',
-        features: ['React/Vue/Angular Development', 'Responsive Web Design', 'UI/UX Implementation', 'Progressive Web Apps'],
-        details: 'Creating engaging user interfaces across devices',
-        link: '/services/frontend-development',
-        
-    },
-    {
-        id: 3,
-        title: 'Back-end Development',
-        description: 'Robust back-end development with microservices architecture, API development, and database optimization.',
-        icon: <Server className={styles.expertiseIcon} />,
-        color: '#10b981',
-        features: ['RESTful API Development', 'Database Design & Optimization', 'Server Architecture', 'Microservices Implementation'],
-        details: 'Building scalable and secure server-side solutions',
-        link: '/services/backend-development', 
-    },
-    {
-        id: 4,
-        title: 'MEAN & MERN Stack',
-        description: 'Full-stack JavaScript development using MongoDB, Express, Angular/React, and Node.js for modern web applications.',
-        icon: <Layers className={styles.expertiseIcon} />,
-        color: '#10b981',
-        features: ['MongoDB + Express.js', 'Angular/React.js Frontend', 'Node.js Backend', 'Real-time Applications'],
-        details: 'JavaScript-based full stack solutions',
-       
-    },
-    {
-        id: 5,
-        title: 'Support & Maintenance',
-        description: 'Comprehensive support and maintenance services ensuring your applications run smoothly and securely.',
-        icon: <ShieldCheck className={styles.expertiseIcon} />,
-        color: '#10b981',
-        features: ['24/7 Technical Support', 'Bug Fixes & Updates', 'Performance Optimization', 'Security Patches'],
-        details: 'Ongoing maintenance and support',
-        
-    },
-    {
-        id: 6,
-        title: 'Cloud Deployment & CI/CD',
-        description: 'Expert cloud deployment on AWS, Azure, GCP with automated CI/CD pipelines for seamless delivery.',
-        icon: <CloudLightning className={styles.expertiseIcon} />,
-        color: '#10b981',
-        features: ['AWS/Azure/GCP Deployment', 'Docker & Kubernetes', 'CI/CD Pipelines', 'DevOps Implementation'],
-        details: 'Cloud-native application deployment',
-        link: '/services/cloud-devops-services',
-        
-    }
-];
+        {
+            id: 1,
+            title: 'Full Stack Web Development',
+            description: 'Custom web solutions for startups, SMEs, and enterprises with end-to-end development capabilities. Our developers excel in building scalable, high-performance applications.',
+            icon: <Code2 className={styles.expertiseIcon} />,
+            color: '#10b981',
+            features: ['MEAN/MERN Stack Development', 'Laravel/PHP Applications', 'Java Spring Boot Solutions', 'Complete Web Architecture'],
+            details: 'End-to-end development from concept to deployment',
+            link: '/services/web-development',
+
+        },
+        {
+            id: 2,
+            title: 'Front-end Development',
+            description: 'Expertise in modern front-end frameworks including React, Vue, Angular with focus on responsive design and user experience.',
+            icon: <Monitor className={styles.expertiseIcon} />,
+            color: '#10B981',
+            features: ['React/Vue/Angular Development', 'Responsive Web Design', 'UI/UX Implementation', 'Progressive Web Apps'],
+            details: 'Creating engaging user interfaces across devices',
+            link: '/services/frontend-development',
+
+        },
+        {
+            id: 3,
+            title: 'Back-end Development',
+            description: 'Robust back-end development with microservices architecture, API development, and database optimization.',
+            icon: <Server className={styles.expertiseIcon} />,
+            color: '#10b981',
+            features: ['RESTful API Development', 'Database Design & Optimization', 'Server Architecture', 'Microservices Implementation'],
+            details: 'Building scalable and secure server-side solutions',
+            link: '/services/backend-development',
+        },
+        {
+            id: 4,
+            title: 'MEAN & MERN Stack',
+            description: 'Full-stack JavaScript development using MongoDB, Express, Angular/React, and Node.js for modern web applications.',
+            icon: <Layers className={styles.expertiseIcon} />,
+            color: '#10b981',
+            features: ['MongoDB + Express.js', 'Angular/React.js Frontend', 'Node.js Backend', 'Real-time Applications'],
+            details: 'JavaScript-based full stack solutions',
+
+        },
+        {
+            id: 5,
+            title: 'Support & Maintenance',
+            description: 'Comprehensive support and maintenance services ensuring your applications run smoothly and securely.',
+            icon: <ShieldCheck className={styles.expertiseIcon} />,
+            color: '#10b981',
+            features: ['24/7 Technical Support', 'Bug Fixes & Updates', 'Performance Optimization', 'Security Patches'],
+            details: 'Ongoing maintenance and support',
+
+        },
+        {
+            id: 6,
+            title: 'Cloud Deployment & CI/CD',
+            description: 'Expert cloud deployment on AWS, Azure, GCP with automated CI/CD pipelines for seamless delivery.',
+            icon: <CloudLightning className={styles.expertiseIcon} />,
+            color: '#10b981',
+            features: ['AWS/Azure/GCP Deployment', 'Docker & Kubernetes', 'CI/CD Pipelines', 'DevOps Implementation'],
+            details: 'Cloud-native application deployment',
+            link: '/services/cloud-devops-services',
+
+        }
+    ];
 
     // Technology Stack - 6 categories, ALL technologies displayed
     const technologyStack = {
@@ -654,7 +654,7 @@ export default function FullStackDevelopersPage() {
                             <h1 className={styles.mainTitle}>
                                 Hire Expert <span className={styles.highlight}>Full Stack Developers</span>
                             </h1>
-                            
+
                             <p className={styles.heroDescription}>
                                 Hire our expert full-stack developers proficient in MEAN stack, MERN framework, Laravel/PHP,
                                 and Java for seamless end-to-end development. Get complete web solutions with frontend and
@@ -795,11 +795,11 @@ export default function FullStackDevelopersPage() {
                                 </ul>
                             </div>
                             {expertise.link && (
-    <Link href={expertise.link} className={styles.learnMoreLink}>
-        Learn More
-        <ChevronRight className={styles.linkIcon} />
-    </Link>
-)}
+                                <Link href={expertise.link} className={styles.learnMoreLink}>
+                                    Learn More
+                                    <ChevronRight className={styles.linkIcon} />
+                                </Link>
+                            )}
                         </motion.div>
                     ))}
                 </div>
@@ -1343,7 +1343,7 @@ export default function FullStackDevelopersPage() {
                                 Hire Full-Stack Developers Now
                                 <ArrowRight className={styles.buttonIcon} />
                             </Link>
-                            
+
                             {/* <Link href="tel:+18001234567" className={styles.ctaTertiary}>
                                 <Phone size={16} />
                                 Call Us Now

@@ -323,7 +323,7 @@ export default function QualityAssurancePage() {
             >
               <Link href="/contact" className={styles.ctaButton}>
                 Get Free QA Assessment
-               
+
               </Link>
             </motion.div>
           </motion.div>
@@ -663,7 +663,7 @@ export default function QualityAssurancePage() {
           <div className={styles.ctaButtons}>
             <Link href="/contact" className={styles.ctaButton}>
               Start Free QA Assessment
-             
+
             </Link>
             {/* <Link href="/portfolio" className={styles.secondaryButton}>
               View Case Studies

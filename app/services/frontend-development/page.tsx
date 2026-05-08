@@ -6,7 +6,7 @@ import Link from 'next/link';
 import { motion, AnimatePresence } from 'framer-motion';
 import {
     Sparkles, ArrowRight, Award, MessageSquare, CheckCircle,
-    Users, Globe, Building2, Zap, Smartphone, Database, 
+    Users, Globe, Building2, Zap, Smartphone, Database,
     Code, RefreshCw, Target, Layers, TrendingUp, FileText,
     Figma, Cloud as CloudIcon, Gauge, RefreshCwIcon,
 } from 'lucide-react';
@@ -320,7 +320,7 @@ export default function FrontendPage() {
             image: 'https://images.unsplash.com/photo-1598128558393-70ff21433be0?auto=format&fit=crop&w=800&q=80',
             color: '#3b82f6'
         },
-        
+
     ];
 
     return (
@@ -348,7 +348,7 @@ export default function FrontendPage() {
                             <Sparkles size={16} /> Front-End Development Services
                         </div>
                         <h1 className={styles.heroTitle}>
-                         Front-End Development for <span className={styles.highlight}>Exceptional User Experiences</span>
+                            Front-End Development for <span className={styles.highlight}>Exceptional User Experiences</span>
                         </h1>
                         <p className={styles.heroSubtitle}>
                             Having challenges with your website or application&apos;s user experience? BBMcoders offers expert front-end development services, combining strong UI engineering with performance, accessibility, and long-term maintainability.
@@ -865,7 +865,7 @@ export default function FrontendPage() {
                             <Link href="/contact" className={styles.ctaPrimary}>
                                 Start Your Project <ArrowRight size={18} />
                             </Link>
-                            
+
                         </div>
                     </div>
                 </div>

@@ -48,7 +48,7 @@ export default function ProductDevelopment() {
   // const isStatsInView = useInView(statsRef, { once: true, amount: 0.3 });
 
   const { scrollYProgress } = useScroll();
- const heroOpacity = useTransform(scrollYProgress, [0, 0.3], [1, 0.7]);
+  const heroOpacity = useTransform(scrollYProgress, [0, 0.3], [1, 0.7]);
   // const heroScale = useTransform(scrollYProgress, [0, 0.2], [1, 1]);
 
   // Counter animation for stats
@@ -477,18 +477,18 @@ export default function ProductDevelopment() {
       link: "/industries/industries-education",
     },
     {
-  name: "Internet of Things (IoT)",
-  description: "Building secure, scalable IoT ecosystems that connect devices, process real‑time data, and enable smart automation across industries like manufacturing, healthcare, and smart cities.",
-  icon: "📡",
-  details: [
-    "IoT Platform Development",
-    "Device Management & Connectivity",
-    "Real‑time Data Analytics",
-    "Edge Computing Solutions",
-    "IoT Security & Compliance"
-  ],
-  link: "/industries/industries-iot"
-}
+      name: "Internet of Things (IoT)",
+      description: "Building secure, scalable IoT ecosystems that connect devices, process real‑time data, and enable smart automation across industries like manufacturing, healthcare, and smart cities.",
+      icon: "📡",
+      details: [
+        "IoT Platform Development",
+        "Device Management & Connectivity",
+        "Real‑time Data Analytics",
+        "Edge Computing Solutions",
+        "IoT Security & Compliance"
+      ],
+      link: "/industries/industries-iot"
+    }
   ];
 
   // FAQs with toggle functionality
@@ -532,9 +532,9 @@ export default function ProductDevelopment() {
   return (
     <>
       {/* Hero Section with Background Image */}
-      <motion.section 
+      <motion.section
         className={styles.heroSection}
-        style={{ opacity: heroOpacity}}
+        style={{ opacity: heroOpacity }}
       >
         <div className={styles.heroBackground}></div>
         <div className={styles.overlay}></div>
@@ -600,7 +600,7 @@ export default function ProductDevelopment() {
                 <Link href="/contact" className={styles.linkWrapper}>
                   <motion.button
                     className={styles.primaryButton}
-                    whileHover={{  y: -2 }}
+                    whileHover={{ y: -2 }}
                     whileTap={{ scale: 0.95 }}
                   >
                     Book Consultation
@@ -679,7 +679,7 @@ export default function ProductDevelopment() {
           </div>
         </div>
       </motion.section>
-    
+
 
       {/* Growth Stage Solutions */}
       <section className={styles.growthSection}>

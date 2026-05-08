@@ -1,67 +1,67 @@
-'use client';
-import React, { useState } from 'react';
-import { motion } from 'framer-motion';
-import styles from './contact.module.css';
+"use client";
+import React, { useState } from "react";
+import { motion } from "framer-motion";
+import styles from "./contact.module.css";
 
 const Contact = () => {
   const [formData, setFormData] = useState({
-    name: '',
-    email: '',
-    phone: '',
-    company: '',
-    message: '',
-    projectType: ''
+    name: "",
+    email: "",
+    phone: "",
+    company: "",
+    message: "",
+    projectType: "",
   });
 
   const handleChange = (e) => {
     setFormData({
       ...formData,
-      [e.target.name]: e.target.value
+      [e.target.name]: e.target.value,
     });
   };
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    console.log('Form submitted:', formData);
+    console.log("Form submitted:", formData);
     // Add your API call here
   };
 
   const contactInfo = [
     {
-      icon: '📧',
-      title: 'Email Us',
-      details: 'contact@bbmcoders.com',
-      description: 'Send us an email anytime'
+      icon: "📧",
+      title: "Email Us",
+      details: "contact@bbmcoders.com",
+      description: "Send us an email anytime",
     },
     {
-      icon: '📞',
-      title: 'Call Us',
-      details: '+234 7060970212',
-      description: 'Mon to Fri 9am to 6pm'
+      icon: "📞",
+      title: "Call Us",
+      details: "+234 7060970212",
+      description: "Mon to Fri 9am to 6pm",
     },
     {
-      icon: '📍',
-      title: 'Visit Us',
-      details: 'Lagos, Nigeria.',
-      description: 'Come say hello at our office'
-    }
+      icon: "📍",
+      title: "Visit Us",
+      details: "Lagos, Nigeria.",
+      description: "Come say hello at our office",
+    },
   ];
 
   const projectTypes = [
-    'Web Development',
-    'Mobile App Development',
-    'Custom Software',
-    'E-commerce Solution',
-    'UI/UX Design',
-    'Digital Transformation',
-    'Other'
+    "Web Development",
+    "Mobile App Development",
+    "Custom Software",
+    "E-commerce Solution",
+    "UI/UX Design",
+    "Digital Transformation",
+    "Other",
   ];
 
   const features = [
     "97% Client Satisfaction Rate",
     "50+ Industry Experts",
     "4200+ Projects Delivered",
-    "24/7 Project Support"
+    "24/7 Project Support",
   ];
 
   return (
@@ -78,7 +78,8 @@ const Contact = () => {
             <div className={styles.formContainer}>
               <h2 className={styles.formTitle}>Get In Touch</h2>
               <p className={styles.formDescription}>
-                Fill out the form and our team will get back to you within 24 hours.
+                Fill out the form and our team will get back to you within 24
+                hours.
               </p>
 
               <form className={styles.contactForm} onSubmit={handleSubmit}>
@@ -166,7 +167,9 @@ const Contact = () => {
                   >
                     <option value="">Select Project Type</option>
                     {projectTypes.map((type, index) => (
-                      <option key={index} value={type}>{type}</option>
+                      <option key={index} value={type}>
+                        {type}
+                      </option>
                     ))}
                   </select>
                 </div>
@@ -195,8 +198,17 @@ const Contact = () => {
                   whileTap={{ scale: 0.98 }}
                 >
                   Send Message
-                  <svg className={styles.buttonArrow} width="20" height="20" viewBox="0 0 20 20" fill="none">
-                    <path d="M10 0L8.59 1.41L14.17 7H0V9H14.17L8.59 14.59L10 16L20 10L10 0Z" fill="currentColor" />
+                  <svg
+                    className={styles.buttonArrow}
+                    width="20"
+                    height="20"
+                    viewBox="0 0 20 20"
+                    fill="none"
+                  >
+                    <path
+                      d="M10 0L8.59 1.41L14.17 7H0V9H14.17L8.59 14.59L10 16L20 10L10 0Z"
+                      fill="currentColor"
+                    />
                   </svg>
                 </motion.button>
               </form>
@@ -213,7 +225,8 @@ const Contact = () => {
             <div className={styles.infoContainer}>
               <h2 className={styles.infoTitle}>Contact Information</h2>
               <p className={styles.infoDescription}>
-                Choose the most convenient way to reach out to us. We're here to help you succeed.
+                Choose the most convenient way to reach out to us. We're here to
+                help you succeed.
               </p>
 
               <div className={styles.contactMethods}>
@@ -228,7 +241,9 @@ const Contact = () => {
                     <div className={styles.methodContent}>
                       <h3 className={styles.methodTitle}>{item.title}</h3>
                       <p className={styles.methodDetail}>{item.details}</p>
-                      <p className={styles.methodDescription}>{item.description}</p>
+                      <p className={styles.methodDescription}>
+                        {item.description}
+                      </p>
                     </div>
                   </motion.div>
                 ))}
@@ -249,7 +264,8 @@ const Contact = () => {
           >
             <h2 className={styles.featuresTitle}>Why Choose Us?</h2>
             <p className={styles.featuresDescription}>
-              We deliver exceptional results with proven expertise and dedicated support
+              We deliver exceptional results with proven expertise and dedicated
+              support
             </p>
             <div className={styles.featuresGrid}>
               {features.map((feature, index) => (

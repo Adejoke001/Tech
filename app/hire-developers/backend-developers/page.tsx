@@ -744,7 +744,7 @@ export default function BackendDevelopersPage() {
                 borderColor:
                   activeTechTab === tabKey
                     ? technologyStack[tabKey as keyof typeof technologyStack]
-                        .color
+                      .color
                     : "transparent",
               }}
             >

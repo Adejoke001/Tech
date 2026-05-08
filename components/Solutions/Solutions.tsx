@@ -53,24 +53,24 @@ const Solutions = () => {
               <span className={styles.badgeIcon}>🚀</span>
               Engineering Excellence
             </div>
-            
+
             <h1 className={styles.mainTitle}>
               Engineering Solutions for <span className={styles.titleAccent}>Every Stage of Growth</span>
             </h1>
-            
+
             <p className={styles.description}>
-              We help startups and enterprises turn ideas into powerful, scalable software. 
-              Whether you&apos;re building something new, upgrading legacy systems, or scaling 
+              We help startups and enterprises turn ideas into powerful, scalable software.
+              Whether you&apos;re building something new, upgrading legacy systems, or scaling
               complex platforms, we make it faster, smarter, and easier – without compromise.
             </p>
-            
+
             <div className={styles.ctaButtons}>
               <Link href="/contact" className={styles.primaryButton}>
                 Start Your Project
                 <span className={styles.buttonIcon}>→</span>
               </Link>
             </div>
-            
+
             {/* Stats */}
             <div className={styles.statsGrid}>
               {stats.map((stat, index) => (
@@ -81,12 +81,12 @@ const Solutions = () => {
               ))}
             </div>
           </div>
-          
+
           {/* Visual Content */}
           <div className={styles.visualContent}>
             <div className={styles.visualGrid}>
               {visualItems.map((item, index) => (
-                <div 
+                <div
                   key={index}
                   className={styles.visualCard}
                 >

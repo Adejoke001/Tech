@@ -84,7 +84,7 @@
     width: 160px;
   }
   .logoImage {
-    transform: scale(2.0);
+    transform: scale(2);
   }
   .logoLink {
     margin-right: 0;
@@ -128,7 +128,7 @@
 }
 
 .dropdownButton {
-  color: #ffffff;  /* White navlink */
+  color: #ffffff; /* White navlink */
   font-weight: 500;
   font-size: 1rem;
   padding: 0.3rem 0;
@@ -142,11 +142,11 @@
 }
 
 .dropdownButton:hover {
-  color: #ffffff;  /* Stay white on hover */
+  color: #ffffff; /* Stay white on hover */
 }
 
 .dropdownButton:hover::after {
-  content: '';
+  content: "";
   position: absolute;
   bottom: -2px;
   left: 0;
@@ -165,7 +165,7 @@
   top: 100%;
   left: 0;
   width: 20rem;
-  background: #ffffff;  /* White background */
+  background: #ffffff; /* White background */
   box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
   border-radius: 0.5rem;
   border: 1px solid var(--gray-300);
@@ -213,7 +213,7 @@
 
 /* Nav Links */
 .navLink {
-  color: #ffffff;  /* White navlink */
+  color: #ffffff; /* White navlink */
   font-weight: 500;
   font-size: 1rem;
   padding: 0.3rem 0;
@@ -223,11 +223,11 @@
 }
 
 .navLink:hover {
-  color: #ffffff;  /* Stay white on hover */
+  color: #ffffff; /* Stay white on hover */
 }
 
 .navLink:hover::after {
-  content: '';
+  content: "";
   position: absolute;
   bottom: -2px;
   left: 0;
@@ -273,7 +273,7 @@
 
 /* Mobile Menu Button */
 .mobileMenuButton {
-  color: #ffffff;  /* White */
+  color: #ffffff; /* White */
   padding: 0.3rem;
   transition: color 0.3s ease;
   background: none;
@@ -297,7 +297,7 @@
 /* Mobile Menu */
 .mobileMenu {
   margin-top: 0.5rem;
-  background: #ffffff;  /* White background */
+  background: #ffffff; /* White background */
   border-radius: 0.5rem;
   box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
   overflow-y: auto;

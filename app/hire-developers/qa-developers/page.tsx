@@ -5,15 +5,15 @@ import Image from 'next/image';
 import Link from 'next/link';
 import { motion, AnimatePresence } from 'framer-motion';
 import {
-    Smartphone, Users, 
-    CheckCircle, Award, MessageSquare, Sparkles, 
-    Cloud, HelpCircle, ArrowRight, 
-    GitBranch, FileText, RefreshCw, 
+    Smartphone, Users,
+    CheckCircle, Award, MessageSquare, Sparkles,
+    Cloud, HelpCircle, ArrowRight,
+    GitBranch, FileText, RefreshCw,
     Code2, Monitor, Shield, FileCode, TestTube,
     Database, Lock, Clock, Users as UsersIcon, Rocket,
     Calendar, Scale, Briefcase, Globe as GlobeIcon,
     Gauge, Activity, Bug, PenTool, Layout,
-    Settings, Terminal, BarChart3, 
+    Settings, Terminal, BarChart3,
     Fingerprint, Box
 
 } from 'lucide-react';
@@ -529,7 +529,7 @@ export default function QATestersPage() {
                                 QA testers dedicated to delivering flawless product quality
                             </p>
                             <p className={styles.heroDescription}>
-                                We connect you with experienced QA engineers who seamlessly integrate with your team, 
+                                We connect you with experienced QA engineers who seamlessly integrate with your team,
                                 providing rigorous quality assurance that elevates your product and boosts customer satisfaction.
                             </p>
                         </motion.div>
@@ -544,7 +544,7 @@ export default function QATestersPage() {
                                 Hire QA Engineers
                                 <ArrowRight className={styles.buttonIcon} />
                             </Link>
-                            
+
                         </motion.div>
                     </motion.div>
 
@@ -572,7 +572,7 @@ export default function QATestersPage() {
                                 <p className={styles.testimonialText}>&quot;{testimonial.content}&quot;</p>
                                 <div className={styles.testimonialAuthor}>
                                     <h4>{testimonial.name}</h4>
-                                    
+
                                 </div>
                                 <div className={styles.ratings}>
                                     <div className={styles.ratingItem}>
@@ -625,7 +625,7 @@ export default function QATestersPage() {
                         Our QA Engineers&apos; <span className={styles.titleHighlight}>Expertise</span>
                     </h2>
                     <p className={styles.sectionDescription}>
-                        When you hire QA engineers from us, you get highly skilled testers with hands‑on expertise 
+                        When you hire QA engineers from us, you get highly skilled testers with hands‑on expertise
                         in modern testing methodologies, automation tools, and end‑to‑end quality processes.
                     </p>
                 </div>
@@ -639,7 +639,7 @@ export default function QATestersPage() {
                             whileInView={{ opacity: 1, y: 0 }}
                             transition={{ duration: 0.5, delay: index * 0.1 }}
                             viewport={{ once: true }}
-                            
+
                         >
                             <div className={styles.cardHeader}>
                                 <div className={styles.expertiseIconWrapper} style={{
@@ -679,7 +679,7 @@ export default function QATestersPage() {
                         Advanced <span className={styles.titleHighlight}>Testing Tools</span> We Master
                     </h2>
                     <p className={styles.sectionDescription}>
-                        Our QA engineers use industry‑leading testing tools and platforms to ensure your software 
+                        Our QA engineers use industry‑leading testing tools and platforms to ensure your software
                         is secure, stable, scalable, and release‑ready across all environments.
                     </p>
                 </div>
@@ -720,7 +720,7 @@ export default function QATestersPage() {
                         Why Hire QA Engineers <span className={styles.titleHighlight}>From BBMcoders</span>
                     </h2>
                     <p className={styles.sectionDescription}>
-                        Access world‑class testing talent at a fraction of the local cost. Here’s why smart companies 
+                        Access world‑class testing talent at a fraction of the local cost. Here’s why smart companies
                         choose Nigeria QA professionals.
                     </p>
                 </div>
@@ -762,7 +762,7 @@ export default function QATestersPage() {
                         Our QA <span className={styles.titleHighlight}>Process</span>
                     </h2>
                     <p className={styles.sectionDescription}>
-                        A structured, transparent testing lifecycle that aligns with agile sprints and delivers 
+                        A structured, transparent testing lifecycle that aligns with agile sprints and delivers
                         confidence with every release.
                     </p>
                 </div>
@@ -903,7 +903,7 @@ export default function QATestersPage() {
                         Why Hire QA Engineers <span className={styles.titleHighlight}>From BBMcoders?</span>
                     </h2>
                     <p className={styles.sectionDescription}>
-                        We provide reliable QA engineers with faster turnaround times and better ROI. 
+                        We provide reliable QA engineers with faster turnaround times and better ROI.
                         Here’s what you get when you work with us.
                     </p>
                 </div>
@@ -1143,7 +1143,7 @@ export default function QATestersPage() {
                     <div className={styles.ctaContent}>
                         <h3 className={styles.ctaTitle}>Reduce Deployment Risks Instantly</h3>
                         <p className={styles.ctaDescription}>
-                            Get expert testers who ensure every release passes strict validation, preventing regressions 
+                            Get expert testers who ensure every release passes strict validation, preventing regressions
                             and post‑release failures.
                         </p>
                         <div className={styles.ctaButtons}>

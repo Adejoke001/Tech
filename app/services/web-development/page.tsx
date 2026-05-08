@@ -159,18 +159,18 @@ export default function WebDevelopmentPage() {
 
     // ============ TECHNOLOGIES (from URL) ============
     const techCategories = [
-    {
-        title: 'Databases',
-        technologies: ['Microsoft SQL Server', 'MySQL', 'MariaDB', 'PostgreSQL', 'SQLite', 'MongoDB', 'Realm', 'Apache Cassandra']
-    },
-    {
-        title: 'Cloud Services',
-        technologies: ['AWS Cloud', 'Azure Data Lake', 'Azure Blob Storage', 'Azure Cosmos DB', 'Azure SQL Database', 'Azure Synapse Analytics', 'Google Cloud SQL']
-    },
-    {
-        title: 'DevOps Tools',
-        technologies: ['Docker', 'Kubernetes', 'Red Hat OpenShift', 'Ansible', 'HashiCorp Terraform', 'AWS Developer Tools', 'Azure DevOps', 'Google Developer Tools', 'GitLab CI/CD', 'Jenkins']
-    },
+        {
+            title: 'Databases',
+            technologies: ['Microsoft SQL Server', 'MySQL', 'MariaDB', 'PostgreSQL', 'SQLite', 'MongoDB', 'Realm', 'Apache Cassandra']
+        },
+        {
+            title: 'Cloud Services',
+            technologies: ['AWS Cloud', 'Azure Data Lake', 'Azure Blob Storage', 'Azure Cosmos DB', 'Azure SQL Database', 'Azure Synapse Analytics', 'Google Cloud SQL']
+        },
+        {
+            title: 'DevOps Tools',
+            technologies: ['Docker', 'Kubernetes', 'Red Hat OpenShift', 'Ansible', 'HashiCorp Terraform', 'AWS Developer Tools', 'Azure DevOps', 'Google Developer Tools', 'GitLab CI/CD', 'Jenkins']
+        },
     ];
 
     // ============ COST ESTIMATES (from URL) ============
@@ -250,7 +250,7 @@ export default function WebDevelopmentPage() {
             image: 'https://images.unsplash.com/photo-1598128558393-70ff21433be0?auto=format&fit=crop&w=800&q=80',
             color: '#3b82f6'
         },
-    
+
     ];
 
     // ============ FAQS ============
@@ -504,39 +504,39 @@ export default function WebDevelopmentPage() {
 
             {/* ===== TECHNOLOGIES SECTION ===== */}
             {/* ===== TECHNOLOGIES SECTION ===== */}
-<section className={styles.techSection}>
-    <div className={styles.container}>
-        <div className={styles.sectionHeader}>
-            <h2 className={styles.sectionTitle}>
-                Technologies & <span className={styles.titleHighlight}>Frameworks We Use</span>
-            </h2>
-            <p className={styles.sectionDescription}>
-                We are proud to have a team of custom web application developers who hold relevant knowledge about the following core technologies.
-            </p>
-        </div>
-        <div className={styles.techCategories}>
-            {techCategories.map((category, index) => (
-                <motion.div
-                    key={index}
-                    className={styles.techCategory}
-                    initial={{ opacity: 0, y: 20 }}
-                    whileInView={{ opacity: 1, y: 0 }}
-                    transition={{ duration: 0.5, delay: index * 0.1 }}
-                    viewport={{ once: true }}
-                >
-                    <h3 className={styles.techCategoryTitle}>{category.title}</h3>
-                    <div className={styles.techItems}>
-                        {category.technologies.map((tech, idx) => (
-                            <span key={idx} className={styles.techItem}>
-                                {tech}
-                            </span>
+            <section className={styles.techSection}>
+                <div className={styles.container}>
+                    <div className={styles.sectionHeader}>
+                        <h2 className={styles.sectionTitle}>
+                            Technologies & <span className={styles.titleHighlight}>Frameworks We Use</span>
+                        </h2>
+                        <p className={styles.sectionDescription}>
+                            We are proud to have a team of custom web application developers who hold relevant knowledge about the following core technologies.
+                        </p>
+                    </div>
+                    <div className={styles.techCategories}>
+                        {techCategories.map((category, index) => (
+                            <motion.div
+                                key={index}
+                                className={styles.techCategory}
+                                initial={{ opacity: 0, y: 20 }}
+                                whileInView={{ opacity: 1, y: 0 }}
+                                transition={{ duration: 0.5, delay: index * 0.1 }}
+                                viewport={{ once: true }}
+                            >
+                                <h3 className={styles.techCategoryTitle}>{category.title}</h3>
+                                <div className={styles.techItems}>
+                                    {category.technologies.map((tech, idx) => (
+                                        <span key={idx} className={styles.techItem}>
+                                            {tech}
+                                        </span>
+                                    ))}
+                                </div>
+                            </motion.div>
                         ))}
                     </div>
-                </motion.div>
-            ))}
-        </div>
-    </div>
-</section>
+                </div>
+            </section>
             {/* ===== COST ESTIMATES SECTION ===== */}
             {/* <section className={styles.costSection}>
                 <div className={styles.container}>

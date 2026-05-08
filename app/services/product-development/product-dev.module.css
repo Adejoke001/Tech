@@ -14,7 +14,7 @@
 .heroBackground {
   position: absolute;
   inset: 0;
-  background-image: url('https://images.unsplash.com/photo-1555066931-4365d14bab8c?auto=format&fit=crop&w=1920&q=80');
+  background-image: url("https://images.unsplash.com/photo-1555066931-4365d14bab8c?auto=format&fit=crop&w=1920&q=80");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -24,9 +24,18 @@
 .overlay {
   position: absolute;
   inset: 0;
-  background: linear-gradient(135deg, rgba(15, 23, 42, 0.92), rgba(30, 41, 59, 0.92)),
-    radial-gradient(circle at 20% 30%, rgba(59, 130, 246, 0.15), transparent 40%),
-    radial-gradient(circle at 80% 70%, rgba(236, 72, 153, 0.12), transparent 40%);
+  background:
+    linear-gradient(135deg, rgba(15, 23, 42, 0.92), rgba(30, 41, 59, 0.92)),
+    radial-gradient(
+      circle at 20% 30%,
+      rgba(59, 130, 246, 0.15),
+      transparent 40%
+    ),
+    radial-gradient(
+      circle at 80% 70%,
+      rgba(236, 72, 153, 0.12),
+      transparent 40%
+    );
   z-index: 1;
 }
 
@@ -68,7 +77,12 @@
   font-weight: 800;
   line-height: 1.2;
   margin-bottom: 1.5rem;
-  background: linear-gradient(135deg, #ffffff 0%, var(--primary-blue) 50%, var(--primary-green) 100%);
+  background: linear-gradient(
+    135deg,
+    #ffffff 0%,
+    var(--primary-blue) 50%,
+    var(--primary-green) 100%
+  );
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
@@ -148,8 +162,7 @@
 
 .primaryButton:hover {
   box-shadow: 0 6px 20px rgba(59, 130, 246, 0.4);
-  transform: translateY(-2px);  /* Use translateY instead of scale */
-  
+  transform: translateY(-2px); /* Use translateY instead of scale */
 }
 
 /* Secondary Button */
@@ -171,7 +184,7 @@
 .secondaryButton:hover {
   background: rgba(255, 255, 255, 0.1);
   border-color: rgba(255, 255, 255, 0.3);
-  transform: translateY(-2px);  
+  transform: translateY(-2px);
 }
 
 .buttonIcon {
@@ -362,13 +375,12 @@
   color: var(--primary-green);
 }
 
-.title{
+.title {
   background: var(--gradient-primary);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
 }
-
 
 .sectionDescription {
   font-size: 1.125rem;
@@ -507,7 +519,11 @@
 /* Stats Section */
 .statsSection {
   padding: 5rem 0;
-  background: linear-gradient(135deg, var(--dark-bg) 0%, var(--dark-surface) 100%);
+  background: linear-gradient(
+    135deg,
+    var(--dark-bg) 0%,
+    var(--dark-surface) 100%
+  );
   color: white;
 }
 
@@ -732,7 +748,7 @@
 
 /* Top border animation */
 .engineeringCard::before {
-  content: '';
+  content: "";
   position: absolute;
   top: 0;
   left: 0;
@@ -836,26 +852,26 @@
   .engineeringSection {
     padding: 1.5rem 0;
   }
-  
+
   .engineeringCard {
     padding: 1.25rem 0.75rem;
     min-height: 180px;
   }
-  
+
   .engineeringIconWrapper {
     width: 50px;
     height: 50px;
   }
-  
+
   .solutionIcon {
     width: 1.25rem;
     height: 1.25rem;
   }
-  
+
   .engineeringName {
     font-size: 1.125rem;
   }
-  
+
   .engineeringDescription {
     font-size: 0.8rem;
   }
@@ -1146,7 +1162,7 @@
 
 .faqCardOpen {
   box-shadow: 0 10px 30px rgba(59, 130, 246, 0.1);
-  border-color: var(--primary-blue, #3B82F6);
+  border-color: var(--primary-blue, #3b82f6);
 }
 
 .faqHeader {
@@ -1189,7 +1205,7 @@
 }
 
 .faqCardOpen .faqToggle {
-  background: var(--primary-blue, #3B82F6);
+  background: var(--primary-blue, #3b82f6);
 }
 
 .toggleIcon {
@@ -1217,8 +1233,8 @@
 
 .faqCtaButton {
   background: transparent;
-  color: var(--primary-blue, #3B82F6);
-  border: 1px solid var(--primary-blue, #3B82F6);
+  color: var(--primary-blue, #3b82f6);
+  border: 1px solid var(--primary-blue, #3b82f6);
   padding: 0.75rem 1.5rem;
   font-size: 0.9rem;
   font-weight: 600;
@@ -1261,42 +1277,42 @@
   .heroTitle {
     font-size: 2.5rem;
   }
-  
+
   .heroSubtitle {
     font-size: 1.125rem;
     max-width: 100%;
   }
-  
+
   .sectionTitle {
     font-size: 2rem;
   }
-  
+
   .statsGrid {
     grid-template-columns: 1fr;
     gap: 1.5rem;
   }
-  
+
   .statNumber {
     font-size: 2.5rem;
   }
-  
+
   .heroGrid {
     grid-template-columns: 1fr;
   }
-  
+
   .heroContent {
     text-align: center;
   }
-  
+
   .heroButtons {
     justify-content: center;
   }
-  
+
   .primaryButton,
   .secondaryButton {
     justify-content: center;
   }
-  
+
   .trustBadges {
     grid-template-columns: 1fr;
     max-width: 280px;
@@ -1306,26 +1322,26 @@
     grid-template-columns: repeat(2, 1fr);
     gap: 1px;
   }
-  
+
   .engineeringCard {
     padding: 1.25rem;
     min-height: 160px;
   }
-  
+
   .engineeringIconWrapper {
     width: 2.5rem;
     height: 2.5rem;
   }
-  
+
   .solutionIcon {
     width: 1.25rem;
     height: 1.25rem;
   }
-  
+
   .engineeringName {
     font-size: 0.9rem;
   }
-  
+
   .engineeringDescription {
     font-size: 0.7rem;
   }
@@ -1335,50 +1351,50 @@
   .heroTitle {
     font-size: 2rem;
   }
-  
+
   .heroSubtitle {
     font-size: 1rem;
   }
-  
+
   .heroButtons {
     flex-direction: column;
     width: 100%;
   }
-  
+
   .primaryButton,
   .secondaryButton {
     width: 100%;
   }
-  
+
   .sectionTitle {
     font-size: 1.75rem;
   }
-  
+
   .processGrid {
     grid-template-columns: 1fr;
   }
-  
+
   .engineeringGrid {
     grid-template-columns: 1fr;
   }
-  
+
   .engineeringCard {
     padding: 1rem;
     min-height: 140px;
   }
-  
+
   .techGrid {
     grid-template-columns: 1fr;
   }
-  
+
   .industriesGrid {
     grid-template-columns: 1fr;
   }
-  
+
   .faqButtons {
     flex-direction: column;
   }
-  
+
   .faqButtons button {
     width: 100%;
   }

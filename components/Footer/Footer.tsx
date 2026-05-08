@@ -1,14 +1,14 @@
 import React from "react";
 import Link from "next/link";
-import { 
-  Linkedin, 
-  Twitter, 
-  Github, 
-  Facebook, 
-  Instagram, 
-  Mail, 
-  Phone, 
-  MapPin 
+import {
+  Linkedin,
+  Twitter,
+  Github,
+  Facebook,
+  Instagram,
+  Mail,
+  Phone,
+  //MapPin 
 } from "lucide-react";
 import styles from "./footer.module.css";
 

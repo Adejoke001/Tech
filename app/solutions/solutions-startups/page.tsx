@@ -6,12 +6,12 @@ import Link from 'next/link';
 import { motion, AnimatePresence } from 'framer-motion';
 import {
     Users, TrendingUp, Briefcase,
-    CheckCircle, Award, MessageSquare, Sparkles, 
-    Cloud, ChevronRight, HelpCircle, ArrowRight, 
+    CheckCircle, Award, MessageSquare, Sparkles,
+    Cloud, ChevronRight, HelpCircle, ArrowRight,
     HeadphonesIcon, ShieldCheck, Shield, Globe, Cpu, Target,
-    Rocket, Lightbulb, Compass, Rocket as RocketIcon, 
-    Palette, LineChart, DollarSign, 
-    Users as TeamIcon, Settings, 
+    Rocket, Lightbulb, Compass, Rocket as RocketIcon,
+    Palette, LineChart, DollarSign,
+    Users as TeamIcon, Settings,
     BarChart3, Search, Presentation, ThumbsUp
 } from 'lucide-react';
 import styles from './startups.module.css';
@@ -193,44 +193,44 @@ export default function StartupsSolutionPage() {
 
     // ----- OUR PROCESS (6 steps from reference) -----
     const startupProcess = [
-        { 
-            step: 1, 
-            title: 'Market Gap Analysis', 
+        {
+            step: 1,
+            title: 'Market Gap Analysis',
             description: 'We study your space to find real growth opportunities and validate demand.',
             icon: <Search />,
             color: '#10b981'
         },
-        { 
-            step: 2, 
-            title: 'Business Model Refinement', 
+        {
+            step: 2,
+            title: 'Business Model Refinement',
             description: 'We adjust revenue paths for scalability and long-term survival.',
             icon: <LineChart />,
             color: '#10B981'
         },
-        { 
-            step: 3, 
-            title: 'Tech Stack Planning', 
+        {
+            step: 3,
+            title: 'Tech Stack Planning',
             description: 'We design the right tools to fit your growth vision and future needs.',
             icon: <Cpu />,
             color: '#10b981'
         },
-        { 
-            step: 4, 
-            title: 'Team Structure Support', 
+        {
+            step: 4,
+            title: 'Team Structure Support',
             description: 'We define key roles that push your startup forward, from devs to PMs.',
             icon: <TeamIcon />,
             color: '#10b981'
         },
-        { 
-            step: 5, 
-            title: 'Funding Readiness', 
+        {
+            step: 5,
+            title: 'Funding Readiness',
             description: 'We prepare your numbers and story for investor conversations.',
             icon: <Presentation />,
             color: '#10b981'
         },
-        { 
-            step: 6, 
-            title: 'Scalable Growth Execution', 
+        {
+            step: 6,
+            title: 'Scalable Growth Execution',
             description: 'We put plans into action with measurable, quick results.',
             icon: <BarChart3 />,
             color: '#10b981'
@@ -459,7 +459,7 @@ export default function StartupsSolutionPage() {
                         Early‑Growth Startup <span className={styles.titleHighlight}>Expertise</span>
                     </h2>
                     <p className={styles.sectionDescription}>
-                        We understand the journey of early‑stage startups. Our hands‑on expertise transforms your vision 
+                        We understand the journey of early‑stage startups. Our hands‑on expertise transforms your vision
                         into a robust, scalable product, positioning your company for rapid growth and long‑term success.
                     </p>
                 </div>
@@ -514,7 +514,7 @@ export default function StartupsSolutionPage() {
                         Fueling Startup Growth with the <span className={styles.titleHighlight}>Right Hiring Model</span>
                     </h2>
                     <p className={styles.sectionDescription}>
-                        We offer flexible hiring models to help startups scale their teams efficiently 
+                        We offer flexible hiring models to help startups scale their teams efficiently
                         while maintaining full control over projects and deliverables.
                     </p>
                 </div>
@@ -554,7 +554,7 @@ export default function StartupsSolutionPage() {
                         Cost Estimation for <span className={styles.titleHighlight}>Early‑Growth Startups</span>
                     </h2>
                     <p className={styles.sectionDescription}>
-                        For growth‑stage startups, every dollar counts. Our clear, upfront estimates help you plan smartly – 
+                        For growth‑stage startups, every dollar counts. Our clear, upfront estimates help you plan smartly –
                         whether you&apos;re building an MVP, scaling to a full product, or preparing for enterprise growth.
                     </p>
                 </div>
@@ -597,7 +597,7 @@ export default function StartupsSolutionPage() {
                         Our <span className={styles.titleHighlight}>Process</span>
                     </h2>
                     <p className={styles.sectionDescription}>
-                        A startup’s journey from idea to success requires a solid foundation. Our process provides a clear roadmap, 
+                        A startup’s journey from idea to success requires a solid foundation. Our process provides a clear roadmap,
                         ensuring your solution is built correctly from day one for smooth, future‑proof growth.
                     </p>
                 </div>
@@ -632,7 +632,7 @@ export default function StartupsSolutionPage() {
                         Early‑Growth Startup <span className={styles.titleHighlight}>Development Partner</span>
                     </h2>
                     <p className={styles.sectionDescription}>
-                        We specialise in helping early‑growth startups scale faster by building reliable, investor‑ready products. 
+                        We specialise in helping early‑growth startups scale faster by building reliable, investor‑ready products.
                         Our expertise lies in transforming validated ideas into robust, scalable solutions that support rapid market expansion.
                     </p>
                 </div>
@@ -733,13 +733,13 @@ export default function StartupsSolutionPage() {
                     </div>
 
                     <div className={styles.testimonialArrows}>
-                        <button 
+                        <button
                             className={styles.testimonialArrow}
                             onClick={() => setActiveTestimonial((prev) => (prev === 0 ? testimonials.length - 1 : prev - 1))}
                         >
                             <ChevronRight className={styles.arrowLeft} />
                         </button>
-                        <button 
+                        <button
                             className={styles.testimonialArrow}
                             onClick={() => setActiveTestimonial((prev) => (prev === testimonials.length - 1 ? 0 : prev + 1))}
                         >
@@ -805,7 +805,7 @@ export default function StartupsSolutionPage() {
                         Frequently Asked <span className={styles.titleHighlight}>Questions</span>
                     </h2>
                     <p className={styles.sectionDescription}>
-                        Got questions about business scaling for startups and how the right technology partner can accelerate growth? 
+                        Got questions about business scaling for startups and how the right technology partner can accelerate growth?
                         Here are some of the most common queries we address for early‑growth founders.
                     </p>
                 </div>
@@ -855,7 +855,7 @@ export default function StartupsSolutionPage() {
                     <div className={styles.ctaContent}>
                         <h3 className={styles.ctaTitle}>Ready to Scale Your Startup?</h3>
                         <p className={styles.ctaDescription}>
-                            Get tailored strategies and support to scale smartly and sustainably. 
+                            Get tailored strategies and support to scale smartly and sustainably.
                             Book a free consultation with our startup experts.
                         </p>
                         <div className={styles.ctaButtons}>

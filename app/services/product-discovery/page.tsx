@@ -8,7 +8,7 @@ import {
     Sparkles, ArrowRight, Award, MessageSquare, CheckCircle,
     Users, Globe, Lock, Clock, Building2, Shield,
     Cpu, Compass, Target, BarChart3, FileText,
-    Calendar, Rocket, Search, 
+    Calendar, Rocket, Search,
     Users as UsersIcon, Target as TargetIcon,
 } from 'lucide-react';
 import styles from './discovery.module.css';
@@ -229,7 +229,7 @@ export default function ProductDiscoveryPage() {
             image: 'https://images.unsplash.com/photo-1598128558393-70ff21433be0?auto=format&fit=crop&w=800&q=80',
             color: '#3b82f6'
         },
-        
+
     ];
 
     return (
@@ -292,7 +292,7 @@ export default function ProductDiscoveryPage() {
                                 <p className={styles.testimonialText}>&quot;{testimonial.content}&quot;</p>
                                 <div className={styles.testimonialAuthor}>
                                     <strong>{testimonial.name}</strong>
-                                    
+
                                 </div>
                                 <div className={styles.testimonialRating}>
                                     {[...Array(testimonial.rating)].map((_, i) => (
@@ -511,7 +511,7 @@ export default function ProductDiscoveryPage() {
                 </div>
             </section>
 
-             {/* ===== INDUSTRIES SECTION ===== */}
+            {/* ===== INDUSTRIES SECTION ===== */}
             <section className={styles.industriesSection}>
                 <div className={styles.container}>
                     <div className={styles.sectionHeader}>
@@ -596,7 +596,7 @@ export default function ProductDiscoveryPage() {
                                     </div>
                                     <div className={styles.testimonialAuthorInfo}>
                                         <h4>{testimonials[activeTestimonial].name}</h4>
-                                    
+
                                     </div>
                                 </div>
                             </motion.div>
@@ -667,7 +667,7 @@ export default function ProductDiscoveryPage() {
                 </div>
             </section>
 
-           
+
             {/* ===== CTA SECTION ===== */}
             <section className={styles.ctaSection}>
                 <div className={styles.container}>
@@ -680,7 +680,7 @@ export default function ProductDiscoveryPage() {
                             <Link href="/contact" className={styles.ctaPrimary}>
                                 Start Your Discovery <ArrowRight size={18} />
                             </Link>
-                            
+
                         </div>
                     </div>
                 </div>
@@ -692,8 +692,8 @@ export default function ProductDiscoveryPage() {
 // Custom icon components
 const HelpCircle = (props: React.SVGProps<SVGSVGElement>) => (
     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" {...props}>
-        <circle cx="12" cy="12" r="10"/>
-        <path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"/>
-        <line x1="12" y1="17" x2="12.01" y2="17"/>
+        <circle cx="12" cy="12" r="10" />
+        <path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3" />
+        <line x1="12" y1="17" x2="12.01" y2="17" />
     </svg>
 );

@@ -5,7 +5,7 @@ import Image from 'next/image';
 
 const OurVision = () => {
   // const [imageErrors, setImageErrors] = useState<{[key: number]: boolean}>({});
-  
+
   // const trustedClients = [
   //   { id: 1, name: "GoodFirms", logo: "/images/goodfirm.png" },
   //   { id: 2, name: "Clutch", logo: "/images/clutch.png" },
@@ -26,26 +26,26 @@ const OurVision = () => {
             <h2 className={styles.sectionTitle}>
               Our Vision for Your <span className={styles.titleAccent}>Success</span>
             </h2>
-            
+
             <div className={styles.textGroup}>
               <p className={styles.paragraph}>
-                We envision transforming complex business challenges into streamlined digital solutions 
+                We envision transforming complex business challenges into streamlined digital solutions
                 that drive growth and create lasting competitive advantages.
               </p>
-              
+
               <p className={styles.paragraph}>
-                Through cutting-edge technology and proven expertise, we bridge the gap between 
+                Through cutting-edge technology and proven expertise, we bridge the gap between
                 ambitious ideas and remarkable achievements.
               </p>
             </div>
 
             {/* Contact Button */}
-           <a href="/contact">
-            <button className={styles.contactButton}>
-              Get In Touch
-              <span className={styles.buttonArrow}>→</span>
-            </button>
-           </a>
+            <a href="/contact">
+              <button className={styles.contactButton}>
+                Get In Touch
+                <span className={styles.buttonArrow}>→</span>
+              </button>
+            </a>
           </div>
 
           {/* Right Column - Images & Trusted Clients */}
@@ -53,7 +53,7 @@ const OurVision = () => {
             <div className={styles.imageContainer}>
               {/* Main Image */}
               <div className={styles.mainImage}>
-                <Image 
+                <Image
                   src="/images/vision.jpg"
                   alt="Our Vision"
                   fill
@@ -61,11 +61,11 @@ const OurVision = () => {
                   sizes="(max-width: 768px) 100vw, 50vw"
                 />
               </div>
-              
+
               {/* Overlay Image */}
               <div className={styles.overlayImage}>
-                <Image 
-                  src="/images/vision2.jpg" 
+                <Image
+                  src="/images/vision2.jpg"
                   alt="Our Team"
                   fill
                   className={styles.overlayImg}

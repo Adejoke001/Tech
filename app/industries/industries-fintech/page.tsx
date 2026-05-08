@@ -13,7 +13,7 @@ import {
   HelpCircle,
   Smartphone,
   Server,
-  Zap,
+  //Zap,
   BarChart3,
   Layers,
   Wallet,
@@ -474,14 +474,14 @@ export default function FinTechPage() {
   ];
 
   // ============ TRUSTED BY ============
-  const trustedCompanies = [
-    "Microsoft",
-    "Amazon",
-    "Google",
-    "IBM",
-    "SAP",
-    "Oracle",
-  ];
+  // const trustedCompanies = [
+  //   "Microsoft",
+  //   "Amazon",
+  //   "Google",
+  //   "IBM",
+  //   "SAP",
+  //   "Oracle",
+  // ];
 
   // ============ INDUSTRIES ============
   const industries = [
@@ -620,7 +620,7 @@ export default function FinTechPage() {
                 Start FinTech Solution
                 <ArrowRight className={styles.buttonIcon} />
               </Link>
-              
+
             </motion.div>
           </motion.div>
 
@@ -1205,7 +1205,7 @@ export default function FinTechPage() {
                 Build Your FinTech Solution
                 <ArrowRight className={styles.buttonIcon} />
               </Link>
-              
+
             </div>
           </div>
         </div>

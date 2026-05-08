@@ -1,6 +1,6 @@
 import React from 'react'
 import Link from 'next/link'
-import styles from './services.module.css'  
+import styles from './services.module.css'
 
 const Services = () => {
   const services = [
@@ -28,7 +28,7 @@ const Services = () => {
       title: 'Cloud Services',
       description: 'Scalable cloud infrastructure and deployment solutions for businesses of all sizes.',
       features: ['Cloud Migration', 'DevOps', 'Serverless Architecture', 'Cloud Security'],
-      link: '/services/cloud-devops-services'   
+      link: '/services/cloud-devops-services'
     },
     {
       icon: '🔒',
@@ -55,7 +55,7 @@ const Services = () => {
             Our <span className={styles.titleAccent}>Services</span>
           </h2>
           <p className={styles.sectionDescription}>
-            We offer end-to-end software development services with 17+ years of expertise, 
+            We offer end-to-end software development services with 17+ years of expertise,
             delivering scalable and robust solutions for businesses worldwide.
           </p>
         </div>
@@ -76,7 +76,7 @@ const Services = () => {
                 ))}
               </ul>
               {/* Learn More Link – uses custom link if provided, else default slug */}
-              <Link 
+              <Link
                 href={service.link || `/services/${service.title.toLowerCase().replace(/\s+/g, '-')}`}
                 className={styles.learnMoreLink}
               >

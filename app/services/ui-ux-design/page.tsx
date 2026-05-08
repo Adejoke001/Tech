@@ -35,7 +35,7 @@ export default function UIUXDesignPage() {
             title: 'Desktop/Web App Design',
             description: 'Holistic approach ensuring your site looks impressive with seamless navigation flow.',
             icon: <Monitor className={styles.serviceIcon} />,
-            color: '#10b981', 
+            color: '#10b981',
             features: ['Seamless navigation flow', 'High-impact visuals', 'Responsive design', 'User-centered layouts'],
             deliverables: ['Wireframes', 'Interactive prototypes', 'Design system', 'Style guide'],
             benefits: 'Increases user engagement by 35% and reduces bounce rates'
@@ -45,7 +45,7 @@ export default function UIUXDesignPage() {
             title: 'Mobile App Design',
             description: 'Crafting stunning visual experiences that are both meaningful and memorable.',
             icon: <Smartphone className={styles.serviceIcon} />,
-            color: '#3b82f6', 
+            color: '#3b82f6',
             features: ['Consistent cross-device UI', 'High user retention', 'Gesture-based interactions', 'Mobile-first approach'],
             deliverables: ['App screens', 'Micro-interactions', 'Icon sets', 'Mobile design system'],
             benefits: 'Boosts user retention by 40% and improves app store ratings'
@@ -55,7 +55,7 @@ export default function UIUXDesignPage() {
             title: 'SaaS UI/UX Design',
             description: 'Cutting-edge SaaS UI tailored to your software product\'s target audience.',
             icon: <Cloud className={styles.serviceIcon} />,
-            color: '#10b981', 
+            color: '#10b981',
             features: ['Ensures fast onboarding', 'High subscription retention', 'Dashboard designs', 'Analytics visualization'],
             deliverables: ['SaaS dashboard', 'Admin panels', 'Data visualization', 'User management UI'],
             benefits: 'Improves subscription retention by 30% and user adoption'

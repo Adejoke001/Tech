@@ -88,7 +88,7 @@ export default function FrontendDevelopersPage() {
         "Native-like performance",
       ],
       link: "/services/product-development",
-      
+
     },
     {
       id: 3,
@@ -103,7 +103,7 @@ export default function FrontendDevelopersPage() {
         "Serverless architectures",
         "Real-time updates",
       ],
-      link: "/services/cloud-devops-services", 
+      link: "/services/cloud-devops-services",
     },
     {
       id: 4,
@@ -699,7 +699,7 @@ export default function FrontendDevelopersPage() {
                 borderColor:
                   activeTechTab === tabKey
                     ? technologyStack[tabKey as keyof typeof technologyStack]
-                        .color
+                      .color
                     : "transparent",
               }}
             >

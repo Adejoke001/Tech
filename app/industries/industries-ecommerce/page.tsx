@@ -231,17 +231,17 @@ export default function ECommercePage() {
       points: ["Data mapping", "SEO preservation", "Quality checks"],
     },
     {
-  title: "E-Commerce Performance & Scalability Engineering",
-  description:
-    "Optimize speed, scalability, and reliability to handle high traffic and maximize conversions.",
-  icon: <Rocket />,
-  color: "#3b82f6",
-  points: [
-    "Performance optimization",
-    "Load balancing",
-    "Caching strategies",
-    "High-traffic readiness"],
-},
+      title: "E-Commerce Performance & Scalability Engineering",
+      description:
+        "Optimize speed, scalability, and reliability to handle high traffic and maximize conversions.",
+      icon: <Rocket />,
+      color: "#3b82f6",
+      points: [
+        "Performance optimization",
+        "Load balancing",
+        "Caching strategies",
+        "High-traffic readiness"],
+    },
   ];
 
   // ============ TECHNOLOGY EXPERTISE (expanded) ============
@@ -463,14 +463,14 @@ export default function ECommercePage() {
   ];
 
   // ============ TRUSTED BY ============
-  const trustedCompanies = [
-    "Microsoft",
-    "Amazon",
-    "Google",
-    "IBM",
-    "SAP",
-    "Oracle",
-  ];
+  // const trustedCompanies = [
+  //   "Microsoft",
+  //   "Amazon",
+  //   "Google",
+  //   "IBM",
+  //   "SAP",
+  //   "Oracle",
+  // ];
 
   // ============ INDUSTRIES (unchanged) ============
   const industries = [
@@ -588,7 +588,7 @@ export default function ECommercePage() {
               <p className={styles.subheadline}>
                 We build next-gen, feature-rich, and scalable E-Commerce
                 solutions to empower B2B & B2C businesses.
-  
+
               </p>
               <p className={styles.heroDescription}>
                 From customer experience solutions to supply chain management,
@@ -607,7 +607,7 @@ export default function ECommercePage() {
                 Build E-Commerce Solution
                 <ArrowRight className={styles.buttonIcon} />
               </Link>
-             
+
             </motion.div>
           </motion.div>
 
@@ -1278,7 +1278,7 @@ export default function ECommercePage() {
                 Build Your E-Commerce Solution
                 <ArrowRight className={styles.buttonIcon} />
               </Link>
-          
+
             </div>
           </div>
         </div>

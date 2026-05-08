@@ -11,8 +11,8 @@ import {
     Layers, Layout, Zap, Shield, Smartphone, Database,
     Compass, Code, GitBranch, FolderOpen, RefreshCw, Megaphone,
     Cpu, Box, Gamepad, Fingerprint, Key, BadgeCheck,
-    Target, RefreshCw as ResetIcon, Server, Terminal, Cloud, Figma, 
-    Hexagon, Building2, Rocket, Globe as GlobeIcon, Lock as LockIcon2, 
+    Target, RefreshCw as ResetIcon, Server, Terminal, Cloud, Figma,
+    Hexagon, Building2, Rocket, Globe as GlobeIcon, Lock as LockIcon2,
     Clock as ClockIcon, ThumbsUp
 } from 'lucide-react';
 import styles from './education.module.css';
@@ -322,7 +322,7 @@ export default function EducationPage() {
         <div className={styles.pageWrapper}>
             {/* ===== HERO SECTION WITH PARALLAX ===== */}
             <section className={styles.heroSection}>
-                <div 
+                <div
                     className={styles.parallaxBg}
                     style={{ transform: `translateY(${scrollY * 0.3}px)` }}
                 >
@@ -370,9 +370,9 @@ export default function EducationPage() {
                         >
                             <Link href="/contact" className={styles.ctaButton}>
                                 Build Your EdTech Solution
-                                
+
                             </Link>
-                            
+
                         </motion.div>
                     </motion.div>
 
@@ -974,9 +974,9 @@ export default function EducationPage() {
                         <div className={styles.ctaButtons}>
                             <Link href="/contact" className={styles.ctaPrimary}>
                                 Build Your EdTech Solution
-                                
+
                             </Link>
-                            
+
                         </div>
                     </div>
                 </div>

@@ -6,13 +6,13 @@ import Link from 'next/link';
 import { motion, AnimatePresence } from 'framer-motion';
 import {
     Shield, Lock, AlertTriangle, FileCheck,
-    Server, Cloud, Database, GitMerge, 
+    Server, Cloud, Database, GitMerge,
     CheckCircle, Award, MessageSquare, Sparkles,
-    Code, Activity, TrendingUp, 
-    FileText, RefreshCw, Zap, HelpCircle, 
-    ArrowRight, Eye, ClipboardCheck, 
+    Code, Activity, TrendingUp,
+    FileText, RefreshCw, Zap, HelpCircle,
+    ArrowRight, Eye, ClipboardCheck,
     Network, Search, BarChart3, ShieldAlert, FileCode,
-    Workflow, HeartPulse, Globe2, CreditCard, 
+    Workflow, HeartPulse, Globe2, CreditCard,
     BookOpen, Target, UserCheck
 } from 'lucide-react';
 import styles from './cybersecurity.module.css';
@@ -973,7 +973,7 @@ export default function CybersecurityServicesPage() {
                                 Schedule Security Assessment
                                 <ArrowRight className={styles.buttonIcon} />
                             </Link>
-                            
+
                         </div>
                     </div>
                 </div>

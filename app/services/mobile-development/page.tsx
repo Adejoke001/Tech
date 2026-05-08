@@ -6,7 +6,7 @@ import Link from 'next/link';
 import { motion, AnimatePresence } from 'framer-motion';
 import {
     Sparkles, ArrowRight, Award, MessageSquare, CheckCircle,
-    Users, Globe, Building2, Zap, 
+    Users, Globe, Building2, Zap,
     Smartphone,
     Compass, Code, RefreshCw, Target,
     Layers, Settings,
@@ -23,39 +23,39 @@ export default function MobilePage() {
     const [activeSection, setActiveSection] = useState('stages');
 
     useEffect(() => {
-    const sections = ['stages', 'importance', 'approach', 'advanced', 'cost', 'modernization'];
-    
-    const observer = new IntersectionObserver(
-        (entries) => {
-            entries.forEach((entry) => {
-                if (entry.isIntersecting) {
-                    setActiveSection(entry.target.id);
-                }
-            });
-        },
-        { threshold: 0.3, rootMargin: '-80px 0px -80px 0px' }
-    );
-    
-    sections.forEach((section) => {
-        const element = document.getElementById(section);
-        if (element) observer.observe(element);
-    });
-    
-    return () => {
+        const sections = ['stages', 'importance', 'approach', 'advanced', 'cost', 'modernization'];
+
+        const observer = new IntersectionObserver(
+            (entries) => {
+                entries.forEach((entry) => {
+                    if (entry.isIntersecting) {
+                        setActiveSection(entry.target.id);
+                    }
+                });
+            },
+            { threshold: 0.3, rootMargin: '-80px 0px -80px 0px' }
+        );
+
         sections.forEach((section) => {
             const element = document.getElementById(section);
-            if (element) observer.unobserve(element);
+            if (element) observer.observe(element);
         });
-    };
-}, []);
 
-const scrollToSection = (sectionId: string) => {
-    const element = document.getElementById(sectionId);
-    if (element) {
-        element.scrollIntoView({ behavior: 'smooth' });
-        setActiveSection(sectionId);
-    }
-};
+        return () => {
+            sections.forEach((section) => {
+                const element = document.getElementById(section);
+                if (element) observer.unobserve(element);
+            });
+        };
+    }, []);
+
+    const scrollToSection = (sectionId: string) => {
+        const element = document.getElementById(sectionId);
+        if (element) {
+            element.scrollIntoView({ behavior: 'smooth' });
+            setActiveSection(sectionId);
+        }
+    };
     // const [activeTestimonial, setActiveTestimonial] = useState(0);
 
     // ----- HERO TESTIMONIAL (with avatar placeholder) -----
@@ -66,7 +66,7 @@ const scrollToSection = (sectionId: string) => {
         rating: 5,
         project: 'Mobile App Development',
         initials: 'JK',
-        
+
     };
 
     // ============ MOBILE SERVICES (8 cards from URL) ============
@@ -371,7 +371,7 @@ const scrollToSection = (sectionId: string) => {
     //         initials: 'MM',
     //         color: '#F59E0B'
     //     },
-        
+
     // ];
 
     // ============ TRUSTED BY ============
@@ -450,17 +450,17 @@ const scrollToSection = (sectionId: string) => {
                         <div className={styles.testimonialCard}>
                             <div className={styles.testimonialImage}>
                                 <motion.div
-                                                   
-                                                    transition={{ duration: 0.3 }}
-                                                  >
-                                                    <Image
-                                                      src="/images/user.png"
-                                                      alt="Sarah - Client"
-                                                      width={100}
-                                                      height={100}
-                                                      className={styles.clientImage}
-                                                    />
-                                                  </motion.div>
+
+                                    transition={{ duration: 0.3 }}
+                                >
+                                    <Image
+                                        src="/images/user.png"
+                                        alt="Sarah - Client"
+                                        width={100}
+                                        height={100}
+                                        className={styles.clientImage}
+                                    />
+                                </motion.div>
                             </div>
                             <div className={styles.testimonialContent}>
                                 <MessageSquare className={styles.quoteIcon} />
@@ -731,228 +731,228 @@ const scrollToSection = (sectionId: string) => {
             </section>
 
             {/* ===== ULTIMATE GUIDE SECTION WITH STICKY SIDEBAR ===== */}
-<section className={styles.guideSection}>
-    <div className={styles.guideWrapper}>
-        {/* Sticky Sidebar Navigation */}
-        <div className={styles.guideSidebar}>
-            <ul className={styles.guideNav}>
-                <li className={styles.guideNavItem}>
-                    <button 
-                        className={`${styles.guideNavLink} ${activeSection === 'stages' ? styles.active : ''}`}
-                        onClick={() => scrollToSection('stages')}
-                    >
-                        <span className={styles.guideNavNumber}>01</span>
-                        Stages in Development
-                    </button>
-                </li>
-                <li className={styles.guideNavItem}>
-                    <button 
-                        className={`${styles.guideNavLink} ${activeSection === 'importance' ? styles.active : ''}`}
-                        onClick={() => scrollToSection('importance')}
-                    >
-                        <span className={styles.guideNavNumber}>02</span>
-                        Importance for Businesses
-                    </button>
-                </li>
-                <li className={styles.guideNavItem}>
-                    <button 
-                        className={`${styles.guideNavLink} ${activeSection === 'approach' ? styles.active : ''}`}
-                        onClick={() => scrollToSection('approach')}
-                    >
-                        <span className={styles.guideNavNumber}>03</span>
-                        Native vs Cross-Platform
-                    </button>
-                </li>
-                <li className={styles.guideNavItem}>
-                    <button 
-                        className={`${styles.guideNavLink} ${activeSection === 'advanced' ? styles.active : ''}`}
-                        onClick={() => scrollToSection('advanced')}
-                    >
-                        <span className={styles.guideNavNumber}>04</span>
-                        Advanced Technologies
-                    </button>
-                </li>
-                <li className={styles.guideNavItem}>
-                    <button 
-                        className={`${styles.guideNavLink} ${activeSection === 'cost' ? styles.active : ''}`}
-                        onClick={() => scrollToSection('cost')}
-                    >
-                        <span className={styles.guideNavNumber}>05</span>
-                        Cost Factors
-                    </button>
-                </li>
-                <li className={styles.guideNavItem}>
-                    <button 
-                        className={`${styles.guideNavLink} ${activeSection === 'modernization' ? styles.active : ''}`}
-                        onClick={() => scrollToSection('modernization')}
-                    >
-                        <span className={styles.guideNavNumber}>06</span>
-                        Modernization Benefits
-                    </button>
-                </li>
-            </ul>
-        </div>
+            <section className={styles.guideSection}>
+                <div className={styles.guideWrapper}>
+                    {/* Sticky Sidebar Navigation */}
+                    <div className={styles.guideSidebar}>
+                        <ul className={styles.guideNav}>
+                            <li className={styles.guideNavItem}>
+                                <button
+                                    className={`${styles.guideNavLink} ${activeSection === 'stages' ? styles.active : ''}`}
+                                    onClick={() => scrollToSection('stages')}
+                                >
+                                    <span className={styles.guideNavNumber}>01</span>
+                                    Stages in Development
+                                </button>
+                            </li>
+                            <li className={styles.guideNavItem}>
+                                <button
+                                    className={`${styles.guideNavLink} ${activeSection === 'importance' ? styles.active : ''}`}
+                                    onClick={() => scrollToSection('importance')}
+                                >
+                                    <span className={styles.guideNavNumber}>02</span>
+                                    Importance for Businesses
+                                </button>
+                            </li>
+                            <li className={styles.guideNavItem}>
+                                <button
+                                    className={`${styles.guideNavLink} ${activeSection === 'approach' ? styles.active : ''}`}
+                                    onClick={() => scrollToSection('approach')}
+                                >
+                                    <span className={styles.guideNavNumber}>03</span>
+                                    Native vs Cross-Platform
+                                </button>
+                            </li>
+                            <li className={styles.guideNavItem}>
+                                <button
+                                    className={`${styles.guideNavLink} ${activeSection === 'advanced' ? styles.active : ''}`}
+                                    onClick={() => scrollToSection('advanced')}
+                                >
+                                    <span className={styles.guideNavNumber}>04</span>
+                                    Advanced Technologies
+                                </button>
+                            </li>
+                            <li className={styles.guideNavItem}>
+                                <button
+                                    className={`${styles.guideNavLink} ${activeSection === 'cost' ? styles.active : ''}`}
+                                    onClick={() => scrollToSection('cost')}
+                                >
+                                    <span className={styles.guideNavNumber}>05</span>
+                                    Cost Factors
+                                </button>
+                            </li>
+                            <li className={styles.guideNavItem}>
+                                <button
+                                    className={`${styles.guideNavLink} ${activeSection === 'modernization' ? styles.active : ''}`}
+                                    onClick={() => scrollToSection('modernization')}
+                                >
+                                    <span className={styles.guideNavNumber}>06</span>
+                                    Modernization Benefits
+                                </button>
+                            </li>
+                        </ul>
+                    </div>
 
-        {/* Main Content */}
-        <div className={styles.guideContent}>
-            <div className={styles.sectionHeader}>
-                <h2 className={styles.sectionTitle}>
-                    Ultimate Guide to <span className={styles.titleHighlight}>Custom Mobile App Development</span>
-                </h2>
-                <p className={styles.sectionDescription}>
-                    When you are planning to build a mobile app, this guide will help you in understanding the process and technologies involved, better.
-                </p>
-            </div>
-
-            {/* Stages */}
-            <div id="stages" className={styles.guideBlock}>
-                <h3 className={styles.guideBlockTitle}>Stages in Mobile App Development</h3>
-                <div className={styles.stagesGrid}>
-                    {developmentStages.map((stage, index) => (
-                        <motion.div
-                            key={index}
-                            className={styles.stageCard}
-                            initial={{ opacity: 0, y: 20 }}
-                            whileInView={{ opacity: 1, y: 0 }}
-                            transition={{ duration: 0.4, delay: index * 0.05 }}
-                            viewport={{ once: true }}
-                        >
-                            <h4>{stage.title}</h4>
-                            <p>{stage.description}</p>
-                        </motion.div>
-                    ))}
-                </div>
-            </div>
-
-            {/* Importance */}
-            <div id="importance" className={styles.guideBlock}>
-                <h3 className={styles.guideBlockTitle}>Importance of Mobile Apps for Businesses</h3>
-                <div className={styles.importanceGrid}>
-                    {importanceItems.map((item, index) => (
-                        <motion.div
-                            key={index}
-                            className={styles.importanceItem}
-                            initial={{ opacity: 0, x: -20 }}
-                            whileInView={{ opacity: 1, x: 0 }}
-                            transition={{ duration: 0.4, delay: index * 0.05 }}
-                            viewport={{ once: true }}
-                        >
-                            <div className={styles.importanceBullet}></div>
-                            <span>{item}</span>
-                        </motion.div>
-                    ))}
-                </div>
-            </div>
-
-            {/* Native vs Cross-Platform */}
-            <div id="approach" className={styles.guideBlock}>
-                <h3 className={styles.guideBlockTitle}>Choosing the Right Mobile App Development Approach</h3>
-                <div className={styles.comparisonGrid}>
-                    <div className={styles.comparisonCard}>
-                        <h4 style={{ color: 'var(--primary-blue)' }}>{nativeVsCross.native.title}</h4>
-                        <div className={styles.comparisonSection}>
-                            <strong>Advantages:</strong>
-                            <ul>
-                                {nativeVsCross.native.advantages.map((item, idx) => (
-                                    <li key={idx}>{item}</li>
-                                ))}
-                            </ul>
+                    {/* Main Content */}
+                    <div className={styles.guideContent}>
+                        <div className={styles.sectionHeader}>
+                            <h2 className={styles.sectionTitle}>
+                                Ultimate Guide to <span className={styles.titleHighlight}>Custom Mobile App Development</span>
+                            </h2>
+                            <p className={styles.sectionDescription}>
+                                When you are planning to build a mobile app, this guide will help you in understanding the process and technologies involved, better.
+                            </p>
                         </div>
-                        <div className={styles.comparisonSection}>
-                            <strong>Key Considerations:</strong>
-                            <ul>
-                                {nativeVsCross.native.considerations.map((item, idx) => (
-                                    <li key={idx}>{item}</li>
+
+                        {/* Stages */}
+                        <div id="stages" className={styles.guideBlock}>
+                            <h3 className={styles.guideBlockTitle}>Stages in Mobile App Development</h3>
+                            <div className={styles.stagesGrid}>
+                                {developmentStages.map((stage, index) => (
+                                    <motion.div
+                                        key={index}
+                                        className={styles.stageCard}
+                                        initial={{ opacity: 0, y: 20 }}
+                                        whileInView={{ opacity: 1, y: 0 }}
+                                        transition={{ duration: 0.4, delay: index * 0.05 }}
+                                        viewport={{ once: true }}
+                                    >
+                                        <h4>{stage.title}</h4>
+                                        <p>{stage.description}</p>
+                                    </motion.div>
                                 ))}
-                            </ul>
+                            </div>
+                        </div>
+
+                        {/* Importance */}
+                        <div id="importance" className={styles.guideBlock}>
+                            <h3 className={styles.guideBlockTitle}>Importance of Mobile Apps for Businesses</h3>
+                            <div className={styles.importanceGrid}>
+                                {importanceItems.map((item, index) => (
+                                    <motion.div
+                                        key={index}
+                                        className={styles.importanceItem}
+                                        initial={{ opacity: 0, x: -20 }}
+                                        whileInView={{ opacity: 1, x: 0 }}
+                                        transition={{ duration: 0.4, delay: index * 0.05 }}
+                                        viewport={{ once: true }}
+                                    >
+                                        <div className={styles.importanceBullet}></div>
+                                        <span>{item}</span>
+                                    </motion.div>
+                                ))}
+                            </div>
+                        </div>
+
+                        {/* Native vs Cross-Platform */}
+                        <div id="approach" className={styles.guideBlock}>
+                            <h3 className={styles.guideBlockTitle}>Choosing the Right Mobile App Development Approach</h3>
+                            <div className={styles.comparisonGrid}>
+                                <div className={styles.comparisonCard}>
+                                    <h4 style={{ color: 'var(--primary-blue)' }}>{nativeVsCross.native.title}</h4>
+                                    <div className={styles.comparisonSection}>
+                                        <strong>Advantages:</strong>
+                                        <ul>
+                                            {nativeVsCross.native.advantages.map((item, idx) => (
+                                                <li key={idx}>{item}</li>
+                                            ))}
+                                        </ul>
+                                    </div>
+                                    <div className={styles.comparisonSection}>
+                                        <strong>Key Considerations:</strong>
+                                        <ul>
+                                            {nativeVsCross.native.considerations.map((item, idx) => (
+                                                <li key={idx}>{item}</li>
+                                            ))}
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div className={styles.comparisonCard}>
+                                    <h4 style={{ color: 'var(--primary-green)' }}>{nativeVsCross.cross.title}</h4>
+                                    <div className={styles.comparisonSection}>
+                                        <strong>Advantages:</strong>
+                                        <ul>
+                                            {nativeVsCross.cross.advantages.map((item, idx) => (
+                                                <li key={idx}>{item}</li>
+                                            ))}
+                                        </ul>
+                                    </div>
+                                    <div className={styles.comparisonSection}>
+                                        <strong>Key Considerations:</strong>
+                                        <ul>
+                                            {nativeVsCross.cross.considerations.map((item, idx) => (
+                                                <li key={idx}>{item}</li>
+                                            ))}
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        {/* Advanced Technologies */}
+                        <div id="advanced" className={styles.guideBlock}>
+                            <h3 className={styles.guideBlockTitle}>Advanced Mobile App Development Technologies</h3>
+                            <div className={styles.advancedGrid}>
+                                {advancedTech.map((tech, index) => (
+                                    <motion.div
+                                        key={index}
+                                        className={styles.advancedCard}
+                                        initial={{ opacity: 0, y: 20 }}
+                                        whileInView={{ opacity: 1, y: 0 }}
+                                        transition={{ duration: 0.4, delay: index * 0.05 }}
+                                        viewport={{ once: true }}
+                                    >
+                                        <h4>{tech.title}</h4>
+                                        <p>{tech.description}</p>
+                                    </motion.div>
+                                ))}
+                            </div>
+                        </div>
+
+                        {/* Cost Factors */}
+                        <div id="cost" className={styles.guideBlock}>
+                            <h3 className={styles.guideBlockTitle}>What Affects Mobile App Development Cost?</h3>
+                            <div className={styles.costGrid}>
+                                {costFactors.map((factor, index) => (
+                                    <motion.div
+                                        key={index}
+                                        className={styles.costItem}
+                                        initial={{ opacity: 0, y: 20 }}
+                                        whileInView={{ opacity: 1, y: 0 }}
+                                        transition={{ duration: 0.4, delay: index * 0.05 }}
+                                        viewport={{ once: true }}
+                                    >
+                                        <div className={styles.costNumber}>{index + 1}</div>
+                                        <span>{factor}</span>
+                                    </motion.div>
+                                ))}
+                            </div>
+                        </div>
+
+                        {/* Modernization Benefits */}
+                        <div id="modernization" className={styles.guideBlock}>
+                            <h3 className={styles.guideBlockTitle}>Why Mobile App Modernization Is Critical for Business Growth?</h3>
+                            <div className={styles.modernGrid}>
+                                {modernizationBenefits.map((benefit, index) => (
+                                    <motion.div
+                                        key={index}
+                                        className={styles.modernItem}
+                                        initial={{ opacity: 0, y: 20 }}
+                                        whileInView={{ opacity: 1, y: 0 }}
+                                        transition={{ duration: 0.4, delay: index * 0.05 }}
+                                        viewport={{ once: true }}
+                                    >
+                                        <CheckCircle size={16} style={{ color: 'var(--primary-blue)' }} />
+                                        <span>{benefit}</span>
+                                    </motion.div>
+                                ))}
+                            </div>
                         </div>
                     </div>
-                    <div className={styles.comparisonCard}>
-                        <h4 style={{ color: 'var(--primary-green)' }}>{nativeVsCross.cross.title}</h4>
-                        <div className={styles.comparisonSection}>
-                            <strong>Advantages:</strong>
-                            <ul>
-                                {nativeVsCross.cross.advantages.map((item, idx) => (
-                                    <li key={idx}>{item}</li>
-                                ))}
-                            </ul>
-                        </div>
-                        <div className={styles.comparisonSection}>
-                            <strong>Key Considerations:</strong>
-                            <ul>
-                                {nativeVsCross.cross.considerations.map((item, idx) => (
-                                    <li key={idx}>{item}</li>
-                                ))}
-                            </ul>
-                        </div>
-                    </div>
                 </div>
-            </div>
+            </section>
 
-            {/* Advanced Technologies */}
-            <div id="advanced" className={styles.guideBlock}>
-                <h3 className={styles.guideBlockTitle}>Advanced Mobile App Development Technologies</h3>
-                <div className={styles.advancedGrid}>
-                    {advancedTech.map((tech, index) => (
-                        <motion.div
-                            key={index}
-                            className={styles.advancedCard}
-                            initial={{ opacity: 0, y: 20 }}
-                            whileInView={{ opacity: 1, y: 0 }}
-                            transition={{ duration: 0.4, delay: index * 0.05 }}
-                            viewport={{ once: true }}
-                        >
-                            <h4>{tech.title}</h4>
-                            <p>{tech.description}</p>
-                        </motion.div>
-                    ))}
-                </div>
-            </div>
-
-            {/* Cost Factors */}
-            <div id="cost" className={styles.guideBlock}>
-                <h3 className={styles.guideBlockTitle}>What Affects Mobile App Development Cost?</h3>
-                <div className={styles.costGrid}>
-                    {costFactors.map((factor, index) => (
-                        <motion.div
-                            key={index}
-                            className={styles.costItem}
-                            initial={{ opacity: 0, y: 20 }}
-                            whileInView={{ opacity: 1, y: 0 }}
-                            transition={{ duration: 0.4, delay: index * 0.05 }}
-                            viewport={{ once: true }}
-                        >
-                            <div className={styles.costNumber}>{index + 1}</div>
-                            <span>{factor}</span>
-                        </motion.div>
-                    ))}
-                </div>
-            </div>
-
-            {/* Modernization Benefits */}
-            <div id="modernization" className={styles.guideBlock}>
-                <h3 className={styles.guideBlockTitle}>Why Mobile App Modernization Is Critical for Business Growth?</h3>
-                <div className={styles.modernGrid}>
-                    {modernizationBenefits.map((benefit, index) => (
-                        <motion.div
-                            key={index}
-                            className={styles.modernItem}
-                            initial={{ opacity: 0, y: 20 }}
-                            whileInView={{ opacity: 1, y: 0 }}
-                            transition={{ duration: 0.4, delay: index * 0.05 }}
-                            viewport={{ once: true }}
-                        >
-                            <CheckCircle size={16} style={{ color: 'var(--primary-blue)' }} />
-                            <span>{benefit}</span>
-                        </motion.div>
-                    ))}
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-
-             {/* ===== INDUSTRIES SECTION ===== */}
+            {/* ===== INDUSTRIES SECTION ===== */}
             <section className={styles.industriesSection}>
                 <div className={styles.container}>
                     <div className={styles.sectionHeader}>
@@ -1105,7 +1105,7 @@ const scrollToSection = (sectionId: string) => {
                 </div>
             </section> */}
 
-           
+
             {/* ===== CTA SECTION ===== */}
             <section className={styles.ctaSection}>
                 <div className={styles.container}>
@@ -1132,18 +1132,18 @@ const scrollToSection = (sectionId: string) => {
 // Custom icon components
 const HelpCircle = (props: React.SVGProps<SVGSVGElement>) => (
     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" {...props}>
-        <circle cx="12" cy="12" r="10"/>
-        <path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"/>
-        <line x1="12" y1="17" x2="12.01" y2="17"/>
+        <circle cx="12" cy="12" r="10" />
+        <path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3" />
+        <line x1="12" y1="17" x2="12.01" y2="17" />
     </svg>
 );
 
 const Figma = (props: React.SVGProps<SVGSVGElement>) => (
     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" {...props}>
-        <path d="M5 5.5A3.5 3.5 0 0 1 8.5 2H12v7H8.5A3.5 3.5 0 0 1 5 5.5z"/>
-        <path d="M12 2h3.5a3.5 3.5 0 1 1 0 7H12V2z"/>
-        <path d="M12 12.5a3.5 3.5 0 1 1 7 0 3.5 3.5 0 1 1-7 0z"/>
-        <path d="M5 19.5A3.5 3.5 0 0 1 8.5 16H12v3.5a3.5 3.5 0 1 1-7 0z"/>
-        <path d="M5 12.5A3.5 3.5 0 0 1 8.5 9H12v7H8.5A3.5 3.5 0 0 1 5 12.5z"/>
+        <path d="M5 5.5A3.5 3.5 0 0 1 8.5 2H12v7H8.5A3.5 3.5 0 0 1 5 5.5z" />
+        <path d="M12 2h3.5a3.5 3.5 0 1 1 0 7H12V2z" />
+        <path d="M12 12.5a3.5 3.5 0 1 1 7 0 3.5 3.5 0 1 1-7 0z" />
+        <path d="M5 19.5A3.5 3.5 0 0 1 8.5 16H12v3.5a3.5 3.5 0 1 1-7 0z" />
+        <path d="M5 12.5A3.5 3.5 0 0 1 8.5 9H12v7H8.5A3.5 3.5 0 0 1 5 12.5z" />
     </svg>
 );

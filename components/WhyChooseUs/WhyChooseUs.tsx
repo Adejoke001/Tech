@@ -14,7 +14,7 @@ const WhyChooseUs = () => {
       icon: "👥"
     },
     {
-      title: "Costing", 
+      title: "Costing",
       description: "Generate detailed cost estimates and optimize project expenses.",
       icon: "💰"
     },
@@ -30,7 +30,7 @@ const WhyChooseUs = () => {
     },
     {
       title: "Success Review",
-      description: "Review KPIs to gauge project health and success.", 
+      description: "Review KPIs to gauge project health and success.",
       icon: "⭐"
     },
     {
@@ -51,11 +51,11 @@ const WhyChooseUs = () => {
         {/* Section Header */}
         <div className={styles.sectionHeader}>
           <h2 className={styles.sectionTitle}>
-            Proven Processes That Turn Tech Projects Into <br/><span className={styles.titleAccent}>Wins</span>
+            Proven Processes That Turn Tech Projects Into <br /><span className={styles.titleAccent}>Wins</span>
           </h2>
           <p className={styles.sectionDescription}>
-            From first consultation to final deployment, we ensure every milestone is delivered on time, 
-            on budget, and on target. Our process blends strategic insight with flawless execution, 
+            From first consultation to final deployment, we ensure every milestone is delivered on time,
+            on budget, and on target. Our process blends strategic insight with flawless execution,
             so you see ROI from day one.
           </p>
         </div>
@@ -64,7 +64,7 @@ const WhyChooseUs = () => {
         <div className={styles.processGrid}>
           <div className={styles.processRow}>
             {processes.slice(0, 4).map((process, index) => (
-              <div 
+              <div
                 key={index}
                 className={styles.processCard}
               >
@@ -72,11 +72,11 @@ const WhyChooseUs = () => {
                   <div className={styles.processIcon}>
                     {process.icon}
                   </div>
-                  
+
                   <h3 className={styles.processTitle}>
                     {process.title}
                   </h3>
-                  
+
                   <p className={styles.processDescription}>
                     {process.description}
                   </p>
@@ -84,10 +84,10 @@ const WhyChooseUs = () => {
               </div>
             ))}
           </div>
-          
+
           <div className={styles.processRow}>
             {processes.slice(4, 8).map((process, index) => (
-              <div 
+              <div
                 key={index + 4}
                 className={styles.processCard}
               >
@@ -95,11 +95,11 @@ const WhyChooseUs = () => {
                   <div className={styles.processIcon}>
                     {process.icon}
                   </div>
-                  
+
                   <h3 className={styles.processTitle}>
                     {process.title}
                   </h3>
-                  
+
                   <p className={styles.processDescription}>
                     {process.description}
                   </p>

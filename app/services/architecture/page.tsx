@@ -7,8 +7,8 @@ import { motion, AnimatePresence } from 'framer-motion';
 import {
     Sparkles, ArrowRight, Award, MessageSquare, CheckCircle,
     Users, Building2, Shield, Brain, Compass, Code, RefreshCw, Target,
-    Activity, Layers, TrendingUp, FileText, Rocket, Search, 
-    
+    Activity, Layers, TrendingUp, FileText, Rocket, Search,
+
 } from 'lucide-react';
 import styles from './architecture.module.css';
 
@@ -289,7 +289,7 @@ export default function SaasArchitecturePage() {
             image: 'https://images.unsplash.com/photo-1598128558393-70ff21433be0?auto=format&fit=crop&w=800&q=80',
             color: '#8B5CF6'
         },
-        
+
     ];
 
     return (
@@ -329,7 +329,7 @@ export default function SaasArchitecturePage() {
                             <Link href="/contact" className={styles.primaryButton}>
                                 Start Your SaaS Journey <ArrowRight size={18} />
                             </Link>
-                            
+
                         </div>
                     </motion.div>
                     <motion.div
@@ -874,8 +874,8 @@ export default function SaasArchitecturePage() {
 // Custom icon components
 const HelpCircle = (props: React.SVGProps<SVGSVGElement>) => (
     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" {...props}>
-        <circle cx="12" cy="12" r="10"/>
-        <path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"/>
-        <line x1="12" y1="17" x2="12.01" y2="17"/>
+        <circle cx="12" cy="12" r="10" />
+        <path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3" />
+        <line x1="12" y1="17" x2="12.01" y2="17" />
     </svg>
 );

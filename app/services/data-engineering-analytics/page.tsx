@@ -168,37 +168,37 @@ export default function DataEngineeringAnalyticsPage() {
 
     // ===== HIRING MODELS (Complete from both websites) =====
     const hiringModels = [
-    {
-        title: 'Fixed Price Model',
-        description: 'For businesses with well-defined project scope and requirements.',
-        price: 'From $25,000',
-        features: ['Simplified process', 'Higher predictability', 'Greater transparency', 'Reduced risk', 'Low management efforts'],
-        color: '#3B82F6',
-        gradient: 'linear-gradient(135deg, #3B82F6 0%, #2563EB 100%)',
-        bestFor: ['Specific Data Migration', 'Dashboard Implementation', 'Compliance Projects'],
-        icon: <FileText />
-    },
-    {
-        title: 'Dedicated Hiring Model',
-        description: 'For businesses with long-term requirements or complex development process.',
-        price: 'From $8,500 /month',
-        features: ['Complete control', 'More flexibility', 'Focused and dedicated approach', 'Faster time to market', 'Staff Augmentation'],
-        color: '#3B82F6',
-        gradient: 'linear-gradient(135deg, #3B82F6 0%, #2563EB 100%)',
-        bestFor: ['Ongoing Data Management', 'Analytics Implementation', 'Continuous Optimization'],
-        icon: <Users />
-    },
-    {
-        title: 'Time & Material Model',
-        description: 'For businesses looking to pay for completed project instead of committing to fixed cost.',
-        price: '$75 - $200 /hour',
-        features: ['Faster project start', 'Flexibility to adapt', 'Pay as you go model', 'Easy scaling', 'Transparent billing'],
-        color: '#3B82F6',
-        gradient: 'linear-gradient(135deg, #3B82F6 0%, #2563EB 100%)',
-        bestFor: ['Data Consulting', 'Proof of Concepts', 'Emergency Support'],
-        icon: <Clock />
-    },
-];
+        {
+            title: 'Fixed Price Model',
+            description: 'For businesses with well-defined project scope and requirements.',
+            price: 'From $25,000',
+            features: ['Simplified process', 'Higher predictability', 'Greater transparency', 'Reduced risk', 'Low management efforts'],
+            color: '#3B82F6',
+            gradient: 'linear-gradient(135deg, #3B82F6 0%, #2563EB 100%)',
+            bestFor: ['Specific Data Migration', 'Dashboard Implementation', 'Compliance Projects'],
+            icon: <FileText />
+        },
+        {
+            title: 'Dedicated Hiring Model',
+            description: 'For businesses with long-term requirements or complex development process.',
+            price: 'From $8,500 /month',
+            features: ['Complete control', 'More flexibility', 'Focused and dedicated approach', 'Faster time to market', 'Staff Augmentation'],
+            color: '#3B82F6',
+            gradient: 'linear-gradient(135deg, #3B82F6 0%, #2563EB 100%)',
+            bestFor: ['Ongoing Data Management', 'Analytics Implementation', 'Continuous Optimization'],
+            icon: <Users />
+        },
+        {
+            title: 'Time & Material Model',
+            description: 'For businesses looking to pay for completed project instead of committing to fixed cost.',
+            price: '$75 - $200 /hour',
+            features: ['Faster project start', 'Flexibility to adapt', 'Pay as you go model', 'Easy scaling', 'Transparent billing'],
+            color: '#3B82F6',
+            gradient: 'linear-gradient(135deg, #3B82F6 0%, #2563EB 100%)',
+            bestFor: ['Data Consulting', 'Proof of Concepts', 'Emergency Support'],
+            icon: <Clock />
+        },
+    ];
 
     // ===== KEY BENEFITS SECTION (From both websites) =====
     const keyBenefits = [
@@ -677,9 +677,9 @@ export default function DataEngineeringAnalyticsPage() {
                                             ))}
                                         </div>
                                     </div>
-                                    <Link 
-                                        href="/contact" 
-                                        className={styles.modelCta} 
+                                    <Link
+                                        href="/contact"
+                                        className={styles.modelCta}
                                         style={{ backgroundColor: model.color, position: 'relative', zIndex: 10, pointerEvents: 'auto' }}
                                     >
                                         Choose This Model

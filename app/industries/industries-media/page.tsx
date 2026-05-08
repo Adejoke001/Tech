@@ -6,7 +6,7 @@ import Link from 'next/link';
 import { SVGProps } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import {
-   
+
     Sparkles, ArrowRight, Award, MessageSquare, HelpCircle,
     CheckCircle, Lock, Clock, Globe,
     Smartphone, Play, Film, Tablet, Database, Bot, Share2, Layers,
@@ -253,7 +253,7 @@ export default function MediaPage() {
     ];
 
     // ============ TRUSTED BY ============
-    const trustedCompanies = ['Microsoft', 'Amazon', 'Google', 'IBM', 'SAP', 'Oracle'];
+    // const trustedCompanies = ['Microsoft', 'Amazon', 'Google', 'IBM', 'SAP', 'Oracle'];
 
     // ============ INDUSTRIES (Media-focused) ============
     const industries = [
@@ -370,7 +370,7 @@ export default function MediaPage() {
                             <Link href="/contact" className={styles.ctaButton}>
                                 Build Your Media Solution
                             </Link>
-                            
+
                         </motion.div>
                     </motion.div>
 
@@ -800,7 +800,7 @@ export default function MediaPage() {
                                 Build Your Media Solution
                                 <ArrowRight className={styles.buttonIcon} />
                             </Link>
-                            
+
                         </div>
                     </div>
                 </div>
@@ -812,7 +812,7 @@ export default function MediaPage() {
 // Custom icon component (not in lucide-react)
 const LinkChain = (props: SVGProps<SVGSVGElement>) => (
     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" {...props}>
-        <path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"/>
-        <path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"/>
+        <path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71" />
+        <path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71" />
     </svg>
 );

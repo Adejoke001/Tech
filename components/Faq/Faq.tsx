@@ -74,7 +74,7 @@ const Faq: React.FC = () => {
             Frequently Asked <span className={styles.titleAccent}>Questions</span>
           </h2>
           <p className={styles.sectionDescription}>
-            Get answers to common questions about our development process, timelines, 
+            Get answers to common questions about our development process, timelines,
             and how we deliver exceptional results for every project.
           </p>
         </div>
@@ -83,11 +83,11 @@ const Faq: React.FC = () => {
         <div className={styles.faqContainer}>
           <div className={styles.faqList}>
             {faqData.map((faq, index) => (
-              <div 
+              <div
                 key={faq.id}
                 className={`${styles.faqItem} ${activeIndex === index ? styles.active : ''}`}
               >
-                <button 
+                <button
                   className={styles.faqQuestion}
                   onClick={() => toggleAccordion(index)}
                   aria-expanded={activeIndex === index}
@@ -98,7 +98,7 @@ const Faq: React.FC = () => {
                     <span className={styles.minusIcon}></span>
                   </span>
                 </button>
-                
+
                 <div className={styles.faqAnswer}>
                   <div className={styles.answerContent}>
                     {faq.answer}
@@ -109,14 +109,14 @@ const Faq: React.FC = () => {
           </div>
 
           {/* Side Content - Now Sticky with Framer Motion */}
-          <motion.div 
+          <motion.div
             className={styles.sideContent}
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true, margin: "-50px" }}
             transition={{ duration: 0.6, ease: "easeOut" }}
           >
-            <motion.div 
+            <motion.div
               className={styles.helpCard}
               initial={{ scale: 0.9, opacity: 0 }}
               whileInView={{ scale: 1, opacity: 1 }}
@@ -128,16 +128,16 @@ const Faq: React.FC = () => {
               <p className={styles.helpDescription}>
                 Can&apos;t find the answer you&apos;re looking for? Our team is here to help you with any questions about our services.
               </p>
-              <motion.button 
+              <motion.button
                 className={styles.helpButton}
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
               >
                 <Link href="/contact" className={styles.buttonLink}>
-                Contact Support
-                <svg className={styles.buttonArrow} width="16" height="16" viewBox="0 0 16 16" fill="none">
-                  <path d="M8 0L6.59 1.41L12.17 7H0V9H12.17L6.59 14.59L8 16L16 8L8 0Z" fill="currentColor"/>
-                </svg>
+                  Contact Support
+                  <svg className={styles.buttonArrow} width="16" height="16" viewBox="0 0 16 16" fill="none">
+                    <path d="M8 0L6.59 1.41L12.17 7H0V9H12.17L6.59 14.59L8 16L16 8L8 0Z" fill="currentColor" />
+                  </svg>
                 </Link>
               </motion.button>
             </motion.div>

@@ -3,7 +3,9 @@
 .pageWrapper {
   width: 100%;
   overflow-x: hidden;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, sans-serif;
+  font-family:
+    -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu,
+    sans-serif;
 }
 
 /* Hero Section */
@@ -11,7 +13,11 @@
   position: relative;
   min-height: 90vh;
   padding: 120px 2rem 80px;
-  background: linear-gradient(135deg, rgba(15, 23, 42, 0.92) 0%, rgba(30, 41, 59, 0.92) 100%);
+  background: linear-gradient(
+    135deg,
+    rgba(15, 23, 42, 0.92) 0%,
+    rgba(30, 41, 59, 0.92) 100%
+  );
   display: flex;
   align-items: center;
   justify-content: center;
@@ -23,7 +29,8 @@
   left: 0;
   width: 100%;
   height: 100%;
-  background: url('https://images.unsplash.com/photo-1552664730-d307ca884978?auto=format&fit=crop&w=2000') center/cover;
+  background: url("https://images.unsplash.com/photo-1552664730-d307ca884978?auto=format&fit=crop&w=2000")
+    center/cover;
   opacity: 0.1;
 }
 
@@ -494,7 +501,11 @@
   left: 0;
   width: 100%;
   height: 100%;
-  background: linear-gradient(to bottom, rgba(15, 23, 42, 0.1) 0%, rgba(15, 23, 42, 0.9) 100%);
+  background: linear-gradient(
+    to bottom,
+    rgba(15, 23, 42, 0.1) 0%,
+    rgba(15, 23, 42, 0.9) 100%
+  );
 }
 
 .serviceContent {
@@ -585,33 +596,33 @@
   .serviceCard {
     height: 380px;
   }
-  
+
   .serviceContent {
     left: 1rem;
     right: 1rem;
     bottom: 1rem;
   }
-  
+
   .serviceTitle {
     font-size: 1.35rem;
     font-weight: 800;
     margin-bottom: 0.5rem;
     text-shadow: 0 2px 6px rgba(0, 0, 0, 0.7);
   }
-  
+
   .serviceExcerpt {
     font-size: 0.95rem;
     font-weight: 600;
     margin-bottom: 1rem;
     text-shadow: 0 1px 4px rgba(0, 0, 0, 0.7);
   }
-  
+
   .featureItem {
     font-size: 0.85rem;
     font-weight: 500;
     text-shadow: 0 1px 3px rgba(0, 0, 0, 0.7);
   }
-  
+
   .serviceLink {
     font-weight: 700;
     padding: 0.65rem 1.25rem;
@@ -624,20 +635,20 @@
   .serviceCard {
     height: 360px;
   }
-  
+
   .serviceContent {
     left: 0.75rem;
     right: 0.75rem;
     bottom: 0.75rem;
   }
-  
+
   .serviceTitle {
     font-size: 1.25rem;
     font-weight: 800;
     margin-bottom: 0.4rem;
     text-shadow: 0 2px 8px rgba(0, 0, 0, 0.8);
   }
-  
+
   .serviceExcerpt {
     font-size: 0.9rem;
     font-weight: 600;
@@ -645,13 +656,13 @@
     line-height: 1.4;
     text-shadow: 0 1px 5px rgba(0, 0, 0, 0.8);
   }
-  
+
   .featureItem {
     font-size: 0.8rem;
     font-weight: 500;
     text-shadow: 0 1px 4px rgba(0, 0, 0, 0.8);
   }
-  
+
   .serviceLink {
     font-weight: 700;
     padding: 0.6rem 1rem;
@@ -663,7 +674,11 @@
 /* Why Choose Us */
 .whyChooseSection {
   padding: 5rem 2rem;
-  background: linear-gradient(135deg, var(--dark-surface) 0%, var(--dark-bg) 100%);
+  background: linear-gradient(
+    135deg,
+    var(--dark-surface) 0%,
+    var(--dark-bg) 100%
+  );
   position: relative;
 }
 
@@ -1114,7 +1129,11 @@
 .ctaSection {
   text-align: center;
   padding: 3rem 2rem;
-  background: linear-gradient(135deg, var(--dark-surface) 0%, var(--dark-bg) 100%);
+  background: linear-gradient(
+    135deg,
+    var(--dark-surface) 0%,
+    var(--dark-bg) 100%
+  );
   border-radius: 1.5rem;
   box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
   max-width: 800px;
@@ -1180,20 +1199,20 @@
   .heroSection {
     padding: 100px 1rem 60px;
   }
-  
+
   .heroTitle {
     font-size: 2.5rem;
   }
-  
+
   .sectionTitle,
   .sectionTitleWhite {
     font-size: 2rem;
   }
-  
+
   .heroContent {
     gap: 3rem;
   }
-  
+
   .servicesSection,
   .benefitsBanner,
   .industriesSection,
@@ -1202,39 +1221,39 @@
   .faqSection {
     padding: 4rem 1rem;
   }
-  
+
   .servicesGrid,
   .industriesGrid,
   .pricingGrid {
     grid-template-columns: 1fr;
   }
-  
+
   .whyChooseGrid {
     grid-template-columns: 1fr;
   }
-  
+
   .statsGrid {
     grid-template-columns: 1fr;
   }
-  
+
   .ctaTitle {
     font-size: 1.75rem;
   }
-  
+
   .ctaButtons {
     flex-direction: column;
   }
-  
+
   .ctaPrimary {
     width: 100%;
     justify-content: center;
   }
-  
+
   .testimonialInfo {
     flex-direction: column;
     text-align: center;
   }
-  
+
   .clientImage {
     width: 70px;
     height: 70px;
@@ -1245,35 +1264,35 @@
   .heroTitle {
     font-size: 2rem;
   }
-  
+
   .sectionTitle,
   .sectionTitleWhite {
     font-size: 1.75rem;
   }
-  
+
   .heroDescription,
   .sectionDescription,
   .sectionDescriptionWhite {
     font-size: 1rem;
   }
-  
+
   .heroButtons {
     flex-direction: column;
   }
-  
+
   .primaryButton {
     width: 100%;
     justify-content: center;
   }
-  
+
   .statsSection {
     grid-template-columns: repeat(2, 1fr);
   }
-  
+
   .statItem {
     padding: 1rem;
   }
-  
+
   .statValue {
     font-size: 1.75rem;
   }
