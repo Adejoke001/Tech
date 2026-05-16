@@ -70,6 +70,9 @@
 }
 
 .heroBadge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
   background: rgba(59, 130, 246, 0.2);
   color: var(--gray-300);
   padding: 0.5rem 1rem;
@@ -1343,7 +1346,7 @@
 .processNumber {
   font-size: 3rem;
   font-weight: 900;
-  color: rgba(52, 211, 153, 0.1);
+  color: rgba(59, 130, 246, 0.1);
   position: absolute;
   top: 1rem;
   right: 1.5rem;

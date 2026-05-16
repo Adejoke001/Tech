@@ -278,15 +278,15 @@ export default function SpecializedSolutionsPage() {
         { text: 'AI/ML – Predictive features, chatbots, analytics', icon: <Brain />, color: '#3B82F6' },
         { text: 'Big Data – Real-time processing, trend analysis', icon: <Database />, color: '#10B981' },
         { text: 'IoT – Sensor data, predictive maintenance', icon: <Radio />, color: '#3b82f6' },
-        { text: 'Blockchain – Data integrity, secure transactions', icon: <Lock />, color: '#10b981' },
+        { text: 'Cloud Computing – Scalable infrastructure', icon: <Cloud />, color: '#10b981' },
         { text: 'AR/VR – Immersive experiences, training', icon: <Box />, color: '#3b82f6' },
         { text: 'RPA – Automate repetitive tasks', icon: <Repeat />, color: '#10b981' },
         { text: 'Edge Computing – Real-time at the edge', icon: <CpuChip />, color: '#3B82F6' },
         { text: 'NLP – Sentiment analysis, chatbots', icon: <MessageSquare />, color: '#10B981' },
-        { text: 'Biometrics – Facial recognition, security', icon: <Scan />, color: '#3b82f6' },
-        { text: 'Robotics – Control and manage physical devices', icon: <Bot />, color: '#10b981' },
-        { text: '5G – High-speed, low-latency communication', icon: <RadioIcon />, color: '#3b82f6' },
-        { text: 'Quantum Computing – Advanced computational capabilities', icon: <Microchip />, color: '#10b981' }
+        { text: 'Mobile Development – iOS & Android apps', icon: <Smartphone />, color: '#3b82f6' },
+        { text: 'Web Development – Modern frameworks', icon: <Globe />, color: '#10b981' },
+        { text: 'DevOps – CI/CD, automation', icon: <GitBranch />, color: '#3b82f6' },
+        { text: 'API Integration – Connect systems seamlessly', icon: <Plug />, color: '#10b981' }
     ];
 
     // ============ WHITE LABEL SERVICES PILLAR ============
@@ -566,7 +566,7 @@ export default function SpecializedSolutionsPage() {
         },
         {
             question: 'What advanced technologies do you use for ISV products?',
-            answer: 'We specialise in AI/ML, AR/VR, IoT, Blockchain, RPA, Edge Computing, Biometrics, Robotics, 5G, and Quantum Computing. Our team has 4+ years average experience in these domains and has delivered 50+ successful ISV products.'
+            answer: 'We specialise in AI/ML, AR/VR, IoT, and modern web/mobile technologies. Our team has experience delivering successful ISV products and continues to expand expertise in emerging technologies.'
         },
         {
             question: 'How quickly can you scale a white label team?',
@@ -606,7 +606,7 @@ export default function SpecializedSolutionsPage() {
                                 From product strategy to white label delivery and API integration – we accelerate your entire software ecosystem.
                             </p>
                             <p className={styles.heroDescription}>
-                                Whether you&apos;re an ISV building AI-powered apps, a digital agency scaling through white-label partnerships, or an enterprise modernising with APIs – we deliver the expertise, speed, and quality you need.
+                                ISV products, white-label partnerships, API integration – we deliver the expertise you need.
                             </p>
                         </motion.div>
 
@@ -624,13 +624,13 @@ export default function SpecializedSolutionsPage() {
                         </motion.div>
                     </motion.div>
 
-                    <motion.div
+                    {/* <motion.div
                         className={styles.rightContent}
                         initial={{ opacity: 0, x: 20 }}
                         animate={{ opacity: 1, x: 0 }}
                         transition={{ delay: 0.3, duration: 0.8 }}
-                    >
-                        <div className={styles.testimonialCard}>
+                    > */}
+                        {/* <div className={styles.testimonialCard}>
                             <div className={styles.testimonialImage}>
                                 <div className={styles.clientImageWrapper}>
                                     <Image
@@ -647,7 +647,6 @@ export default function SpecializedSolutionsPage() {
                                 <p className={styles.testimonialText}>&quot;{testimonial.content}&quot;</p>
                                 <div className={styles.testimonialAuthor}>
                                     <h4>{testimonial.name}</h4>
-                                    {/* <p>{testimonial.role}</p> */}
                                 </div>
                                 <div className={styles.ratings}>
                                     <div className={styles.ratingItem}>
@@ -667,8 +666,8 @@ export default function SpecializedSolutionsPage() {
                                     </div>
                                 </div>
                             </div>
-                        </div>
-                    </motion.div>
+                        </div> */}
+                   {/* </motion.div> */}
                 </div>
             </section>
 
@@ -1356,36 +1355,36 @@ export default function SpecializedSolutionsPage() {
                             Elevate Your <span className={styles.titleHighlight}>ISV Journey</span> with Our Expertise
                         </h2>
                         <p className={styles.sectionDescription} style={{ color: 'rgba(255,255,255,0.9)' }}>
-                            BBMCoders stands out as a trusted name in software development, specializing in catering to Independent Software Vendors (ISVs), product companies, and digital agencies.
+                            BBMcoders stands out as a trusted name in software development, specializing in catering to Independent Software Vendors (ISVs), product companies, and digital agencies.
                         </p>
                     </div>
 
                     <div className={styles.elevateGrid}>
-                        <div className={styles.elevateItem}>
-                            <BadgeCheck className={styles.elevateIcon} style={{ color: '#3B82F6' }} />
-                            <span>Trusted by Startups to Fortune 500</span>
-                        </div>
-                        <div className={styles.elevateItem}>
-                            <Rocket className={styles.elevateIcon} style={{ color: '#3b82f6' }} />
-                            <span>Idea to Deployment – We Handle All</span>
-                        </div>
-                        <div className={styles.elevateItem}>
-                            <Globe className={styles.elevateIcon} style={{ color: '#3b82f6' }} />
-                            <span>Time-Zone Friendly: Global Presence</span>
-                        </div>
-                        <div className={styles.elevateItem}>
-                            <Shield className={styles.elevateIcon} style={{ color: '#3b82f6' }} />
-                            <span>Top-tier Data Security Protocols</span>
-                        </div>
-                        <div className={styles.elevateItem}>
-                            <Clock className={styles.elevateIcon} style={{ color: '#3b82f6' }} />
-                            <span>On-time Delivery, No Surprises</span>
-                        </div>
-                        <div className={styles.elevateItem}>
-                            <Target className={styles.elevateIcon} style={{ color: '#3b82f6' }} />
-                            <span>First Time Right Process</span>
-                        </div>
-                    </div>
+    <div className={styles.elevateItem}>
+        <BadgeCheck className={styles.elevateIcon} style={{ color: '#3B82F6' }} />
+        <span>Trusted by Startups & Growing Businesses</span>
+    </div>
+    <div className={styles.elevateItem}>
+        <Rocket className={styles.elevateIcon} style={{ color: '#3b82f6' }} />
+        <span>Idea to Deployment – We Handle All</span>
+    </div>
+    <div className={styles.elevateItem}>
+        <Globe className={styles.elevateIcon} style={{ color: '#3b82f6' }} />
+        <span>Time-Zone Friendly: Global Collaboration</span>
+    </div>
+    <div className={styles.elevateItem}>
+        <Shield className={styles.elevateIcon} style={{ color: '#3b82f6' }} />
+        <span>Strong Data Security Practices</span>
+    </div>
+    <div className={styles.elevateItem}>
+        <Clock className={styles.elevateIcon} style={{ color: '#3b82f6' }} />
+        <span>On-time Delivery Commitment</span>
+    </div>
+    <div className={styles.elevateItem}>
+        <Target className={styles.elevateIcon} style={{ color: '#3b82f6' }} />
+        <span>Quality-First Approach</span>
+    </div>
+</div>
                 </div>
             </section>
 

@@ -22,10 +22,10 @@ export default function CloudServicesPage() {
 
     const testimonial = {
         name: 'Jonathan',
-        role: 'CTO, Tech Solutions',
+        // role: 'CTO, Tech Solutions',
         content: 'Outstanding results, clear communication, and a dedicated team. We\'re extremely satisfied with their IT services.',
         rating: 5,
-        project: 'Enterprise Cloud Migration'
+        project: 'Cloud Migration'
     };
 
     // ===== CLOUD SERVICES (Added one more column) =====
@@ -100,21 +100,21 @@ export default function CloudServicesPage() {
     ];
 
     // ===== REDESIGNED HIRING MODELS =====
-    const hiringModels = [
+const hiringModels = [
         {
             title: 'Fixed Price Model',
             description: 'For businesses with well-defined project scope and requirements.',
-            price: 'From $25,000',
+            price: 'From $5,000',
             features: ['Simplified process', 'Higher predictability', 'Greater transparency', 'Reduced risk', 'Low management efforts'],
             color: '#10B981',
             gradient: 'linear-gradient(135deg, #10B981 0%, #34D399 100%)',
-            bestFor: ['Specific Cloud Migration', 'Security Implementation', 'Compliance Projects'],
+            bestFor: ['Cloud Migration', 'Security Setup', 'Compliance Readiness'],
             icon: <FileText />
         },
         {
             title: 'Dedicated Hiring Model',
             description: 'For businesses with long-term project requirements or complex development process.',
-            price: 'From $8,500 /month',
+            price: 'From $4,500 /month',
             features: ['Complete control', 'More flexibility', 'Focused and dedicated approach', 'Faster time to market', 'Staff Augmentation'],
             color: '#10B981',
             gradient: 'linear-gradient(135deg, #10B981 0%, #059669 100%)',
@@ -123,8 +123,8 @@ export default function CloudServicesPage() {
         },
         {
             title: 'Time & Material Model',
-            description: 'For businesses looking to pay for completed project instead of committing to fixed project cost.',
-            price: '$75 - $200 /hour',
+            description: 'For businesses looking to pay for completed work instead of committing to fixed project cost.',
+            price: '$40 - $100 /hour',
             features: ['Faster project start', 'Flexibility to adapt as per changing needs', 'Pay as you go model', 'Easy scaling', 'Transparent billing'],
             color: '#10B981',
             gradient: 'linear-gradient(135deg, #10B981 0%, #059669 100%)',
@@ -222,7 +222,7 @@ export default function CloudServicesPage() {
                                 </div>
                                 <div className={styles.testimonialInfo}>
                                     <h4 className={styles.testimonialName}>{testimonial.name}</h4>
-                                    <p className={styles.testimonialRole}>{testimonial.role}</p>
+                                    {/* <p className={styles.testimonialRole}>{testimonial.role}</p> */}
                                     <div className={styles.testimonialRating}>
                                         {[...Array(testimonial.rating)].map((_, i) => (
                                             <Star key={i} size={16} fill="#FBBF24" color="#FBBF24" />
@@ -360,8 +360,8 @@ export default function CloudServicesPage() {
                                 <h2>Why Choose BBMcoders?</h2>
                                 <p>We bring innovation, expertise, and reliability to every cloud project. With 20+ years of cloud expertise, certified talent, and reliable delivery.</p>
                                 <div className={styles.whyChooseGrid}>
-                                    <div className={styles.whyChooseCard}><Award /> Nigeria&apos;s Top 1% Software Talent</div>
-                                    <div className={styles.whyChooseCard}><Users /> Trusted by Startups to Fortune 500</div>
+                                    <div className={styles.whyChooseCard}><Award /> Nigeria&apos;s Top 10% Software Talent</div>
+                                    <div className={styles.whyChooseCard}><Users /> Trusted by Startups to Enterprise</div>
                                     <div className={styles.whyChooseCard}><Workflow /> Idea to Deployment, We Handle All</div>
                                     <div className={styles.whyChooseCard}><Globe /> Time-Zone Friendly: Global Presence</div>
                                     <div className={styles.whyChooseCard}><Shield /> Top-tier Data Security Protocols</div>

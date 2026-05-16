@@ -153,37 +153,37 @@ export default function StartupsSolutionPage() {
     ];
 
     // ----- COST ESTIMATION (5 tiers from reference) -----
-    const costEstimates = [
+const costEstimates = [
         {
-            range: '$10,000 – $25,000',
+            range: '$5,000 – $15,000',
             description: 'Lean prototype with essential features to validate your idea quickly.',
             icon: <Lightbulb />,
             color: '#3B82F6',
             bestFor: 'Idea validation'
         },
         {
-            range: '$30,000 – $70,000',
+            range: '$15,000 – $35,000',
             description: 'MVP that helps you attract early users or investors.',
             icon: <Rocket />,
             color: '#3b82f6',
             bestFor: 'Early users'
         },
         {
-            range: '$50,000 – $90,000',
+            range: '$30,000 – $60,000',
             description: 'Growth-ready product with advanced features and better UX.',
             icon: <TrendingUp />,
             color: '#3b82f6',
             bestFor: 'Growth stage'
         },
         {
-            range: '$80,000 – $120,000',
+            range: '$50,000 – $90,000',
             description: 'Complete, market-ready product with strong architecture and scalability.',
             icon: <Cloud />,
             color: '#3b82f6',
             bestFor: 'Market launch'
         },
         {
-            range: '$120,000 – $200,000+',
+            range: '$80,000 – $150,000+',
             description: 'Large-scale enterprise application with advanced security and compliance.',
             icon: <Shield />,
             color: '#3b82f6',
@@ -238,21 +238,21 @@ export default function StartupsSolutionPage() {
     ];
 
     // ----- STARTUP PARTNER HIGHLIGHTS (from reference) -----
-    const partnerHighlights = [
-        { text: 'Nigeria’s Top 10% Software Talent', icon: <Award />, color: '#3B82F6' },
+const partnerHighlights = [
+        { text: 'Nigeria\'s Rising Software Talent', icon: <Award />, color: '#3B82F6' },
         { text: 'Investor-Ready Products', icon: <DollarSign />, color: '#3b82f6' },
-        { text: 'From MVP to Market Leader', icon: <Rocket />, color: '#3b82F6' },
+        { text: 'From MVP to Market Leader', icon: <Rocket />, color: '#3B82F6' },
         { text: 'Growth-Centric Strategy', icon: <Target />, color: '#3b82f6' },
         { text: 'Time-Zone Friendly', icon: <Globe />, color: '#3b82f6' },
-        { text: 'ISO 27001 Certified', icon: <ShieldCheck />, color: '#3b82f6' },
-        { text: 'Agile Delivery, Zero Surprises', icon: <ThumbsUp />, color: '#3B82F6' }
+        { text: 'Security-First Development', icon: <ShieldCheck />, color: '#3b82f6' },
+        { text: 'Agile Delivery, Clear Communication', icon: <ThumbsUp />, color: '#3B82F6' }
     ];
 
     // ----- COMPANY STATS -----
-    const companyStats = [
-        { value: '700+', label: 'Full‑time Staff', icon: <Users />, description: 'Top 1% industry talent' },
-        { value: '20+', label: 'Years Experience', icon: <Award />, description: 'Since 2004' },
-        { value: '4500+', label: 'Satisfied Clients', icon: <HeadphonesIcon />, description: 'Startups to Fortune 500' }
+const companyStats = [
+        { value: '15+', label: 'Team Members', icon: <Users />, description: 'Skilled tech professionals' },
+        { value: '5+', label: 'Years Experience', icon: <Award />, description: 'Since 2021' },
+        { value: '80+', label: 'Happy Clients', icon: <HeadphonesIcon />, description: 'Startups & growing businesses' }
     ];
 
     // ----- CLIENT TESTIMONIALS (from reference) -----
@@ -391,7 +391,7 @@ export default function StartupsSolutionPage() {
                     >
                         <div className={styles.testimonialCard}>
                             <div className={styles.testimonialImage}>
-                                <div className={styles.clientImageWrapper}>
+                                {/* <div className={styles.clientImageWrapper}>
                                     <Image
                                         src="/images/user.png"
                                         alt={testimonial.name}
@@ -399,7 +399,7 @@ export default function StartupsSolutionPage() {
                                         height={100}
                                         className={styles.clientImage}
                                     />
-                                </div>
+                                </div> */}
                             </div>
                             <div className={styles.testimonialContent}>
                                 <MessageSquare className={styles.quoteIcon} />

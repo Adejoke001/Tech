@@ -152,7 +152,7 @@ export default function FrontendDevelopersPage() {
     },
   ];
 
-  // Technology Stack (categorized as per ValueCoders)
+  // Technology Stack (categorized as per bbmcoders)
   const technologyStack = {
     "core-stack": {
       title: "Core Stack",
@@ -162,7 +162,6 @@ export default function FrontendDevelopersPage() {
         "CSS3",
         "JavaScript (ES6+)",
         "TypeScript",
-        "SASS/SCSS",
         "Tailwind CSS",
       ],
     },
@@ -171,66 +170,48 @@ export default function FrontendDevelopersPage() {
       color: "#10B981",
       technologies: [
         "React.js",
-        "Angular",
-        "Vue.js",
         "Next.js",
+        "Vue.js",
         "Material UI",
-        "Ant Design",
-        "Chakra UI",
-        "Bootstrap",
+        "Tailwind CSS",
       ],
     },
     tooling: {
-      title: "Build, Tooling & Performance",
+      title: "Build & Tooling",
       color: "#3b82f6",
       technologies: [
         "Webpack",
         "Vite",
-        "Babel",
         "ESLint",
         "Prettier",
-        "Rollup",
-        "Parcel",
-        "ESBuild",
       ],
     },
     testing: {
-      title: "Testing & QA Tools",
+      title: "Testing & QA",
       color: "#10b981",
       technologies: [
         "Jest",
-        "Cypress",
-        "Puppeteer",
-        "Playwright",
-        "Mocha",
-        "Storybook",
         "React Testing Library",
+        "Cypress",
       ],
     },
     design: {
-      title: "Design & Prototyping Tools",
+      title: "Design Tools",
       color: "#3b82f6",
       technologies: [
         "Figma",
         "Adobe XD",
-        "Sketch",
-        "Zeplin",
-        "InVision",
         "Photoshop",
-        "Illustrator",
       ],
     },
     collaboration: {
-      title: "Project Management & Collaboration",
+      title: "Project Management",
       color: "#10b981",
       technologies: [
         "Jira",
         "Trello",
-        "Asana",
-        "ClickUp",
-        "Notion",
         "Slack",
-        "Microsoft Teams",
+        "Notion",
       ],
     },
   };
@@ -282,32 +263,32 @@ export default function FrontendDevelopersPage() {
   // Benefits Section
   const benefits = [
     {
-      title: "Blazing-Fast Performance",
+      title: "Fast Performance",
       description:
-        "Engineered interfaces with 50% faster load times through performance-first coding practices.",
+        "Optimized interfaces with improved load times through performance-first coding practices.",
       icon: <Zap />,
-      stats: "50% faster load times",
+      stats: "Faster load times",
     },
     {
       title: "Pixel-Perfect UI",
       description:
         "Precision-crafted interfaces that elevate user experience and drive engagement.",
       icon: <Layout />,
-      stats: "95% client satisfaction",
+      stats: "High client satisfaction",
     },
     {
       title: "Scalable Architecture",
       description:
-        "Future-proof frontend architecture built for long-term growth and maintenance.",
+        "Modern frontend architecture built for growth and easy maintenance.",
       icon: <TrendingUp />,
-      stats: "Scalable for 1M+ users",
+      stats: "Built to scale",
     },
     {
       title: "Cross-Platform Excellence",
       description:
-        "Native-like experiences across web, mobile, and desktop platforms.",
+        "Consistent experiences across web, mobile, and desktop platforms.",
       icon: <Globe />,
-      stats: "100% platform coverage",
+      stats: "Full coverage",
     },
   ];
 
@@ -344,9 +325,9 @@ export default function FrontendDevelopersPage() {
 
   // Stats Section
   const companyStats = [
-    { value: "700+", label: "Full-time Developers", icon: <Users /> },
-    { value: "20+", label: "Years Experience", icon: <Award /> },
-    { value: "4500+", label: "Satisfied Clients", icon: <HeadphonesIcon /> },
+    { value: "10+", label: "Full-time Developers", icon: <Users /> },
+    { value: "5+", label: "Years Experience", icon: <Award /> },
+    { value: "80+", label: "Satisfied Clients", icon: <HeadphonesIcon /> },
     { value: "95%", label: "Project Success Rate", icon: <CheckCircle /> },
   ];
 
@@ -441,34 +422,34 @@ export default function FrontendDevelopersPage() {
     {
       question: "How quickly can I hire frontend developers from BBMcoders?",
       answer:
-        "We can onboard dedicated frontend developers in 24-48 hours. Our vetting process is streamlined to provide you with pre-screened, experienced developers who match your specific requirements.",
+        "We can onboard dedicated frontend developers within a week. Our vetting process ensures you get pre-screened, experienced developers who match your specific requirements.",
     },
     {
       question:
         "What frameworks and technologies do your developers specialize in?",
       answer:
-        "Our developers are experts in React, Angular, Vue.js, Next.js, TypeScript, and modern CSS frameworks like Tailwind CSS. We also work with testing tools, build systems, and design tools for complete frontend solutions.",
+        "Our developers are experienced in React, Next.js, TypeScript, and modern CSS frameworks like Tailwind CSS. We also work with testing tools and build systems for complete frontend solutions.",
     },
     {
       question: "Do you offer a trial period for hired developers?",
       answer:
-        "Yes, we offer a 7-day risk-free trial period. This allows you to evaluate the developer's skills and fit with your team before making a long-term commitment.",
+        "Yes, we offer a trial period to evaluate the developer's skills and fit with your team before making a long-term commitment.",
     },
     {
       question: "How do you ensure code quality and best practices?",
       answer:
-        "We follow strict coding standards, conduct regular code reviews, implement comprehensive testing (unit, integration, E2E), and use modern tooling for linting, formatting, and performance optimization.",
+        "We follow coding standards, conduct regular code reviews, implement comprehensive testing, and use modern tooling for linting, formatting, and performance optimization.",
     },
     {
       question:
         "Can your frontend developers work with our existing backend team?",
       answer:
-        "Absolutely. Our developers are experienced in API integration and collaboration with backend teams. We use standard communication protocols and can adapt to your existing workflows and tools.",
+        "Absolutely. Our developers are experienced in API integration and collaboration with backend teams. They adapt to your existing workflows and tools.",
     },
     {
       question: "What kind of support and project management do you provide?",
       answer:
-        "We provide dedicated project managers, daily stand-ups, sprint planning, and transparent communication through your preferred tools (Slack, Teams, Jira, etc.). We also offer ongoing maintenance and support.",
+        "We provide dedicated project managers, regular updates, and transparent communication through your preferred tools (Slack, Teams, Jira, etc.). We also offer ongoing maintenance and support.",
     },
   ];
 
@@ -525,7 +506,7 @@ export default function FrontendDevelopersPage() {
           </motion.div>
 
           {/* Right Side - Testimonial Card */}
-          <motion.div
+          {/* <motion.div
             className={styles.rightContent}
             initial={{ opacity: 0, x: 20 }}
             animate={{ opacity: 1, x: 0 }}
@@ -577,7 +558,7 @@ export default function FrontendDevelopersPage() {
                 </div>
               </div>
             </div>
-          </motion.div>
+          </motion.div> */}
         </div>
       </section>
 

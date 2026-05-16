@@ -174,8 +174,8 @@ export default function AIAutomationConsultingPage() {
       description:
         "Accelerate AI adoption with expert guidance and streamlined deployment processes.",
       icon: <Zap className={styles.benefitIcon} />,
-      color: "#10b981", // Blue
-      bgColor: "rgba(16, 185, 129, 0.1)",
+      color: "#10b981", 
+      bgColor: "rgba(255, 255, 255, 0.1)",
     },
     {
       id: 2,
@@ -184,7 +184,7 @@ export default function AIAutomationConsultingPage() {
         "Maximize returns with data-driven AI strategies tailored to your business objectives.",
       icon: <TrendingUp className={styles.benefitIcon} />,
       color: "#10b981", // Green
-      bgColor: "rgba(16, 185, 129, 0.1)",
+      bgColor: "rgba(255, 255, 255, 0.1)",
     },
     {
       id: 3,
@@ -193,7 +193,7 @@ export default function AIAutomationConsultingPage() {
         "Objective recommendations focused on your needs, not vendor preferences.",
       icon: <Target className={styles.benefitIcon} />,
       color: "#10b981", // Blue
-      bgColor: "rgba(16, 185, 129, 0.1)",
+      bgColor: "rgba(255, 255, 255, 0.1)",
     },
     {
       id: 4,
@@ -202,7 +202,7 @@ export default function AIAutomationConsultingPage() {
         "Transparent pricing and fixed-cost models to prevent cost overruns.",
       icon: <Shield className={styles.benefitIcon} />,
       color: "#10b981", // Green
-      bgColor: "rgba(16, 185, 129, 0.1)",
+      bgColor: "rgba(255, 255, 255, 0.1)",
     },
     {
       id: 5,
@@ -210,7 +210,7 @@ export default function AIAutomationConsultingPage() {
       description: "24/7 assistance from top AI consultants and engineers.",
       icon: <Clock className={styles.benefitIcon} />,
       color: "#10b981", // Blue
-      bgColor: "rgba(16, 185, 129, 0.1)",
+      bgColor: "rgba(255, 255, 255, 0.1)",
     },
     {
       id: 6,
@@ -219,7 +219,7 @@ export default function AIAutomationConsultingPage() {
         "Track record of delivering exceptional AI consulting services.",
       icon: <Users className={styles.benefitIcon} />,
       color: "#10b981", // Green
-      bgColor: "rgba(16, 185, 129, 0.1)",
+      bgColor: "rgba(255, 255, 255, 0.1)",
     },
   ];
 
@@ -395,7 +395,7 @@ export default function AIAutomationConsultingPage() {
     },
     {
       id: 2,
-      title: "Trusted by Startups to Fortune 500",
+      title: "Trusted by Startups to Enterprise",
       description:
         "Proven track record with businesses of all sizes across diverse industries.",
       icon: <Users className={styles.chooseIcon} />,
@@ -503,8 +503,8 @@ export default function AIAutomationConsultingPage() {
         "Predictable costs",
         "Lower management overhead",
       ],
-      price: "$15K - $100K",
-      bestFor: ["MVP Development", "Pilot Projects", "Specific Features"],
+      price: "$1K - $20K",
+      bestFor: ["Small Business Websites", "MVP Development", "Basic Applications"],
     },
     {
       id: 2,
@@ -513,16 +513,16 @@ export default function AIAutomationConsultingPage() {
         "Perfect for long-term projects requiring dedicated resources and flexibility.",
       color: "#3b82f6", // Blue
       features: [
-        "Dedicated AI experts",
-        "Flexible scaling",
+        "Dedicated developers",
+        "Flexible scaling (1-5 developers)",
         "Agile methodology",
         "Direct communication",
       ],
-      price: "$8K - $25K/month",
+      price: "$2.5K - $10K/month",
       bestFor: [
-        "Enterprise Solutions",
-        "Ongoing Development",
-        "Complex Projects",
+        "Growing Startups",
+        "Ongoing Product Development",
+        "SaaS Platforms",
       ],
     },
     {
@@ -537,16 +537,16 @@ export default function AIAutomationConsultingPage() {
         "Transparent billing",
         "Easy scaling",
       ],
-      price: "$50 - $150/hour",
-      bestFor: ["Research Projects", "Prototyping", "Evolving Requirements"],
+      price: "$25 - $70/hour",
+      bestFor: ["Prototyping", "Feature Additions", "Maintenance & Support"],
     },
   ];
 
   const companyStats = [
-    { value: "700+", label: "AI Experts", icon: <Users /> },
-    { value: "20+", label: "Years Experience", icon: <Award /> },
-    { value: "4500+", label: "AI Projects", icon: <CheckCircle /> },
-    { value: "95%", label: "Client Retention", icon: <TrendingUp /> },
+    { value: "6+", label: "Experts", icon: <Users /> },
+    { value: "5", label: "Years Experience", icon: <Award /> },
+    { value: "20+", label: "AI Projects", icon: <CheckCircle /> },
+    { value: "90%", label: "Client Retention", icon: <TrendingUp /> },
   ];
 
   const faqs = [

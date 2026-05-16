@@ -26,7 +26,7 @@ export default function DataEngineeringAnalyticsPage() {
 
     const testimonial = {
         name: 'Samantha',
-        role: 'Chief Data Officer',
+        // role: 'Chief Data Officer',
         content: 'Outstanding results, clear communication, and a dedicated team. We\'re extremely satisfied with their data engineering and analytics services.',
         rating: 5,
         project: 'Data Migration'
@@ -42,10 +42,10 @@ export default function DataEngineeringAnalyticsPage() {
         { icon: <Layers />, title: 'Data Mining and Architecture', desc: 'Scalable architecture designs ensure efficient data flow, supporting advanced analytics.', features: ['Discover hidden opportunities', 'Support advanced analytics', 'Facilitate large-scale data storage'], color: '#10b981' },
         { icon: <PieChart />, title: 'Data Visualization', desc: 'Intuitive dashboards that simplify trends and patterns for non-technical stakeholders.', features: ['Translate complex data into meaningful insights', 'Enable quick decision-making', 'Use tools like Tableau and Power BI'], color: '#3b82f6' },
         { icon: <HardDrive />, title: 'Data Management and Governance', desc: 'Implement advanced tools to manage and protect your data, upholding quality and integrity.', features: ['Ensure data compliance and accessibility', 'Use robust governance frameworks', 'Establish clear data ownership'], color: '#10b981' },
-        { icon: <Shield />, title: 'Data Security', desc: 'End-to-end encryption and monitoring solutions to protect against breaches and ensure compliance.', features: ['Use cutting-edge security protocols', 'Ensure compliance with regulations', 'Safeguard data assets'], color: '#0EA5E9' },
-        { icon: <Server />, title: 'Data Migration and Warehouse', desc: 'Design centralized data warehouses, improving analytics and business intelligence capabilities.', features: ['Facilitate smooth transitions', 'Minimize data transfer downtime', 'Use business intelligence services'], color: '#3b82f6' },
-        { icon: <Workflow />, title: 'Data Pipeline', desc: 'Our expertise ensures efficient extraction, transformation, and loading of data across platforms.', features: ['Use custom-built pipelines', 'Automate data workflows', 'Integrate monitoring tools'], color: '#10b981' },
-        { icon: <Cloud />, title: 'Cloud Transformation', desc: 'Utilize top cloud platforms like AWS and Azure to modernize your infrastructure.', features: ['Scalability and flexibility', 'Accessibility and collaboration', 'Optimize costs with cloud'], color: '#3B82F6' },
+        { icon: <Shield />, title: 'Data Security', desc: 'End-to-end encryption and monitoring solutions to protect against breaches and ensure compliance.', features: ['Use cutting-edge security protocols', 'Ensure compliance with regulations', 'Safeguard data assets'], color: '#3b82f6' },
+        { icon: <Server />, title: 'Data Migration and Warehouse', desc: 'Design centralized data warehouses, improving analytics and business intelligence capabilities.', features: ['Facilitate smooth transitions', 'Minimize data transfer downtime', 'Use business intelligence services'], color: '#10b981' },
+        { icon: <Workflow />, title: 'Data Pipeline', desc: 'Our expertise ensures efficient extraction, transformation, and loading of data across platforms.', features: ['Use custom-built pipelines', 'Automate data workflows', 'Integrate monitoring tools'], color: '#3b82f6' },
+        { icon: <Cloud />, title: 'Cloud Transformation', desc: 'Utilize top cloud platforms like AWS and Azure to modernize your infrastructure.', features: ['Scalability and flexibility', 'Accessibility and collaboration', 'Optimize costs with cloud'], color: '#10b981' },
     ];
 
     // ===== COMPLETE DATA ANALYTICS SERVICES (From second website) =====
@@ -167,39 +167,38 @@ export default function DataEngineeringAnalyticsPage() {
     // ];
 
     // ===== HIRING MODELS (Complete from both websites) =====
-    const hiringModels = [
+const hiringModels = [
         {
             title: 'Fixed Price Model',
             description: 'For businesses with well-defined project scope and requirements.',
-            price: 'From $25,000',
+            price: 'From $5,000',
             features: ['Simplified process', 'Higher predictability', 'Greater transparency', 'Reduced risk', 'Low management efforts'],
             color: '#3B82F6',
             gradient: 'linear-gradient(135deg, #3B82F6 0%, #2563EB 100%)',
-            bestFor: ['Specific Data Migration', 'Dashboard Implementation', 'Compliance Projects'],
+            bestFor: ['Web Applications', 'MVP Development', 'Dashboard Implementation'],
             icon: <FileText />
         },
         {
             title: 'Dedicated Hiring Model',
             description: 'For businesses with long-term requirements or complex development process.',
-            price: 'From $8,500 /month',
+            price: 'From $4,500 /month',
             features: ['Complete control', 'More flexibility', 'Focused and dedicated approach', 'Faster time to market', 'Staff Augmentation'],
             color: '#3B82F6',
             gradient: 'linear-gradient(135deg, #3B82F6 0%, #2563EB 100%)',
-            bestFor: ['Ongoing Data Management', 'Analytics Implementation', 'Continuous Optimization'],
+            bestFor: ['Ongoing Development', 'SaaS Platforms', 'Product Teams'],
             icon: <Users />
         },
         {
             title: 'Time & Material Model',
-            description: 'For businesses looking to pay for completed project instead of committing to fixed cost.',
-            price: '$75 - $200 /hour',
+            description: 'For businesses looking to pay for completed work instead of committing to fixed cost.',
+            price: '$35 - $90 /hour',
             features: ['Faster project start', 'Flexibility to adapt', 'Pay as you go model', 'Easy scaling', 'Transparent billing'],
             color: '#3B82F6',
             gradient: 'linear-gradient(135deg, #3B82F6 0%, #2563EB 100%)',
-            bestFor: ['Data Consulting', 'Proof of Concepts', 'Emergency Support'],
+            bestFor: ['Technical Consulting', 'Proof of Concepts', 'Maintenance Support'],
             icon: <Clock />
         },
     ];
-
     // ===== KEY BENEFITS SECTION (From both websites) =====
     const keyBenefits = [
         { icon: <Zap />, title: 'Modern Data Pipelines', desc: 'Implement real-time data collection, processing, and analysis for faster decision-making' },
@@ -322,12 +321,12 @@ export default function DataEngineeringAnalyticsPage() {
             a: 'Common challenges include: 1) Data Quality Issues - overcome with robust validation and automated checks; 2) Scalability Concerns - addressed with cloud-native architecture; 3) Integration Complexity - solved with modern ETL/ELT tools; 4) Security & Compliance - managed through encryption and governance frameworks; 5) Real-time Processing - achieved with streaming technologies; 6) Legacy System Integration - handled through incremental modernization.'
         },
         {
-            q: 'What is the typical timeline and cost for enterprise data platform implementation?',
-            a: 'Timelines: Basic dashboards (4-6 weeks, $15-40K), Industry solutions (8-12 weeks, $40-70K), Custom platforms (12-16 weeks, $70-100K), Enterprise BI systems (16-20 weeks, $100-120K), Full-scale ecosystems (20-24 weeks, $120K+). We follow agile methodology with value delivery at each phase.'
+            q: 'What is the typical timeline and cost for data platform implementation?',
+            a: 'Timelines vary based on complexity. Basic dashboards take 2-4 weeks ($2-5K), standard business solutions take 4-8 weeks ($5-12K), and custom platforms take 8-12 weeks ($12-25K). For enterprise-scale implementations, timelines range from 12-20 weeks ($25-50K+). We provide detailed quotes after understanding your specific requirements.'
         },
         {
             q: 'How do you ensure data security and regulatory compliance?',
-            a: 'We implement: End-to-end encryption (AES-256/TLS 1.3), Role-Based Access Control (RBAC), data masking/anonymization, comprehensive audit logging, regular security assessments, compliance with GDPR, HIPAA, PCI-DSS, SOC2, and industry-specific regulations. All solutions follow privacy-by-design principles with clear data ownership and stewardship.'
+            a: 'We follow security best practices including encryption (AES-256 for data at rest, TLS 1.3 for data in transit), role-based access control, regular vulnerability assessments, and comprehensive audit logging. We help clients work towards compliance with regulations like GDPR and industry standards based on their specific needs. Our approach prioritizes security at every stage of development.'
         },
     ];
 
@@ -375,7 +374,7 @@ export default function DataEngineeringAnalyticsPage() {
                                 </div>
                                 <div className={styles.testimonialInfo}>
                                     <h4 className={styles.testimonialName}>{testimonial.name}</h4>
-                                    <p className={styles.testimonialRole}>{testimonial.role}</p>
+                                    {/* <p className={styles.testimonialRole}>{testimonial.role}</p> */}
                                     <div className={styles.testimonialRating}>
                                         {[...Array(testimonial.rating)].map((_, i) => (
                                             <Star key={i} size={16} fill="#FBBF24" color="#FBBF24" />

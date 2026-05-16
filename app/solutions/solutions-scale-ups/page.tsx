@@ -143,43 +143,43 @@ export default function ScaleUpsSolutionPage() {
     ];
 
     // ----- COST ESTIMATION FOR SCALE STARTUPS (5 tiers) -----
-    const costEstimates = [
-        {
-            range: '$25,000 – $50,000',
-            description: 'Enhance your existing product with incremental features and performance improvements.',
-            icon: <TrendingUp />,
-            color: '#3B82F6',
-            bestFor: 'Feature enhancements'
-        },
-        {
-            range: '$60,000 – $100,000',
-            description: 'Strengthen your platform with integrations, automation, and scalability upgrades.',
-            icon: <GitBranch />,
-            color: '#3b82f6',
-            bestFor: 'Platform strengthening'
-        },
-        {
-            range: '$90,000 – $150,000',
-            description: 'Build advanced modules or industry-specific features that help capture new markets.',
-            icon: <Layers />,
-            color: '#3b82f6',
-            bestFor: 'New market entry'
-        },
-        {
-            range: '$120,000 – $180,000',
-            description: 'Redesign and re-architect your product for better UX, security, and reliability at scale.',
-            icon: <RefreshCw />,
-            color: '#1082f6',
-            bestFor: 'Re‑architecture'
-        },
-        {
-            range: '$180,000 – $250,000+',
-            description: 'Develop enterprise-grade solutions with compliance, analytics, and AI-driven capabilities.',
-            icon: <Shield />,
-            color: '#3b82f6',
-            bestFor: 'Enterprise scale'
-        }
-    ];
+const costEstimates = [
+    {
+        range: '$15,000 – $35,000',
+        description: 'Enhance your existing product with incremental features and performance improvements.',
+        icon: <TrendingUp />,
+        color: '#3B82F6',
+        bestFor: 'Feature enhancements'
+    },
+    {
+        range: '$30,000 – $60,000',
+        description: 'Strengthen your platform with integrations, automation, and scalability upgrades.',
+        icon: <GitBranch />,
+        color: '#3b82f6',
+        bestFor: 'Platform strengthening'
+    },
+    {
+        range: '$50,000 – $90,000',
+        description: 'Build advanced modules or industry-specific features that help capture new markets.',
+        icon: <Layers />,
+        color: '#3b82f6',
+        bestFor: 'New market entry'
+    },
+    {
+        range: '$70,000 – $120,000',
+        description: 'Redesign and re-architect your product for better UX, security, and reliability at scale.',
+        icon: <RefreshCw />,
+        color: '#1082f6',
+        bestFor: 'Re‑architecture'
+    },
+    {
+        range: '$100,000 – $180,000+',
+        description: 'Develop enterprise-grade solutions with compliance, analytics, and AI-driven capabilities.',
+        icon: <Shield />,
+        color: '#3b82f6',
+        bestFor: 'Enterprise scale'
+    }
+];
 
     // ----- SCALING PROCESS (6 steps – from URL) -----
     const scalingProcess = [
@@ -344,47 +344,47 @@ export default function ScaleUpsSolutionPage() {
     ];
 
     // ----- PARTNER HIGHLIGHTS -----
-    const partnerHighlights = [
-        { text: 'Nigeria’s top 10% engineering talent', icon: <Award />, color: '#3B82F6' },
-        { text: 'Trusted by startups to Fortune 500', icon: <Building2 />, color: '#3b82f6' },
-        { text: 'End-to-end product delivery', icon: <Rocket />, color: '#3b82F6' },
-        { text: 'Time-zone friendly collaboration', icon: <Globe />, color: '#3b82f6' },
-        { text: 'Predictable timelines & transparent estimates', icon: <Calendar />, color: '#3b82f6' },
-        { text: 'Ongoing support, monitoring & optimization', icon: <Activity />, color: '#3b82f6' }
-    ];
+const partnerHighlights = [
+    { text: 'Nigeria\'s rising engineering talent', icon: <Award />, color: '#3B82F6' },
+    { text: 'Trusted by startups & growing businesses', icon: <Building2 />, color: '#3b82f6' },
+    { text: 'End-to-end product delivery', icon: <Rocket />, color: '#3B82F6' },
+    { text: 'Time-zone friendly collaboration', icon: <Globe />, color: '#3b82f6' },
+    { text: 'Transparent timelines & estimates', icon: <Calendar />, color: '#3b82f6' },
+    { text: 'Ongoing support & optimization', icon: <Activity />, color: '#3b82f6' }
+];
 
     // ----- COMPANY STATS (with 92% stat from URL) -----
-    const companyStats = [
-        { value: '92%', label: 'Faster Market Entry', icon: <TrendingUp />, description: 'Scale‑up clients report faster growth' },
-        { value: '700+', label: 'Full‑time Staff', icon: <Users />, description: 'Top 10% industry talent' },
-        { value: '20+', label: 'Years Experience', icon: <Award />, description: 'Since 2004' },
-        { value: '4500+', label: 'Satisfied Clients', icon: <HeadphonesIcon />, description: 'Startups to Fortune 500' }
-    ];
+const companyStats = [
+    { value: '15+', label: 'Team Members', icon: <Users />, description: 'Skilled tech professionals' },
+    { value: '5+', label: 'Years Experience', icon: <Award />, description: 'Since 2021' },
+    { value: '80+', label: 'Happy Clients', icon: <HeadphonesIcon />, description: 'Startups & growing businesses' },
+    { value: '98%', label: 'Client Satisfaction', icon: <TrendingUp />, description: 'Across all projects' }
+];
 
     // ----- CLIENT TESTIMONIALS (from URL) -----
     const testimonials = [
         {
             name: 'James',
             role: 'Data Analyst',
-            content: 'The Project managers took a lot of time to understand our project before coming up with a contract or what they thought we needed. I had the reassurance from the start that the project managers knew what type of project I wanted and what my needs were. That is reassuring, and that\'s why we chose BBMCoders.',
+            content: 'The Project managers took a lot of time to understand our project before coming up with a contract or what they thought we needed. I had the reassurance from the start that the project managers knew what type of project I wanted and what my needs were. That is reassuring, and that\'s why we chose BBMcoders.',
             image: '/images/user.png'
         },
         {
             name: 'Rebecca',
             // role: 'Executive Director, Judith Foundation',
-            content: 'The team at BBMCoders has provided us with exceptional services in creating this one-of-a-kind portal, and it has been a fantastic experience. I was particularly impressed by how efficiently and quickly the team always came up with creative solutions to provide us with all the functionalities within the portal we had requested.',
+            content: 'The team at BBMcoders has provided us with exceptional services in creating this one-of-a-kind portal, and it has been a fantastic experience. I was particularly impressed by how efficiently and quickly the team always came up with creative solutions to provide us with all the functionalities within the portal we had requested.',
             image: '/images/user.png'
         },
         {
             name: 'chris',
             // role: 'Director, Storgaze',
-            content: 'BBMCoders had great technical expertise, both in front-end and back-end development. Other project management was well organized. Account management was friendly and always available. I would give BBMCoders ten out of ten!',
+            content: 'BBMcoders had great technical expertise, both in front-end and back-end development. Other project management was well organized. Account management was friendly and always available. I would give BBMCoders ten out of ten!',
             image: '/images/user.png'
         },
         {
             name: 'Ibrahim',
             // role: 'Director, FashionHint',
-            content: 'Huge thank you to BBMCoders; they have been a massive help in enabling us to start developing our project within a few weeks, so it\'s been great! There have been two small bumps in the road, but overall, It\'s been a fantastic service. I have already recommended it to one of my friends.',
+            content: 'Huge thank you to BBMcoders; they have been a massive help in enabling us to start developing our project within a few weeks, so it\'s been great! There have been two small bumps in the road, but overall, It\'s been a fantastic service. I have already recommended it to one of my friends.',
             image: '/images/user.png'
         }
     ];
@@ -417,7 +417,7 @@ export default function ScaleUpsSolutionPage() {
     // ----- FAQS (original simple design) -----
     const faqs = [
         {
-            question: 'How does BBMCoders help startups scale effectively?',
+            question: 'How does BBMcoders help startups scale effectively?',
             answer: 'We offer focused development teams, agile development, and scalable technology solutions to enable startups to grow without infrastructure or hiring issues.'
         },
         {
@@ -425,7 +425,7 @@ export default function ScaleUpsSolutionPage() {
             answer: 'We usually onboard startups within days, not weeks. Our flexible staffing models ensure you get the right experts quickly, so you don’t lose momentum in your scaling journey.'
         },
         {
-            question: 'Can BBMCoders handle both product development and post-launch scaling?',
+            question: 'Can BBMcoders handle both product development and post-launch scaling?',
             answer: 'Yes, we help with the whole cycle – from MVP development to scaling and optimizing the infrastructure, and adding features as the number of users increases.'
         },
         {
@@ -465,7 +465,7 @@ export default function ScaleUpsSolutionPage() {
                                 <Sparkles size={18} /> Scale Your Startup
                             </div>
                             <h1 className={styles.mainTitle}>
-                                Scale Your Startup with <span className={styles.highlight}>BBMCoders</span>
+                                Scale Your Startup with <span className={styles.highlight}>BBMcoders</span>
                             </h1>
                             <p className={styles.subheadline}>
                                 Our expert teams, smart strategies, and flexible staffing enable your startup to scale securely and efficiently.
@@ -498,7 +498,7 @@ export default function ScaleUpsSolutionPage() {
                     >
                         <div className={styles.testimonialCard}>
                             <div className={styles.testimonialImage}>
-                                <div className={styles.clientImageWrapper}>
+                                {/* <div className={styles.clientImageWrapper}>
                                     <Image
                                         src="/images/user.png"
                                         alt={testimonial.name}
@@ -506,7 +506,7 @@ export default function ScaleUpsSolutionPage() {
                                         height={100}
                                         className={styles.clientImage}
                                     />
-                                </div>
+                                </div> */}
                             </div>
                             <div className={styles.testimonialContent}>
                                 <MessageSquare className={styles.quoteIcon} />
@@ -566,7 +566,7 @@ export default function ScaleUpsSolutionPage() {
                         How Our Experts Drive <span className={styles.titleHighlight}>Startup Success</span>
                     </h2>
                     <p className={styles.sectionDescription}>
-                        At BBMCoders, our experts help growth-stage startups scale seamlessly by combining deep technical expertise with proven strategies. We assist startups in growing sustainably by refining MVPs and building scalable SaaS products, always ensuring efficiency, performance, and reliability.
+                        At BBMcoders, our experts help growth-stage startups scale seamlessly by combining deep technical expertise with proven strategies. We assist startups in growing sustainably by refining MVPs and building scalable SaaS products, always ensuring efficiency, performance, and reliability.
                     </p>
                 </div>
 
@@ -737,7 +737,7 @@ export default function ScaleUpsSolutionPage() {
                         Your Reliable <span className={styles.titleHighlight}>Scale Startup Solution</span>
                     </h2>
                     <p className={styles.sectionDescription}>
-                        At BBMCoders, we help startups to scale their solutions, which maintain the stability of products, increase performance, and speed up growth.
+                        At BBMcoders, we help startups to scale their solutions, which maintain the stability of products, increase performance, and speed up growth.
                     </p>
                 </div>
 

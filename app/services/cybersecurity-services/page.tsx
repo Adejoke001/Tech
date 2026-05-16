@@ -327,7 +327,7 @@ export default function CybersecurityServicesPage() {
     const securityStats = [
         { value: '40%', label: 'Fewer Security Incidents', icon: <Shield />, description: 'Average reduction post-implementation' },
         { value: '50%', label: 'Faster Audit Cycles', icon: <FileCheck />, description: 'With automated compliance tools' },
-        { value: '99.9%', label: 'Uptime Assurance', icon: <Server />, description: 'With security monitoring' },
+        { value: '98.9%', label: 'Uptime Assurance', icon: <Server />, description: 'With security monitoring' },
         { value: '24/7', label: 'Security Monitoring', icon: <Eye />, description: 'Continuous protection' }
     ];
 
@@ -355,42 +355,42 @@ export default function CybersecurityServicesPage() {
             icon: '🛍️',
             desc: 'Scalable security for payment processing, inventory management, order fulfillment, CRM integration, and personalized shopping experiences.',
             image: 'https://images.unsplash.com/photo-1441986300917-64674bd600d8?auto=format&fit=crop&w=800&q=80',
-            color: '#8B5CF6'
+            color: '#3b82f6'
         },
         {
             name: 'Fintech & Banking',
             icon: '🏦',
             desc: 'High-security solutions for payment gateways, banking systems, fraud detection, regulatory compliance, and financial data protection.',
             image: 'https://images.unsplash.com/photo-1551434678-e076c223a692?auto=format&fit=crop&w=800&q=80',
-            color: '#3B82F6'
+            color: '#10b981'
         },
     ];
 
     // FAQs
     const faqs = [
         {
-            question: 'How long does it take to implement a comprehensive security governance framework?',
-            answer: 'Most organizations see measurable improvements within 6-10 weeks. Full implementation typically takes 3-6 months depending on organization size and current maturity level. We follow a phased approach to ensure minimal disruption.'
+            question: 'How long does it take to implement a security governance framework?',
+            answer: 'Most organizations see initial improvements within 2-4 weeks. Full implementation typically takes 6-12 weeks depending on organization size and current maturity level. We follow a phased approach to ensure minimal disruption.'
         },
         {
-            question: 'What global security standards do you comply with?',
-            answer: 'We align with ISO 27001, SOC 2, GDPR, HIPAA, PCI DSS, NIST, OWASP, and other industry-specific standards. Our frameworks are designed to meet multiple compliance requirements simultaneously.'
+            question: 'What security standards do you have experience with?',
+            answer: 'Our team has experience with ISO 27001, GDPR compliance, NIST framework, and security best practices. We help businesses understand and implement appropriate security measures for their needs.'
         },
         {
-            question: 'How do you handle real-time threat monitoring and response?',
-            answer: 'We implement 24/7 security monitoring with SIEM solutions, automated alerts, and dedicated Security Operations Center (SOC) services. Our incident response team can detect and respond to threats within minutes.'
+            question: 'How do you handle security monitoring?',
+            answer: 'We help implement security monitoring solutions including alert systems and incident response procedures. Our approach focuses on establishing practical monitoring that fits your business operations.'
         },
         {
-            question: 'Can your security solutions integrate with our existing DevOps workflows?',
-            answer: 'Yes, we specialize in DevSecOps integration. Our security tools and processes seamlessly integrate with CI/CD pipelines, ensuring security is built into the development lifecycle without slowing delivery.'
+            question: 'Can your security solutions work with our existing DevOps workflows?',
+            answer: 'Yes, we specialize in DevSecOps integration. We help integrate security practices into your CI/CD pipelines, making security a natural part of your development process.'
         },
         {
-            question: 'What types of risk management solutions do you offer?',
-            answer: 'We provide comprehensive risk management including strategic risk assessment, implementation consulting, business continuity planning, and real-time risk monitoring across operational, financial, and reputational risks.'
+            question: 'What types of security assessments do you offer?',
+            answer: 'We provide security risk assessments, vulnerability assessments, and compliance readiness reviews. Our services help identify gaps and prioritize improvements for your security posture.'
         },
         {
-            question: 'What ongoing support do you provide after implementation?',
-            answer: 'We offer continuous security monitoring, regular compliance audits, framework updates, security training, and 24/7 incident response support. Our partnerships include ongoing optimization and risk assessment.'
+            question: 'What support do you provide after implementation?',
+            answer: 'We offer ongoing support including security monitoring, regular assessments, staff training, and incident response guidance. Our team works with you to continuously improve your security posture.'
         }
     ];
 

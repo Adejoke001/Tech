@@ -51,7 +51,7 @@ export default function MachineLearningPage() {
         "Custom machine learning solutions tailored to your business needs, leveraging cutting-edge algorithms and data analysis techniques.",
       icon: <Brain className={styles.serviceIcon} />,
       image: "/images/mldev.jpg",
-      color: "#3b82f6", // Blue
+      color: "#10b981", // Blue
       features: [
         "Custom Algorithms",
         "Predictive Models",
@@ -76,7 +76,7 @@ export default function MachineLearningPage() {
         "Unlock the power of computer vision with our advanced solutions, enabling automated image and video analysis for diverse applications.",
       icon: <Eye className={styles.serviceIcon} />,
       image: "/images/comvision.jpg",
-      color: "#3b82f6", // Blue
+      color: "#10b981", // Blue
       features: [
         "Object Detection",
         "Facial Recognition",
@@ -106,7 +106,7 @@ export default function MachineLearningPage() {
       icon: <Bot className={styles.serviceIcon} />,
       image:
         "https://images.unsplash.com/photo-1563968743333-044cef800494?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8N3x8cm9ib3RpYyUyMHByb2Nlc3MlMjBhdXRvbWF0aW9ufGVufDB8fDB8fHww",
-      color: "#3b82f6", // Blue
+      color: "#10b981", // Blue
       features: [
         "Process Automation",
         "Intelligent Bots",

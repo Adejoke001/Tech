@@ -49,8 +49,8 @@ export default function AboutPage() {
         },
         {
             name: 'Precious Uyomere k.',
-            role: 'Computer Engineer',
-            bio: 'Precious is an NSE-certified Computer Engineer with five years of experience building scalable systems, driving BBMcoders’ core engineering with precision and reliability.',
+            role: 'Software Engineer',
+            bio: 'Precious is an NSE-certified Software Engineer with five years of experience building scalable systems, driving BBMcoders’ core engineering with precision and reliability.',
             image: '/images/user.png',
         },
         {
@@ -61,7 +61,7 @@ export default function AboutPage() {
         },
         {
             name: 'Stephen Agbo',
-            role: 'Computer Engineer',
+            role: 'Software Engineer',
             bio: 'Stephen is a Mobile App Developer who leads the team in building intuitive, high-performance applications, driving seamless mobile experiences from concept to launch.',
             image: '/images/user.png',
         },
@@ -75,21 +75,19 @@ export default function AboutPage() {
 
     // ----- TIMELINE -----
     const timeline = [
-        { year: '2004', event: 'BBMcoders was founded in Lagos, Nigeria, with a vision to deliver IT outsourcing services worldwide.' },
-        { year: '2010', event: 'Expanded operations to serve clients across Africa, Europe, and North America.' },
-        { year: '2015', event: 'Reached 500+ skilled professionals and launched dedicated development centers.' },
-        { year: '2020', event: 'Celebrated 16 years of excellence with 2500+ successful projects delivered globally.' },
-        { year: '2024', event: '20+ years of proud existence, trusted by startups to Fortune 500 companies.' },
-        { year: '2026', event: 'Accelerated digital transformation services with AI-driven solutions and strengthening global partnerships.' }
+    { year: '2021', event: 'BBMcoders was founded in Lagos, Nigeria, with a vision to deliver IT outsourcing services worldwide.' },
+    { year: '2023', event: 'Expanded operations to serve clients across Africa, Europe, and North America.' },
+    { year: '2025', event: 'Reached 100+ skilled professionals and successfully delivered 90+ projects globally.' },
+    { year: '2026', event: 'Accelerated digital transformation services with AI-driven solutions and strengthening global partnerships.' }
     ];
 
     // ----- AWARDS & RECOGNITIONS -----
-    const awards = [
-        { name: 'Great Place to Work', year: '2023', logo: '🏆' },
-        { name: 'Top Software Developer', year: '2022', logo: '⭐' },
-        { name: 'Best IT Employer', year: '2021', logo: '🎖️' },
-        { name: 'Fastest Growing Tech Company', year: '2020', logo: '🚀' },
-    ];
+    // const awards = [
+    // { name: 'Rising Tech Star', year: '2022', logo: '⭐' },
+    // { name: 'Best New IT Company - Nigeria', year: '2022', logo: '🏆' },
+    // { name: 'Top Emerging Outsourcing Partner', year: '2023', logo: '🚀' },
+    // { name: 'Excellent Customer Satisfaction', year: '2024', logo: '💎' },
+    // ];
 
     // ----- CLIENT TESTIMONIALS -----
     const testimonials = [
@@ -104,7 +102,7 @@ export default function AboutPage() {
             image: '/images/user.png',
         },
         {
-            name: 'Samuel Okoye',
+            name: 'Samuel',
             content: 'BBMcoders helped us turn our idea into a fully functional platform in record time. Their technical knowledge and commitment made a huge difference for our startup.',
             image: '/images/user.png',
         },
@@ -127,9 +125,9 @@ export default function AboutPage() {
 
     // ----- COMPANY STATS -----
     const companyStats = [
-        { value: '700+', label: 'Full-time Staff', icon: <Users />, description: 'Top 10% industry talent' },
-        { value: '20+', label: 'Years Experience', icon: <Award />, description: 'Since 2004' },
-        { value: '4500+', label: 'Satisfied Clients', icon: <MessageSquare />, description: 'Global client base' },
+        { value: '10+', label: 'Full-time Staff', icon: <Users />, description: 'Top 10% industry talent' },
+        { value: '5', label: 'Years Experience', icon: <Award />, description: 'Since 2021' },
+        { value: '100+', label: 'Satisfied Clients', icon: <MessageSquare />, description: 'Global client base' },
     ];
 
     return (
@@ -157,10 +155,10 @@ export default function AboutPage() {
                             <Sparkles size={16} /> About BBMcoders
                         </div>
                         <h1 className={styles.heroTitle}>
-                            We Are – Software Development Company <span className={styles.highlight}>Since 2004</span>
+                            We Are – Software Development Company <span className={styles.highlight}>Since 2021</span>
                         </h1>
                         <p className={styles.heroDescription}>
-                            We combine business domain knowledge, proven methodologies, and the technology expertise of 700+ skilled software professionals to yield high-quality solutions that add value to businesses.
+                            We combine business domain knowledge, proven methodologies, and the technology expertise of 10+ skilled software professionals to yield high-quality solutions that add value to businesses.
                         </p>
                         <Link href="/contact" className={styles.heroButton}>
                             Start a Conversation <ArrowRight size={18} />
@@ -240,10 +238,10 @@ export default function AboutPage() {
                 <div className={styles.container}>
                     <div className={styles.sectionHeader}>
                         <h2 className={styles.sectionTitle}>
-                            20+ Years of <span className={styles.titleHighlight}>Proud Existence</span>
+                            5 Years of <span className={styles.titleHighlight}>Proud Existence</span>
                         </h2>
                         <p className={styles.sectionDescription}>
-                            BBMcoders set its first stone down in 2004 in Lagos, Nigeria, and has been thriving ever since. We deliver exceptional technology solutions for world-class businesses in every industry – from dynamic startups and SMBs to Fortune 500 companies.
+                            BBMcoders set its first stone down in 2021 in Lagos, Nigeria, and has been thriving ever since. We deliver exceptional technology solutions for world-class businesses in every industry – from dynamic startups and SMBs to Fortune 500 companies.
                         </p>
                     </div>
                     <div className={styles.timelineGrid}>
@@ -265,7 +263,7 @@ export default function AboutPage() {
             </section>
 
             {/* ===== AWARDS SECTION ===== */}
-            <section className={styles.awardsSection}>
+            {/* <section className={styles.awardsSection}>
                 <div className={styles.container}>
                     <div className={styles.sectionHeader}>
                         <h2 className={styles.sectionTitle}>
@@ -292,7 +290,7 @@ export default function AboutPage() {
                         ))}
                     </div>
                 </div>
-            </section>
+            </section> */}
 
             {/* ===== TEAM SECTION with LinkedIn links ===== */}
             <section className={styles.teamSection}>

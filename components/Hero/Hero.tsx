@@ -27,20 +27,20 @@ export default function Hero() {
         <div className={styles.awardsSection}>
           <div className={styles.awardsCard}>
             <p className={styles.awardsText}>
-              🏆 Voted #1 IT Outsourcing Company by
+              🏆 Leading IT Outsourcing Partner in Nigeria
               <span className={styles.awardsHighlight}>
                 {" "}
-                GoodFirms, Clutch, & many more
+                Serving Startups to Enterprises
               </span>
             </p>
             <div className={styles.awardsLogos}>
-              <span className={styles.awardsLogo}>GoodFirms</span>
+              <span className={styles.awardsLogo}>10+ Full-time Experts</span>
               <span className={styles.awardsDivider}>•</span>
-              <span className={styles.awardsLogo}>Clutch</span>
+              <span className={styles.awardsLogo}>15+ In-house Team</span>
               <span className={styles.awardsDivider}>•</span>
-              <span className={styles.awardsLogo}>TopDevelopers</span>
+              <span className={styles.awardsLogo}>100+ Clients</span>
               <span className={styles.awardsDivider}>•</span>
-              <span className={styles.awardsLogo}>DesignRush</span>
+              <span className={styles.awardsLogo}>Global Reach</span>
             </div>
           </div>
         </div>

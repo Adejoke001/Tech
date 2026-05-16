@@ -137,7 +137,7 @@ export default function SoftwareDev() {
                         </motion.div>
                       ))}
                     </div>
-                    <span className={styles.ratingText}>Rated 4.8/5 on G2</span>
+                    <span className={styles.ratingText}>Rated 4.8 on Google Reviews</span>
                   </div>
 
                   <div className={styles.ratingDivider}></div>
@@ -155,7 +155,7 @@ export default function SoftwareDev() {
                         </motion.div>
                       ))}
                     </div>
-                    <span className={styles.ratingText}>Rated 4.9/5 on Clutch</span>
+                    <span className={styles.ratingText}>Based on 20+ Client Reviews</span>
                   </div>
                 </motion.div>
               </div>

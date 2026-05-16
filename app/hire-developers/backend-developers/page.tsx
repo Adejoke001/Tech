@@ -161,27 +161,22 @@ export default function BackendDevelopersPage() {
       color: "#3B82f6",
       technologies: [
         "Node.js",
-        "Python Django",
-        "Ruby on Rails",
-        "Spring Boot",
-        "ASP.NET Core",
-        "Laravel",
         "Express.js",
-        "Flask",
+        "Python/Django",
+        "PostgreSQL",
+        "MongoDB",
+        "Redis",
       ],
     },
     database: {
       title: "Database Technologies",
       color: "#10B981",
       technologies: [
-        "MongoDB",
         "PostgreSQL",
+        "MongoDB",
         "MySQL",
         "Redis",
-        "Cassandra",
-        "Elasticsearch",
         "Firebase",
-        "DynamoDB",
       ],
     },
     cloud: {
@@ -189,13 +184,9 @@ export default function BackendDevelopersPage() {
       color: "#10b981",
       technologies: [
         "AWS",
-        "Azure",
-        "Google Cloud",
         "Docker",
-        "Kubernetes",
-        "Terraform",
-        "Jenkins",
-        "GitLab CI",
+        "GitHub Actions",
+        "CI/CD Pipelines",
       ],
     },
     tools: {
@@ -204,12 +195,8 @@ export default function BackendDevelopersPage() {
       technologies: [
         "Git",
         "Postman",
-        "Swagger",
         "JIRA",
-        "Confluence",
         "Slack",
-        "Datadog",
-        "New Relic",
       ],
     },
   };
@@ -263,32 +250,32 @@ export default function BackendDevelopersPage() {
   // Benefits Section
   const benefits = [
     {
-      title: "Enterprise-Grade Security",
+      title: "Strong Security Practices",
       description:
-        "Bank-level security protocols, data encryption, and compliance with industry standards.",
+        "Data encryption, secure authentication, and compliance with industry best practices.",
       icon: <ShieldCheck />,
-      stats: "99.99% Security Compliance",
+      stats: "Security-focused",
     },
     {
       title: "High Performance Systems",
       description:
-        "Optimized backend systems handling millions of requests with minimal latency.",
+        "Optimized backend systems designed for speed and efficient request handling.",
       icon: <Zap />,
-      stats: "<100ms Response Time",
+      stats: "Fast response times",
     },
     {
       title: "Scalable Architecture",
       description:
-        "Future-proof systems designed to grow with your business needs seamlessly.",
+        "Systems designed to grow with your business needs seamlessly.",
       icon: <TrendingUp />,
-      stats: "Handles 10M+ Users",
+      stats: "Built to scale",
     },
     {
-      title: "24/7 System Reliability",
+      title: "Reliable Systems",
       description:
-        "Fault-tolerant systems with automated backups and disaster recovery.",
+        "Fault-tolerant systems with regular backups and recovery procedures.",
       icon: <ServerCrash />,
-      stats: "99.95% Uptime Guarantee",
+      stats: "High reliability",
     },
   ];
 
@@ -298,37 +285,37 @@ export default function BackendDevelopersPage() {
       model: "In-House Team",
       timeToHire: "4-12 weeks",
       timeToStart: "2-10 weeks",
-      trainingCost: "$10,000-$30,000",
+      trainingCost: "$5,000-$20,000",
       scalingTime: "4-16 weeks",
-      risk: "Low",
-      deliverySupport: "Some",
-    },
-    {
-      model: "Freelancers",
-      timeToHire: "1-12 weeks",
-      timeToStart: "1-10 weeks",
-      trainingCost: "0",
-      scalingTime: "Variable",
-      risk: "High",
+      risk: "Medium",
       deliverySupport: "Limited",
     },
     {
-      model: "BBMcoders",
-      timeToHire: "1 day - 2 weeks",
-      timeToStart: "1 day - 2 weeks",
+      model: "Freelancers",
+      timeToHire: "1-4 weeks",
+      timeToStart: "1-3 weeks",
       trainingCost: "0",
-      scalingTime: "48 hours - 1 week",
-      risk: "Extremely Low",
+      scalingTime: "Variable",
+      risk: "High",
+      deliverySupport: "Minimal",
+    },
+    {
+      model: "BBMcoders",
+      timeToHire: "3-14 days",
+      timeToStart: "2-7 days",
+      trainingCost: "0",
+      scalingTime: "1-2 weeks",
+      risk: "Low",
       deliverySupport: "Full",
     },
   ];
 
   // Stats Section
   const companyStats = [
-    { value: "700+", label: "Full-time Developers", icon: <Users /> },
-    { value: "20+", label: "Years Experience", icon: <Award /> },
-    { value: "4500+", label: "Satisfied Clients", icon: <HeadphonesIcon /> },
-    { value: "98%", label: "Project Success Rate", icon: <CheckCircle /> },
+    { value: "10+", label: "Full-time Developers", icon: <Users /> },
+    { value: "5+", label: "Years Experience", icon: <Award /> },
+    { value: "80+", label: "Satisfied Clients", icon: <HeadphonesIcon /> },
+    { value: "95%", label: "Project Success Rate", icon: <CheckCircle /> },
   ];
 
   // What We Build Section
@@ -569,7 +556,7 @@ export default function BackendDevelopersPage() {
           </motion.div>
 
           {/* Right Side - Testimonial Card */}
-          <motion.div
+          {/* <motion.div
             className={styles.rightContent}
             initial={{ opacity: 0, x: 20 }}
             animate={{ opacity: 1, x: 0 }}
@@ -595,7 +582,7 @@ export default function BackendDevelopersPage() {
                 </p>
                 <div className={styles.testimonialAuthor}>
                   <h4>{testimonial.name}</h4>
-                  {/* <p>{testimonial.role}</p> */}
+                 
                 </div>
 
                 <div className={styles.ratings}>
@@ -621,7 +608,7 @@ export default function BackendDevelopersPage() {
                 </div>
               </div>
             </div>
-          </motion.div>
+          </motion.div> */}
         </div>
       </section>
 
@@ -869,11 +856,11 @@ export default function BackendDevelopersPage() {
           <div className={styles.benefitList}>
             <div className={styles.benefitListItem}>
               <CheckCircle size={20} />
-              <span>Workstatus™ powered Proof of Work</span>
+              <span>Transparent progress tracking</span>
             </div>
             <div className={styles.benefitListItem}>
               <CheckCircle size={20} />
-              <span>Top 1% developers, rigorously vetted</span>
+              <span>Rigorously vetted developers</span>
             </div>
             <div className={styles.benefitListItem}>
               <CheckCircle size={20} />
@@ -885,19 +872,19 @@ export default function BackendDevelopersPage() {
             </div>
             <div className={styles.benefitListItem}>
               <CheckCircle size={20} />
-              <span>Zero hiring fee, quick onboarding</span>
+              <span>Quick onboarding process</span>
             </div>
             <div className={styles.benefitListItem}>
               <CheckCircle size={20} />
-              <span>Comprehensive code documentation</span>
+              <span>Code documentation</span>
             </div>
             <div className={styles.benefitListItem}>
               <CheckCircle size={20} />
-              <span>Adherence to data security practices</span>
+              <span>Data security practices</span>
             </div>
             <div className={styles.benefitListItem}>
               <CheckCircle size={20} />
-              <span>Language/time-zone compatible staff</span>
+              <span>Time-zone compatible staff</span>
             </div>
           </div>
         </div>

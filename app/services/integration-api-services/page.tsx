@@ -25,7 +25,7 @@ export default function ApiDevelopmentPage() {
 
     const testimonial = {
         name: 'John Bright',
-        role: 'Project Manager',
+        // role: 'Project Manager',
         content: 'Their API development team delivered robust, scalable solutions that perfectly integrated with our existing systems. Exceptional communication and technical expertise.',
         rating: 5,
         project: 'Enterprise API Ecosystem'
@@ -379,38 +379,38 @@ export default function ApiDevelopmentPage() {
     ];
 
     // ===== FAQ =====
-    const faqs = [
+const faqs = [
         {
             q: 'What is API development and why is it important for businesses?',
-            a: 'API (Application Programming Interface) development involves creating software interfaces that allow different applications to communicate with each other. It\'s crucial for businesses because it enables system integration, facilitates data exchange, supports mobile applications, allows third-party integrations, and creates new revenue streams through API monetization. APIs serve as the building blocks of modern digital ecosystems.'
+            a: 'API development involves creating interfaces that allow different software applications to communicate. For businesses, APIs enable system integration, data exchange, and connectivity between your products and services.'
         },
         {
-            q: 'What are the different types of APIs you develop?',
-            a: 'We develop various API types including: 1) REST APIs for web services using HTTP methods, 2) GraphQL APIs for flexible data querying, 3) SOAP APIs for enterprise-grade applications with strict standards, 4) gRPC APIs for high-performance microservices, 5) WebSocket APIs for real-time bidirectional communication, and 6) Webhook APIs for event-driven architectures. We choose the right type based on your specific requirements.'
+            q: 'What types of APIs do you develop?',
+            a: 'We primarily develop REST APIs and GraphQL APIs. We also work with WebSocket APIs for real-time applications when needed. We help determine the best approach based on your specific use case.'
         },
         {
-            q: 'How do you ensure API security and compliance?',
-            a: 'We implement multiple security layers: authentication (OAuth 2.0, JWT), authorization (role-based access), encryption (TLS 1.3), rate limiting, input validation, and regular security audits. For compliance, we follow standards like GDPR, HIPAA, PCI-DSS, and implement audit logging, data masking, and compliance monitoring based on industry requirements.'
+            q: 'How do you ensure API security?',
+            a: 'We implement security best practices including authentication (OAuth 2.0, JWT), rate limiting, input validation, and encryption. We also conduct regular security testing and follow industry standards for API protection.'
         },
         {
             q: 'What is the typical timeline for API development projects?',
-            a: 'Timelines vary based on complexity: Simple APIs (2-4 weeks), Medium complexity (4-8 weeks), Complex enterprise APIs (8-16 weeks), Complete API ecosystems (16-24 weeks). We follow agile methodology with 2-week sprints, delivering working APIs incrementally. Each phase includes planning, development, testing, and deployment with continuous feedback.'
+            a: 'Simple APIs typically take 2-3 weeks. Medium complexity projects take 4-6 weeks. Complex APIs can take 8-12 weeks. We provide detailed timelines during initial consultation based on your requirements.'
         },
         {
-            q: 'How do you handle API versioning and backward compatibility?',
-            a: 'We implement semantic versioning (v1, v2, etc.) with clear deprecation policies. Strategies include URI versioning (/api/v1/resource), header versioning, and parameter versioning. We maintain backward compatibility through careful design, version negotiation, and providing migration paths. Deprecated versions are supported for a defined period with clear communication to clients.'
+            q: 'How do you handle API versioning?',
+            a: 'We use URI versioning (e.g., /api/v1/) with clear documentation. We communicate deprecation schedules in advance and provide migration guides when updates are necessary.'
         },
         {
-            q: 'What support and maintenance do you provide after API deployment?',
-            a: 'We offer comprehensive post-deployment support: 24/7 monitoring, performance optimization, security updates, bug fixes, documentation updates, and capacity planning. Our maintenance packages include regular health checks, security audits, performance reports, and version updates. We also provide developer support and training for your team.'
+            q: 'What support do you provide after API deployment?',
+            a: 'We provide monitoring, bug fixes, security updates, and ongoing maintenance. Our support packages include regular health checks and performance optimization.'
         },
         {
-            q: 'Can you integrate with our existing systems and legacy applications?',
-            a: 'Yes, we specialize in integrating with existing systems including legacy applications, databases, ERP/CRM systems, and third-party services. We use various integration patterns: API gateways, message queues, data transformation layers, and custom connectors. We ensure minimal disruption and maintain data integrity throughout the integration process.'
+            q: 'Can you integrate with our existing systems?',
+            a: 'Yes, we have experience integrating with various databases, third-party services, and existing applications. We assess your current infrastructure and design appropriate integration strategies.'
         },
         {
-            q: 'What are your API documentation and testing practices?',
-            a: 'We create comprehensive API documentation using OpenAPI/Swagger specifications, including endpoints, parameters, responses, authentication, and code examples. For testing, we implement unit tests, integration tests, performance tests, security tests, and load tests. We use tools like Postman, JMeter, and custom test automation frameworks to ensure API reliability.'
+            q: 'How do you document and test APIs?',
+            a: 'We use OpenAPI/Swagger for documentation. Our testing includes unit tests, integration tests, and load testing to ensure reliability and performance.'
         },
     ];
 
@@ -460,7 +460,7 @@ export default function ApiDevelopmentPage() {
                                 </div>
                                 <div className={styles.testimonialInfo}>
                                     <h4 className={styles.testimonialName}>{testimonial.name}</h4>
-                                    <p className={styles.testimonialRole}>{testimonial.role}</p>
+                                    {/* <p className={styles.testimonialRole}>{testimonial.role}</p> */}
                                     <div className={styles.testimonialRating}>
                                         {[...Array(testimonial.rating)].map((_, i) => (
                                             <Star key={i} size={16} fill="#FBBF24" color="#FBBF24" />

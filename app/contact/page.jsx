@@ -32,18 +32,21 @@ const Contact = () => {
       title: "Email Us",
       details: "contact@bbmcoders.com",
       description: "Send us an email anytime",
+      action: "mailto:contact@bbmcoders.com",
     },
     {
       icon: "📞",
-      title: "Call Us",
+      title: "Get in Touch",
       details: "+234 7060970212",
       description: "Mon to Fri 9am to 6pm",
+      action: "tel:+2347060970212",
     },
     {
       icon: "📍",
-      title: "Visit Us",
-      details: "Lagos, Nigeria.",
+      title: "Find Us",
+      details: "Adamolekun Estate, Adebayo, Ado-Ekiti.",
       description: "Come say hello at our office",
+      action: null,
     },
   ];
 
@@ -240,13 +243,47 @@ const Contact = () => {
                     <div className={styles.methodIcon}>{item.icon}</div>
                     <div className={styles.methodContent}>
                       <h3 className={styles.methodTitle}>{item.title}</h3>
-                      <p className={styles.methodDetail}>{item.details}</p>
+                      {item.action ? (
+                        <a 
+                          href={item.action} 
+                          className={styles.methodDetail}
+                          style={{ textDecoration: 'none', display: 'inline-block' }}
+                        >
+                          {item.details}
+                        </a>
+                      ) : (
+                        <p className={styles.methodDetail}>{item.details}</p>
+                      )}
                       <p className={styles.methodDescription}>
                         {item.description}
                       </p>
                     </div>
                   </motion.div>
                 ))}
+                
+                {/* WhatsApp Option */}
+                <motion.div
+                  className={styles.contactMethod}
+                  whileHover={{ scale: 1.02 }}
+                  transition={{ duration: 0.2 }}
+                >
+                  <div className={styles.methodIcon}>💬</div>
+                  <div className={styles.methodContent}>
+                    <h3 className={styles.methodTitle}>Chat with Us</h3>
+                    <a 
+                      href={`https://wa.me/2349042381702?text=${encodeURIComponent("Hi! I need your services, I would love to book a call")}`}
+                      className={styles.methodDetail}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      style={{ textDecoration: 'none', display: 'inline-block' }}
+                    >
+                      +234 904 238 1702
+                    </a>
+                    <p className={styles.methodDescription}>
+                      Quick responses via WhatsApp
+                    </p>
+                  </div>
+                </motion.div>
               </div>
             </div>
           </motion.div>

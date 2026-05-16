@@ -45,7 +45,7 @@ export default function UIUXDesignPage() {
             title: 'Mobile App Design',
             description: 'Crafting stunning visual experiences that are both meaningful and memorable.',
             icon: <Smartphone className={styles.serviceIcon} />,
-            color: '#3b82f6',
+            color: '#10b981',
             features: ['Consistent cross-device UI', 'High user retention', 'Gesture-based interactions', 'Mobile-first approach'],
             deliverables: ['App screens', 'Micro-interactions', 'Icon sets', 'Mobile design system'],
             benefits: 'Boosts user retention by 40% and improves app store ratings'
@@ -65,7 +65,7 @@ export default function UIUXDesignPage() {
             title: 'Usability Testing',
             description: 'Identify potential problems users may have with your product before launch.',
             icon: <Search className={styles.serviceIcon} />,
-            color: '#3b82f6', // Amber
+            color: '#10b981', // Amber
             features: ['Saves time & money', 'Reduced bounce rates', 'User behavior analysis', 'A/B testing'],
             deliverables: ['Test reports', 'Heatmaps', 'User journey maps', 'Improvement recommendations'],
             benefits: 'Reduces development costs by 25% and improves user satisfaction'
@@ -85,7 +85,7 @@ export default function UIUXDesignPage() {
             title: 'UI/UX Consulting',
             description: 'Navigate complex design challenges with strategic guidance and expertise.',
             icon: <Users className={styles.serviceIcon} />,
-            color: '#3b82f6', // Cyan
+            color: '#10b981', // Cyan
             features: ['Optimize digital experiences', 'Increase product engagement', 'Design strategy', 'Competitive analysis'],
             deliverables: ['Strategy document', 'Competitive analysis', 'Roadmap planning', 'Team training'],
             benefits: 'Drives product engagement by 55% and business growth'

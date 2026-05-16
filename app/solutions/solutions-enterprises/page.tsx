@@ -371,10 +371,10 @@ export default function EnterpriseSolutionPage() {
 
     // ----- COMPANY STATS (unchanged) -----
     const companyStats = [
-        { value: '700+', label: 'Full‑time Staff', icon: <Users />, description: 'Top 10% industry talent' },
-        { value: '20+', label: 'Years Experience', icon: <Award />, description: 'Since 2004' },
-        { value: '4500+', label: 'Satisfied Clients', icon: <HeadphonesIcon />, description: 'Startups to Fortune 500' },
-        { value: '99.9%', label: 'Guaranteed Uptime', icon: <Shield />, description: 'Enterprise-grade reliability' }
+    { value: '15+', label: 'Team Members', icon: <Users />, description: 'Skilled tech professionals' },
+    { value: '5+', label: 'Years Experience', icon: <Award />, description: 'Since 2021' },
+    { value: '80+', label: 'Satisfied Clients', icon: <HeadphonesIcon />, description: 'Startups & growing businesses' },
+    { value: '98%', label: 'Uptime Achieved', icon: <Shield />, description: 'For enterprise clients' }
     ];
 
     // ----- CLIENT TESTIMONIALS (unchanged) -----
@@ -483,8 +483,8 @@ export default function EnterpriseSolutionPage() {
                                 Our enterprise IT operations services are designed to help your business grow without operational hurdles.
                             </p>
                             <p className={styles.heroDescription}>
-                                We help enterprises streamline, automate, and scale their IT operations with 99.9% uptime, 30% faster incident resolution, and enterprise-grade security.
-                            </p>
+                                We help enterprises streamline, automate, and scale their IT operations with reliable uptime, faster incident resolution, and robust security practices.
+                           </p>
                         </motion.div>
 
                         <motion.div
@@ -508,7 +508,7 @@ export default function EnterpriseSolutionPage() {
                     >
                         <div className={styles.testimonialCard}>
                             <div className={styles.testimonialImage}>
-                                <div className={styles.clientImageWrapper}>
+                                {/* <div className={styles.clientImageWrapper}>
                                     <Image
                                         src="/images/user.png"
                                         alt={testimonial.name}
@@ -516,7 +516,7 @@ export default function EnterpriseSolutionPage() {
                                         height={100}
                                         className={styles.clientImage}
                                     />
-                                </div>
+                                </div> */}
                             </div>
                             <div className={styles.testimonialContent}>
                                 <MessageSquare className={styles.quoteIcon} />
@@ -700,21 +700,21 @@ export default function EnterpriseSolutionPage() {
                             <div className={styles.partnerItemIcon} style={{ color: '#3B82F6' }}>
                                 <Users size={32} />
                             </div>
-                            <h4>150+ Certified DevOps Engineers</h4>
+                            <h4>15+ Certified Engineers</h4>
                             <p>AWS, Azure, GCP certified professionals ready to optimize your infrastructure.</p>
                         </div>
                         <div className={styles.partnerItem}>
                             <div className={styles.partnerItemIcon} style={{ color: '#3b82f6' }}>
                                 <Shield size={32} />
                             </div>
-                            <h4>99.9% Guaranteed Uptime</h4>
+                            <h4>98% Uptime Achieved</h4>
                             <p>SLA‑backed availability with proactive monitoring and instant failover.</p>
                         </div>
                         <div className={styles.partnerItem}>
                             <div className={styles.partnerItemIcon} style={{ color: '#3b82f6' }}>
                                 <Clock size={32} />
                             </div>
-                            <h4>30% Faster Incident Resolution</h4>
+                            <h4>Faster Incident Resolution</h4>
                             <p>AI‑assisted root cause analysis and automated remediation workflows.</p>
                         </div>
                         <div className={styles.partnerItem}>

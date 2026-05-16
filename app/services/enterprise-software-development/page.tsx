@@ -22,7 +22,7 @@ export default function EnterpriseSoftwarePage() {
 
     // Testimonial matching the quality assurance page layout
     const testimonial = {
-        name: 'James Anderson',
+        name: 'James',
         role: 'Resource Manager',
         content: 'Professional, reliable, and results-driven – BBMcoders delivered exactly what we needed, on time and within budget. Their enterprise software transformed our operations.',
         rating: 5,
@@ -207,10 +207,10 @@ export default function EnterpriseSoftwarePage() {
 
     // Stats Section
     const companyStats = [
-        { value: '700+', label: 'Full-time Staff', icon: <Users /> },
-        { value: '20+', label: 'Years Experience', icon: <Award /> },
-        { value: '4500+', label: 'Satisfied Customers', icon: <HeadphonesIcon /> },
-        { value: '2500+', label: 'Successful Projects', icon: <CheckCircle /> }
+        { value: '10+', label: 'Full-time Staff', icon: <Users /> },
+        { value: '5', label: 'Years Experience', icon: <Award /> },
+        { value: '100+', label: 'Satisfied Customers', icon: <HeadphonesIcon /> },
+        { value: '100+', label: 'Successful Projects', icon: <CheckCircle /> }
     ];
 
     // Hiring Models
@@ -264,11 +264,11 @@ export default function EnterpriseSoftwarePage() {
     const faqs = [
         {
             question: 'Why should I choose BBMcoders as my enterprise software development partner?',
-            answer: 'BBMcoders brings 20+ years of experience in secure enterprise applications development services, with 2500+ successful projects across industries. We combine agile development for faster delivery with deep expertise in complex enterprise architectures.'
+            answer: 'BBMcoders brings 5 years of experience in secure enterprise applications development services, with 100+ successful projects across industries. We combine agile development for faster delivery with deep expertise in complex enterprise architectures.'
         },
         {
             question: 'What types of enterprise software do you specialize in?',
-            answer: 'We specialize in 50+ enterprise software types including ERP systems, CRM solutions, HR management software, financial systems, supply chain management, asset tracking, and industry-specific solutions for healthcare, BFSI, manufacturing, and more.'
+            answer: 'We specialize in 20+ enterprise software types including ERP systems, CRM solutions, HR management software, financial systems, supply chain management, asset tracking, and industry-specific solutions for healthcare, BFSI, manufacturing, and more.'
         },
         {
             question: 'How do you ensure enterprise software security and compliance?',
