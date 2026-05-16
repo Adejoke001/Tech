@@ -55,7 +55,7 @@ export default function MobileAppDevelopersPage() {
       id: 1,
       title: "Custom Mobile App Development",
       description:
-        "Native Android (Kotlin/Java), Native iOS (Swift/Objective-C), and cross-platform apps using Flutter, React Native, and Xamarin.",
+        "Native Android (Kotlin/Java), Native iOS (Swift), and cross-platform apps using Flutter and React Native.",
       icon: <Smartphone className={styles.expertiseIcon} />,
       color: "#10b981",
       features: [
@@ -63,7 +63,6 @@ export default function MobileAppDevelopersPage() {
         "Native iOS development",
         "Flutter apps",
         "React Native apps",
-        "Xamarin development",
       ],
     },
     {
@@ -84,26 +83,24 @@ export default function MobileAppDevelopersPage() {
       id: 3,
       title: "API Development & Third-Party Integration",
       description:
-        "RESTful & GraphQL API integration, real-time communication with WebSockets, and social media, payment, and map integrations.",
+        "RESTful API integration, real-time communication with WebSockets, and payment gateway integrations.",
       icon: <GitBranch className={styles.expertiseIcon} />,
       color: "#10b981",
       features: [
-        "REST/GraphQL APIs",
+        "REST APIs",
         "WebSocket integration",
         "Payment gateway integration",
-        "Social media integration",
       ],
     },
     {
       id: 4,
       title: "Mobile App Modernization",
       description:
-        "Migrating legacy apps to modern tech stacks, converting hybrid apps to native or cross-platform, and updating UI/UX.",
+        "Migrating legacy apps to modern tech stacks and updating UI/UX for better performance.",
       icon: <RefreshCw className={styles.expertiseIcon} />,
       color: "#10b981",
       features: [
         "Legacy app migration",
-        "Hybrid to native conversion",
         "UI/UX modernization",
         "Tech stack upgrades",
       ],
@@ -112,12 +109,11 @@ export default function MobileAppDevelopersPage() {
       id: 5,
       title: "Performance Optimization",
       description:
-        "CPU, GPU, memory optimization, battery & network usage tuning, faster load times, and smooth user interactions.",
+        "Memory optimization, network usage tuning, and faster load times for smooth user interactions.",
       icon: <Zap className={styles.expertiseIcon} />,
       color: "#10b981",
       features: [
-        "CPU/GPU optimization",
-        "Battery usage tuning",
+        "Memory optimization",
         "Network optimization",
         "Load time improvement",
       ],
@@ -126,13 +122,12 @@ export default function MobileAppDevelopersPage() {
       id: 6,
       title: "Cloud-Connected Mobile Solutions",
       description:
-        "Firebase, AWS, GCP, Azure Mobile App services, serverless architecture, and real-time sync for multi-device experiences.",
+        "Firebase, AWS integration, and real-time sync for multi-device experiences.",
       icon: <Cloud className={styles.expertiseIcon} />,
       color: "#10b981",
       features: [
         "Firebase integration",
-        "AWS Mobile services",
-        "Serverless architecture",
+        "AWS integration",
         "Real-time sync",
       ],
     },
@@ -140,13 +135,12 @@ export default function MobileAppDevelopersPage() {
       id: 7,
       title: "Mobile App Testing & QA",
       description:
-        "Manual, automated & regression testing with XCTest, Espresso, Appium, Detox, and device lab testing across OS versions.",
+        "Manual, automated testing, and device testing across OS versions.",
       icon: <ShieldCheck className={styles.expertiseIcon} />,
       color: "#10b981",
       features: [
         "Automated testing",
-        "Device lab testing",
-        "Regression testing",
+        "Device testing",
         "Cross-platform QA",
       ],
     },
@@ -154,14 +148,13 @@ export default function MobileAppDevelopersPage() {
       id: 8,
       title: "App Deployment & Management",
       description:
-        "App Store & Play Store submission, compliance with Apple & Google reviews, release management, versioning & rollback strategies.",
+        "App Store & Play Store submission, compliance with store reviews, and release management.",
       icon: <DownloadCloud className={styles.expertiseIcon} />,
       color: "#10B981",
       features: [
         "Store submission",
         "Compliance management",
         "Release management",
-        "Version control",
       ],
     },
   ];
@@ -184,74 +177,59 @@ export default function MobileAppDevelopersPage() {
         "Kotlin",
         "Swift",
         "Java",
-        "Objective-C",
         "Dart",
         "JavaScript",
         "TypeScript",
-        "C#",
       ],
     },
     "environments-frameworks": {
-      title: "Environments & Frameworks",
+      title: "Frameworks",
       color: "#10B981",
       technologies: [
         "Flutter",
         "React Native",
-        "Xamarin",
         "Android SDK",
         "iOS SDK",
-        "Ionic",
-        "NativeScript",
       ],
     },
     "data-storage": {
-      title: "Data Storage & Databases",
+      title: "Data Storage",
       color: "#3b82f6",
       technologies: [
         "Firebase/Firestore",
-        "Realm",
-        "Core Data",
         "SQLite",
-        "MongoDB Realm",
-        "AWS Amplify DataStore",
+        "Core Data",
+        "Realm",
       ],
     },
     "platforms-apis": {
-      title: "Platforms & APIs",
+      title: "APIs & Integrations",
       color: "#10b981",
       technologies: [
         "REST APIs",
         "GraphQL",
-        "Apple Pay",
-        "Google Pay",
-        "Apple Maps",
         "Google Maps",
         "Firebase",
-        "AWS Amplify",
+        "Payment Gateways",
       ],
     },
     "qa-tools": {
       title: "QA Tools",
       color: "#3b82f6",
       technologies: [
-        "XCTest",
-        "Espresso",
-        "Appium",
-        "Detox",
+        "Jest",
+        "React Native Testing Library",
+        "Flutter Test",
         "Firebase Test Lab",
-        "BrowserStack",
       ],
     },
     devops: {
       title: "DevOps",
       color: "#10b981",
       technologies: [
-        "Bitrise",
-        "Codemagic",
         "GitHub Actions",
-        "Jenkins",
         "Fastlane",
-        "Docker",
+        "Codemagic",
       ],
     },
   };
@@ -337,53 +315,53 @@ export default function MobileAppDevelopersPage() {
   const pricingPlans = [
     {
       title: "Dedicated Development Team",
-      price: "$4,000 – $10,000/month",
+      price: "$3,000 – $7,000/month",
       description:
-        "Small-to-mid-size team (2-4 members) for building or scaling standard mobile applications.",
+        "Small team (2-3 members) for building or scaling standard mobile applications.",
       features: [
-        "2-4 dedicated developers",
+        "2-3 dedicated developers",
         "Standard web/mobile apps",
-        "Basic project management",
-        "Regular code updates",
+        "Regular updates",
+        "Direct communication",
       ],
       color: "#3B82F6",
     },
     {
       title: "Team with Project Manager",
-      price: "$10,000 – $25,000/month",
+      price: "$7,000 – $15,000/month",
       description:
-        "Fully managed delivery with project manager handling sprints and communication (3-8 members).",
+        "Managed delivery with project manager handling sprints and communication (3-5 members).",
       features: [
-        "3-8 team members",
+        "3-5 team members",
         "Dedicated project manager",
-        "Agile sprints management",
-        "Comprehensive documentation",
+        "Agile sprints",
+        "Progress tracking",
       ],
       color: "#3b82f6",
     },
     {
       title: "Extended Team for Scaling",
-      price: "$25,000 – $35,000/month",
+      price: "$15,000 – $25,000/month",
       description:
-        "Augment your in-house capacity with 8-11 dedicated professionals for product scaling.",
+        "Augment your in-house capacity with 5-7 dedicated professionals for product scaling.",
       features: [
-        "8-11 professionals",
+        "5-7 professionals",
         "Advanced skill sets",
         "Product scaling focus",
-        "Enterprise support",
+        "Priority support",
       ],
       color: "#3b82F6",
     },
     {
       title: "Specialized Development Pods",
-      price: "$35,000 – $50,000/month",
+      price: "$25,000 – $40,000/month",
       description:
-        "Cross-functional pods focused on AI/ML, data engineering, or cloud migration (11-16 members).",
+        "Cross-functional pods focused on AI/ML, data engineering, or cloud migration (8-12 members).",
       features: [
-        "11-16 specialists",
+        "8-12 specialists",
         "AI/ML integration",
         "Cross-functional teams",
-        "Advanced architecture",
+        "Solution architecture",
       ],
       color: "#3b82f6",
     },
@@ -395,37 +373,37 @@ export default function MobileAppDevelopersPage() {
       model: "In-House Team",
       timeToHire: "4-12 weeks",
       timeToStart: "2-10 weeks",
-      trainingCost: "$10,000-$30,000",
+      trainingCost: "$5,000-$20,000",
       scalingTime: "4-16 weeks",
-      risk: "Low",
-      deliverySupport: "Some",
-    },
-    {
-      model: "Freelancers",
-      timeToHire: "1-12 weeks",
-      timeToStart: "1-10 weeks",
-      trainingCost: "0",
-      scalingTime: "Variable",
-      risk: "High",
+      risk: "Medium",
       deliverySupport: "Limited",
     },
     {
+      model: "Freelancers",
+      timeToHire: "1-4 weeks",
+      timeToStart: "1-3 weeks",
+      trainingCost: "$0-$2,000",
+      scalingTime: "Variable",
+      risk: "High",
+      deliverySupport: "Minimal",
+    },
+    {
       model: "BBMcoders",
-      timeToHire: "1 day - 2 weeks",
-      timeToStart: "1 day - 2 weeks",
-      trainingCost: "0",
-      scalingTime: "48 hours - 1 week",
-      risk: "Extremely Low",
+      timeToHire: "1-2 weeks",
+      timeToStart: "3-7 days",
+      trainingCost: "$0",
+      scalingTime: "1-2 weeks",
+      risk: "Low",
       deliverySupport: "Full",
     },
   ];
 
   // Stats Section
   const companyStats = [
-    { value: "700+", label: "Full-time Developers", icon: <Users /> },
-    { value: "20+", label: "Years Experience", icon: <Award /> },
-    { value: "4500+", label: "Satisfied Clients", icon: <HeadphonesIcon /> },
-    { value: "98%", label: "Project Success Rate", icon: <CheckCircle /> },
+    { value: "10+", label: "Full-time Developers", icon: <Users /> },
+    { value: "5+", label: "Years Experience", icon: <Award /> },
+    { value: "80+", label: "Satisfied Clients", icon: <HeadphonesIcon /> },
+    { value: "95%", label: "Project Success Rate", icon: <CheckCircle /> },
   ];
 
   // What We Build Section
@@ -544,46 +522,46 @@ export default function MobileAppDevelopersPage() {
     {
       question: "How quickly can I hire mobile app developers from BBMcoders?",
       answer:
-        "We can onboard dedicated mobile app developers in 24-48 hours. Our vetting process ensures you get pre-screened, experienced developers who match your specific mobile development requirements.",
+        "We can onboard dedicated mobile app developers within 1-2 weeks. Our vetting process ensures you get pre-screened developers who match your mobile development requirements.",
     },
     {
       question:
         "What platforms and technologies do your developers specialize in?",
       answer:
-        "Our developers are experts in iOS (Swift, Objective-C), Android (Kotlin, Java), and cross-platform frameworks like Flutter and React Native. We also work with mobile backend technologies, cloud services, and testing tools.",
+        "Our developers are experienced in iOS (Swift), Android (Kotlin, Java), and cross-platform frameworks like Flutter and React Native. We also work with mobile backend technologies and cloud services.",
     },
     {
       question: "Do you offer a trial period for hired developers?",
       answer:
-        "Yes, we offer a 7-day risk-free trial period. This allows you to evaluate the developer's skills and fit with your team before making a long-term commitment.",
+        "Yes, we offer a trial period to evaluate the developer's skills and fit with your team before making a long-term commitment.",
     },
     {
       question: "How do you ensure app quality and performance?",
       answer:
-        "We follow mobile-specific best practices, conduct rigorous testing across devices, optimize for performance and battery life, and use modern tooling for continuous integration and deployment.",
+        "We follow mobile best practices, conduct testing across devices, optimize for performance, and use modern tooling for continuous integration.",
     },
     {
       question: "Can your developers work with our existing backend systems?",
       answer:
-        "Absolutely. Our mobile developers are experienced in API integration and can work seamlessly with your existing backend infrastructure, databases, and third-party services.",
+        "Absolutely. Our mobile developers are experienced in API integration and can work with your existing backend infrastructure and third-party services.",
     },
     {
       question: "What kind of support do you provide after app launch?",
       answer:
-        "We provide ongoing maintenance, updates, performance monitoring, and feature enhancements. We also handle app store updates and compliance requirements.",
+        "We provide ongoing maintenance, updates, performance monitoring, and feature enhancements.",
     },
   ];
 
   // Why Choose BBMcoders Features
   const whyChooseFeatures = [
-    "Workstatus™ powered Proof of Work",
-    "Top 1% developers, rigorously vetted",
+    "Transparent progress tracking",
+    "Rigorously vetted developers",
     "Dedicated project manager",
     "Flexible contracts, transparent pricing",
-    "Zero hiring fee, quick onboarding",
-    "Comprehensive code documentation",
-    "Adherence to data security practices",
-    "Language/time-zone compatible staff",
+    "Quick onboarding process",
+    "Code documentation",
+    "Data security practices",
+    "Time-zone compatible staff",
   ];
 
   return (

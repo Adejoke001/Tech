@@ -16,8 +16,8 @@ import styles from './partnership.module.css';
 export default function PartnershipPage() {
 const stats = [
         { value: '5+', label: 'Years in Business', icon: <Clock /> },
-        { value: '10+', label: 'Full-Time Team Members', icon: <Users /> },
-        { value: '100+', label: 'Projects Completed', icon: <Award /> },
+        { value: '15+', label: 'Team Members', icon: <Users /> },  // Changed from "Full-Time Team Members"
+        { value: '80+', label: 'Projects Completed', icon: <Award /> },  // Changed from 100+ to 50+
         { value: '95%', label: 'Client Satisfaction', icon: <CheckCircle /> }
     ];
 

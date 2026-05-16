@@ -6,9 +6,9 @@ import Link from 'next/link';
 import { motion, AnimatePresence } from 'framer-motion';
 import {
     Smartphone, Users,
-    CheckCircle, Award, MessageSquare, Sparkles,
+    CheckCircle, Award,  Sparkles,
     Cloud, HelpCircle, ArrowRight,
-    GitBranch, FileText, RefreshCw,
+    GitBranch, FileText,
     Code2, Monitor, Shield, FileCode, TestTube,
     Database, Lock, Clock, Users as UsersIcon, Rocket,
     Calendar, Scale, Briefcase, Globe as GlobeIcon,
@@ -24,96 +24,89 @@ export default function QATestersPage() {
     const [hoveredIndustry, setHoveredIndustry] = useState<number | null>(null);
 
     // ----- HERO TESTIMONIAL -----
-    const testimonial = {
-        name: 'Chidi',
-        content: 'BBMcoders’ QA engineers integrated seamlessly into our sprints. They caught 40% more edge cases than our previous setup, and our release confidence has never been higher.',
-        rating: 5,
-        project: 'FinTech Trading Platform'
-    };
+    // const testimonial = {
+    //     name: 'Chidi',
+    //     content: 'BBMcoders’ QA engineers integrated seamlessly into our sprints. They caught 40% more edge cases than our previous setup, and our release confidence has never been higher.',
+    //     rating: 5,
+    //     project: 'FinTech Trading Platform'
+    // };
 
     // ----- EXPERTISE AREAS (6 cards) -----
     const qaExpertise = [
         {
             id: 1,
             title: 'Automated Testing',
-            description: 'Accelerate releases with robust automation frameworks. We implement Selenium, Cypress, Playwright and more for reliable, repeatable test execution.',
+            description: 'Accelerate releases with automation frameworks. We implement Selenium, Cypress, and Playwright for reliable test execution.',
             icon: <TestTube className={styles.expertiseIcon} />,
             color: '#10b981',
             features: [
                 'Cross‑browser test automation',
-                'Parallel execution & cloud grids',
                 'CI/CD integration',
                 'Visual regression testing'
             ],
-            details: 'Reduce delivery time while increasing coverage'
+            details: 'Faster delivery with increased coverage'
         },
         {
             id: 2,
             title: 'Functional & Application Testing',
-            description: 'End‑to‑end validation of web, mobile and desktop apps. We verify every feature against real‑user scenarios.',
+            description: 'End‑to‑end validation of web and mobile apps. We verify features against real‑user scenarios.',
             icon: <Monitor className={styles.expertiseIcon} />,
             color: '#10B981',
             features: [
                 'eCommerce checkout flows',
-                'Mobile app gestures & offline',
-                'API contract testing',
+                'API testing',
                 'User acceptance test support'
             ],
-            details: 'Flawless user experiences across devices'
+            details: 'Quality user experiences across devices'
         },
         {
             id: 3,
-            title: 'Performance, Security & Compliance',
-            description: 'Load testing, vulnerability scanning, and compliance audits (GDPR, HIPAA, PCI‑DSS).',
+            title: 'Performance & Security Testing',
+            description: 'Load testing and vulnerability scanning to ensure system reliability.',
             icon: <Shield className={styles.expertiseIcon} />,
             color: '#10b981',
             features: [
-                'Stress & endurance testing',
-                'OWASP Top 10 scanning',
-                'Penetration testing',
-                'Regulatory compliance validation'
+                'Load testing',
+                'Security vulnerability scanning',
+                'Best practices validation'
             ],
-            details: 'Secure, scalable, and audit‑ready systems'
+            details: 'Secure and reliable systems'
         },
         {
             id: 4,
             title: 'Test Strategy & Planning',
-            description: 'Structured QA blueprints that align with your development goals. We define scope, risks, and entry/exit criteria.',
+            description: 'Structured QA blueprints that align with your development goals. We define scope and approach.',
             icon: <PenTool className={styles.expertiseIcon} />,
             color: '#10b981',
             features: [
-                'Requirement traceability',
                 'Risk‑based testing approach',
-                'Test case design & peer review',
+                'Test case design',
                 'Effort estimation'
             ],
-            details: 'QA that starts long before the first test run'
+            details: 'QA that starts before the first test run'
         },
         {
             id: 5,
             title: 'Test Execution & Quality Reporting',
-            description: 'Manual and automated test cycles with clear defect tracking. We deliver actionable dashboards.',
+            description: 'Manual and automated test cycles with clear defect tracking. We deliver actionable reports.',
             icon: <BarChart3 className={styles.expertiseIcon} />,
             color: '#10b981',
             features: [
                 'Sprint‑aligned test cycles',
-                'Defect triage & prioritisation',
-                'Real‑time reporting',
-                'Root cause analysis'
+                'Defect tracking',
+                'Progress reporting'
             ],
             details: 'Transparency from test run to sign‑off'
         },
         {
             id: 6,
-            title: 'CI/CD & DevOps Integration',
-            description: 'Embed quality gates into your pipeline. We integrate testing tools with Jenkins, GitHub Actions, Azure DevOps, and more.',
+            title: 'CI/CD Integration',
+            description: 'Embed quality checks into your pipeline. We integrate testing tools with GitHub Actions and Jenkins.',
             icon: <GitBranch className={styles.expertiseIcon} />,
             color: '#10b981',
             features: [
-                'Shift‑left testing',
-                'Automated regression on every commit',
-                'Infrastructure as code testing',
-                'Quality dashboards'
+                'Automated regression on commits',
+                'Quality reporting'
             ],
             details: 'Continuous testing for continuous delivery'
         }
@@ -122,110 +115,110 @@ export default function QATestersPage() {
     // ----- TESTING TOOLS – 6 CATEGORIES (3x2 grid) -----
     const testingTools = {
         'test-management': {
-            title: 'Test Management & Planning',
+            title: 'Test Management',
             icon: <Layout />,
             color: '#3B82F6',
-            technologies: ['Zephyr', 'Qase', 'TestRail', 'Xray', 'PractiTest']
+            technologies: ['TestRail', 'Qase', 'Zephyr']
         },
         'automation': {
             title: 'Automation Testing',
             icon: <Terminal />,
             color: '#3b82f6',
-            technologies: ['Selenium', 'Appium', 'Cypress', 'Playwright', 'Katalon Studio']
+            technologies: ['Selenium', 'Cypress', 'Playwright', 'Appium']
         },
         'performance': {
-            title: 'Performance & Load Testing',
+            title: 'Performance Testing',
             icon: <Gauge />,
-            color: '#3b82F6',
-            technologies: ['JMeter', 'Locust', 'Gatling', 'BlazeMeter']
+            color: '#3b82f6',
+            technologies: ['JMeter', 'k6']
         },
         'security': {
-            title: 'Security & Code Quality',
+            title: 'Security Testing',
             icon: <Fingerprint />,
             color: '#3b82f6',
-            technologies: ['OWASP ZAP', 'Burp Suite', 'SonarQube', 'Nessus']
+            technologies: ['OWASP ZAP', 'SonarQube']
         },
         'functional': {
-            title: 'Functional & Regression Testing',
+            title: 'API & Functional Testing',
             icon: <Box />,
             color: '#3b82f6',
-            technologies: ['BrowserStack', 'LambdaTest', 'Postman', 'SoapUI']
+            technologies: ['Postman', 'BrowserStack']
         },
         'ci-cd': {
-            title: 'CI/CD & DevOps Integration',
+            title: 'CI/CD Integration',
             icon: <Settings />,
             color: '#3b82f6',
-            technologies: ['Jenkins', 'GitHub Actions', 'GitLab CI', 'Bitrise', 'Azure DevOps']
+            technologies: ['GitHub Actions', 'Jenkins', 'GitLab CI']
         }
     };
 
     // ----- QA PROCESS (6 steps) -----
     const qaProcess = [
-        { step: 1, title: 'Requirement Analysis', description: 'Collaborate with stakeholders to understand features, user stories, and acceptance criteria.', icon: <FileText />, duration: '1-2 days' },
-        { step: 2, title: 'Test Planning', description: 'Define scope, strategy, test environment, and risk assessment. Create traceability matrix.', icon: <PenTool />, duration: '2-3 days' },
-        { step: 3, title: 'Test Case Development', description: 'Design detailed test cases, preconditions, and expected results. Peer reviews ensure quality.', icon: <FileCode />, duration: '3-5 days' },
-        { step: 4, title: 'Test Execution', description: 'Execute manual and automated test cycles. Log defects and track resolution.', icon: <Activity />, duration: 'Ongoing' },
-        { step: 5, title: 'Defect Reporting & Retesting', description: 'Prioritise bugs, verify fixes, and maintain regression suites.', icon: <Bug />, duration: 'Ongoing' },
-        { step: 6, title: 'Test Closure & Sign-off', description: 'Summarise results, evaluate exit criteria, and provide release recommendations.', icon: <CheckCircle />, duration: '1 day' }
+        { step: 1, title: 'Requirement Analysis', description: 'Understand features, user stories, and acceptance criteria.', icon: <FileText />, duration: '1-3 days' },
+        { step: 2, title: 'Test Planning', description: 'Define scope, strategy, and test environment setup.', icon: <PenTool />, duration: '2-4 days' },
+        { step: 3, title: 'Test Case Development', description: 'Design test cases and expected results with peer reviews.', icon: <FileCode />, duration: '3-7 days' },
+        { step: 4, title: 'Test Execution', description: 'Execute manual and automated tests. Track and report issues.', icon: <Activity />, duration: 'Ongoing' },
+        { step: 5, title: 'Defect Reporting & Retesting', description: 'Verify fixes and maintain regression test suites.', icon: <Bug />, duration: 'Ongoing' },
+        { step: 6, title: 'Test Closure', description: 'Summarise results and provide release recommendations.', icon: <CheckCircle />, duration: '1-2 days' }
     ];
 
     // ----- BENEFITS OF QA TESTING (why hire from India) -----
     const whybbmBenefits = [
         {
             title: 'Cost‑effective QA',
-            description: 'Reduce QA costs by 40‑60% without compromising quality. Pay only for the hours you need.',
+            description: 'Quality QA services at competitive rates. Pay only for the hours you need.',
             icon: '💰',
-            benefit: '40-60% Cost Savings',
+            benefit: 'Cost Savings',
             details: ['Competitive hourly rates', 'No recruitment fees', 'Flexible engagement']
         },
         {
-            title: 'Top 10% Talent',
-            description: 'Rigorous vetting process ensures you get testers who master both manual and automation.',
+            title: 'Skilled Testers',
+            description: 'Rigorous vetting process ensures you get testers proficient in both manual and automation.',
             icon: '🎯',
-            benefit: 'Top 10% Testers',
-            details: ['8‑step screening', 'Hands‑on assignments', 'Domain expertise']
+            benefit: 'Skilled Professionals',
+            details: ['Technical screening', 'Hands‑on assignments', 'Practical expertise']
         },
         {
             title: 'Scalable Teams',
-            description: 'Scale from 1 tester to a full QA pod within 48 hours. Add or reduce resources anytime.',
+            description: 'Scale from 1 tester to a full QA team within 1-2 weeks. Add or reduce resources as needed.',
             icon: '📈',
-            benefit: '48h Scaling',
-            details: ['Instant team expansion', 'No long‑term lock‑in', 'Mix of manual/automation']
+            benefit: 'Flexible Scaling',
+            details: ['Team expansion', 'No long‑term lock‑in', 'Mix of manual/automation']
         },
         {
             title: 'Faster Time to Market',
-            description: 'Parallel testing, overlapping time zones, and shift‑left practices accelerate releases.',
+            description: 'Parallel testing and agile practices help accelerate your release cycles.',
             icon: '⚡',
-            benefit: '30% Faster Releases',
-            details: ['24h handover', 'Early defect detection', 'Agile alignment']
+            benefit: 'Efficient Delivery',
+            details: ['Early defect detection', 'Agile alignment', 'Quick feedback loops']
         },
         {
-            title: 'Domain Expertise',
-            description: 'Testers with experience in FinTech, healthcare, eCommerce, and enterprise software.',
+            title: 'Domain Experience',
+            description: 'Testers with experience in FinTech, eCommerce, and business applications.',
             icon: '🎓',
-            benefit: 'Industry‑specific QA',
-            details: ['Banking & payments', 'HIPAA compliance', 'High‑traffic retail']
+            benefit: 'Relevant Experience',
+            details: ['Payment systems', 'Online retail', 'Business software']
         },
         {
             title: 'Seamless Communication',
-            description: 'Fluent English, cultural compatibility, and communication during your business hours.',
+            description: 'Strong English skills and availability during your business hours.',
             icon: '💬',
-            benefit: 'Overlapping Shifts',
-            details: ['Dedicated Slack channels', 'Daily stand‑ups', 'Transparent reporting']
+            benefit: 'Clear Communication',
+            details: ['Dedicated channels', 'Regular updates', 'Transparent reporting']
         },
         {
-            title: 'Zero Infrastructure Cost',
-            description: 'We provide secure devices, test labs, and access to cloud grids – you only pay for the tester.',
+            title: 'Testing Infrastructure',
+            description: 'We provide secure test environments and manage necessary tools.',
             icon: '🖥️',
-            benefit: 'No Capex',
-            details: ['DeviceAnywhere access', 'Pre‑configured VMs', 'Licence management']
+            benefit: 'Ready Infrastructure',
+            details: ['Test environments', 'Tool management', 'Setup support']
         },
         {
-            title: 'ISO & Security Compliance',
-            description: 'GDPR‑compliant, NDA‑protected, and audited annually for information security.',
+            title: 'Security Compliance',
+            description: 'NDA-protected and following security best practices for data protection.',
             icon: '🔒',
-            benefit: 'ISO 27001 Ready',
-            details: ['Strict NDA', 'Data anonymisation', 'Regular security training']
+            benefit: 'Data Security',
+            details: ['Strict NDA', 'Data protection', 'Security awareness']
         }
     ];
 
@@ -233,51 +226,43 @@ export default function QATestersPage() {
     const whatWeTest = [
         {
             title: 'Web & Mobile Applications',
-            description: 'Responsive web apps, native iOS/Android, and cross‑platform mobile apps.',
+            description: 'Responsive web apps and cross‑platform mobile applications.',
             icon: <Smartphone />,
-            examples: ['E‑commerce stores', 'Banking apps', 'SaaS dashboards', 'Social platforms'],
+            examples: ['E‑commerce stores', 'Business dashboards', 'Mobile apps'],
             color: '#10b981',
-            technologies: ['Selenium', 'Appium', 'Cypress', 'BrowserStack']
+            technologies: ['Selenium', 'Cypress', 'Appium']
         },
         {
-            title: 'eCommerce & SaaS Platforms',
-            description: 'End‑to‑end validation of checkout, inventory, subscriptions, and third‑party integrations.',
+            title: 'eCommerce Platforms',
+            description: 'Validation of checkout flows, product catalogs, and payment integrations.',
             icon: <Code2 />,
-            examples: ['Magento/Shopify', 'Salesforce', 'Subscription billing', 'Payment gateways'],
+            examples: ['Online stores', 'Payment gateways', 'Shopping carts'],
             color: '#10B981',
-            technologies: ['Postman', 'JMeter', 'Cypress', 'LambdaTest']
+            technologies: ['Postman', 'Cypress']
         },
         {
             title: 'APIs & Backend Services',
-            description: 'REST, GraphQL, microservices, and database integrity testing.',
+            description: 'REST API testing and database integrity validation.',
             icon: <Database />,
-            examples: ['Payment APIs', 'Inventory sync', 'Authentication', 'Reporting engines'],
+            examples: ['Payment APIs', 'Authentication services', 'Data sync'],
             color: '#10b981',
-            technologies: ['Postman', 'SoapUI', 'JMeter', 'New Relic']
+            technologies: ['Postman', 'SoapUI']
         },
         {
-            title: 'Performance & Scalability',
-            description: 'Load, stress, and endurance testing to ensure stability under peak traffic.',
+            title: 'Performance Testing',
+            description: 'Load testing to ensure stability under normal traffic conditions.',
             icon: <Gauge />,
-            examples: ['Flash sales', 'Live events', 'High‑frequency trading', 'IoT backends'],
+            examples: ['Regular traffic loads', 'Peak usage periods'],
             color: '#10b981',
-            technologies: ['JMeter', 'Gatling', 'k6', 'BlazeMeter']
+            technologies: ['JMeter', 'k6']
         },
         {
-            title: 'Security & Compliance',
-            description: 'Vulnerability assessment, penetration testing, and regulatory compliance.',
+            title: 'Security Testing',
+            description: 'Basic vulnerability assessment and security best practices validation.',
             icon: <Shield />,
-            examples: ['GDPR audits', 'PCI‑DSS validation', 'OWASP checks', 'Pen tests'],
+            examples: ['OWASP top 10 checks', 'Security audits'],
             color: '#10b981',
-            technologies: ['OWASP ZAP', 'Burp Suite', 'Nessus', 'SonarQube']
-        },
-        {
-            title: 'Legacy & Enterprise Systems',
-            description: 'Modernisation testing, mainframe integration, and SAP/Oracle validation.',
-            icon: <RefreshCw />,
-            examples: ['System migrations', 'ERP upgrades', 'Legacy UI testing', 'Data reconciliation'],
-            color: '#10b981',
-            technologies: ['Selenium', 'UFT', 'Tosca', 'IBM RFT']
+            technologies: ['OWASP ZAP', 'SonarQube']
         }
     ];
 
@@ -285,95 +270,65 @@ export default function QATestersPage() {
     const pricingPlans = [
         {
             title: 'Dedicated QA Engineer',
-            price: '$4,000 – $10,000/month',
+            price: '$2,500 – $5,000/month',
             description: 'Individual QA specialist for small to medium projects. Manual + automation skills.',
             features: [
-                '1–2 QA engineers',
+                '1 QA engineer',
                 'Functional & regression testing',
                 'Basic automation',
-                'Weekly reports',
+                'Weekly updates',
                 'Direct communication'
             ],
             color: '#3B82F6',
-            bestFor: 'Startups & SMEs',
+            bestFor: 'Startups & Small Businesses',
             timeline: '3–6 months'
         },
         {
-            title: 'Dedicated Team with PM',
-            price: '$10,000 – $25,000/month',
-            description: 'Fully managed QA team with a dedicated project manager. 3–8 members.',
+            title: 'QA Team with PM',
+            price: '$6,000 – $15,000/month',
+            description: 'Managed QA team with a dedicated project manager. 2-4 members.',
             features: [
-                '3–5 QA engineers + PM',
-                'Full test strategy & planning',
-                'CI/CD integration',
-                'Daily stand‑ups',
-                'Sprint‑aligned delivery'
+                '2-4 QA engineers + PM',
+                'Test strategy & planning',
+                'Basic CI/CD integration',
+                'Regular updates',
+                'Sprint-aligned delivery'
             ],
             color: '#10B981',
             bestFor: 'Growing Businesses',
             timeline: '6–12 months'
         },
-        // {
-        //     title: 'Extended Team (Product Scaling)',
-        //     price: '$25,000 – $35,000/month',
-        //     description: 'Augment your in‑house capacity with 8–11 QA professionals.',
-        //     features: [
-        //         '8–11 QA engineers',
-        //         'Performance & security testing',
-        //         'Test environment management',
-        //         'Advanced automation',
-        //         'On‑demand scalability'
-        //     ],
-        //     color: '#8B5CF6',
-        //     bestFor: 'High‑Growth Scale‑ups',
-        //     timeline: '12+ months'
-        // },
-        // {
-        //     title: 'Specialised QA Pods',
-        //     price: '$35,000 – $50,000/month',
-        //     description: 'Cross‑functional pods for AI/ML, cloud migration, or complex compliance projects (11–16 members).',
-        //     features: [
-        //         '11–16 specialists',
-        //         'AI‑driven test optimisation',
-        //         'Cloud infrastructure testing',
-        //         'Regulatory experts',
-        //         '24×7 coverage'
-        //     ],
-        //     color: '#F59E0B',
-        //     bestFor: 'Complex Programs',
-        //     timeline: '12+ months'
-        // },
         {
-            title: 'Enterprise Delivery Unit',
-            price: '$50,000+ /month',
-            description: 'Multi‑squad QA coordination for enterprise‑grade programs with global footprint.',
+            title: 'Enterprise QA Unit',
+            price: '$20,000 – $35,000/month',
+            description: 'Multi-squad QA coordination for large-scale programs.',
             features: [
-                '16+ QA engineers',
-                'Multi‑team coordination',
-                'Advanced DevOps & SRE',
-                'Compliance & audit support',
-                'Executive dashboards'
+                '6-10 QA engineers',
+                'Multi-team coordination',
+                'DevOps integration',
+                'Compliance support',
+                'Progress dashboards'
             ],
             color: '#3b82f6',
-            bestFor: 'Global Enterprises',
-            timeline: 'Long‑term partnership'
+            bestFor: 'Large Projects',
+            timeline: 'Long-term partnership'
         }
     ];
 
     // ----- WHY HIRE FROM BBMcoders (feature list) -----
     const whyChooseFeatures = [
-        { feature: 'Workstatus™ powered Proof of Work', icon: <CheckCircle /> },
-        { feature: 'Top 1% QA engineers, rigorously vetted', icon: <Award /> },
+        { feature: 'Transparent progress tracking', icon: <CheckCircle /> },
+        { feature: 'Rigorously vetted QA engineers', icon: <Award /> },
         { feature: 'Dedicated project manager', icon: <Users /> },
         { feature: 'Flexible contracts, transparent pricing', icon: <Scale /> },
-        { feature: 'Zero hiring fee, quick onboarding (48h)', icon: <Rocket /> },
+        { feature: 'Quick onboarding process', icon: <Rocket /> },
         { feature: 'Clear test documentation & reporting', icon: <FileText /> },
-        { feature: 'Adherence to data security practices', icon: <Lock /> },
-        { feature: 'Language/time‑zone compatible staff', icon: <GlobeIcon /> },
-        { feature: '7‑day risk‑free trial period', icon: <Calendar /> },
+        { feature: 'Data security practices', icon: <Lock /> },
+        { feature: 'Time-zone compatible staff', icon: <GlobeIcon /> },
+        { feature: 'Trial period available', icon: <Calendar /> },
         { feature: 'IP Rights & NDA protection', icon: <Shield /> },
-        { feature: 'Continuous testing for CI/CD', icon: <GitBranch /> },
-        { feature: 'Global time‑zone coverage', icon: <Clock /> }
+        { feature: 'CI/CD integration support', icon: <GitBranch /> },
+        { feature: 'Responsive support', icon: <Clock /> }
     ];
 
     // ----- ENGAGEMENT MODELS -----
@@ -408,34 +363,34 @@ export default function QATestersPage() {
             model: 'In‑House QA',
             timeToHire: '6‑12 weeks',
             timeToStart: '4‑8 weeks',
-            trainingCost: '$15,000‑$40,000',
+            trainingCost: '$10,000‑$25,000',
             scalingTime: '6‑12 weeks',
-            risk: 'Medium‑High',
+            risk: 'Medium',
             deliverySupport: 'Limited',
             flexibility: 'Low',
-            totalCost: '$100,000+ annually'
+            totalCost: '$80,000+ annually'
         },
         {
             model: 'Freelancers',
-            timeToHire: '2‑8 weeks',
-            timeToStart: '1‑6 weeks',
-            trainingCost: '$0‑$5,000',
+            timeToHire: '2‑6 weeks',
+            timeToStart: '1‑4 weeks',
+            trainingCost: '$0‑$3,000',
             scalingTime: 'Variable',
             risk: 'High',
             deliverySupport: 'Minimal',
             flexibility: 'Medium',
-            totalCost: 'Variable, often higher'
+            totalCost: 'Variable'
         },
         {
             model: 'BBMcoders QA',
             timeToHire: '1‑2 weeks',
             timeToStart: '1‑2 weeks',
             trainingCost: '$0',
-            scalingTime: '48 hours - 1 week',
-            risk: 'Extremely Low',
-            deliverySupport: 'Full Support',
+            scalingTime: '1‑2 weeks',
+            risk: 'Low',
+            deliverySupport: 'Full',
             flexibility: 'High',
-            totalCost: 'Predictable, 40‑60% lower'
+            totalCost: 'Predictable, cost-effective'
         }
     ];
 
@@ -472,23 +427,23 @@ export default function QATestersPage() {
         },
         {
             question: 'How quickly can I hire a QA engineer from BBMcoders?',
-            answer: 'We can onboard a pre‑vetted QA engineer within 1–2 weeks. For urgent needs, we have a pool of ready‑to‑start testers who can begin in 48 hours.'
+            answer: 'We can onboard a pre‑vetted QA engineer within 1‑2 weeks. We match you with testers based on your specific requirements.'
         },
         {
             question: 'Do your QA engineers know how to code for automation?',
-            answer: 'Yes. Our testers are proficient in Java, Python, JavaScript, and C#. They build robust automation frameworks using Selenium, Cypress, Playwright, Appium, and more.'
+            answer: 'Yes. Our testers are proficient in JavaScript, Python, and Java. They build automation frameworks using tools like Selenium, Cypress, and Playwright.'
         },
         {
             question: 'Can you test my existing application?',
-            answer: 'Absolutely. We perform complete health checks, regression testing, and security audits on legacy systems. We document everything and provide a clear roadmap for improvement.'
+            answer: 'Absolutely. We perform complete health checks, regression testing, and security reviews on applications. We document everything and provide a clear roadmap for improvement.'
         },
         {
             question: 'How do you ensure the security of my data?',
-            answer: 'We sign strict NDAs, follow ISO 27001 guidelines, and use encrypted communication channels. Our test environments are isolated and access is revoked immediately after the project.'
+            answer: 'We sign NDAs, follow security best practices, and use encrypted communication channels. Our test environments are isolated and access is managed carefully.'
         },
         {
             question: 'What industries do you specialise in?',
-            answer: 'We have deep experience in FinTech, healthcare, eCommerce, logistics, and enterprise SaaS. Our teams understand domain‑specific compliance (HIPAA, PCI‑DSS, GDPR).'
+            answer: 'We have experience in FinTech, eCommerce, logistics, and SaaS. Our teams understand relevant compliance requirements for these domains.'
         },
         {
             question: 'What is your pricing model?',
@@ -496,7 +451,7 @@ export default function QATestersPage() {
         },
         {
             question: 'Do you provide a trial period?',
-            answer: 'Yes, we offer a 7‑day risk‑free trial. You pay only if you are satisfied. Otherwise, there is no cost.'
+            answer: 'Yes, we offer a trial period to evaluate the engineer\'s skills and fit with your team before making a long-term commitment.'
         }
     ];
 
@@ -549,7 +504,7 @@ export default function QATestersPage() {
                     </motion.div>
 
                     {/* Right Side - Testimonial Card */}
-                    <motion.div
+                    {/* <motion.div
                         className={styles.rightContent}
                         initial={{ opacity: 0, x: 20 }}
                         animate={{ opacity: 1, x: 0 }}
@@ -593,7 +548,7 @@ export default function QATestersPage() {
                                 </div>
                             </div>
                         </div>
-                    </motion.div>
+                    </motion.div> */}
                 </div>
             </section>
 

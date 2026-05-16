@@ -13,7 +13,7 @@ import {
   TrendingUp,
   CheckCircle,
   Award,
-  MessageSquare,
+  //MessageSquare,
   Sparkles,
   ChevronRight,
   Globe,
@@ -51,14 +51,14 @@ export default function BackendDevelopersPage() {
   ] as const;
 
   // Testimonial matching your page layout
-  const testimonial = {
-    name: "Sarah",
-    // role: "CTO, FinSecure Inc.",
-    content:
-      "The backend developers from BBMcoders built a fault-tolerant system that handles 50,000+ transactions per second with 99.99% uptime. Their architecture decisions saved us 40% on cloud costs.",
-    rating: 5,
-    project: "Financial Transaction Platform",
-  };
+  // const testimonial = {
+  //   name: "Sarah",
+  //   role: "CTO, FinSecure Inc.",
+  //   content:
+  //     "The backend developers from BBMcoders built a fault-tolerant system that handles 50,000+ transactions per second with 99.99% uptime. Their architecture decisions saved us 40% on cloud costs.",
+  //   rating: 5,
+  //   project: "Financial Transaction Platform",
+  // };
 
   // Backend Expertise Areas – each may include an optional `link` property
   const backendExpertise = [
@@ -433,33 +433,33 @@ export default function BackendDevelopersPage() {
     {
       question: "How quickly can I hire backend developers from BBMcoders?",
       answer:
-        "We can onboard dedicated backend developers in 24-48 hours. Our vetting process is streamlined to provide you with pre-screened, experienced developers who match your specific requirements.",
+        "We can onboard dedicated backend developers within 1-2 weeks. Our vetting process ensures you get pre-screened, experienced developers who match your specific requirements.",
     },
     {
       question: "What technologies do your backend developers specialize in?",
       answer:
-        "Our developers are experts in Node.js, Python, Java, .NET, Ruby on Rails, Go, and modern databases like MongoDB and PostgreSQL. We also work with cloud platforms, DevOps tools, and security frameworks.",
+        "Our developers are experienced in Node.js, Python, and databases like MongoDB and PostgreSQL. We also work with cloud platforms and DevOps practices.",
     },
     {
       question: "Do you offer a trial period for hired developers?",
       answer:
-        "Yes, we offer a 7-day risk-free trial period. This allows you to evaluate the developer's skills and fit with your team before making a long-term commitment.",
+        "Yes, we offer a trial period to evaluate the developer's skills and fit with your team before making a long-term commitment.",
     },
     {
       question: "How do you ensure code quality and security?",
       answer:
-        "We follow strict coding standards, conduct regular code reviews, implement comprehensive testing (unit, integration, security), and use modern tooling for monitoring, logging, and performance optimization.",
+        "We follow coding standards, conduct regular code reviews, implement comprehensive testing, and use modern tooling for monitoring and performance optimization.",
     },
     {
       question:
         "Can your backend developers work with our existing infrastructure?",
       answer:
-        "Absolutely. Our developers are experienced in API integration and collaboration with existing systems. We can adapt to your current infrastructure, databases, and deployment processes.",
+        "Absolutely. Our developers are experienced in API integration and can adapt to your current infrastructure, databases, and deployment processes.",
     },
     {
       question: "What kind of support and project management do you provide?",
       answer:
-        "We provide dedicated project managers, daily stand-ups, sprint planning, and transparent communication through your preferred tools (Slack, Teams, Jira, etc.). We also offer ongoing maintenance and support.",
+        "We provide dedicated project managers, regular updates, and transparent communication through your preferred tools (Slack, Teams, Jira, etc.). We also offer ongoing maintenance and support.",
     },
   ];
 

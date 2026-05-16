@@ -119,7 +119,7 @@ export default function TestimonialsPage() {
                             Trusted by <span className={styles.highlight}>80+</span> Happy Clients
                         </h1>
                         <p className={styles.heroSubtitle}>
-                            Since our founding in 2021, we've been committed to delivering quality software solutions. The testimonials and feedback from our clients have been instrumental in refining our services and enhancing our ability to serve them effectively.
+                            Since our founding in 2021, we&apos;ve been committed to delivering quality software solutions. The testimonials and feedback from our clients have been instrumental in refining our services and enhancing our ability to serve them effectively.
                         </p>
                     </motion.div>
                 </div>
@@ -130,7 +130,7 @@ export default function TestimonialsPage() {
                 <div className={styles.container}>
                     <h2 className={styles.sectionTitle}>What Our Clients Say</h2>
                     <p className={styles.sectionSubtitle}>
-                        We've had the pleasure of working with amazing clients. Here's what some of them have to say:
+                        We&apos;ve had the pleasure of working with amazing clients. Here&apos;s what some of them have to say:
                     </p>
 
                     <div className={styles.testimonialsGrid}>
@@ -160,7 +160,7 @@ export default function TestimonialsPage() {
                                 <p className={styles.testimonialQuote}>&quot;{testimonial.quote}</p>
                                 <div className={styles.testimonialAuthor}>
                                     <strong>{testimonial.name}</strong>
-                                    {testimonial.role && <span>{testimonial.role}</span>}
+                                    {/* {testimonial.role && <span>{testimonial.role}</span>} */}
                                 </div>
                             </motion.div>
                         ))}

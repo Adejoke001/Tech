@@ -5,16 +5,16 @@ import Link from 'next/link';
 import { motion } from 'framer-motion';
 
 import {
-    ArrowRight, FileText,
+    ArrowRight, FileText, Mail, Phone, MessageCircle
 } from 'lucide-react';
 import styles from './terms.module.css';
 
-interface IconProps extends React.SVGProps<SVGSVGElement> {
-  size?: number;  // custom shorthand prop
-}
+// interface IconProps extends React.SVGProps<SVGSVGElement> {
+//   size?: number;  // custom shorthand prop
+// }
 
 export default function TermsPage() {
-    const lastUpdated = 'March 30, 2025';
+    const lastUpdated = 'May, 2026';
     
 
     return (
@@ -192,20 +192,26 @@ export default function TermsPage() {
                         <div className={styles.contactCard}>
                             <div className={styles.contactItem}>
                                <Mail size={18} />
-                             <a href="mailto:legal@bbmcoders.com" style={{ color: 'inherit', textDecoration: 'none' }}>
+                             <a href="mailto:support@bbmcoders.com" style={{ color: 'inherit', textDecoration: 'none' }}>
                               support@bbmcoders.com
                              </a>
                         </div>
                             <div className={styles.contactItem}>
                               <Phone size={18} />
-                                <a href="tel:+15551234567" style={{ color: 'inherit', textDecoration: 'none' }}>
-                                    +1 (555) 123-4567
-                                </a>
+                                <a href="tel:+2347060970212" style={{ color: 'inherit', textDecoration: 'none' }}>
+                                  +234 706 097 0212
+                                 </a>
                           </div>
                             <div className={styles.contactItem}>
-                                <MapPin size={18} />
-                                <span>Lagos, Nigeria</span>
-                            </div>
+                                <MessageCircle size={18} />
+                               <a 
+                                href={`https://wa.me/2349042381702?text=${encodeURIComponent("Hi! I have a question about your terms of service")}`}
+                                   target="_blank"
+                                      rel="noopener noreferrer"
+                                    style={{ color: 'inherit', textDecoration: 'none' }}>
+                                      WhatsApp Us
+                                   </a>
+                               </div>
                         </div>
                     </section>
 
@@ -233,55 +239,55 @@ export default function TermsPage() {
     );
 }
 
-const Mail = ({ size = 24, ...props }: IconProps) => (
-  <svg
-    xmlns="http://www.w3.org/2000/svg"
-    width={size}
-    height={size}
-    viewBox="0 0 24 24"
-    fill="none"
-    stroke="currentColor"
-    strokeWidth="2"
-    strokeLinecap="round"
-    strokeLinejoin="round"
-    {...props}
-  >
-    <rect x="2" y="4" width="20" height="16" rx="2" />
-    <path d="m22 7-10 7L2 7" />
-  </svg>
-);
+// const Mail = ({ size = 24, ...props }: IconProps) => (
+//   <svg
+//     xmlns="http://www.w3.org/2000/svg"
+//     width={size}
+//     height={size}
+//     viewBox="0 0 24 24"
+//     fill="none"
+//     stroke="currentColor"
+//     strokeWidth="2"
+//     strokeLinecap="round"
+//     strokeLinejoin="round"
+//     {...props}
+//   >
+//     <rect x="2" y="4" width="20" height="16" rx="2" />
+//     <path d="m22 7-10 7L2 7" />
+//   </svg>
+// );
 
-const Phone = ({ size = 24, ...props }: IconProps) => (
-  <svg
-    xmlns="http://www.w3.org/2000/svg"
-    width={size}
-    height={size}
-    viewBox="0 0 24 24"
-    fill="none"
-    stroke="currentColor"
-    strokeWidth="2"
-    strokeLinecap="round"
-    strokeLinejoin="round"
-    {...props}
-  >
-    <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.362 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.338 1.85.573 2.81.7A2 2 0 0 1 22 16.92z" />
-  </svg>
-);
+// const Phone = ({ size = 24, ...props }: IconProps) => (
+//   <svg
+//     xmlns="http://www.w3.org/2000/svg"
+//     width={size}
+//     height={size}
+//     viewBox="0 0 24 24"
+//     fill="none"
+//     stroke="currentColor"
+//     strokeWidth="2"
+//     strokeLinecap="round"
+//     strokeLinejoin="round"
+//     {...props}
+//   >
+//     <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.362 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.338 1.85.573 2.81.7A2 2 0 0 1 22 16.92z" />
+//   </svg>
+// );
 
-const MapPin = ({ size = 24, ...props }: IconProps) => (
-  <svg
-    xmlns="http://www.w3.org/2000/svg"
-    width={size}
-    height={size}
-    viewBox="0 0 24 24"
-    fill="none"
-    stroke="currentColor"
-    strokeWidth="2"
-    strokeLinecap="round"
-    strokeLinejoin="round"
-    {...props}
-  >
-    <path d="M20 10c0 4.418-8 12-8 12s-8-7.582-8-12a8 8 0 1 1 16 0Z" />
-    <circle cx="12" cy="10" r="3" />
-  </svg>
-);
+// const MapPin = ({ size = 24, ...props }: IconProps) => (
+//   <svg
+//     xmlns="http://www.w3.org/2000/svg"
+//     width={size}
+//     height={size}
+//     viewBox="0 0 24 24"
+//     fill="none"
+//     stroke="currentColor"
+//     strokeWidth="2"
+//     strokeLinecap="round"
+//     strokeLinejoin="round"
+//     {...props}
+//   >
+//     <path d="M20 10c0 4.418-8 12-8 12s-8-7.582-8-12a8 8 0 1 1 16 0Z" />
+//     <circle cx="12" cy="10" r="3" />
+//   </svg>
+// );

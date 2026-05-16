@@ -21,7 +21,7 @@ export default function ProductDiscoveryPage() {
     // ----- HERO TESTIMONIAL -----
     const testimonial = {
         name: 'Rebecca',
-        role: 'Product Manager',
+        // role: 'Product Manager',
         content: 'They go above and beyond to ensure quality and satisfaction. A true partner in every sense.',
         rating: 5,
         project: 'FinTech Platform Discovery'
@@ -105,12 +105,12 @@ export default function ProductDiscoveryPage() {
 
     // ============ USPS (from URL) ============
     const usps = [
-        { text: "Nigeria's Top 10% Software Talent", icon: <Award />, color: '#3B82F6' },
-        { text: 'Trusted by Startups to Fortune 500', icon: <Building2 />, color: '#3b82f6' },
+        { text: "Skilled Nigerian Software Talent", icon: <Award />, color: '#3B82F6' },
+        { text: 'Trusted by Startups & Growing Businesses', icon: <Building2 />, color: '#3b82f6' },
         { text: 'Idea to Deployment, We Handle All', icon: <Rocket />, color: '#3b82F6' },
-        { text: 'Time-Zone Friendly: Global Presence', icon: <Globe />, color: '#3b82f6' },
-        { text: 'Top-tier Data Security Protocols', icon: <Lock />, color: '#3b82f6' },
-        { text: 'On-time Delivery, No Surprises', icon: <Clock />, color: '#3b82f6' },
+        { text: 'Time-Zone Friendly Collaboration', icon: <Globe />, color: '#3b82f6' },
+        { text: 'Strong Data Security Practices', icon: <Lock />, color: '#3b82f6' },
+        { text: 'On-time Delivery Commitment', icon: <Clock />, color: '#3b82f6' },
     ];
 
     // ============ PROCESS STEPS (from URL) ============
@@ -178,9 +178,9 @@ export default function ProductDiscoveryPage() {
 
     // ============ COMPANY STATS ============
     const companyStats = [
-        { value: '700+', label: 'Full-time Staff', icon: <Users />, description: 'Dedicated team' },
-        { value: '20+', label: 'Years Experience', icon: <Award />, description: 'Since 2004' },
-        { value: '4500+', label: 'Satisfied Clients', icon: <MessageSquare />, description: 'Global client base' },
+        { value: '10+', label: 'Full-time Staff', icon: <Users />, description: 'Dedicated team' },
+        { value: '5+', label: 'Years Experience', icon: <Award />, description: 'Since 2004' },
+        { value: '100+', label: 'Satisfied Clients', icon: <MessageSquare />, description: 'Global client base' },
     ];
 
     // ============ FAQS ============
@@ -278,7 +278,7 @@ export default function ProductDiscoveryPage() {
                         transition={{ duration: 0.6, delay: 0.2 }}
                     >
                         <div className={styles.testimonialCard}>
-                            <div className={styles.testimonialImage}>
+                            {/* <div className={styles.testimonialImage}>
                                 <Image
                                     src="/images/user.png"
                                     alt={testimonial.name}
@@ -286,7 +286,7 @@ export default function ProductDiscoveryPage() {
                                     height={60}
                                     className={styles.testimonialAvatar}
                                 />
-                            </div>
+                            </div> */}
                             <div className={styles.testimonialContent}>
                                 <MessageSquare className={styles.quoteIcon} size={20} />
                                 <p className={styles.testimonialText}>&quot;{testimonial.content}&quot;</p>

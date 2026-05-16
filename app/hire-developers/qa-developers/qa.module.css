@@ -39,7 +39,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    background-image: url('https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80');
+    background-image: url('https://media.istockphoto.com/id/2228764569/photo/hispanic-female-software-developer-coding-at-night-in-office.webp?a=1&b=1&s=612x612&w=0&k=20&c=8nU7XeXb1aKrQ4UbMCJm9B6EYE_ovWqPu5kNnQ7GGJM=');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -93,7 +93,7 @@
     font-size: 0.875rem;
     font-weight: 600;
     margin-bottom: 1.5rem;
-    margin-top: 2.5rem;
+    margin-top: 2rem;
     border: 1px solid rgba(59, 130, 246, 0.3);
     backdrop-filter: blur(10px);
 }

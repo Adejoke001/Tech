@@ -24,10 +24,10 @@ export default function FullStackDevelopersPage() {
     // Testimonial for full-stack
     const testimonial = {
         name: 'Michael',
-        role: 'C.O. FinTech Solutions',
-        content: 'BBMcoders\' full-stack team delivered a complete web platform in 4 months that handles 50,000+ daily transactions. Their end-to-end expertise saved us 30% in development costs.',
+        // role: 'C.O. FinTech Solutions',
+        content: 'BBMcoders\' full-stack team delivered a complete web platform that handles thousands of daily transactions. Their expertise helped us launch successfully.',
         rating: 5,
-        project: 'Enterprise Banking Platform'
+        project: 'FinTech Platform'
     };
 
     // Full Stack Expertise Areas
@@ -35,10 +35,10 @@ export default function FullStackDevelopersPage() {
         {
             id: 1,
             title: 'Full Stack Web Development',
-            description: 'Custom web solutions for startups, SMEs, and enterprises with end-to-end development capabilities. Our developers excel in building scalable, high-performance applications.',
+            description: 'Custom web solutions for startups and growing businesses with end-to-end development capabilities.',
             icon: <Code2 className={styles.expertiseIcon} />,
             color: '#10b981',
-            features: ['MEAN/MERN Stack Development', 'Laravel/PHP Applications', 'Java Spring Boot Solutions', 'Complete Web Architecture'],
+            features: ['MERN Stack Development', 'Node.js Applications', 'Complete Web Architecture'],
             details: 'End-to-end development from concept to deployment',
             link: '/services/web-development',
 
@@ -46,10 +46,10 @@ export default function FullStackDevelopersPage() {
         {
             id: 2,
             title: 'Front-end Development',
-            description: 'Expertise in modern front-end frameworks including React, Vue, Angular with focus on responsive design and user experience.',
+            description: 'Expertise in modern front-end frameworks including React and Next.js with focus on responsive design.',
             icon: <Monitor className={styles.expertiseIcon} />,
             color: '#10B981',
-            features: ['React/Vue/Angular Development', 'Responsive Web Design', 'UI/UX Implementation', 'Progressive Web Apps'],
+            features: ['React/Next.js Development', 'Responsive Web Design', 'UI/UX Implementation'],
             details: 'Creating engaging user interfaces across devices',
             link: '/services/frontend-development',
 
@@ -57,40 +57,40 @@ export default function FullStackDevelopersPage() {
         {
             id: 3,
             title: 'Back-end Development',
-            description: 'Robust back-end development with microservices architecture, API development, and database optimization.',
+            description: 'Robust back-end development with API development and database optimization.',
             icon: <Server className={styles.expertiseIcon} />,
             color: '#10b981',
-            features: ['RESTful API Development', 'Database Design & Optimization', 'Server Architecture', 'Microservices Implementation'],
+            features: ['RESTful API Development', 'Database Design & Optimization', 'Server Architecture'],
             details: 'Building scalable and secure server-side solutions',
             link: '/services/backend-development',
         },
         {
             id: 4,
-            title: 'MEAN & MERN Stack',
-            description: 'Full-stack JavaScript development using MongoDB, Express, Angular/React, and Node.js for modern web applications.',
+            title: 'MERN Stack Development',
+            description: 'Full-stack JavaScript development using MongoDB, Express, React, and Node.js for modern web applications.',
             icon: <Layers className={styles.expertiseIcon} />,
             color: '#10b981',
-            features: ['MongoDB + Express.js', 'Angular/React.js Frontend', 'Node.js Backend', 'Real-time Applications'],
+            features: ['MongoDB + Express.js', 'React.js Frontend', 'Node.js Backend'],
             details: 'JavaScript-based full stack solutions',
 
         },
         {
             id: 5,
             title: 'Support & Maintenance',
-            description: 'Comprehensive support and maintenance services ensuring your applications run smoothly and securely.',
+            description: 'Support and maintenance services ensuring your applications run smoothly and securely.',
             icon: <ShieldCheck className={styles.expertiseIcon} />,
             color: '#10b981',
-            features: ['24/7 Technical Support', 'Bug Fixes & Updates', 'Performance Optimization', 'Security Patches'],
+            features: ['Bug Fixes & Updates', 'Performance Optimization', 'Security Updates'],
             details: 'Ongoing maintenance and support',
 
         },
         {
             id: 6,
             title: 'Cloud Deployment & CI/CD',
-            description: 'Expert cloud deployment on AWS, Azure, GCP with automated CI/CD pipelines for seamless delivery.',
+            description: 'Cloud deployment on AWS with automated CI/CD pipelines for seamless delivery.',
             icon: <CloudLightning className={styles.expertiseIcon} />,
             color: '#10b981',
-            features: ['AWS/Azure/GCP Deployment', 'Docker & Kubernetes', 'CI/CD Pipelines', 'DevOps Implementation'],
+            features: ['AWS Deployment', 'Docker', 'CI/CD Pipelines'],
             details: 'Cloud-native application deployment',
             link: '/services/cloud-devops-services',
 
@@ -104,9 +104,8 @@ export default function FullStackDevelopersPage() {
             icon: <Database />,
             color: '#3B82F6',
             technologies: [
-                'Oracle', 'SQL Server', 'Redis', 'MongoDB', 'PostgreSQL',
-                'MySQL', 'Java', 'C#', 'Ruby', 'PHP', 'Python', 'JavaScript',
-                'TypeScript', 'Go', 'Kotlin', 'Scala'
+                'PostgreSQL', 'MySQL', 'MongoDB', 'Redis',
+                'JavaScript', 'TypeScript', 'Python', 'Node.js'
             ]
         },
         'ui-toolkits': {
@@ -114,19 +113,17 @@ export default function FullStackDevelopersPage() {
             icon: <Monitor />,
             color: '#3b82f6',
             technologies: [
-                'React Ant Design', 'Material-UI', 'Bootstrap', 'Semantic UI',
-                'Pure CSS', 'Angular Material', 'Vue.js', 'Next.js', 'Gatsby',
-                'UIKit', 'Foundation', 'Milligram', 'One-Nexus', 'Tailwind CSS'
+                'React', 'Next.js', 'Tailwind CSS', 'Material UI',
+                'Vue.js', 'Bootstrap'
             ]
         },
         'hosting-platforms': {
             title: 'Hosting & Cloud Platforms',
             icon: <Cloud />,
-            color: '#3b82F6',
+            color: '#3B82F6',
             technologies: [
-                'AWS EC2', 'AWS Lambda', 'Docker', 'Heroku', 'Firebase',
-                'Kubernetes', 'Azure', 'Google Cloud Platform', 'RackSpace',
-                'Digital Ocean', 'Linode', 'Netlify', 'Vercel'
+                'AWS', 'Vercel', 'Netlify', 'Docker',
+                'Firebase', 'Digital Ocean'
             ]
         },
         'tools-utilities': {
@@ -134,9 +131,8 @@ export default function FullStackDevelopersPage() {
             icon: <Code />,
             color: '#3b82f6',
             technologies: [
-                'NPM/Yarn', 'REST APIs', 'GraphQL', 'JSON', 'Webpack',
-                'Babel', 'Jest', 'Mocha/Chai', 'ELK Stack', 'Gulp',
-                'Grunt', 'ESLint', 'Prettier', 'Jenkins'
+                'Git', 'REST APIs', 'NPM/Yarn', 'Webpack',
+                'ESLint', 'Prettier', 'Jest'
             ]
         },
         'orm-version-control': {
@@ -144,9 +140,8 @@ export default function FullStackDevelopersPage() {
             icon: <GitBranch />,
             color: '#3b82f6',
             technologies: [
-                'Mongoose', 'Sequelize', 'TypeORM', 'Prisma', 'Git',
-                'GitHub/GitLab', 'SVN', 'Postman', 'Swagger', 'Xdebug',
-                'Subversion', 'Mercurial', 'Bitbucket'
+                'Git/GitHub', 'Prisma', 'Mongoose', 'Sequelize',
+                'Postman', 'Swagger'
             ]
         },
         'mobile-cross': {
@@ -154,8 +149,7 @@ export default function FullStackDevelopersPage() {
             icon: <Smartphone />,
             color: '#3b82f6',
             technologies: [
-                'React Native', 'Flutter', 'Ionic', 'Cordova',
-                'Xamarin', 'NativeScript', 'Swift', 'Kotlin'
+                'React Native', 'Flutter', 'Swift', 'Kotlin'
             ]
         }
     };
@@ -256,30 +250,30 @@ export default function FullStackDevelopersPage() {
     const pricingPlans = [
         {
             title: 'Dedicated Full-Stack Developer',
-            price: '$3,500 – $8,000/month',
+            price: '$2,500 – $5,000/month',
             description: 'Individual full-stack developers for small to medium projects with end-to-end capabilities.',
             features: [
                 '1-2 full-stack developers',
                 'Frontend + Backend expertise',
                 'Database management',
                 'Basic deployment support',
-                'Weekly progress reports',
+                'Weekly progress updates',
                 'Direct communication'
             ],
             color: '#3B82F6',
-            bestFor: 'Startups & SMEs',
+            bestFor: 'Startups & Small Businesses',
             timeline: '3-6 months'
         },
         {
             title: 'Full-Stack Development Team',
-            price: '$8,000 – $20,000/month',
+            price: '$5,000 – $12,000/month',
             description: 'Team of full-stack developers with complementary skills and project management.',
             features: [
-                '3-5 team members',
+                '2-4 team members',
                 'Specialized skillsets',
                 'Project management included',
-                'Full CI/CD pipeline',
-                'Daily standups',
+                'Basic CI/CD setup',
+                'Regular updates',
                 'Quality assurance'
             ],
             color: '#3b82f6',
@@ -288,18 +282,18 @@ export default function FullStackDevelopersPage() {
         },
         {
             title: 'Enterprise Full-Stack Unit',
-            price: '$20,000 – $40,000/month',
-            description: 'Complete enterprise-grade development unit for large-scale, complex projects.',
+            price: '$12,000 – $25,000/month',
+            description: 'Complete development unit for large-scale, complex projects.',
             features: [
-                '6-10 professionals',
-                'Enterprise architecture',
-                'Advanced security measures',
-                '24/7 support',
+                '4-6 professionals',
+                'Solution architecture',
+                'Security best practices',
+                'Priority support',
                 'Dedicated project manager',
-                'SLA-backed delivery'
+                'Reliable delivery'
             ],
             color: '#3b82f6',
-            bestFor: 'Large Enterprises',
+            bestFor: 'Large Projects',
             timeline: '12+ months'
         },
         {
@@ -310,9 +304,8 @@ export default function FullStackDevelopersPage() {
                 'Custom team size',
                 'Specific tech stack',
                 'Dedicated PM',
-                'Comprehensive SLA',
-                'Flexible engagement',
-                'Risk-free trial'
+                'Flexible terms',
+                'Trial period available'
             ],
             color: '#3b82f6',
             bestFor: 'Special Projects',
@@ -459,17 +452,17 @@ export default function FullStackDevelopersPage() {
     const whyHireBbmCoders = [
         {
             title: 'Cost-effective Talent',
-            description: 'Excellent value for money with competitive rates and high-quality output, reducing development costs by 40-60%.',
+            description: 'Excellent value for money with competitive rates and high-quality output.',
             icon: '💰',
-            benefit: '40-60% Cost Savings',
-            details: ['Competitive hourly rates', 'High ROI', 'Reduced overhead costs']
+            benefit: 'Competitive Rates',
+            details: ['Affordable hourly rates', 'High value for money', 'Reduced overhead costs']
         },
         {
             title: 'Quality Assurance',
             description: 'Rigorous quality processes ensuring high standards in every project with comprehensive testing.',
             icon: '🎯',
-            benefit: '98% Quality Score',
-            details: ['ISO certified processes', 'QA automation', 'Performance testing']
+            benefit: 'Quality Focused',
+            details: ['Code reviews', 'Testing processes', 'Quality standards']
         },
         {
             title: 'Scalable Teams',
@@ -480,38 +473,38 @@ export default function FullStackDevelopersPage() {
         },
         {
             title: 'Faster Time to Market',
-            description: 'Reduced development time through efficient processes, overlapping time zones, and agile methodologies.',
+            description: 'Reduced development time through efficient processes and agile methodologies.',
             icon: '⚡',
-            benefit: '30-50% Faster Delivery',
-            details: ['Agile development', 'Time zone advantage', 'Parallel development']
+            benefit: 'Efficient Delivery',
+            details: ['Agile development', 'Dedicated teams', 'Parallel development']
         },
         {
             title: 'Domain Expertise',
-            description: 'Access to specialized knowledge across various industries and cutting-edge technologies.',
+            description: 'Access to specialized knowledge across various industries and modern technologies.',
             icon: '🎓',
-            benefit: 'Industry Expertise',
-            details: ['Multiple industry experience', 'Technology specialization', 'Solution architecture']
+            benefit: 'Relevant Expertise',
+            details: ['Industry experience', 'Technology specialization', 'Solution focus']
         },
         {
             title: 'Easy Communication',
-            description: 'Time-zone compatibility, excellent English communication skills, and cultural alignment.',
+            description: 'Time-zone compatibility and strong English communication skills.',
             icon: '💬',
-            benefit: 'Seamless Communication',
-            details: ['English proficiency', 'Overlapping time zones', 'Cultural compatibility']
+            benefit: 'Clear Communication',
+            details: ['English proficiency', 'Overlapping time zones', 'Responsive support']
         },
         {
-            title: 'Strong Technical Education',
-            description: 'Access to graduates from premier technical institutes with strong fundamentals in computer science.',
+            title: 'Technical Excellence',
+            description: 'Access to skilled developers with strong fundamentals in computer science.',
             icon: '🏫',
-            benefit: 'Top Technical Talent',
-            details: ['IIT/NIT graduates', 'Continuous learning', 'Technical certifications']
+            benefit: 'Skilled Talent',
+            details: ['Qualified developers', 'Continuous learning', 'Practical expertise']
         },
         {
-            title: 'Proven Track Record',
-            description: 'Established history of successful projects for global clients across various industries.',
+            title: 'Client Focus',
+            description: 'Committed to delivering successful projects for growing businesses.',
             icon: '📊',
-            benefit: '4500+ Successful Projects',
-            details: ['Global client portfolio', 'Industry recognition', 'Client testimonials']
+            benefit: 'Client Success',
+            details: ['Growing portfolio', 'Client satisfaction', 'Testimonials']
         }
     ];
 
@@ -521,34 +514,34 @@ export default function FullStackDevelopersPage() {
             model: 'In-House Team',
             timeToHire: '6-12 weeks',
             timeToStart: '4-8 weeks',
-            trainingCost: '$15,000-$40,000',
+            trainingCost: '$10,000-$25,000',
             scalingTime: '6-12 weeks',
-            risk: 'Medium-High',
+            risk: 'Medium',
             deliverySupport: 'Limited',
             flexibility: 'Low',
-            totalCost: '$100,000+ annually'
+            totalCost: '$80,000+ annually'
         },
         {
             model: 'Freelancers',
-            timeToHire: '2-8 weeks',
-            timeToStart: '1-6 weeks',
-            trainingCost: '$0-$5,000',
+            timeToHire: '2-6 weeks',
+            timeToStart: '1-4 weeks',
+            trainingCost: '$0-$3,000',
             scalingTime: 'Variable',
             risk: 'High',
             deliverySupport: 'Minimal',
             flexibility: 'Medium',
-            totalCost: 'Variable, often higher'
+            totalCost: 'Variable'
         },
         {
             model: 'BBMcoders',
             timeToHire: '1-2 weeks',
             timeToStart: '1-2 weeks',
             trainingCost: '$0',
-            scalingTime: '48 hours - 1 week',
-            risk: 'Extremely Low',
-            deliverySupport: 'Full Support',
+            scalingTime: '1-2 weeks',
+            risk: 'Low',
+            deliverySupport: 'Full',
             flexibility: 'High',
-            totalCost: 'Predictable, 40-60% lower'
+            totalCost: 'Predictable, cost-effective'
         }
     ];
 
@@ -581,52 +574,52 @@ export default function FullStackDevelopersPage() {
     const faqs = [
         {
             question: 'What technologies do your full-stack developers specialize in?',
-            answer: 'Our developers excel in MEAN/MERN stacks (MongoDB, Express, Angular/React, Node.js), Laravel/PHP, Java Spring Boot, Python Django, React, Vue.js, and various databases including MongoDB, PostgreSQL, MySQL, and Redis. We also have expertise in cloud platforms like AWS, Azure, and Google Cloud, along with DevOps tools like Docker and Kubernetes.'
+            answer: 'Our developers specialize in the MERN stack (MongoDB, Express, React, Node.js), Next.js, TypeScript, and databases like PostgreSQL, MySQL, and MongoDB. We also have experience with cloud platforms like AWS and DevOps tools like Docker.'
         },
         {
             question: 'How quickly can I hire full-stack developers?',
-            answer: 'We can onboard pre-vetted full-stack developers within 1-2 weeks. Our streamlined hiring process includes matching based on your specific requirements, technical assessment, and trial period. For urgent requirements, we can expedite the process to 3-5 days.'
+            answer: 'We can onboard pre-vetted full-stack developers within 1-2 weeks. Our hiring process includes matching based on your specific requirements, technical assessment, and trial period.'
         },
         {
             question: 'Do you offer a trial period?',
-            answer: 'Yes, we offer a 7-day risk-free trial period for all our hiring models. This allows you to evaluate the developer\'s skills, work style, communication, and fit with your team before making a long-term commitment. If unsatisfied, you can request a replacement at no additional cost.'
+            answer: 'Yes, we offer a trial period for all our hiring models. This allows you to evaluate the developer\'s skills, work style, and fit with your team before making a long-term commitment.'
         },
         {
             question: 'Can your developers work with our existing tech stack?',
-            answer: 'Absolutely. Our developers are experienced in working with diverse technology stacks and can seamlessly integrate with your existing systems, codebase, and development workflows. We conduct thorough knowledge transfer sessions to ensure smooth integration.'
+            answer: 'Absolutely. Our developers are experienced in working with diverse technology stacks and can integrate with your existing systems, codebase, and development workflows. We conduct knowledge transfer sessions to ensure smooth integration.'
         },
         {
             question: 'How do you ensure code quality?',
-            answer: 'We follow strict coding standards, conduct regular code reviews, implement comprehensive testing (unit, integration, end-to-end), and use automated tools to maintain high code quality. Our developers follow Test-Driven Development (TDD), maintain high test coverage, and undergo regular code quality audits.'
+            answer: 'We follow coding standards, conduct regular code reviews, implement comprehensive testing (unit, integration), and use automated tools to maintain code quality. Our developers focus on writing clean, maintainable code.'
         },
         {
             question: 'What support do you provide post-launch?',
-            answer: 'We provide ongoing maintenance, bug fixes, performance optimization, security updates, and feature enhancements. Our support includes regular updates, proactive monitoring, performance audits, and 24/7 technical support with SLAs based on your requirements.'
+            answer: 'We provide ongoing maintenance, bug fixes, performance optimization, security updates, and feature enhancements. Our support includes regular updates and proactive monitoring.'
         },
         {
             question: 'What is your pricing model?',
-            answer: 'We offer flexible pricing models: monthly full-time engagement, part-time contracts, project-based pricing, and dedicated team models. All pricing is transparent with no hidden costs. We also offer custom quotes for specific requirements.'
+            answer: 'We offer flexible pricing models: monthly full-time engagement, part-time contracts, and project-based pricing. All pricing is transparent with no hidden costs.'
         },
         {
             question: 'How do you handle communication and project management?',
-            answer: 'We use agile methodologies with daily standups, weekly progress reviews, and transparent communication channels. Each project has a dedicated project manager who ensures smooth communication, regular updates, and timely delivery using tools like Jira, Slack, and Zoom.'
+            answer: 'We use agile methodologies with regular updates and transparent communication. Each project has a dedicated project manager who ensures smooth communication and timely delivery using tools like Jira, Slack, and Zoom.'
         }
     ];
 
     // Why Choose BBMcoders Features
     const whyChooseFeatures = [
-        { feature: 'Workstatus™ powered Proof of Work', icon: <CheckCircle /> },
-        { feature: 'Top 1% developers, rigorously vetted', icon: <Award /> },
+        { feature: 'Transparent progress tracking', icon: <CheckCircle /> },
+        { feature: 'Rigorously vetted developers', icon: <Award /> },
         { feature: 'Dedicated project manager', icon: <Users /> },
         { feature: 'Flexible contracts, transparent pricing', icon: <Scale /> },
-        { feature: 'Zero hiring fee, quick onboarding', icon: <Rocket /> },
-        { feature: 'Comprehensive code documentation', icon: <FileText /> },
-        { feature: 'Adherence to data security practices', icon: <Lock /> },
-        { feature: 'Language/time-zone compatible staff', icon: <GlobeIcon /> },
-        { feature: '7-day risk-free trial period', icon: <Calendar /> },
+        { feature: 'Quick onboarding process', icon: <Rocket /> },
+        { feature: 'Code documentation', icon: <FileText /> },
+        { feature: 'Data security practices', icon: <Lock /> },
+        { feature: 'Time-zone compatible staff', icon: <GlobeIcon /> },
+        { feature: 'Trial period available', icon: <Calendar /> },
         { feature: 'IP Rights & NDA protection', icon: <Shield /> },
-        { feature: 'Same-day response guarantee', icon: <Clock /> },
-        { feature: 'Strict NDA, 100% confidentiality', icon: <Lock /> }
+        { feature: 'Responsive communication', icon: <Clock /> },
+        { feature: 'Confidentiality agreement', icon: <Lock /> }
     ];
 
     return (
@@ -702,7 +695,7 @@ export default function FullStackDevelopersPage() {
                                 <p className={styles.testimonialText}>&quot;{testimonial.content}&quot;</p>
                                 <div className={styles.testimonialAuthor}>
                                     <h4>{testimonial.name}</h4>
-                                    <p>{testimonial.role}</p>
+                                    {/* <p>{testimonial.role}</p> */}
                                 </div>
                                 <div className={styles.ratings}>
                                     <div className={styles.ratingItem}>

@@ -14,7 +14,7 @@ import {
   TrendingUp,
   CheckCircle,
   Award,
-  MessageSquare,
+  //MessageSquare,
   Sparkles,
   Activity,
   ChevronRight,
@@ -39,14 +39,14 @@ export default function FrontendDevelopersPage() {
   const [activeTechTab, setActiveTechTab] = useState<string>("core-stack");
 
   // Testimonial matching your page layout
-  const testimonial = {
-    name: "Michael",
-    role: "Head of Product",
-    content:
-      "The frontend developers from BBMcoders delivered pixel-perfect interfaces 50% faster than our estimates. Their expertise in React and performance optimization transformed our user experience.",
-    rating: 5,
-    project: "Enterprise SaaS Dashboard",
-  };
+  // const testimonial = {
+  //   name: "Michael",
+  //   role: "Head of Product",
+  //   content:
+  //     "The frontend developers from BBMcoders delivered pixel-perfect interfaces 50% faster than our estimates. Their expertise in React and performance optimization transformed our user experience.",
+  //   rating: 5,
+  //   project: "Enterprise SaaS Dashboard",
+  // };
 
   const comparisonFactors = [
     "timeToHire",

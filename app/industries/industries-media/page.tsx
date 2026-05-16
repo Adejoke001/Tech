@@ -7,7 +7,7 @@ import { SVGProps } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import {
 
-    Sparkles, ArrowRight, Award, MessageSquare, HelpCircle,
+    Sparkles, ArrowRight, Award, HelpCircle,
     CheckCircle, Lock, Clock, Globe,
     Smartphone, Play, Film, Tablet, Database, Bot, Share2, Layers,
     Brain, Building2, Rocket,
@@ -24,13 +24,13 @@ export default function MediaPage() {
 
 
     // ----- HERO TESTIMONIAL -----
-    const testimonial = {
-        name: 'David Mich',
-        // role: 'CTO, Streamers',
-        content: 'BBMcoders built our OTT platform from scratch – it handles millions of daily streams with zero buffering. Their deep media expertise and commitment to quality exceeded our expectations.',
-        rating: 5,
-        project: 'Streaming Platform'
-    };
+    // const testimonial = {
+    //     name: 'David Mich',
+    //     role: 'CTO, Streamers',
+    //     content: 'BBMcoders built our OTT platform from scratch – it handles millions of daily streams with zero buffering. Their deep media expertise and commitment to quality exceeded our expectations.',
+    //     rating: 5,
+    //     project: 'Streaming Platform'
+    // };
 
     // ============ MEDIA SOLUTIONS (10 cards from "Software Solutions for Media & Entertainment") ============
     const mediaSolutions = [
@@ -235,12 +235,12 @@ export default function MediaPage() {
 
     // ============ WHY PARTNER WITH US ============
     const whyPartner = [
-        { text: 'India’s Top 1% Software Talent', icon: <Award />, color: '#3B82F6' },
-        { text: 'Trusted by Startups to Fortune 500', icon: <Building2 />, color: '#3b82f6' },
-        { text: 'Idea to Deployment, We Handle All', icon: <Rocket />, color: '#3b82F6' },
-        { text: 'Time-Zone Friendly: Global Presence', icon: <Globe />, color: '#3b82f6' },
-        { text: 'Top-tier Data Security Protocols', icon: <Lock />, color: '#3b82f6' },
-        { text: 'On-time Delivery, No Surprises', icon: <Clock />, color: '#3b82f6' }
+        { text: 'Skilled Nigerian Software Talent', icon: <Award />, color: '#3B82F6' },
+        { text: 'Trusted by Startups & Growing Businesses', icon: <Building2 />, color: '#3b82f6' },
+        { text: 'Idea to Deployment, We Handle All', icon: <Rocket />, color: '#3B82F6' },
+        { text: 'Time-Zone Friendly Collaboration', icon: <Globe />, color: '#3b82f6' },
+        { text: 'Strong Data Security Practices', icon: <Lock />, color: '#3b82f6' },
+        { text: 'On-time Delivery Commitment', icon: <Clock />, color: '#3b82f6' }
     ];
 
     // ============ CROSS-PLATFORM DEVELOPMENT BENEFITS ============
@@ -374,7 +374,7 @@ export default function MediaPage() {
                         </motion.div>
                     </motion.div>
 
-                    <motion.div
+                    {/* <motion.div
                         className={styles.rightContent}
                         initial={{ opacity: 0, x: 20 }}
                         animate={{ opacity: 1, x: 0 }}
@@ -397,7 +397,7 @@ export default function MediaPage() {
                                 <p className={styles.testimonialText}>&quot;{testimonial.content}&quot;</p>
                                 <div className={styles.testimonialAuthor}>
                                     <h4>{testimonial.name}</h4>
-                                    {/* <p>{testimonial.role}</p> */}
+                                    <p>{testimonial.role}</p>
                                 </div>
                                 <div className={styles.ratings}>
                                     <div className={styles.ratingItem}>
@@ -418,7 +418,7 @@ export default function MediaPage() {
                                 </div>
                             </div>
                         </div>
-                    </motion.div>
+                    </motion.div> */}
                 </div>
             </section>
 

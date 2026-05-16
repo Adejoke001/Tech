@@ -17,7 +17,7 @@ export default function ModernizationPage() {
     // ----- HERO TESTIMONIAL -----
     const testimonial = {
         name: 'James',
-        role: 'Head of IT',
+        // role: 'Head of IT',
         content: 'Professional, reliable, and results-driven – they delivered exactly what we needed, on time and within budget.',
         rating: 5,
         project: 'Legacy to Cloud Migration'
@@ -134,13 +134,13 @@ export default function ModernizationPage() {
 
     // ============ WHY PARTNER WITH US ============
     const whyPartner = [
-        { text: '20+ Years Of Experience', icon: <Award />, color: '#3B82F6' },
-        { text: 'Time-Zone Friendly: Global Presence', icon: <Globe />, color: '#10B981' },
-        { text: 'Top-tier Data Security Protocols', icon: <Lock />, color: '#8B5CF6' },
-        { text: 'Migration Across Various Platforms', icon: <Layers />, color: '#F59E0B' },
-        { text: 'Deep Expertise in Complex Legacy Systems', icon: <Cpu />, color: '#EC4899' },
-        { text: 'Zero Disruption to Business Operations', icon: <Activity />, color: '#06B6D4' },
-        { text: 'Predictable Costs & Transparent Execution', icon: <TrendingUp />, color: '#3B82F6' },
+        { text: '5+ Years Of Experience', icon: <Award />, color: '#10b981' },
+        { text: 'Time-Zone Friendly Collaboration', icon: <Globe />, color: '#10B981' },
+        { text: 'Strong Data Security Practices', icon: <Lock />, color: '#10b981' },
+        { text: 'Cross-Platform Migration Expertise', icon: <Layers />, color: '#10b981' },
+        { text: 'Experience with Legacy Systems', icon: <Cpu />, color: '#10b981' },
+        { text: 'Minimal Business Disruption', icon: <Activity />, color: '#10b981' },
+        { text: 'Transparent Pricing & Execution', icon: <TrendingUp />, color: '#10b981' },
     ];
 
     // ============ HIRING MODELS ============
@@ -237,9 +237,9 @@ export default function ModernizationPage() {
 
     // ============ COMPANY STATS ============
     const companyStats = [
-        { value: '700+', label: 'Full‑time Staff', icon: <Users />, description: 'Dedicated team' },
-        { value: '20+', label: 'Years Experience', icon: <Award />, description: 'Since 2004' },
-        { value: '4500+', label: 'Satisfied Clients', icon: <MessageSquare />, description: 'Global client base' },
+        { value: '15+', label: 'Team Members', icon: <Users />, description: 'Dedicated professionals' },
+        { value: '5+', label: 'Years in Business', icon: <Award />, description: 'Since 2021' },
+        { value: '80+', label: 'Happy Clients', icon: <MessageSquare />, description: 'Growing client base' },
     ];
 
     // ============ TRUSTED BY ============
@@ -307,7 +307,7 @@ export default function ModernizationPage() {
                                 <p className={styles.testimonialText}>&quot;{testimonial.content}</p>
                                 <div className={styles.testimonialAuthor}>
                                     <strong>{testimonial.name}</strong>
-                                    <span>{testimonial.role}</span>
+                                    {/* <span>{testimonial.role}</span> */}
                                 </div>
                                 <div className={styles.testimonialRating}>
                                     {[...Array(testimonial.rating)].map((_, i) => (

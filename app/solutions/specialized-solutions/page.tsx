@@ -18,8 +18,8 @@ import {
     Headphones, PenTool, Figma, Megaphone, Plug, Key, Radio,
     FileJson, Braces, Lock as LockIcon, PlugZap, BadgeCheck, Store,
     Settings as SettingsIcon, Briefcase as BriefcaseBusiness,
-    Shield as ShieldIcon2, Repeat as RepeatIcon, Fingerprint, Bot,
-    Radio as RadioIcon, Handshake, Package, UsersRound, Microchip, Scan
+    Shield as ShieldIcon2, Repeat as RepeatIcon, Fingerprint,
+    Handshake, Package, UsersRound,
 } from 'lucide-react';
 import styles from './specialized.module.css';
 
@@ -30,13 +30,13 @@ export default function SpecializedSolutionsPage() {
     const [activePillar, setActivePillar] = useState<string>('isv');
 
     // ----- HERO TESTIMONIAL -----
-    const testimonial = {
-        name: 'Sama',
-        // role: 'CTO, Sam Innovations',
-        content: 'A seamless experience from start to finish. Their attention to detail is unmatched! From ISV product strategy to white label delivery and API integration – they handled it all.',
-        rating: 5,
-        project: 'Enterprise Platform Transformation'
-    };
+    // const testimonial = {
+    //     name: 'Sama',
+    //     role: 'CTO, Sam Innovations',
+    //     content: 'A seamless experience from start to finish. Their attention to detail is unmatched! From ISV product strategy to white label delivery and API integration – they handled it all.',
+    //     rating: 5,
+    //     project: 'Enterprise Platform Transformation'
+    // };
 
     const Wordpress = (props: SVGProps<SVGSVGElement>) => (
         <svg

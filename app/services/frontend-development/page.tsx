@@ -19,7 +19,7 @@ export default function FrontendPage() {
     // ----- HERO TESTIMONIAL -----
     const testimonial = {
         name: 'Samantha',
-        role: 'Product Lead',
+        // role: 'Product Lead',
         content: 'A seamless experience from start to finish. Their attention to detail is unmatched!',
         rating: 5,
         project: 'E-commerce Redesign'
@@ -289,9 +289,9 @@ export default function FrontendPage() {
 
     // ============ COMPANY STATS ============
     const companyStats = [
-        { value: '700+', label: 'Full-time Staff', icon: <Users />, description: 'Dedicated team' },
-        { value: '20+', label: 'Years Experience', icon: <Award />, description: 'Since 2004' },
-        { value: '4500+', label: 'Satisfied Clients', icon: <MessageSquare />, description: 'Global client base' },
+        { value: '10+', label: 'Full-time Staff', icon: <Users />, description: 'Dedicated team' },
+        { value: '5+', label: 'Years Experience', icon: <Award />, description: 'Since 2004' },
+        { value: '80+', label: 'Satisfied Clients', icon: <MessageSquare />, description: 'Global client base' },
     ];
 
     // ============ TRUSTED BY ============
@@ -380,7 +380,7 @@ export default function FrontendPage() {
                                 <p className={styles.testimonialText}>&quot;{testimonial.content}&quot;</p>
                                 <div className={styles.testimonialAuthor}>
                                     <strong>{testimonial.name}</strong>
-                                    <span>{testimonial.role}</span>
+                                    {/* <span>{testimonial.role}</span> */}
                                 </div>
                                 <div className={styles.testimonialRating}>
                                     {[...Array(testimonial.rating)].map((_, i) => (

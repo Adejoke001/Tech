@@ -4,12 +4,12 @@ import Image from 'next/image';
 import Link from 'next/link';
 import { motion } from 'framer-motion';
 import {
-   ArrowRight, AlertTriangle, Phone, Mail, MapPin,
+   ArrowRight, AlertTriangle, Phone, Mail, MessageCircle,
 } from 'lucide-react';
 import styles from './disclaimer.module.css';
 
 export default function DisclaimerPage() {
-    const lastUpdated = 'March 30, 2025';
+    const lastUpdated = 'May, 2026';
 
     return (
         <div className={styles.pageWrapper}>
@@ -36,7 +36,7 @@ export default function DisclaimerPage() {
                             Legal <span className={styles.highlight}>Disclaimer</span>
                         </h1>
                         <p className={styles.heroDescription}>
-                            Please read this disclaimer carefully before using our website or services. It outlines important limitations of liability and professional advice.
+                            Please read this disclaimer carefully before using our website or services.
                         </p>
                         <div className={styles.heroMeta}>
                             <AlertTriangle size={16} />
@@ -53,7 +53,7 @@ export default function DisclaimerPage() {
                     <section className={styles.disclaimerSection}>
                         <h2 className={styles.sectionTitle}>General Information</h2>
                         <p className={styles.sectionText}>
-                            The information provided by <strong>BBMCoders</strong> (“we”, “us”, or “our”) on this website is for general informational purposes only. All information on the site is provided in good faith, however we make no representation or warranty of any kind, express or implied, regarding the accuracy, adequacy, validity, reliability, availability, or completeness of any information on the site.
+                            The information provided by <strong>BBMcoders</strong> (“we”, “us”, or “our”) on this website is for general informational purposes only. All information on the site is provided in good faith, however we make no representation or warranty of any kind, express or implied, regarding the accuracy, adequacy, validity, reliability, availability, or completeness of any information on the site.
                         </p>
                         <p className={styles.sectionText}>
                             Under no circumstance shall we have any liability to you for any loss or damage of any kind incurred as a result of the use of the site or reliance on any information provided on the site. Your use of the site and your reliance on any information on the site is solely at your own risk.
@@ -64,7 +64,7 @@ export default function DisclaimerPage() {
                     <section className={styles.disclaimerSection}>
                         <h2 className={styles.sectionTitle}>No Warranties</h2>
                         <p className={styles.sectionText}>
-                            This website is provided “as is,” without any representations or warranties, express or implied. BBMCoders makes no representations or warranties in relation to this website or the information and materials provided on this website.
+                            This website is provided “as is,” without any representations or warranties, express or implied. BBMcoders makes no representations or warranties in relation to this website or the information and materials provided on this website.
                         </p>
                         <p className={styles.sectionText}>
                             Without prejudice to the generality of the foregoing paragraph, we do not warrant that:
@@ -163,7 +163,7 @@ export default function DisclaimerPage() {
                         <div className={styles.contactCard}>
                             <div className={styles.contactItem}>
                                <Mail size={18} />
-                           <a href="mailto:legal@bbmcoders.com" style={{ color: 'inherit', textDecoration: 'none' }}>
+                           <a href="mailto:support@bbmcoders.com" style={{ color: 'inherit', textDecoration: 'none' }}>
                                support@bbmcoders.com
                            </a>
                            </div>
@@ -174,9 +174,15 @@ export default function DisclaimerPage() {
                                </a>
                              </div>
                             <div className={styles.contactItem}>
-                                <MapPin size={18} />
-                                <span>Lagos, Nigeria</span>
-                            </div>
+                                <MessageCircle size={18} />
+                                 <a 
+                                    href={`https://wa.me/2349042381702?text=${encodeURIComponent("Hi! I need your services, I would love to book a call")}`}
+                                     target="_blank"
+                                      rel="noopener noreferrer"
+                                       style={{ color: 'inherit', textDecoration: 'none' }}>
+                                         WhatsApp Us
+                                   </a>
+                                 </div>
                         </div>
                     </section>
 

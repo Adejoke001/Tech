@@ -24,7 +24,7 @@ export default function BackendPage() {
     // ----- HERO TESTIMONIAL -----
     const testimonial = {
         name: 'James',
-        role: 'CTO, Fintech Startup',
+        // role: 'CTO, Fintech Startup',
         content: 'Professional, reliable, and results-driven – they delivered exactly what we needed, on time and within budget.',
         rating: 5,
         project: 'Scalable Payment Gateway'
@@ -141,12 +141,12 @@ export default function BackendPage() {
 
     // ============ WHY CHOOSE US (from URL) ============
     const whyChooseUs = [
-        { text: "Nigeria's Top 10% Software Talent", icon: <Award />, color: '#3B82F6' },
-        { text: 'Trusted by Startups to Fortune 500', icon: <Building2 />, color: '#10B981' },
+        { text: "Skilled Nigerian Software Talent", icon: <Award />, color: '#3B82F6' },
+        { text: 'Trusted by Startups & Growing Businesses', icon: <Building2 />, color: '#10B981' },
         { text: 'Idea to Deployment, We Handle All', icon: <Rocket />, color: '#8B5CF6' },
-        { text: 'Time-Zone Friendly: Global Presence', icon: <Globe />, color: '#F59E0B' },
-        { text: 'Top-tier Data Security Protocols', icon: <Shield />, color: '#EC4899' },
-        { text: 'On-time Delivery, No Surprises', icon: <Clock />, color: '#06B6D4' },
+        { text: 'Time-Zone Friendly Collaboration', icon: <Globe />, color: '#F59E0B' },
+        { text: 'Strong Data Security Practices', icon: <Shield />, color: '#EC4899' },
+        { text: 'On-time Delivery Commitment', icon: <Clock />, color: '#06B6D4' },
     ];
 
     // ============ TECH STACKS (from URL) ============
@@ -220,9 +220,9 @@ export default function BackendPage() {
 
     // ============ COMPANY STATS ============
     const companyStats = [
-        { value: '700+', label: 'Full-time Staff', icon: <Users />, description: 'Dedicated team' },
-        { value: '20+', label: 'Years Experience', icon: <Award />, description: 'Since 2004' },
-        { value: '4500+', label: 'Satisfied Clients', icon: <MessageSquare />, description: 'Global client base' },
+        { value: '10+', label: 'Full-time Staff', icon: <Users />, description: 'Dedicated team' },
+        { value: '5+', label: 'Years Experience', icon: <Award />, description: 'Since 2004' },
+        { value: '80+', label: 'Satisfied Clients', icon: <MessageSquare />, description: 'Global client base' },
     ];
 
     // ============ BACKEND COMPONENTS (from guide) ============
@@ -352,7 +352,7 @@ export default function BackendPage() {
                             Build Secure, Scalable & <span className={styles.highlight}>High-Performance Backend Systems</span>
                         </h1>
                         <p className={styles.heroSubtitle}>
-                            Since 2004, we&apos;ve been building secure, scalable, and high-performance backend systems that power web and mobile applications. From database management to API integrations, our backend solutions ensure seamless data flow, stability, and reliability for your digital products.
+                           Secure, scalable backend systems for web and mobile apps – from databases to APIs.
                         </p>
                         <div className={styles.heroButtons}>
                             <Link href="/contact" className={styles.primaryButton}>
@@ -382,7 +382,7 @@ export default function BackendPage() {
                                 <p className={styles.testimonialText}>&quot;{testimonial.content}&quot;</p>
                                 <div className={styles.testimonialAuthor}>
                                     <strong>{testimonial.name}</strong>
-                                    <span>{testimonial.role}</span>
+                                    {/* <span>{testimonial.role}</span> */}
                                 </div>
                                 <div className={styles.testimonialRating}>
                                     {[...Array(testimonial.rating)].map((_, i) => (
@@ -844,9 +844,9 @@ export default function BackendPage() {
                             <Link href="/contact" className={styles.ctaPrimary}>
                                 Start Your Project <ArrowRight size={18} />
                             </Link>
-                            <Link href="/contact" className={styles.ctaSecondary}>
+                            {/* <Link href="/contact" className={styles.ctaSecondary}>
                                 Get a Free Consultation
-                            </Link>
+                            </Link> */}
                         </div>
                     </div>
                 </div>
