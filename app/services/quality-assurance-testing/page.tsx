@@ -39,19 +39,19 @@ export default function QualityAssurancePage() {
   useEffect(() => {
     if (isStatsInView) {
       const bugTimer = setInterval(() => {
-        setBugCount((prev) => (prev >= 20000 ? 20000 : prev + 1000));
+        setBugCount((prev) => (prev >= 1000 ? 1000 : prev + 10));
       }, 10);
 
       const projectTimer = setInterval(() => {
-        setProjectCount((prev) => (prev >= 2500 ? 2500 : prev + 50));
+        setProjectCount((prev) => (prev >= 100 ? 100 : prev + 2));
       }, 10);
 
       const coverageTimer = setInterval(() => {
-        setCoverageCount((prev) => (prev >= 98 ? 98 : prev + 10));
+        setCoverageCount((prev) => (prev >= 97 ? 97 : prev + 8));
       }, 30);
 
       const clientTimer = setInterval(() => {
-        setClientCount((prev) => (prev >= 1600 ? 1600 : prev + 30));
+        setClientCount((prev) => (prev >= 100 ? 100 : prev + 2));
       }, 10);
 
       return () => {
@@ -71,7 +71,7 @@ export default function QualityAssurancePage() {
       description:
         "Validate that software functions according to specifications and requirements.",
       icon: <CheckCircle className={styles.serviceIcon} />,
-      color: "#60a5fa",
+      color: "#3b82f6",
       details: [
         "Unit Testing",
         "Integration Testing",
@@ -101,7 +101,7 @@ export default function QualityAssurancePage() {
       description:
         "Identify vulnerabilities and ensure protection against threats.",
       icon: <ShieldCheck className={styles.serviceIcon} />,
-      color: "#8b5cf6",
+      color: "#3b82f6",
       details: [
         "Vulnerability Assessment",
         "Penetration Testing",
@@ -116,7 +116,7 @@ export default function QualityAssurancePage() {
       description:
         "Implement automated test suites for efficient regression testing.",
       icon: <Zap className={styles.serviceIcon} />,
-      color: "#f59e0b",
+      color: "#10b981",
       details: [
         "Selenium WebDriver",
         "Cypress",
@@ -130,7 +130,7 @@ export default function QualityAssurancePage() {
       title: "Mobile Testing",
       description: "Comprehensive testing across iOS and Android platforms.",
       icon: <Smartphone className={styles.serviceIcon} />,
-      color: "#ef4444",
+      color: "#3b82f6",
       details: [
         "Device Compatibility",
         "App Performance",
@@ -144,7 +144,7 @@ export default function QualityAssurancePage() {
       title: "API Testing",
       description: "Validate API functionality, reliability, and security.",
       icon: <Code className={styles.serviceIcon} />,
-      color: "#06b6d4",
+      color: "#10b981",
       details: [
         "REST API Testing",
         "SOAP API Testing",
@@ -259,7 +259,7 @@ export default function QualityAssurancePage() {
     content:
       "Their QA team identified critical security vulnerabilities that our internal team missed. The depth of their testing saved us from potential compliance issues.",
     rating: 5,
-    project: "Banking Platform Security",
+    project: "Secure Fintech Payment Solution",
   };
 
   // FAQs
@@ -323,7 +323,7 @@ export default function QualityAssurancePage() {
             >
               <Link href="/contact" className={styles.ctaButton}>
                 Get Free QA Assessment
-               
+
               </Link>
             </motion.div>
           </motion.div>
@@ -663,7 +663,7 @@ export default function QualityAssurancePage() {
           <div className={styles.ctaButtons}>
             <Link href="/contact" className={styles.ctaButton}>
               Start Free QA Assessment
-             
+
             </Link>
             {/* <Link href="/portfolio" className={styles.secondaryButton}>
               View Case Studies

@@ -7,8 +7,8 @@ import { motion, AnimatePresence } from 'framer-motion';
 import {
     Sparkles, ArrowRight, Award, MessageSquare, CheckCircle,
     Users, Building2, Shield, Brain, Compass, Code, RefreshCw, Target,
-    Activity, Layers, TrendingUp, FileText, Rocket, Search, 
-    
+    Activity, Layers, TrendingUp, FileText, Rocket, Search,
+
 } from 'lucide-react';
 import styles from './architecture.module.css';
 
@@ -33,7 +33,7 @@ export default function SaasArchitecturePage() {
             title: 'SaaS Product Consulting',
             description: 'We turn goals into a measurable, fundable product plan.',
             icon: <Compass />,
-            color: '#3B82F6',
+            color: '#10b981',
             features: [
                 'Define ICP, use-cases, and success KPIs',
                 'Prioritize features with RICE; cut scope safely',
@@ -57,7 +57,7 @@ export default function SaasArchitecturePage() {
             title: 'SaaS Development Services',
             description: 'End-to-end, custom SaaS development to build secure, scalable features.',
             icon: <Code />,
-            color: '#8B5CF6',
+            color: '#10b981',
             features: [
                 'Stand up web/mobile, APIs, and integrations',
                 'Implement CI/CD, test automation, and code reviews',
@@ -69,7 +69,7 @@ export default function SaasArchitecturePage() {
             title: 'Re-Engineering & Modernization',
             description: 'We de-risk rewrites and unlock performance and velocity.',
             icon: <RefreshCw />,
-            color: '#F59E0B',
+            color: '#10b981',
             features: [
                 'Audit monoliths; identify bottlenecks and tech debt',
                 'Refactor to services or modular boundaries',
@@ -81,7 +81,7 @@ export default function SaasArchitecturePage() {
             title: 'Data, AI & Analytics',
             description: 'We turn product usage into decisions and automation.',
             icon: <Brain />,
-            color: '#EC4899',
+            color: '#10b981',
             features: [
                 'Set up event tracking and product analytics',
                 'Build churn/propensity dashboards and cohorts',
@@ -93,7 +93,7 @@ export default function SaasArchitecturePage() {
             title: 'Security & Compliance',
             description: 'We bake security and audit-readiness into delivery.',
             icon: <Shield />,
-            color: '#06B6D4',
+            color: '#10b981',
             features: [
                 'Implement SSO, RBAC, encryption at rest/in transit',
                 'Shift-left with SAST/DAST, secrets, SBOM',
@@ -105,7 +105,7 @@ export default function SaasArchitecturePage() {
             title: 'SRE & Reliability',
             description: 'We engineer uptime with clear SLOs and fast recovery.',
             icon: <Activity />,
-            color: '#3B82F6',
+            color: '#10b981',
             features: [
                 'Define SLOs/error budgets; align alerts to impact',
                 'Add observability: logs, metrics, traces',
@@ -117,10 +117,10 @@ export default function SaasArchitecturePage() {
     // ============ VALUE PROPOSITIONS (from "Grow Your Business" section) ============
     const valueProps = [
         { text: 'Faster time-to-value for enterprises', icon: <Rocket />, color: '#3B82F6' },
-        { text: 'Scale without chaos or friction', icon: <TrendingUp />, color: '#10B981' },
-        { text: 'Audit-ready builds every time', icon: <CheckCircle />, color: '#8B5CF6' },
-        { text: 'Teams aligned to your pace', icon: <Users />, color: '#F59E0B' },
-        { text: 'Reliability by design, delivered consistently', icon: <Shield />, color: '#EC4899' },
+        { text: 'Scale without chaos or friction', icon: <TrendingUp />, color: '#3b82f6' },
+        { text: 'Audit-ready builds every time', icon: <CheckCircle />, color: '#3b82F6' },
+        { text: 'Teams aligned to your pace', icon: <Users />, color: '#3b82f6' },
+        { text: 'Reliability by design, delivered consistently', icon: <Shield />, color: '#3b82f6' },
     ];
 
     // ============ COST ESTIMATES ============
@@ -134,19 +134,19 @@ export default function SaasArchitecturePage() {
 
     // ============ BUSINESS TYPES ============
     const businessTypes = [
-        { name: 'Early Stage Startups', description: 'Validate your idea, build MVP, and attract early users with a lean, scalable SaaS product.', icon: <Rocket />, color: '#3B82F6' },
+        { name: 'Early Stage Startups', description: 'Validate your idea, build MVP, and attract early users with a lean, scalable SaaS product.', icon: <Rocket />, color: '#10b981' },
         { name: 'Scaling Startups', description: 'Scale your product with robust architecture, advanced features, and enterprise-grade security.', icon: <TrendingUp />, color: '#10B981' },
-        { name: 'Enterprises', description: 'Modernize legacy systems, ensure compliance, and deliver reliable SaaS solutions at scale.', icon: <Building2 />, color: '#8B5CF6' },
+        { name: 'Enterprises', description: 'Modernize legacy systems, ensure compliance, and deliver reliable SaaS solutions at scale.', icon: <Building2 />, color: '#10b981' },
     ];
 
     // ============ PROCESS STEPS ============
     const processSteps = [
-        { step: 1, title: 'Discovery & Goals', description: 'Align business KPIs, users, and success metrics.', icon: <Search />, color: '#3B82F6' },
+        { step: 1, title: 'Discovery & Goals', description: 'Align business KPIs, users, and success metrics.', icon: <Search />, color: '#10b981' },
         { step: 2, title: 'Architecture Blueprint', description: 'Choose cloud, tenancy, data, security patterns deliberately.', icon: <Layers />, color: '#10B981' },
-        { step: 3, title: 'Experience & Backlog', description: 'Map journeys, prioritize features with RICE, define sprints.', icon: <FileText />, color: '#8B5CF6' },
-        { step: 4, title: 'Build & Integrate', description: 'Ship in increments with CI/CD and automated testing.', icon: <Code />, color: '#F59E0B' },
-        { step: 5, title: 'Release & Learn', description: 'Canary deploy, monitor telemetry, iterate toward adoption targets.', icon: <Rocket />, color: '#EC4899' },
-        { step: 6, title: 'Scale & Optimize', description: 'Maximize ROI through continuous platform improvement.', icon: <TrendingUp />, color: '#06B6D4' },
+        { step: 3, title: 'Experience & Backlog', description: 'Map journeys, prioritize features with RICE, define sprints.', icon: <FileText />, color: '#10b981' },
+        { step: 4, title: 'Build & Integrate', description: 'Ship in increments with CI/CD and automated testing.', icon: <Code />, color: '#10b981' },
+        { step: 5, title: 'Release & Learn', description: 'Canary deploy, monitor telemetry, iterate toward adoption targets.', icon: <Rocket />, color: '#10b981' },
+        { step: 6, title: 'Scale & Optimize', description: 'Maximize ROI through continuous platform improvement.', icon: <TrendingUp />, color: '#10b981' },
     ];
 
     // ============ HIRING MODELS ============
@@ -164,7 +164,7 @@ export default function SaasArchitecturePage() {
             title: 'Dedicated Teams / Delivery Pods',
             description: 'Dedicated squad with Tech Lead + Engineers + QA. Shared accountability for predictable sprint delivery.',
             icon: <Target />,
-            color: '#10B981',
+            color: '#3b82f6',
             features: ['Milestone-based or fixed-cost', 'We own sprint delivery metrics', 'Weekly demos'],
             billing: 'Milestone-based, T&M with commitments, or Fixed-Cost',
             bestFor: 'Products needing speed, cross-team coordination'
@@ -173,7 +173,7 @@ export default function SaasArchitecturePage() {
             title: 'Development Centers',
             description: 'Long-term, scaled teams with your branding, culture, processes. Full infrastructure, HR, security & compliance.',
             icon: <Building2 />,
-            color: '#8B5CF6',
+            color: '#3b82f6',
             features: ['Long-term retainer', 'BOT (Build–Operate–Transfer) options', 'Multi-year partnerships'],
             billing: 'Long-term retainer, BOT',
             bestFor: 'Enterprises needing sustained large-scale capacity'
@@ -218,26 +218,22 @@ export default function SaasArchitecturePage() {
     // ============ CLIENT TESTIMONIALS ============
     const testimonials = [
         {
-            name: 'James Kelly',
-            role: 'Data Analyst',
+            name: 'James',
             content: 'The Project managers took a lot of time to understand our project before coming up with a contract or what they thought we needed. I had the reassurance from the start that the project managers knew what type of project I wanted and what my needs were. That is reassuring, and that\'s why we chose BBMcoders.',
             image: '/images/user.png'
         },
         {
-            name: 'Judith Mueller',
-            role: 'Executive Director, Judith Foundation',
+            name: 'Rebecca',
             content: 'The team at BBMcoders has provided us with exceptional services in creating this one-of-a-kind portal, and it has been a fantastic experience. I was particularly impressed by how efficiently and quickly the team always came up with creative solutions to provide us with all the functionalities within the portal we had requested.',
             image: '/images/user.png'
         },
         {
             name: 'chris',
-            role: 'Director, Storgaze',
             content: 'BBMcoders had great technical expertise, both in front-end and back-end development. Other project management was well organized. Account management was friendly and always available. I would give BBMcoders ten out of ten!',
             image: '/images/user.png'
         },
         {
-            name: 'Mohammed Mira',
-            role: 'Director, FashionHint',
+            name: 'Ibrahim',
             content: 'Huge thank you to BBMcoders; they have been a massive help in enabling us to start developing our project within a few weeks, so it\'s been great! There have been two small bumps in the road, but overall, It\'s been a fantastic service. I have already recommended it to one of my friends.',
             image: '/images/user.png'
         }
@@ -268,7 +264,7 @@ export default function SaasArchitecturePage() {
     ];
 
     // ============ TRUSTED BY ============
-    const trustedCompanies = ['Microsoft', 'Amazon', 'Google', 'IBM', 'SAP', 'Oracle'];
+    // const trustedCompanies = ['Microsoft', 'Amazon', 'Google', 'IBM', 'SAP', 'Oracle'];
 
     // ============ INDUSTRIES ============
     const industries = [
@@ -293,7 +289,7 @@ export default function SaasArchitecturePage() {
             image: 'https://images.unsplash.com/photo-1598128558393-70ff21433be0?auto=format&fit=crop&w=800&q=80',
             color: '#8B5CF6'
         },
-        
+
     ];
 
     return (
@@ -333,7 +329,7 @@ export default function SaasArchitecturePage() {
                             <Link href="/contact" className={styles.primaryButton}>
                                 Start Your SaaS Journey <ArrowRight size={18} />
                             </Link>
-                            
+
                         </div>
                     </motion.div>
                     <motion.div
@@ -371,7 +367,7 @@ export default function SaasArchitecturePage() {
             </section>
 
             {/* ===== TRUSTED BY SECTION ===== */}
-            <section className={styles.trustedSection}>
+            {/* <section className={styles.trustedSection}>
                 <div className={styles.container}>
                     <p className={styles.trustedLabel}>Trusted by startups and Fortune 500 companies</p>
                     <div className={styles.trustedLogos}>
@@ -389,7 +385,7 @@ export default function SaasArchitecturePage() {
                         ))}
                     </div>
                 </div>
-            </section>
+            </section> */}
 
             {/* ===== SAAS SERVICES SECTION ===== */}
             <section className={styles.servicesSection} id="services">
@@ -733,7 +729,6 @@ export default function SaasArchitecturePage() {
                                     </div>
                                     <div className={styles.testimonialAuthorInfo}>
                                         <h4>{testimonials[activeTestimonial].name}</h4>
-                                        <p>{testimonials[activeTestimonial].role}</p>
                                     </div>
                                 </div>
                             </motion.div>
@@ -866,10 +861,7 @@ export default function SaasArchitecturePage() {
                         </p>
                         <div className={styles.ctaButtons}>
                             <Link href="/contact" className={styles.ctaPrimary}>
-                                Start Your SaaS Journey <ArrowRight size={18} />
-                            </Link>
-                            <Link href="/contact" className={styles.ctaSecondary}>
-                                Get a Free Consultation
+                                Get Free Consultation <ArrowRight size={18} />
                             </Link>
                         </div>
                     </div>
@@ -882,8 +874,8 @@ export default function SaasArchitecturePage() {
 // Custom icon components
 const HelpCircle = (props: React.SVGProps<SVGSVGElement>) => (
     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" {...props}>
-        <circle cx="12" cy="12" r="10"/>
-        <path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"/>
-        <line x1="12" y1="17" x2="12.01" y2="17"/>
+        <circle cx="12" cy="12" r="10" />
+        <path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3" />
+        <line x1="12" y1="17" x2="12.01" y2="17" />
     </svg>
 );

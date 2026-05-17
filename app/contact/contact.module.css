@@ -1,5 +1,5 @@
 .contactSection {
-  background: linear-gradient(135deg, #f8fafc 0%, #f1f5f9 100%);
+  background: var(--gradient-section-light);
   min-height: 100vh;
   padding: 4rem 0 0 0;
   overflow-x: hidden;
@@ -31,11 +31,11 @@
 }
 
 .formContainer {
-  background: white;
+  background: var(--white);
   padding: 2rem;
   border-radius: 16px;
   box-shadow: 0 10px 40px rgba(0, 0, 0, 0.08);
-  border: 1px solid #e2e8f0;
+  border: 1px solid var(--gray-300);
   width: 100%;
   box-sizing: border-box;
 }
@@ -43,13 +43,13 @@
 .formTitle {
   font-size: 1.75rem;
   font-weight: 700;
-  color: #1e293b;
+  color: var(--gray-900);
   margin-bottom: 0.75rem;
   text-align: center;
 }
 
 .formDescription {
-  color: #64748b;
+  color: var(--gray-600);
   margin-bottom: 2rem;
   font-size: 1rem;
   line-height: 1.6;
@@ -70,7 +70,7 @@
   width: 100%;
 }
 
-/* ---------- FLOATING LABEL WRAPPER ---------- */
+/* Floating Label Wrapper */
 .inputWrapper {
   position: relative;
   width: 100%;
@@ -83,10 +83,10 @@
   width: 100%;
   padding: 1rem 1rem 0.5rem 1rem;
   font-size: 1rem;
-  border: 2px solid #e2e8f0;
+  border: 2px solid var(--gray-300);
   border-radius: 8px;
-  background: white;
-  color: #1e293b;
+  background: var(--white);
+  color: var(--gray-900);
   transition: all 0.2s ease;
   font-family: inherit;
   box-sizing: border-box;
@@ -101,9 +101,9 @@
 .floatingInput:focus,
 .floatingTextarea:focus {
   outline: none;
-  border-color: #10b981;
+  border-color: var(--primary-green);
   box-shadow: 0 0 0 3px rgba(16, 185, 129, 0.1);
-  background: #f8fafc;
+  background: var(--gray-100);
 }
 
 /* The floating label */
@@ -112,10 +112,10 @@
   left: 1rem;
   top: 50%;
   transform: translateY(-50%);
-  background-color: white;
+  background-color: var(--white);
   padding: 0 0.25rem;
   font-size: 1rem;
-  color: #64748b;
+  color: var(--gray-500);
   pointer-events: none;
   transition: 0.2s ease all;
   font-weight: 500;
@@ -136,8 +136,8 @@
   top: 0;
   transform: translateY(-50%);
   font-size: 0.95rem;
-  color: #10b981;
-  background-color: white;
+  color: var(--primary-green);
+  background-color: var(--white);
   padding: 0 0.3rem;
 }
 
@@ -155,7 +155,7 @@
 /* Keep label blue on focus */
 .floatingInput:focus ~ .floatingLabel,
 .floatingTextarea:focus ~ .floatingLabel {
-  color: #10b981;
+  color: var(--primary-green);
 }
 
 /* Placeholder is hidden but needed for :placeholder-shown */
@@ -164,7 +164,7 @@
   color: transparent;
 }
 
-/* ---------- Normal form group (for select) ---------- */
+/* Normal form group (for select) */
 .formGroup {
   display: flex;
   flex-direction: column;
@@ -173,7 +173,7 @@
 
 .formLabel {
   font-weight: 600;
-  color: #374151;
+  color: var(--gray-700);
   margin-bottom: 0.5rem;
   font-size: 0.875rem;
   text-transform: uppercase;
@@ -182,12 +182,12 @@
 
 .formSelect {
   padding: 0.875rem 1rem;
-  border: 2px solid #e2e8f0;
+  border: 2px solid var(--gray-300);
   border-radius: 8px;
   font-size: 1rem;
   transition: all 0.3s ease;
-  background: white;
-  color: #1e293b;
+  background: var(--white);
+  color: var(--gray-900);
   font-family: inherit;
   width: 100%;
   box-sizing: border-box;
@@ -195,14 +195,14 @@
 
 .formSelect:focus {
   outline: none;
-  border-color: #10b981;
+  border-color: var(--primary-green);
   box-shadow: 0 0 0 3px rgba(16, 185, 129, 0.1);
 }
 
 /* Submit Button */
 .submitButton {
-  background: #FFAD00;
-  color: #1e293b;
+  background: var(--gradient-primary);
+  color: white;
   border: none;
   padding: 1.125rem 2rem;
   font-size: 1rem;
@@ -215,16 +215,16 @@
   justify-content: center;
   gap: 0.75rem;
   margin-top: 1rem;
-  box-shadow: 0 4px 15px rgba(255, 173, 0, 0.25);
+  box-shadow: 0 4px 15px rgba(59, 130, 246, 0.25);
   text-transform: uppercase;
   letter-spacing: 0.5px;
   width: 100%;
 }
 
 .submitButton:hover {
-  background: #10b981;
+  background: var(--gradient-primary-dark);
   color: white;
-  box-shadow: 0 8px 25px rgba(16, 185, 129, 0.35);
+  box-shadow: 0 8px 25px rgba(59, 130, 246, 0.35);
   transform: translateY(-2px);
 }
 
@@ -243,7 +243,7 @@
 }
 
 .infoContainer {
-  background: linear-gradient(135deg, #1e293b 0%, #0f172a 100%);
+  background: linear-gradient(135deg, var(--dark-surface) 0%, var(--dark-bg) 100%);
   padding: 2rem;
   border-radius: 16px;
   box-shadow: 0 10px 40px rgba(0, 0, 0, 0.15);
@@ -261,7 +261,7 @@
 }
 
 .infoDescription {
-  color: #94a3b8;
+  color: var(--gray-400);
   font-size: 1rem;
   line-height: 1.6;
   margin-bottom: 2rem;
@@ -284,7 +284,7 @@
   background: rgba(255, 255, 255, 0.05);
   border-radius: 12px;
   transition: all 0.3s ease;
-  border: 1px solid #334155;
+  border: 1px solid var(--gray-700);
   text-align: center;
   width: 100%;
   box-sizing: border-box;
@@ -293,7 +293,7 @@
 .contactMethod:hover {
   transform: translateY(-4px);
   box-shadow: 0 12px 35px rgba(0, 0, 0, 0.2);
-  border-color: #10b981;
+  border-color: var(--primary-green);
   background: rgba(255, 255, 255, 0.08);
 }
 
@@ -301,13 +301,13 @@
   font-size: 1.75rem;
   width: 60px;
   height: 60px;
-  background: linear-gradient(135deg, #10b981, #34d399);
+  background: var(--gradient-primary);
   border-radius: 12px;
   display: flex;
   align-items: center;
   justify-content: center;
   flex-shrink: 0;
-  box-shadow: 0 4px 15px rgba(16, 185, 129, 0.3);
+  box-shadow: 0 4px 15px rgba(59, 130, 246, 0.3);
 }
 
 .methodContent {
@@ -325,18 +325,18 @@
 .methodDetail {
   font-size: 1.125rem;
   font-weight: 700;
-  color: #10b981;
+  color: var(--primary-green);
   margin-bottom: 0.25rem;
 }
 
 .methodDescription {
-  color: #94a3b8;
+  color: var(--gray-400);
   font-size: 0.875rem;
 }
 
 /* Features Section */
 .featuresSection {
-  background: linear-gradient(135deg, #1e293b 0%, #0f172a 100%);
+  background: linear-gradient(135deg, var(--dark-surface) 0%, var(--dark-bg) 100%);
   padding: 3rem 0;
   margin: 3rem 0 0 0;
   width: 100%;
@@ -357,7 +357,7 @@
 }
 
 .featuresDescription {
-  color: #94a3b8;
+  color: var(--gray-400);
   font-size: 1.125rem;
   line-height: 1.6;
   margin-bottom: 2rem;
@@ -383,7 +383,7 @@
   padding: 1.5rem;
   background: rgba(255, 255, 255, 0.05);
   border-radius: 12px;
-  border: 2px solid #334155;
+  border: 2px solid var(--gray-700);
   transition: all 0.3s ease;
   cursor: pointer;
   text-align: left;
@@ -393,7 +393,7 @@
 
 .featureItem:hover {
   background: rgba(255, 255, 255, 0.08);
-  border-color: #10b981;
+  border-color: var(--primary-green);
   transform: translateY(-4px);
   box-shadow: 0 12px 35px rgba(0, 0, 0, 0.2);
 }
@@ -401,20 +401,20 @@
 .featureIcon {
   width: 40px;
   height: 40px;
-  background: linear-gradient(135deg, #FFAD00, #ffbb33);
+  background: var(--gradient-primary);
   border-radius: 8px;
   display: flex;
   align-items: center;
   justify-content: center;
-  color: #1e293b;
+  color: white;
   font-weight: bold;
   font-size: 1rem;
   flex-shrink: 0;
-  box-shadow: 0 4px 15px rgba(255, 173, 0, 0.3);
+  box-shadow: 0 4px 15px rgba(59, 130, 246, 0.3);
 }
 
 .featureText {
-  color: #e2e8f0;
+  color: var(--gray-300);
   font-weight: 600;
   font-size: 1rem;
   line-height: 1.4;
@@ -422,7 +422,7 @@
 
 /* Map Section */
 .mapSection {
-  background: white;
+  background: var(--white);
   padding: 3rem 0;
   width: 100%;
   box-sizing: border-box;
@@ -459,8 +459,8 @@
 }
 
 .directionsButton {
-  background: #FFAD00;
-  color: #1e293b;
+  background: var(--gradient-primary);
+  color: white;
   border: none;
   padding: 0.875rem 1.5rem;
   font-size: 0.875rem;
@@ -468,14 +468,14 @@
   border-radius: 8px;
   cursor: pointer;
   transition: all 0.3s ease;
-  box-shadow: 0 4px 15px rgba(255, 173, 0, 0.3);
+  box-shadow: 0 4px 15px rgba(59, 130, 246, 0.3);
 }
 
 .directionsButton:hover {
-  background: #10b981;
+  background: var(--gradient-primary-dark);
   color: white;
   transform: translateY(-2px);
-  box-shadow: 0 6px 20px rgba(16, 185, 129, 0.4);
+  box-shadow: 0 6px 20px rgba(59, 130, 246, 0.4);
 }
 
 /* Responsive */

@@ -5,13 +5,8 @@
     --gradient-primary: linear-gradient(135deg, #3B82F6, #10B981);
     --gradient-primary-dark: linear-gradient(135deg, #2563EB, #059669);
     
-    --secondary-purple: #8B5CF6;
-    --secondary-amber: #F59E0B;
-    --secondary-pink: #EC4899;
-    --secondary-cyan: #06B6D4;
-    
     --gradient-section-light: linear-gradient(135deg, rgba(59, 130, 246, 0.03) 0%, rgba(16, 185, 129, 0.03) 100%);
-    --gradient-section-dark: linear-gradient(135deg, rgba(15, 23, 42, 0.88) 0%, rgba(30, 41, 59, 83) 100%);
+    --gradient-section-dark: linear-gradient(135deg, rgba(15, 23, 42, 0.92) 0%, rgba(30, 41, 59, 0.92) 100%);
     
     --dark-bg: #0F172A;
     --dark-surface: #1E293B;
@@ -42,7 +37,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    background-image: url('https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80');
+    background-image: url('https://plus.unsplash.com/premium_photo-1663040543387-cb7c78c4f012?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTN8fHByb2dyYW1taW5nfGVufDB8fDB8fHww');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -90,7 +85,7 @@
     align-items: center;
     gap: 0.5rem;
     background: rgba(59, 130, 246, 0.2);
-    color: #93c5fd;
+    color: var(--gray-300);
     padding: 0.5rem 1.25rem;
     border-radius: 2rem;
     font-size: 0.875rem;
@@ -165,9 +160,9 @@
 }
 
 .ctaButton:hover {
+    background: var(--gradient-primary-dark);
     transform: translateY(-2px);
     box-shadow: 0 6px 20px rgba(59, 130, 246, 0.4);
-    background: var(--gradient-primary-dark);
 }
 
 .secondaryButton {
@@ -497,7 +492,7 @@
 .expertiseCard:hover {
     transform: translateY(-8px);
     box-shadow: 0 12px 25px rgba(0, 0, 0, 0.1);
-    border-color: var(--primary-blue);
+    border-color: var(--primary-green);
 }
 
 .cardHeader {
@@ -580,13 +575,14 @@
     height: 1.125rem;
     flex-shrink: 0;
     margin-top: 0.125rem;
+    color: var(--primary-green);
 }
 
 .learnMoreLink {
     display: inline-flex;
     align-items: center;
     gap: 0.5rem;
-    color: var(--primary-blue);
+    color: var(--primary-green);
     font-weight: 600;
     text-decoration: none;
     font-size: 0.95rem;
@@ -644,7 +640,7 @@
     transition: all 0.3s ease;
     display: flex;
     flex-direction: column;
-    height: auto; /* allow natural height */
+    height: auto;
 }
 
 .techCategoryCard:hover {
@@ -669,6 +665,7 @@
     background: var(--gradient-section-light);
     border-radius: 0.75rem;
     flex-shrink: 0;
+    color: var(--primary-blue);
 }
 
 .techCategoryTitle {
@@ -702,6 +699,8 @@
 .techItem:hover {
     transform: translateY(-2px);
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+    border-color: var(--primary-blue);
+    color: var(--primary-blue);
 }
 
 /* ===== WHY HIRE FROM INDIA SECTION ===== */
@@ -978,6 +977,7 @@
     justify-content: center;
     background: var(--gradient-section-light);
     flex-shrink: 0;
+    color: var(--primary-blue);
 }
 
 .qualityHeader h3 {
@@ -1014,6 +1014,7 @@
 .qualityPoints li svg {
     flex-shrink: 0;
     margin-top: 0.125rem;
+    color: var(--primary-green);
 }
 
 .qualityTools {
@@ -1084,7 +1085,7 @@
 .buildCard:hover {
     transform: translateY(-5px);
     box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
-    border-color: var(--primary-blue);
+    border-color: var(--primary-green);
 }
 
 .buildHeader {
@@ -1103,6 +1104,7 @@
     justify-content: center;
     background: var(--gradient-section-light);
     flex-shrink: 0;
+    color: var(--primary-blue);
 }
 
 .buildHeader h3 {
@@ -1150,6 +1152,7 @@
 .buildExamples li svg {
     flex-shrink: 0;
     margin-top: 0.125rem;
+    color: var(--primary-green);
 }
 
 .buildTechnologies {
@@ -1234,6 +1237,7 @@
     color: white;
     position: relative;
     z-index: 2;
+    background: var(--gradient-primary);
 }
 
 .valueCard h3 {
@@ -1280,7 +1284,7 @@
 }
 
 .valueDetailItem svg {
-    color: var(--primary-green);
+    color: var(--primary-blue);
     flex-shrink: 0;
 }
 
@@ -1332,7 +1336,7 @@
     padding-top: 1.5rem;
     padding-bottom: 1.5rem;
     margin-bottom: 1.5rem;
-    border-bottom: 2px solid;
+    border-bottom: 2px solid var(--primary-green);
     text-align: center;
     position: relative;
 }
@@ -1346,6 +1350,7 @@
     font-size: 0.75rem;
     font-weight: 600;
     color: white;
+    background: var(--primary-blue);
     z-index: 5;
 }
 
@@ -1403,10 +1408,11 @@
 .pricingFeatures li svg {
     flex-shrink: 0;
     margin-top: 0.125rem;
+    color: var(--primary-green);
 }
 
 .pricingButton {
-    background: var(--primary-blue);
+    background: var(--gradient-primary);
     color: white;
     border: none;
     padding: 1rem 1.5rem;
@@ -1425,6 +1431,7 @@
 }
 
 .pricingButton:hover {
+    background: var(--gradient-primary-dark);
     transform: translateY(-2px);
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
 }
@@ -1476,6 +1483,7 @@
     width: 1.5rem;
     height: 1.5rem;
     flex-shrink: 0;
+    color: var(--primary-green);
 }
 
 .whyChooseCard span {
@@ -1597,7 +1605,7 @@
     font-weight: 600;
 }
 
-/* ===== INDUSTRIES SECTION (ORIGINAL) ===== */
+/* ===== INDUSTRIES SECTION ===== */
 .industriesSection {
     padding: 5rem 2rem;
     background: var(--white);
@@ -1775,7 +1783,7 @@
     margin-top: 0.25rem;
 }
 
-/* ===== FAQ SECTION (ORIGINAL) ===== */
+/* ===== FAQ SECTION ===== */
 .faqSection {
     padding: 5rem 2rem;
     background: var(--white);
@@ -1946,9 +1954,9 @@
 }
 
 .ctaPrimary:hover {
+    background: var(--gradient-primary-dark);
     transform: translateY(-2px);
     box-shadow: 0 6px 20px rgba(59, 130, 246, 0.4);
-    background: var(--gradient-primary-dark);
 }
 
 .ctaSecondary {
@@ -2162,7 +2170,6 @@
     }
 }
 
-/* Extra small devices */
 @media (max-width: 360px) {
     .statsGrid {
         grid-template-columns: 1fr;
@@ -2177,7 +2184,6 @@
     }
 }
 
-/* ===== FIX TESTIMONIAL CARD ALIGNMENT FOR 768px - 1024px ===== */
 @media (min-width: 768px) and (max-width: 1024px) {
   .rightContent {
     align-items: center; 
@@ -2231,4 +2237,3 @@
     font-size: 1rem;
   }
 }
-

@@ -11,9 +11,7 @@
   background-position: center;
   background-repeat: no-repeat;
   background-attachment: fixed;
-  /* Safe area for navbar */
-  padding-top: 80px; /* Adjust this based on your navbar height */
-  
+  padding-top: 80px;
 }
 
 .overlay {
@@ -35,7 +33,7 @@
   position: relative;
   z-index: 2;
   text-align: center;
-  color: white;
+  color: var(--color-text-dark-bg, white);
   width: 100%;
   max-width: 1200px;
   margin: 0 auto;
@@ -45,7 +43,6 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  /* Ensure content doesn't get hidden */
   margin-top: 0;
 }
 
@@ -54,8 +51,8 @@
   width: 100%;
 }
 
-.mainTitle {
-  font-size: 2.5rem;
+.heroSection .content .headline .mainTitle {
+  font-size: 3rem;
   font-weight: bold;
   margin-bottom: 1.5rem;
   line-height: 1.2;
@@ -69,13 +66,13 @@
 
 .companyText {
   display: block;
-  background: linear-gradient(to right, #60a5fa, #34d399);
+  background: var(--gradient-primary);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
 }
 
-.subheadline {
+.heroSection .content .headline .subheadline {
   font-size: 1.1rem;
   margin-bottom: 1.5rem;
   max-width: 64rem;
@@ -86,7 +83,7 @@
 }
 
 .highlight {
-  color: #fbbf24;
+  color: var(--primary-blue);
   font-weight: 600;
 }
 
@@ -107,13 +104,14 @@
 
 .awardsText {
   font-size: 1rem;
-  color: #2dd4bf;
+  color: rgba(255, 255, 255, 0.785);  /* Soft white that blends with hero */
   margin-bottom: 0.75rem;
+  font-weight: 500;
 }
 
 .awardsHighlight {
   font-weight: 600;
-  color: #fbbf24;
+  color: #ffffff;  
 }
 
 .awardsLogos {
@@ -126,12 +124,12 @@
 }
 
 .awardsLogo {
-  color: #7387a8;
+  color: var(--gray-500);
   font-size: 0.75rem;
 }
 
 .awardsDivider {
-  color: #d1d5db;
+  color: var(--gray-400);
   font-size: 0.75rem;
 }
 
@@ -162,7 +160,7 @@
 .scrollCircle {
   width: 1.5rem;
   height: 2.5rem;
-  border: 2px solid white;
+  border: 2px solid var(--color-text-dark-bg, white);
   border-radius: 9999px;
   display: flex;
   justify-content: center;
@@ -171,12 +169,12 @@
 .scrollDot {
   width: 0.25rem;
   height: 0.75rem;
-  background: white;
+  background: var(--color-text-dark-bg, white);
   border-radius: 9999px;
   margin-top: 0.5rem;
 }
 
-/* Tablet and small desktop */
+/* Tablet and small desktop (768px - 1023px) */
 @media (min-width: 768px) and (max-width: 1023px) {
   .heroSection {
     padding-top: 60px;
@@ -184,11 +182,11 @@
   }
   
   .mainTitle {
-    font-size: 3.5rem;
+    font-size: 2.4rem;
   }
   
   .subheadline {
-    font-size: 1.3rem;
+    font-size: 1rem;
   }
   
   .awardsCard {
@@ -204,26 +202,26 @@
   }
 }
 
-/* Desktop */
+/* Desktop (1024px and above) */
 @media (min-width: 1024px) {
   .heroSection {
-    padding-top: 70px; /* Adjust based on your navbar height */
+    padding-top: 70px;
     min-height: 100vh;
   }
   
   .mainTitle {
-    font-size: 4rem;
+    font-size: 3rem;
   }
   
   .subheadline {
-    font-size: 1.4rem;
+    font-size: 1.1rem;
   }
 }
 
-/* Mobile devices */
+/* Mobile devices (up to 767px) */
 @media (max-width: 767px) {
   .heroSection {
-    padding-top: 60px; /* Adjust based on your mobile navbar height */
+    padding-top: 60px;
     min-height: 100vh;
     background-attachment: scroll;
   }
@@ -267,10 +265,10 @@
   }
 }
 
-/* Small mobile devices */
+/* Small mobile devices (up to 480px) */
 @media (max-width: 480px) {
   .heroSection {
-    padding-top: 50px; /* Adjust based on your mobile navbar height */
+    padding-top: 50px;
     min-height: 90vh;
     background-position: 60% center;
   }
@@ -280,7 +278,7 @@
   }
   
   .subheadline {
-    font-size: 0.9rem;
+    font-size: 15px;
   }
   
   .content {
@@ -301,14 +299,14 @@
   }
 }
 
-/* Extra small devices */
+/* Extra small devices (up to 360px) */
 @media (max-width: 360px) {
   .mainTitle {
-    font-size: 1.6rem;
+    font-size: 1.8rem;
   }
   
   .subheadline {
-    font-size: 0.85rem;
+    font-size: 0.95rem;
   }
   
   .awardsLogos {

@@ -7,7 +7,7 @@ import { motion, AnimatePresence } from 'framer-motion';
 import {
     Sparkles, ArrowRight, Award, MessageSquare, CheckCircle,
     Globe, TrendingUp, FileText, TestTube, Clock, Zap, Shield,
-    Cpu, Radio, Brain, Compass, Code, Cloud, Server, Activity, Wifi, 
+    Cpu, Radio, Brain, Compass, Code, Cloud, Server, Activity, Wifi,
     Thermometer, Gauge, Factory,
     Layers, Settings, BarChart3,
 } from 'lucide-react';
@@ -29,7 +29,7 @@ export default function IoTPage() {
             title: 'Device Management',
             description: 'Provision, monitor, and manage IoT devices at scale with secure remote updates and diagnostics.',
             icon: <Cpu />,
-            color: '#3B82F6',
+            color: '#10b981',
             features: [
                 'Secure device onboarding',
                 'Over-the-air (OTA) updates',
@@ -53,7 +53,7 @@ export default function IoTPage() {
             title: 'Edge Computing',
             description: 'Process data closer to the source for ultra-low latency and reduced cloud costs.',
             icon: <Gauge />,
-            color: '#8B5CF6',
+            color: '#10b981',
             features: [
                 'Real-time analytics at edge',
                 'Local data processing',
@@ -65,7 +65,7 @@ export default function IoTPage() {
             title: 'IoT Data Analytics',
             description: 'Turn raw sensor data into actionable insights with powerful analytics and visualization.',
             icon: <BarChart3 />,
-            color: '#F59E0B',
+            color: '#10b981',
             features: [
                 'Streaming analytics',
                 'Predictive maintenance',
@@ -77,7 +77,7 @@ export default function IoTPage() {
             title: 'Digital Twins',
             description: 'Create virtual replicas of physical assets to simulate, predict, and optimize performance.',
             icon: <Layers />,
-            color: '#EC4899',
+            color: '#10b981',
             features: [
                 'Real-time synchronization',
                 'What-if simulations',
@@ -89,7 +89,7 @@ export default function IoTPage() {
             title: 'IoT Security',
             description: 'End-to-end security for devices, data, and cloud – from hardware root of trust to encrypted communications.',
             icon: <Shield />,
-            color: '#06B6D4',
+            color: '#10b981',
             features: [
                 'Device authentication',
                 'End-to-end encryption',
@@ -102,11 +102,11 @@ export default function IoTPage() {
     // ============ IOT TECHNOLOGIES ============
     const iotTechnologies = [
         { title: 'Sensors & Actuators', description: 'Wide range of industrial, environmental, and motion sensors.', icon: <Thermometer />, color: '#3B82F6' },
-        { title: 'Connectivity Protocols', description: 'MQTT, CoAP, LwM2M, LoRaWAN, NB-IoT, 5G, Wi-Fi, BLE.', icon: <Radio />, color: '#10B981' },
-        { title: 'Edge Gateways', description: 'Ruggedized gateways with local processing and cloud connectivity.', icon: <Server />, color: '#8B5CF6' },
-        { title: 'Cloud Platforms', description: 'AWS IoT, Azure IoT, Google Cloud IoT, and private cloud solutions.', icon: <Cloud />, color: '#F59E0B' },
-        { title: 'AI/ML at the Edge', description: 'TensorFlow Lite, NVIDIA Jetson, OpenVINO for on-device inference.', icon: <Brain />, color: '#EC4899' },
-        { title: 'Digital Twin Platforms', description: 'Azure Digital Twins, AWS IoT TwinMaker, open-source frameworks.', icon: <Layers />, color: '#06B6D4' },
+        { title: 'Connectivity Protocols', description: 'MQTT, CoAP, LwM2M, LoRaWAN, NB-IoT, 5G, Wi-Fi, BLE.', icon: <Radio />, color: '#3b82f6' },
+        { title: 'Edge Gateways', description: 'Ruggedized gateways with local processing and cloud connectivity.', icon: <Server />, color: '#3b82F6' },
+        { title: 'Cloud Platforms', description: 'AWS IoT, Azure IoT, Google Cloud IoT, and private cloud solutions.', icon: <Cloud />, color: '#3b82f6' },
+        { title: 'AI/ML at the Edge', description: 'TensorFlow Lite, NVIDIA Jetson, OpenVINO for on-device inference.', icon: <Brain />, color: '#3b82f6' },
+        { title: 'Digital Twin Platforms', description: 'Azure Digital Twins, AWS IoT TwinMaker, open-source frameworks.', icon: <Layers />, color: '#3b82f6' },
     ];
 
     // ============ IOT SERVICES ============
@@ -115,7 +115,7 @@ export default function IoTPage() {
             title: 'IoT Consulting',
             description: 'Strategic guidance on device selection, connectivity, architecture, and roadmap.',
             icon: <Compass />,
-            color: '#3B82F6',
+            color: '#10b981',
             points: ['Feasibility studies', 'Technology stack selection', 'Proof of concept development']
         },
         {
@@ -129,28 +129,28 @@ export default function IoTPage() {
             title: 'IoT Application Development',
             description: 'Cloud and mobile apps to visualize, control, and analyze IoT data.',
             icon: <Code />,
-            color: '#8B5CF6',
+            color: '#10b981',
             points: ['Web dashboards', 'Mobile apps (iOS/Android)', 'Real-time alerts and notifications']
         },
         {
             title: 'Cloud Integration',
             description: 'Seamless integration with leading IoT cloud platforms and enterprise systems.',
             icon: <Cloud />,
-            color: '#F59E0B',
+            color: '#10b981',
             points: ['AWS IoT Core', 'Azure IoT Hub', 'Custom cloud backends']
         },
         {
             title: 'Data Analytics & ML',
             description: 'Turn IoT data into predictive insights and automated actions.',
             icon: <Brain />,
-            color: '#EC4899',
+            color: '#10b981',
             points: ['Predictive maintenance', 'Anomaly detection', 'Time-series analysis']
         },
         {
             title: 'IoT Support & Maintenance',
             description: 'Ongoing monitoring, updates, and optimization of your IoT ecosystem.',
             icon: <Settings />,
-            color: '#06B6D4',
+            color: '#10b981',
             points: ['24/7 device monitoring', 'OTA updates', 'Security patches']
         },
     ];
@@ -158,46 +158,46 @@ export default function IoTPage() {
     // ============ INDUSTRIES ============
     const industries = [
         {
-                    name: 'Healthcare',
-                    icon: '🏥',
-                    desc: 'Building smart healthcare solutions with HIPAA‑compliance, telemedicine, and patient portals.',
-                    image: 'https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?auto=format&fit=crop&w=800&q=80',
-                    color: '#3B82F6'
-                },
-                {
-                    name: 'Retail & eCommerce',
-                    icon: '🛍️',
-                    desc: 'Enhancing retail journeys with scalable platforms, inventory management, and omnichannel experiences.',
-                    image: 'https://images.unsplash.com/photo-1441986300917-64674bd600d8?auto=format&fit=crop&w=800&q=80',
-                    color: '#10B981'
-                },
-                {
-                    name: 'Media & Entertainment',
-                    icon: '🎬',
-                    desc: 'Custom tech to empower brands – streaming, content delivery, and audience analytics.',
-                    image: 'https://images.unsplash.com/photo-1598128558393-70ff21433be0?auto=format&fit=crop&w=800&q=80',
-                    color: '#8B5CF6'
-                },
+            name: 'Healthcare',
+            icon: '🏥',
+            desc: 'Building smart healthcare solutions with HIPAA‑compliance, telemedicine, and patient portals.',
+            image: 'https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?auto=format&fit=crop&w=800&q=80',
+            color: '#3B82F6'
+        },
+        {
+            name: 'Retail & eCommerce',
+            icon: '🛍️',
+            desc: 'Enhancing retail journeys with scalable platforms, inventory management, and omnichannel experiences.',
+            image: 'https://images.unsplash.com/photo-1441986300917-64674bd600d8?auto=format&fit=crop&w=800&q=80',
+            color: '#10B981'
+        },
+        {
+            name: 'Media & Entertainment',
+            icon: '🎬',
+            desc: 'Custom tech to empower brands – streaming, content delivery, and audience analytics.',
+            image: 'https://images.unsplash.com/photo-1598128558393-70ff21433be0?auto=format&fit=crop&w=800&q=80',
+            color: '#3b82f6'
+        },
     ];
 
     // ============ BENEFITS OF IOT ============
     const iotBenefits = [
         { text: 'Real-time visibility into operations', icon: <Activity />, color: '#3B82F6' },
-        { text: 'Predictive maintenance reduces downtime', icon: <Clock />, color: '#10B981' },
-        { text: 'Improved efficiency & automation', icon: <Zap />, color: '#8B5CF6' },
-        { text: 'Data-driven decision making', icon: <BarChart3 />, color: '#F59E0B' },
-        { text: 'Enhanced safety & compliance', icon: <Shield />, color: '#EC4899' },
-        { text: 'New revenue streams (as-a-service)', icon: <TrendingUp />, color: '#06B6D4' }
+        { text: 'Predictive maintenance reduces downtime', icon: <Clock />, color: '#3b82f6' },
+        { text: 'Improved efficiency & automation', icon: <Zap />, color: '#3b82f6F6' },
+        { text: 'Data-driven decision making', icon: <BarChart3 />, color: '#3b82f6' },
+        { text: 'Enhanced safety & compliance', icon: <Shield />, color: '#3b82f6' },
+        { text: 'New revenue streams (as-a-service)', icon: <TrendingUp />, color: '#3b82f6' }
     ];
 
     // ============ IOT DEVELOPMENT PROCESS ============
     const processSteps = [
-        { step: 1, title: 'Requirement Analysis', description: 'Define use cases, device requirements, and success metrics.', icon: <FileText />, duration: '1-2 weeks', color: '#3B82F6' },
-        { step: 2, title: 'Architecture Design', description: 'Select hardware, connectivity, cloud platform, and security framework.', icon: <Layers />, duration: '2-3 weeks', color: '#10B981' },
-        { step: 3, title: 'Firmware & Hardware Dev', description: 'Develop embedded software, integrate sensors, and test prototypes.', icon: <Cpu />, duration: '4-8 weeks', color: '#8B5CF6' },
-        { step: 4, title: 'Cloud & App Development', description: 'Build IoT cloud backend, APIs, and user-facing dashboards.', icon: <Cloud />, duration: '6-10 weeks', color: '#F59E0B' },
-        { step: 5, title: 'Integration & Testing', description: 'End-to-end system testing, security audits, and performance tuning.', icon: <TestTube />, duration: '2-4 weeks', color: '#EC4899' },
-        { step: 6, title: 'Deployment & Support', description: 'OTA rollout, monitoring setup, and ongoing maintenance.', icon: <Settings />, duration: 'Ongoing', color: '#06B6D4' },
+        { step: 1, title: 'Requirement Analysis', description: 'Define use cases, device requirements, and success metrics.', icon: <FileText />, duration: '1-2 weeks', color: '#ffff' },
+        { step: 2, title: 'Architecture Design', description: 'Select hardware, connectivity, cloud platform, and security framework.', icon: <Layers />, duration: '2-3 weeks', color: '#ffff' },
+        { step: 3, title: 'Firmware & Hardware Dev', description: 'Develop embedded software, integrate sensors, and test prototypes.', icon: <Cpu />, duration: '4-8 weeks', color: '#ffff' },
+        { step: 4, title: 'Cloud & App Development', description: 'Build IoT cloud backend, APIs, and user-facing dashboards.', icon: <Cloud />, duration: '6-10 weeks', color: '#Ffff' },
+        { step: 5, title: 'Integration & Testing', description: 'End-to-end system testing, security audits, and performance tuning.', icon: <TestTube />, duration: '2-4 weeks', color: '#ffff' },
+        { step: 6, title: 'Deployment & Support', description: 'OTA rollout, monitoring setup, and ongoing maintenance.', icon: <Settings />, duration: 'Ongoing', color: '#ffff' },
     ];
 
     // ============ WHY CHOOSE US ============
@@ -211,7 +211,7 @@ export default function IoTPage() {
     ];
 
     // ============ TRUSTED BY ============
-    const trustedCompanies = ['Microsoft', 'Amazon', 'Google', 'IBM', 'SAP', 'Oracle'];
+    // const trustedCompanies = ['Microsoft', 'Amazon', 'Google', 'IBM', 'SAP', 'Oracle'];
 
     const [hoveredIndustry, setHoveredIndustry] = useState<number | null>(null);
 
@@ -221,7 +221,7 @@ export default function IoTPage() {
             <section className={styles.heroSection}>
                 <div className={styles.heroBackground}>
                     <Image
-                        src="https://images.unsplash.com/photo-1558346490-a72e53ae2d4f?auto=format&fit=crop&w=1920&q=80"
+                        src="https://media.istockphoto.com/id/2228764569/photo/hispanic-female-software-developer-coding-at-night-in-office.webp?a=1&b=1&s=612x612&w=0&k=20&c=8nU7XeXb1aKrQ4UbMCJm9B6EYE_ovWqPu5kNnQ7GGJM="
                         alt="IoT Background"
                         fill
                         className={styles.heroImage}
@@ -246,10 +246,10 @@ export default function IoTPage() {
                             We build secure, scalable IoT ecosystems – from edge devices to cloud analytics. Unlock real-time insights, automate processes, and drive efficiency across your business.
                         </p>
                         <div className={styles.heroButtons}>
-                            <Link href="/contact" className={styles.primaryButton}>
+                            {/* <Link href="/contact" className={styles.primaryButton}>
                                 Build Your IoT Solution <ArrowRight size={18} />
-                            </Link>
-                            <Link href="#solutions" className={styles.secondaryButton}>
+                            </Link> */}
+                            <Link href="#solutions" className={styles.primaryButton}>
                                 Explore Solutions
                             </Link>
                         </div>
@@ -289,7 +289,7 @@ export default function IoTPage() {
             </section>
 
             {/* ===== TRUSTED BY SECTION ===== */}
-            <section className={styles.trustedSection}>
+            {/* <section className={styles.trustedSection}>
                 <div className={styles.container}>
                     <p className={styles.trustedLabel}>Trusted by startups and Fortune 500 companies</p>
                     <div className={styles.trustedLogos}>
@@ -307,7 +307,7 @@ export default function IoTPage() {
                         ))}
                     </div>
                 </div>
-            </section>
+            </section> */}
 
             {/* ===== IOT SOLUTIONS SECTION ===== */}
             <section className={styles.solutionsSection} id="solutions">
@@ -541,15 +541,6 @@ export default function IoTPage() {
 
             {/* ===== WHY CHOOSE US SECTION ===== */}
             <section className={styles.whySection}>
-                <div className={styles.whyBackground}>
-                    <Image
-                        src="https://images.unsplash.com/photo-1557804506-669a67965ba0?auto=format&fit=crop&w=1920&q=80"
-                        alt="Why Choose Us"
-                        fill
-                        className={styles.whyBgImage}
-                    />
-                    <div className={styles.whyOverlay}></div>
-                </div>
                 <div className={styles.whyContent}>
                     <div className={styles.container}>
                         <div className={styles.sectionHeader}>

@@ -22,7 +22,7 @@ export default function EnterpriseSoftwarePage() {
 
     // Testimonial matching the quality assurance page layout
     const testimonial = {
-        name: 'James Anderson',
+        name: 'James',
         role: 'Resource Manager',
         content: 'Professional, reliable, and results-driven – BBMcoders delivered exactly what we needed, on time and within budget. Their enterprise software transformed our operations.',
         rating: 5,
@@ -36,7 +36,7 @@ export default function EnterpriseSoftwarePage() {
             title: 'Enterprise Software Development',
             description: 'Transforming complex business challenges into intelligent, scalable software solutions efficiently.',
             icon: <Server className={styles.serviceIcon} />,
-            color: '#3B82F6',
+            color: '#10b981',
             features: ['Custom architecture design', 'Enterprise-grade solution building', 'Robust system development'],
             detailedDescription: 'We build custom enterprise applications tailored to your specific business processes and requirements.',
             link: '/services/software-development' // Replace with actual URL
@@ -46,7 +46,7 @@ export default function EnterpriseSoftwarePage() {
             title: 'Legacy Software Modernization',
             description: 'Upgrade outdated enterprise software for better performance, security, and scalability.',
             icon: <RefreshCw className={styles.serviceIcon} />,
-            color: '#10B981',
+            color: '#10b981',
             features: ['System architecture reengineering', 'Performance enhancement strategies', 'Modern technology migration'],
             detailedDescription: 'Transform your legacy systems into modern, efficient applications without disrupting business operations.',
             link: '/services/software-modernization'
@@ -56,7 +56,7 @@ export default function EnterpriseSoftwarePage() {
             title: 'Enterprise Software Integration',
             description: 'Connecting enterprise systems for seamless data flow and improved process efficiency.',
             icon: <GitMerge className={styles.serviceIcon} />,
-            color: '#8B5CF6',
+            color: '#10b981',
             features: ['API-driven integrations', 'Third-party tool integration', 'Real-time data processing'],
             detailedDescription: 'Integrate disparate systems to create a unified technology ecosystem for your organization.',
             link: null // No link for this service
@@ -66,7 +66,7 @@ export default function EnterpriseSoftwarePage() {
             title: 'Enterprise Mobile Solutions',
             description: 'Secure and seamless mobile solutions for enterprise-level operations across devices.',
             icon: <Smartphone className={styles.serviceIcon} />,
-            color: '#F59E0B',
+            color: '#10b981',
             features: ['Cross-platform mobile apps', 'Secure data synchronization', 'Device management integration'],
             detailedDescription: 'Extend your enterprise capabilities to mobile devices with secure, responsive applications.',
             link: null //'/services/enterprise/mobile-solutions'
@@ -76,7 +76,7 @@ export default function EnterpriseSoftwarePage() {
             title: 'Enterprise UX/UI Design',
             description: 'Deliver intuitive enterprise experiences that drive user satisfaction and productivity.',
             icon: <Settings className={styles.serviceIcon} />,
-            color: '#EC4899',
+            color: '#10b981',
             features: ['User journey mapping', 'Custom UI designs', 'Compliance with accessibility'],
             detailedDescription: 'Create user-centric interfaces that enhance productivity and ensure high adoption rates.',
             link: '/services/ui-ux-design'
@@ -86,7 +86,7 @@ export default function EnterpriseSoftwarePage() {
             title: 'Enterprise Testing & QA',
             description: 'Guarantee software stability, performance, and compliance across all use cases.',
             icon: <ClipboardCheck className={styles.serviceIcon} />,
-            color: '#06B6D4',
+            color: '#10b981',
             features: ['Comprehensive QA strategy', 'Security and compliance testing', 'Automated and manual testing'],
             detailedDescription: 'Ensure your enterprise software meets the highest standards of quality and reliability.',
             link: '/services/quality-assurance-testing'
@@ -102,27 +102,27 @@ export default function EnterpriseSoftwarePage() {
         },
         {
             category: 'HR, Talent & Productivity',
-            color: '#10B981',
+            color: '#3b82f6',
             items: ['Applicant tracking systems', 'Performance review automation', 'Training management software', 'Time tracking tools', 'Payroll calculation integration']
         },
         {
             category: 'Enterprise Finance Management',
-            color: '#8B5CF6',
+            color: '#3b82f6',
             items: ['Expense tracking systems', 'Budget management tools', 'Financial reporting dashboards', 'Tax calculation automation', 'Invoice processing software']
         },
         {
             category: 'Sales, Marketing & Customer Service',
-            color: '#F59E0B',
+            color: '#3b82f6',
             items: ['CRM integration solutions', 'Marketing automation tools', 'Customer support platforms', 'Sales pipeline software', 'Customer analytics dashboards']
         },
         {
             category: 'Sourcing & Stock Management',
-            color: '#EC4899',
+            color: '#3b82f6',
             items: ['AI-powered demand forecasting', 'Automated purchase order management', 'Real-time inventory tracking', 'Supply chain management', 'Multi-channel integration']
         },
         {
             category: 'Asset Management',
-            color: '#06B6D4',
+            color: '#3b82f6',
             items: ['Automated asset logging', 'IoT-based asset tracking', 'Centralized asset repository', 'Multi-location asset control', 'Compliance & security checks']
         }
     ];
@@ -132,7 +132,7 @@ export default function EnterpriseSoftwarePage() {
         {
             category: 'Cloud & DevOps',
             icon: <Cloud />,
-            color: '#3B82F6',
+            color: '#10b981',
             technologies: ['AWS', 'Microsoft Azure', 'Google Cloud Platform', 'Kubernetes', 'Docker', 'Terraform']
         },
         {
@@ -144,25 +144,25 @@ export default function EnterpriseSoftwarePage() {
         {
             category: 'Enterprise Mobility & APIs',
             icon: <Globe />,
-            color: '#8B5CF6',
+            color: '#10b981',
             technologies: ['RESTful APIs', 'GraphQL', 'gRPC', 'Swagger', 'Firebase SDK', 'Apple & Google SDKs']
         },
         {
             category: 'Frontend Technologies',
             icon: <Code />,
-            color: '#F59E0B',
+            color: '#10b981',
             technologies: ['React', 'Angular', 'Vue.js', 'TypeScript', 'Next.js', 'Flutter']
         },
         {
             category: 'Backend Technologies',
             icon: <Server />,
-            color: '#EC4899',
+            color: '#10b981',
             technologies: ['Node.js', 'Python', 'Java', '.NET Core', 'Spring Boot', 'Go']
         },
         {
             category: 'AI/ML & Big Data',
             icon: <Cpu />,
-            color: '#06B6D4',
+            color: '#10b981',
             technologies: ['TensorFlow', 'PyTorch', 'Apache Spark', 'Hadoop', 'Kafka', 'Python Data Stack']
         }
     ];
@@ -207,10 +207,10 @@ export default function EnterpriseSoftwarePage() {
 
     // Stats Section
     const companyStats = [
-        { value: '700+', label: 'Full-time Staff', icon: <Users /> },
-        { value: '20+', label: 'Years Experience', icon: <Award /> },
-        { value: '4500+', label: 'Satisfied Customers', icon: <HeadphonesIcon /> },
-        { value: '2500+', label: 'Successful Projects', icon: <CheckCircle /> }
+        { value: '10+', label: 'Full-time Staff', icon: <Users /> },
+        { value: '5', label: 'Years Experience', icon: <Award /> },
+        { value: '100+', label: 'Satisfied Customers', icon: <HeadphonesIcon /> },
+        { value: '100+', label: 'Successful Projects', icon: <CheckCircle /> }
     ];
 
     // Hiring Models
@@ -224,13 +224,13 @@ export default function EnterpriseSoftwarePage() {
         {
             model: 'Dedicated Hiring Model',
             description: 'For long-term project requirements or complex development process.',
-            color: '#10B981',
+            color: '#3b82f6',
             features: ['Complete control', 'More flexibility', 'Focused and dedicated approach', 'Faster time to market']
         },
         {
             model: 'Time & Material Model',
             description: 'For businesses looking to pay for completed work with flexibility.',
-            color: '#8B5CF6',
+            color: '#3b82f6',
             features: ['Faster project start', 'Flexibility to adapt', 'Pay as you go model', 'Adapt to changing needs']
         }
     ];
@@ -264,11 +264,11 @@ export default function EnterpriseSoftwarePage() {
     const faqs = [
         {
             question: 'Why should I choose BBMcoders as my enterprise software development partner?',
-            answer: 'BBMcoders brings 20+ years of experience in secure enterprise applications development services, with 2500+ successful projects across industries. We combine agile development for faster delivery with deep expertise in complex enterprise architectures.'
+            answer: 'BBMcoders brings 5 years of experience in secure enterprise applications development services, with 100+ successful projects across industries. We combine agile development for faster delivery with deep expertise in complex enterprise architectures.'
         },
         {
             question: 'What types of enterprise software do you specialize in?',
-            answer: 'We specialize in 50+ enterprise software types including ERP systems, CRM solutions, HR management software, financial systems, supply chain management, asset tracking, and industry-specific solutions for healthcare, BFSI, manufacturing, and more.'
+            answer: 'We specialize in 20+ enterprise software types including ERP systems, CRM solutions, HR management software, financial systems, supply chain management, asset tracking, and industry-specific solutions for healthcare, BFSI, manufacturing, and more.'
         },
         {
             question: 'How do you ensure enterprise software security and compliance?',

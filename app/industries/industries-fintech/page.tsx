@@ -13,7 +13,7 @@ import {
   HelpCircle,
   Smartphone,
   Server,
-  Zap,
+  //Zap,
   BarChart3,
   Layers,
   Wallet,
@@ -88,26 +88,26 @@ export default function FinTechPage() {
         "Core banking systems",
       ],
     },
-    {
-      id: 3,
-      title: "Process Automation Solutions",
-      description:
-        "Streamlined operations and improved efficiency through intelligent automation.",
-      icon: <Zap />,
-      color: "#8B5CF6",
-      features: [
-        "Streamline operations",
-        "Payment automation",
-        "Underwriting automation",
-      ],
-    },
+    // {
+    //   id: 3,
+    //   title: "Process Automation Solutions",
+    //   description:
+    //     "Streamlined operations and improved efficiency through intelligent automation.",
+    //   icon: <Zap />,
+    //   color: "#8B5CF6",
+    //   features: [
+    //     "Streamline operations",
+    //     "Payment automation",
+    //     "Underwriting automation",
+    //   ],
+    // },
     {
       id: 4,
       title: "Data Analytics Systems",
       description:
         "Empower businesses with insights to make informed decisions and optimize financial resources.",
       icon: <BarChart3 />,
-      color: "#F59E0B",
+      color: "#3b82f6",
       features: [
         "Data science for finance",
         "Valuable business insights",
@@ -120,7 +120,7 @@ export default function FinTechPage() {
       description:
         "Secure, scalable web platforms for multi-party financial activities and complex transactions.",
       icon: <Layers />,
-      color: "#EC4899",
+      color: "#10b981",
       features: [
         "Secure web platforms",
         "Multi-party activities",
@@ -133,7 +133,7 @@ export default function FinTechPage() {
       description:
         "Secure and convenient payment options – reducing the need for physical cash or cards.",
       icon: <Wallet />,
-      color: "#06B6D4",
+      color: "#3b82f6",
       features: [
         "Fast, secure online payments",
         "Cryptocurrency management",
@@ -146,7 +146,7 @@ export default function FinTechPage() {
       description:
         "AI-powered agents that automate tasks, answer queries, and provide personalized financial advice.",
       icon: <Bot />,
-      color: "#3B82F6",
+      color: "#10b981",
       features: [
         "AI-powered agents",
         "Personalized communication",
@@ -159,7 +159,7 @@ export default function FinTechPage() {
       description:
         "Online platforms connecting financial service providers with individuals and SMBs.",
       icon: <Handshake />,
-      color: "#10B981",
+      color: "#3b82f6",
       features: [
         "P2P lending software",
         "P2P insurance platforms",
@@ -172,7 +172,7 @@ export default function FinTechPage() {
       description:
         "Advanced AI-based cybersecurity tools to instantly identify and prevent malicious behavior.",
       icon: <Shield />,
-      color: "#8B5CF6",
+      color: "#10b981",
       features: [
         "AI-based cybersecurity",
         "Real-time fraud prevention",
@@ -185,7 +185,7 @@ export default function FinTechPage() {
       description:
         "Seamless communication and teamwork using blockchain to centralize collaboration.",
       icon: <Globe />,
-      color: "#F59E0B",
+      color: "#3b82f6",
       features: [
         "Blockchain collaboration",
         "BFSI provider integration",
@@ -201,7 +201,7 @@ export default function FinTechPage() {
       description:
         "Navigate the evolving FinTech landscape with confidence – expert strategic guidance for operational efficiency.",
       icon: <Compass />,
-      color: "#3B82F6",
+      color: "#10b981",
       points: [
         "Expert strategic guidance",
         "Enhanced operational efficiency",
@@ -225,7 +225,7 @@ export default function FinTechPage() {
       description:
         "Revitalize and upgrade outdated systems for modern demands – cloud migration, code overhaul.",
       icon: <RefreshCw />,
-      color: "#8B5CF6",
+      color: "#10b981",
       points: [
         "Smooth cloud migration",
         "Legacy code overhaul",
@@ -237,7 +237,7 @@ export default function FinTechPage() {
       description:
         "Boost your FinTech product visibility with result-driven marketing strategies.",
       icon: <Megaphone />,
-      color: "#F59E0B",
+      color: "#10b981",
       points: [
         "SEO & content strategies",
         "Performance marketing",
@@ -249,7 +249,7 @@ export default function FinTechPage() {
       description:
         "Seamlessly connect your financial systems with third-party platforms, open banking APIs, and legacy cores.",
       icon: <Plug />,
-      color: "#EC4899",
+      color: "#10b981",
       points: [
         "Open Banking API integration",
         "Payment gateway connectivity",
@@ -261,7 +261,7 @@ export default function FinTechPage() {
       description:
         "Scalable, secure cloud infrastructure for high-availability financial applications.",
       icon: <Cloud />,
-      color: "#06B6D4",
+      color: "#10b981",
       points: [
         "AWS/Azure/GCP architecture",
         "Auto-scaling & load balancing",
@@ -284,69 +284,69 @@ export default function FinTechPage() {
       description:
         "Integrate various powerful features into your solution for a rich, compact customer experience.",
       icon: <Plug />,
-      color: "#10B981",
+      color: "#3b82f6",
     },
     {
       title: "AI-Powered Intelligence",
       description:
         "With integrated AI, your solution becomes more intelligent, user-friendly, and ready for the next generation.",
       icon: <Brain />,
-      color: "#8B5CF6",
+      color: "#3b82F6",
     },
     {
       title: "Data Security & Privacy",
       description:
         "Using technologies like Blockchain, we ensure data security and privacy for all FinTech applications.",
       icon: <Lock />,
-      color: "#F59E0B",
+      color: "#3b82f6",
     },
     {
       title: "Automated Fraud Detection",
       description:
         "Our fraud prevention solutions streamline review processes, flag fraudulent activity, and enable rapid action.",
       icon: <Shield />,
-      color: "#EC4899",
+      color: "#3b82f6",
     },
     {
       title: "Immersive UX",
       description:
         "User-friendly applications that provide customers with a hassle-free digital experience.",
       icon: <Figma />,
-      color: "#06B6D4",
+      color: "#3b82f6",
     },
   ];
 
   // ============ WHY PARTNER WITH US (redesigned with background image) ============
   const whyPartner = [
     {
-      text: "India’s Top 1% Software Talent",
+      text: "Nigeria’s Top 10% Software Talent",
       icon: <Award />,
       color: "#3B82F6",
     },
     {
       text: "Trusted by Startups to Fortune 500",
       icon: <Building2 />,
-      color: "#10B981",
+      color: "#3b82f6",
     },
     {
       text: "Idea to Deployment, We Handle All",
       icon: <Rocket />,
-      color: "#8B5CF6",
+      color: "#3b82F6",
     },
     {
       text: "Time-Zone Friendly: Global Presence",
       icon: <Globe />,
-      color: "#F59E0B",
+      color: "#3b82f6",
     },
     {
       text: "Top-tier Data Security Protocols",
       icon: <Lock />,
-      color: "#EC4899",
+      color: "#3b82f6",
     },
     {
       text: "On-time Delivery, No Surprises",
       icon: <Clock />,
-      color: "#06B6D4",
+      color: "#3b82f6",
     },
   ];
 
@@ -380,17 +380,17 @@ export default function FinTechPage() {
     {
       text: "Compliance with GDPR, PCI DSS, and other regulations",
       icon: <BadgeCheck />,
-      color: "#8B5CF6",
+      color: "#3b82f6",
     },
     {
       text: "Encryption in transit and at rest",
       icon: <Shield />,
-      color: "#F59E0B",
+      color: "#10b981",
     },
     {
       text: "Regular software updates and patching",
       icon: <RefreshCw />,
-      color: "#EC4899",
+      color: "#3b82f6",
     },
   ];
 
@@ -418,7 +418,7 @@ export default function FinTechPage() {
       name: "AI & Machine Learning",
       desc: "Fraud detection, risk assessment, personalized recommendations",
       icon: <Brain />,
-      color: "#3B82F6",
+      color: "#10b981",
     },
     {
       name: "Blockchain & DLT",
@@ -430,31 +430,31 @@ export default function FinTechPage() {
       name: "Robotic Process Automation (RPA)",
       desc: "Data entry, report generation, compliance checks, onboarding",
       icon: <Repeat />,
-      color: "#8B5CF6",
+      color: "#10b981",
     },
     {
       name: "Internet of Things (IoT)",
       desc: "Personalized services, behavioral risk assessment, real-time fraud monitoring",
       icon: <Radio />,
-      color: "#F59E0B",
+      color: "#10b981",
     },
     {
       name: "Cloud Computing",
       desc: "Scalable, cost-effective infrastructure and secure data storage",
       icon: <Cloud />,
-      color: "#EC4899",
+      color: "#10b981",
     },
     {
       name: "Open Banking & APIs",
       desc: "Secure data sharing, integration with banking systems",
       icon: <Plug />,
-      color: "#06B6D4",
+      color: "#10b981",
     },
     {
       name: "Biometrics",
       desc: "Fingerprint, facial recognition, voice recognition for secure authentication",
       icon: <Scan />,
-      color: "#3B82F6",
+      color: "#10b981",
     },
   ];
 
@@ -474,14 +474,14 @@ export default function FinTechPage() {
   ];
 
   // ============ TRUSTED BY ============
-  const trustedCompanies = [
-    "Microsoft",
-    "Amazon",
-    "Google",
-    "IBM",
-    "SAP",
-    "Oracle",
-  ];
+  // const trustedCompanies = [
+  //   "Microsoft",
+  //   "Amazon",
+  //   "Google",
+  //   "IBM",
+  //   "SAP",
+  //   "Oracle",
+  // ];
 
   // ============ INDUSTRIES ============
   const industries = [
@@ -507,7 +507,7 @@ export default function FinTechPage() {
       desc: "Telemedicine platforms, patient portals, health tracking apps, and medical management systems with HIPAA-compliant security.",
       image:
         "https://images.unsplash.com/photo-1551601651-2a8555f1a136?auto=format&fit=crop&w=800&q=80",
-      color: "#8B5CF6",
+      color: "#3b82F6",
     },
     {
       name: "Media & Entertainment",
@@ -515,7 +515,7 @@ export default function FinTechPage() {
       desc: "Engagement-focused software to enhance content delivery, streaming platforms, digital publishing, content management, and audience analytics for media companies.",
       image:
         "https://images.unsplash.com/photo-1556742044-3c52d6e88c62?auto=format&fit=crop&w=800&q=80",
-      color: "#F59E0B",
+      color: "#10b981",
     },
     {
       name: "Education & eLearning",
@@ -523,7 +523,7 @@ export default function FinTechPage() {
       desc: "Custom eLearning solutions for changing needs including LMS platforms, virtual classrooms, educational apps, skill assessment tools, and corporate training systems.",
       image:
         "https://images.unsplash.com/photo-1593444285563-4479fb28226e?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTl8fGVkdWNhdGlvbiUyMGFuZCUyMGUtbGVhcm5pbmd8ZW58MHx8MHx8fDA%3D",
-      color: "#EC4899",
+      color: "#3b82f6",
     },
     {
       name: "Manufacturing",
@@ -531,7 +531,7 @@ export default function FinTechPage() {
       desc: "Industrial software solutions for smart factories, supply chain optimization, quality control, IoT integration, and predictive maintenance systems.",
       image:
         "https://plus.unsplash.com/premium_photo-1664297997167-88170c57bc35?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OXx8bWFudWZhY3R1cmluZ3xlbnwwfHwwfHx8MA%3D%3D",
-      color: "#06B6D4",
+      color: "#10b981",
     },
   ];
 
@@ -620,7 +620,7 @@ export default function FinTechPage() {
                 Start FinTech Solution
                 <ArrowRight className={styles.buttonIcon} />
               </Link>
-              
+
             </motion.div>
           </motion.div>
 
@@ -830,16 +830,6 @@ export default function FinTechPage() {
 
       {/* ===== WHY PARTNER WITH US – REDESIGNED WITH BACKGROUND IMAGE ===== */}
       <section className={styles.partnerSection}>
-        <div className={styles.partnerBackground}>
-          <Image
-            src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=1920&q=80"
-            alt="FinTech partnership background"
-            fill
-            className={styles.partnerBgImage}
-            priority
-          />
-          <div className={styles.partnerOverlay}></div>
-        </div>
         <div className={styles.partnerContent}>
           <div className={styles.sectionHeader}>
             <h2 className={styles.sectionTitle} style={{ color: "white" }}>
@@ -905,7 +895,7 @@ export default function FinTechPage() {
                 <ul className={styles.challengeList}>
                   {bankingChallenges.map((item, idx) => (
                     <li key={idx}>
-                      <AlertTriangle size={16} style={{ color: "#EF4444" }} />
+                      <AlertTriangle size={16} style={{ color: "#3b82f6" }} />
                       <span>{item}</span>
                     </li>
                   ))}
@@ -977,7 +967,7 @@ export default function FinTechPage() {
           <div className={styles.complianceImageWrapper}>
             <div className={styles.complianceImageOverlay}></div>
             <Image
-              src="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?auto=format&fit=crop&w=1200&q=80"
+              src="https://plus.unsplash.com/premium_photo-1679923813998-6603ee2466c5?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NXx8ZmluYW5jZXxlbnwwfHwwfHx8MA%3D%3D"
               alt="Regulatory compliance"
               fill
               className={styles.complianceImage}
@@ -1215,7 +1205,7 @@ export default function FinTechPage() {
                 Build Your FinTech Solution
                 <ArrowRight className={styles.buttonIcon} />
               </Link>
-              
+
             </div>
           </div>
         </div>

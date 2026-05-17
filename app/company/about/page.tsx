@@ -39,121 +39,95 @@ export default function AboutPage() {
         },
     ];
 
-    // ----- TEAM MEMBERS (with image placeholder) 
+    // ----- TEAM MEMBERS (with LinkedIn URLs) -----
     const teamMembers = [
         {
-            name: 'Ben',
+            name: 'Bernard U. Odefe',
             role: 'Chief Executive Officer',
-            bio: 'An entrepreneur at heart with love for technology, Ben uniquely blends business analysis, strategy, targeted objectives, and ROI with IT solutions.',
-            image: '/images/user.png', 
-        },
-        {
-            name: 'Precious',
-            role: 'Software Engineer',
-            bio: 'Precious oversees BBMcoders\'s vast engineering organization, which drives the company\'s core programming.',
+            bio: 'CEO & -CO Founder. Technical Lead, Software Architect, System Analyst, Server Engineer and Architectural Specification Writer.',
             image: '/images/user.png',
         },
         {
-            name: 'Adejoke',
+            name: 'Precious Uyomere k.',
+            role: 'Software Engineer',
+            bio: 'Precious is an NSE-certified Software Engineer with five years of experience building scalable systems, driving BBMcoders’ core engineering with precision and reliability.',
+            image: '/images/user.png',
+        },
+        {
+            name: 'Adejoke Adejoke',
             role: 'Frontend Developer',
-            bio: 'Adejoke heads the frontend development department, where she manages the entire frontend team.',
+            bio: 'Adejoke is a React and Next.js Frontend Developer who leads her team in building fast, scalable, user-focused web experiences, turning ideas into high-performing products.',
             image: '/images/user.png',
         },
         {
-            name: 'Stephen',
+            name: 'Stephen Agbo',
             role: 'Software Engineer',
-            bio: 'Stephen leads the Mobile App team, responsible for the company\'s mobile app development.',
+            bio: 'Stephen is a Mobile App Developer who leads the team in building intuitive, high-performance applications, driving seamless mobile experiences from concept to launch.',
             image: '/images/user.png',
         },
-        // {
-        //     name: 'Ngozi Eze',
-        //     role: 'Head Of Resourcing & Partnerships',
-        //     bio: 'Ngozi is a strategist and digital thought leader who bridges technology and client satisfaction.',
-        //     image: '/images/user.png',
-        // },
-        // {
-        //     name: 'Tunde Balogun',
-        //     role: 'Technical Manager',
-        //     bio: 'With a solid technical background, Tunde manages client communication, project management, and deliveries.',
-        //     image: '/images/user.png',
-        // },
-        // {
-        //     name: 'Yemi Adesina',
-        //     role: 'VP - Business Development',
-        //     bio: 'More than 15 years experience of background trading with emerging technologies; helps startups and SMEs build their co-branded teams.',
-        //     image: '/images/user.png',
-        // },
-        // {
-        //     name: 'Kemi Akintola',
-        //     role: 'Sr. IT Executive',
-        //     bio: 'Leads IT Department and responsible for providing high-quality technical services and finding appropriate tools to automate and accomplish jobs timely.',
-        //     image: '/images/user.png',
-        // },
+        {
+            name: 'Goodness Owolabi',
+            role: 'Fullstack Developer',
+            bio: 'Goodness is a software engineer who builds innovative, scalable solutions, turning complex challenges into efficient, high-impact products.',
+            image: '/images/user.png',
+        },
     ];
 
     // ----- TIMELINE -----
     const timeline = [
-        { year: '2004', event: 'BBMcoders was founded in Lagos, Nigeria, with a vision to deliver IT outsourcing services worldwide.' },
-        { year: '2010', event: 'Expanded operations to serve clients across Africa, Europe, and North America.' },
-        { year: '2015', event: 'Reached 500+ skilled professionals and launched dedicated development centers.' },
-        { year: '2020', event: 'Celebrated 16 years of excellence with 2500+ successful projects delivered globally.' },
-        { year: '2024', event: '20+ years of proud existence, trusted by startups to Fortune 500 companies.' },
-        { year: '2026', event: 'Accelerated digital transformation services with AI-driven solutions and strengthening global partnerships.' }
+    { year: '2021', event: 'BBMcoders was founded in Lagos, Nigeria, with a vision to deliver IT outsourcing services worldwide.' },
+    { year: '2023', event: 'Expanded operations to serve clients across Africa, Europe, and North America.' },
+    { year: '2025', event: 'Reached 100+ skilled professionals and successfully delivered 90+ projects globally.' },
+    { year: '2026', event: 'Accelerated digital transformation services with AI-driven solutions and strengthening global partnerships.' }
     ];
 
-    // ----- AWARDS & RECOGNITIONS (placeholder) -----
-    const awards = [
-        { name: 'Great Place to Work', year: '2023', logo: '🏆' },
-        { name: 'Top Software Developer', year: '2022', logo: '⭐' },
-        { name: 'Best IT Employer', year: '2021', logo: '🎖️' },
-        { name: 'Fastest Growing Tech Company', year: '2020', logo: '🚀' },
-    ];
+    // ----- AWARDS & RECOGNITIONS -----
+    // const awards = [
+    // { name: 'Rising Tech Star', year: '2022', logo: '⭐' },
+    // { name: 'Best New IT Company - Nigeria', year: '2022', logo: '🏆' },
+    // { name: 'Top Emerging Outsourcing Partner', year: '2023', logo: '🚀' },
+    // { name: 'Excellent Customer Satisfaction', year: '2024', logo: '💎' },
+    // ];
 
-    // ----- CLIENT TESTIMONIALS (with image placeholder) -----
+    // ----- CLIENT TESTIMONIALS -----
     const testimonials = [
-    {
-        name: 'Daniel',
-        // role: 'CEO, BrightPath Solutions',
-        content: 'Working with BBMcoders was a smooth experience from start to finish. Their team quickly understood our requirements and delivered exactly what we envisioned, on time and within budget.',
-        image: '/images/user.png',
-    },
-    {
-        name: 'Morris',
-        // role: 'Product Manager, NexaCore',
-        content: 'The level of professionalism and communication from BBMcoders stood out. They kept us informed throughout the project and handled every challenge with confidence.',
-        image: '/images/user.png',
-    },
-    {
-        name: 'Samuel Okoye',
-        // role: 'Founder, AgroLink Africa',
-        content: 'BBMcoders helped us turn our idea into a fully functional platform in record time. Their technical knowledge and commitment made a huge difference for our startup.',
-        image: '/images/user.png',
-    },
-    {
-        name: 'Laura',
-        // role: 'Operations Lead, FinEdge Group',
-        content: 'We were impressed by how detail-oriented the BBMcoders team is. They delivered a reliable and scalable solution that exceeded our expectations.',
-        image: '/images/user.png',
-    },
-    {
-        name: 'Michael',
-        // role: 'Director, UrbanTech Labs',
-        content: 'From design to deployment, BBMcoders demonstrated real expertise. Their ability to translate our ideas into a clean, user-friendly product was outstanding.',
-        image: '/images/user.png',
-    },
-    {
-        name: 'Fatima Bello',
-        // role: 'Co-founder, HealthBridge Nigeria',
-        content: 'Choosing BBMcoders was one of the best decisions we made. Their support, speed, and quality of work have been exceptional throughout our collaboration.',
-        image: '/images/user.png',
-    },
+        {
+            name: 'Daniel',
+            content: 'Working with BBMcoders was a smooth experience from start to finish. Their team quickly understood our requirements and delivered exactly what we envisioned, on time and within budget.',
+            image: '/images/user.png',
+        },
+        {
+            name: 'Morris',
+            content: 'The level of professionalism and communication from BBMcoders stood out. They kept us informed throughout the project and handled every challenge with confidence.',
+            image: '/images/user.png',
+        },
+        {
+            name: 'Samuel',
+            content: 'BBMcoders helped us turn our idea into a fully functional platform in record time. Their technical knowledge and commitment made a huge difference for our startup.',
+            image: '/images/user.png',
+        },
+        {
+            name: 'Laura',
+            content: 'We were impressed by how detail-oriented the BBMcoders team is. They delivered a reliable and scalable solution that exceeded our expectations.',
+            image: '/images/user.png',
+        },
+        {
+            name: 'Michael',
+            content: 'From design to deployment, BBMcoders demonstrated real expertise. Their ability to translate our ideas into a clean, user-friendly product was outstanding.',
+            image: '/images/user.png',
+        },
+        {
+            name: 'Fatima Bello',
+            content: 'Choosing BBMcoders was one of the best decisions we made. Their support, speed, and quality of work have been exceptional throughout our collaboration.',
+            image: '/images/user.png',
+        },
     ];
 
     // ----- COMPANY STATS -----
     const companyStats = [
-        { value: '700+', label: 'Full-time Staff', icon: <Users />, description: 'Top 1% industry talent' },
-        { value: '20+', label: 'Years Experience', icon: <Award />, description: 'Since 2004' },
-        { value: '4500+', label: 'Satisfied Clients', icon: <MessageSquare />, description: 'Global client base' },
+        { value: '10+', label: 'Full-time Staff', icon: <Users />, description: 'Top 10% industry talent' },
+        { value: '5', label: 'Years Experience', icon: <Award />, description: 'Since 2021' },
+        { value: '100+', label: 'Satisfied Clients', icon: <MessageSquare />, description: 'Global client base' },
     ];
 
     return (
@@ -181,10 +155,10 @@ export default function AboutPage() {
                             <Sparkles size={16} /> About BBMcoders
                         </div>
                         <h1 className={styles.heroTitle}>
-                            We Are – Software Development Company <span className={styles.highlight}>Since 2004</span>
+                            We Are – Software Development Company <span className={styles.highlight}>Since 2021</span>
                         </h1>
                         <p className={styles.heroDescription}>
-                            We combine business domain knowledge, proven methodologies, and the technology expertise of 700+ skilled software professionals to yield high-quality solutions that add value to businesses.
+                            We combine business domain knowledge, proven methodologies, and the technology expertise of 10+ skilled software professionals to yield high-quality solutions that add value to businesses.
                         </p>
                         <Link href="/contact" className={styles.heroButton}>
                             Start a Conversation <ArrowRight size={18} />
@@ -206,14 +180,11 @@ export default function AboutPage() {
                                 We help businesses unveil and satisfy demand for digital transformation by providing engineering and consulting services that foster competitiveness and innovation.
                             </p>
                             <div className={styles.missionFounder}>
-                                {/* <div className={styles.founderAvatar}>
-                                    <Image src="/images/user.png" alt="Adebayo Ogunlesi" width={60} height={60} className={styles.avatarImage} />
-                                </div> */}
-                                  <div className={styles.founderAvatar} style={{ backgroundColor: '#3B82F6', color: 'white' }}>
-                                    BE
+                                <div className={styles.founderAvatar} style={{ backgroundColor: '#3B82F6', color: 'white' }}>
+                                    BO
                                 </div>
                                 <div className={styles.founderInfo}>
-                                    <h4>Ben</h4>
+                                    <h4>Bernard U. Odefe</h4>
                                     <p>CEO, BBMcoders</p>
                                 </div>
                             </div>
@@ -267,10 +238,10 @@ export default function AboutPage() {
                 <div className={styles.container}>
                     <div className={styles.sectionHeader}>
                         <h2 className={styles.sectionTitle}>
-                            20+ Years of <span className={styles.titleHighlight}>Proud Existence</span>
+                            5 Years of <span className={styles.titleHighlight}>Proud Existence</span>
                         </h2>
                         <p className={styles.sectionDescription}>
-                            BBMcoders set its first stone down in 2004 in Lagos, Nigeria, and has been thriving ever since. We deliver exceptional technology solutions for world-class businesses in every industry – from dynamic startups and SMBs to Fortune 500 companies.
+                            BBMcoders set its first stone down in 2021 in Lagos, Nigeria, and has been thriving ever since. We deliver exceptional technology solutions for world-class businesses in every industry – from dynamic startups and SMBs to Fortune 500 companies.
                         </p>
                     </div>
                     <div className={styles.timelineGrid}>
@@ -292,7 +263,7 @@ export default function AboutPage() {
             </section>
 
             {/* ===== AWARDS SECTION ===== */}
-            <section className={styles.awardsSection}>
+            {/* <section className={styles.awardsSection}>
                 <div className={styles.container}>
                     <div className={styles.sectionHeader}>
                         <h2 className={styles.sectionTitle}>
@@ -319,9 +290,9 @@ export default function AboutPage() {
                         ))}
                     </div>
                 </div>
-            </section>
+            </section> */}
 
-            {/* ===== TEAM SECTION ===== */}
+            {/* ===== TEAM SECTION with LinkedIn links ===== */}
             <section className={styles.teamSection}>
                 <div className={styles.container}>
                     <div className={styles.sectionHeader}>
@@ -401,7 +372,6 @@ export default function AboutPage() {
                                     </div>
                                     <div>
                                         <h4 className={styles.testimonialName}>{testimonial.name}</h4>
-                                        {/* <p className={styles.testimonialRole}>{testimonial.role}</p> */}
                                     </div>
                                 </div>
                                 <p className={styles.testimonialContent}>&quot;{testimonial.content}&quot;</p>

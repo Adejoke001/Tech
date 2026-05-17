@@ -33,7 +33,6 @@ import {
   Minus,
   Heart,
   ShoppingCart,
-  ShieldCheck,
   Server,
   // Smartphone as SmartphoneIcon,
 } from "lucide-react";
@@ -48,7 +47,7 @@ export default function ProductDevelopment() {
   // const isStatsInView = useInView(statsRef, { once: true, amount: 0.3 });
 
   const { scrollYProgress } = useScroll();
- const heroOpacity = useTransform(scrollYProgress, [0, 0.3], [1, 0.7]);
+  const heroOpacity = useTransform(scrollYProgress, [0, 0.3], [1, 0.7]);
   // const heroScale = useTransform(scrollYProgress, [0, 0.2], [1, 1]);
 
   // Counter animation for stats
@@ -150,7 +149,7 @@ export default function ProductDevelopment() {
       description:
         "Gather requirements, define scope, conduct market research, and prevent scope creep through detailed analysis.",
       icon: <Search className={styles.processIcon} />,
-      color: "#8b5cf6",
+      color: "#10b981",
       duration: "1-2 Weeks",
     },
     {
@@ -159,7 +158,7 @@ export default function ProductDevelopment() {
       description:
         "Assemble top experts, define team structure, allocate resources, and build a scalable product roadmap.",
       icon: <UsersIcon className={styles.processIcon} />,
-      color: "#10b981",
+      color: "#3b82f6",
       duration: "1 Week",
     },
     {
@@ -168,7 +167,7 @@ export default function ProductDevelopment() {
       description:
         "Generate detailed cost estimates, budget planning, ROI analysis, and optimize project expenses.",
       icon: <DollarSign className={styles.processIcon} />,
-      color: "#f59e0b",
+      color: "#10b981",
       duration: "3-5 Days",
     },
     {
@@ -177,7 +176,7 @@ export default function ProductDevelopment() {
       description:
         "Identify potential threats, create mitigation strategies, ensure compliance, and guarantee smooth development.",
       icon: <AlertTriangle className={styles.processIcon} />,
-      color: "#ef4444",
+      color: "#3b82f6",
       duration: "Ongoing",
     },
     {
@@ -186,7 +185,7 @@ export default function ProductDevelopment() {
       description:
         "Implement structured change management processes, stakeholder communication, and keep projects on track.",
       icon: <GitMerge className={styles.processIcon} />,
-      color: "#06b6d4",
+      color: "#10b981",
       duration: "Ongoing",
     },
     {
@@ -195,7 +194,7 @@ export default function ProductDevelopment() {
       description:
         "Review KPIs, performance metrics, user feedback, and gauge project health and success at each milestone.",
       icon: <TargetIcon className={styles.processIcon} />,
-      color: "#8b5cf6",
+      color: "#3b82f6",
       duration: "Weekly",
     },
     {
@@ -351,7 +350,7 @@ export default function ProductDevelopment() {
       description:
         "Harness the power of AI-driven vision systems to automate tasks, enhance security, improve decision-making, and create immersive user experiences across various industries.",
       icon: <Eye className={styles.trendIcon} />,
-      color: "#8b5cf6",
+      color: "#10b981",
       applications: [
         "Facial Recognition",
         "Object Detection",
@@ -365,7 +364,7 @@ export default function ProductDevelopment() {
       description:
         "Connect and control smart devices with intelligent IoT solutions that optimize operations, enhance efficiency, enable predictive maintenance, and create smart ecosystems.",
       icon: <CpuIcon className={styles.trendIcon} />,
-      color: "#f59e0b",
+      color: "#3b82f6",
       applications: [
         "Smart Home Systems",
         "Industrial IoT",
@@ -379,7 +378,7 @@ export default function ProductDevelopment() {
       description:
         "Blend the digital and physical worlds with immersive AR/VR experiences for business, entertainment, training, retail, and industrial applications with 3D visualization.",
       icon: <Globe className={styles.trendIcon} />,
-      color: "#ef4444",
+      color: "#10b981",
       applications: [
         "AR Shopping",
         "VR Training",
@@ -393,7 +392,7 @@ export default function ProductDevelopment() {
       description:
         "Process data closer to the source with edge computing solutions that reduce latency, improve response times, enhance security, and enable real-time processing for critical applications.",
       icon: <Server className={styles.trendIcon} />,
-      color: "#06b6d4",
+      color: "#3b82f6",
       applications: [
         "Real-time Analytics",
         "Autonomous Systems",
@@ -477,18 +476,18 @@ export default function ProductDevelopment() {
       link: "/industries/industries-education",
     },
     {
-  name: "Internet of Things (IoT)",
-  description: "Building secure, scalable IoT ecosystems that connect devices, process real‑time data, and enable smart automation across industries like manufacturing, healthcare, and smart cities.",
-  icon: "📡",
-  details: [
-    "IoT Platform Development",
-    "Device Management & Connectivity",
-    "Real‑time Data Analytics",
-    "Edge Computing Solutions",
-    "IoT Security & Compliance"
-  ],
-  link: "/industries/industries-iot"
-}
+      name: "Internet of Things (IoT)",
+      description: "Building secure, scalable IoT ecosystems that connect devices, process real‑time data, and enable smart automation across industries like manufacturing, healthcare, and smart cities.",
+      icon: "📡",
+      details: [
+        "IoT Platform Development",
+        "Device Management & Connectivity",
+        "Real‑time Data Analytics",
+        "Edge Computing Solutions",
+        "IoT Security & Compliance"
+      ],
+      link: "/industries/industries-iot"
+    }
   ];
 
   // FAQs with toggle functionality
@@ -497,7 +496,7 @@ export default function ProductDevelopment() {
       question:
         "Why should I choose BBMcoders for software engineering, consulting, and outsourcing?",
       answer:
-        "We are a highly experienced and qualified team of professionals with a proven track record of delivering quality software solutions to clients. Here are a few reasons to choose us: 675+ vetted developers, expertise across 50+ tech stacks, proven delivery in complex enterprise projects, 97% client satisfaction rate, and 20+ years of industry experience.",
+        "We are a highly experienced and qualified team of professionals with a proven track record of delivering quality software solutions to clients. Here are a few reasons to choose us: 10+ vetted developers, proven delivery in complex enterprise projects, 97% client satisfaction rate, and 5+ years of industry experience.",
     },
     {
       question:
@@ -506,9 +505,9 @@ export default function ProductDevelopment() {
         "Yes! We offer a free trial to clients worldwide. This is to give our potential customers a risk-free way to try our software development services before committing to long-term engagement. We strongly believe in our products and services and want to allow everyone to experience firsthand the value we can bring. Just fill out a form and connect with our team.",
     },
     {
-      question: "How much does outsourcing software development to India cost?",
+      question: "How much does outsourcing software development cost?",
       answer:
-        "The cost of outsourcing software development depends on several factors such as: size and build of the application, features & third-party integrations, APIs, localizations, backend complexity, cross-platform requirements, platforms, and more. Share your basic idea, and we will provide you with an ETA and estimated cost. Typically, projects range from $15,000 for MVPs to $100,000+ for enterprise solutions.",
+        "The cost of outsourcing software development depends on several factors such as: size and build of the application, features & third-party integrations, APIs, localizations, backend complexity, cross-platform requirements, platforms, and more. Share your basic idea, and we will provide you with an ETA and estimated cost. Typically, projects range from $5,000 for MVPs to $100,000+ for enterprise solutions.",
     },
     {
       question:
@@ -525,16 +524,16 @@ export default function ProductDevelopment() {
     {
       question: "How do you handle legacy modernization without downtime?",
       answer:
-        "We migrate modules step-by-step while your legacy app keeps running. With blue-green deployments, thorough testing, and real-time monitoring, we ensure each change goes live seamlessly. This method minimizes risk, prevents service disruption, and allows continuous improvements without affecting your day-to-day operations. We've successfully modernized over 200 legacy systems with zero downtime.",
+        "We migrate modules step-by-step while your legacy app keeps running. With blue-green deployments, thorough testing, and real-time monitoring, we ensure each change goes live seamlessly. This method minimizes risk, prevents service disruption, and allows continuous improvements without affecting your day-to-day operations. We've successfully delivered 100+ digital solutions with 97% client satisfaction",
     },
   ];
 
   return (
     <>
       {/* Hero Section with Background Image */}
-      <motion.section 
+      <motion.section
         className={styles.heroSection}
-        style={{ opacity: heroOpacity}}
+        style={{ opacity: heroOpacity }}
       >
         <div className={styles.heroBackground}></div>
         <div className={styles.overlay}></div>
@@ -575,10 +574,10 @@ export default function ProductDevelopment() {
                 transition={{ delay: 0.6, duration: 0.5 }}
                 className={styles.heroStats}
               >
-                <div className={styles.statMini}>
-                  <div className={styles.statMiniNumber}>20+</div>
+                {/* <div className={styles.statMini}>
+                  <div className={styles.statMiniNumber}>5</div>
                   <div className={styles.statMiniLabel}>Years Experience</div>
-                </div>
+                </div> */}
                 <div className={styles.statMini}>
                   <div className={styles.statMiniNumber}>97%</div>
                   <div className={styles.statMiniLabel}>
@@ -586,7 +585,7 @@ export default function ProductDevelopment() {
                   </div>
                 </div>
                 <div className={styles.statMini}>
-                  <div className={styles.statMiniNumber}>2500+</div>
+                  <div className={styles.statMiniNumber}>100+</div>
                   <div className={styles.statMiniLabel}>Projects</div>
                 </div>
               </motion.div>
@@ -600,10 +599,10 @@ export default function ProductDevelopment() {
                 <Link href="/contact" className={styles.linkWrapper}>
                   <motion.button
                     className={styles.primaryButton}
-                    whileHover={{ scale: 1.05 }}
+                    whileHover={{ y: -2 }}
                     whileTap={{ scale: 0.95 }}
                   >
-                    Book Free Consultation
+                    Book Consultation
                     <ArrowRight className={styles.buttonIcon} />
                   </motion.button>
                 </Link>
@@ -655,7 +654,7 @@ export default function ProductDevelopment() {
                 <div className={styles.testimonialFooter}>
                   <div className={styles.companyBadge}>
                     <Building2 className={styles.badgeIcon} />
-                    Fortune 500 Company
+                    Startups to Enterprise
                   </div>
                   {/* <Link href="/testimonials" className={styles.readMoreLink}>
                     Read More
@@ -665,7 +664,7 @@ export default function ProductDevelopment() {
               </div>
 
               {/* Trust Badges - Smaller */}
-              <div className={styles.trustBadges}>
+              {/* <div className={styles.trustBadges}>
                 <div className={styles.trustBadge}>
                   <ShieldCheck className={styles.badgeIcon} />
                   <span>ISO 27001 Certified</span>
@@ -674,12 +673,12 @@ export default function ProductDevelopment() {
                   <CheckCircle className={styles.badgeIcon} />
                   <span>GDPR Compliant</span>
                 </div>
-              </div>
+              </div> */}
             </motion.div>
           </div>
         </div>
       </motion.section>
-    
+
 
       {/* Growth Stage Solutions */}
       <section className={styles.growthSection}>
@@ -982,7 +981,7 @@ export default function ProductDevelopment() {
               const column = index % columnCount;
               const row = Math.floor(index / columnCount);
               const isLight = (row + column) % 2 === 0;
-              const backgroundColor = isLight ? "#fff5e6" : "#ffdc94";
+              const backgroundColor = isLight ? "var(--gray-100, #f9fafb)" : "var(--gray-200, #f3f4f6)";
 
               return (
                 <motion.div
@@ -1212,7 +1211,7 @@ export default function ProductDevelopment() {
           >
             <h2 className={styles.sectionTitle}>
               Frequently{" "}
-              <span className={styles.titleAccent}>Asked Questions</span>
+              <span className={styles.title}>Asked Questions</span>
             </h2>
             <p className={styles.sectionDescription}>
               Have questions related to Software Engineering and IT Outsourcing?

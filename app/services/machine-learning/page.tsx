@@ -51,7 +51,7 @@ export default function MachineLearningPage() {
         "Custom machine learning solutions tailored to your business needs, leveraging cutting-edge algorithms and data analysis techniques.",
       icon: <Brain className={styles.serviceIcon} />,
       image: "/images/mldev.jpg",
-      color: "#60a5fa",
+      color: "#10b981", // Blue
       features: [
         "Custom Algorithms",
         "Predictive Models",
@@ -66,7 +66,7 @@ export default function MachineLearningPage() {
       icon: <Cpu className={styles.serviceIcon} />,
       image:
         "https://plus.unsplash.com/premium_photo-1726079247228-993af4c05db8?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8bWFjaGluZSUyMGxlYXJuaW5nJTIwY29uc3VsdGluZ3xlbnwwfHwwfHx8MA%3D%3D",
-      color: "#34d399",
+      color: "#10b981", // Green
       features: ["CI/CD Pipelines", "Model Monitoring", "Automated Deployment"],
     },
     {
@@ -76,7 +76,7 @@ export default function MachineLearningPage() {
         "Unlock the power of computer vision with our advanced solutions, enabling automated image and video analysis for diverse applications.",
       icon: <Eye className={styles.serviceIcon} />,
       image: "/images/comvision.jpg",
-      color: "#8b5cf6",
+      color: "#10b981", // Blue
       features: [
         "Object Detection",
         "Facial Recognition",
@@ -91,7 +91,7 @@ export default function MachineLearningPage() {
       icon: <TrendingUp className={styles.serviceIcon} />,
       image:
         "https://plus.unsplash.com/premium_photo-1683120963435-6f9355d4a776?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NXx8YXJ0aWZpY2lhbCUyMGludGVsbGlnZW5jZXxlbnwwfHwwfHx8MA%3D%3D",
-      color: "#f59e0b",
+      color: "#10b981", // Green
       features: [
         "Model Tuning",
         "Performance Optimization",
@@ -106,7 +106,7 @@ export default function MachineLearningPage() {
       icon: <Bot className={styles.serviceIcon} />,
       image:
         "https://images.unsplash.com/photo-1563968743333-044cef800494?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8N3x8cm9ib3RpYyUyMHByb2Nlc3MlMjBhdXRvbWF0aW9ufGVufDB8fDB8fHww",
-      color: "#ef4444",
+      color: "#10b981", // Blue
       features: [
         "Process Automation",
         "Intelligent Bots",
@@ -121,7 +121,7 @@ export default function MachineLearningPage() {
       icon: <MessageSquare className={styles.serviceIcon} />,
       image:
         "https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?auto=format&fit=crop&w=600",
-      color: "#3b82f6",
+      color: "#10b981", // Green
       features: [
         "Sentiment Analysis",
         "Chatbot Development",
@@ -138,7 +138,7 @@ export default function MachineLearningPage() {
       description:
         "Building smart healthcare solutions with HIPAA compliance, medical device testing, and EHR validation.",
       icon: "🏥",
-      color: "#34d399",
+      color: "#10b981", // Green
       solutions: [
         "HIPAA Compliance",
         "Medical Device Testing",
@@ -152,7 +152,7 @@ export default function MachineLearningPage() {
       description:
         "Disrupting traditional finance with PCI DSS compliance, fraud detection, and transaction security.",
       icon: "💰",
-      color: "#f59e0b",
+      color: "#3b82f6", // Blue
       solutions: [
         "PCI DSS Compliance",
         "Fraud Detection",
@@ -166,7 +166,7 @@ export default function MachineLearningPage() {
       description:
         "Enhancing retail journeys with payment gateway testing, inventory management, and user experience.",
       icon: "🛍️",
-      color: "#8b5cf6",
+      color: "#10b981", // Green
       solutions: [
         "Payment Gateway Testing",
         "Inventory Management",
@@ -180,7 +180,7 @@ export default function MachineLearningPage() {
       description:
         "Custom tech to empower brands with streaming quality, content delivery, and platform compatibility.",
       icon: "🎬",
-      color: "#ef4444",
+      color: "#3b82f6", // Blue
       solutions: [
         "Streaming Quality",
         "Content Delivery",
@@ -194,7 +194,7 @@ export default function MachineLearningPage() {
       description:
         "Shaping digital learning with LMS testing, accessibility compliance, and scalability testing.",
       icon: "🎓",
-      color: "#3b82f6",
+      color: "#10b981", // Green
       solutions: [
         "LMS Testing",
         "Accessibility Compliance",
@@ -208,7 +208,7 @@ export default function MachineLearningPage() {
       description:
         "Secure, scalable IoT solutions connecting devices and enabling real‑time data insights for industrial automation, smart homes, and asset tracking.",
       icon: "📡",
-      color: "#06b6d4",
+      color: "#3b82f6", // Blue
       challenges:
         "Device heterogeneity, real‑time data processing, connectivity reliability, and end‑to‑end security.",
       solutions: [

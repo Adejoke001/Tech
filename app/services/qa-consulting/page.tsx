@@ -33,10 +33,10 @@ export default function QAStrategyConsultingPage() {
   const [openFaq, setOpenFaq] = useState<number | null>(0);
 
   const testimonial = {
-    name: "Jonathan Mill",
+    name: "Jonathan",
     // role: "C.O. FinTech",
     content:
-      "Outstanding results, clear communication, and a dedicated team. BBMCoders QA consulting transformed our testing, achieving a 95% reduction in bugs and cutting time-to-market by 40%.",
+      "Outstanding results, clear communication, and a dedicated team. BBMcoders QA consulting transformed our testing, achieving a 95% reduction in bugs and cutting time-to-market by 40%.",
     rating: 5,
     project: "Financial Platform",
   };
@@ -50,7 +50,7 @@ export default function QAStrategyConsultingPage() {
       icon: <Settings className={styles.serviceIcon} />,
       image:
         "https://images.unsplash.com/photo-1560264357-8d9202250f21?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTF8fHF1YWxpdHklMjBhc3N1cmFuY2V8ZW58MHx8MHx8fDA%3D",
-      color: "#df920bff",
+      color: "#3b82f6",
       features: ["Project Analysis", "Strategy Design", "Cost Estimation"],
     },
     {
@@ -61,7 +61,7 @@ export default function QAStrategyConsultingPage() {
       icon: <Search className={styles.serviceIcon} />,
       image:
         "https://images.unsplash.com/photo-1522071820081-009f0129c71c?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8cXVhbGl0eSUyMGFzc3VyYW5jZXxlbnwwfHwwfHx8MA%3D%3D",
-      color: "#34d399",
+      color: "#3b82f6",
       features: [
         "Process Examination",
         "Bottleneck Analysis",
@@ -76,7 +76,7 @@ export default function QAStrategyConsultingPage() {
       icon: <TrendingUp className={styles.serviceIcon} />,
       image:
         "https://images.unsplash.com/photo-1555949963-aa79dcee981c?auto=format&fit=crop&w=800&q=80",
-      color: "#8b5cf6",
+      color: "#3b82f6",
       features: [
         "Problem Identification",
         "Strategy Development",
@@ -91,7 +91,7 @@ export default function QAStrategyConsultingPage() {
       icon: <Shield className={styles.serviceIcon} />,
       image:
         "https://images.unsplash.com/photo-1504384308090-c894fdcc538d?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8cXVhbGl0eSUyMGFzc3VyYW5jZXxlbnwwfHwwfHx8MA%3D%3D",
-      color: "#ef4444",
+      color: "#3b82f6",
       features: [
         "Compliance Audit",
         "Certification Roadmap",
@@ -121,7 +121,7 @@ export default function QAStrategyConsultingPage() {
       icon: <TestTube className={styles.serviceIcon} />,
       image:
         "https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=800&q=80",
-      color: "#06b6d4",
+      color: "#3b82f6",
       features: [
         "Custom Scenarios",
         "Automation Feasibility",
@@ -130,33 +130,33 @@ export default function QAStrategyConsultingPage() {
     },
   ];
 
-  const strategicBenefits = [
+ const strategicBenefits = [
     {
       id: 1,
-      title: "95% Bug Reduction",
+      title: "Improved Code Quality",
       description:
-        "Build a robust quality framework that catches defects at the source, ensuring your final product is nearly flawless.",
+        "Build a robust quality framework that catches defects at the source, ensuring your final product is reliable.",
       icon: <Shield className={styles.benefitIcon} />,
-      metric: "95%",
+      metric: "85%",
       color: "#34d399",
     },
     {
       id: 2,
-      title: "40% Faster Time-to-Market",
+      title: "30% Faster Time-to-Market",
       description:
-        "Accelerate time to market with streamlined QA processes that eliminate bottlenecks without quality loss.",
+        "Accelerate time to market with streamlined processes that eliminate bottlenecks without quality loss.",
       icon: <Zap className={styles.benefitIcon} />,
-      metric: "40%",
-      color: "#f59e0b",
+      metric: "30%",
+      color: "#10b981",
     },
     {
       id: 3,
-      title: "Optimized Test Coverage",
+      title: "Comprehensive Test Coverage",
       description:
-        "Ensure flawless software with optimized QA testing that identifies and eliminates defects for smooth launches.",
+        "Ensure quality software with thorough testing that identifies and eliminates defects before launch.",
       icon: <Target className={styles.benefitIcon} />,
-      metric: "100%",
-      color: "#8b5cf6",
+      metric: "90%",
+      color: "#10b981",
     },
     {
       id: 4,
@@ -164,8 +164,8 @@ export default function QAStrategyConsultingPage() {
       description:
         "Achieve exceptional quality with cost-effective solutions and skilled professionals delivering precise results.",
       icon: <DollarSign className={styles.benefitIcon} />,
-      metric: "30%",
-      color: "#ef4444",
+      metric: "25%",
+      color: "#10b981",
     },
     {
       id: 5,
@@ -173,8 +173,8 @@ export default function QAStrategyConsultingPage() {
       description:
         "Build a tailored QA strategy with structured testing processes ensuring quality at every stage.",
       icon: <ClipboardList className={styles.benefitIcon} />,
-      metric: "100%",
-      color: "#3b82f6",
+      metric: "Structured",
+      color: "#10b981",
     },
     {
       id: 6,
@@ -182,8 +182,8 @@ export default function QAStrategyConsultingPage() {
       description:
         "Leverage the perfect mix of manual and automated testing for early defect detection and efficiency.",
       icon: <GitMerge className={styles.benefitIcon} />,
-      metric: "50:50",
-      color: "#06b6d4",
+      metric: "Balanced",
+      color: "#10b981",
     },
     {
       id: 7,
@@ -191,7 +191,7 @@ export default function QAStrategyConsultingPage() {
       description:
         "Implement security testing protocols to safeguard your applications against vulnerabilities and threats.",
       icon: <Shield className={styles.benefitIcon} />,
-      metric: "99.9%",
+      metric: "Secure",
       color: "#10b981",
     },
     {
@@ -200,8 +200,8 @@ export default function QAStrategyConsultingPage() {
       description:
         "Deliver high-quality software that meets user expectations, leading to increased satisfaction and loyalty.",
       icon: <Users className={styles.benefitIcon} />,
-      metric: "98%",
-      color: "#8b5cf6",
+      metric: "95%",
+      color: "#10b981",
     },
   ];
 
@@ -296,7 +296,7 @@ export default function QAStrategyConsultingPage() {
       description:
         "Building smart healthcare solutions with HIPAA compliance, medical device testing, and EHR validation.",
       icon: "🏥",
-      color: "#34d399",
+      color: "#10b981",
       solutions: [
         "HIPAA Compliance",
         "Medical Device Testing",
@@ -310,7 +310,7 @@ export default function QAStrategyConsultingPage() {
       description:
         "Disrupting traditional finance with PCI DSS compliance, fraud detection, and transaction security.",
       icon: "💰",
-      color: "#f59e0b",
+      color: "#3b82f6",
       solutions: [
         "PCI DSS Compliance",
         "Fraud Detection",
@@ -324,7 +324,7 @@ export default function QAStrategyConsultingPage() {
       description:
         "Enhancing retail journeys with payment gateway testing, inventory management, and user experience.",
       icon: "🛍️",
-      color: "#8b5cf6",
+      color: "#10b981",
       solutions: [
         "Payment Gateway Testing",
         "Inventory Management",
@@ -338,7 +338,7 @@ export default function QAStrategyConsultingPage() {
       description:
         "Custom tech to empower brands with streaming quality, content delivery, and platform compatibility.",
       icon: "🎬",
-      color: "#ef4444",
+      color: "#3b82f6",
       solutions: [
         "Streaming Quality",
         "Content Delivery",
@@ -352,7 +352,7 @@ export default function QAStrategyConsultingPage() {
       description:
         "Shaping digital learning with LMS testing, accessibility compliance, and scalability testing.",
       icon: "🎓",
-      color: "#3b82f6",
+      color: "#10b981",
       solutions: [
         "LMS Testing",
         "Accessibility Compliance",
@@ -366,7 +366,7 @@ export default function QAStrategyConsultingPage() {
       description:
         "Secure, scalable IoT solutions connecting devices and enabling real‑time data insights for industrial automation, smart homes, and asset tracking.",
       icon: "📡",
-      color: "#06b6d4",
+      color: "#3b82f6",
       challenges:
         "Device heterogeneity, real‑time data processing, connectivity reliability, and end‑to‑end security.",
       solutions: [
@@ -379,38 +379,38 @@ export default function QAStrategyConsultingPage() {
     },
   ];
 
-  const pricingTiers = [
+ const pricingTiers = [
     {
       id: 1,
-      range: "$5K-15K",
+      range: "$1K-3K",
       title: "Basic QA Audit",
       description:
         "Process audit and improvement suggestions for small-scale projects.",
-      color: "#34d399",
+      color: "#10b981",
     },
     {
       id: 2,
-      range: "$15K-30K",
+      range: "$3K-8K",
       title: "End-to-End Setup",
       description:
         "Complete QA strategy, planning, and execution for growing businesses.",
-      color: "#f59e0b",
+      color: "#3b82f6",
     },
     {
       id: 3,
-      range: "$35K-50K",
+      range: "$8K-15K",
       description:
         "Test automation framework design with continuous integration support.",
       title: "Automation Framework",
-      color: "#8b5cf6",
+      color: "#10b981",
     },
     {
       id: 4,
-      range: "$50K-70K+",
+      range: "$12K-25K+",
       title: "Enterprise Compliance",
       description:
         "Pre-certification QA consulting ensuring compliance with industry standards.",
-      color: "#ef4444",
+      color: "#3b82f6",
     },
   ];
 
@@ -425,27 +425,27 @@ export default function QAStrategyConsultingPage() {
     {
       question: "Why should I choose professional QA consulting services?",
       answer:
-        "Professional QA consulting brings 20+ years of expertise, industry best practices, and proven methodologies that transform your testing processes.",
+        "Professional QA consulting brings 5 years of expertise, industry best practices, and proven methodologies that transform your testing processes.",
     },
     {
-      question: "How much does QA consulting typically cost?",
-      answer:
-        "Costs vary based on project scope: $5,000–$15,000 for basic audits, $15,000–$30,000 for end-to-end setup, $35,000–$50,000 for automation frameworks, and $50,000–$70,000+ for enterprise compliance.",
+     question: "How much does QA consulting typically cost?",
+     answer:
+        "Costs vary based on project scope. Basic audits start at $1,500–$3,000, end-to-end QA setup ranges from $4,000–$10,000, automation frameworks from $8,000–$15,000, and enterprise solutions from $15,000–$30,000+. We provide detailed quotes after understanding your requirements.",
     },
     {
-      question: "What industries benefit most from QA consulting?",
-      answer:
-        "Healthcare, Fintech, eCommerce, Education, and Enterprise Software benefit significantly from specialized QA consulting with tailored solutions.",
+     question: "What industries do you specialize in?",
+     answer:
+        "We have strong experience in Fintech, E-commerce, EdTech, Healthcare, and SaaS startups. Our team delivers tailored QA solutions that address industry-specific compliance and quality requirements.",
     },
     {
-      question: "How do you ensure QA process improvements are sustainable?",
-      answer:
+     question: "How do you ensure QA process improvements are sustainable?",
+     answer:
         "We implement structured processes with comprehensive documentation, team training, and ongoing support. Our approach includes establishing KPIs, continuous monitoring, regular audits, and optimization cycles to ensure improvements are maintained and enhanced long-term.",
     },
     {
-      question: "What is your typical engagement timeline?",
-      answer:
-        "Basic audits: 2-4 weeks. Full implementations: 8-12 weeks. Enterprise transformations: 3-6 months. We provide detailed timelines during initial assessment based on your specific requirements, current process maturity, and desired outcomes.",
+     question: "What is your typical engagement timeline?",
+     answer:
+        "Basic audits: 1-3 weeks. Full implementations: 4-10 weeks. Enterprise transformations: 2-4 months. We provide detailed timelines during initial assessment based on your specific requirements, current process maturity, and desired outcomes.",
     },
   ];
 

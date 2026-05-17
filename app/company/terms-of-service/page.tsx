@@ -191,13 +191,17 @@ export default function TermsPage() {
                         </p>
                         <div className={styles.contactCard}>
                             <div className={styles.contactItem}>
-                                <Mail size={18} />
-                                <span>legal@bbmcoders.com</span>
-                            </div>
+                               <Mail size={18} />
+                             <a href="mailto:legal@bbmcoders.com" style={{ color: 'inherit', textDecoration: 'none' }}>
+                              support@bbmcoders.com
+                             </a>
+                        </div>
                             <div className={styles.contactItem}>
-                                <Phone size={18} />
-                                <span>+234 (0) 123 456 7890</span>
-                            </div>
+                              <Phone size={18} />
+                                <a href="tel:+15551234567" style={{ color: 'inherit', textDecoration: 'none' }}>
+                                    +1 (555) 123-4567
+                                </a>
+                          </div>
                             <div className={styles.contactItem}>
                                 <MapPin size={18} />
                                 <span>Lagos, Nigeria</span>

@@ -1,12 +1,12 @@
 'use client';
 
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
 import { motion, AnimatePresence } from 'framer-motion';
 import {
     Sparkles, ArrowRight, Award, MessageSquare, CheckCircle,
-    Users, Globe, Building2, Zap, 
+    Users, Globe, Building2, Zap,
     Smartphone,
     Compass, Code, RefreshCw, Target,
     Layers, Settings,
@@ -20,7 +20,43 @@ import styles from './mobile.module.css';
 export default function MobilePage() {
     const [openFaq, setOpenFaq] = useState<number | null>(0);
     const [hoveredIndustry, setHoveredIndustry] = useState<number | null>(null);
-    const [activeTestimonial, setActiveTestimonial] = useState(0);
+    const [activeSection, setActiveSection] = useState('stages');
+
+    useEffect(() => {
+        const sections = ['stages', 'importance', 'approach', 'advanced', 'cost', 'modernization'];
+
+        const observer = new IntersectionObserver(
+            (entries) => {
+                entries.forEach((entry) => {
+                    if (entry.isIntersecting) {
+                        setActiveSection(entry.target.id);
+                    }
+                });
+            },
+            { threshold: 0.3, rootMargin: '-80px 0px -80px 0px' }
+        );
+
+        sections.forEach((section) => {
+            const element = document.getElementById(section);
+            if (element) observer.observe(element);
+        });
+
+        return () => {
+            sections.forEach((section) => {
+                const element = document.getElementById(section);
+                if (element) observer.unobserve(element);
+            });
+        };
+    }, []);
+
+    const scrollToSection = (sectionId: string) => {
+        const element = document.getElementById(sectionId);
+        if (element) {
+            element.scrollIntoView({ behavior: 'smooth' });
+            setActiveSection(sectionId);
+        }
+    };
+    // const [activeTestimonial, setActiveTestimonial] = useState(0);
 
     // ----- HERO TESTIMONIAL (with avatar placeholder) -----
     const testimonial = {
@@ -30,7 +66,7 @@ export default function MobilePage() {
         rating: 5,
         project: 'Mobile App Development',
         initials: 'JK',
-        color: '#3B82F6'
+
     };
 
     // ============ MOBILE SERVICES (8 cards from URL) ============
@@ -40,7 +76,7 @@ export default function MobilePage() {
             title: 'Mobile App Consulting',
             description: 'We provide expert mobile app development, guiding your app`s concept, tech, platform choices, and user experience.',
             icon: <Compass />,
-            color: '#3B82F6',
+            color: '#10b981',
             features: [
                 'Smart UI/UX guidance for better apps',
                 'Validate app concepts with expert advice',
@@ -64,7 +100,7 @@ export default function MobilePage() {
             title: 'Custom Mobile App Development',
             description: 'From ideation to deployment, we build custom mobile apps that engage users and deliver measurable results.',
             icon: <Smartphone />,
-            color: '#8B5CF6',
+            color: '#10B981',
             features: [
                 'Reliable apps with high performance',
                 'Faster launch with agile development',
@@ -76,7 +112,7 @@ export default function MobilePage() {
             title: 'Mobile App Integration',
             description: 'We integrate mobile apps with APIs and backend systems for a seamless, unified experience.',
             icon: <GitMerge />,
-            color: '#F59E0B',
+            color: '#10b981',
             features: [
                 'Consistent data across all platforms',
                 'Enhanced features through integrations',
@@ -88,7 +124,7 @@ export default function MobilePage() {
             title: 'Mobile App QA and Testing',
             description: 'Our dedicated QA team rigorously tests your mobile app to ensure flawless performance across devices and operating systems.',
             icon: <TestTube />,
-            color: '#EC4899',
+            color: '#10b981',
             features: [
                 'Improve app stability with thorough testing',
                 'Enhance user trust with consistent app performance',
@@ -100,7 +136,7 @@ export default function MobilePage() {
             title: 'Maintenance and Support',
             description: 'We offer ongoing support to monitor app performance, resolve issues, and roll out updates to ensure long-term app reliability.',
             icon: <HeadphonesIcon />,
-            color: '#06B6D4',
+            color: '#10b981',
             features: [
                 'Stay updated with patches and fixes',
                 'Ensure app stability with performance monitoring',
@@ -112,7 +148,7 @@ export default function MobilePage() {
             title: 'Mobile App Modernization',
             description: 'We revamp outdated apps by updating their design, functionality, and technology to meet evolving user expectations.',
             icon: <RefreshCw />,
-            color: '#3B82F6',
+            color: '#10b981',
             features: [
                 'Improve user retention for long-term growth',
                 'Adapt to changing business needs for easy development',
@@ -182,7 +218,7 @@ export default function MobilePage() {
             title: 'Dedicated Teams / Delivery Pods',
             description: 'Dedicated squad with Tech Lead + Engineers + QA. Shared accountability for predictable sprint delivery.',
             icon: <Target />,
-            color: '#10B981',
+            color: '#3b82f6',
             features: ['Milestone-based or fixed-cost', 'We own sprint delivery metrics', 'Weekly demos'],
             billing: 'Milestone-based, T&M with commitments, or Fixed-Cost',
             bestFor: 'Products needing speed, cross-team coordination'
@@ -191,7 +227,7 @@ export default function MobilePage() {
             title: 'Development Centers',
             description: 'Long-term, scaled teams with your branding, culture, processes. Full infrastructure, HR, security & compliance.',
             icon: <Building2 />,
-            color: '#8B5CF6',
+            color: '#3b82F6',
             features: ['Long-term retainer', 'BOT (Build–Operate–Transfer) options', 'Multi-year partnerships'],
             billing: 'Long-term retainer, BOT',
             bestFor: 'Enterprises needing sustained large-scale capacity'
@@ -306,40 +342,40 @@ export default function MobilePage() {
     ];
 
     // ============ CLIENT TESTIMONIALS (with avatar placeholders) ============
-    const testimonials = [
-        {
-            name: 'James Kelly',
-            role: 'Data Analyst',
-            content: 'The Project managers took a lot of time to understand our project before coming up with a contract or what they thought we needed. I had the reassurance from the start that the project managers knew what type of project I wanted and what my needs were. That is reassuring, and that is why we chose BBMcoders.',
-            initials: 'JK',
-            color: '#3B82F6'
-        },
-        {
-            name: 'Judith Mueller',
-            role: 'Executive Director, Judith Foundation',
-            content: 'The team at BBMcoders has provided us with exceptional services in creating this one-of-a-kind portal, and it has been a fantastic experience. I was particularly impressed by how efficiently and quickly the team always came up with creative solutions.',
-            initials: 'JM',
-            color: '#10B981'
-        },
-        {
-            name: 'Kay Andrews',
-            role: 'Director of Affairs',
-            content: 'BBMcoders had great technical expertise, both in front-end and back-end development. Other project management was well organized. Account management was friendly and always available. I would give BBMcoders ten out of ten!',
-            initials: 'KA',
-            color: '#8B5CF6'
-        },
-        {
-            name: 'Mohammed Mira',
-            role: 'Director, FashionHint',
-            content: 'Huge thank you to BBMcoders; they have been a massive help in enabling us to start developing our project within a few weeks, so it has been great! I have already recommended it to one of my friends.',
-            initials: 'MM',
-            color: '#F59E0B'
-        },
-        
-    ];
+    // const testimonials = [
+    //     {
+    //         name: 'James Kelly',
+    //         role: 'Data Analyst',
+    //         content: 'The Project managers took a lot of time to understand our project before coming up with a contract or what they thought we needed. I had the reassurance from the start that the project managers knew what type of project I wanted and what my needs were. That is reassuring, and that is why we chose BBMcoders.',
+    //         initials: 'JK',
+    //         color: '#3B82F6'
+    //     },
+    //     {
+    //         name: 'Judith Mueller',
+    //         role: 'Executive Director, Judith Foundation',
+    //         content: 'The team at BBMcoders has provided us with exceptional services in creating this one-of-a-kind portal, and it has been a fantastic experience. I was particularly impressed by how efficiently and quickly the team always came up with creative solutions.',
+    //         initials: 'JM',
+    //         color: '#10B981'
+    //     },
+    //     {
+    //         name: 'Kay Andrews',
+    //         role: 'Director of Affairs',
+    //         content: 'BBMcoders had great technical expertise, both in front-end and back-end development. Other project management was well organized. Account management was friendly and always available. I would give BBMcoders ten out of ten!',
+    //         initials: 'KA',
+    //         color: '#8B5CF6'
+    //     },
+    //     {
+    //         name: 'Mohammed Mira',
+    //         role: 'Director, FashionHint',
+    //         content: 'Huge thank you to BBMcoders; they have been a massive help in enabling us to start developing our project within a few weeks, so it has been great! I have already recommended it to one of my friends.',
+    //         initials: 'MM',
+    //         color: '#F59E0B'
+    //     },
+
+    // ];
 
     // ============ TRUSTED BY ============
-    const trustedCompanies = ['Microsoft', 'Amazon', 'Google', 'IBM', 'SAP', 'Oracle'];
+    // const trustedCompanies = ['Microsoft', 'Amazon', 'Google', 'IBM', 'SAP', 'Oracle'];
 
     // ============ INDUSTRIES ============
     const industries = [
@@ -362,29 +398,8 @@ export default function MobilePage() {
             icon: '🎬',
             desc: 'Custom tech to empower brands – streaming, content delivery, and audience analytics.',
             image: 'https://images.unsplash.com/photo-1598128558393-70ff21433be0?auto=format&fit=crop&w=800&q=80',
-            color: '#8B5CF6'
+            color: '#3b82f6'
         },
-        // {
-        //     name: 'Fintech',
-        //     icon: '🏦',
-        //     desc: 'Disrupting traditional finance with secure payments, trading platforms, and digital banking.',
-        //     image: 'https://images.unsplash.com/photo-1560472354-b33ff0c44a43?auto=format&fit=crop&w=800&q=80',
-        //     color: '#F59E0B'
-        // },
-        // {
-        //     name: 'Education & eLearning',
-        //     icon: '📚',
-        //     desc: 'Shaping digital learning with LMS, virtual classrooms, and interactive tools.',
-        //     image: 'https://images.unsplash.com/photo-1524178232363-1fb2b075b655?auto=format&fit=crop&w=800&q=80',
-        //     color: '#EC4899'
-        // },
-        // {
-        //     name: 'Banking & Fintech',
-        //     icon: '💰',
-        //     desc: 'Streamlining financial growth with core banking systems and compliance‑ready infrastructure.',
-        //     image: 'https://images.unsplash.com/photo-1551434678-e076c223a692?auto=format&fit=crop&w=800&q=80',
-        //     color: '#06B6D4'
-        // },
     ];
 
     return (
@@ -418,10 +433,10 @@ export default function MobilePage() {
                             Mobile app development services help businesses design, build, and maintain applications for iOS, Android, and cross-platform devices. These services support product launches, digital customer experiences, and scalable mobile platforms aligned with business requirements.
                         </p>
                         <div className={styles.heroButtons}>
-                            <Link href="/contact" className={styles.primaryButton}>
+                            {/* <Link href="/contact" className={styles.primaryButton}>
                                 Start Your Mobile Project <ArrowRight size={18} />
-                            </Link>
-                            <Link href="#services" className={styles.secondaryButton}>
+                            </Link> */}
+                            <Link href="#services" className={styles.primaryButton}>
                                 Explore Services
                             </Link>
                         </div>
@@ -434,9 +449,18 @@ export default function MobilePage() {
                     >
                         <div className={styles.testimonialCard}>
                             <div className={styles.testimonialImage}>
-                                <div className={styles.testimonialAvatar} style={{ backgroundColor: testimonial.color, color: 'white' }}>
-                                    {testimonial.initials}
-                                </div>
+                                <motion.div
+
+                                    transition={{ duration: 0.3 }}
+                                >
+                                    <Image
+                                        src="/images/user.png"
+                                        alt="Sarah - Client"
+                                        width={100}
+                                        height={100}
+                                        className={styles.clientImage}
+                                    />
+                                </motion.div>
                             </div>
                             <div className={styles.testimonialContent}>
                                 <MessageSquare className={styles.quoteIcon} />
@@ -469,7 +493,7 @@ export default function MobilePage() {
             </section>
 
             {/* ===== TRUSTED BY SECTION ===== */}
-            <section className={styles.trustedSection}>
+            {/* <section className={styles.trustedSection}>
                 <div className={styles.container}>
                     <p className={styles.trustedLabel}>Trusted by startups and Fortune 500 companies</p>
                     <div className={styles.trustedLogos}>
@@ -487,7 +511,7 @@ export default function MobilePage() {
                         ))}
                     </div>
                 </div>
-            </section>
+            </section> */}
 
             {/* ===== MOBILE SERVICES SECTION ===== */}
             <section className={styles.servicesSection} id="services">
@@ -706,166 +730,229 @@ export default function MobilePage() {
                 </div>
             </section>
 
-            {/* ===== ULTIMATE GUIDE SECTION ===== */}
+            {/* ===== ULTIMATE GUIDE SECTION WITH STICKY SIDEBAR ===== */}
             <section className={styles.guideSection}>
-                <div className={styles.container}>
-                    <div className={styles.sectionHeader}>
-                        <h2 className={styles.sectionTitle}>
-                            Ultimate Guide to <span className={styles.titleHighlight}>Custom Mobile App Development</span>
-                        </h2>
-                        <p className={styles.sectionDescription}>
-                            When you are planning to build a mobile app, this guide will help you in understanding the process and technologies involved, better.
-                        </p>
-                    </div>
-
-                    {/* Stages */}
-                    <div className={styles.guideBlock}>
-                        <h3 className={styles.guideBlockTitle}>Stages in Mobile App Development</h3>
-                        <div className={styles.stagesGrid}>
-                            {developmentStages.map((stage, index) => (
-                                <motion.div
-                                    key={index}
-                                    className={styles.stageCard}
-                                    initial={{ opacity: 0, y: 20 }}
-                                    whileInView={{ opacity: 1, y: 0 }}
-                                    transition={{ duration: 0.4, delay: index * 0.05 }}
-                                    viewport={{ once: true }}
+                <div className={styles.guideWrapper}>
+                    {/* Sticky Sidebar Navigation */}
+                    <div className={styles.guideSidebar}>
+                        <ul className={styles.guideNav}>
+                            <li className={styles.guideNavItem}>
+                                <button
+                                    className={`${styles.guideNavLink} ${activeSection === 'stages' ? styles.active : ''}`}
+                                    onClick={() => scrollToSection('stages')}
                                 >
-                                    <h4>{stage.title}</h4>
-                                    <p>{stage.description}</p>
-                                </motion.div>
-                            ))}
-                        </div>
-                    </div>
-
-                    {/* Importance */}
-                    <div className={styles.guideBlock}>
-                        <h3 className={styles.guideBlockTitle}>Importance of Mobile Apps for Businesses</h3>
-                        <div className={styles.importanceGrid}>
-                            {importanceItems.map((item, index) => (
-                                <motion.div
-                                    key={index}
-                                    className={styles.importanceItem}
-                                    initial={{ opacity: 0, x: -20 }}
-                                    whileInView={{ opacity: 1, x: 0 }}
-                                    transition={{ duration: 0.4, delay: index * 0.05 }}
-                                    viewport={{ once: true }}
+                                    <span className={styles.guideNavNumber}>01</span>
+                                    Stages in Development
+                                </button>
+                            </li>
+                            <li className={styles.guideNavItem}>
+                                <button
+                                    className={`${styles.guideNavLink} ${activeSection === 'importance' ? styles.active : ''}`}
+                                    onClick={() => scrollToSection('importance')}
                                 >
-                                    <div className={styles.importanceBullet}></div>
-                                    <span>{item}</span>
-                                </motion.div>
-                            ))}
-                        </div>
+                                    <span className={styles.guideNavNumber}>02</span>
+                                    Importance for Businesses
+                                </button>
+                            </li>
+                            <li className={styles.guideNavItem}>
+                                <button
+                                    className={`${styles.guideNavLink} ${activeSection === 'approach' ? styles.active : ''}`}
+                                    onClick={() => scrollToSection('approach')}
+                                >
+                                    <span className={styles.guideNavNumber}>03</span>
+                                    Native vs Cross-Platform
+                                </button>
+                            </li>
+                            <li className={styles.guideNavItem}>
+                                <button
+                                    className={`${styles.guideNavLink} ${activeSection === 'advanced' ? styles.active : ''}`}
+                                    onClick={() => scrollToSection('advanced')}
+                                >
+                                    <span className={styles.guideNavNumber}>04</span>
+                                    Advanced Technologies
+                                </button>
+                            </li>
+                            <li className={styles.guideNavItem}>
+                                <button
+                                    className={`${styles.guideNavLink} ${activeSection === 'cost' ? styles.active : ''}`}
+                                    onClick={() => scrollToSection('cost')}
+                                >
+                                    <span className={styles.guideNavNumber}>05</span>
+                                    Cost Factors
+                                </button>
+                            </li>
+                            <li className={styles.guideNavItem}>
+                                <button
+                                    className={`${styles.guideNavLink} ${activeSection === 'modernization' ? styles.active : ''}`}
+                                    onClick={() => scrollToSection('modernization')}
+                                >
+                                    <span className={styles.guideNavNumber}>06</span>
+                                    Modernization Benefits
+                                </button>
+                            </li>
+                        </ul>
                     </div>
 
-                    {/* Native vs Cross-Platform */}
-                    <div className={styles.guideBlock}>
-                        <h3 className={styles.guideBlockTitle}>Choosing the Right Mobile App Development Approach</h3>
-                        <div className={styles.comparisonGrid}>
-                            <div className={styles.comparisonCard}>
-                                <h4 style={{ color: '#3B82F6' }}>{nativeVsCross.native.title}</h4>
-                                <div className={styles.comparisonSection}>
-                                    <strong>Advantages:</strong>
-                                    <ul>
-                                        {nativeVsCross.native.advantages.map((item, idx) => (
-                                            <li key={idx}>{item}</li>
-                                        ))}
-                                    </ul>
-                                </div>
-                                <div className={styles.comparisonSection}>
-                                    <strong>Key Considerations:</strong>
-                                    <ul>
-                                        {nativeVsCross.native.considerations.map((item, idx) => (
-                                            <li key={idx}>{item}</li>
-                                        ))}
-                                    </ul>
-                                </div>
-                            </div>
-                            <div className={styles.comparisonCard}>
-                                <h4 style={{ color: '#10B981' }}>{nativeVsCross.cross.title}</h4>
-                                <div className={styles.comparisonSection}>
-                                    <strong>Advantages:</strong>
-                                    <ul>
-                                        {nativeVsCross.cross.advantages.map((item, idx) => (
-                                            <li key={idx}>{item}</li>
-                                        ))}
-                                    </ul>
-                                </div>
-                                <div className={styles.comparisonSection}>
-                                    <strong>Key Considerations:</strong>
-                                    <ul>
-                                        {nativeVsCross.cross.considerations.map((item, idx) => (
-                                            <li key={idx}>{item}</li>
-                                        ))}
-                                    </ul>
-                                </div>
+                    {/* Main Content */}
+                    <div className={styles.guideContent}>
+                        <div className={styles.sectionHeader}>
+                            <h2 className={styles.sectionTitle}>
+                                Ultimate Guide to <span className={styles.titleHighlight}>Custom Mobile App Development</span>
+                            </h2>
+                            <p className={styles.sectionDescription}>
+                                When you are planning to build a mobile app, this guide will help you in understanding the process and technologies involved, better.
+                            </p>
+                        </div>
+
+                        {/* Stages */}
+                        <div id="stages" className={styles.guideBlock}>
+                            <h3 className={styles.guideBlockTitle}>Stages in Mobile App Development</h3>
+                            <div className={styles.stagesGrid}>
+                                {developmentStages.map((stage, index) => (
+                                    <motion.div
+                                        key={index}
+                                        className={styles.stageCard}
+                                        initial={{ opacity: 0, y: 20 }}
+                                        whileInView={{ opacity: 1, y: 0 }}
+                                        transition={{ duration: 0.4, delay: index * 0.05 }}
+                                        viewport={{ once: true }}
+                                    >
+                                        <h4>{stage.title}</h4>
+                                        <p>{stage.description}</p>
+                                    </motion.div>
+                                ))}
                             </div>
                         </div>
-                    </div>
 
-                    {/* Advanced Technologies */}
-                    <div className={styles.guideBlock}>
-                        <h3 className={styles.guideBlockTitle}>Advanced Mobile App Development Technologies</h3>
-                        <div className={styles.advancedGrid}>
-                            {advancedTech.map((tech, index) => (
-                                <motion.div
-                                    key={index}
-                                    className={styles.advancedCard}
-                                    initial={{ opacity: 0, y: 20 }}
-                                    whileInView={{ opacity: 1, y: 0 }}
-                                    transition={{ duration: 0.4, delay: index * 0.05 }}
-                                    viewport={{ once: true }}
-                                >
-                                    <h4>{tech.title}</h4>
-                                    <p>{tech.description}</p>
-                                </motion.div>
-                            ))}
+                        {/* Importance */}
+                        <div id="importance" className={styles.guideBlock}>
+                            <h3 className={styles.guideBlockTitle}>Importance of Mobile Apps for Businesses</h3>
+                            <div className={styles.importanceGrid}>
+                                {importanceItems.map((item, index) => (
+                                    <motion.div
+                                        key={index}
+                                        className={styles.importanceItem}
+                                        initial={{ opacity: 0, x: -20 }}
+                                        whileInView={{ opacity: 1, x: 0 }}
+                                        transition={{ duration: 0.4, delay: index * 0.05 }}
+                                        viewport={{ once: true }}
+                                    >
+                                        <div className={styles.importanceBullet}></div>
+                                        <span>{item}</span>
+                                    </motion.div>
+                                ))}
+                            </div>
                         </div>
-                    </div>
 
-                    {/* Cost Factors */}
-                    <div className={styles.guideBlock}>
-                        <h3 className={styles.guideBlockTitle}>What Affects Mobile App Development Cost?</h3>
-                        <div className={styles.costGrid}>
-                            {costFactors.map((factor, index) => (
-                                <motion.div
-                                    key={index}
-                                    className={styles.costItem}
-                                    initial={{ opacity: 0, y: 20 }}
-                                    whileInView={{ opacity: 1, y: 0 }}
-                                    transition={{ duration: 0.4, delay: index * 0.05 }}
-                                    viewport={{ once: true }}
-                                >
-                                    <div className={styles.costNumber}>{index + 1}</div>
-                                    <span>{factor}</span>
-                                </motion.div>
-                            ))}
+                        {/* Native vs Cross-Platform */}
+                        <div id="approach" className={styles.guideBlock}>
+                            <h3 className={styles.guideBlockTitle}>Choosing the Right Mobile App Development Approach</h3>
+                            <div className={styles.comparisonGrid}>
+                                <div className={styles.comparisonCard}>
+                                    <h4 style={{ color: 'var(--primary-blue)' }}>{nativeVsCross.native.title}</h4>
+                                    <div className={styles.comparisonSection}>
+                                        <strong>Advantages:</strong>
+                                        <ul>
+                                            {nativeVsCross.native.advantages.map((item, idx) => (
+                                                <li key={idx}>{item}</li>
+                                            ))}
+                                        </ul>
+                                    </div>
+                                    <div className={styles.comparisonSection}>
+                                        <strong>Key Considerations:</strong>
+                                        <ul>
+                                            {nativeVsCross.native.considerations.map((item, idx) => (
+                                                <li key={idx}>{item}</li>
+                                            ))}
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div className={styles.comparisonCard}>
+                                    <h4 style={{ color: 'var(--primary-green)' }}>{nativeVsCross.cross.title}</h4>
+                                    <div className={styles.comparisonSection}>
+                                        <strong>Advantages:</strong>
+                                        <ul>
+                                            {nativeVsCross.cross.advantages.map((item, idx) => (
+                                                <li key={idx}>{item}</li>
+                                            ))}
+                                        </ul>
+                                    </div>
+                                    <div className={styles.comparisonSection}>
+                                        <strong>Key Considerations:</strong>
+                                        <ul>
+                                            {nativeVsCross.cross.considerations.map((item, idx) => (
+                                                <li key={idx}>{item}</li>
+                                            ))}
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
-                    </div>
 
-                    {/* Modernization Benefits */}
-                    <div className={styles.guideBlock}>
-                        <h3 className={styles.guideBlockTitle}>Why Mobile App Modernization Is Critical for Business Growth?</h3>
-                        <div className={styles.modernGrid}>
-                            {modernizationBenefits.map((benefit, index) => (
-                                <motion.div
-                                    key={index}
-                                    className={styles.modernItem}
-                                    initial={{ opacity: 0, y: 20 }}
-                                    whileInView={{ opacity: 1, y: 0 }}
-                                    transition={{ duration: 0.4, delay: index * 0.05 }}
-                                    viewport={{ once: true }}
-                                >
-                                    <CheckCircle size={16} style={{ color: '#3B82F6' }} />
-                                    <span>{benefit}</span>
-                                </motion.div>
-                            ))}
+                        {/* Advanced Technologies */}
+                        <div id="advanced" className={styles.guideBlock}>
+                            <h3 className={styles.guideBlockTitle}>Advanced Mobile App Development Technologies</h3>
+                            <div className={styles.advancedGrid}>
+                                {advancedTech.map((tech, index) => (
+                                    <motion.div
+                                        key={index}
+                                        className={styles.advancedCard}
+                                        initial={{ opacity: 0, y: 20 }}
+                                        whileInView={{ opacity: 1, y: 0 }}
+                                        transition={{ duration: 0.4, delay: index * 0.05 }}
+                                        viewport={{ once: true }}
+                                    >
+                                        <h4>{tech.title}</h4>
+                                        <p>{tech.description}</p>
+                                    </motion.div>
+                                ))}
+                            </div>
+                        </div>
+
+                        {/* Cost Factors */}
+                        <div id="cost" className={styles.guideBlock}>
+                            <h3 className={styles.guideBlockTitle}>What Affects Mobile App Development Cost?</h3>
+                            <div className={styles.costGrid}>
+                                {costFactors.map((factor, index) => (
+                                    <motion.div
+                                        key={index}
+                                        className={styles.costItem}
+                                        initial={{ opacity: 0, y: 20 }}
+                                        whileInView={{ opacity: 1, y: 0 }}
+                                        transition={{ duration: 0.4, delay: index * 0.05 }}
+                                        viewport={{ once: true }}
+                                    >
+                                        <div className={styles.costNumber}>{index + 1}</div>
+                                        <span>{factor}</span>
+                                    </motion.div>
+                                ))}
+                            </div>
+                        </div>
+
+                        {/* Modernization Benefits */}
+                        <div id="modernization" className={styles.guideBlock}>
+                            <h3 className={styles.guideBlockTitle}>Why Mobile App Modernization Is Critical for Business Growth?</h3>
+                            <div className={styles.modernGrid}>
+                                {modernizationBenefits.map((benefit, index) => (
+                                    <motion.div
+                                        key={index}
+                                        className={styles.modernItem}
+                                        initial={{ opacity: 0, y: 20 }}
+                                        whileInView={{ opacity: 1, y: 0 }}
+                                        transition={{ duration: 0.4, delay: index * 0.05 }}
+                                        viewport={{ once: true }}
+                                    >
+                                        <CheckCircle size={16} style={{ color: 'var(--primary-blue)' }} />
+                                        <span>{benefit}</span>
+                                    </motion.div>
+                                ))}
+                            </div>
                         </div>
                     </div>
                 </div>
             </section>
 
-             {/* ===== INDUSTRIES SECTION ===== */}
+            {/* ===== INDUSTRIES SECTION ===== */}
             <section className={styles.industriesSection}>
                 <div className={styles.container}>
                     <div className={styles.sectionHeader}>
@@ -970,7 +1057,7 @@ export default function MobilePage() {
             </section>
 
             {/* ===== TESTIMONIALS CAROUSEL ===== */}
-            <section className={styles.testimonialsSection}>
+            {/* <section className={styles.testimonialsSection}>
                 <div className={styles.container}>
                     <div className={styles.sectionHeader}>
                         <h2 className={styles.sectionTitle}>
@@ -1016,9 +1103,9 @@ export default function MobilePage() {
                         </div>
                     </div>
                 </div>
-            </section>
+            </section> */}
 
-           
+
             {/* ===== CTA SECTION ===== */}
             <section className={styles.ctaSection}>
                 <div className={styles.container}>
@@ -1045,18 +1132,18 @@ export default function MobilePage() {
 // Custom icon components
 const HelpCircle = (props: React.SVGProps<SVGSVGElement>) => (
     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" {...props}>
-        <circle cx="12" cy="12" r="10"/>
-        <path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"/>
-        <line x1="12" y1="17" x2="12.01" y2="17"/>
+        <circle cx="12" cy="12" r="10" />
+        <path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3" />
+        <line x1="12" y1="17" x2="12.01" y2="17" />
     </svg>
 );
 
 const Figma = (props: React.SVGProps<SVGSVGElement>) => (
     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" {...props}>
-        <path d="M5 5.5A3.5 3.5 0 0 1 8.5 2H12v7H8.5A3.5 3.5 0 0 1 5 5.5z"/>
-        <path d="M12 2h3.5a3.5 3.5 0 1 1 0 7H12V2z"/>
-        <path d="M12 12.5a3.5 3.5 0 1 1 7 0 3.5 3.5 0 1 1-7 0z"/>
-        <path d="M5 19.5A3.5 3.5 0 0 1 8.5 16H12v3.5a3.5 3.5 0 1 1-7 0z"/>
-        <path d="M5 12.5A3.5 3.5 0 0 1 8.5 9H12v7H8.5A3.5 3.5 0 0 1 5 12.5z"/>
+        <path d="M5 5.5A3.5 3.5 0 0 1 8.5 2H12v7H8.5A3.5 3.5 0 0 1 5 5.5z" />
+        <path d="M12 2h3.5a3.5 3.5 0 1 1 0 7H12V2z" />
+        <path d="M12 12.5a3.5 3.5 0 1 1 7 0 3.5 3.5 0 1 1-7 0z" />
+        <path d="M5 19.5A3.5 3.5 0 0 1 8.5 16H12v3.5a3.5 3.5 0 1 1-7 0z" />
+        <path d="M5 12.5A3.5 3.5 0 0 1 8.5 9H12v7H8.5A3.5 3.5 0 0 1 5 12.5z" />
     </svg>
 );

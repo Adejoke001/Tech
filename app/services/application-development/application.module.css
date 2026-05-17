@@ -5,13 +5,10 @@
     --gradient-primary: linear-gradient(135deg, #3B82F6, #10B981);
     --gradient-primary-dark: linear-gradient(135deg, #2563EB, #059669);
 
-    --secondary-purple: #8B5CF6;
-    --secondary-amber: #F59E0B;
-    --secondary-pink: #EC4899;
-    --secondary-cyan: #06B6D4;
+    /* REMOVED: --secondary-purple, --secondary-amber, --secondary-pink, --secondary-cyan */
 
     --gradient-section-light: linear-gradient(135deg, rgba(59, 130, 246, 0.03) 0%, rgba(16, 185, 129, 0.03) 100%);
-    --gradient-section-dark: linear-gradient(135deg, rgba(15, 23, 42, 0.88) 0%, rgba(30, 41, 59, 83) 100%);
+    --gradient-section-dark: linear-gradient(135deg, rgba(15, 23, 42, 0.92) 0%, rgba(30, 41, 59, 0.92) 100%);
 
     --dark-bg: #0F172A;
     --dark-surface: #1E293B;
@@ -71,7 +68,7 @@
     left: 0;
     width: 100%;
     height: 100%;
-    background: linear-gradient(135deg, rgba(15,23,42,0.85) 0%, rgba(30,41,59,0.8) 100%);
+    background: var(--gradient-section-dark);
     z-index: 1;
 }
 
@@ -104,14 +101,14 @@
     display: inline-flex;
     align-items: center;
     gap: 0.5rem;
-    background: rgba(255,255,255,0.1);
-    color: rgba(255,255,255,0.9);
+    background: rgba(59, 130, 246, 0.2);
+    color: var(--gray-300);
     padding: 0.5rem 1.25rem;
     border-radius: 2rem;
     font-size: 0.875rem;
     font-weight: 500;
     margin-bottom: 1.5rem;
-    border: 1px solid rgba(255,255,255,0.2);
+    border: 1px solid rgba(59, 130, 246, 0.3);
     backdrop-filter: blur(8px);
 }
 
@@ -159,6 +156,7 @@
 }
 
 .primaryButton:hover {
+    background: var(--gradient-primary-dark);
     transform: translateY(-2px);
     box-shadow: 0 8px 25px rgba(59,130,246,0.4);
 }
@@ -182,7 +180,7 @@
     transform: translateY(-2px);
 }
 
-/* Right Content - Testimonial Card (your exact design) */
+/* Right Content - Testimonial Card */
 .rightContent {
     display: flex;
     flex-direction: column;
@@ -219,7 +217,7 @@
     height: 100px;
     border-radius: 50%;
     object-fit: cover;
-    border: 1px solid #34d399;
+    border: 1px solid var(--primary-green);
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
 }
 
@@ -258,7 +256,7 @@
 }
 
 .quoteIcon {
-    color: #34d399;
+    color: var(--primary-green);
     width: 1.5rem;
     height: 1.5rem;
     margin-bottom: 1rem;
@@ -266,7 +264,7 @@
 }
 
 .testimonialText {
-    color: #374151;
+    color: var(--gray-700);
     font-size: 1rem;
     line-height: 1.5;
     margin-bottom: 1rem;
@@ -274,7 +272,7 @@
 }
 
 .testimonialAuthor {
-    color: #10b981;
+    color: var(--primary-green);
     font-weight: 600;
     margin-bottom: 1.5rem;
     font-size: 0.9rem;
@@ -283,12 +281,12 @@
 .testimonialAuthor h4 {
     margin: 0;
     font-size: 1.125rem;
-    color: #1f2937;
+    color: var(--gray-900);
 }
 
 .testimonialAuthor p {
     margin: 0.25rem 0 0 0;
-    color: #6b7280;
+    color: var(--gray-600);
     font-size: 0.875rem;
 }
 
@@ -320,7 +318,7 @@
 }
 
 .ratingText {
-    color: #6b7280;
+    color: var(--gray-600);
     font-size: 0.75rem;
     font-weight: 500;
     text-align: center;
@@ -329,7 +327,7 @@
 .ratingDivider {
     width: 2px;
     height: 30px;
-    background: #10b981;
+    background: var(--primary-green);
     opacity: 0.6;
 }
 
@@ -337,7 +335,7 @@
     display: flex;
     align-items: center;
     gap: 0.5rem;
-    color: #6b7280;
+    color: var(--gray-600);
     font-size: 0.75rem;
     font-weight: 500;
 }
@@ -345,7 +343,7 @@
 .badgeIcon {
     width: 0.9rem;
     height: 0.9rem;
-    color: #10b981;
+    color: var(--primary-green);
 }
 
 /* ===== TRUSTED BY SECTION ===== */
@@ -497,6 +495,7 @@
 
 .serviceFeature svg {
     flex-shrink: 0;
+    color: var(--primary-green);
 }
 
 /* ===== PREDICTABLE DELIVERY SECTION ===== */
@@ -759,7 +758,8 @@
 
 .techItem:hover {
     background: var(--gray-200);
-    border-color: var(--gray-300);
+    border-color: var(--primary-blue);
+    color: var(--primary-blue);
 }
 
 /* ===== PROCESS SECTION ===== */
@@ -865,6 +865,7 @@
 .hiringCard:hover {
     transform: translateY(-5px);
     box-shadow: 0 15px 30px rgba(0,0,0,0.05);
+    border-color: var(--primary-blue);
 }
 
 .hiringHeader {
@@ -873,7 +874,7 @@
     gap: 1rem;
     padding-bottom: 1.5rem;
     margin-bottom: 1.5rem;
-    border-bottom: 2px solid;
+    border-bottom: 2px solid var(--primary-green);
 }
 
 .hiringIcon {
@@ -936,6 +937,7 @@
 
 .hiringFeatures li svg {
     flex-shrink: 0;
+    color: var(--primary-green);
 }
 
 .hiringButton {
@@ -943,6 +945,7 @@
     align-items: center;
     justify-content: center;
     gap: 0.5rem;
+    background: var(--gradient-primary);
     color: white;
     padding: 0.75rem 1rem;
     border-radius: 2rem;
@@ -954,7 +957,7 @@
 }
 
 .hiringButton:hover {
-    opacity: 0.9;
+    background: var(--gradient-primary-dark);
     transform: translateY(-2px);
 }
 
@@ -1283,11 +1286,13 @@
     padding: 0;
     cursor: pointer;
     transition: all 0.3s ease;
+    background: var(--gray-300);
 }
 
 .testimonialDot.active {
     width: 24px;
     border-radius: 12px;
+    background: var(--gradient-primary);
 }
 
 /* ===== FAQ SECTION ===== */
@@ -1525,6 +1530,7 @@
 }
 
 .ctaPrimary:hover {
+    background: var(--gradient-primary-dark);
     transform: translateY(-2px);
     box-shadow: 0 8px 25px rgba(59,130,246,0.4);
 }
@@ -1580,7 +1586,6 @@
     .primaryButton, .secondaryButton {
         width: 100%;
         justify-content: center;
-        margin-bottom: 2rem;
     }
     .ctaCard {
         padding: 3rem 1.5rem;

@@ -3,7 +3,7 @@
 import { useState } from "react";
 import Link from "next/link";
 import styles from "./navbar.module.css";
-import Image from "next/image";
+// import Image from "next/image";
 import { Menu, X } from "lucide-react";
 
 // Simple icons
@@ -71,7 +71,7 @@ export default function Navbar() {
         { name: "Cloud & DevOps Services", href: "/services/cloud-devops-services", icon: <CloudIcon /> },
         { name: "Integration & API Services", href: "/services/integration-api-services", icon: <APIIcon /> },
         { name: "Web Development", href: "/services/web-development", icon: <AIIcon /> },
-        
+
       ],
     },
     hire: {
@@ -130,7 +130,7 @@ export default function Navbar() {
     >
       <div className={styles.container}>
         <div className={styles.mainNav}>
-         <Link
+          <Link
             href="/"
             className={styles.logoLink}
             onClick={closeAll}
@@ -144,7 +144,7 @@ export default function Navbar() {
                 className={styles.logoImage}
                 priority
               /> */}
-              <img 
+              <img
                 src="/new7.png"
                 alt="Company Logo"
                 width="140"
@@ -175,9 +175,8 @@ export default function Navbar() {
             {/* Hire Developers */}
             <div className={styles.dropdownContainer}>
               <button
-                className={`${styles.dropdownButton} ${
-                  isNavbarHovered ? styles.dropdownButtonHovered : ""
-                }`}
+                className={`${styles.dropdownButton} ${isNavbarHovered ? styles.dropdownButtonHovered : ""
+                  }`}
               >
                 Hire Developers
               </button>
@@ -202,9 +201,8 @@ export default function Navbar() {
             {/* Solutions */}
             <div className={styles.dropdownContainer}>
               <button
-                className={`${styles.dropdownButton} ${
-                  isNavbarHovered ? styles.dropdownButtonHovered : ""
-                }`}
+                className={`${styles.dropdownButton} ${isNavbarHovered ? styles.dropdownButtonHovered : ""
+                  }`}
               >
                 Solutions
               </button>
@@ -229,9 +227,8 @@ export default function Navbar() {
             {/* Industries */}
             <div className={styles.dropdownContainer}>
               <button
-                className={`${styles.dropdownButton} ${
-                  isNavbarHovered ? styles.dropdownButtonHovered : ""
-                }`}
+                className={`${styles.dropdownButton} ${isNavbarHovered ? styles.dropdownButtonHovered : ""
+                  }`}
               >
                 Industries
               </button>
@@ -256,9 +253,8 @@ export default function Navbar() {
             {/* Company */}
             <div className={styles.dropdownContainer}>
               <button
-                className={`${styles.dropdownButton} ${
-                  isNavbarHovered ? styles.dropdownButtonHovered : ""
-                }`}
+                className={`${styles.dropdownButton} ${isNavbarHovered ? styles.dropdownButtonHovered : ""
+                  }`}
               >
                 Company
               </button>

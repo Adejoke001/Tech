@@ -65,7 +65,7 @@ export default function FrontendDevelopersPage() {
       description:
         "Fast-loading SPAs & PWAs using React, Angular, or Vue with secure API-driven dynamic content.",
       icon: <Layout className={styles.expertiseIcon} />,
-      color: "#3B82F6",
+      color: "#10b981",
       features: [
         "Single Page Applications",
         "Progressive Web Apps",
@@ -88,7 +88,7 @@ export default function FrontendDevelopersPage() {
         "Native-like performance",
       ],
       link: "/services/product-development",
-      
+
     },
     {
       id: 3,
@@ -96,14 +96,14 @@ export default function FrontendDevelopersPage() {
       description:
         "Real-time UI updates and scalable architecture optimized for AWS, Azure & serverless backends.",
       icon: <Cloud className={styles.expertiseIcon} />,
-      color: "#8B5CF6",
+      color: "#10b981",
       features: [
         "AWS Amplify integration",
         "Azure Static Web Apps",
         "Serverless architectures",
         "Real-time updates",
       ],
-      link: "/services/cloud-devops-services", 
+      link: "/services/cloud-devops-services",
     },
     {
       id: 4,
@@ -111,7 +111,7 @@ export default function FrontendDevelopersPage() {
       description:
         "Seamless dashboards, portals & workflows with scalable UI and role-based access control.",
       icon: <Users className={styles.expertiseIcon} />,
-      color: "#F59E0B",
+      color: "#10b981",
       features: [
         "Multi-tenant dashboards",
         "Role-based interfaces",
@@ -126,7 +126,7 @@ export default function FrontendDevelopersPage() {
       description:
         "WCAG-compliant experiences with lazy loading, performance tuning, and SEO-friendly interfaces.",
       icon: <Zap className={styles.expertiseIcon} />,
-      color: "#EC4899",
+      color: "#10b981",
       features: [
         "WCAG 2.1 compliance",
         "Performance optimization",
@@ -141,7 +141,7 @@ export default function FrontendDevelopersPage() {
       description:
         "Reusable UI components for faster builds and consistent brand experience across your product.",
       icon: <GitBranch className={styles.expertiseIcon} />,
-      color: "#06B6D4",
+      color: "#10b981",
       features: [
         "Storybook integration",
         "Design systems",
@@ -152,7 +152,7 @@ export default function FrontendDevelopersPage() {
     },
   ];
 
-  // Technology Stack (categorized as per ValueCoders)
+  // Technology Stack (categorized as per bbmcoders)
   const technologyStack = {
     "core-stack": {
       title: "Core Stack",
@@ -162,7 +162,6 @@ export default function FrontendDevelopersPage() {
         "CSS3",
         "JavaScript (ES6+)",
         "TypeScript",
-        "SASS/SCSS",
         "Tailwind CSS",
       ],
     },
@@ -171,66 +170,48 @@ export default function FrontendDevelopersPage() {
       color: "#10B981",
       technologies: [
         "React.js",
-        "Angular",
-        "Vue.js",
         "Next.js",
+        "Vue.js",
         "Material UI",
-        "Ant Design",
-        "Chakra UI",
-        "Bootstrap",
+        "Tailwind CSS",
       ],
     },
     tooling: {
-      title: "Build, Tooling & Performance",
-      color: "#8B5CF6",
+      title: "Build & Tooling",
+      color: "#3b82f6",
       technologies: [
         "Webpack",
         "Vite",
-        "Babel",
         "ESLint",
         "Prettier",
-        "Rollup",
-        "Parcel",
-        "ESBuild",
       ],
     },
     testing: {
-      title: "Testing & QA Tools",
-      color: "#F59E0B",
+      title: "Testing & QA",
+      color: "#10b981",
       technologies: [
         "Jest",
-        "Cypress",
-        "Puppeteer",
-        "Playwright",
-        "Mocha",
-        "Storybook",
         "React Testing Library",
+        "Cypress",
       ],
     },
     design: {
-      title: "Design & Prototyping Tools",
-      color: "#EC4899",
+      title: "Design Tools",
+      color: "#3b82f6",
       technologies: [
         "Figma",
         "Adobe XD",
-        "Sketch",
-        "Zeplin",
-        "InVision",
         "Photoshop",
-        "Illustrator",
       ],
     },
     collaboration: {
-      title: "Project Management & Collaboration",
-      color: "#06B6D4",
+      title: "Project Management",
+      color: "#10b981",
       technologies: [
         "Jira",
         "Trello",
-        "Asana",
-        "ClickUp",
-        "Notion",
         "Slack",
-        "Microsoft Teams",
+        "Notion",
       ],
     },
   };
@@ -282,32 +263,32 @@ export default function FrontendDevelopersPage() {
   // Benefits Section
   const benefits = [
     {
-      title: "Blazing-Fast Performance",
+      title: "Fast Performance",
       description:
-        "Engineered interfaces with 50% faster load times through performance-first coding practices.",
+        "Optimized interfaces with improved load times through performance-first coding practices.",
       icon: <Zap />,
-      stats: "50% faster load times",
+      stats: "Faster load times",
     },
     {
       title: "Pixel-Perfect UI",
       description:
         "Precision-crafted interfaces that elevate user experience and drive engagement.",
       icon: <Layout />,
-      stats: "95% client satisfaction",
+      stats: "High client satisfaction",
     },
     {
       title: "Scalable Architecture",
       description:
-        "Future-proof frontend architecture built for long-term growth and maintenance.",
+        "Modern frontend architecture built for growth and easy maintenance.",
       icon: <TrendingUp />,
-      stats: "Scalable for 1M+ users",
+      stats: "Built to scale",
     },
     {
       title: "Cross-Platform Excellence",
       description:
-        "Native-like experiences across web, mobile, and desktop platforms.",
+        "Consistent experiences across web, mobile, and desktop platforms.",
       icon: <Globe />,
-      stats: "100% platform coverage",
+      stats: "Full coverage",
     },
   ];
 
@@ -344,9 +325,9 @@ export default function FrontendDevelopersPage() {
 
   // Stats Section
   const companyStats = [
-    { value: "700+", label: "Full-time Developers", icon: <Users /> },
-    { value: "20+", label: "Years Experience", icon: <Award /> },
-    { value: "4500+", label: "Satisfied Clients", icon: <HeadphonesIcon /> },
+    { value: "10+", label: "Full-time Developers", icon: <Users /> },
+    { value: "5+", label: "Years Experience", icon: <Award /> },
+    { value: "80+", label: "Satisfied Clients", icon: <HeadphonesIcon /> },
     { value: "95%", label: "Project Success Rate", icon: <CheckCircle /> },
   ];
 
@@ -358,7 +339,7 @@ export default function FrontendDevelopersPage() {
         "Scalable online stores with seamless checkout and personalized shopping.",
       icon: <ShoppingBag />,
       examples: ["Online marketplaces", "Product catalogs", "Shopping carts"],
-      color: "#EC4899",
+      color: "#10b981",
     },
     {
       title: "FinTech & Banking Dashboards",
@@ -378,14 +359,14 @@ export default function FrontendDevelopersPage() {
         "Analytics platforms",
         "Real-time monitoring tools",
       ],
-      color: "#3B82F6",
+      color: "#10b981",
     },
     {
       title: "Cross-Platform Mobile UIs",
       description: "Native-like mobile experiences for iOS and Android.",
       icon: <Smartphone />,
       examples: ["E-commerce apps", "Social platforms", "Productivity tools"],
-      color: "#8B5CF6",
+      color: "#10b981",
     },
     {
       title: "Interactive Data Visualizations",
@@ -396,7 +377,7 @@ export default function FrontendDevelopersPage() {
         "Interactive graphs",
         "Real-time data feeds",
       ],
-      color: "#F59E0B",
+      color: "#10b981",
     },
     {
       title: "Conversion-Focused Experiences",
@@ -404,7 +385,7 @@ export default function FrontendDevelopersPage() {
         "User interfaces designed to maximize engagement and conversions.",
       icon: <TrendingUp />,
       examples: ["Landing pages", "Product showcases", "Customer portals"],
-      color: "#06B6D4",
+      color: "#10b981",
     },
   ];
 
@@ -432,7 +413,7 @@ export default function FrontendDevelopersPage() {
       desc: "Patient portals, telemedicine platforms, medical dashboards, and healthcare management systems with HIPAA-compliant interfaces.",
       image:
         "https://images.unsplash.com/photo-1551601651-2a8555f1a136?auto=format&fit=crop&w=800&q=80",
-      color: "#8B5CF6",
+      color: "#3b82f6",
     },
   ];
 
@@ -441,34 +422,34 @@ export default function FrontendDevelopersPage() {
     {
       question: "How quickly can I hire frontend developers from BBMcoders?",
       answer:
-        "We can onboard dedicated frontend developers in 24-48 hours. Our vetting process is streamlined to provide you with pre-screened, experienced developers who match your specific requirements.",
+        "We can onboard dedicated frontend developers within a week. Our vetting process ensures you get pre-screened, experienced developers who match your specific requirements.",
     },
     {
       question:
         "What frameworks and technologies do your developers specialize in?",
       answer:
-        "Our developers are experts in React, Angular, Vue.js, Next.js, TypeScript, and modern CSS frameworks like Tailwind CSS. We also work with testing tools, build systems, and design tools for complete frontend solutions.",
+        "Our developers are experienced in React, Next.js, TypeScript, and modern CSS frameworks like Tailwind CSS. We also work with testing tools and build systems for complete frontend solutions.",
     },
     {
       question: "Do you offer a trial period for hired developers?",
       answer:
-        "Yes, we offer a 7-day risk-free trial period. This allows you to evaluate the developer's skills and fit with your team before making a long-term commitment.",
+        "Yes, we offer a trial period to evaluate the developer's skills and fit with your team before making a long-term commitment.",
     },
     {
       question: "How do you ensure code quality and best practices?",
       answer:
-        "We follow strict coding standards, conduct regular code reviews, implement comprehensive testing (unit, integration, E2E), and use modern tooling for linting, formatting, and performance optimization.",
+        "We follow coding standards, conduct regular code reviews, implement comprehensive testing, and use modern tooling for linting, formatting, and performance optimization.",
     },
     {
       question:
         "Can your frontend developers work with our existing backend team?",
       answer:
-        "Absolutely. Our developers are experienced in API integration and collaboration with backend teams. We use standard communication protocols and can adapt to your existing workflows and tools.",
+        "Absolutely. Our developers are experienced in API integration and collaboration with backend teams. They adapt to your existing workflows and tools.",
     },
     {
       question: "What kind of support and project management do you provide?",
       answer:
-        "We provide dedicated project managers, daily stand-ups, sprint planning, and transparent communication through your preferred tools (Slack, Teams, Jira, etc.). We also offer ongoing maintenance and support.",
+        "We provide dedicated project managers, regular updates, and transparent communication through your preferred tools (Slack, Teams, Jira, etc.). We also offer ongoing maintenance and support.",
     },
   ];
 
@@ -525,7 +506,7 @@ export default function FrontendDevelopersPage() {
           </motion.div>
 
           {/* Right Side - Testimonial Card */}
-          <motion.div
+          {/* <motion.div
             className={styles.rightContent}
             initial={{ opacity: 0, x: 20 }}
             animate={{ opacity: 1, x: 0 }}
@@ -577,7 +558,7 @@ export default function FrontendDevelopersPage() {
                 </div>
               </div>
             </div>
-          </motion.div>
+          </motion.div> */}
         </div>
       </section>
 
@@ -699,7 +680,7 @@ export default function FrontendDevelopersPage() {
                 borderColor:
                   activeTechTab === tabKey
                     ? technologyStack[tabKey as keyof typeof technologyStack]
-                        .color
+                      .color
                     : "transparent",
               }}
             >

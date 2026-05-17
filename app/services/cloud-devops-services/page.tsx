@@ -22,29 +22,29 @@ export default function CloudServicesPage() {
 
     const testimonial = {
         name: 'Jonathan',
-        role: 'CTO, Tech Solutions',
+        // role: 'CTO, Tech Solutions',
         content: 'Outstanding results, clear communication, and a dedicated team. We\'re extremely satisfied with their IT services.',
         rating: 5,
-        project: 'Enterprise Cloud Migration'
+        project: 'Cloud Migration'
     };
 
     // ===== CLOUD SERVICES (Added one more column) =====
     const cloudServices = [
-        { icon: <HardDrive />, title: 'Cloud Backup', desc: 'Protect your critical data with automated backups, instant recovery options, and secure storage.', features: ['Reduce downtime with fast restore', 'Protect against ransomware and data loss', 'Ensure compliance across systems'], color: '#3B82F6' },
+        { icon: <HardDrive />, title: 'Cloud Backup', desc: 'Protect your critical data with automated backups, instant recovery options, and secure storage.', features: ['Reduce downtime with fast restore', 'Protect against ransomware and data loss', 'Ensure compliance across systems'], color: '#10B981' },
         { icon: <Shield />, title: 'Cloud Security', desc: 'Secure your cloud environments with end-to-end encryption, threat monitoring, and compliance frameworks.', features: ['Prevent cyber risks and vulnerabilities', 'Enable safe remote access', 'Compliance risk management'], color: '#10B981' },
-        { icon: <Layers />, title: 'Hybrid Cloud Services', desc: 'Unlock maximum efficiency with intelligent hybrid cloud strategies.', features: ['Seamless integration across environments', 'Unified security and monitoring', 'Optimized cost & performance'], color: '#8B5CF6' },
-        { icon: <RefreshCw />, title: 'Cloud Disaster Recovery', desc: 'Shield your business from operational paralysis with proactive disaster recovery.', features: ['Swift data restoration process', 'Minimal operational interruption', 'Rapid crisis response mechanism'], color: '#F59E0B' },
-        { icon: <UploadCloud />, title: 'Cloud Migration', desc: 'Seamlessly transition your business to cloud technology without complexity.', features: ['Zero-downtime system transfer', 'Minimal operational disruption', 'Expert-guided migration strategy'], color: '#EF4444' },
-        { icon: <Database />, title: 'Cloud Storage', desc: 'Revolutionize your data management with intelligent cloud storage solutions.', features: ['Robust security protocols', 'Enhanced data accessibility', 'Scalable storage infrastructure'], color: '#06B6D4' },
-        { icon: <Lock />, title: 'Private Cloud', desc: 'Fortify your digital ecosystem with custom private cloud solutions.', features: ['Complete data sovereignty', 'Full regulatory compliance', 'Tailored security architecture'], color: '#84CC16' },
-        { icon: <GitMerge />, title: 'Cloud Integration', desc: 'Simplify your digital ecosystem with seamless integration and cloud strategy consulting.', features: ['Boosted operational efficiency', 'Easy integration of cloud platforms', 'Improved data flow'], color: '#8B5CF6' },
-        { icon: <Settings />, title: 'Cloud ERP', desc: 'Streamline your enterprise processes with scalable ERP systems.', features: ['Increased operational efficiency', 'Enhanced workflow management', 'Real-time insights'], color: '#F97316' },
-        { icon: <Users />, title: 'Cloud CRM', desc: 'Improve customer interactions and service delivery.', features: ['Enhanced customer relationships', 'Improved service delivery', 'Better sales and user management'], color: '#EC4899' },
-        { icon: <Cpu />, title: 'Cloud Computing', desc: 'Boost efficiency and reduce operational costs.', features: ['Tailored to your business needs', 'Maximized efficiency and savings', 'Cloud solution implementation'], color: '#6366F1' },
-        { icon: <Building />, title: 'Enterprise Cloud', desc: 'Drive efficiency and scalability for large organizations.', features: ['Solutions for complex operations', 'Growth and adaptability support', 'Optimal performance'], color: '#0EA5E9' },
-        { icon: <Wifi />, title: 'Cloud Networking', desc: 'Enhance connectivity and collaboration with secure cloud networking.', features: ['Supports business growth and innovation', 'Scalable and secure network infrastructure', 'Seamless integration for smooth operations'], color: '#14B8A6' },
-        { icon: <Server />, title: 'Cloud Hosting', desc: 'Optimize performance with reliable and scalable cloud hosting.', features: ['Robust support tailored to your needs', 'Fast load times and continuous availability', 'Ensures consistent, high-performance hosting'], color: '#F43F5E' },
-        { icon: <Download />, title: 'Cloud Consulting', desc: 'Expert guidance for your cloud strategy and implementation.', features: ['Strategic planning', 'Technology selection', 'Implementation roadmap'], color: '#8B5CF6' },
+        { icon: <Layers />, title: 'Hybrid Cloud Services', desc: 'Unlock maximum efficiency with intelligent hybrid cloud strategies.', features: ['Seamless integration across environments', 'Unified security and monitoring', 'Optimized cost & performance'], color: '#10b981' },
+        { icon: <RefreshCw />, title: 'Cloud Disaster Recovery', desc: 'Shield your business from operational paralysis with proactive disaster recovery.', features: ['Swift data restoration process', 'Minimal operational interruption', 'Rapid crisis response mechanism'], color: '#10b981' },
+        { icon: <UploadCloud />, title: 'Cloud Migration', desc: 'Seamlessly transition your business to cloud technology without complexity.', features: ['Zero-downtime system transfer', 'Minimal operational disruption', 'Expert-guided migration strategy'], color: '#10b981' },
+        { icon: <Database />, title: 'Cloud Storage', desc: 'Revolutionize your data management with intelligent cloud storage solutions.', features: ['Robust security protocols', 'Enhanced data accessibility', 'Scalable storage infrastructure'], color: '#10b981' },
+        { icon: <Lock />, title: 'Private Cloud', desc: 'Fortify your digital ecosystem with custom private cloud solutions.', features: ['Complete data sovereignty', 'Full regulatory compliance', 'Tailored security architecture'], color: '#10b981' },
+        { icon: <GitMerge />, title: 'Cloud Integration', desc: 'Simplify your digital ecosystem with seamless integration and cloud strategy consulting.', features: ['Boosted operational efficiency', 'Easy integration of cloud platforms', 'Improved data flow'], color: '#10b981' },
+        { icon: <Settings />, title: 'Cloud ERP', desc: 'Streamline your enterprise processes with scalable ERP systems.', features: ['Increased operational efficiency', 'Enhanced workflow management', 'Real-time insights'], color: '#10b981' },
+        { icon: <Users />, title: 'Cloud CRM', desc: 'Improve customer interactions and service delivery.', features: ['Enhanced customer relationships', 'Improved service delivery', 'Better sales and user management'], color: '#10b981' },
+        { icon: <Cpu />, title: 'Cloud Computing', desc: 'Boost efficiency and reduce operational costs.', features: ['Tailored to your business needs', 'Maximized efficiency and savings', 'Cloud solution implementation'], color: '#10b981' },
+        { icon: <Building />, title: 'Enterprise Cloud', desc: 'Drive efficiency and scalability for large organizations.', features: ['Solutions for complex operations', 'Growth and adaptability support', 'Optimal performance'], color: '#10b981' },
+        { icon: <Wifi />, title: 'Cloud Networking', desc: 'Enhance connectivity and collaboration with secure cloud networking.', features: ['Supports business growth and innovation', 'Scalable and secure network infrastructure', 'Seamless integration for smooth operations'], color: '#10b981' },
+        { icon: <Server />, title: 'Cloud Hosting', desc: 'Optimize performance with reliable and scalable cloud hosting.', features: ['Robust support tailored to your needs', 'Fast load times and continuous availability', 'Ensures consistent, high-performance hosting'], color: '#10b981' },
+        { icon: <Download />, title: 'Cloud Consulting', desc: 'Expert guidance for your cloud strategy and implementation.', features: ['Strategic planning', 'Technology selection', 'Implementation roadmap'], color: '#10b981' },
     ];
 
     // ===== CLOUD DEPLOYMENT TYPES (Added two more columns) =====
@@ -54,7 +54,7 @@ export default function CloudServicesPage() {
             desc: 'Explore unlimited scalability and cost savings with public cloud.',
             icon: <Globe />,
             features: ['Optimized for growth and efficiency.', 'Effortless scalability with cost control.', 'High-performance cloud infrastructure.'],
-            bgColor: 'rgba(59, 130, 246, 0.08)',
+            bgColor: 'rgba(59, 130, 246, 0.1)',
             borderColor: '#3B82F6'
         },
         {
@@ -62,72 +62,72 @@ export default function CloudServicesPage() {
             desc: 'Achieve maximum data control and security with private cloud.',
             icon: <Key />,
             features: ['Enhanced data protection.', 'Secure, isolated environments.', 'Strict regulatory and compliance requirements.'],
-            bgColor: 'rgba(16, 185, 129, 0.08)',
-            borderColor: '#10B981'
+            bgColor: 'rgba(59, 130, 246, 0.1)',
+            borderColor: '#3b82f6'
         },
         {
             title: 'Hybrid Cloud Deployments',
             desc: 'Utilize the best of both worlds with hybrid cloud deployment.',
             icon: <Layers />,
             features: ['Seamless integration.', 'Enhanced flexibility and scalability.', 'Optimize workloads and reduce costs.'],
-            bgColor: 'rgba(139, 92, 246, 0.08)',
-            borderColor: '#8B5CF6'
+            bgColor: 'rgba(59, 130, 246, 0.1)',
+            borderColor: '#3b82F6'
         },
         {
             title: 'Multi-Cloud Deployments',
             desc: 'Increase resilience and avoid vendor lock-in with multi-cloud.',
             icon: <Cloud />,
             features: ['Improved performance and reliability.', 'Distribute workloads across platforms.', 'Strategic flexibility for business growth.'],
-            bgColor: 'rgba(245, 158, 11, 0.08)',
-            borderColor: '#F59E0B'
+            bgColor: 'rgba(59, 130, 246, 0.1)',
+            borderColor: '#3b82f6'
         },
         {
             title: 'Server-less Deployments',
             desc: 'Reduce infrastructure management with server-less cloud.',
             icon: <Zap />,
             features: ['Faster time-to-market.', 'Minimal operational overhead.', 'Focus on development and innovation.'],
-            bgColor: 'rgba(239, 68, 68, 0.08)',
-            borderColor: '#EF4444'
+            bgColor: 'rgba(59, 130, 246, 0.1)',
+            borderColor: '#3b82f6'
         },
         {
             title: 'Edge Cloud Deployments',
             desc: 'Improve response times and reduce latency with edge cloud.',
             icon: <Loader />,
             features: ['Data processing for faster services.', 'Optimized for high-performance applications.', 'Reduced latency and enhanced user experiences.'],
-            bgColor: 'rgba(20, 184, 166, 0.08)',
-            borderColor: '#14B8A6'
+            bgColor: 'rgba(59, 130, 246, 0.1)',
+            borderColor: '#3b82f6'
         },
     ];
 
     // ===== REDESIGNED HIRING MODELS =====
-    const hiringModels = [
+const hiringModels = [
         {
             title: 'Fixed Price Model',
             description: 'For businesses with well-defined project scope and requirements.',
-            price: 'From $25,000',
+            price: 'From $5,000',
             features: ['Simplified process', 'Higher predictability', 'Greater transparency', 'Reduced risk', 'Low management efforts'],
             color: '#10B981',
             gradient: 'linear-gradient(135deg, #10B981 0%, #34D399 100%)',
-            bestFor: ['Specific Cloud Migration', 'Security Implementation', 'Compliance Projects'],
+            bestFor: ['Cloud Migration', 'Security Setup', 'Compliance Readiness'],
             icon: <FileText />
         },
         {
             title: 'Dedicated Hiring Model',
             description: 'For businesses with long-term project requirements or complex development process.',
-            price: 'From $8,500 /month',
+            price: 'From $4,500 /month',
             features: ['Complete control', 'More flexibility', 'Focused and dedicated approach', 'Faster time to market', 'Staff Augmentation'],
-            color: '#3B82F6',
-            gradient: 'linear-gradient(135deg, #3B82F6 0%, #60A5FA 100%)',
+            color: '#10B981',
+            gradient: 'linear-gradient(135deg, #10B981 0%, #059669 100%)',
             bestFor: ['Ongoing Cloud Management', 'DevOps Implementation', 'Continuous Optimization'],
             icon: <Users />
         },
         {
             title: 'Time & Material Model',
-            description: 'For businesses looking to pay for completed project instead of committing to fixed project cost.',
-            price: '$75 - $200 /hour',
+            description: 'For businesses looking to pay for completed work instead of committing to fixed project cost.',
+            price: '$40 - $100 /hour',
             features: ['Faster project start', 'Flexibility to adapt as per changing needs', 'Pay as you go model', 'Easy scaling', 'Transparent billing'],
-            color: '#8B5CF6',
-            gradient: 'linear-gradient(135deg, #8B5CF6 0%, #A78BFA 100%)',
+            color: '#10B981',
+            gradient: 'linear-gradient(135deg, #10B981 0%, #059669 100%)',
             bestFor: ['Cloud Consulting', 'Proof of Concepts', 'Emergency Support'],
             icon: <Clock />
         },
@@ -147,14 +147,14 @@ export default function CloudServicesPage() {
             icon: '🛍️',
             desc: 'Enhancing retail journeys with real-time inventory tracking, personalized customer experiences, and scalable infrastructure to handle peak shopping seasons seamlessly.',
             image: 'https://images.unsplash.com/photo-1441986300917-64674bd600d8?auto=format&fit=crop&w=800&q=80',
-            color: '#8B5CF6'
+            color: '#3b82f6'
         },
         {
             name: 'Media & Entertainment',
             icon: '🎬',
             desc: 'Custom tech to empower brands with content delivery networks, streaming optimization, and audience analytics for personalized media experiences.',
             image: 'https://plus.unsplash.com/premium_photo-1664303677453-ca2ad8f7dd8d?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTN8fG1lZGlhJTIwYW5kJTIwZW50ZXJ0YWlubWVudHxlbnwwfHwwfHx8MA%3D%3D',
-            color: '#EC4899'
+            color: '#10b981'
         },
     ];
 
@@ -179,8 +179,7 @@ export default function CloudServicesPage() {
         <div className={styles.pageContainer}>
 
             {/* ===== HERO SECTION ===== */}
-            <section className={styles.hero}>
-                <div className={styles.heroBackground}></div>
+            <section className={styles.heroBackground}>
                 <div className={styles.heroContent}>
                     <motion.div className={styles.heroText} initial={{ opacity: 0, y: 30 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.8 }}>
                         <div className={styles.heroBadge}>
@@ -223,7 +222,7 @@ export default function CloudServicesPage() {
                                 </div>
                                 <div className={styles.testimonialInfo}>
                                     <h4 className={styles.testimonialName}>{testimonial.name}</h4>
-                                    <p className={styles.testimonialRole}>{testimonial.role}</p>
+                                    {/* <p className={styles.testimonialRole}>{testimonial.role}</p> */}
                                     <div className={styles.testimonialRating}>
                                         {[...Array(testimonial.rating)].map((_, i) => (
                                             <Star key={i} size={16} fill="#FBBF24" color="#FBBF24" />
@@ -340,17 +339,17 @@ export default function CloudServicesPage() {
                             <h3 className={styles.subsectionTitle}>Clouds We Work With</h3>
                             <div className={styles.cloudProviders}>
                                 <div className={styles.providerCard}>
-                                    <div className={styles.providerLogo} style={{ backgroundColor: '#0078D420', color: '#0078D4' }}>A</div>
+                                    <div className={styles.providerLogo} style={{ backgroundColor: 'rgba(59, 130, 246, 0.1)', color: '#3b82f6' }}>A</div>
                                     <h4>Microsoft Azure</h4>
                                     <p>Comprehensive suite of services to build and deploy cutting-edge applications.</p>
                                 </div>
                                 <div className={styles.providerCard}>
-                                    <div className={styles.providerLogo} style={{ backgroundColor: '#4285F420', color: '#4285F4' }}>G</div>
+                                    <div className={styles.providerLogo} style={{ backgroundColor: 'rgba(59, 130, 246, 0.1)', color: '#3b82f6' }}>G</div>
                                     <h4>Google Cloud</h4>
                                     <p>Open-source platform with flexible scaling to build & deploy next-gen apps.</p>
                                 </div>
                                 <div className={styles.providerCard}>
-                                    <div className={styles.providerLogo} style={{ backgroundColor: '#FF990020', color: '#FF9900' }}>W</div>
+                                    <div className={styles.providerLogo} style={{ backgroundColor: 'rgba(59, 130, 246, 0.1)', color: '#3b82f6' }}>W</div>
                                     <h4>Amazon AWS</h4>
                                     <p>The leading cloud platform with extensive global infrastructure and services.</p>
                                 </div>
@@ -361,8 +360,8 @@ export default function CloudServicesPage() {
                                 <h2>Why Choose BBMcoders?</h2>
                                 <p>We bring innovation, expertise, and reliability to every cloud project. With 20+ years of cloud expertise, certified talent, and reliable delivery.</p>
                                 <div className={styles.whyChooseGrid}>
-                                    <div className={styles.whyChooseCard}><Award /> Nigeria&apos;s Top 1% Software Talent</div>
-                                    <div className={styles.whyChooseCard}><Users /> Trusted by Startups to Fortune 500</div>
+                                    <div className={styles.whyChooseCard}><Award /> Nigeria&apos;s Top 10% Software Talent</div>
+                                    <div className={styles.whyChooseCard}><Users /> Trusted by Startups to Enterprise</div>
                                     <div className={styles.whyChooseCard}><Workflow /> Idea to Deployment, We Handle All</div>
                                     <div className={styles.whyChooseCard}><Globe /> Time-Zone Friendly: Global Presence</div>
                                     <div className={styles.whyChooseCard}><Shield /> Top-tier Data Security Protocols</div>

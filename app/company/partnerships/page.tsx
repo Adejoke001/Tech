@@ -14,11 +14,11 @@ import {
 import styles from './partnership.module.css';
 
 export default function PartnershipPage() {
-    const stats = [
-        { value: '20+', label: 'Years Experience', icon: <Clock /> },
-        { value: '650+', label: 'In-house Developers', icon: <Users /> },
-        { value: '2000+', label: 'Man Years Experience', icon: <Award /> },
-        { value: '2500+', label: 'Satisfied Clients', icon: <CheckCircle /> }
+const stats = [
+        { value: '5+', label: 'Years in Business', icon: <Clock /> },
+        { value: '10+', label: 'Full-Time Team Members', icon: <Users /> },
+        { value: '100+', label: 'Projects Completed', icon: <Award /> },
+        { value: '95%', label: 'Client Satisfaction', icon: <CheckCircle /> }
     ];
 
     const clientFocus = [
@@ -26,7 +26,7 @@ export default function PartnershipPage() {
             title: 'Product Companies',
             description: 'Reduce time to market with our agile development process that seamlessly integrates into your project at any stage.',
             icon: <Building2 />,
-            color: '#3B82F6'
+            color: '#10b981'
         },
         {
             title: 'Technological Evangelists',
@@ -38,65 +38,65 @@ export default function PartnershipPage() {
             title: 'Digital Agencies',
             description: 'Leverage our specialized technical talent in AdTech, EdTech, and online video to deliver turnkey projects on time and within budget.',
             icon: <Globe />,
-            color: '#8B5CF6'
+            color: '#10b981'
         }
     ];
 
-    const benefits = [
+const benefits = [
         {
-            title: 'Quality Market Research',
-            description: 'Get free market research, business consulting, and market positioning advice tailored to your target audience and solution portfolio.',
+            title: 'Market Research Support',
+            description: 'We provide market insights and positioning advice tailored to your target audience.',
             icon: <Search />,
             color: '#3B82F6'
         },
         {
             title: 'Pre-sales Assistance',
-            description: 'We support you in tenders, proposals, RFP, RFI, and other pre-sales activities – completely free of charge.',
+            description: 'We help with proposals, RFPs, and pre-sales activities to support your business growth.',
             icon: <Presentation />,
-            color: '#10B981'
+            color: '#3b82f6'
         },
         {
-            title: 'Advanced Knowledge Base',
-            description: 'Access tons of case studies, technical documents, and solution resources to accelerate your sales and delivery.',
+            title: 'Knowledge Base Access',
+            description: 'Access case studies, technical documents, and solution resources to support your sales efforts.',
             icon: <BookOpen />,
-            color: '#8B5CF6'
+            color: '#3b82F6'
         },
         {
-            title: 'Advanced Delivery Engine',
-            description: 'Our robust management and supervision guarantee 100% project success, with transparent processes and predictable outcomes.',
+            title: 'Delivery Management',
+            description: 'Our structured processes ensure transparent communication and predictable project outcomes.',
             icon: <Workflow />,
-            color: '#F59E0B'
+            color: '#3b82f6'
         },
         {
             title: 'Post-Delivery Support',
-            description: 'Enjoy high-quality maintenance, production support, and implied warranties – we stand behind every project.',
+            description: 'We provide maintenance and support to ensure your projects run smoothly after launch.',
             icon: <HeadphonesIcon />,
-            color: '#EC4899'
+            color: '#3b82f6'
         },
         {
-            title: 'Training Programs',
-            description: 'Stay ahead with exclusive training programs in emerging technologies and relevant market opportunities.',
+            title: 'Training Opportunities',
+            description: 'Access training programs to stay updated on relevant technologies and solutions.',
             icon: <GraduationCap />,
-            color: '#06B6D4'
+            color: '#3b82f6'
         },
         {
-            title: 'Revenue-Rich Portfolio',
-            description: 'Offer your clients a wide range of digital enterprise solutions with attractive margins and incentives.',
+            title: 'Partner Incentives',
+            description: 'Offer digital enterprise solutions to your clients with competitive partner margins.',
             icon: <TrendingUp />,
             color: '#3B82F6'
         },
         {
-            title: 'Dedicated Partner Manager',
-            description: 'You get a single point of contact who ensures smooth communication, quick resolutions, and proactive support.',
+            title: 'Dedicated Partner Contact',
+            description: 'A single point of contact to ensure smooth communication and quick resolutions.',
             icon: <Handshake />,
-            color: '#10B981'
+            color: '#3b82f6'
         }
     ];
 
-    const models = [
+const models = [
         {
             title: 'Sub-contracting',
-            description: 'You are the prime contractor; we work as your subcontractor, invisible to the end customer. Ideal for scaling your delivery capacity.',
+            description: 'You act as the prime contractor while we work as your subcontractor, invisible to the end customer. Ideal for scaling your delivery capacity.',
             icon: <Briefcase />,
             color: '#3B82F6'
         },
@@ -108,19 +108,19 @@ export default function PartnershipPage() {
         },
         {
             title: 'Tri-party Agreement',
-            description: 'A three-way contract between you, the client, and us – everyone participates actively. Preferred when partners use deferred financing.',
+            description: 'A three-way contract between you, the client, and us. Preferred when partners use deferred financing arrangements.',
             icon: <FileText />,
-            color: '#8B5CF6'
+            color: '#3b82f6'
         }
     ];
 
-    const whyPartnerPoints = [
-        { text: 'ISO 27001 Certified – enterprise-grade security', icon: <ShieldCheck />, color: '#3B82F6' },
+const whyPartnerPoints = [
+        { text: 'Security best practices and compliance focus', icon: <ShieldCheck />, color: '#10b981' },
         { text: '100% IP Protection & NDA compliance', icon: <Lock />, color: '#10B981' },
-        { text: 'Flexible engagement models – scale up/down anytime', icon: <TrendingUp />, color: '#8B5CF6' },
-        { text: 'Dedicated partner success manager', icon: <HeartHandshake />, color: '#F59E0B' },
-        { text: 'Co-branded marketing support', icon: <ThumbsUp />, color: '#EC4899' },
-        { text: 'Access to 650+ pre-vetted engineers', icon: <Users />, color: '#06B6D4' }
+        { text: 'Flexible engagement models – scale up/down anytime', icon: <TrendingUp />, color: '#10b981' },
+        { text: 'Dedicated point of contact', icon: <HeartHandshake />, color: '#10b981' },
+        { text: 'Regular progress reports & updates', icon: <ThumbsUp />, color: '#10b981' },
+        { text: 'Access to 10+ skilled developers', icon: <Users />, color: '#10b981' }
     ];
 
     return (

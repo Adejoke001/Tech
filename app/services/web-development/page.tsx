@@ -149,29 +149,26 @@ export default function WebDevelopmentPage() {
 
     // ============ WHY PARTNER ============
     const whyPartner = [
-        { text: 'Senior Engineers with 5-12 Years of Experience', icon: <Users />, color: '#3B82F6' },
+        { text: 'Senior Engineers with 5-12 Years of Experience', icon: <Users />, color: '#10b981' },
         { text: 'Trusted by Startups to Fortune 500', icon: <Building2 />, color: '#10B981' },
-        { text: 'Idea to Deployment, We Handle All', icon: <Rocket />, color: '#8B5CF6' },
-        { text: 'Time-Zone Friendly: Global Presence', icon: <Globe />, color: '#F59E0B' },
-        { text: 'Flexible Engagement Models', icon: <Settings />, color: '#EC4899' },
-        { text: 'On-time Delivery, No Surprises', icon: <Clock />, color: '#06B6D4' },
+        { text: 'Idea to Deployment, We Handle All', icon: <Rocket />, color: '#10b981' },
+        { text: 'Time-Zone Friendly: Global Presence', icon: <Globe />, color: '#10b981' },
+        { text: 'Flexible Engagement Models', icon: <Settings />, color: '#10b981' },
+        { text: 'On-time Delivery, No Surprises', icon: <Clock />, color: '#10b981' },
     ];
 
     // ============ TECHNOLOGIES (from URL) ============
     const techCategories = [
         {
             title: 'Databases',
-            color: '#3B82F6',
             technologies: ['Microsoft SQL Server', 'MySQL', 'MariaDB', 'PostgreSQL', 'SQLite', 'MongoDB', 'Realm', 'Apache Cassandra']
         },
         {
             title: 'Cloud Services',
-            color: '#10B981',
             technologies: ['AWS Cloud', 'Azure Data Lake', 'Azure Blob Storage', 'Azure Cosmos DB', 'Azure SQL Database', 'Azure Synapse Analytics', 'Google Cloud SQL']
         },
         {
             title: 'DevOps Tools',
-            color: '#8B5CF6',
             technologies: ['Docker', 'Kubernetes', 'Red Hat OpenShift', 'Ansible', 'HashiCorp Terraform', 'AWS Developer Tools', 'Azure DevOps', 'Google Developer Tools', 'GitLab CI/CD', 'Jenkins']
         },
     ];
@@ -189,10 +186,10 @@ export default function WebDevelopmentPage() {
     const processSteps = [
         { step: 1, title: 'Planning', description: 'We define the web app’s purpose, target audience, and desired user experience.', icon: <FileText />, color: '#3B82F6' },
         { step: 2, title: 'Design', description: 'Our team creates a visual structure and interactive prototype for user feedback.', icon: <Palette />, color: '#10B981' },
-        { step: 3, title: 'Development', description: 'Our experts build UI and server-side functionality to bring your idea to life.', icon: <Code />, color: '#8B5CF6' },
-        { step: 4, title: 'Testing', description: 'Our testing team ensures the web app functions flawlessly across all devices.', icon: <TestTube />, color: '#F59E0B' },
-        { step: 5, title: 'Launch', description: 'Our professionals ensure the web app is launched on-time without any glitches.', icon: <Rocket />, color: '#EC4899' },
-        { step: 6, title: 'Maintenance', description: 'Our support team ensures continuous support & maintenance for future improvements.', icon: <Settings />, color: '#06B6D4' },
+        { step: 3, title: 'Development', description: 'Our experts build UI and server-side functionality to bring your idea to life.', icon: <Code />, color: '#3b82f6' },
+        { step: 4, title: 'Testing', description: 'Our testing team ensures the web app functions flawlessly across all devices.', icon: <TestTube />, color: '#10b981' },
+        { step: 5, title: 'Launch', description: 'Our professionals ensure the web app is launched on-time without any glitches.', icon: <Rocket />, color: '#3b82f6' },
+        { step: 6, title: 'Maintenance', description: 'Our support team ensures continuous support & maintenance for future improvements.', icon: <Settings />, color: '#10b981' },
     ];
 
     // ============ HIRING MODELS (from URL) ============
@@ -201,7 +198,7 @@ export default function WebDevelopmentPage() {
             title: 'Staff Augmentation / Team Extension',
             description: 'Add engineering capacity without changing how you deliver. Individual engineers or groups integrate into your existing team.',
             icon: <Users />,
-            color: '#3B82F6',
+            color: '#10b981',
             features: ['You interview & select', 'Scale up/down with 30 days notice', 'Time & Material, Retainer']
         },
         {
@@ -215,7 +212,7 @@ export default function WebDevelopmentPage() {
             title: 'Development Centers',
             description: 'Long-term, scaled teams with your branding, culture, processes. Full infrastructure, HR, security & compliance.',
             icon: <Building2 />,
-            color: '#8B5CF6',
+            color: '#10b981',
             features: ['Long-term retainer', 'BOT (Build–Operate–Transfer) options', 'Multi-year partnerships']
         },
     ];
@@ -228,7 +225,7 @@ export default function WebDevelopmentPage() {
     ];
 
     // ============ TRUSTED BY ============
-    const trustedCompanies = ['Microsoft', 'Amazon', 'Google', 'IBM', 'SAP', 'Oracle'];
+    // const trustedCompanies = ['Microsoft', 'Amazon', 'Google', 'IBM', 'SAP', 'Oracle'];
 
     // ============ INDUSTRIES ============
     const industries = [
@@ -251,29 +248,9 @@ export default function WebDevelopmentPage() {
             icon: '🎬',
             desc: 'Custom tech to empower brands – streaming, content delivery, and audience analytics.',
             image: 'https://images.unsplash.com/photo-1598128558393-70ff21433be0?auto=format&fit=crop&w=800&q=80',
-            color: '#8B5CF6'
+            color: '#3b82f6'
         },
-        // {
-        //     name: 'Fintech',
-        //     icon: '🏦',
-        //     desc: 'Disrupting traditional finance with secure payments, trading platforms, and digital banking.',
-        //     image: 'https://images.unsplash.com/photo-1560472354-b33ff0c44a43?auto=format&fit=crop&w=800&q=80',
-        //     color: '#F59E0B'
-        // },
-        // {
-        //     name: 'Education & eLearning',
-        //     icon: '📚',
-        //     desc: 'Shaping digital learning with LMS, virtual classrooms, and interactive tools.',
-        //     image: 'https://images.unsplash.com/photo-1524178232363-1fb2b075b655?auto=format&fit=crop&w=800&q=80',
-        //     color: '#EC4899'
-        // },
-        // {
-        //     name: 'Banking & Fintech',
-        //     icon: '💰',
-        //     desc: 'Streamlining financial growth with core banking systems and compliance‑ready infrastructure.',
-        //     image: 'https://images.unsplash.com/photo-1551434678-e076c223a692?auto=format&fit=crop&w=800&q=80',
-        //     color: '#06B6D4'
-        // },
+
     ];
 
     // ============ FAQS ============
@@ -471,15 +448,6 @@ export default function WebDevelopmentPage() {
 
             {/* ===== WHY PARTNER SECTION ===== */}
             <section className={styles.whyPartnerSection}>
-                <div className={styles.whyBackground}>
-                    <Image
-                        src="https://images.unsplash.com/photo-1557804506-669a67965ba0?auto=format&fit=crop&w=1920&q=80"
-                        alt="Why Choose Us"
-                        fill
-                        className={styles.whyBgImage}
-                    />
-                    <div className={styles.whyOverlay}></div>
-                </div>
                 <div className={styles.whyContent}>
                     <div className={styles.container}>
                         <div className={styles.sectionHeader}>
@@ -535,6 +503,7 @@ export default function WebDevelopmentPage() {
             </section>
 
             {/* ===== TECHNOLOGIES SECTION ===== */}
+            {/* ===== TECHNOLOGIES SECTION ===== */}
             <section className={styles.techSection}>
                 <div className={styles.container}>
                     <div className={styles.sectionHeader}>
@@ -555,16 +524,10 @@ export default function WebDevelopmentPage() {
                                 transition={{ duration: 0.5, delay: index * 0.1 }}
                                 viewport={{ once: true }}
                             >
-                                <h3 className={styles.techCategoryTitle} style={{ color: category.color }}>
-                                    {category.title}
-                                </h3>
+                                <h3 className={styles.techCategoryTitle}>{category.title}</h3>
                                 <div className={styles.techItems}>
                                     {category.technologies.map((tech, idx) => (
-                                        <span key={idx} className={styles.techItem} style={{
-                                            backgroundColor: `${category.color}15`,
-                                            borderColor: category.color,
-                                            color: category.color
-                                        }}>
+                                        <span key={idx} className={styles.techItem}>
                                             {tech}
                                         </span>
                                     ))}
@@ -574,7 +537,6 @@ export default function WebDevelopmentPage() {
                     </div>
                 </div>
             </section>
-
             {/* ===== COST ESTIMATES SECTION ===== */}
             {/* <section className={styles.costSection}>
                 <div className={styles.container}>

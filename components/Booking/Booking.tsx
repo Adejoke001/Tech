@@ -1,41 +1,41 @@
 'use client';
-import React, { useState, useRef, FormEvent, ChangeEvent, DragEvent } from 'react';
-import Link from 'next/link';
+import React, { FormEvent } from 'react';
+// import Link from 'next/link';
 import styles from './booking.module.css';
 
 const Booking = () => {
-  const fileInputRef = useRef<HTMLInputElement>(null);
-  const [isDragging, setIsDragging] = useState(false);
+  // const fileInputRef = useRef<HTMLInputElement>(null);
+  // const [isDragging, setIsDragging] = useState(false);
 
-  const handleFileDrop = (e: DragEvent<HTMLDivElement>) => {
-    e.preventDefault();
-    setIsDragging(false);
-    const files = e.dataTransfer.files;
-    if (files.length > 0) {
-      console.log('Files dropped:', files);
-    }
-  };
+  // const handleFileDrop = (e: DragEvent<HTMLDivElement>) => {
+  //   e.preventDefault();
+  //   setIsDragging(false);
+  //   const files = e.dataTransfer.files;
+  //   if (files.length > 0) {
+  //     console.log('Files dropped:', files);
+  //   }
+  // };
 
-  const handleFileInput = (e: ChangeEvent<HTMLInputElement>) => {
-    const files = e.target.files;
-    if (files && files.length > 0) {
-      console.log('Files selected:', files);
-    }
-  };
+  // const handleFileInput = (e: ChangeEvent<HTMLInputElement>) => {
+  //   const files = e.target.files;
+  //   if (files && files.length > 0) {
+  //     console.log('Files selected:', files);
+  //   }
+  // };
 
-  const handleDragOver = (e: DragEvent<HTMLDivElement>) => {
-    e.preventDefault();
-    setIsDragging(true);
-  };
+  // const handleDragOver = (e: DragEvent<HTMLDivElement>) => {
+  //   e.preventDefault();
+  //   setIsDragging(true);
+  // };
 
-  const handleDragLeave = (e: DragEvent<HTMLDivElement>) => {
-    e.preventDefault();
-    setIsDragging(false);
-  };
+  // const handleDragLeave = (e: DragEvent<HTMLDivElement>) => {
+  //   e.preventDefault();
+  //   setIsDragging(false);
+  // };
 
-  const handleBrowseClick = () => {
-    fileInputRef.current?.click();
-  };
+  // const handleBrowseClick = () => {
+  //   fileInputRef.current?.click();
+  // };
 
   const handleSubmit = (e: FormEvent<HTMLFormElement>) => {
     e.preventDefault();
@@ -49,7 +49,7 @@ const Booking = () => {
 
   // ✅ Email click handler
   const handleEmailClick = () => {
-    const email = 'hello@bbmcoders.com';
+    const email = 'contact@bbmcoders.com';
 
     const subject = 'Inquiry from BBM Coders Website';
     const body = `Hello BBM Coders,
@@ -72,7 +72,12 @@ Best regards,
           <div className={styles.contentSide}>
             <div className={styles.contactOptions}>
               {/* Book A Call */}
-              <Link href="/contact" className={styles.contactItem}>
+              <a
+                href={`https://wa.me/2349042381702?text=${encodeURIComponent("Hi! I need your services, I would love to book a call")}`}
+                className={styles.contactItem}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 <div className={styles.iconWrapper}>
                   <span className={styles.icon}>📞</span>
                 </div>
@@ -80,7 +85,7 @@ Best regards,
                   <h3 className={styles.contentTitle}>Book A Call</h3>
                   <p className={styles.contentDescription}>BBMcoders</p>
                 </div>
-              </Link>
+              </a>
 
               {/* ✅ Email us (dynamic mailto) */}
               <div
@@ -103,7 +108,7 @@ Best regards,
 
             <div className={styles.trustedBy}>
               <p className={styles.trustedText}>
-                Trusted by Startups and Fortune 500 companies
+                Trusted by Startups and Growing Enterprises Worldwide
               </p>
             </div>
 
@@ -111,7 +116,7 @@ Best regards,
               <div className={styles.statItem}>
                 <div className={styles.statIcon}>⭐</div>
                 <div className={styles.statContent}>
-                  <h4 className={styles.statNumber}>20+ years of experience</h4>
+                  <h4 className={styles.statNumber}>5 years of experience</h4>
                   <p className={styles.statDescription}>
                     We can handle projects of all complexities.
                   </p>
@@ -121,9 +126,9 @@ Best regards,
               <div className={styles.statItem}>
                 <div className={styles.statIcon}>⭐</div>
                 <div className={styles.statContent}>
-                  <h4 className={styles.statNumber}>2500+ satisfied customers</h4>
+                  <h4 className={styles.statNumber}>100+ satisfied customers</h4>
                   <p className={styles.statDescription}>
-                    Startups to Fortune 500, we have worked with all.
+                    Startups to Enterprises, we&apos;re trusted by businesses worldwide.
                   </p>
                 </div>
               </div>
@@ -131,9 +136,9 @@ Best regards,
               <div className={styles.statItem}>
                 <div className={styles.statIcon}>⭐</div>
                 <div className={styles.statContent}>
-                  <h4 className={styles.statNumber}>675+ in-house team</h4>
+                  <h4 className={styles.statNumber}>12+ in-house team members</h4>
                   <p className={styles.statDescription}>
-                    Top 1% industry talent to ensure your digital success.
+                    Top 10% industry talent to ensure your digital success.
                   </p>
                 </div>
               </div>
@@ -229,7 +234,7 @@ Best regards,
                   ></textarea>
                 </div>
 
-                <div className={styles.formGroup}>
+                {/* <div className={styles.formGroup}>
                   <label className={styles.formLabel}>Attach Files</label>
                   <div
                     className={`${styles.fileDropZone} ${
@@ -255,7 +260,7 @@ Best regards,
                       </span>
                     </div>
                   </div>
-                </div>
+                </div> */}
 
                 <div className={styles.buttonContainer}>
                   <button type="submit" className={styles.submitButton}>

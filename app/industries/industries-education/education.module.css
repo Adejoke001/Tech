@@ -5,13 +5,10 @@
     --gradient-primary: linear-gradient(135deg, #3B82F6, #10B981);
     --gradient-primary-dark: linear-gradient(135deg, #2563EB, #059669);
     
-    --secondary-purple: #8B5CF6;
-    --secondary-amber: #F59E0B;
-    --secondary-pink: #EC4899;
-    --secondary-cyan: #06B6D4;
+    /* REMOVED: --secondary-purple, --secondary-amber, --secondary-pink, --secondary-cyan */
     
     --gradient-section-light: linear-gradient(135deg, rgba(59, 130, 246, 0.03) 0%, rgba(16, 185, 129, 0.03) 100%);
-    --gradient-section-dark: linear-gradient(135deg, rgba(15, 23, 42, 0.88) 0%, rgba(30, 41, 59, 83) 100%);
+    --gradient-section-dark: linear-gradient(135deg, rgba(15, 23, 42, 0.92) 0%, rgba(30, 41, 59, 0.92) 100%);
     
     --dark-bg: #0F172A;
     --dark-surface: #1E293B;
@@ -33,7 +30,7 @@
     line-height: 1.6;
 }
 
-/* ===== HERO SECTION (with parallax) ===== */
+/* ===== HERO SECTION ===== */
 .heroSection {
     position: relative;
     min-height: 85vh;
@@ -101,7 +98,7 @@
     align-items: center;
     gap: 0.5rem;
     background: rgba(59, 130, 246, 0.2);
-    color: #93c5fd;
+    color: var(--gray-300);
     padding: 0.5rem 1.25rem;
     border-radius: 2rem;
     font-size: 0.875rem;
@@ -175,9 +172,9 @@
 }
 
 .ctaButton:hover {
+    background: var(--gradient-primary-dark);
     transform: translateY(-2px);
     box-shadow: 0 6px 20px rgba(59, 130, 246, 0.4);
-    background: var(--gradient-primary-dark);
 }
 
 .secondaryButton {
@@ -227,6 +224,7 @@
     box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
     position: relative;
     margin-top: 3rem;
+    overflow: visible;
 }
 
 .testimonialCard::before {
@@ -237,6 +235,7 @@
     right: 0;
     height: 4px;
     background: var(--gradient-primary);
+    border-radius: 1.2rem 1.2rem 0 0;
 }
 
 .testimonialImage {
@@ -260,6 +259,7 @@
     object-fit: cover;
     border: 3px solid var(--primary-green);
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    background: white;
 }
 
 .testimonialContent {
@@ -467,7 +467,7 @@
 /* ===== SOLUTIONS SECTION ===== */
 .solutionsSection {
     padding: 5rem 2rem;
-    background: linear-gradient(135deg, var(--white) 0%, var(--gray-50) 100%);
+    background: linear-gradient(135deg, var(--white) 0%, var(--gray-100) 100%);
 }
 
 .solutionsGrid {
@@ -520,6 +520,7 @@
     font-size: 1.75rem;
     background: var(--gray-100);
     border-radius: 1rem;
+    color: var(--primary-blue);
 }
 
 .solutionCard h3 {
@@ -552,6 +553,7 @@
 
 .solutionFeature svg {
     flex-shrink: 0;
+    color: var(--primary-green);
 }
 
 /* ===== SERVICES SECTION ===== */
@@ -592,6 +594,7 @@
     justify-content: center;
     margin-bottom: 1.5rem;
     font-size: 1.5rem;
+    color: var(--primary-blue);
 }
 
 .serviceCard h3 {
@@ -660,6 +663,7 @@
     font-size: 1.5rem;
     background: var(--gray-100);
     border-radius: 1rem;
+    color: var(--primary-blue);
 }
 
 .typeCard h3 {
@@ -716,6 +720,7 @@
     flex-shrink: 0;
     background: var(--gray-100);
     border-radius: 0.75rem;
+    color: var(--primary-blue);
 }
 
 .trendContent {
@@ -745,7 +750,7 @@
 .securityGrid {
     display: grid;
     grid-template-columns: 1.4fr 1.1fr;
-    gap: 3rem; 
+    gap: 3rem;
     max-width: 1200px;
     margin: 0 auto;
     align-items: center;
@@ -799,6 +804,7 @@
     align-items: center;
     justify-content: center;
     flex-shrink: 0;
+    color: var(--primary-blue);
 }
 
 .securityItem span {
@@ -842,7 +848,7 @@
 /* ===== INTERACTIVE QUIZ SECTION ===== */
 .quizSection {
     padding: 5rem 2rem;
-    background: linear-gradient(135deg, var(--white) 0%, var(--gray-50) 100%);
+    background: linear-gradient(135deg, var(--white) 0%, var(--gray-100) 100%);
 }
 
 .quizContainer {
@@ -990,6 +996,7 @@
 .quizNext:hover:not(:disabled) {
     transform: translateY(-2px);
     box-shadow: 0 10px 20px rgba(59,130,246,0.3);
+    background: var(--gradient-primary-dark);
 }
 
 .quizResult {
@@ -1010,6 +1017,7 @@
     align-items: center;
     justify-content: center;
     margin: 0 auto 1.5rem;
+    color: var(--primary-blue);
 }
 
 .quizResult h3 {
@@ -1064,6 +1072,7 @@
 .quizContact:hover {
     transform: translateY(-2px);
     box-shadow: 0 10px 20px rgba(59,130,246,0.3);
+    background: var(--gradient-primary-dark);
 }
 
 /* ===== TECHNOLOGY STACK EXPLORER ===== */
@@ -1106,6 +1115,7 @@
     justify-content: center;
     background: var(--gray-100);
     border-radius: 0.75rem;
+    color: var(--primary-blue);
 }
 
 .techExplorerCard h4 {
@@ -1197,6 +1207,7 @@
 .lmsIcon, .lxpIcon {
     width: 2.5rem;
     height: 2.5rem;
+    color: var(--primary-blue);
 }
 
 .lmsHeader h3, .lxpHeader h3 {
@@ -1236,35 +1247,12 @@
     }
 }
 
-/* ===== PARTNER SECTION – BACKGROUND IMAGE ===== */
+/* ===== PARTNER SECTION ===== */
 .partnerSection {
     position: relative;
     padding: 6rem 2rem;
     overflow: hidden;
-}
-
-.partnerBackground {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    z-index: 0;
-}
-
-.partnerBgImage {
-    object-fit: cover;
-    object-position: center;
-}
-
-.partnerOverlay {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: linear-gradient(135deg, rgba(15, 23, 42, 0.92) 0%, rgba(30, 41, 59, 0.88) 100%);
-    z-index: 1;
+    background: linear-gradient(135deg, var(--dark-bg) 0%, var(--dark-surface) 100%);
 }
 
 .partnerContent {
@@ -1306,6 +1294,7 @@
     align-items: center;
     justify-content: center;
     flex-shrink: 0;
+    color: var(--primary-green);
     filter: drop-shadow(0 2px 4px rgba(0,0,0,0.2));
 }
 
@@ -1586,9 +1575,9 @@
 }
 
 .ctaPrimary:hover {
+    background: var(--gradient-primary-dark);
     transform: translateY(-2px);
     box-shadow: 0 6px 20px rgba(59, 130, 246, 0.4);
-    background: var(--gradient-primary-dark);
 }
 
 .ctaSecondary {
@@ -1816,55 +1805,55 @@
 
 /* ===== FIX TESTIMONIAL CARD ALIGNMENT FOR 768px - 1024px ===== */
 @media (min-width: 768px) and (max-width: 1024px) {
-  .rightContent {
-    align-items: center; 
-  }
+    .rightContent {
+        align-items: center;
+    }
 
-  .testimonialCard {
-    margin-top: 2rem; 
-    max-width: 500px;  
-  }
+    .testimonialCard {
+        margin-top: 2rem;
+        max-width: 500px;
+    }
 
-  .clientImageWrapper {
-    top: -35px; 
-  }
+    .clientImageWrapper {
+        top: -35px;
+    }
 
-  .testimonialContent {
-    margin-top: 1.5rem; 
-  }
+    .testimonialContent {
+        margin-top: 1.5rem;
+    }
 
-  .testimonialCard {
-    padding: 2rem 1.5rem 1.5rem;
-  }
+    .testimonialCard {
+        padding: 2rem 1.5rem 1.5rem;
+    }
 }
 
 @media (max-width: 640px) {
-  .faqSection {
-    padding: 4rem 1rem;
-  }
+    .faqSection {
+        padding: 4rem 1rem;
+    }
 
-  .faqQuestion {
-    padding: 1.25rem;
-    font-size: 1rem;
-  }
+    .faqQuestion {
+        padding: 1.25rem;
+        font-size: 1rem;
+    }
 
-  .faqQuestionContent {
-    gap: 1rem;
-  }
+    .faqQuestionContent {
+        gap: 1rem;
+    }
 
-  .faqIcon {
-    width: 1.25rem;
-    height: 1.25rem;
-  }
+    .faqIcon {
+        width: 1.25rem;
+        height: 1.25rem;
+    }
 
-  .faqToggle {
-    font-size: 1.5rem;
-    width: 2rem;
-    height: 2rem;
-  }
+    .faqToggle {
+        font-size: 1.5rem;
+        width: 2rem;
+        height: 2rem;
+    }
 
-  .faqAnswer {
-    padding: 0 1.25rem 1.25rem;
-    font-size: 1rem;
-  }
+    .faqAnswer {
+        padding: 0 1.25rem 1.25rem;
+        font-size: 1rem;
+    }
 }

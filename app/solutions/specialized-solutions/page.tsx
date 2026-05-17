@@ -6,18 +6,18 @@ import Link from 'next/link';
 import { motion, AnimatePresence } from 'framer-motion';
 import { SVGProps } from 'react';
 import {
-    Smartphone, Code, Zap, Users, TrendingUp, 
-    CheckCircle, Award, MessageSquare, Sparkles, 
-    Cloud, ChevronRight, HelpCircle, ArrowRight, 
+    Smartphone, Code, Zap, Users, TrendingUp,
+    CheckCircle, Award, MessageSquare, Sparkles,
+    Cloud, ChevronRight, HelpCircle, ArrowRight,
     FileText, RefreshCw, Workflow, Server, Layers, Code2, Monitor,
     Shield, TestTube, Database, Globe, Lock, Clock, Target,
     Rocket, Wallet, Scale, Briefcase, Lightbulb, Compass,
     Palette, Search, Presentation, HeartHandshake, Gauge,
-    AlertTriangle, Building2, Zap as ZapIcon, Repeat,
-    Cpu as CpuChip, Brain, Sliders, Box, ShoppingCart,
-    Headphones, PenTool, Figma, Megaphone, Plug, Key, Radio,  
+    AlertTriangle, Building2, Zap as ZapIcon, Repeat, KeyRound,
+    Cpu as CpuChip, Brain, Sliders, Box, ShoppingCart, GitBranch,
+    Headphones, PenTool, Figma, Megaphone, Plug, Key, Radio,
     FileJson, Braces, Lock as LockIcon, PlugZap, BadgeCheck, Store,
-    Settings as SettingsIcon, Briefcase as BriefcaseBusiness, 
+    Settings as SettingsIcon, Briefcase as BriefcaseBusiness,
     Shield as ShieldIcon2, Repeat as RepeatIcon, Fingerprint, Bot,
     Radio as RadioIcon, Handshake, Package, UsersRound, Microchip, Scan
 } from 'lucide-react';
@@ -39,62 +39,62 @@ export default function SpecializedSolutionsPage() {
     };
 
     const Wordpress = (props: SVGProps<SVGSVGElement>) => (
-  <svg
-    xmlns="http://www.w3.org/2000/svg"
-    width="24"
-    height="24"
-    viewBox="0 0 24 24"
-    fill="none"
-    stroke="currentColor"
-    strokeWidth="2"
-    strokeLinecap="round"
-    strokeLinejoin="round"
-    {...props}
-  >
-    <path d="M4 3h16a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2Z" />
-    <path d="M8 9h8" />
-    <path d="M8 13h4" />
-  </svg>
-);
+        <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            strokeWidth="2"
+            strokeLinecap="round"
+            strokeLinejoin="round"
+            {...props}
+        >
+            <path d="M4 3h16a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2Z" />
+            <path d="M8 9h8" />
+            <path d="M8 13h4" />
+        </svg>
+    );
 
-const Factory = (props: SVGProps<SVGSVGElement>) => (
-  <svg
-    xmlns="http://www.w3.org/2000/svg"
-    width="24"
-    height="24"
-    viewBox="0 0 24 24"
-    fill="none"
-    stroke="currentColor"
-    strokeWidth="2"
-    strokeLinecap="round"
-    strokeLinejoin="round"
-    {...props}
-  >
-    <path d="M2 20a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V8l-7 5V8l-7 5V4a2 2 0 0 0-2-2H4a2 2 0 0 0-2 2Z" />
-    <path d="M17 18h1" />
-    <path d="M12 18h1" />
-    <path d="M7 18h1" />
-  </svg>
-);
+    const Factory = (props: SVGProps<SVGSVGElement>) => (
+        <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            strokeWidth="2"
+            strokeLinecap="round"
+            strokeLinejoin="round"
+            {...props}
+        >
+            <path d="M2 20a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V8l-7 5V8l-7 5V4a2 2 0 0 0-2-2H4a2 2 0 0 0-2 2Z" />
+            <path d="M17 18h1" />
+            <path d="M12 18h1" />
+            <path d="M7 18h1" />
+        </svg>
+    );
 
-const BoxIcon = (props: SVGProps<SVGSVGElement>) => (
-  <svg
-    xmlns="http://www.w3.org/2000/svg"
-    width="24"
-    height="24"
-    viewBox="0 0 24 24"
-    fill="none"
-    stroke="currentColor"
-    strokeWidth="2"
-    strokeLinecap="round"
-    strokeLinejoin="round"
-    {...props}
-  >
-    <path d="M21 8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16Z" />
-    <path d="M3.3 7 12 12l8.7-5" />
-    <path d="M12 22V12" />
-  </svg>
-);
+    const BoxIcon = (props: SVGProps<SVGSVGElement>) => (
+        <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            strokeWidth="2"
+            strokeLinecap="round"
+            strokeLinejoin="round"
+            {...props}
+        >
+            <path d="M21 8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16Z" />
+            <path d="M3.3 7 12 12l8.7-5" />
+            <path d="M12 22V12" />
+        </svg>
+    );
 
 
     // ============ ISV & PRODUCT DEVELOPMENT PILLAR ============
@@ -116,7 +116,7 @@ const BoxIcon = (props: SVGProps<SVGSVGElement>) => (
             title: 'On-Demand Applications',
             description: 'Custom UI, robust admin dashboards, and powerful analytics for modern on-demand platforms.',
             icon: <ZapIcon />,
-            color: '#10B981',
+            color: '#3b82f6',
             features: [
                 'Music & live video streaming',
                 'Video conferencing for remote work',
@@ -128,7 +128,7 @@ const BoxIcon = (props: SVGProps<SVGSVGElement>) => (
             title: 'ML Based Apps',
             description: 'Enhance user experiences through Machine Learning – manage data, streamline operations, boost productivity.',
             icon: <Brain />,
-            color: '#8B5CF6',
+            color: '#3b82f6',
             features: [
                 'Data cleaning & storage management',
                 'HR & accounts productivity apps',
@@ -140,7 +140,7 @@ const BoxIcon = (props: SVGProps<SVGSVGElement>) => (
             title: 'Enterprise Grade Solutions',
             description: 'Expert solutions designed for digital product companies, ISVs, and large enterprises.',
             icon: <Building2 />,
-            color: '#F59E0B',
+            color: '#3b82f6',
             features: [
                 'CRM & brand management apps',
                 'Secure payment gateways',
@@ -152,7 +152,7 @@ const BoxIcon = (props: SVGProps<SVGSVGElement>) => (
             title: 'ERP Based Solutions',
             description: 'Convenient service and support through ERP-based applications for data, budget, and workflow.',
             icon: <Database />,
-            color: '#EC4899',
+            color: '#3b82f6',
             features: [
                 'Data & budget management',
                 'Vehicle fleet tracking & invoicing',
@@ -164,7 +164,7 @@ const BoxIcon = (props: SVGProps<SVGSVGElement>) => (
             title: 'AI-Powered Chatbots',
             description: 'Intelligent chatbots that improve customer interactions over time, across web and social platforms.',
             icon: <MessageSquare />,
-            color: '#06B6D4',
+            color: '#3b82f6',
             features: [
                 'Web chatbots for customer service',
                 'Facebook Messenger service bots',
@@ -178,7 +178,7 @@ const BoxIcon = (props: SVGProps<SVGSVGElement>) => (
             title: 'Product Consulting',
             description: 'Strategic guidance for product development and adaptation to evolving market demands.',
             icon: <Compass />,
-            color: '#3B82F6',
+            color: '#10b981',
             points: ['Comprehensive product roadmap', 'Configuration & customisation', 'Expert guidance']
         },
         {
@@ -192,39 +192,39 @@ const BoxIcon = (props: SVGProps<SVGSVGElement>) => (
             title: 'Product Development',
             description: 'Scalable, modern product solutions for a competitive edge – with AI/ML integration.',
             icon: <Code2 />,
-            color: '#8B5CF6',
+            color: '#10b981',
             points: ['Expertise & modern tech', 'AI/ML integration', 'Innovative solutions']
         },
         {
             title: 'Product Testing',
             description: 'Top-notch product quality and performance, tailored to project needs and industry standards.',
             icon: <TestTube />,
-            color: '#F59E0B',
+            color: '#10b981',
             points: ['High-quality assurance', 'Multiple testing types', 'Tailored solutions']
         },
         {
             title: 'Product UI/UX Design',
             description: 'Intuitive, user-centered designs that enhance engagement, adoption, and satisfaction.',
             icon: <Figma />,
-            color: '#EC4899',
+            color: '#10b981',
             points: ['Visually compelling experiences', 'UI/UX best practices', 'Improved usability']
         },
         {
             title: 'Digital Marketing',
             description: 'Result-driven digital growth strategies – SEO, lead generation, and content positioning.',
             icon: <Megaphone />,
-            color: '#06B6D4',
+            color: '#10b981',
             points: ['SEO & performance campaigns', 'B2B lead generation for SaaS', 'Content marketing']
         }
     ];
 
     const isvProcess = [
         { step: 1, title: 'Idea & Planning', description: 'Validate concepts, define scope, and align with business goals.', icon: <Lightbulb />, color: '#3B82F6' },
-        { step: 2, title: 'Requirements Analysis', description: 'Deep dive into functional and technical specifications.', icon: <FileText />, color: '#10B981' },
-        { step: 3, title: 'Design', description: 'Architecture, UI/UX, and system design for scalability.', icon: <PenTool />, color: '#8B5CF6' },
-        { step: 4, title: 'Development', description: 'Agile sprints with modern stacks and continuous integration.', icon: <Code2 />, color: '#F59E0B' },
-        { step: 5, title: 'Testing & QA', description: 'Comprehensive validation – functional, performance, security.', icon: <TestTube />, color: '#EC4899' },
-        { step: 6, title: 'Deployment & Support', description: 'Release, monitor, and continuously improve.', icon: <Cloud />, color: '#06B6D4' }
+        { step: 2, title: 'Requirements Analysis', description: 'Deep dive into functional and technical specifications.', icon: <FileText />, color: '#3b82f6' },
+        { step: 3, title: 'Design', description: 'Architecture, UI/UX, and system design for scalability.', icon: <PenTool />, color: '#3b82f6' },
+        { step: 4, title: 'Development', description: 'Agile sprints with modern stacks and continuous integration.', icon: <Code2 />, color: '#3b82f6' },
+        { step: 5, title: 'Testing & QA', description: 'Comprehensive validation – functional, performance, security.', icon: <TestTube />, color: '#3b82f6' },
+        { step: 6, title: 'Deployment & Support', description: 'Release, monitor, and continuously improve.', icon: <Cloud />, color: '#3b82f6' }
     ];
 
     // ----- Integrating Modern Software with Legacy Systems: Challenges -----
@@ -233,14 +233,14 @@ const BoxIcon = (props: SVGProps<SVGSVGElement>) => (
             title: 'Compatibility Issues',
             description: 'Modern software solutions may not be inherently compatible with older legacy systems. Legacy systems often lack necessary interfaces and protocols for seamless integration.',
             icon: <AlertTriangle />,
-            color: '#EF4444',
+            color: '#10b981',
             points: ['Protocol mismatches', 'Outdated infrastructure', 'Vendor lock-in']
         },
         {
             title: 'Data Silos & Inefficiencies',
             description: 'Inadequate integration can lead to data silos, where information is trapped in separate systems, resulting in operational inefficiencies, data redundancy, and decision-making difficulties.',
             icon: <Database />,
-            color: '#F59E0B',
+            color: '#3b82f6',
             points: ['Fragmented data', 'Manual reconciliation', 'Delayed insights']
         }
     ];
@@ -248,62 +248,62 @@ const BoxIcon = (props: SVGProps<SVGSVGElement>) => (
     const integrationSolutions = [
         { text: 'Middleware Solutions – Bridge between new apps and legacy systems', icon: <Workflow />, color: '#3B82F6' },
         { text: 'API Development – Well-defined interfaces for data exchange', icon: <Plug />, color: '#10B981' },
-        { text: 'Data Migration Tools – Secure, efficient data transfer', icon: <Database />, color: '#8B5CF6' }
+        { text: 'Data Migration Tools – Secure, efficient data transfer', icon: <Database />, color: '#3b82f6' }
     ];
 
     // ----- Security Best Practices -----
     const securityPractices = [
         { text: 'Encryption – Robust methods to protect data at rest and in transit', icon: <Lock />, color: '#3B82F6' },
         { text: 'Regular Audits – Frequent security audits to identify and rectify vulnerabilities', icon: <Search />, color: '#10B981' },
-        { text: 'Multi‑factor Authentication – Extra layers of security for user access', icon: <Fingerprint />, color: '#8B5CF6' }
+        { text: 'Multi‑factor Authentication – Extra layers of security for user access', icon: <Fingerprint />, color: '#3b82F6' }
     ];
 
     // ----- Software Compatibility Solutions -----
     const compatibilitySolutions = [
         { text: 'Responsive Design – Adapt to various screen sizes and resolutions', icon: <Monitor />, color: '#3B82F6' },
         { text: 'Cross‑Platform Development Tools – React Native, Flutter', icon: <Smartphone />, color: '#10B981' },
-        { text: 'Regular Testing – Comprehensive testing across devices and OS', icon: <TestTube />, color: '#8B5CF6' }
+        { text: 'Regular Testing – Comprehensive testing across devices and OS', icon: <TestTube />, color: '#3b82f6' }
     ];
 
     // ----- Agile Methodologies Benefits -----
     const agileBenefits = [
-        { text: 'Adaptability – Respond quickly to changing requirements', icon: <RefreshCw />, color: '#3B82F6' },
+        { text: 'Adaptability – Respond quickly to changing requirements', icon: <RefreshCw />, color: '#10b981' },
         { text: 'Faster Time‑to‑Market – Incremental development, regular delivery', icon: <Rocket />, color: '#10B981' },
-        { text: 'Customer‑Centricity – Frequent customer interactions', icon: <HeartHandshake />, color: '#8B5CF6' },
-        { text: 'Team Collaboration – Cross‑functional teamwork, transparency', icon: <Users />, color: '#F59E0B' }
+        { text: 'Customer‑Centricity – Frequent customer interactions', icon: <HeartHandshake />, color: '#10b981' },
+        { text: 'Team Collaboration – Cross‑functional teamwork, transparency', icon: <Users />, color: '#10b981' }
     ];
 
     // ----- Expanded Advanced Technologies (12 items) -----
     const isvAdvancedTech = [
         { text: 'AI/ML – Predictive features, chatbots, analytics', icon: <Brain />, color: '#3B82F6' },
         { text: 'Big Data – Real-time processing, trend analysis', icon: <Database />, color: '#10B981' },
-        { text: 'IoT – Sensor data, predictive maintenance', icon: <Radio />, color: '#8B5CF6' },
-        { text: 'Blockchain – Data integrity, secure transactions', icon: <Lock />, color: '#F59E0B' },
-        { text: 'AR/VR – Immersive experiences, training', icon: <Box />, color: '#EC4899' },
-        { text: 'RPA – Automate repetitive tasks', icon: <Repeat />, color: '#06B6D4' },
+        { text: 'IoT – Sensor data, predictive maintenance', icon: <Radio />, color: '#3b82f6' },
+        { text: 'Cloud Computing – Scalable infrastructure', icon: <Cloud />, color: '#10b981' },
+        { text: 'AR/VR – Immersive experiences, training', icon: <Box />, color: '#3b82f6' },
+        { text: 'RPA – Automate repetitive tasks', icon: <Repeat />, color: '#10b981' },
         { text: 'Edge Computing – Real-time at the edge', icon: <CpuChip />, color: '#3B82F6' },
         { text: 'NLP – Sentiment analysis, chatbots', icon: <MessageSquare />, color: '#10B981' },
-        { text: 'Biometrics – Facial recognition, security', icon: <Scan />, color: '#8B5CF6' },
-        { text: 'Robotics – Control and manage physical devices', icon: <Bot />, color: '#F59E0B' },
-        { text: '5G – High-speed, low-latency communication', icon: <RadioIcon />, color: '#EC4899' },
-        { text: 'Quantum Computing – Advanced computational capabilities', icon: <Microchip />, color: '#06B6D4' }
+        { text: 'Mobile Development – iOS & Android apps', icon: <Smartphone />, color: '#3b82f6' },
+        { text: 'Web Development – Modern frameworks', icon: <Globe />, color: '#10b981' },
+        { text: 'DevOps – CI/CD, automation', icon: <GitBranch />, color: '#3b82f6' },
+        { text: 'API Integration – Connect systems seamlessly', icon: <Plug />, color: '#10b981' }
     ];
 
     // ============ WHITE LABEL SERVICES PILLAR ============
     const whiteLabelAudiences = [
         { title: 'Product Companies', description: 'Seamlessly plug into your projects with agile development – we adapt to your branding and workflow.', icon: <Building2 />, color: '#3B82F6' },
         { title: 'Digital Agencies', description: 'Deliver turnkey projects on time and within budget. Specialised talent in AdTech, EdTech, and online video.', icon: <Store />, color: '#10B981' },
-        { title: 'Technological Evangelists', description: 'Spread the word on game-changing technology. Together, we shape sustainable futures.', icon: <Rocket />, color: '#8B5CF6' }
+        { title: 'Technological Evangelists', description: 'Spread the word on game-changing technology. Together, we shape sustainable futures.', icon: <Rocket />, color: '#3b82f6' }
     ];
 
     const whiteLabelServices = [
-        { title: 'Frontend Development', description: 'Full control over look and feel – we use your tools and frameworks.', icon: <Monitor />, color: '#3B82F6' },
+        { title: 'Frontend Development', description: 'Full control over look and feel – we use your tools and frameworks.', icon: <Monitor />, color: '#10b981' },
         { title: 'CMS Development', description: 'WordPress, headless CMS – you manage content effortlessly.', icon: <FileText />, color: '#10B981' },
-        { title: 'Custom Software', description: 'Tailored applications for your unique business needs.', icon: <Code2 />, color: '#8B5CF6' },
-        { title: 'Web App Development', description: 'From concept to deployment – responsive, scalable web apps.', icon: <Globe />, color: '#F59E0B' },
-        { title: 'Mobile App Development', description: 'Native or cross-platform – we build and rebrand.', icon: <Smartphone />, color: '#EC4899' },
-        { title: 'WordPress Development', description: 'Custom themes, plugins, and fully functional sites.', icon: <Wordpress />, color: '#06B6D4' },
-        { title: 'eCommerce Development', description: 'Robust online stores, payment gateways, inventory.', icon: <ShoppingCart />, color: '#3B82F6' },
+        { title: 'Custom Software', description: 'Tailored applications for your unique business needs.', icon: <Code2 />, color: '#10b981' },
+        { title: 'Web App Development', description: 'From concept to deployment – responsive, scalable web apps.', icon: <Globe />, color: '#10b981' },
+        { title: 'Mobile App Development', description: 'Native or cross-platform – we build and rebrand.', icon: <Smartphone />, color: '#10b981' },
+        { title: 'WordPress Development', description: 'Custom themes, plugins, and fully functional sites.', icon: <Wordpress />, color: '#10b981' },
+        { title: 'eCommerce Development', description: 'Robust online stores, payment gateways, inventory.', icon: <ShoppingCart />, color: '#10b981' },
         { title: 'Staff Augmentation', description: 'Your dedicated team – without the overhead.', icon: <Users />, color: '#10B981' }
     ];
 
@@ -319,31 +319,43 @@ const BoxIcon = (props: SVGProps<SVGSVGElement>) => (
             title: 'Streamlined Brand Management',
             description: 'Better control over your brand image, marketing strategies, and customer service standards.',
             icon: <Palette />,
-            color: '#10B981'
+            color: '#3b82f6'
         },
         {
             title: 'Cost Savings',
             description: 'Significant savings on labor costs with outsourced production – ideal for small business owners.',
             icon: <Wallet />,
-            color: '#8B5CF6'
+            color: '#3b82F6'
         },
         {
             title: 'Reduced Risk & Improved QA',
             description: 'No additional CAPEX/OPEX; partner warranties cover workmanship and materials.',
             icon: <Shield />,
-            color: '#F59E0B'
+            color: '#3b82f6'
         },
         {
             title: 'Scalability & Flexibility',
             description: 'Access specialised skills when needed – especially useful for seasonal demand surges.',
             icon: <Scale />,
-            color: '#EC4899'
+            color: '#3b82f6'
         },
         {
             title: 'Competitive Edge',
             description: 'Flexible responses to market changes, helping retain a competitive edge.',
             icon: <Target />,
-            color: '#06B6D4'
+            color: '#3b82f6'
+        },
+        {
+            title: 'Faster Time-to-Market',
+            description: 'Launch products and services rapidly with pre-built solutions and proven development frameworks.',
+            icon: <Rocket />,
+            color: '#3b82f6'
+        },
+        {
+            title: 'Focus on Core Business',
+            description: 'Free up internal resources to focus on strategic initiatives, sales, and customer relationships.',
+            icon: <Target />,
+            color: '#3b82f6'
         }
     ];
 
@@ -365,17 +377,17 @@ const BoxIcon = (props: SVGProps<SVGSVGElement>) => (
             title: 'Technology Partnerships',
             description: 'Integrate and co‑develop platforms with shared IP and go‑to‑market strategies.',
             icon: <Handshake />,
-            color: '#8B5CF6'
+            color: '#3b82f6'
         }
     ];
 
     const whiteLabelBenefits = [
-        { title: 'Easy Communication', description: 'Chat with our PM team anytime – even weekends. 24/7 availability.', icon: <MessageSquare />, color: '#3B82F6' },
+        { title: 'Easy Communication', description: 'Chat with our PM team anytime – even weekends. 24/7 availability.', icon: <MessageSquare />, color: '#10b981' },
         { title: 'Transparent & Affordable', description: 'Competitive rates, stage-wise progress updates, no hidden costs.', icon: <Wallet />, color: '#10B981' },
-        { title: 'Robust Market Research', description: 'Data analysis, consultation – we help you decide.', icon: <Search />, color: '#8B5CF6' },
-        { title: 'Flexible Workflow', description: 'Adapt to your process – same PM and developers throughout.', icon: <Workflow />, color: '#F59E0B' },
-        { title: 'Pre-sales Assistance', description: 'FREE support for tenders, proposals, RFP, RFI.', icon: <Presentation />, color: '#EC4899' },
-        { title: 'Scalable Solutions', description: 'Dynamic resource pool to meet your changing needs.', icon: <Scale />, color: '#06B6D4' }
+        { title: 'Robust Market Research', description: 'Data analysis, consultation – we help you decide.', icon: <Search />, color: '#10b981' },
+        { title: 'Flexible Workflow', description: 'Adapt to your process – same PM and developers throughout.', icon: <Workflow />, color: '#10b981' },
+        { title: 'Pre-sales Assistance', description: 'FREE support for tenders, proposals, RFP, RFI.', icon: <Presentation />, color: '#10b981' },
+        { title: 'Scalable Solutions', description: 'Dynamic resource pool to meet your changing needs.', icon: <Scale />, color: '#10b981' }
     ];
 
     // ============ API DEVELOPMENT PILLAR ============
@@ -398,28 +410,28 @@ const BoxIcon = (props: SVGProps<SVGSVGElement>) => (
             title: 'API Security Testing',
             description: 'Comprehensive security validation for critical API infrastructure.',
             icon: <ShieldIcon2 />,
-            color: '#8B5CF6',
+            color: '#3b82F6',
             features: ['Penetration testing', 'Vulnerability assessment', 'Compliance validation']
         },
         {
             title: 'API Integration',
             description: 'Seamless connectivity bridging diverse software systems.',
             icon: <PlugZap />,
-            color: '#F59E0B',
+            color: '#10b981',
             features: ['Smooth system connections', 'Protocol standardisation', 'Interoperability design']
         },
         {
             title: 'API Automation',
             description: 'Advanced automation for complex API workflows and deployment.',
             icon: <RepeatIcon />,
-            color: '#EC4899',
+            color: '#3b82f6',
             features: ['CI/CD pipelines', 'Automated testing frameworks', 'Deployment acceleration']
         },
         {
             title: 'API Management',
             description: 'Intelligent governance for optimal performance and lifecycle management.',
             icon: <Sliders />,
-            color: '#06B6D4',
+            color: '#10b981',
             features: ['Centralised control', 'Performance monitoring', 'Governance framework']
         },
         {
@@ -440,81 +452,81 @@ const BoxIcon = (props: SVGProps<SVGSVGElement>) => (
 
     const apiBusinessUseCases = [
         { function: 'Product & Engineering', desc: 'Backend API layers, platform extensibility', icon: <Code2 />, color: '#3B82F6' },
-        { function: 'Operations', desc: 'Workflow automation, data synchronisation', icon: <Workflow />, color: '#10B981' },
-        { function: 'IT & Infrastructure', desc: 'Legacy integration, microservices enablement', icon: <Server />, color: '#8B5CF6' },
-        { function: 'Healthcare', desc: 'Patient data integration, secure API access', icon: <HeartHandshake />, color: '#F59E0B' },
-        { function: 'Retail & E-commerce', desc: 'Inventory, order, payment, logistics APIs', icon: <ShoppingCart />, color: '#EC4899' },
-        { function: 'Manufacturing', desc: 'ERP integration, plant data exchange', icon: <Factory />, color: '#06B6D4' },
+        { function: 'Operations', desc: 'Workflow automation, data synchronisation', icon: <Workflow />, color: '#3b82f6' },
+        { function: 'IT & Infrastructure', desc: 'Legacy integration, microservices enablement', icon: <Server />, color: '#3b82F6' },
+        //{ function: 'Healthcare', desc: 'Patient data integration, secure API access', icon: <HeartHandshake />, color: '#3b82f6' },
+        { function: 'Retail & E-commerce', desc: 'Inventory, order, payment, logistics APIs', icon: <ShoppingCart />, color: '#3b82f6' },
+        { function: 'Manufacturing', desc: 'ERP integration, plant data exchange', icon: <Factory />, color: '#3b82f6' },
         { function: 'Enterprises & SaaS', desc: 'Public/private APIs, multi-tenant platforms', icon: <Building2 />, color: '#3B82F6' }
     ];
 
     const apiProtocols = [
-        { name: 'REST', icon: <Braces />, color: '#3B82F6' },
+        { name: 'REST', icon: <Braces />, color: '#10B981' },
         { name: 'GraphQL', icon: <FileJson />, color: '#10B981' },
-        { name: 'Event-driven APIs', icon: <Radio />, color: '#8B5CF6' },
-        { name: 'OAuth 2.0 / JWT', icon: <Key />, color: '#F59E0B' },
-        { name: 'Role-based Access', icon: <LockIcon />, color: '#EC4899' },
-        { name: 'Compliance-ready', icon: <BadgeCheck />, color: '#06B6D4' }
+        { name: 'Event-driven APIs', icon: <Radio />, color: '#10B981' },
+        { name: 'WebSocket', icon: <Zap />, color: '#10B981' },
+        { name: 'gRPC', icon: <GitBranch />, color: '#10B981' },
+        { name: 'OAuth 2.0 / JWT', icon: <Key />, color: '#10B981' },
+        { name: 'Role-based Access', icon: <LockIcon />, color: '#10B981' },
+        { name: 'API Keys & Rate Limiting', icon: <KeyRound />, color: '#10B981' },
+        { name: 'Compliance-ready', icon: <BadgeCheck />, color: '#10B981' },
     ];
 
     const apiProcess = [
         { step: 1, title: 'Discovery & Planning', description: 'Define API goals, consumers, and success metrics.', icon: <Search />, color: '#3B82F6' },
-        { step: 2, title: 'Architecture & Design', description: 'Design contracts, data models, and security layers.', icon: <PenTool />, color: '#10B981' },
-        { step: 3, title: 'Development & Integration', description: 'Build and integrate APIs across systems.', icon: <Code2 />, color: '#8B5CF6' },
-        { step: 4, title: 'Testing & Deployment', description: 'Validate performance, security, and reliability.', icon: <TestTube />, color: '#F59E0B' },
-        { step: 5, title: 'Optimization & Support', description: 'Continuous monitoring, enhancement, and scaling.', icon: <Gauge />, color: '#EC4899' }
+        { step: 2, title: 'Architecture & Design', description: 'Design contracts, data models, and security layers.', icon: <PenTool />, color: '#3b82f6' },
+        { step: 3, title: 'Development & Integration', description: 'Build and integrate APIs across systems.', icon: <Code2 />, color: '#3b82F6' },
+        { step: 4, title: 'Testing & Deployment', description: 'Validate performance, security, and reliability.', icon: <TestTube />, color: '#3b82f6' },
+        { step: 5, title: 'Optimization & Support', description: 'Continuous monitoring, enhancement, and scaling.', icon: <Gauge />, color: '#3b82f6' }
     ];
 
     // ----- Latest Trends in API Development -----
     const apiTrends = [
-        { text: 'Microservices Architecture – Modular, independently scalable services', icon: <Layers />, color: '#3B82F6' },
+        { text: 'Microservices Architecture – Modular, independently scalable services', icon: <Layers />, color: '#10b981' },
         { text: 'Serverless Computing – Event-driven, auto-scaling, reduced ops', icon: <Cloud />, color: '#10B981' },
-        { text: 'AI/ML Integration – Pre-trained models, intelligent data processing', icon: <Brain />, color: '#8B5CF6' },
-        { text: 'Event-Driven Designs – Real-time, asynchronous communication', icon: <Radio />, color: '#F59E0B' },
-        { text: 'Low-Code Development – Pre-built integrations, rapid prototyping', icon: <Zap />, color: '#EC4899' }
+        { text: 'AI/ML Integration – Pre-trained models, intelligent data processing', icon: <Brain />, color: '#10b981' },
+        { text: 'Event-Driven Designs – Real-time, asynchronous communication', icon: <Radio />, color: '#10b981' },
+        { text: 'Low-Code Development – Pre-built integrations, rapid prototyping', icon: <Zap />, color: '#10b981' }
     ];
 
     // ----- Considerations for Choosing an API Development Company -----
     const apiConsiderations = [
         { title: 'Technical Expertise', description: 'Relevant technology experience, programming languages, frameworks.', icon: <Code />, color: '#3B82F6' },
-        { title: 'Performance Capabilities', description: 'Scalability track record, load handling, optimisation skills.', icon: <Gauge />, color: '#10B981' },
-        { title: 'Security Standards', description: 'Authentication, encryption, compliance, certifications.', icon: <Shield />, color: '#8B5CF6' },
-        { title: 'Support Quality', description: 'Documentation, response time, issue resolution process.', icon: <Headphones />, color: '#F59E0B' },
-        { title: 'Integration Expertise', description: 'System compatibility, third-party integration, future-proofing.', icon: <Plug />, color: '#EC4899' },
-        { title: 'Cost Considerations', description: 'Pricing transparency, maintenance costs, scaling fees.', icon: <Wallet />, color: '#06B6D4' },
+        { title: 'Performance Capabilities', description: 'Scalability track record, load handling, optimisation skills.', icon: <Gauge />, color: '#3b82f6' },
+        { title: 'Security Standards', description: 'Authentication, encryption, compliance, certifications.', icon: <Shield />, color: '#3b82F6' },
+        { title: 'Support Quality', description: 'Documentation, response time, issue resolution process.', icon: <Headphones />, color: '#3b82f6' },
+        { title: 'Integration Expertise', description: 'System compatibility, third-party integration, future-proofing.', icon: <Plug />, color: '#3b82f6' },
+        { title: 'Cost Considerations', description: 'Pricing transparency, maintenance costs, scaling fees.', icon: <Wallet />, color: '#3b82f6' },
         { title: 'References & Reviews', description: 'Client testimonials, case studies, industry reputation.', icon: <Award />, color: '#3B82F6' }
     ];
 
     // ============ CLIENT TESTIMONIALS ============
     const testimonials = [
         {
-            name: 'James Kelly',
+            name: 'James',
             role: 'Data Analyst',
-            content: 'The Project managers took a lot of time to understand our project before coming up with a contract or what they thought we needed. I had the reassurance from the start that the project managers knew what type of project I wanted and what my needs were. That is reassuring, and that\'s why we chose BBMCoders',
+            content: 'The Project managers took a lot of time to understand our project before coming up with a contract or what they thought we needed. I had the reassurance from the start that the project managers knew what type of project I wanted and what my needs were. That is reassuring, and that\'s why we chose BBMcoders',
             image: '/images/user.png'
         },
         {
-            name: 'Judith Mueller',
-            role: 'Executive Director, Judith Foundation',
-            content: 'The team at BBMCoders has provided us with exceptional services in creating this one-of-a-kind portal, and it has been a fantastic experience. I was particularly impressed by how efficiently and quickly the team always came up with creative solutions to provide us with all the functionalities within the portal we had requested.',
+            name: 'Rebecca',
+            content: 'The team at BBMcoders has provided us with exceptional services in creating this one-of-a-kind portal, and it has been a fantastic experience. I was particularly impressed by how efficiently and quickly the team always came up with creative solutions to provide us with all the functionalities within the portal we had requested.',
             image: '/images/user.png'
         },
         {
             name: 'chris',
-            role: 'Director, Storgaze',
-            content: 'BBMCoders had great technical expertise, both in front-end and back-end development. Other project management was well organized. Account management was friendly and always available. I would give BBMCoders ten out of ten!',
+            content: 'BBMcoders had great technical expertise, both in front-end and back-end development. Other project management was well organized. Account management was friendly and always available. I would give BBMcoders ten out of ten!',
             image: '/images/user.png'
         },
         {
-            name: 'Mohammed Mira',
-            role: 'Director, FashionHint',
-            content: 'Huge thank you to BBMCoders; they have been a massive help in enabling us to start developing our project within a few weeks, so it\'s been great! There have been two small bumps in the road, but overall, It\'s been a fantastic service. I have already recommended it to one of my friends.',
+            name: 'Ibrahim',
+            content: 'Huge thank you to BBMcoders; they have been a massive help in enabling us to start developing our project within a few weeks, so it\'s been great! There have been two small bumps in the road, but overall, It\'s been a fantastic service. I have already recommended it to one of my friends.',
             image: '/images/user.png'
         }
     ];
 
     // ============ INDUSTRIES ============
-   const industries = [
+    const industries = [
         {
             name: 'E-Commerce & Retail',
             icon: '🛍️',
@@ -534,7 +546,7 @@ const BoxIcon = (props: SVGProps<SVGSVGElement>) => (
             icon: '🏥',
             desc: 'Telemedicine platforms, patient portals, health tracking apps, and medical management systems with HIPAA-compliant security.',
             image: 'https://images.unsplash.com/photo-1551601651-2a8555f1a136?auto=format&fit=crop&w=800&q=80',
-            color: '#8B5CF6'
+            color: '#3b82f6'
         }
     ];
 
@@ -554,7 +566,7 @@ const BoxIcon = (props: SVGProps<SVGSVGElement>) => (
         },
         {
             question: 'What advanced technologies do you use for ISV products?',
-            answer: 'We specialise in AI/ML, AR/VR, IoT, Blockchain, RPA, Edge Computing, Biometrics, Robotics, 5G, and Quantum Computing. Our team has 4+ years average experience in these domains and has delivered 50+ successful ISV products.'
+            answer: 'We specialise in AI/ML, AR/VR, IoT, and modern web/mobile technologies. Our team has experience delivering successful ISV products and continues to expand expertise in emerging technologies.'
         },
         {
             question: 'How quickly can you scale a white label team?',
@@ -591,10 +603,10 @@ const BoxIcon = (props: SVGProps<SVGSVGElement>) => (
                                 ISV, White Label & <span className={styles.highlight}>API Development</span>
                             </h1>
                             <p className={styles.subheadline}>
-                                Three specialized pillars. One trusted partner. From product strategy to white label delivery and API integration – we accelerate your entire software ecosystem.
+                                From product strategy to white label delivery and API integration – we accelerate your entire software ecosystem.
                             </p>
                             <p className={styles.heroDescription}>
-                                Whether you&apos;re an ISV building the next generation of AI-powered applications, a digital agency scaling through white label partnerships, or an enterprise modernising with APIs – we provide the expertise, speed, and quality you need.
+                                ISV products, white-label partnerships, API integration – we deliver the expertise you need.
                             </p>
                         </motion.div>
 
@@ -608,17 +620,17 @@ const BoxIcon = (props: SVGProps<SVGSVGElement>) => (
                                 Discuss Your Project
                                 <ArrowRight className={styles.buttonIcon} />
                             </Link>
-                            
+
                         </motion.div>
                     </motion.div>
 
-                    <motion.div
+                    {/* <motion.div
                         className={styles.rightContent}
                         initial={{ opacity: 0, x: 20 }}
                         animate={{ opacity: 1, x: 0 }}
                         transition={{ delay: 0.3, duration: 0.8 }}
-                    >
-                        <div className={styles.testimonialCard}>
+                    > */}
+                        {/* <div className={styles.testimonialCard}>
                             <div className={styles.testimonialImage}>
                                 <div className={styles.clientImageWrapper}>
                                     <Image
@@ -635,7 +647,6 @@ const BoxIcon = (props: SVGProps<SVGSVGElement>) => (
                                 <p className={styles.testimonialText}>&quot;{testimonial.content}&quot;</p>
                                 <div className={styles.testimonialAuthor}>
                                     <h4>{testimonial.name}</h4>
-                                    {/* <p>{testimonial.role}</p> */}
                                 </div>
                                 <div className={styles.ratings}>
                                     <div className={styles.ratingItem}>
@@ -655,8 +666,8 @@ const BoxIcon = (props: SVGProps<SVGSVGElement>) => (
                                     </div>
                                 </div>
                             </div>
-                        </div>
-                    </motion.div>
+                        </div> */}
+                   {/* </motion.div> */}
                 </div>
             </section>
 
@@ -693,21 +704,21 @@ const BoxIcon = (props: SVGProps<SVGSVGElement>) => (
                 </div>
 
                 <div className={styles.pillarTabs}>
-                    <button 
+                    <button
                         className={`${styles.pillarTab} ${activePillar === 'isv' ? styles.active : ''}`}
                         onClick={() => setActivePillar('isv')}
                     >
                         <Building2 className={styles.pillarIcon} />
                         <span>ISV & Product Development</span>
                     </button>
-                    <button 
+                    <button
                         className={`${styles.pillarTab} ${activePillar === 'white-label' ? styles.active : ''}`}
                         onClick={() => setActivePillar('white-label')}
                     >
                         <BriefcaseBusiness className={styles.pillarIcon} />
                         <span>White Label Services</span>
                     </button>
-                    <button 
+                    <button
                         className={`${styles.pillarTab} ${activePillar === 'api' ? styles.active : ''}`}
                         onClick={() => setActivePillar('api')}
                     >
@@ -878,7 +889,7 @@ const BoxIcon = (props: SVGProps<SVGSVGElement>) => (
                                         </div>
                                     ))}
                                 </div>
-                                
+
                                 <h3 className={styles.colTitle} style={{ marginTop: '2rem' }}>Security Best Practices</h3>
                                 <div className={styles.solutionsGrid}>
                                     {securityPractices.map((item, idx) => (
@@ -1338,51 +1349,42 @@ const BoxIcon = (props: SVGProps<SVGSVGElement>) => (
 
             {/* ===== ELEVATE YOUR ISV JOURNEY – Shared Value Proposition ===== */}
             <section className={styles.elevateSection}>
-                <div className={styles.elevateBackground}>
-                    <Image
-                        src="https://images.unsplash.com/photo-1551434678-e076c223a692?auto=format&fit=crop&w=1920&q=80"
-                        alt="Collaboration background"
-                        fill
-                        className={styles.elevateBgImage}
-                    />
-                    <div className={styles.elevateOverlay}></div>
-                </div>
                 <div className={styles.elevateContent}>
                     <div className={styles.sectionHeader}>
                         <h2 className={styles.sectionTitle} style={{ color: 'white' }}>
                             Elevate Your <span className={styles.titleHighlight}>ISV Journey</span> with Our Expertise
                         </h2>
                         <p className={styles.sectionDescription} style={{ color: 'rgba(255,255,255,0.9)' }}>
-                            BBMCoders stands out as a trusted name in software development, specializing in catering to Independent Software Vendors (ISVs), product companies, and digital agencies.
+                            BBMcoders stands out as a trusted name in software development, specializing in catering to Independent Software Vendors (ISVs), product companies, and digital agencies.
                         </p>
                     </div>
 
                     <div className={styles.elevateGrid}>
-                        <div className={styles.elevateItem}>
-                            <BadgeCheck className={styles.elevateIcon} style={{ color: '#3B82F6' }} />
-                            <span>Trusted by Startups to Fortune 500</span>
-                        </div>
-                        <div className={styles.elevateItem}>
-                            <Rocket className={styles.elevateIcon} style={{ color: '#10B981' }} />
-                            <span>Idea to Deployment – We Handle All</span>
-                        </div>
-                        <div className={styles.elevateItem}>
-                            <Globe className={styles.elevateIcon} style={{ color: '#8B5CF6' }} />
-                            <span>Time-Zone Friendly: Global Presence</span>
-                        </div>
-                        <div className={styles.elevateItem}>
-                            <Shield className={styles.elevateIcon} style={{ color: '#F59E0B' }} />
-                            <span>Top-tier Data Security Protocols</span>
-                        </div>
-                        <div className={styles.elevateItem}>
-                            <Clock className={styles.elevateIcon} style={{ color: '#EC4899' }} />
-                            <span>On-time Delivery, No Surprises</span>
-                        </div>
-                        <div className={styles.elevateItem}>
-                            <Target className={styles.elevateIcon} style={{ color: '#06B6D4' }} />
-                            <span>First Time Right Process</span>
-                        </div>
-                    </div>
+    <div className={styles.elevateItem}>
+        <BadgeCheck className={styles.elevateIcon} style={{ color: '#3B82F6' }} />
+        <span>Trusted by Startups & Growing Businesses</span>
+    </div>
+    <div className={styles.elevateItem}>
+        <Rocket className={styles.elevateIcon} style={{ color: '#3b82f6' }} />
+        <span>Idea to Deployment – We Handle All</span>
+    </div>
+    <div className={styles.elevateItem}>
+        <Globe className={styles.elevateIcon} style={{ color: '#3b82f6' }} />
+        <span>Time-Zone Friendly: Global Collaboration</span>
+    </div>
+    <div className={styles.elevateItem}>
+        <Shield className={styles.elevateIcon} style={{ color: '#3b82f6' }} />
+        <span>Strong Data Security Practices</span>
+    </div>
+    <div className={styles.elevateItem}>
+        <Clock className={styles.elevateIcon} style={{ color: '#3b82f6' }} />
+        <span>On-time Delivery Commitment</span>
+    </div>
+    <div className={styles.elevateItem}>
+        <Target className={styles.elevateIcon} style={{ color: '#3b82f6' }} />
+        <span>Quality-First Approach</span>
+    </div>
+</div>
                 </div>
             </section>
 
@@ -1439,13 +1441,13 @@ const BoxIcon = (props: SVGProps<SVGSVGElement>) => (
                     </div>
 
                     <div className={styles.testimonialArrows}>
-                        <button 
+                        <button
                             className={styles.testimonialArrow}
                             onClick={() => setActiveTestimonial((prev) => (prev === 0 ? testimonials.length - 1 : prev - 1))}
                         >
                             <ChevronRight className={styles.arrowLeft} />
                         </button>
-                        <button 
+                        <button
                             className={styles.testimonialArrow}
                             onClick={() => setActiveTestimonial((prev) => (prev === testimonials.length - 1 ? 0 : prev + 1))}
                         >

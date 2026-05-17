@@ -1,17 +1,14 @@
-/* ==== COLOR PALETTE (identical to your existing palette) ==== */
+/* ==== COLOR PALETTE ==== */
 .pageWrapper {
     --primary-blue: #3B82F6;
     --primary-green: #10B981;
     --gradient-primary: linear-gradient(135deg, #3B82F6, #10B981);
     --gradient-primary-dark: linear-gradient(135deg, #2563EB, #059669);
 
-    --secondary-purple: #8B5CF6;
-    --secondary-amber: #F59E0B;
-    --secondary-pink: #EC4899;
-    --secondary-cyan: #06B6D4;
+    /* REMOVED: --secondary-purple, --secondary-amber, --secondary-pink, --secondary-cyan */
 
     --gradient-section-light: linear-gradient(135deg, rgba(59, 130, 246, 0.03) 0%, rgba(16, 185, 129, 0.03) 100%);
-    --gradient-section-dark: linear-gradient(135deg, rgba(15, 23, 42, 0.88) 0%, rgba(30, 41, 59, 83) 100%);
+    --gradient-section-dark: linear-gradient(135deg, rgba(15, 23, 42, 0.92) 0%, rgba(30, 41, 59, 0.92) 100%);
 
     --dark-bg: #0F172A;
     --dark-surface: #1E293B;
@@ -33,7 +30,7 @@
     line-height: 1.6;
 }
 
-/* ===== HERO SECTION (EXACTLY AS YOUR EXISTING DESIGN) ===== */
+/* ===== HERO SECTION ===== */
 .heroSection {
     position: relative;
     min-height: 85vh;
@@ -42,7 +39,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    background-image: url('https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80');
+    background-image: url('https://media.istockphoto.com/id/2228764569/photo/hispanic-female-software-developer-coding-at-night-in-office.webp?a=1&b=1&s=612x612&w=0&k=20&c=8nU7XeXb1aKrQ4UbMCJm9B6EYE_ovWqPu5kNnQ7GGJM=');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -90,7 +87,7 @@
     align-items: center;
     gap: 0.5rem;
     background: rgba(59, 130, 246, 0.2);
-    color: #93c5fd;
+    color: var(--gray-300);
     padding: 0.5rem 1.25rem;
     border-radius: 2rem;
     font-size: 0.875rem;
@@ -165,9 +162,9 @@
 }
 
 .ctaButton:hover {
+    background: var(--gradient-primary-dark);
     transform: translateY(-2px);
     box-shadow: 0 6px 20px rgba(59, 130, 246, 0.4);
-    background: var(--gradient-primary-dark);
 }
 
 .secondaryButton {
@@ -217,6 +214,7 @@
     box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
     position: relative;
     margin-top: 3rem;
+    overflow: visible;
 }
 
 .testimonialCard::before {
@@ -227,6 +225,7 @@
     right: 0;
     height: 4px;
     background: var(--gradient-primary);
+    border-radius: 1.2rem 1.2rem 0 0;
 }
 
 .testimonialImage {
@@ -250,6 +249,7 @@
     object-fit: cover;
     border: 3px solid var(--primary-green);
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    background: white;
 }
 
 .testimonialContent {
@@ -457,7 +457,7 @@
 /* ===== EXPERTISE SECTION – GLASS CARDS ===== */
 .expertiseSection {
     padding: 6rem 2rem;
-    background: linear-gradient(135deg, var(--white) 0%, var(--gray-50) 100%);
+    background: linear-gradient(135deg, var(--white) 0%, var(--gray-100) 100%);
     position: relative;
     overflow: hidden;
 }
@@ -501,7 +501,7 @@
 }
 
 .expertiseCard:hover .expertiseGlass {
-    border-color: var(--primary-blue);
+    border-color: var(--primary-green);
     box-shadow: 0 16px 48px rgba(0, 0, 0, 0.08);
     background: rgba(255, 255, 255, 0.8);
 }
@@ -579,6 +579,7 @@
 .featureItem svg {
     flex-shrink: 0;
     margin-top: 0.125rem;
+    color: var(--primary-green);
 }
 
 .expertiseFooter {
@@ -594,11 +595,12 @@
     padding: 0.5rem 0;
     border-bottom: 2px solid transparent;
     transition: all 0.3s ease;
+    color: var(--primary-blue);
 }
 
 .learnMoreLink:hover {
     gap: 0.75rem;
-    border-bottom-color: currentColor;
+    border-bottom-color: var(--primary-blue);
 }
 
 /* ===== HIRING MODELS – BOLD CARDS ===== */
@@ -652,6 +654,7 @@
     left: 0;
     right: 0;
     height: 6px;
+    background: var(--gradient-primary);
 }
 
 .hiringModelCard:hover {
@@ -672,6 +675,7 @@
     background: var(--white);
     position: relative;
     z-index: 2;
+    color: var(--primary-blue);
 }
 
 .hiringModelCard h3 {
@@ -689,6 +693,8 @@
     font-size: 0.8rem;
     font-weight: 600;
     margin-bottom: 1.5rem;
+    background: var(--gradient-section-light);
+    color: var(--primary-blue);
 }
 
 .hiringModelDescription {
@@ -717,6 +723,7 @@
 .hiringModelFeatures li svg {
     flex-shrink: 0;
     margin-top: 0.125rem;
+    color: var(--primary-green);
 }
 
 /* ===== PARTNER HIGHLIGHTS – REDESIGNED WITH BACKGROUND IMAGE ===== */
@@ -746,7 +753,7 @@
     left: 0;
     width: 100%;
     height: 100%;
-    background: linear-gradient(135deg, rgba(15, 23, 42, 0.95) 0%, rgba(30, 41, 59, 0.9) 100%);
+    background: var(--gradient-section-dark);
     z-index: 1;
 }
 
@@ -794,6 +801,7 @@
     justify-content: center;
     margin-bottom: 1.25rem;
     transition: all 0.3s ease;
+    color: var(--primary-green);
 }
 
 .partnerItem:hover .partnerItemIcon {
@@ -862,7 +870,7 @@
     gap: 1rem;
     padding-bottom: 1rem;
     margin-bottom: 1.5rem;
-    border-bottom: 2px solid;
+    border-bottom: 2px solid var(--primary-green);
 }
 
 .challengeIcon {
@@ -873,6 +881,7 @@
     justify-content: center;
     font-size: 1.5rem;
     flex-shrink: 0;
+    color: var(--primary-blue);
 }
 
 .challengeHeader h3 {
@@ -907,12 +916,13 @@
 .challengePoints li svg {
     flex-shrink: 0;
     margin-top: 0.125rem;
+    color: var(--primary-green);
 }
 
 /* ===== 7 SIGNS – COMPACT GRID ===== */
 .signsSection {
     padding: 6rem 2rem;
-    background: linear-gradient(135deg, var(--gray-50) 0%, var(--white) 100%);
+    background: linear-gradient(135deg, var(--gray-100) 0%, var(--white) 100%);
     position: relative;
 }
 
@@ -959,6 +969,8 @@
     align-items: center;
     justify-content: center;
     flex-shrink: 0;
+    background: var(--gradient-section-light);
+    color: var(--primary-blue);
 }
 
 .signIcon {
@@ -1036,6 +1048,8 @@
     align-items: center;
     justify-content: center;
     margin-bottom: 1.5rem;
+    background: var(--gradient-section-light);
+    color: var(--primary-blue);
 }
 
 .aiIcon {
@@ -1078,12 +1092,13 @@
     height: 6px;
     border-radius: 50%;
     flex-shrink: 0;
+    background: var(--primary-green);
 }
 
 /* ===== BENEFITS OF OUTSOURCING – ELEGANT CARDS ===== */
 .benefitsSection {
     padding: 6rem 2rem;
-    background: linear-gradient(135deg, var(--gray-50) 0%, var(--white) 100%);
+    background: linear-gradient(135deg, var(--gray-100) 0%, var(--white) 100%);
     position: relative;
 }
 
@@ -1134,6 +1149,7 @@
     font-size: 1.75rem;
     background: var(--white);
     transition: all 0.3s ease;
+    color: var(--primary-blue);
 }
 
 .benefitCard:hover .benefitIconFloating {
@@ -1172,6 +1188,7 @@
 .benefitPoint svg {
     flex-shrink: 0;
     margin-top: 0.125rem;
+    color: var(--primary-green);
 }
 
 /* ===== STATS SECTION – 2 COLUMNS ON ALL SMALL SCREENS ===== */
@@ -1265,7 +1282,6 @@
     font-size: 0.75rem;
     color: var(--gray-500);
 }
-
 
 /* ===== TESTIMONIALS CAROUSEL ===== */
 .testimonialsSection {
@@ -1372,11 +1388,13 @@
     padding: 0;
     cursor: pointer;
     transition: all 0.3s ease;
+    background: var(--gray-300);
 }
 
 .testimonialDot.active {
     width: 24px;
     border-radius: 12px;
+    background: var(--gradient-primary);
 }
 
 .testimonialArrows {
@@ -1417,7 +1435,7 @@
     transform: rotate(180deg);
 }
 
-/* ===== INDUSTRIES SECTION (EXACT HOVER ANIMATION) ===== */
+/* ===== INDUSTRIES SECTION ===== */
 .industriesSection {
     padding: 5rem 2rem;
     background: var(--white);
@@ -1512,7 +1530,7 @@
     color: var(--gray-300);
 }
 
-/* ===== FAQ SECTION (ORIGINAL SIMPLE DESIGN) ===== */
+/* ===== FAQ SECTION ===== */
 .faqSection {
     padding: 5rem 2rem;
     background: var(--white);
@@ -1683,9 +1701,9 @@
 }
 
 .ctaPrimary:hover {
+    background: var(--gradient-primary-dark);
     transform: translateY(-2px);
     box-shadow: 0 6px 20px rgba(59, 130, 246, 0.4);
-    background: var(--gradient-primary-dark);
 }
 
 .ctaSecondary {
@@ -1902,56 +1920,55 @@
 
 /* ===== FIX TESTIMONIAL CARD ALIGNMENT FOR 768px - 1024px ===== */
 @media (min-width: 768px) and (max-width: 1024px) {
-  .rightContent {
-    align-items: center; 
-  }
+    .rightContent {
+        align-items: center;
+    }
 
-  .testimonialCard {
-    margin-top: 2rem; 
-    max-width: 500px;  
-  }
+    .testimonialCard {
+        margin-top: 2rem;
+        max-width: 500px;
+    }
 
-  .clientImageWrapper {
-    top: -35px; 
-  }
+    .clientImageWrapper {
+        top: -35px;
+    }
 
-  .testimonialContent {
-    margin-top: 1.5rem; 
-  }
+    .testimonialContent {
+        margin-top: 1.5rem;
+    }
 
-  /* Optional: adjust card padding if needed */
-  .testimonialCard {
-    padding: 2rem 1.5rem 1.5rem;
-  }
+    .testimonialCard {
+        padding: 2rem 1.5rem 1.5rem;
+    }
 }
 
 @media (max-width: 640px) {
-  .faqSection {
-    padding: 4rem 1rem;
-  }
+    .faqSection {
+        padding: 4rem 1rem;
+    }
 
-  .faqQuestion {
-    padding: 1.25rem;
-    font-size: 1rem;
-  }
+    .faqQuestion {
+        padding: 1.25rem;
+        font-size: 1rem;
+    }
 
-  .faqQuestionContent {
-    gap: 1rem;
-  }
+    .faqQuestionContent {
+        gap: 1rem;
+    }
 
-  .faqIcon {
-    width: 1.25rem;
-    height: 1.25rem;
-  }
+    .faqIcon {
+        width: 1.25rem;
+        height: 1.25rem;
+    }
 
-  .faqToggle {
-    font-size: 1.5rem;
-    width: 2rem;
-    height: 2rem;
-  }
+    .faqToggle {
+        font-size: 1.5rem;
+        width: 2rem;
+        height: 2rem;
+    }
 
-  .faqAnswer {
-    padding: 0 1.25rem 1.25rem;
-    font-size: 1rem;
-  }
+    .faqAnswer {
+        padding: 0 1.25rem 1.25rem;
+        font-size: 1rem;
+    }
 }
