@@ -4,12 +4,12 @@ import Image from 'next/image';
 import Link from 'next/link';
 import { motion } from 'framer-motion';
 import {
-    ArrowRight, Shield, Phone, Mail, MapPin,
+    ArrowRight, Shield, Phone, Mail, MessageCircle
 } from 'lucide-react';
 import styles from './privacy.module.css';
 
 export default function PrivacyPage() {
-    const lastUpdated = 'March 30, 2025';
+    const lastUpdated = 'May, 2026';
 
     return (
         <div className={styles.pageWrapper}>
@@ -191,19 +191,25 @@ export default function PrivacyPage() {
                         <div className={styles.contactCard}>
                             <div className={styles.contactItem}>
                                 <Mail size={18} />
-                                <a href="mailto:legal@bbmcoders.com" style={{ color: 'inherit', textDecoration: 'none' }}>
+                                <a href="mailto:support@bbmcoders.com" style={{ color: 'inherit', textDecoration: 'none' }}>
                                     support@bbmcoders.com
                                 </a>
                             </div>
                             <div className={styles.contactItem}>
                                 <Phone size={18} />
-                                <a href="tel:+15551234567" style={{ color: 'inherit', textDecoration: 'none' }}>
-                                    +1 (555) 123-4567
-                                </a>
+                                <a href="tel:+2347060970212" style={{ color: 'inherit', textDecoration: 'none' }}>
+                                  +234 706 097 0212
+                               </a>
                             </div>
                             <div className={styles.contactItem}>
-                                <MapPin size={18} />
-                                <span>Lagos, Nigeria</span>
+                                 <MessageCircle size={18} />
+                               <a 
+                             href={`https://wa.me/2349042381702?text=${encodeURIComponent("Hi! I have a question about your privacy policy")}`}
+                               target="_blank"
+                                  rel="noopener noreferrer"
+                                   style={{ color: 'inherit', textDecoration: 'none' }}>
+                                     WhatsApp Us
+                              </a>
                             </div>
                         </div>
                     </section>

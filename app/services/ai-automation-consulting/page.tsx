@@ -42,7 +42,7 @@ export default function AIAutomationConsultingPage() {
   const [openFaq, setOpenFaq] = useState<number | null>(0);
 
   const testimonial = {
-    name: "David Wilson",
+    name: "David",
     // role: "CEO, Innovative group",
     content:
       "BBMcoders showed us exactly how to use AI solutions to solve our biggest business problems. The guidance was invaluable for our digital transformation.",

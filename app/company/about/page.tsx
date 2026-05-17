@@ -348,6 +348,75 @@ export default function AboutPage() {
                 </div>
             </section>
 
+            {/* ===== RECENT WORKS SECTION ===== */}
+{/* <section className={styles.recentWorksSection}>
+    <div className={styles.container}>
+        <div className={styles.sectionHeader}>
+            <h2 className={styles.sectionTitle}>
+                Our <span className={styles.titleHighlight}>Recent Works</span>
+            </h2>
+            <p className={styles.sectionDescription}>
+                Check out some of our latest projects that showcase our expertise and innovation.
+            </p>
+        </div>
+        <div className={styles.recentWorksGrid}>
+            
+            <motion.div
+                className={styles.workCard}
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.5, delay: 0.1 }}
+                viewport={{ once: true }}
+            >
+                <a href="https://www.cyberrootltd.com.ng/" target="_blank" rel="noopener noreferrer" className={styles.workLink}>
+                    <div className={styles.workImageContainer}>
+                        <Image
+                            src="/recent1.png"
+                            alt="Recent Work 1"
+                            fill
+                            className={styles.workImage}
+                        />
+                        <div className={styles.workOverlay}>
+                            <span className={styles.viewProjectText}>View Project →</span>
+                        </div>
+                    </div>
+                    <div className={styles.workContent}>
+                        <h3 className={styles.workTitle}>Project Name 1</h3>
+                        <p className={styles.workDescription}>Brief description of your first recent project goes here.</p>
+                    </div>
+                </a>
+            </motion.div>
+
+            
+            <motion.div
+                className={styles.workCard}
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.5, delay: 0.2 }}
+                viewport={{ once: true }}
+            >
+                <a href="https://www.lovervows.com/" target="_blank" rel="noopener noreferrer" className={styles.workLink}>
+                    <div className={styles.workImageContainer}>
+                        <Image
+                            src="/recent2.png"
+                            alt="Recent Work 2"
+                            fill
+                            className={styles.workImage}
+                        />
+                        <div className={styles.workOverlay}>
+                            <span className={styles.viewProjectText}>View Project →</span>
+                        </div>
+                    </div>
+                    <div className={styles.workContent}>
+                        <h3 className={styles.workTitle}>Project Name 2</h3>
+                        <p className={styles.workDescription}>Brief description of your second recent project goes here.</p>
+                    </div>
+                </a>
+            </motion.div>
+        </div>
+    </div>
+</section> */}
+
             {/* ===== TESTIMONIALS SECTION ===== */}
             <section className={styles.testimonialsSection}>
                 <div className={styles.container}>

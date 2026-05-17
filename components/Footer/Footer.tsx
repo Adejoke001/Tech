@@ -7,6 +7,7 @@ import {
   Facebook,
   Instagram,
   Mail,
+  MessageSquare,
   Phone,
   //MapPin 
 } from "lucide-react";
@@ -182,6 +183,12 @@ const Footer = () => {
                 <Phone size={18} className={styles.contactIcon} />
                 <a href="tel:+15551234567" className={styles.contactLink}>
                   +234 7060970212
+                </a>
+              </div>
+              <div className={styles.contactItem}>
+                <MessageSquare size={18} className={styles.contactIcon} />
+                <a href="https://wa.me/2349042381702" target="_blank" rel="noopener noreferrer" className={styles.contactLink}>
+                  +234 9042381702
                 </a>
               </div>
               {/* Address - with MapPin SVG icon */}

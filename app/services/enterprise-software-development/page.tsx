@@ -23,7 +23,7 @@ export default function EnterpriseSoftwarePage() {
     // Testimonial matching the quality assurance page layout
     const testimonial = {
         name: 'James',
-        role: 'Resource Manager',
+        // role: 'Resource Manager',
         content: 'Professional, reliable, and results-driven – BBMcoders delivered exactly what we needed, on time and within budget. Their enterprise software transformed our operations.',
         rating: 5,
         project: 'Resource Planning System'
@@ -209,7 +209,7 @@ export default function EnterpriseSoftwarePage() {
     const companyStats = [
         { value: '10+', label: 'Full-time Staff', icon: <Users /> },
         { value: '5', label: 'Years Experience', icon: <Award /> },
-        { value: '100+', label: 'Satisfied Customers', icon: <HeadphonesIcon /> },
+        { value: '80+', label: 'Satisfied Customers', icon: <HeadphonesIcon /> },
         { value: '100+', label: 'Successful Projects', icon: <CheckCircle /> }
     ];
 
@@ -362,7 +362,7 @@ export default function EnterpriseSoftwarePage() {
                                 <p className={styles.testimonialText}>&quot;{testimonial.content}&quot;</p>
                                 <div className={styles.testimonialAuthor}>
                                     <h4>{testimonial.name}</h4>
-                                    <p>{testimonial.role}</p>
+                                    {/* <p>{testimonial.role}</p> */}
                                 </div>
 
                                 <div className={styles.ratings}>

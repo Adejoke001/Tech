@@ -9,7 +9,7 @@ import {
   Sparkles,
   ArrowRight,
   Award,
-  MessageSquare,
+  //MessageSquare,
   HelpCircle,
   Smartphone,
   Server,
@@ -49,14 +49,14 @@ export default function FinTechPage() {
   const [hoveredIndustry, setHoveredIndustry] = useState<number | null>(null);
 
   // ----- HERO TESTIMONIAL -----
-  const testimonial = {
-    name: "Sarah .C",
-    // role: "CFO, Finorg Capital",
-    content:
-      "BBMcoders delivered a robust loan processing system that handles 50,000+ daily transactions with zero downtime. Their deep FinTech expertise and commitment to security exceeded our expectations.",
-    rating: 5,
-    project: "Enterprise Lending Platform",
-  };
+  // const testimonial = {
+  //   name: "Sarah",
+  //   role: "CFO, Finorg Capital",
+  //   content:
+  //     "BBMcoders delivered a robust loan processing system that handles 50,000+ daily transactions with zero downtime. Their deep FinTech expertise and commitment to security exceeded our expectations.",
+  //   rating: 5,
+  //   project: "Enterprise Lending Platform",
+  // };
 
   // ============ FINTECH SOLUTIONS (10 cards) ============
   const fintechSolutions = [
@@ -319,37 +319,36 @@ export default function FinTechPage() {
   // ============ WHY PARTNER WITH US (redesigned with background image) ============
   const whyPartner = [
     {
-      text: "Nigeria’s Top 10% Software Talent",
+      text: "Skilled Nigerian Software Talent",
       icon: <Award />,
       color: "#3B82F6",
     },
     {
-      text: "Trusted by Startups to Fortune 500",
+      text: "Trusted by Startups & Growing Businesses",
       icon: <Building2 />,
       color: "#3b82f6",
     },
     {
       text: "Idea to Deployment, We Handle All",
       icon: <Rocket />,
-      color: "#3b82F6",
+      color: "#3B82F6",
     },
     {
-      text: "Time-Zone Friendly: Global Presence",
+      text: "Time-Zone Friendly Collaboration",
       icon: <Globe />,
       color: "#3b82f6",
     },
     {
-      text: "Top-tier Data Security Protocols",
+      text: "Strong Data Security Practices",
       icon: <Lock />,
       color: "#3b82f6",
     },
     {
-      text: "On-time Delivery, No Surprises",
+      text: "On-time Delivery Commitment",
       icon: <Clock />,
       color: "#3b82f6",
     },
   ];
-
   // ============ DIGITAL BANKING TRANSFORMATION ============
   const bankingChallenges = [
     "Ensuring robust cybersecurity measures to protect customer data",
@@ -541,33 +540,33 @@ export default function FinTechPage() {
       question:
         "How do you ensure regulatory compliance across different jurisdictions?",
       answer:
-        "We work closely with legal and compliance professionals to understand and implement specific requirements. Our solutions are built with compliance by design – incorporating AML/KYC procedures, data protection measures, and audit trails. We also provide regular updates to keep pace with evolving regulations.",
+        "We work with legal and compliance professionals to understand and implement specific requirements. Our solutions incorporate AML/KYC procedures, data protection measures, and audit trails. We also provide regular updates to keep pace with evolving regulations.",
     },
     {
       question:
         "What security measures do you implement in FinTech applications?",
       answer:
-        "We employ end-to-end encryption, multi-factor authentication, secure coding practices, regular penetration testing, and compliance with standards like PCI DSS and GDPR. For high-risk transactions, we integrate AI-based fraud detection and blockchain for immutable audit logs.",
+        "We employ end-to-end encryption, multi-factor authentication, secure coding practices, regular security testing, and compliance with standards like GDPR. For high-risk transactions, we integrate fraud detection measures.",
     },
     {
       question: "Can you integrate with existing core banking systems?",
       answer:
-        "Absolutely. We specialise in integrating modern FinTech applications with legacy core banking systems using secure APIs, middleware, and microservices architecture – ensuring data consistency and real-time synchronisation.",
+        "Yes. We specialise in integrating modern FinTech applications with existing banking systems using secure APIs and middleware – ensuring data consistency and real-time synchronisation.",
     },
     {
       question: "What emerging technologies do you use in FinTech development?",
       answer:
-        "We leverage AI/ML for fraud detection and personalization, blockchain for secure transactions, RPA for process automation, IoT for real-time data, and cloud-native architectures for scalability. Our team stays at the forefront of FinTech innovation.",
+        "We leverage AI/ML for fraud detection and personalization, and cloud-native architectures for scalability. Our team stays current with FinTech innovation.",
     },
     {
       question: "How quickly can you scale a FinTech development team?",
       answer:
-        "We can onboard dedicated FinTech developers within 48 hours. Our flexible engagement models allow you to scale from 1 to 50+ engineers as your project grows – with no long-term commitment.",
+        "We can onboard dedicated FinTech developers within 1-2 weeks. Our flexible engagement models allow you to scale your team as your project grows – with no long-term commitment.",
     },
     {
       question: "Do you provide ongoing support and maintenance?",
       answer:
-        "Yes. Every project includes post-launch support, security monitoring, performance optimisation, and regular updates. We offer SLAs tailored to your business criticality.",
+        "Yes. Every project includes post-launch support, security monitoring, performance optimisation, and regular updates.",
     },
   ];
 
@@ -605,8 +604,7 @@ export default function FinTechPage() {
               <p className={styles.heroDescription}>
                 From client-facing apps to complex processing systems, process
                 automation, and fraud detection – we deliver secure, scalable,
-                and compliant FinTech solutions trusted by startups and Fortune
-                500 companies.
+                and compliant FinTech solutions trusted by startups and enterprises.
               </p>
             </motion.div>
 
@@ -624,7 +622,7 @@ export default function FinTechPage() {
             </motion.div>
           </motion.div>
 
-          <motion.div
+          {/* <motion.div
             className={styles.rightContent}
             initial={{ opacity: 0, x: 20 }}
             animate={{ opacity: 1, x: 0 }}
@@ -649,7 +647,7 @@ export default function FinTechPage() {
                 </p>
                 <div className={styles.testimonialAuthor}>
                   <h4>{testimonial.name}</h4>
-                  {/* <p>{testimonial.role}</p> */}
+                  <p>{testimonial.role}</p>
                 </div>
                 <div className={styles.ratings}>
                   <div className={styles.ratingItem}>
@@ -672,7 +670,7 @@ export default function FinTechPage() {
                 </div>
               </div>
             </div>
-          </motion.div>
+          </motion.div> */}
         </div>
       </section>
 

@@ -8,8 +8,8 @@ import { SVGProps } from "react";
 import {
   Sparkles,
   ArrowRight,
-  Award,
-  MessageSquare,
+  //Award,
+  //MessageSquare,
   HelpCircle,
   CheckCircle,
   Users,
@@ -67,14 +67,14 @@ export default function ECommercePage() {
   const [hoveredIndustry, setHoveredIndustry] = useState<number | null>(null);
 
   // ----- HERO TESTIMONIAL (unchanged) -----
-  const testimonial = {
-    name: "Michael",
-    // role: "CEO, Styleglo",
-    content:
-      "BBMcoders built our multi-vendor E-Commerce platform from scratch – it handles 100,000+ daily transactions with zero downtime. Their deep retail expertise and commitment to quality exceeded our expectations.",
-    rating: 5,
-    project: "Multi-Vendor Marketplace",
-  };
+  // const testimonial = {
+  //   name: "Michael",
+  //   role: "CEO, Styleglo",
+  //   content:
+  //     "BBMcoders built our multi-vendor E-Commerce platform from scratch – it handles 100,000+ daily transactions with zero downtime. Their deep retail expertise and commitment to quality exceeded our expectations.",
+  //   rating: 5,
+  //   project: "Multi-Vendor Marketplace",
+  // };
 
   // ============ CORE SOLUTIONS (expanded from original 6) ============
   const coreSolutions = [
@@ -84,7 +84,7 @@ export default function ECommercePage() {
         "Deliver seamless omni-channel experiences with CRM, loyalty programs, and in-store enhancements that boost retention.",
       icon: <Users />,
       color: "#10b981",
-      stats: "30% higher retention",
+      stats: "Improved retention",
       features: [
         "CRM & Marketing Automation",
         "Loyalty Programs",
@@ -94,57 +94,56 @@ export default function ECommercePage() {
     {
       title: "E-Commerce Platforms",
       description:
-        "Robust, scalable online stores with advanced shopping carts, system integrations, and mobile-optimized experiences.",
+        "Scalable online stores with shopping carts, system integrations, and mobile-optimized experiences.",
       icon: <ShoppingCart />,
       color: "#10B981",
-      stats: "99.9% uptime",
+      stats: "Reliable performance",
       features: [
-        "E-stores",
+        "Online Stores",
         "Shopping Cart",
         "System Integration",
-        "mCommerce",
+        "Mobile Commerce",
       ],
     },
     {
       title: "Supply Chain Management",
       description:
-        "Real-time visibility from production to point-of-sale with private label management and trade promotion.",
+        "Real-time visibility from production to point-of-sale with inventory management and order tracking.",
       icon: <Truck />,
       color: "#10b981",
-      stats: "25% cost reduction",
+      stats: "Efficiency gains",
       features: [
-        "Supply Chain",
-        "Private Label",
-        "Trade Promotion",
-        "E-collaboration",
+        "Inventory Management",
+        "Order Tracking",
+        "Vendor Collaboration",
       ],
     },
     {
       title: "Data Analytics & BI",
       description:
-        "Empower decisions with data warehousing, predictive analytics, and custom reporting dashboards.",
+        "Empower decisions with data warehousing, reporting dashboards, and business intelligence.",
       icon: <BarChart3 />,
       color: "#10b981",
-      stats: "2x faster decisions",
-      features: ["Data Warehousing", "Reporting UI", "Predictive Analytics"],
+      stats: "Data-driven insights",
+      features: ["Data Warehousing", "Reporting Dashboards", "Business Analytics"],
     },
     {
-      title: "Computer Vision",
+      title: "Retail Technology",
       description:
-        "Enhance in-store experiences with facial and emotion recognition for personalized service.",
+        "Enhance in-store experiences with modern retail technology solutions.",
       icon: <Scan />,
       color: "#10b981",
-      stats: "40% engagement boost",
-      features: ["Facial Recognition", "Emotion Recognition"],
+      stats: "Enhanced experience",
+      features: ["In-store Analytics", "Customer Insights", "Store Operations"],
     },
     {
       title: "Information Security",
       description:
-        "Enterprise-grade security with SIEM, IAM, and penetration testing to protect your business and customers.",
+        "Security measures to protect your business and customer data.",
       icon: <Shield />,
       color: "#10b981",
-      stats: "Zero breaches",
-      features: ["SIEM", "Identity Management", "Penetration Testing"],
+      stats: "Data protection",
+      features: ["Security Audits", "Access Management", "Threat Monitoring"],
     },
   ];
 
@@ -431,12 +430,12 @@ export default function ECommercePage() {
   // ============ WHY PARTNER WITH US ============
   const whyPartner = [
     {
-      text: "Nigeria’s Top 10% Software Talent",
+      text: "Skilled Nigerian Software Talent",
       icon: <AwardIcon />,
       color: "#3B82F6",
     },
     {
-      text: "Trusted by Startups to Fortune 500",
+      text: "Trusted by Startups & Growing Businesses",
       icon: <Building2 />,
       color: "#3b82f6",
     },
@@ -446,17 +445,17 @@ export default function ECommercePage() {
       color: "#3b82F6",
     },
     {
-      text: "Time-Zone Friendly: Global Presence",
+      text: "Time-Zone Friendly Collaboration",
       icon: <GlobeIcon />,
       color: "#3b82f6",
     },
     {
-      text: "Top-tier Data Security Protocols",
+      text: "Strong Data Security Practices",
       icon: <LockIcon2 />,
       color: "#3b82f6",
     },
     {
-      text: "On-time Delivery, No Surprises",
+      text: "On-time Delivery Commitment",
       icon: <ClockIcon />,
       color: "#3b82f6",
     },
@@ -530,33 +529,33 @@ export default function ECommercePage() {
       question:
         "How do you choose the right E-Commerce platform for my business?",
       answer:
-        "We conduct a thorough analysis of your business requirements, budget, scalability needs, and technical preferences. We then recommend platforms like Shopify, Magento, WooCommerce, or custom solutions – ensuring the best fit for your specific use case.",
+        "We conduct a thorough analysis of your business requirements, budget, and scalability needs. We then recommend platforms like Shopify, WooCommerce, or custom solutions – ensuring the best fit for your specific use case.",
     },
     {
       question:
         "Can you integrate my E-Commerce store with my existing ERP or CRM?",
       answer:
-        "Absolutely. We specialise in seamless integrations with popular ERPs (SAP, Oracle, Microsoft Dynamics) and CRMs (Salesforce, HubSpot). We ensure real-time data synchronisation for inventory, orders, and customer information.",
+        "Yes. We specialise in integrations with popular ERPs and CRMs to ensure data synchronisation for inventory, orders, and customer information.",
     },
     {
       question: "What payment gateways do you support?",
       answer:
-        "We integrate all major payment gateways including Stripe, PayPal, Braintree, Authorize.net, and region-specific providers. We also support digital wallets (Apple Pay, Google Pay) and buy-now-pay-later options.",
+        "We integrate major payment gateways including Stripe, PayPal, and region-specific providers. We also support digital wallets like Apple Pay and Google Pay.",
     },
     {
       question: "How do you ensure my E-Commerce store is secure?",
       answer:
-        "We implement SSL encryption, PCI DSS compliance, regular security audits, penetration testing, and secure coding practices. For high-risk transactions, we add multi-factor authentication and fraud detection algorithms.",
+        "We implement SSL encryption, secure coding practices, regular security audits, and fraud detection measures to protect your store.",
     },
     {
       question: "Do you provide ongoing maintenance and support?",
       answer:
-        "Yes. Every project includes post-launch support, security monitoring, performance optimisation, and regular updates. We offer SLAs tailored to your business criticality.",
+        "Yes. Every project includes post-launch support, security monitoring, performance optimisation, and regular updates.",
     },
     {
-      question: "Can you build a headless or composable commerce solution?",
+      question: "Can you build a headless commerce solution?",
       answer:
-        "Absolutely. We specialise in headless architectures using modern front-end frameworks (React, Next.js) and back-end commerce engines (CommerceTools, Shopify Plus). This gives you complete flexibility over customer experiences.",
+        "Yes. We can build headless architectures using modern front-end frameworks and commerce platforms to give you flexibility over customer experiences.",
     },
   ];
 
@@ -586,9 +585,7 @@ export default function ECommercePage() {
                 <span className={styles.highlight}>Software Development</span>
               </h1>
               <p className={styles.subheadline}>
-                We build next-gen, feature-rich, and scalable E-Commerce
-                solutions to empower B2B & B2C businesses.
-
+               Scalable e-commerce solutions for B2B & B2C businesses.
               </p>
               <p className={styles.heroDescription}>
                 From customer experience solutions to supply chain management,
@@ -611,7 +608,7 @@ export default function ECommercePage() {
             </motion.div>
           </motion.div>
 
-          <motion.div
+          {/* <motion.div
             className={styles.rightContent}
             initial={{ opacity: 0, x: 20 }}
             animate={{ opacity: 1, x: 0 }}
@@ -636,7 +633,7 @@ export default function ECommercePage() {
                 </p>
                 <div className={styles.testimonialAuthor}>
                   <h4>{testimonial.name}</h4>
-                  {/* <p>{testimonial.role}</p> */}
+                  <p>{testimonial.role}</p>
                 </div>
                 <div className={styles.ratings}>
                   <div className={styles.ratingItem}>
@@ -661,7 +658,7 @@ export default function ECommercePage() {
                 </div>
               </div>
             </div>
-          </motion.div>
+          </motion.div> */}
         </div>
       </section>
 

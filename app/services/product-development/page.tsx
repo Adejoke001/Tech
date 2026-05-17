@@ -622,14 +622,14 @@ export default function ProductDevelopment() {
                   <div className={styles.testimonialAvatar}>
                     <Image
                       src="/images/user.png"
-                      alt="Sarah Johnson"
+                      alt="Frank"
                       width={50}
                       height={50}
                       className={styles.avatarImage}
                     />
                   </div>
                   <div className={styles.testimonialInfo}>
-                    <h4 className={styles.testimonialName}>Frank Johnson</h4>
+                    <h4 className={styles.testimonialName}>Frank</h4>
                     {/* <p className={styles.testimonialRole}>
                       CTO, TechBim Inc.
                     </p> */}
@@ -1256,12 +1256,6 @@ export default function ProductDevelopment() {
                     transition={{ duration: 0.3 }}
                   >
                     <p className={styles.faqAnswer}>{faq.answer}</p>
-                    <Link href="/contact" className={styles.linkWrapper}>
-                      <button className={styles.faqCtaButton}>
-                        Get Specific Answer
-                        <ArrowRight className={styles.buttonIcon} />
-                      </button>
-                    </Link>
                   </motion.div>
                 )}
               </motion.div>

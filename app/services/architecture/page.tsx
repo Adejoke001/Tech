@@ -20,7 +20,7 @@ export default function SaasArchitecturePage() {
     // ----- HERO TESTIMONIAL -----
     const testimonial = {
         name: 'Rebecca',
-        role: 'Product Lead, FinBim',
+        // role: 'Product Lead, FinBim',
         content: 'They go above and beyond to ensure quality and satisfaction. A true partner in every sense.',
         rating: 5,
         project: 'SaaS Platform Migration'
@@ -125,11 +125,11 @@ export default function SaasArchitecturePage() {
 
     // ============ COST ESTIMATES ============
     const costEstimates = [
-        { range: '$8,000 - $30,000', description: 'Discovery, KPIs, multi-tenant blueprint, backlog, release plan.' },
-        { range: '$25,000 - $150,000', description: 'Auth, roles, core flows, billing, basic analytics, UX/UI.' },
-        { range: '$8,000 - $60,000', description: 'Payments, CRM/marketing, webhooks, data pipelines, dashboards.' },
-        { range: '$12,000 - $60,000', description: 'Environments, IaC, pipelines, testing, secrets, scanning, WAF.' },
-        { range: '$20,000 - $150,000+', description: 'Multi-tenant isolation, SSO (SAML/OIDC), SOC2/ISO/HIPAA/GDPR, SRE.' },
+        { range: '$5,000 - $15,000', description: 'Discovery, planning, and roadmap development.' },
+        { range: '$15,000 - $50,000', description: 'Core features, authentication, user roles, and basic analytics.' },
+        { range: '$8,000 - $25,000', description: 'Payment integration, CRM connections, and reporting dashboards.' },
+        { range: '$10,000 - $30,000', description: 'Deployment setup, basic CI/CD, and security configuration.' },
+        { range: '$25,000 - $75,000+', description: 'Advanced security, compliance preparation, and scalability planning.' },
     ];
 
     // ============ BUSINESS TYPES ============
@@ -210,9 +210,9 @@ export default function SaasArchitecturePage() {
 
     // ============ COMPANY STATS ============
     const companyStats = [
-        { value: '700+', label: 'Full-time Staff', icon: <Users />, description: 'Dedicated team' },
-        { value: '20+', label: 'Years Experience', icon: <Award />, description: 'Since 2004' },
-        { value: '4500+', label: 'Satisfied Clients', icon: <MessageSquare />, description: 'Global client base' },
+        { value: '10+', label: 'Full-time Staff', icon: <Users />, description: 'Dedicated team' },
+        { value: '5+', label: 'Years Experience', icon: <Award />, description: 'Since 2004' },
+        { value: '80+', label: 'Satisfied Clients', icon: <MessageSquare />, description: 'Global client base' },
     ];
 
     // ============ CLIENT TESTIMONIALS ============
@@ -323,8 +323,8 @@ export default function SaasArchitecturePage() {
                             Consulting + Engineering That Delivers
                         </p>
                         <p className={styles.heroDescription}>
-                            Ship features 40% faster without hiring delays. Our SaaS consulting and development experts help you design, build, and scale secure, multi-tenant products with measurable ROI and zero-disruption releases.
-                        </p>
+                      Ship features faster without hiring delays. Our SaaS consulting and development experts help you design, build, and scale secure, multi-tenant products with measurable results and smooth releases.
+                         </p>
                         <div className={styles.heroButtons}>
                             <Link href="/contact" className={styles.primaryButton}>
                                 Start Your SaaS Journey <ArrowRight size={18} />
@@ -353,7 +353,7 @@ export default function SaasArchitecturePage() {
                                 <p className={styles.testimonialText}>&quot;{testimonial.content}&quot;</p>
                                 <div className={styles.testimonialAuthor}>
                                     <strong>{testimonial.name}</strong>
-                                    <span>{testimonial.role}</span>
+                                    {/* <span>{testimonial.role}</span> */}
                                 </div>
                                 <div className={styles.testimonialRating}>
                                     {[...Array(testimonial.rating)].map((_, i) => (
@@ -395,8 +395,8 @@ export default function SaasArchitecturePage() {
                             SaaS Consulting & <span className={styles.titleHighlight}>Development Services</span>
                         </h2>
                         <p className={styles.sectionDescription}>
-                            As a trusted SaaS consulting company, we help clients achieve their product milestones through expert SaaS development and strategic consulting services. With BBMcoders – get end-to-end SaaS expertise – from strategy to uptime – tailored to your growth.
-                        </p>
+                           We help clients achieve their product milestones through expert SaaS development and strategic consulting. From strategy to launch, get end-to-end SaaS expertise tailored to your growth.
+                          </p>
                     </div>
                     <div className={styles.servicesGrid}>
                         {saasServices.map((service, index) => (

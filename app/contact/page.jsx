@@ -21,10 +21,38 @@ const Contact = () => {
   };
 
   const handleSubmit = (e) => {
-    e.preventDefault();
-    console.log("Form submitted:", formData);
-    // Add your API call here
-  };
+  e.preventDefault();
+
+  const subject = `New Contact Request from ${formData.name}`;
+
+  const body = `
+Full Name: ${formData.name}
+Email: ${formData.email}
+Phone: ${formData.phone}
+Company: ${formData.company}
+Project Type: ${formData.projectType}
+
+Project Details:
+${formData.message}
+  `;
+
+  const mailtoLink = `mailto:contact@bbmcoders.com?subject=${encodeURIComponent(
+    subject
+  )}&body=${encodeURIComponent(body)}`;
+
+  // Opens user's email app
+  window.location.href = mailtoLink;
+
+  // Optional: clear form after opening mail app
+  setFormData({
+    name: "",
+    email: "",
+    phone: "",
+    company: "",
+    message: "",
+    projectType: "",
+  });
+};
 
   const contactInfo = [
     {
@@ -62,8 +90,8 @@ const Contact = () => {
 
   const features = [
     "97% Client Satisfaction Rate",
-    "50+ Industry Experts",
-    "4200+ Projects Delivered",
+    "15+ Industry Experts",
+    "100+ Projects Delivered",
     "24/7 Project Support",
   ];
 

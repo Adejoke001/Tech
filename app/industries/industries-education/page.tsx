@@ -6,7 +6,7 @@ import Link from 'next/link';
 import { motion, AnimatePresence } from 'framer-motion';
 import {
 
-    Sparkles, Award, MessageSquare, HelpCircle,
+    Sparkles, HelpCircle,
     CheckCircle, Users, Globe, Lock,
     Layers, Layout, Zap, Shield, Smartphone, Database,
     Compass, Code, GitBranch, FolderOpen, RefreshCw, Megaphone,
@@ -60,13 +60,13 @@ export default function EducationPage() {
     };
 
     // ----- HERO TESTIMONIAL -----
-    const testimonial = {
-        name: 'Sarah Johnson',
-        // role: 'Director of Learning, EduTech',
-        content: 'BBMcoders built our custom LMS from the ground up – it now serves 50,000+ students across 20 countries. Their deep understanding of EdTech and commitment to quality is unmatched.',
-        rating: 5,
-        project: 'Global Learning Platform'
-    };
+    // const testimonial = {
+    //     name: 'Sarah Johnson',
+    //     role: 'Director of Learning, EduTech',
+    //     content: 'BBMcoders built our custom LMS from the ground up – it now serves 50,000+ students across 20 countries. Their deep understanding of EdTech and commitment to quality is unmatched.',
+    //     rating: 5,
+    //     project: 'Global Learning Platform'
+    // };
 
     // ============ EDUCATION SOLUTIONS ============
     const educationSolutions = [
@@ -233,12 +233,12 @@ export default function EducationPage() {
 
     // ============ WHY PARTNER WITH US ============
     const whyPartner = [
-        { text: 'Trusted by Startups to Fortune 500', icon: <Building2 />, color: '#3B82F6' },
+        { text: 'Trusted by Startups & Growing Businesses', icon: <Building2 />, color: '#3B82F6' },
         { text: 'Idea to Deployment, We Handle All', icon: <Rocket />, color: '#3b82f6' },
-        { text: 'Time-Zone Friendly: Global Presence', icon: <GlobeIcon />, color: '#3b82F6' },
-        { text: 'Top-tier Data Security Protocols', icon: <LockIcon2 />, color: '#3b82f6' },
-        { text: 'On-time Delivery, No Surprises', icon: <ClockIcon />, color: '#3b82f6' },
-        { text: 'First Time Right Process', icon: <ThumbsUp />, color: '#3b82f6' }
+        { text: 'Time-Zone Friendly Collaboration', icon: <GlobeIcon />, color: '#3b82F6' },
+        { text: 'Strong Data Security Practices', icon: <LockIcon2 />, color: '#3b82f6' },
+        { text: 'On-time Delivery Commitment', icon: <ClockIcon />, color: '#3b82f6' },
+        { text: 'Quality-First Approach', icon: <ThumbsUp />, color: '#3b82f6' }
     ];
 
     // ============ TRUSTED BY ============
@@ -294,27 +294,27 @@ export default function EducationPage() {
     const faqs = [
         {
             question: 'What is the difference between an LMS and an LXP?',
-            answer: 'An LMS (Learning Management System) is designed for structured, administrative learning – course creation, assignment, and tracking. An LXP (Learning Experience Platform) focuses on learner experience – personalized recommendations, social learning, and content discovery. Many organizations use both to balance structure and flexibility.'
+            answer: 'An LMS (Learning Management System) is designed for structured, administrative learning – course creation, assignment, and tracking. An LXP (Learning Experience Platform) focuses on learner experience – personalized recommendations and content discovery. Many organizations use both to balance structure and flexibility.'
         },
         {
             question: 'How do you ensure data security and compliance in eLearning platforms?',
-            answer: 'We implement end-to-end encryption, multi-factor authentication, role-based access control, regular security audits, and compliance with GDPR, HIPAA, and FERPA as required. Our platforms are built with security at every layer.'
+            answer: 'We implement encryption, role-based access control, regular security audits, and compliance with data protection regulations as required by your organization.'
         },
         {
             question: 'Can you integrate with our existing student information system (SIS)?',
-            answer: 'Absolutely. We specialise in seamless integrations with popular SIS platforms (Banner, PowerSchool, Infinite Campus) using secure APIs and middleware – ensuring real-time data synchronisation for student records, enrollments, and grades.'
+            answer: 'Yes. We specialise in integrations with popular SIS platforms using secure APIs – ensuring data synchronisation for student records, enrollments, and grades.'
         },
         {
             question: 'Do you offer mobile apps with offline access?',
-            answer: 'Yes. Our mobile learning solutions include full offline support – students can download courses, complete assignments, and sync progress when back online. We build native iOS and Android apps as well as cross-platform solutions.'
+            answer: 'Yes. Our mobile learning solutions include offline support – students can download courses, complete assignments, and sync progress when back online. We build native iOS and Android apps as well as cross-platform solutions.'
         },
         {
             question: 'How do you handle remote proctoring and assessment integrity?',
-            answer: 'We offer AI-powered remote proctoring with live monitoring, session recording, facial recognition, and browser lockdown. Our solutions detect suspicious behaviour while maintaining student privacy.'
+            answer: 'We offer remote proctoring with session monitoring, browser lockdown, and detection of suspicious behaviour while maintaining student privacy.'
         },
         {
-            question: 'What emerging technologies do you use in EdTech?',
-            answer: 'We leverage AI for personalized learning paths, VR/AR for immersive experiences, gamification for engagement, and blockchain for credentialing. Our team stays at the forefront of EdTech innovation.'
+            question: 'What technologies do you use in EdTech?',
+            answer: 'We leverage AI for personalized learning paths, gamification for engagement, and modern web technologies for immersive experiences. Our team stays current with EdTech innovation.'
         }
     ];
 
@@ -376,7 +376,7 @@ export default function EducationPage() {
                         </motion.div>
                     </motion.div>
 
-                    <motion.div
+                    {/* <motion.div
                         className={styles.rightContent}
                         initial={{ opacity: 0, x: 20 }}
                         animate={{ opacity: 1, x: 0 }}
@@ -399,7 +399,7 @@ export default function EducationPage() {
                                 <p className={styles.testimonialText}>&quot;{testimonial.content}&quot;</p>
                                 <div className={styles.testimonialAuthor}>
                                     <h4>{testimonial.name}</h4>
-                                    {/* <p>{testimonial.role}</p> */}
+                                    <p>{testimonial.role}</p>
                                 </div>
                                 <div className={styles.ratings}>
                                     <div className={styles.ratingItem}>
@@ -420,7 +420,7 @@ export default function EducationPage() {
                                 </div>
                             </div>
                         </div>
-                    </motion.div>
+                    </motion.div> */}
                 </div>
             </section>
 

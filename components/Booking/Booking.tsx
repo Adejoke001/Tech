@@ -39,7 +39,37 @@ const Booking = () => {
 
   const handleSubmit = (e: FormEvent<HTMLFormElement>) => {
     e.preventDefault();
-    console.log('Form submitted');
+
+    const formData = new FormData(e.currentTarget);
+
+    const firstName = formData.get('firstName');
+    const lastName = formData.get('lastName');
+    const email = formData.get('email');
+    const phone = formData.get('phone');
+    const company = formData.get('company');
+    const message = formData.get('message');
+
+    const subject = `New Booking Request from ${firstName} ${lastName}`;
+
+    const body = `
+First Name: ${firstName}
+Last Name: ${lastName}
+Email: ${email}
+Phone: ${phone}
+Company: ${company}
+
+Message:
+${message}
+  `;
+
+    const mailtoLink = `mailto:contact@bbmcoders.com?subject=${encodeURIComponent(
+      subject
+    )}&body=${encodeURIComponent(body)}`;
+
+    window.location.href = mailtoLink;
+
+    // Optional reset
+    e.currentTarget.reset();
   };
 
   // ✅ Dynamic mailto generator
