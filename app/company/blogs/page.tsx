@@ -1,29 +1,28 @@
 'use client';
 
-import { useState, useEffect } from 'react';
+import { useState} from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
 import { motion } from 'framer-motion';
 import {
     ArrowRight, Calendar, User, Clock, Tag,
-    Search, Send, Download, X,
+    Search, Send, Download,
 } from 'lucide-react';
 import styles from './blogs.module.css';
-import { featuredPost, allPosts, BlogPost } from '@/data/bbmtechBlogPosts';
+import { featuredPost, allPosts, BlogPost } from '../../../data/bbmcodersBlogPosts';
 
 export default function BlogsPage() {
-    const [searchQuery, setSearchQuery] = useState('');
-    const [email, setEmail] = useState('');
-    const [downloadEmail, setDownloadEmail] = useState('');
-    const [downloadName, setDownloadName] = useState('');
-    const [modalPost, setModalPost] = useState<BlogPost | null>(null);
+    const [searchQuery, setSearchQuery] = useState<string>('');
+    const [email, setEmail] = useState<string>('');
+    const [downloadEmail, setDownloadEmail] = useState<string>('');
+    const [downloadName, setDownloadName] = useState<string>('');
     const [selectedTag, setSelectedTag] = useState<string | null>(null);
     const [selectedCategory, setSelectedCategory] = useState<string | null>(null);
-    const [visiblePostsCount, setVisiblePostsCount] = useState(6);
+    const [visiblePostsCount, setVisiblePostsCount] = useState<number>(6);
     const POSTS_PER_PAGE = 6;
 
     // Filter posts based on search, tag, and category
-    const filteredPosts = allPosts.filter(post => {
+    const filteredPosts: BlogPost[] = allPosts.filter((post: BlogPost) => {
         const matchesSearch = post.title.toLowerCase().includes(searchQuery.toLowerCase()) ||
                               post.excerpt.toLowerCase().includes(searchQuery.toLowerCase());
         const matchesTag = selectedTag ? post.tags.includes(selectedTag) : true;
@@ -32,23 +31,20 @@ export default function BlogsPage() {
     });
 
     const handleSearch = () => {
-    // Reset visible posts when searching
-    setVisiblePostsCount(POSTS_PER_PAGE);
-    // Optional: scroll to top of results
-    window.scrollTo({ top: 0, behavior: 'smooth' });
-};
+        setVisiblePostsCount(POSTS_PER_PAGE);
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+    };
 
-    const displayedPosts = filteredPosts.slice(0, visiblePostsCount);
-    const hasMorePosts = visiblePostsCount < filteredPosts.length;
+    const displayedPosts: BlogPost[] = filteredPosts.slice(0, visiblePostsCount);
+    const hasMorePosts: boolean = visiblePostsCount < filteredPosts.length;
 
     // Recent posts for the sidebar (latest 5)
-    const recentPosts = [...allPosts]
-        .sort((a, b) => new Date(b.date).getTime() - new Date(a.date).getTime())
+    const recentPosts: BlogPost[] = [...allPosts]
+        .sort((a: BlogPost, b: BlogPost) => new Date(b.date).getTime() - new Date(a.date).getTime())
         .slice(0, 5);
 
     // Unique tags and categories for filters
-    const allTags = Array.from(new Set(allPosts.flatMap(p => p.tags))).slice(0, 12);
-    // const allCategories = Array.from(new Set(allPosts.map(p => p.category)));
+    const allTags: string[] = Array.from(new Set(allPosts.flatMap((p: BlogPost) => p.tags))).slice(0, 12);
 
     const handleSubscribe = (e: React.FormEvent) => {
         e.preventDefault();
@@ -63,42 +59,6 @@ export default function BlogsPage() {
         setDownloadEmail('');
     };
 
-    // Modal handlers
-    const openModal = (post: BlogPost) => {
-        setModalPost(post);
-        document.body.style.overflow = 'hidden';
-    };
-
-    const closeModal = () => {
-        setModalPost(null);
-        document.body.style.overflow = 'auto';
-    };
-
-    useEffect(() => {
-        const handleKeyDown = (e: KeyboardEvent) => {
-            if (e.key === 'Escape') closeModal();
-        };
-        window.addEventListener('keydown', handleKeyDown);
-        return () => window.removeEventListener('keydown', handleKeyDown);
-    }, []);
-
-    // Custom link component that opens modal
-    const BlogLink = ({ post, children, className }: {
-        post: BlogPost;
-        children: React.ReactNode;
-        className?: string;
-    }) => {
-        const handleClick = (e: React.MouseEvent) => {
-            e.preventDefault();
-            openModal(post);
-        };
-        return (
-            <a href={`/blog/${post.slug}`} onClick={handleClick} className={className}>
-                {children}
-            </a>
-        );
-    };
-
     // Clear filters
     const clearFilters = () => {
         setSelectedTag(null);
@@ -108,7 +68,7 @@ export default function BlogsPage() {
     };
 
     const loadMore = () => {
-        setVisiblePostsCount(prev => prev + POSTS_PER_PAGE);
+        setVisiblePostsCount((prev: number) => prev + POSTS_PER_PAGE);
     };
 
     return (
@@ -147,33 +107,33 @@ export default function BlogsPage() {
             <div className={styles.mainLayout}>
                 <aside className={styles.sidebar}>
                     {/* Search widget */}
-                   <div className={styles.sidebarWidget}>
-    <h3 className={styles.widgetTitle}>Search</h3>
-    <div className={styles.searchBox}>
-        <input
-            type="text"
-            placeholder="Search articles..."
-            value={searchQuery}
-            onChange={(e) => setSearchQuery(e.target.value)}
-            onKeyDown={(e) => e.key === 'Enter' && handleSearch()}
-            className={styles.searchInput}
-        />
-        <button onClick={handleSearch} className={styles.searchButton}>
-            <Search size={18} />
-        </button>
-    </div>
-</div>
+                    <div className={styles.sidebarWidget}>
+                        <h3 className={styles.widgetTitle}>Search</h3>
+                        <div className={styles.searchBox}>
+                            <input
+                                type="text"
+                                placeholder="Search articles..."
+                                value={searchQuery}
+                                onChange={(e: React.ChangeEvent<HTMLInputElement>) => setSearchQuery(e.target.value)}
+                                onKeyDown={(e: React.KeyboardEvent<HTMLInputElement>) => e.key === 'Enter' && handleSearch()}
+                                className={styles.searchInput}
+                            />
+                            <button onClick={handleSearch} className={styles.searchButton}>
+                                <Search size={18} />
+                            </button>
+                        </div>
+                    </div>
 
                     {/* Recent Posts */}
                     <div className={styles.sidebarWidget}>
                         <h3 className={styles.widgetTitle}>Recent Posts</h3>
                         <ul className={styles.recentList}>
-                            {recentPosts.map(post => (
+                            {recentPosts.map((post: BlogPost) => (
                                 <li key={post.id} className={styles.recentItem}>
-                                    <BlogLink post={post} className={styles.recentLink}>
+                                    <Link href={`/company/blogs/${post.slug}`} className={styles.recentLink}>
                                         <span className={styles.recentTitle}>{post.title}</span>
                                         <span className={styles.recentDate}>{post.date}</span>
-                                    </BlogLink>
+                                    </Link>
                                 </li>
                             ))}
                         </ul>
@@ -183,7 +143,7 @@ export default function BlogsPage() {
                     <div className={styles.sidebarWidget}>
                         <h3 className={styles.widgetTitle}>Popular Tags</h3>
                         <div className={styles.tagCloud}>
-                            {allTags.map(tag => (
+                            {allTags.map((tag: string) => (
                                 <button
                                     key={tag}
                                     onClick={() => setSelectedTag(tag === selectedTag ? null : tag)}
@@ -206,7 +166,7 @@ export default function BlogsPage() {
                                 type="email"
                                 placeholder="Your email"
                                 value={email}
-                                onChange={(e) => setEmail(e.target.value)}
+                                onChange={(e: React.ChangeEvent<HTMLInputElement>) => setEmail(e.target.value)}
                                 required
                                 className={styles.newsletterInput}
                             />
@@ -216,7 +176,7 @@ export default function BlogsPage() {
                         </form>
                     </div>
 
-                    {/* Clear filters button (optional) */}
+                    {/* Clear filters button */}
                     {(selectedTag || selectedCategory || searchQuery) && (
                         <button onClick={clearFilters} className={styles.clearFiltersButton}>
                             Clear all filters
@@ -244,7 +204,9 @@ export default function BlogsPage() {
                                     {featuredPost.category}
                                 </span>
                                 <h3 className={styles.featuredPostTitle}>
-                                    <BlogLink post={featuredPost}>{featuredPost.title}</BlogLink>
+                                    <Link href={`/company/blogs/${featuredPost.slug}`} className={styles.featuredPostLink}>
+                                        {featuredPost.title}
+                                    </Link>
                                 </h3>
                                 <p className={styles.featuredPostExcerpt}>{featuredPost.excerpt}</p>
                                 <div className={styles.featuredPostMeta}>
@@ -259,16 +221,16 @@ export default function BlogsPage() {
                                     </span>
                                 </div>
                                 <div className={styles.featuredPostCta}>
-                                    <BlogLink post={featuredPost} className={styles.readMoreButton}>
+                                    <Link href={`/company/blogs/${featuredPost.slug}`} className={styles.readMoreButton}>
                                         Read Full Article <ArrowRight size={16} />
-                                    </BlogLink>
+                                    </Link>
                                 </div>
                             </div>
                         </article>
 
                         {/* Two recent posts below the featured one */}
                         <div className={styles.recentGrid}>
-                            {recentPosts.slice(0, 2).map(post => (
+                            {recentPosts.slice(0, 2).map((post: BlogPost) => (
                                 <article key={post.id} className={styles.recentCard}>
                                     <div className={styles.recentCardImageWrapper}>
                                         <Image
@@ -283,7 +245,9 @@ export default function BlogsPage() {
                                             {post.category}
                                         </span>
                                         <h4 className={styles.recentCardTitle}>
-                                            <BlogLink post={post}>{post.title}</BlogLink>
+                                            <Link href={`/company/blogs/${post.slug}`} className={styles.recentCardLink}>
+                                                {post.title}
+                                            </Link>
                                         </h4>
                                         <p className={styles.recentCardExcerpt}>{post.excerpt}</p>
                                         <div className={styles.recentCardMeta}>
@@ -306,7 +270,7 @@ export default function BlogsPage() {
                         {displayedPosts.length > 0 ? (
                             <>
                                 <div className={styles.postsGrid}>
-                                    {displayedPosts.map(post => (
+                                    {displayedPosts.map((post: BlogPost) => (
                                         <motion.article
                                             key={post.id}
                                             className={styles.postCard}
@@ -328,7 +292,9 @@ export default function BlogsPage() {
                                             </div>
                                             <div className={styles.postContent}>
                                                 <h3 className={styles.postTitle}>
-                                                    <BlogLink post={post}>{post.title}</BlogLink>
+                                                    <Link href={`/company/blogs/${post.slug}`} className={styles.postTitleLink}>
+                                                        {post.title}
+                                                    </Link>
                                                 </h3>
                                                 <p className={styles.postExcerpt}>{post.excerpt}</p>
                                                 <div className={styles.postFooter}>
@@ -340,7 +306,7 @@ export default function BlogsPage() {
                                                     </span>
                                                 </div>
                                                 <div className={styles.postTags}>
-                                                    {post.tags.slice(0, 2).map(tag => (
+                                                    {post.tags.slice(0, 2).map((tag: string) => (
                                                         <button
                                                             key={tag}
                                                             onClick={() => setSelectedTag(tag)}
@@ -374,7 +340,7 @@ export default function BlogsPage() {
                 </main>
             </div>
 
-            {/* E‑GUIDE DOWNLOAD SECTION */}
+            {/* E-GUIDE DOWNLOAD SECTION */}
             <section className={styles.guideSection}>
                 <div className={styles.container}>
                     <div className={styles.guideGrid}>
@@ -390,7 +356,7 @@ export default function BlogsPage() {
                                     type="text"
                                     placeholder="Your Name"
                                     value={downloadName}
-                                    onChange={(e) => setDownloadName(e.target.value)}
+                                    onChange={(e: React.ChangeEvent<HTMLInputElement>) => setDownloadName(e.target.value)}
                                     required
                                     className={styles.guideInput}
                                 />
@@ -398,7 +364,7 @@ export default function BlogsPage() {
                                     type="email"
                                     placeholder="Your Email"
                                     value={downloadEmail}
-                                    onChange={(e) => setDownloadEmail(e.target.value)}
+                                    onChange={(e: React.ChangeEvent<HTMLInputElement>) => setDownloadEmail(e.target.value)}
                                     required
                                     className={styles.guideInput}
                                 />
@@ -428,110 +394,12 @@ export default function BlogsPage() {
                         <p className={styles.finalCtaDescription}>
                             Let&apos;s embark on a journey to transform your idea into a compelling digital presence.
                         </p>
-                        <Link href="/contact" className={styles.finalCtaButton}>
+                        <Link href="/company/contact" className={styles.finalCtaButton}>
                             Start a Conversation <ArrowRight size={18} />
                         </Link>
                     </div>
                 </div>
             </section>
-
-            {/* MODAL */}
-            {modalPost && (
-                <div
-                    style={{
-                        position: 'fixed',
-                        top: 0,
-                        left: 0,
-                        right: 0,
-                        bottom: 0,
-                        backgroundColor: 'rgba(0,0,0,0.8)',
-                        zIndex: 1000,
-                        display: 'flex',
-                        alignItems: 'center',
-                        justifyContent: 'center',
-                        padding: '2rem',
-                    }}
-                    onClick={closeModal}
-                >
-                    <div
-                        style={{
-                            backgroundColor: '#fff',
-                            borderRadius: '1rem',
-                            maxWidth: '800px',
-                            width: '100%',
-                            maxHeight: '90vh',
-                            overflowY: 'auto',
-                            position: 'relative',
-                            padding: '2rem',
-                        }}
-                        onClick={(e) => e.stopPropagation()}
-                    >
-                        <button
-                            onClick={closeModal}
-                            style={{
-                                position: 'absolute',
-                                top: '1rem',
-                                right: '1rem',
-                                background: 'transparent',
-                                border: 'none',
-                                cursor: 'pointer',
-                                color: '#666',
-                            }}
-                        >
-                            <X size={24} />
-                        </button>
-
-                        {modalPost.image && (
-                            <div style={{ marginBottom: '1.5rem' }}>
-                                <Image
-                                    src={modalPost.image}
-                                    alt={modalPost.title}
-                                    width={800}
-                                    height={400}
-                                    style={{ borderRadius: '0.75rem', objectFit: 'cover', width: '100%', height: 'auto' }}
-                                />
-                            </div>
-                        )}
-
-                        <div style={{ marginBottom: '1rem' }}>
-                            <span style={{ color: modalPost.color, fontWeight: 600 }}>
-                                {modalPost.category}
-                            </span>
-                        </div>
-
-                        <h2 style={{ fontSize: '1.8rem', marginBottom: '1rem' }}>{modalPost.title}</h2>
-
-                        <div style={{ display: 'flex', gap: '1rem', marginBottom: '1.5rem', color: '#666', fontSize: '0.9rem' }}>
-                            <span><Calendar size={14} style={{ display: 'inline', marginRight: '0.25rem' }} /> {modalPost.date}</span>
-                            <span><User size={14} style={{ display: 'inline', marginRight: '0.25rem' }} /> {modalPost.author}</span>
-                            <span><Clock size={14} style={{ display: 'inline', marginRight: '0.25rem' }} /> {modalPost.readTime}</span>
-                        </div>
-
-                        <div style={{ marginBottom: '1.5rem' }}>
-                            {modalPost.tags?.map((tag: string) => (
-                                <span
-                                    key={tag}
-                                    style={{
-                                        display: 'inline-block',
-                                        backgroundColor: '#f3f4f6',
-                                        padding: '0.25rem 0.75rem',
-                                        borderRadius: '9999px',
-                                        fontSize: '0.75rem',
-                                        marginRight: '0.5rem',
-                                        marginBottom: '0.5rem',
-                                    }}
-                                >
-                                    #{tag}
-                                </span>
-                            ))}
-                        </div>
-
-                        <div style={{ lineHeight: 1.6, color: '#333' }}>
-                            <p>{modalPost.fullContent}</p>
-                        </div>
-                    </div>
-                </div>
-            )}
         </div>
     );
 }
