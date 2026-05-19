@@ -43,6 +43,7 @@ const PartnershipIcon = () => <span className={styles.dropdownIcon}>🤝</span>;
 const CaseStudiesIcon = () => <span className={styles.dropdownIcon}>📚</span>;
 const BlogIcon = () => <span className={styles.dropdownIcon}>✍️</span>;
 const TestimonialsIcon = () => <span className={styles.dropdownIcon}>💬</span>;
+const AboutIcon = () => <span className={styles.dropdownIcon}>👥</span>;
 
 export default function Navbar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -109,6 +110,7 @@ export default function Navbar() {
       title: "Company",
       href: "/company",
       items: [
+        { name: "About Us", href: "/company/about", icon: <AboutIcon /> },
         { name: "Partnerships & Certifications", href: "/company/partnerships", icon: <PartnershipIcon /> },
         { name: "Case Studies", href: "/company/case-studies", icon: <CaseStudiesIcon /> },
         { name: "Blog & Insights", href: "/company/blogs", icon: <BlogIcon /> },

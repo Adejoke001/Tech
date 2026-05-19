@@ -1020,3 +1020,38 @@
         padding: 0.5rem 0.6rem;
     }
 }
+
+/* Add to your existing blogs.module.css */
+
+/* Featured post link */
+.featuredPostLink {
+    color: inherit;
+    text-decoration: none;
+    transition: color 0.2s ease;
+}
+
+.featuredPostLink:hover {
+    color: var(--primary-blue);
+}
+
+/* Recent card link */
+.recentCardLink {
+    color: inherit;
+    text-decoration: none;
+    transition: color 0.2s ease;
+}
+
+.recentCardLink:hover {
+    color: var(--primary-blue);
+}
+
+/* Post title link */
+.postTitleLink {
+    color: inherit;
+    text-decoration: none;
+    transition: color 0.2s ease;
+}
+
+.postTitleLink:hover {
+    color: var(--primary-blue);
+}

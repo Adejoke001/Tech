@@ -77,7 +77,7 @@ export default function AboutPage() {
     const timeline = [
     { year: '2021', event: 'BBMcoders was founded in Lagos, Nigeria, with a vision to deliver IT outsourcing services worldwide.' },
     { year: '2023', event: 'Expanded operations to serve clients across Africa, Europe, and North America.' },
-    { year: '2025', event: 'Reached 100+ skilled professionals and successfully delivered 90+ projects globally.' },
+    { year: '2025', event: 'Reached 15+ skilled professionals and successfully delivered 90+ projects globally.' },
     { year: '2026', event: 'Accelerated digital transformation services with AI-driven solutions and strengthening global partnerships.' }
     ];
 
@@ -241,7 +241,7 @@ export default function AboutPage() {
                             5 Years of <span className={styles.titleHighlight}>Proud Existence</span>
                         </h2>
                         <p className={styles.sectionDescription}>
-                            BBMcoders set its first stone down in 2021 in Lagos, Nigeria, and has been thriving ever since. We deliver exceptional technology solutions for world-class businesses in every industry – from dynamic startups and SMBs to Fortune 500 companies.
+                            BBMcoders set its first stone down in 2021 in Lagos, Nigeria, and has been thriving ever since. We deliver exceptional technology solutions for world-class businesses in every industry – from dynamic startups and SMBs to Enterprises.
                         </p>
                     </div>
                     <div className={styles.timelineGrid}>
