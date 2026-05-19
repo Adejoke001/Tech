@@ -125,7 +125,7 @@ export default function AboutPage() {
 
     // ----- COMPANY STATS -----
     const companyStats = [
-        { value: '10+', label: 'Full-time Staff', icon: <Users />, description: 'Top 10% industry talent' },
+        { value: '10+', label: 'Full-time Staff', icon: <Users />, description: 'Rigorously vetted professionals' },
         { value: '5', label: 'Years Experience', icon: <Award />, description: 'Since 2021' },
         { value: '100+', label: 'Satisfied Clients', icon: <MessageSquare />, description: 'Global client base' },
     ];
@@ -398,7 +398,7 @@ export default function AboutPage() {
                             <a href="https://www.lovervows.com/" target="_blank" rel="noopener noreferrer" className={styles.workLink}>
                                 <div className={styles.workImageContainer}>
                                     <Image
-                                        src="/recent2.png"
+                                        src="/lovershot.png"
                                         alt="Recent Work 2"
                                         fill
                                         className={styles.workImage}
